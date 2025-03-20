@@ -11,14 +11,10 @@
             "id": "60dae79d39ebb3c3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notas.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Notas"
+              "title": "Nova aba"
             }
           }
         ]
@@ -113,12 +109,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Notas"
+              "title": "Links de saída"
             }
           },
           {
@@ -172,19 +167,22 @@
   },
   "active": "60dae79d39ebb3c3",
   "lastOpenFiles": [
-    "Linux/CLI.md",
-    "Linux/Linux Fundamentals 9.1 RedHat.md",
-    "Arquitetura Computacional/Kernel.md",
-    "Abreviações.md",
     "Sem títuloSem título.md",
     "Notas.md",
-    "Conceitos/Chaves Públicas e Privadas.md",
-    "Linux/IMG/LoginInterfaceGrafica.webp",
     "Linux/IMG/LoginCLI.webp",
-    "chave publica e privida[[Chaves Públicas e Privadas.md",
-    "Conceitos",
-    "Red Hat System Administration.md",
+    "Linux/IMG/LoginInterfaceGrafica.webp",
+    "Linux/Linux Fundamentals 9.1 RedHat.md",
     "Linux/IMG",
+    "Linux/CLI.md",
+    "Linux",
+    "Conceitos/Chaves Públicas e Privadas.md",
+    "Conceitos",
+    "Arquitetura Computacional/Kernel.md",
+    "Arquitetura Computacional",
+    "Abreviações.md",
+    "Readme.txt",
+    "chave publica e privida[[Chaves Públicas e Privadas.md",
+    "Red Hat System Administration.md",
     "Pasted Image 20241029051139_411.png",
     "Excalidraw/Drawing 2024-10-29 05.10.27.excalidraw.md",
     "Excalidraw",
@@ -196,9 +194,7 @@
     "Abreviações^.md",
     "Abreiações.md",
     "Sem título.canvas",
-    "Arquitetura Computacional",
     "Kernel.md",
-    "Welcome.md",
-    "Linux"
+    "Welcome.md"
   ]
 }
