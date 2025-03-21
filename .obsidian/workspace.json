@@ -156,7 +156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,15 +174,15 @@
   },
   "active": "60dae79d39ebb3c3",
   "lastOpenFiles": [
-    "Linux/CLI.md",
+    "Git.md",
     "Defesa de Rede - Cisco.md",
+    "Linux/CLI.md",
     "Cisco",
     "Cisco/Packet Tracer/packet-tracer-logical-and-physical-mode-exploration.pksz",
     "Packet Tracer/Não confirmado 810447.crdownload",
     "Cisco/Packet Tracer",
     "Nova pasta",
     "Abreviações.md",
-    "Git.md",
     "Notas.md",
     "Linux/Linux Fundamentals 9.1 RedHat.md",
     "Sem títuloSem título.md",
