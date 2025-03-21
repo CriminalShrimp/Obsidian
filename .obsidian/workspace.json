@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "Linux/Linux Fundamentals 9.1 RedHat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "Linux Fundamentals 9.1 RedHat"
             }
           }
         ]
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "Linux/Linux Fundamentals 9.1 RedHat.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Git"
+              "title": "Links de saída para Linux Fundamentals 9.1 RedHat"
             }
           },
           {
@@ -167,17 +167,18 @@
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "github-sync:Sync with Remote": false
     }
   },
-  "active": "60dae79d39ebb3c3",
+  "active": "1e80c182f859c816",
   "lastOpenFiles": [
-    "Git.md",
     "Sem títuloSem título.md",
+    "Linux/Linux Fundamentals 9.1 RedHat.md",
+    "Git.md",
     "Notas.md",
     "Linux/IMG/LoginCLI.webp",
     "Linux/IMG/LoginInterfaceGrafica.webp",
-    "Linux/Linux Fundamentals 9.1 RedHat.md",
     "Linux/IMG",
     "Linux/CLI.md",
     "Linux",
