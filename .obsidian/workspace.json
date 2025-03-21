@@ -11,10 +11,14 @@
             "id": "60dae79d39ebb3c3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Git.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "Git"
             }
           }
         ]
@@ -109,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída"
+              "title": "Links de saída para Git"
             }
           },
           {
@@ -167,6 +172,7 @@
   },
   "active": "60dae79d39ebb3c3",
   "lastOpenFiles": [
+    "Git.md",
     "Sem títuloSem título.md",
     "Notas.md",
     "Linux/IMG/LoginCLI.webp",
