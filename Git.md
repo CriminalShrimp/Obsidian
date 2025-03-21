@@ -123,6 +123,57 @@ Se quiser que o backup seja feito automaticamente, instale o plugin **Obsidian G
 2. Habilite os plugins da comunidade e procure por **Obsidian Git**.
 3. Instale e configure a frequência dos commits.
 
+## 🔹 10. Baixar o Backup do GitHub em Outra Máquina
+
+Se você deseja acessar suas anotações do Obsidian em um novo computador, siga estas etapas:
+
+### **1. Clonar o Repositório**
+
+Abra o terminal (Git Bash, Prompt de Comando ou Terminal) e execute:
+
+bash
+`git clone https://github.com/seu-usuario/Obsidian-Backup.git`
+
+🔹 **O que faz?**  
+Baixa todos os arquivos do repositório remoto do GitHub para a máquina local.
+
+Se quiser escolher uma pasta específica para salvar o vault, use:
+
+bash
+`git clone https://github.com/seu-usuario/Obsidian-Backup.git "C:\Users\SeuNome\Documents\ObsidianVault"`
+
+🔹 **O que faz?**  
+Baixa o repositório e o coloca na pasta especificada.
+
 ---
 
-Com isso, seu backup no GitHub estará sempre atualizado! 🚀😃
+### **2. Acessar a Pasta do Repositório**
+
+Após o download, entre na pasta do repositório:
+
+bash
+`cd Obsidian-Backup`
+
+🔹 **O que faz?**  
+Muda para o diretório onde os arquivos do vault foram baixados.
+
+---
+
+### **3. Manter o Backup Atualizado**
+
+Sempre que quiser atualizar os arquivos com as últimas mudanças do GitHub, execute:
+
+bash
+
+`git pull origin main`
+
+🔹 **O que faz?**  
+Baixa as atualizações mais recentes do repositório remoto para sua máquina local.
+
+Se houver conflitos entre os arquivos locais e remotos, resolva-os manualmente ou use:
+
+bash
+`git pull origin main --rebase`
+
+🔹 **O que faz?**  
+Puxa as mudanças do repositório e tenta aplicar suas edições por cima, evitando conflitos.

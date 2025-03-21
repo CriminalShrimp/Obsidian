@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux Fundamentals 9.1 RedHat.md",
+                "file": "Defesa de Rede - Cisco.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux Fundamentals 9.1 RedHat"
+              "title": "Defesa de Rede - Cisco"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Arquivos",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux Fundamentals 9.1 RedHat.md",
+                "file": "Defesa de Rede - Cisco.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Linux Fundamentals 9.1 RedHat"
+              "title": "Links de saída para Defesa de Rede - Cisco"
             }
           },
           {
@@ -171,28 +171,33 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "1e80c182f859c816",
+  "active": "60dae79d39ebb3c3",
   "lastOpenFiles": [
-    "Sem títuloSem título.md",
-    "Linux/Linux Fundamentals 9.1 RedHat.md",
+    "Linux/CLI.md",
+    "Defesa de Rede - Cisco.md",
+    "Cisco",
+    "Cisco/Packet Tracer/packet-tracer-logical-and-physical-mode-exploration.pksz",
+    "Packet Tracer/Não confirmado 810447.crdownload",
+    "Cisco/Packet Tracer",
+    "Nova pasta",
+    "Abreviações.md",
     "Git.md",
     "Notas.md",
+    "Linux/Linux Fundamentals 9.1 RedHat.md",
+    "Sem títuloSem título.md",
     "Linux/IMG/LoginCLI.webp",
     "Linux/IMG/LoginInterfaceGrafica.webp",
     "Linux/IMG",
-    "Linux/CLI.md",
     "Linux",
     "Conceitos/Chaves Públicas e Privadas.md",
     "Conceitos",
     "Arquitetura Computacional/Kernel.md",
     "Arquitetura Computacional",
-    "Abreviações.md",
     "Readme.txt",
     "chave publica e privida[[Chaves Públicas e Privadas.md",
     "Red Hat System Administration.md",
     "Pasted Image 20241029051139_411.png",
     "Excalidraw/Drawing 2024-10-29 05.10.27.excalidraw.md",
-    "Excalidraw",
     "Linux Fundamentals 9.1 RedHat-20241029045643762.webp",
     "Linux Fundamentals 9.1 RedHat-20241029045650816.webp",
     "Linux/Pasted image 20241029044658.png",
