@@ -21,9 +21,17 @@ Assim como na vida os ativos tem um ciclo de vida, o primeiro é a <span style="
 Identificar as possíveis ameaças para cada ambiente fornece uma lista de ataques mais prováveis de ocorrerem. A varias perguntas  que podem ser feitas para descobrir essas vulnerabilidades como: Quem pode explorar as vulnerabilidades? Quais são elas? O que sistemas parecidos sofreram e sofrem de ataques? O que ocorrera quando/se os ativos forem perdidos e as vulnerabilidades do sistema exploradas? 
 Vamos exemplificar usando como exemplo um e-banking 
 ![[Defesa de Rede - Cisco-20250325063408532.webp]]
-
+A identificação da ameaça para um sistema de banca electrónica incluiria:
+• Compromisso interno do sistema - O atacante usa os servidores de e-banking expostos para invadir um sistema bancário interno.
+• Dados roubados - Um atacante rouba os dados pessoais e financeiros dos clientes bancários do banco de dados do cliente.
+• Transações falsas de um servidor externo - Um invasor altera o código do aplicativo de e-banking e faz transações personificando um usuário legítimo.
+• Transações falsas - Um invasor rouba a identidade de um cliente e conclui transações mal-intencionadas da conta comprometida.
+• Ataque insider no sistema - Um funcionário do banco encontra uma falha no sistema a partir disso realiza um ataque.
+• Erros de entrada de dados - Um usuário insere dados incorretos ou faz solicitações de transação incorretas.
+• Destruição do data center - Um evento cataclísmico danifica gravemente ou destrói o data center.
+É importante na hora de identificar as vulnerabilidades entender usa regra de negocio e seu meio para ter uma ideia do que pode acontecer com sua empresa.
 #### Identificando as Ameaças
-a
+Usar a abordagem de defesa profunda para identificar 
 ## Modulo 2: Defesa do Sistema e da Rede.
 ## Modulo 3: Controle de Acesso.
 ## Modulo 4: Lista de Controle de Acesso.
