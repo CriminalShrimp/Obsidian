@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "Cisco/Defesa de Rede - Cisco.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "Defesa de Rede - Cisco"
             }
           }
         ]
@@ -172,9 +172,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "60dae79d39ebb3c3",
+  "active": "1e80c182f859c816",
   "lastOpenFiles": [
-    "Defesa de Rede - Cisco.md",
+    "Cisco/IMG",
+    "Defesa de Rede - Cisco-20250325063432320.webp",
+    "Cisco/IMG/Defesa de Rede - Cisco-20250325063408532.webp",
+    "Cisco/Defesa de Rede - Cisco.md",
     "Git.md",
     "Linux/CLI.md",
     "Cisco",
