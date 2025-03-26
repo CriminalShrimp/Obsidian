@@ -20,7 +20,7 @@ Assim como na vida os ativos tem um ciclo de vida, o primeiro é a <span style="
 #### Identificando as Vulnerabilidades
 Identificar as possíveis ameaças para cada ambiente fornece uma lista de ataques mais prováveis de ocorrerem. A varias perguntas  que podem ser feitas para descobrir essas vulnerabilidades como: Quem pode explorar as vulnerabilidades? Quais são elas? O que sistemas parecidos sofreram e sofrem de ataques? O que ocorrera quando/se os ativos forem perdidos e as vulnerabilidades do sistema exploradas? 
 Vamos exemplificar usando como exemplo um e-banking 
-![[Defesa de Rede - Cisco-20250325063408532.webp]]
+![[e-banking.webp]]
 A identificação da ameaça para um sistema de banca electrónica incluiria:
 • Compromisso interno do sistema - O atacante usa os servidores de e-banking expostos para invadir um sistema bancário interno.
 • Dados roubados - Um atacante rouba os dados pessoais e financeiros dos clientes bancários do banco de dados do cliente.
@@ -31,7 +31,11 @@ A identificação da ameaça para um sistema de banca electrónica incluiria:
 • Destruição do data center - Um evento cataclísmico danifica gravemente ou destrói o data center.
 É importante na hora de identificar as vulnerabilidades entender usa regra de negocio e seu meio para ter uma ideia do que pode acontecer com sua empresa.
 #### Identificando as Ameaças
-Usar a abordagem de defesa profunda para identificar 
+Usar a abordagem de defesa profunda para identificar ameaças e proteger ativos vulneráveis. Essa abordagem usa várias camadas de segurança, uma analogia muito comum é falar de "segurança cebola" mais popularmente conhecida como <span style="color:rgb(255, 255, 0)">onion security</span>, um ator de ameaça teria que descascar as defesas de uma rede camada por camada de uma maneira semelhante a descascar uma cebola, somente depois de penetrar cada camada, o ator da ameaça alcançaria os dados ou o sistema de destino.
+
+![[security onion.webp]]
+Porem esse conceito vem mudando com o tempo e agora é usado o "alcachofra de segurança" no inglês <span style="color:rgb(255, 255, 0)">security artichoke</span>, onde não se precisa mais ir camadas por camadas para chegar no objetivo e sim ir tirando as "folhas" e obtendo dados/informações para conseguir realizar suas ações maliciosas, por exemplo, é mais fácil para um agente de ameaça comprometer um dispositivo móvel do que comprometer um computador ou servidor interno protegido por camadas de defesa. Cada dispositivo móvel é uma folha, e folha após folha, tudo leva o hacker a mais dados. O coração da alcachofra é onde os dados mais confidenciais são encontrados. Cada folha fornece uma camada de proteção enquanto fornece simultaneamente um caminho para o ataque, nem todas as folhas precisam ser removidas para chegar ao coração da alcachofra.
+![[alcachofra.webp]]
 ## Modulo 2: Defesa do Sistema e da Rede.
 ## Modulo 3: Controle de Acesso.
 ## Modulo 4: Lista de Controle de Acesso.
