@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ferramentas/Ferramentas.md",
+                "file": "Cisco/Defesa de Rede - Cisco.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ferramentas"
+              "title": "Defesa de Rede - Cisco"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ferramentas/Ferramentas.md",
+                "file": "Cisco/Defesa de Rede - Cisco.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Ferramentas"
+              "title": "Links inversos para Defesa de Rede - Cisco"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ferramentas/Ferramentas.md",
+                "file": "Cisco/Defesa de Rede - Cisco.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Ferramentas"
+              "title": "Links de saída para Defesa de Rede - Cisco"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ferramentas/Ferramentas.md",
+                "file": "Cisco/Defesa de Rede - Cisco.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Ferramentas"
+              "title": "Sumário de Defesa de Rede - Cisco"
             }
           }
         ],
@@ -168,19 +168,18 @@
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "github-sync:Sync with Remote": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "github-sync:Sync with Remote": false
     }
   },
   "active": "60dae79d39ebb3c3",
   "lastOpenFiles": [
     "Ferramentas/Git.md",
+    "Cisco/Defesa de Rede - Cisco.md",
     "Ferramentas/Ferramentas.md",
     "Abreviações.md",
     "Ferramentas",
     "Linux/Linux Fundamentals 9.1 RedHat.md",
     "Notas.md",
-    "Cisco/Defesa de Rede - Cisco.md",
     "Wireshark.md",
     "Conceitos/Chaves Públicas e Privadas.md",
     "Cisco/IMG/alcachofra.webp",
