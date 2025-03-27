@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cisco/Defesa de Rede - Cisco.md",
+                "file": "Ferramentas/Ferramentas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Defesa de Rede - Cisco"
+              "title": "Ferramentas"
             }
           }
         ]
@@ -94,17 +94,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sem títuloSem título.md",
+                "file": "Ferramentas/Ferramentas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Sem títuloSem título"
+              "title": "Links inversos para Ferramentas"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Defesa de Rede - Cisco.md",
+                "file": "Ferramentas/Ferramentas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Defesa de Rede - Cisco"
+              "title": "Links de saída para Ferramentas"
             }
           },
           {
@@ -142,17 +142,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sem títuloSem título.md",
+                "file": "Ferramentas/Ferramentas.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Sem títuloSem título"
+              "title": "Sumário de Ferramentas"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -174,32 +174,34 @@
   },
   "active": "60dae79d39ebb3c3",
   "lastOpenFiles": [
-    "Linux/Linux Fundamentals 9.1 RedHat.md",
+    "Ferramentas/Git.md",
+    "Ferramentas/Ferramentas.md",
     "Abreviações.md",
+    "Ferramentas",
+    "Linux/Linux Fundamentals 9.1 RedHat.md",
+    "Notas.md",
     "Cisco/Defesa de Rede - Cisco.md",
+    "Wireshark.md",
+    "Conceitos/Chaves Públicas e Privadas.md",
     "Cisco/IMG/alcachofra.webp",
     "Cisco/IMG/security onion.webp",
     "Defesa de Rede - Cisco-20250326030629648.webp",
     "Cisco/IMG",
     "Defesa de Rede - Cisco-20250325063432320.webp",
     "Cisco/IMG/e-banking.webp",
-    "Git.md",
     "Linux/CLI.md",
     "Cisco",
     "Cisco/Packet Tracer/packet-tracer-logical-and-physical-mode-exploration.pksz",
     "Packet Tracer/Não confirmado 810447.crdownload",
     "Cisco/Packet Tracer",
     "Nova pasta",
-    "Notas.md",
     "Sem títuloSem título.md",
     "Linux/IMG/LoginCLI.webp",
     "Linux/IMG/LoginInterfaceGrafica.webp",
     "Linux/IMG",
     "Linux",
-    "Conceitos/Chaves Públicas e Privadas.md",
     "Conceitos",
     "Arquitetura Computacional/Kernel.md",
-    "Arquitetura Computacional",
     "chave publica e privida[[Chaves Públicas e Privadas.md",
     "Red Hat System Administration.md",
     "Pasted Image 20241029051139_411.png",

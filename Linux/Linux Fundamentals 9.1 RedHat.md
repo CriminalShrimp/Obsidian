@@ -58,9 +58,10 @@ Para mudar uma pasta de lugar basta colocar `mv` pasta e a  pasta de destino **`
 
 E para deletar pastas usamos o **`rm`** e em seguida o nome da pasta, **`rm Pasta`**.
 # Editores de Texto (Vim/Nano)
-
+#Ferramentas 
 Assim  como tudo no Linux temos os editores de texto via interface e via linha de comando, de interface temos o <span style="color:rgb(206, 0, 86)">gedit</span> que tem uma interface bem intuitiva de se mexer, já na linha de comando temos <span style="color:rgb(0, 176, 80)">nano</span> e <span style="color:rgb(0, 176, 80)">vim</span>, digamos que o nano é uma versão mais simplificada e mais fácil que o vim, que é a principal razão para ter esse tópico.
 
+FAZER COMANDOS NANO/VIM
 # Permissões 
 
 Existem níveis de permissão para usuários (UID), grupos (GID), pastas e arquivos. O primeiro usuário criado no sistema recebe o valor de 1000 em seu [[Abreviações#UID = User identifier é uma propriedade numérica que identifica o usuário no sistema|UID]], já os que forem entre 100 a 999 são conhecidos como usuários do sistema e os valores de 0 a 99 são reservados para o Kernel. O [[Abreviações#GID = Group identifier é uma propriedade numera que identifica um grupo de usuários|GID]] funciona de forma similar ao UID, os grupos começam a partir do numero 1000 sendo este criado ao primeiro usuário, é possível que um usuário tenha acesso a vários grupos 

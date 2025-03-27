@@ -1,0 +1,6 @@
+#Firewall #Segurança #Tips #Ferramentas #Redes 
+###### Wireshark = O [WireShark](https://www.wireshark.org/) (anteriormente conhecido como Ethereal) é um programa que analisa o tráfego de rede, e o organiza por protocolos. As funcionalidades do Wireshark são parecidas com o tcpdump mas com uma interface gráfica, com mais informação e com a possibilidade da utilização de filtros.
+
+###### TCPDump =  O comando [tcpdump](https://www.ibm.com/docs/pt-br/aix/7.3?topic=t-tcpdump-command) imprime os cabeçalhos de pacotes em uma interface de rede que combinam com a expressão booleana. Você pode executar o comando com o sinalizador -w para salvar os dados do pacote em um arquivo para análise adicional. 
+
+###### GIT = [Git](https://git-scm.com/) é um software de controle de versão de código aberto e gratuito. Ele permite que vários desenvolvedores trabalhem em um mesmo projeto ao mesmo tempo, sem que as alterações entrem em conflito. Também é usado nesse aplicativo para backup, Para informações a mais pode acessar o arquivo [[Git#📌 Guia de Backup do Obsidian no GitHub|Git]] .
