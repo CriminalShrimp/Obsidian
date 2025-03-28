@@ -6,6 +6,8 @@ Tags: #Linux #Redes #Firewall
 ###### UID =  User identifier é uma propriedade numérica que identifica o usuário no sistema
 ###### GID = Group identifier é uma propriedade numera que identifica um grupo de usuários
 ###### Log  = Abreviação de logfile (arquivo de registro) ou logging (processo de registro de eventos
+###### BYOD = Bring Your Own Device, levar os próprios dispositivos para o trabalho 
+
 ZPF = Zone-Based Policy Firewalls
 
 ACL = Access Control List

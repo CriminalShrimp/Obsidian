@@ -168,15 +168,16 @@
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "60dae79d39ebb3c3",
   "lastOpenFiles": [
-    "Ferramentas/Git.md",
-    "Cisco/Defesa de Rede - Cisco.md",
-    "Ferramentas/Ferramentas.md",
     "Abreviações.md",
+    "Cisco/Defesa de Rede - Cisco.md",
+    "Ferramentas/Git.md",
+    "Ferramentas/Ferramentas.md",
     "Ferramentas",
     "Linux/Linux Fundamentals 9.1 RedHat.md",
     "Notas.md",
