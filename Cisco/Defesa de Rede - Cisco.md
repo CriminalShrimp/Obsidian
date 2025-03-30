@@ -1,4 +1,4 @@
-#Redes #Firewall #Segurança #Ferramentas 
+#Redes #Firewall #Segurança #Ferramentas #RedTeam
 # Modulo 1: Compreendendo a Defesa.
 ## Defesa em profundidade
 Objetivo: Explicar como a estratégia de Defesa de profundidade é usada para proteger as redes.
@@ -49,18 +49,45 @@ As políticas de segurança abrangem diversas diretrizes essenciais como quem po
 Hoje em dia é comum ver empresas com a cultura do [[Abreviações#BYOD = Bring Your Own Device, levar os próprios dispositivos para o trabalho|BYOD]], pois essa positiva traz vários benefícios para empresa como redução de custos com equipamentos para empresa, aumento na produtividade pois os colaboradores se sentem mais confortáveis usando seus dispositivos, porém para aderir essa politica é preciso também preparar o ambiente e funcionários para isso, como usar senhas exclusivas para cada dispositivo e conta, conecte-se apenas a redes confiáveis, mantenha sempre o sistema operacional do dispositivo e outros softwares atualizados, ativar o backup do dispositivo para evitar perda de dados em caso de roubo ou extravio, utilizar serviço de rastreamento de dispositivos que permita localização e apagamento remoto dos dados, utilizar antivírus.
 # Modulo 2 : Defesa do Sistema e da Rede
 ## Segurança Física
-Barreiras físicas dizem respeito a meios de limitar a entrada de indevidos não autorizados ou indevidos a certos locais/áreas, normalmente elas são cerceamentos ou barreiras físicas , áreas de alta segurança geralmente requerem uma “proteção superior”, como arame farpado ou fio de arame farpado. Os guardas superiores atuam como um impedimento adicional e podem atrasar o invasor, causando ferimentos graves.
+Barreiras físicas dizem respeito a meios de limitar a entrada de indevidos não autorizados ou indevidos a certos locais/áreas, normalmente elas são cerceamentos ou barreiras físicas , áreas de alta segurança geralmente requerem uma “proteção superior”, como arame farpado ou fio de arame farpado, cerca elétrica, guardas atuam como um impedimento adicional e podem atrasar o invasor, causando ferimentos graves. Uma das mais comum para autenticação e confirmação de acesso de uma pessoa são as seguranças por biometria, sistemas de autenticação de biometria incluem medições da face, impressão digital, geometria da mão, íris, retina, assinatura e voz. Outra forma de autenticação comum e identificação nas áreas de trabalho é o crachá, que é feito com o auxílio de um leitor de cartão, quanto mais etapas de identificação melhor será a segurança física do local.
 ## Segurança de Aplicações
+Durante a criação de um sistema o software deve ser desenvolvido e atualizado em um ambiente de desenvolvimentos, pois esse é um ambiente seguro para o sistema poder conter falhas de código pois. Depois do o sistema segue para o ambiente de preparo que simula o real ambiente onde o código ira funcionar, neste ambiente os desenvolvedores podem verificar se o código esta sendo executando corretamente e com os padrões de segurança necessário, e também podem realizar de alguns testes.
+Técnicas como ofuscação e camuflagem são usadas para proteger o software contra engenharia reversa. A ofuscação oculta dados originais com caracteres ou informações aleatórias, enquanto a camuflagem substitui dados confidenciais por versões fictícias realistas. A reutilização de código permite economizar tempo e custos ao usar software existente para criar novos programas, mas deve ser feita com cuidado para evitar vulnerabilidades. Os SDKs e bibliotecas de terceiros aceleram o desenvolvimento ao fornecer código pronto para uso, porém, qualquer falha de segurança nesses componentes pode afetar múltiplos aplicativos.
 ## Fortalecimento da Rede 
+Criminosos exploram serviços de rede vulneráveis para ataques, incluindo scanners de porta para identificar acessos desprotegidos. Para mitigar riscos, é essencial fechar portas desnecessárias e proteger serviços como DHCP, DNS, ICMP, RIP e NTP. Adoção de firewalls, monitoramento, atualizações e autenticação são medidas essenciais para garantir a segurança da rede.
+
+**[[Abreviações#DHCP = Dynamic Host Configuration Protocol é um protocolo de rede que atribui automaticamente endereços IP a dispositivos.|DHCP]]**: Pode ser explorado para negar acesso à rede. Medidas de segurança incluem rastreamento de DHCP e proteção do servidor.
+
+**[[Abreviações#DNS = Domain Name System é o que traduz IPs em nomes de domínio.|DNS]]**: Alvo de ataques para redirecionamento de tráfego e negação de acesso. Adoção de [[Abreviações#DNSSEC = Domain Name System Security Extensions é um conjunto de extensões que adiciona segurança ao protocolo DNS.|DNSSEC]] e autenticação entre servidores aumenta a segurança.
+
+**[[Abreviações#ICMP = Internet Control Message Protocol faz parte do protocolo IP e é usado para comunicar informações de nível de rede.|ICMP]]**: Usado para testes de conectividade, mas pode ser explorado para ataques [[Abreviações#DoS = DenialofService é um ataque que visa tornar um serviço ou dispositivo indisponível para os usuário.|DoS]], fazer a filtragem de ICMP reduz riscos.
+
+**[[Abreviações#RIP = Protocolo de Informação de Roteamento permite que roteadores troquem informações sobre rotas em uma rede,|RIP]]**: Protocolo de roteamento vulnerável a ataques que afetam desempenho e disponibilidade. 
+
+[[Abreviações#NTP = Network Time Protocol sincroniza os relógios de computadores em uma rede.|NTP]]: Fundamental para a sincronização de tempo e segurança digital, e também autenticação protege contra manipulações maliciosas.
 ## Blindagem de Rede
+### VLans (ver se coloca em conceitos)
+As VLANs fornecem uma forma de agrupar dispositivos em uma LAN e em switches individuais. VLANs não são iguais a LANs: LANs virtuais são baseadas em conexões lógicas, enquanto LANs são baseadas em conexões físicas. Portas individuais de um switch podem ser atribuídas a uma VLAN específica. Outras portas podem ser usadas para interconectar fisicamente os switches e permitir o tráfego de várias VLANs entre os switches. Essas portas são chamadas Trunks (troncos).Os administradores usam VLANs para segmentar redes com base em fatores como função, equipe ou aplicativo. Os dispositivos em uma VLAN atuam como se estivessem em sua própria rede independente, mesmo que compartilhem uma infraestrutura comum com outras VLANs. Uma VLAN pode separar grupos que têm dados confidenciais do resto da rede, diminuindo as chances de violações de informações confidenciais. Troncos permitem que indivíduos na VLAN do RH estejam conectados fisicamente a vários switches diferentes. As VLANs oferecem uma maneira de limitar o tráfego de transmissão em uma rede comutada. Os hackers podem atacar também a disponibilidade e o desempenho da VLAN. Para proteger a VLAN, monitorar seu desempenho, usar configurações avançadas e instalar regularmente patches e atualizações.
+### DMZ (ver se coloca em conceitos
+Uma zona desmilitarizada (DMZ) é uma pequena rede entre uma rede privada confiável e a Internet.
+Os servidores Web e de correio geralmente são colocados na DMZ para permitir que os usuários acessem uma rede não confiável, como a Internet, sem comprometer a rede interna.
+A maioria das redes tem de duas a quatro zonas de risco: a LAN privada confiável, a DMZ, a Internet e uma extranet.
+Na zona de LAN, o nível de risco é baixo e o nível de confiança é alto. 
+Na zona da extranet, o nível de risco é médio-baixo e o nível de confiança médio-alto.
+Na DMZ, o nível de risco é médio-alto e o nível de confiança é médio-baixo.
+Na zona da Internet, o nível de risco é alto e o nível de confiança é baixo. 
+Tambem o conceito de zero-trust
 ## Resiliência de Cyber Segurança
+O [[Abreviações#WAP = Wi-Fi Protected Access é um padrão de segurança para dispositivos|WAP]] foi a resposta do setor de computadores para enfraquecer a utilização do padrão WEP. A configuração mais comum de WPA é WPA-PSK (Pre-Shared Key). O WPA3 adicionou mais recursos ao WPA2, como a manutenção de algoritmos criptográficos robustos e a melhoria da troca de chaves.
+Dispositivos móveis e sem fio se tornaram o tipo predominante de dispositivos na maioria das redes modernas. Eles oferecem mobilidade e conveniência, mas estão vulneráveis a diversos problemas de segurança digital. Essas vulnerabilidades incluem roubo, invasão e acesso remoto não autorizado, PSK é a sigla para "Pre-Shared Key" (chave pré-compartilhada). É um mecanismo de segurança que permite estabelecer uma conexão segura entre um dispositivo e um ponto de acesso Wi-Fi, [[Snaffing]], ataques [[Man-in-the-Middle]] e DoS.
+A melhor forma de proteger uma rede sem fio é usar autenticação e criptografia. O padrão 801.11, introduziu dois tipos de autenticação, a de sistema aberto onde qualquer dispositivo pode se conectar à rede sem fio que é usado quando segurança não é um preocupação, e a de chave compartilhada que fornecer mecanismos para autenticações e criptografia dos dados trafegados.
 ## Sistema Embarcados
 # Modulo 3: Controle de Acesso.
-## Modulo 4: Lista de Controle de Acesso.
-## Modulo 5: Tecnologias de Firewall.
-## Modulo 6: Firewalls de Politica com base de zona.
-## Modulo 7: Segurança da Nuvem.
-## Modulo 8: Criptografia.
-## Modulo 9: Tecnologias e Protocolos.
-## Modulo 10: Dados de Segurança Do Rede.
-## Modulo 11: Avaliação de Alertas.
+# Modulo 4: Lista de Controle de Acesso.
+# Modulo 5: Tecnologias de Firewall.
+# Modulo 6: Firewalls de Politica com base de zona.
+# Modulo 7: Segurança da Nuvem.
+# Modulo 8: Criptografia.
+# Modulo 9: Tecnologias e Protocolos.
+# Modulo 10: Dados de Segurança Do Rede.
+# Modulo 11: Avaliação de Alertas.
