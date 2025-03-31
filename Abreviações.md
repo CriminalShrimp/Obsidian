@@ -15,7 +15,9 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### NTP = Network Time Protocol sincroniza os relógios de computadores em uma rede. 
 ###### DoS = DenialofService é um ataque que visa tornar um serviço ou dispositivo indisponível para os usuário.
 ###### WAP = Wi-Fi Protected Access é um padrão de segurança para dispositivos
-ZPF = Zone-Based Policy Firewalls
+###### STP = Spanning Tree Protocol previne  loops em uma rede quando os switches se interconectarem por vários caminhos
+###### DMZ = Demilitarized Zone é uma subrede que isola serviços externos de uma organização de uma rede interna mais segura, permitindo acesso controlado à internet.
+###### ZPF = Zone-Based Policy Firewalls refere-se a um sistema que divide a rede em zonas de segurança distintas aplicando políticas de segurança específicas
 
 ACL = Access Control List
 
