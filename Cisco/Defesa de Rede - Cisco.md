@@ -1,5 +1,5 @@
 #Redes #Firewall #Segurança #Ferramentas #RedTeam
-# Modulo 1: Compreendendo a Defesa.
+# Modulo 1: Compreendendo a Defesa
 ## Defesa em profundidade
 Objetivo: Explicar como a estratégia de Defesa de profundidade é usada para proteger as redes.
 
@@ -97,7 +97,7 @@ O [[Abreviações#STP = Spanning Tree Protocol previne loops em uma rede quando 
 Bloquear os caminhos redundantes é fundamental para evitar loops na rede. Os caminhos físicos ainda existirão para fornecer redundância, mas o STP desativa esses caminhos para evitar que ocorram loops. Se um cabo ou switch da rede falhar, o STP recalculará os caminhos e desbloqueará as portas necessárias, para permitir que o caminho redundante se torne ativo.
 ## Sistema Embarcados RESUMIR
 Ao longo da última década, ataques cibernéticos como Stuxnet provaram que um ataque cibernético pode destruir ou interromper infraestruturas essenciais. Para evitar ataques a esses sistemas, separe as redes internas e externas para separar a rede SCADA da LAN da empresa. A Internet das coisas (IoT) é o conjunto de tecnologias que permitem a conexão de vários dispositivos à Internet. A maioria dos dispositivos de IoT se conecta a uma rede por meio de tecnologia sem fio. Os aplicativos de IoT usam RTOS. Essa expansão de dados criou uma nova área de interesse na tecnologia e nos negócios, chamada "Big data". Sistemas integrados capturam, armazenam e acessam dados. Eles são suscetíveis a ataques de tempo, em que os invasores descobrem vulnerabilidades estudando quanto tempo o sistema leva para responder a diferentes entradas. A tecnologia SoC é um módulo de hardware SFF - exemplos de clientes incluem dispositivos como Raspberry Pi e Arduino. Esses dispositivos são computadores de placa única que podem ser implementados usando um FGPA, que é um circuito integrado que pode ser programado ou modificado em campo. Usar um scanner de IoT, como a Shodan, é uma maneira fácil de saber se um dispositivo de automação residencial está vulnerável a ataques. Os dispositivos de IoT se comunicam usando métodos de curto, médio ou longo alcance e incluem celular (4G, 5G), rádio Você precisa de uma conexão com a Internet e um telefone para VoIP. A segurança de VoIP só é confiável se houver uma segurança de rede subjacente. Há várias maneiras de proteger seu serviço de VoIP. Duas dessas medidas são: criptografar pacotes de mensagens de voz para proteger contra a interceptação e usar o SSH para proteger gateways e switches. Dispositivos como marca-passos, bombas de insulina, implantes médicos e desfibriladores são capazes de conectividade sem fio, monitoramento remoto e NFC. Vulnerabilidades nesses dispositivos médicos podem levar a problemas de segurança do paciente, vazamentos de prontuários médicos ou o risco de conceder acesso à rede para criminosos digitais. Os sistemas no veículo produzem e armazenam os dados necessários para a operação do veículo, juntamente com sua manutenção, proteção de segurança e transmissão de contato de emergência. Normalmente, uma interface sem fio se conecta à Internet e a uma interface de diagnóstico integrada. Criptografar toda a comunicação entre controladores e usar um firewall. Uma aeronave tem muitos sistemas de controle integrados, como seu sistema de controle de voo e sistema de comunicação. Os problemas de segurança incluem o uso de credenciais de logon codificadas, protocolos inseguros e backdoors. Os UAVs, mais comumente chamados de drones, têm sido usados em aplicações militares, agrícolas e de cartografia, entre outras. Os drones são muito úteis para fotografia aérea, vigilância e pesquisa. No entanto, os drones são suscetíveis a sequestros, ataques de Wi-Fi, ataques de spoofing de GPS, bloqueios e ataques de autenticação. As empresas usam tecnologias de dissimulação para distrair os invasores das redes de produção. Eles também os usam para aprender os métodos de um invasor e para alertar sobre possíveis ataques que poderiam ser lançados contra a rede. A dissimulação adiciona uma camada falsa à infraestrutura da empresa. Um honeypot é um sistema de isca configurado para imitar um servidor na rede da empresa. Ela é intencionalmente deixada exposta para atrair invasores. Quando um invasor vai atrás do honeypot, suas atividades são registradas e monitoradas para posterior análise. Um Honeynet é uma coleção de honeypots. Um sinkhole DNS impede a resolução de nomes de host para URLs específicas e pode afastar os usuários de recursos mal-intencionados.
-# Modulo 3: Controle de Acesso.
+# Modulo 3: Controle de Acesso
 
 ## Físico
 Controles de acesso físico são barreiras reais implantadas para evitar o contato direto com os sistemas. A meta é prevenir que usuários não autorizados acessem fisicamente as instalações, equipamentos e outros ativos organizacionais. Alguns exemplos seriam cartões de acesso, alarme de intrusão, portas trancadas, detectores de movimento, etc.
@@ -112,7 +112,7 @@ Alguns sistemas fazem isso usando uma lista de controle de acesso, porem não é
 
 Como abordamos anteriormente, a autenticação multifatorial usa pelo menos dois métodos de verificação - como uma senha e algo que você tem, por exemplo, um chaveiro de segurança. Isso pode ser levado um passo adiante adicionando algo que você é, como uma verificação de impressão digital. A autenticação multifator pode reduzir a incidência de roubo de identidade online porque significa que saber uma senha não dará aos cibe criminosos acesso à conta de um usuário. Retirar dinheiro de um caixa eletrônico é um exemplo simples de autenticação multifatorial, pois o usuário deve ter o cartão do banco e saber o PIN antes de o caixa eletrônico distribuir dinheiro.
 
-# Modulo 4: Lista de Controle de Acesso.
+# Modulo 4: Lista de Controle de Acesso
 falando a verdade achei ruim entao so ta o resumo aqui
 As ACLs (Access Control Lists) são listas de regras utilizadas para filtrar pacotes em redes. Elas analisam o tráfego que passa por interfaces de roteadores e aplicam regras sequenciais de permissão ou negação. Existem diferentes tipos de ACLs: as padrão, que utilizam os números de 1 a 99 ou 1300 a 1999, e as estendidas, que vão de 100 a 199 ou de 2000 a 2699. Além disso, há as ACLs nomeadas, que facilitam o gerenciamento, pois permitem identificar seu propósito através do nome atribuído.
 
@@ -125,7 +125,7 @@ Ao configurar ACLs, é essencial seguir diretrizes para garantir sua eficácia. 
 ACLs também são úteis para mitigar ataques, como spoofing de endereços IP e ataques de negação de serviço (DoS). Um método eficaz para proteção é permitir explicitamente apenas determinados tipos de tráfego e bloquear mensagens indesejadas, como **ICMP Echo** e **Redirect**. Se o protocolo SNMP for necessário, seu uso deve ser restringido para evitar exploração de vulnerabilidades.
 
 No contexto do IPv6, as ACLs possuem funcionamento semelhante ao do IPv4, mas sem a existência de ACLs padrão. Todas as ACLs IPv6 devem ser nomeadas e podem filtrar tráfego com base em endereços de origem e destino, bem como em cabeçalhos opcionais e protocolos de camada superior. A segurança no IPv6 também depende da filtragem adequada na borda da rede, protegendo infraestruturas contra ataques furtivos, exploração de hosts dual-stack e técnicas de tunelamento maliciosas.
-# Modulo 5: Tecnologias de Firewall.
+# Modulo 5: Tecnologias de Firewall
 #Redes #Firewall #Redes 
 ## Proteger redes com firewalls
 Um firewall é um sistema ou grupo de sistemas que aplica uma política de controle de acesso na rede, eles são resistente a ataques, reforçam a politica de controle de acesso, exposição de hosts, recursos e aplicações sensíveis a usuários não confiáveis, e bloqueia dados maliciosos.
@@ -150,8 +150,32 @@ Existe diversos tipos de arquitetura como a <span style="color:rgb(255, 255, 0)"
 Para criação desse projeto primeiro o administrador se concentra na separação da rede em zonas. Zonas estabelecem as fronteiras de segurança de uma rede, onde o tráfego é submetido a restrições políticas à medida que cruza para outra região da rede. Por exemplo, a rede pública seria uma zona e a rede interna seria outra zona. Após isso , deve ser projetado a infraestrutura física, levando em conta os requisitos de segurança e disponibilidade ao projetar a infraestrutura física. Isso inclui ditar o número de dispositivos entre zonas mais seguras e menos seguras e determinar dispositivos redundantes. Alguns exemplos que podem ser achados na internet são
 Lan-to-internet, Firewall-with-public-servers-1, Firewall-with-public-servers-2, Firewalls redundantes e os mais complexos.
 
-# Modulo 7: Segurança da Nuvem.
-# Modulo 8: Criptografia.
-# Modulo 9: Tecnologias e Protocolos.
-# Modulo 10: Dados de Segurança Do Rede.
-# Modulo 11: Avaliação de Alertas.
+# Modulo 7: Segurança da Nuvem
+## Virtualização e Computação em Nuvem
+A virtualização retira a quantidade de maquinas e também o custo do espaço que elas ocupam existem vários tipos de virtualização
+### Máquinas virtuais
+Um hypervisor é um programa de software ou hardware que permite executar vários sistemas o
+peracionais independentes em um sistema físico. Ele é um componente chave da virtualização. Existem dois métodos de virtualização:
+
+Virtualização de hardware - O sistema operacional convidado é executado diretamente em uma plataforma de hardware, sob o controle do sistema host. 
+Virtualização hospedada - Um aplicativo em execução na máquina host é usado para criar máquinas virtuais que consistem totalmente em software e não contêm componentes de hardware.
+Os ambientes de máquinas virtuais usam um sistema operacional, portanto, eles precisam ser corrigidos. As máquinas virtuais compartilham hardware e são executadas com privilégios muito altos. 
+### Contêineres
+Ao contrário de uma máquina virtual, um contêiner consiste apenas no aplicativo e suas dependências. Um contêiner usa um mecanismo para emulação de sistema operacional. O Docker é uma plataforma aberta que usa a virtualização no SO para distribuir software em pacotes (contêineres). Você pode facilmente mover contêineres e o aplicativo será executado. Um software especializado como o Kubernetes permite gerenciar seus contêineres.
+### Infraestrutura de Desktops Virtuais
+Os ambientes de desktop do usuário podem ser armazenados remotamente em um servidor usando thin client ou desktops virtuais. Isso torna muito fácil criar, excluir, copiar, arquivar ou baixar configurações com rapidez em uma rede. A virtualização de desktop requer alta disponibilidade e capacidade de armazenamento.
+## Tecnologia na Nuvem
+As tecnologias baseadas em nuvem permitem que empresas acessem computadores, armazenamento, software e servidores pela Internet. Ele move o componente de tecnologia da organização para o provedor de nuvem.
+[[Abreviações#SaaS - Software as a Service modelo de computação em nuvem que permite o uso de aplicativos por meio da internet.|SaaS]] - Permite que os usuários acessem software de aplicativos e bancos de dados. Os provedores de nuvem gerenciam a infraestrutura enquanto os usuários armazenam dados nos servidores do provedor de nuvem.
+[[Abreviações#PaaS - Platform as a Serviço modelo de computação em nuvem que permite criar, implantar, executar e gerir aplicações.|PaaS]] - Permite que uma organização acesse remotamente as ferramentas e serviços de desenvolvimento usados para entregar tais aplicativos, por assinatura.
+[[Abreviações#IaaS - Infrastructure as a Service modelo de computação em nuvem que fornece recursos conforme a demanda e o uso.|IaaS]] - Fornece recursos de computação virtualizados pela Internet. O provedor hospeda o hardware, software, servidores e componentes de armazenamento, e o usuário paga por uma assinatura desses recursos.
+Esse tipo de serviço envolve os dois lados cliente e provedor, assim ambos tem uma responsabilidade compartilhada como pode ver a seguir
+![[Tabela Cliente Nuvem.webp]]
+## Segurança de dados na nuvem
+Em relação aos dados do cliente eles podem ser protegidos de formas diferentes,  <span style="color:rgb(255, 255, 0)">Dados em Repouso</span> (*date at rest*) que é quando nenhum usuário ou processo os acessa, solicita ou altera, esses podem ser armazenados em dispositivos locais, como um disco rígido em um computador ou uma rede centralizada, como um servidor da empresa. Na computação em nuvem, os dados inativos podem ser armazenados em uma nuvem e podem ser acessados em qualquer computador conectado à Internet, geralmente com assinatura.  <span style="color:rgb(255, 255, 0)">Dados em Transito</span> (*data in transit*) que refere-se aos que não estão inativos nem estão sendo processados. A transmissão pode ocorrer em um único servidor ao longo das linhas de barramento da placa-mãe, entre dispositivos em uma única rede ou entre redes e, possivelmente, através da Internet. E por fim os <span style="color:rgb(255, 255, 0)">Dados em Processo</span> (*date in process*) que se refere aos dados durante a entrada inicial, a modificação, o cálculo ou a saída. Todos esses dados devem ser protegidos via [[Criptografia]] e/ou [[Hashing]].
+
+# Modulo 8: Criptografia
+Acessar o arquivo [[Criptografia]] para ver sobre o conteúdo.
+# Modulo 9: Tecnologias e Protocolos
+# Modulo 10: Dados de Segurança Do Rede
+# Modulo 11: Avaliação de Alertas

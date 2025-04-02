@@ -18,7 +18,9 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### STP = Spanning Tree Protocol previne  loops em uma rede quando os switches se interconectarem por vários caminhos
 ###### DMZ = Demilitarized Zone é uma subrede que isola serviços externos de uma organização de uma rede interna mais segura, permitindo acesso controlado à internet.
 ###### ZPF = Zone-Based Policy Firewalls refere-se a um sistema que divide a rede em zonas de segurança distintas aplicando políticas de segurança específicas
-
+###### SaaS - Software as a Service modelo de computação em nuvem que permite o uso de aplicativos por meio da internet.
+###### PaaS - Platform as a Serviço modelo de computação em nuvem que permite criar, implantar, executar e gerir aplicações. 
+###### IaaS - Infrastructure as a Service modelo de computação em nuvem que fornece recursos conforme a demanda e o uso.
 ACL = Access Control List
 
 IMAP = Internet Message Access Protocol
