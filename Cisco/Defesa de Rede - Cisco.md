@@ -172,10 +172,39 @@ As tecnologias baseadas em nuvem permitem que empresas acessem computadores, arm
 Esse tipo de serviço envolve os dois lados cliente e provedor, assim ambos tem uma responsabilidade compartilhada como pode ver a seguir
 ![[Tabela Cliente Nuvem.webp]]
 ## Segurança de dados na nuvem
-Em relação aos dados do cliente eles podem ser protegidos de formas diferentes,  <span style="color:rgb(255, 255, 0)">Dados em Repouso</span> (*date at rest*) que é quando nenhum usuário ou processo os acessa, solicita ou altera, esses podem ser armazenados em dispositivos locais, como um disco rígido em um computador ou uma rede centralizada, como um servidor da empresa. Na computação em nuvem, os dados inativos podem ser armazenados em uma nuvem e podem ser acessados em qualquer computador conectado à Internet, geralmente com assinatura.  <span style="color:rgb(255, 255, 0)">Dados em Transito</span> (*data in transit*) que refere-se aos que não estão inativos nem estão sendo processados. A transmissão pode ocorrer em um único servidor ao longo das linhas de barramento da placa-mãe, entre dispositivos em uma única rede ou entre redes e, possivelmente, através da Internet. E por fim os <span style="color:rgb(255, 255, 0)">Dados em Processo</span> (*date in process*) que se refere aos dados durante a entrada inicial, a modificação, o cálculo ou a saída. Todos esses dados devem ser protegidos via [[Criptografia]] e/ou [[Hashing]].
+Em relação aos dados do cliente eles podem ser protegidos de formas diferentes,  <span style="color:rgb(255, 255, 0)">Dados em Repouso</span> (*date at rest*) que é quando nenhum usuário ou processo os acessa, solicita ou altera, esses podem ser armazenados em dispositivos locais, como um disco rígido em um computador ou uma rede centralizada, como um servidor da empresa. Na computação em nuvem, os dados inativos podem ser armazenados em uma nuvem e podem ser acessados em qualquer computador conectado à Internet, geralmente com assinatura.  <span style="color:rgb(255, 255, 0)">Dados em Transito</span> (*data in transit*) que refere-se aos que não estão inativos nem estão sendo processados. A transmissão pode ocorrer em um único servidor ao longo das linhas de barramento da placa-mãe, entre dispositivos em uma única rede ou entre redes e, possivelmente, através da Internet. E por fim os <span style="color:rgb(255, 255, 0)">Dados em Processo</span> (*date in process*) que se refere aos dados durante a entrada inicial, a modificação, o cálculo ou a saída. Todos esses dados devem ser protegidos via [[Criptografia]] e/ou [[Hash]].
 
 # Modulo 8: Criptografia
 Acessar o arquivo [[Criptografia]] para ver sobre o conteúdo.
+
+## Ofuscação de Dados
+O mascaramento de dados protege informações sensíveis substituindo-as por versões não confidenciais que mantêm a aparência e funcionalidade dos dados originais. Essa tecnologia permite o uso seguro de dados em testes e análises sem comprometer informações críticas.
+
+Os dados podem ser mascarados dinamicamente quando uma solicitação for considerada arriscada ou em ambientes não produtivos para maior segurança. Entre as principais técnicas estão: **substituição**, que troca os dados por valores realistas, **em baralhamento**, que reorganiza os valores dentro da mesma coluna para preservar a coerência, e **anulação**, que aplica valores nulos para ocultar completamente as informações.
+### Esteganografia
+A estenografia esconde dados (a mensagem) em outro arquivo, como um gráfico, áudio ou outro arquivo de texto.
+A vantagem da estenografia em relação à criptografia é que a mensagem secreta não atrai atenção especial. Ao visualizar o arquivo de forma eletrônica ou impressa, ninguém saberá que uma imagem, na realidade, contém uma mensagem secreta.
+Existem vários componentes envolvidos na ocultação de dados. Primeiro, existem os dados integrados que compõem a mensagem secreta. O texto de capa (ou imagem de capa ou áudio de capa) oculta os dados integrados, produzindo o estego-texto (ou estego-imagem ou estego-áudio). Uma estego-chave (stego-key) controla o processo de ocultação.
+
+A abordagem usada para integrar dados em uma imagem de capa é o uso de <span style="color:rgb(255, 255, 0)">Bits Menos Significativos</span> (LSB). Esse método usa os bits de cada pixel na imagem.
+- Um pixel é a unidade básica de cor programável em uma imagem de computador.
+- A cor específica de um pixel é uma mistura de três cores - vermelho, verde e azul (RGB).
+- Três bytes de dados especificam a cor de um pixel (um byte para cada cor). Um sistema de cores de 24 bits usa todos os três bytes.
+- O LSB usa um pouco de cada um dos componentes das cores vermelho, verde e azul. Cada pixel pode armazenar 3 bits.
+## Comunicações Seguras
+As organizações devem fornecer suporte para proteger os dados à medida que eles viajam pelos links. Isso pode incluir tráfego interno, mas é mais importante proteger os dados que viajam para fora da organização para as filiais, locais de trabalho remoto, e parceiros.
+
+Estes são os quatro elementos das comunicações seguras:
+
+- **Integridade de dados** - Garante que a mensagem não foi alterada. Quaisquer alterações nos dados em trânsito serão detectadas. A integridade é garantida pela implementação de um dos algoritmos Secure Hash (SHA-2 ou SHA-3). O algoritmo de resumo de mensagens MD5 ainda está amplamente em uso, no entanto, é inerentemente inseguro e cria vulnerabilidades em uma rede. O uso de MD5 deve ser evitado.
+- **Autenticação de origem** - Garante que a mensagem não é uma falsificação e realmente vem de quem é declarada. Muitas redes modernas garantem autenticação com algoritmos como código de autenticação de mensagem baseado em hash (HMAC).
+- **Confidencialidade dos dados** - Garante que apenas usuários autorizados possam ler a mensagem. Se a mensagem for interceptada, ela não poderá ser decifrada dentro de um razoável período de tempo. A confidencialidade dos dados é implementada usando algoritmos de criptografia simétrica e assimétrica.
+- **Não Repúdio de Dados** - Garante que o remetente não pode repudiar ou refutar a validade de uma mensagem enviada. O não repúdio depende do fato de que apenas o remetente possui as características ou a assinatura exclusivas de como essa mensagem é tratada.
+
+A criptografia pode ser usada em praticamente qualquer lugar em que haja comunicação de dados. De fato, a tendência é que toda comunicação seja criptografada.
+## Hash
+
+Olhar o arquivo [[Hash]] para ver  sobre.
 # Modulo 9: Tecnologias e Protocolos
 # Modulo 10: Dados de Segurança Do Rede
 # Modulo 11: Avaliação de Alertas

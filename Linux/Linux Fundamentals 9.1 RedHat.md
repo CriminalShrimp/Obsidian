@@ -2,7 +2,7 @@ Tags: #CLI #Linux
 # Introdução
 Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel#^b8a742|Kernel]] Linux, essas distribuições são de código aberto, o que significa que são disponibilizadas gratuitamente para todos e além disso tem os requisitos para rodar são mínimos. Dentre as distros ( uma abreviação de Distributions) seria <span style="color:rgb(161, 79, 140)">CentOS</span>, <span style="color:rgb(65, 105, 255)">Fedora</span>, <span style="color:rgb(255, 165, 0)">Ubuntu</span> e <span style="color:rgb(206, 0, 86)">Debian</span>. Algumas dessas distros podem possuir interface gráfica, porém todas suas funções são feitas pela [[Abreviações#CLI = Command Line Interface é onde são realizados os comandos|command line interface]] mais conhecida como [[CLI]].
  ![[LoginInterfaceGrafica.webp| center]]
-*<p style="text-align:center;"> Aqui por exemplo é um login feito via interface gráfica</p>
+<p style="text-align:center;"> Aqui por exemplo é um login feito via interface gráfica</p>
 
 ![[LoginCLI.webp| center]]
 *<p style="text-align:center;"> Já aqui é um login via CLI</p>
