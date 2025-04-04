@@ -72,3 +72,14 @@ Conforme mostrado na figura, o dispositivo de envio insere dados (como o pagamen
 
 ### Verificação valor HMAC
 Na figura, o dispositivo receptor remove o Digest da mensagem e usa a mensagem de texto sem formatação com sua chave secreta como entrada na mesma função de hash. Se o Digest calculado pelo dispositivo receptor for igual ao resumo enviado, a mensagem não foi alterada. Adicionalmente, a origem da mensagem é autenticada porque apenas o remetente possui uma cópia da chave secreta compartilhada. A função HMAC garantiu a autenticidade da mensagem.![[Verificalçao HMAC.webp|center]]
+## Usabilidade Hash
+Os algoritmos hash transformam qualquer quantidade de dados em um hash digital ou impressão digital de tamanho fixo. Ninguém pode reverter um hash digital para descobrir a entrada original. Se a entrada mudar completamente, o resultado será um hash diferente. Isso funciona para proteger as senhas. Um sistema precisa armazenar uma senha de modo a protegê-la, mas que ainda possa verificar se a senha do usuário está correta. Para decifrar um hash, um invasor deve adivinhar a senha. O ataque de dicionário e o ataque de força bruta são os dois principais ataques usados para adivinhar senhas.![[hash senha.webp|center]]
+# SALT
+O salting torna o hash de senhas mais seguro.Se dois usuários têm a mesma senha, eles também terão os mesmos hashes de senha. Um SALT, que é uma cadeia de caracteres aleatória, é uma entrada adicional à senha antes do hash. Isso cria um resultado de hash diferente para as duas senhas, conforme mostrado na figura. Um banco de dados armazena o hash e o SALT. Na figura, a mesma senha gera um hash diferente porque o salt de cada caso é diferente. O salt não precisa ser confidencial porque é um número aleatório.![[SALT.webp|center]]
+Um Gerador Numérico Pseudo Randômico de Criptografia Segura "Cryptographically Secure Pseudo-Random Number Generator" (CSPRNG) é a melhor opção para gerar o salt. CSPRNGs geram um número aleatório que tem um alto nível de aleatoriedade e é completamente imprevisível, portanto, é criptograficamente confiável. As recomendações a seguir ajudarão a garantir a implementação bem-sucedida da salt:
+- O salt deve ser exclusivo para cada senha de usuário.
+- Nunca reutilize um salt.
+- O tamanho do sal deve corresponder ao tamanho da saída da função hash.
+- Sempre execute o hash no servidor em um aplicativo da Web.
+
+O uso de uma **técnica chamada alongamento (key stretching)** de chave também ajudará a proteger contra ataques. O alongamento de chaves faz com que as tentativas de descobrir senhas trabalhem muito lentamente. Isso impede o hardware de ponta que pode calcular bilhões de hashes por segundo menos eficazes.

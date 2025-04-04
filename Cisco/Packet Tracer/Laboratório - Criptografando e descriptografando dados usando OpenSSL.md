@@ -144,22 +144,5 @@ c. Quando o OpenSSL terminar de descriptografar o arquivo **message.enc** , e
 
 A carta foi descriptografada corretamente?
 
-Área de Resposta
-
-Mostrar resposta
-
 O comando usado para descriptografar também contém uma opção. Você pode explicar?
 
-Área de Resposta
-
-Mostrar resposta
-
-Fim do documento
-
-Mostrar todas as respostasLimpar minhas respostas
-
-  
-
----
-
-© 2017 - 2022 Cisco and/or its affiliates. All rights reserved. Cisco Public

@@ -249,12 +249,3 @@ Mostrar resposta
 
 Mostrar resposta
 
-Fim do documento
-
-Mostrar todas as respostasLimpar minhas respostas
-
-  
-
----
-
-© 2017 - 2022 Cisco and/or its affiliates. All rights reserved. Cisco Public

@@ -130,13 +130,3 @@ Verifique o início de uma sessão EXEC do usuário usando o servidor RADIUS AAA
 ### Etapa 7:Verifique os resultados.
 
 O percentual de conclusão deve ser 100%. Clique em **Check Results** para ver o feedback e a verificação de quais componentes necessários foram concluídos.
-
-Veja os resultados
-
-Fim do documento
-
-  
-
----
-
-© 2017 - 2022 Cisco and/or its affiliates. All rights reserved. Cisco Public

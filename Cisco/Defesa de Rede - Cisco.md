@@ -204,7 +204,222 @@ Estes são os quatro elementos das comunicações seguras:
 A criptografia pode ser usada em praticamente qualquer lugar em que haja comunicação de dados. De fato, a tendência é que toda comunicação seja criptografada.
 ## Hash
 
-Olhar o arquivo [[Hash]] para ver  sobre.
+Olhar o arquivo [[Hash]] para ver sobre.
 # Modulo 9: Tecnologias e Protocolos
+## Monitorando protocolos comuns
+### Syslog
+Diversos protocolos utilizados em redes possuem características que os tornam fundamentais para o monitoramento de segurança. Entre eles, o **syslog** e o **Network Time Protocol (NTP)** desempenham um papel essencial no trabalho dos analistas de segurança cibernética.
+O **syslog** é um padrão amplamente adotado para registrar eventos de dispositivos de rede e endpoints. Ele permite a transmissão, armazenamento e análise de mensagens de forma neutra e padronizada. Graças a essa flexibilidade, dispositivos de diferentes fabricantes podem enviar logs para servidores centrais que executam um daemon syslog. Essa centralização facilita o monitoramento de segurança, tornando-o mais eficiente. Normalmente, os servidores syslog escutam na porta **UDP 514**.
+
+Devido à sua importância na segurança, os servidores syslog são alvos potenciais de ataques cibernéticos. Atores mal-intencionados podem explorar esses servidores para ocultar atividades suspeitas, como a **exfiltração de dados**, que muitas vezes ocorre de maneira lenta e discreta. Os invasores podem tentar interromper a transferência de logs, corromper ou destruir dados e comprometer o software responsável pelo envio das mensagens.
+
+Para mitigar essas ameaças, foi desenvolvida a **próxima geração do syslog**, conhecida como **syslog-ng**. Essa versão aprimorada oferece recursos adicionais que aumentam a segurança e a integridade dos registros, dificultando ataques e manipulações maliciosas.
+![[Syslog.webp|center]]
+### NTP
+As mensagens do Syslog geralmente incluem carimbos de data e hora, permitindo a organização cronológica de registros provenientes de diferentes fontes. Isso proporciona uma visão clara dos processos de comunicação da rede. Como esses registros podem vir de diversos dispositivos, é essencial que todos compartilhem um relógio sincronizado. Para isso, os dispositivos podem utilizar o **Network Time Protocol (NTP)**, que emprega uma hierarquia de fontes de tempo autoritativas para distribuir informações temporais na rede. Dessa forma, mensagens de dispositivos sincronizados podem ser enviadas para o servidor Syslog com precisão. O NTP opera na porta **UDP 123**.
+Os carimbos de data e hora são fundamentais para a detecção de ameaças, pois permitem rastrear eventos registrados em vários dispositivos ao longo do caminho até o sistema de destino. Atores maliciosos podem tentar comprometer a infraestrutura do **NTP** para manipular informações de tempo, dificultando a correlação de eventos e ocultando rastros de atividades maliciosas. Além disso, criminosos cibernéticos já exploraram vulnerabilidades em clientes e servidores **NTP** para lançar ataques **DDoS**. Embora esses ataques não corrompam necessariamente os dados de monitoramento de segurança, podem afetar a disponibilidade da rede.
+![[NTP.webp|center]]
+### DNS
+O **Serviço de Nome de Domínio (DNS)** é amplamente utilizado diariamente, mas muitas organizações adotam políticas de segurança menos rigorosas contra ameaças baseadas em DNS em comparação com outras explorações cibernéticas. Cientes dessa vulnerabilidade, invasores frequentemente encapsulam diferentes protocolos de rede dentro do **DNS** para contornar dispositivos de segurança. Atualmente, o DNS é um vetor comum para diversos tipos de malware, sendo utilizado para comunicação com **servidores de comando e controle (CNC)** e para exfiltração de dados, mascarando essas transmissões como consultas DNS legítimas. Técnicas de codificação, como **Base64, binário de 8 bits e hexadecimal**, são empregadas para ocultar os dados e driblar medidas básicas de prevenção de perda de dados (**DLP**).
+
+Um exemplo dessa técnica envolve o malware codificando informações roubadas na parte do subdomínio de uma consulta DNS direcionada a um domínio controlado pelo invasor. Por exemplo, uma solicitação para **"long-string-of-exfiltrated-data.example.com"** seria enviada ao servidor de nomes de **example.com**, permitindo que o atacante extraísse os dados e retornasse uma resposta codificada ao malware. Com isso, o invasor poderia recuperar e reconstruir informações sensíveis, como um banco de dados de credenciais de usuários e senhas.
+
+Uma característica marcante desse tipo de ataque é que as consultas DNS utilizadas são significativamente mais longas do que o normal. **Analistas cibernéticos** podem modelar a distribuição do tamanho dos subdomínios para definir um padrão de comportamento esperado e, assim, detectar anomalias. Por exemplo, a consulta **"AW4GCGXHy2UGDG8GCHJVDGVJDC.example.com"** geraria suspeitas se um host interno da rede começasse a enviar múltiplas requisições desse tipo.
+
+Consultas DNS com nomes de domínio gerados aleatoriamente ou subdomínios anormalmente longos devem ser consideradas suspeitas, principalmente se houver um aumento repentino dessas solicitações na rede. Logs de proxy **DNS** podem ser analisados para identificar essas atividades maliciosas. Alternativamente, serviços como o **Cisco Umbrella** podem ser empregados para bloquear consultas a servidores CNC suspeitos e domínios associados a ameaças cibernéticas.
+![[DNS.webp|center]]
+### HTTP/HTTPS
+O **Hypertext Transfer Protocol (HTTP)** é a espinha dorsal da World Wide Web, mas todas as informações transmitidas por ele viajam em **texto simples**, sem qualquer proteção contra interceptação ou alteração por agentes mal-intencionados. Essa vulnerabilidade representa um risco significativo para a privacidade, a identidade e a segurança das informações, tornando todas as atividades de navegação potencialmente expostas a ameaças.
+
+Uma exploração comum no HTTP é a **injeção de iFrame (quadro inline)**. Muitas ameaças baseadas na web envolvem scripts maliciosos inseridos em servidores comprometidos, que redirecionam os navegadores para sites infectados por meio de **iFrames ocultos**. Nesse tipo de ataque, um invasor compromete um servidor legítimo e insere um código malicioso que cria um iFrame invisível em uma página popular. Quando a página é carregada, o iFrame baixa e executa **malware**, frequentemente hospedado em um URL diferente do site original. Para mitigar esse tipo de ataque, **soluções de segurança de rede**, como a **filtragem Cisco Web Reputation**, podem identificar e bloquear tentativas de carregamento de conteúdo suspeito provenientes de fontes não confiáveis, mesmo quando essas solicitações são feitas por meio de um iFrame oculto.
+![[Exploração de injeção iFrame de HTTP.webp]]
+Para lidar com a alteração ou interceptação de dados confidenciais, muitas organizações comerciais adotaram HTTPS ou implementaram políticas somente HTTPS para proteger os visitantes de seus sites e serviços.
+
+HTTPS adiciona uma camada de criptografia ao protocolo HTTP usando Secure Socket Layer (SSL), como mostrado na figura. Isso torna os dados HTTP ilegíveis, pois deixam o computador de origem até chegar ao servidor. Observe que HTTPS não é um mecanismo para a segurança do servidor Web. Ele só protege o tráfego de protocolo HTTP enquanto está em trânsito.
+![[Diagrama de protocolo HTTPS.webp|center]]
+Infelizmente, o tráfego HTTPS criptografado complica o monitoramento de segurança de rede. Alguns dispositivos de segurança incluem descriptografia e inspeção SSL; no entanto, isso pode apresentar problemas de processamento e privacidade. Além disso, o HTTPS adiciona complexidade às capturas de pacotes devido às mensagens adicionais envolvidas no estabelecimento da conexão criptografada. Esse processo é resumido na figura e representa sobrecarga adicional sobre HTTP.
+![[Transações HTTPS.webp|center]]
+### Email
+Protocolos de e-mail como SMTP, POP3 e IMAP podem ser usados por atores de ameaças para espalhar malware, exfiltrar dados ou fornecer canais para servidores CNC de malware, como mostrado na figura.
+
+SMTP envia dados de um host para um servidor de email e entre servidores de email. Como DNS e HTTP, é um protocolo comum para ver sair da rede. Como há muito tráfego SMTP, ele nem sempre é monitorado. No entanto, o SMTP foi usado no passado por malware para exfiltrar dados da rede. No 2014 hack da Sony Pictures, uma das explorações usou SMTP para exfiltrar detalhes do usuário de hosts comprometidos para servidores CNC. Essas informações podem ter sido usadas para ajudar a desenvolver explorações de recursos protegidos na rede Sony Pictures. O monitoramento de segurança pode revelar esse tipo de tráfego com base nos recursos da mensagem de email.
+
+IMAP e POP3 são usados para baixar mensagens de email de um servidor de email para o computador host. Por esse motivo, eles são os protocolos de aplicativos que são responsáveis por trazer malware para o host. O monitoramento de segurança pode identificar quando um anexo de malware entrou na rede e qual host ele infectou pela primeira vez. A análise retrospectiva pode então rastrear o comportamento do malware a partir desse ponto em diante. Desta forma, o comportamento do malware pode ser melhor compreendido e a ameaça identificada. As ferramentas de monitoramento de segurança também podem permitir a recuperação de anexos de arquivos infectados para envio a caixas de proteção de malware para análise.
+![[Ameaças de protocolo de email.webp]]
+### ICMP
+ICMP tem muitos usos legítimos, no entanto, a funcionalidade ICMP também tem sido usada para criar vários tipos de explorações. O ICMP pode ser usado para identificar hosts em uma rede, a estrutura de uma rede e determinar os sistemas operacionais em uso na rede. Ele também pode ser usado como um veículo para vários tipos de ataques DoS.
+
+ICMP também pode ser usado para exfiltração de dados. Devido à preocupação de que o ICMP possa ser usado para vigiar ou negar o serviço de fora da rede, o tráfego ICMP de dentro da rede às vezes é ignorado. No entanto, algumas variedades de malware usam pacotes ICMP criados para transferir arquivos de hosts infectados para agentes ameaçadores usando esse método, conhecido como tunelamento ICMP.
+**Observação:** um ou todos os sites disponíveis na pesquisa podem estar bloqueados pelo firewall da sua instituição.
+Existem várias ferramentas para a criação de túneis. Procure na internet por Ping Tunnel para explorar uma dessas ferramentas.
+## Tecnologias de segurança
+### ACL
+Muitas tecnologias e protocolos podem ter impacto no monitoramento de segurança. Listas de Controle de Acesso (ACLs) estão entre essas tecnologias. As ACLs podem dar uma falsa sensação de segurança se forem excessivamente confiadas. As ACLs e a filtragem de pacotes em geral são tecnologias que contribuem para um conjunto em evolução de proteções de segurança de rede.
+
+A figura ilustra o uso de ACLs para permitir apenas tipos específicos de tráfego ICMP (Internet Control Message Protocol). O servidor em 192.168.1.10 faz parte da rede interna e tem permissão para enviar solicitações de ping para o host externo em 209.165.201.3. O tráfego ICMP de retorno do host externo é permitido se for uma resposta ICMP, extinção de origem (informa a origem para reduzir o ritmo do tráfego) ou qualquer mensagem ICMP inacessível. Todos os outros tipos de tráfego ICMP são negados. Por exemplo, o host externo não pode iniciar uma solicitação de ping para o host interno. A ACL de saída está permitindo mensagens ICMP que relatam vários problemas. Isso permitirá túneis ICMP e exfiltração de dados.
+
+Os invasores podem determinar quais endereços IP, protocolos e portas são permitidos pelas ACLs. Isso pode ser feito por varredura de portas, testes de penetração ou através de outras formas de reconhecimento. Os atacantes podem criar pacotes que usam endereços IP de origem falsificados. Os aplicativos podem estabelecer conexões em portas arbitrárias. Outros recursos do tráfego de protocolo também podem ser manipulados, como o sinalizador estabelecido em segmentos TCP. As regras não podem ser antecipadas e configuradas para todas as técnicas de manipulação de pacotes emergentes.
+
+Para detectar e reagir à manipulação de pacotes, comportamentos mais sofisticados e medidas baseadas em contexto precisam ser tomadas. Os firewalls de próxima geração da Cisco, o AMP (Advanced Malware Protection) e os appliances de conteúdo de e-mail e Web são capazes de resolver as deficiências das medidas de segurança baseadas em regras.
+![[Atenuante o abuso de ICMP.webp|center]]
+### NAT/PAT
+Conversão de Endereços de Rede (NAT) e Tradução de Endereço de Porta (PAT) podem complicar o monitoramento de segurança. Vários endereços IP são mapeados para um ou mais endereços públicos visíveis na Internet, ocultando os endereços IP individuais que estão dentro da rede (endereços internos).
+
+A figura ilustra a relação entre endereços internos e externos que são usados como endereços de origem (SA) e endereços de destino (DA). Esses endereços internos e externos estão em uma rede que está usando NAT para se comunicar com um destino na Internet. Se o PAT estiver em vigor e todos os endereços IP que saem da rede usarem o endereço global 209.165.200.226 interno para tráfego na Internet, pode ser difícil registrar o dispositivo interno específico que está solicitando e recebendo o tráfego quando ele entra na rede.
+
+Esse problema pode ser especialmente relevante com dados NetFlow. Os fluxos de NetFlow são unidirecionais e são definidos pelos endereços e portas que eles compartilham. O NAT basicamente quebrará um fluxo que passa por um gateway NAT, tornando as informações de fluxo além desse ponto indisponíveis. A Cisco oferece produtos de segurança que irão “costurar” fluir juntos mesmo que os endereços IP tenham sido substituídos pelo NAT.
+O NetFlow é discutido com mais detalhes posteriormente no módulo.
+![[Network Address Translation.webp|center]]
+### peer-2-peer (P2P)
+Na rede ponto a ponto (P2P), mostrada na figura, os hosts podem operar em funções de cliente e servidor. Existem três tipos de aplicativos P2P: compartilhamento de arquivos, compartilhamento de processadores e mensagens instantâneas. No compartilhamento de arquivos P2P, os arquivos em uma máquina participante são compartilhados com membros da rede P2P. Exemplos disso são os outrora populares Napster e Gnutella. Bitcoin é uma operação P2P que envolve o compartilhamento de um banco de dados distribuído, ou razão, que registra saldos e transações Bitcoin. BitTorrent é uma rede de compartilhamento de arquivos P2P.
+Sempre que os usuários desconhecidos recebem acesso aos recursos de rede, a segurança é uma preocupação. Aplicativos P2P de compartilhamento de arquivos não devem ser permitidos em redes corporativas. A atividade da rede P2P pode contornar as proteções de firewall e é um vetor comum para a propagação de malware. P2P é inerentemente dinâmico. Ele pode operar conectando-se a vários endereços IP de destino e também pode usar numeração dinâmica de portas. Arquivos compartilhados são frequentemente infectados com malware, e os atores de ameaças podem posicionar seu malware em clientes P2P para distribuição a outros usuários.
+As redes P2P de compartilhamento de processadores doam ciclos de processador para tarefas computacionais distribuídas. Pesquisa de câncer, pesquisa de extraterrestres, e pesquisa científica usam ciclos de processador doados para distribuir tarefas computacionais.
+
+Mensagens instantâneas (IM) também é considerado um aplicativo P2P. IM tem valor legítimo dentro de organizações que têm equipes de projeto distribuídas geograficamente. Nesse caso, aplicativos de IM especializados estão disponíveis, como a plataforma Webex Teams, que são mais seguras do que as mensagens instantâneas que usam servidores públicos.
+![[p2p.webp|center]]
+#### TOR
+Tor é uma plataforma de software e rede de hosts P2P que funcionam como roteadores de internet na rede Tor. A rede Tor permite que os usuários naveguem na internet anonimamente. Os usuários acessam a rede Tor usando um navegador especial. Quando uma sessão de navegação é iniciada, o navegador constrói um caminho de ponta a ponta em camadas na rede do servidor Tor que é criptografado, como mostrado na figura. Cada camada criptografada é “removida” como as camadas de uma cebola (portanto, “onion routing”) à medida que o tráfego atravessa um retransmissor do Tor. As camadas contêm informações criptografadas do próximo salto que só podem ser lidas pelo roteador que precisa ler as informações. Dessa forma, nenhum dispositivo único conhece todo o caminho para o destino e as informações de roteamento só podem ser lidas pelo dispositivo que as requer. Finalmente, no final do caminho do Tor, o tráfego atinge seu destino na internet. Quando o tráfego é retornado à origem, um caminho criptografado em camadas é construído novamente.
+
+Tor apresenta uma série de desafios aos analistas de segurança cibernética. Primeiro, o Tor é amplamente utilizado por organizações criminosas na “Dark Net”. Além disso, Tor tem sido usado como um canal de comunicação para malware CNC. Como o endereço IP de destino do tráfego Tor é ofuscado pela criptografia, com apenas o nó Tor de próximo salto conhecido, o tráfego Tor evita listas negras configuradas em dispositivos de segurança.
+![[TOR.webp|center]]
+## Balanceador de Carga
+O balanceamento de carga envolve a distribuição do tráfego entre dispositivos ou caminhos de rede para evitar recursos de rede sobrecarregados com muito tráfego. Se existirem recursos redundantes, um algoritmo ou dispositivo de balanceamento de carga funcionará para distribuir o tráfego entre esses recursos, conforme mostrado na figura.
+
+Uma maneira de fazer isso na internet é através de várias técnicas que usam DNS para enviar tráfego para recursos que têm o mesmo nome de domínio, mas vários endereços IP. Em alguns casos, a distribuição pode ser para servidores que são distribuídos geograficamente. Isso pode resultar em uma única transação de Internet sendo representada por vários endereços IP nos pacotes de entrada. Isso pode fazer com que recursos suspeitos apareçam em capturas de pacotes. Além disso, alguns dispositivos do gerenciador de balanceamento de carga (LBM) usam testes para testar o desempenho de diferentes caminhos e a integridade de diferentes dispositivos. Por exemplo, um LBM pode enviar testes para os diferentes servidores para os quais ele está balanceando o tráfego de carga, a fim de detectar que os servidores estão operando. Isso é feito para evitar o envio de tráfego para um recurso que não está disponível. Esses testes podem parecer tráfego suspeito se o analista de segurança cibernética não estiver ciente de que esse tráfego faz parte da operação do LBM.
+![[Balanceamento de carga com delegação DNS.webp]]
 # Modulo 10: Dados de Segurança Do Rede
+## Tipos de dados
+### Dados de alerta
+Os dados de alerta consistem em mensagens geradas por sistemas de prevenção de intrusões (IPSs) ou sistemas de detecção de intrusões (IDSs) em resposta ao tráfego que viola uma regra ou corresponde à assinatura de uma exploração conhecida. Um IDS de rede (NIDS), como o Snort, vem configurado com regras para explorações conhecidas. Os alertas são gerados pelo Snort e são legíveis e pesquisáveis pelos aplicativos Sguil e Squert, que fazem parte do conjunto Security Onion de ferramentas NSM.
+
+Um site de teste que é usado para determinar se o Snort está funcionando é o site tesmyids. Procure por ele na internet. Consiste em uma única página da Web que exibe apenas o seguinte texto **uid=0(root) gid=0(root) groups=0(root)**. Se o Snort estiver funcionando corretamente e um host visitar este site, uma assinatura será correspondida e um alerta será acionado. Esta é uma maneira fácil e inofensiva de verificar se o NIDS está em execução.
+
+A regra Snort que é acionada é:
+
+```
+alert ip any any -> any any (msg:"GPL ATTACK\_RESPONSE id check returned root"; content:"uid=0|28|root|29|"; fast\_pattern:only; classtype:bad-unknown; sid:2100498; rev:8;)
+```
+
+Esta regra gera um alerta se **qualquer endereço IP** na rede receber dados de uma fonte externa que contenha conteúdo com texto correspondente ao padrão de **uid=0 (root)**. O alerta contém a mensagem **GPL ATTACK_RESPONSE id check retornou root**. O ID da regra Snort que foi acionada é **2100498**.
+
+A linha destacada na figura exibe um alerta Sguil que foi gerado visitando o site testmyids. A regra Snort e os dados do pacote para o conteúdo recebido da página da Web testmyvids são exibidos na área inferior direita da interface Sguil.
+![[Console Sguil mostrando o alerta de teste do Snort IDS.webp|center]]
+### Dados de Sessão e Transação
+1. **ts**: carimbo de data e hora
+2. **uid**: ID de sessão única
+3. **id.orig_h**: Endereço IP do host que originou a sessão (endereço de origem)
+4. **id.orig_p**: porta de protocolo para o host de origem (porta de origem)
+5. **id.resp_h**: Endereço IP do host que responde ao host de origem (endereço de destino)
+6. **id.resp_p**: protocolo de host respondente (porta de destino)
+7. **proto**: protocolo de camada de transporte para sessão
+8. **service**: protocolo de camada de aplicativo
+9. **duration**: duração da sessão
+10. **orig_bytes**: bytes do host de origem
+11. **resp_bytes**: bytes do host respondente
+12. **orig_packets**: pacotes do host de origem
+13. **resp_packets**:pacotes do host respondente
+
+Os dados de sessão são um registro de uma conversa entre dois pontos de extremidade de rede, que geralmente são um cliente e um servidor. O servidor pode estar dentro da rede corporativa ou em um local acessado pela Internet. Dados de sessão são dados sobre a sessão, não os dados recuperados e usados pelo cliente. Os dados da sessão incluirão informações de identificação, como **as cinco tuplas** de endereços IP de origem e destino, números de porta de origem e destino, e o código IP do protocolo em uso. Os dados sobre a sessão geralmente incluem um ID de sessão, a quantidade de dados transferidos por origem e destino e informações relacionadas à duração da sessão.
+
+Zeek, anteriormente Bro, é uma ferramenta de monitoramento de segurança de rede que você usará em laboratórios mais tarde no curso. A figura mostra uma saída parcial para três sessões HTTP a partir de um log de conexão Zeek. As explicações dos campos são mostradas abaixo da figura.
+![[Dados de Sessão Zeek - Conteúdo Parcial.webp]]
+Os dados de transação consistem nas mensagens que são trocadas durante sessões de rede. Essas transações podem ser exibidas em transcrições de captura de pacotes. Os logs de dispositivos mantidos por servidores também contêm informações sobre as transações que ocorrem entre clientes e servidores. Por exemplo, uma sessão pode incluir o download de conteúdo de um servidor web, como mostrado na figura. As transações que representam as solicitações e respostas seriam registradas em um log de acesso no servidor ou por um NIDS como Zeek. A sessão é todo o tráfego envolvido na elaboração da solicitação, a transação é a própria solicitação.
+![[Dados de transação.webp|center]]
+### Dados Estáticos
+Como dados de sessão, dados estatísticos são sobre tráfego de rede. Os dados estatísticos são criados através da análise de outras formas de dados de rede. Podem ser feitas conclusões que descrevem ou predizem o comportamento da rede a partir dessas análises. As características estatísticas do comportamento normal da rede podem ser comparadas ao tráfego de rede atual em um esforço para detectar anomalias. As estatísticas podem ser usadas para caracterizar quantidades normais de variação nos padrões de tráfego de rede, a fim de identificar condições de rede que estão significativamente fora desses intervalos. Diferenças estatisticamente significativas devem gerar alarmes e investigação imediata.
+
+A NBA (Network Behavior Analysis) e a Network Behavior Anomaly Detection (NBAD) são abordagens para monitoramento de segurança de rede que usam técnicas analíticas avançadas para analisar dados de telemetria de rede NetFlow ou IPFIX (Internet Protocol Flow Information Export). Técnicas como análise preditiva e inteligência artificial realizam análises avançadas de dados de sessão detalhados para detectar possíveis incidentes de segurança.
+
+**Observação**: IPFIX é a versão padrão IETF do Cisco NetFlow versão 9.
+## Logs de dispositivos
+### Logs de Host
+Conforme discutido anteriormente, os sistemas de detecção de intrusão baseados em host (HIDS) são executados em hosts individuais. HIDS não só detecta intrusões, mas na forma de firewalls baseados em host, também pode impedir intrusões. Este software cria logs e os armazena no host. Isso pode dificultar a visão do que está acontecendo em hosts na empresa, pois muitas proteções baseadas em host têm uma maneira de enviar logs para servidores centralizados de gerenciamento de logs. Dessa forma, os logs podem ser pesquisados a partir de um local central usando as ferramentas NSM.
+
+Os sistemas HIDS podem usar agentes para enviar logs para servidores de gerenciamento. O OSSEC, um HIDS de código aberto popular, inclui uma funcionalidade robusta de coleta e análise de logs. Pesquise OSSEC na internet para saber mais. O Microsoft Windows inclui vários métodos para coleta e análise automatizadas de logs de host. Tripwire oferece um HIDS para Linux que inclui funcionalidade semelhante. Todos podem ser dimensionados para grandes empresas.
+
+Os logs de host do Microsoft Windows são visíveis localmente pelo Visualizador de Eventos. O Visualizador de Eventos mantém cinco tipos de logs:
+
+- **Logs de aplicativos** — Eles contêm eventos registrados por vários aplicativos.
+- **Registros do sistema** — Isso inclui eventos relacionados à operação de drivers, processos e hardware.
+- **Registros de instalação** — Estes registram informações sobre a instalação de software, incluindo atualizações do Windows.
+- **Registros de segurança** — Esses eventos registram relacionados à segurança, como tentativas de logon e operações relacionadas ao gerenciamento e acesso de arquivos ou objetos.
+- **Logs da linha de comando** - Os invasores que obtiveram acesso a um sistema e alguns tipos de malware executam comandos da interface de linha de comando (CLI) em vez de uma GUI. A execução da linha de comando em log fornecerá visibilidade para esse tipo de incidente.
+
+Vários logs podem ter diferentes tipos de eventos. Os logs de segurança consistem apenas em mensagens de falha ou êxito de auditoria. Em computadores Windows, o log de segurança é realizado pelo Local Security Authority Subsystem Service (LSASS), que também é responsável por impor diretivas de segurança em um host Windows. O LSASS é executado como lsass.exe. Ele é frequentemente falsificado por malware. Ele deve estar sendo executado a partir do diretório System32 do Windows. Se um arquivo com esse nome, ou um nome camuflado, como 1sass.exe, estiver em execução ou em execução a partir de outro diretório, ele pode ser malware.
+
+Os Eventos do Windows são identificados por números de ID e descrições breves. Uma enciclopédia de IDs de eventos de segurança, algumas com detalhes adicionais, está disponível no Ultimate Windows Security na Web.
+
+A tabela explica o significado dos cinco tipos de eventos de log de host do Windows.
+
+|Tipo de evento|Descrição|
+|---|---|
+|Erro|Um erro é um evento que indica um problema significativo, como perda de dados ou perda de funcionalidade. Por exemplo, se um serviço falhar ao carregar durante a inicialização, um evento de erro será registrado.|
+|Aviso|Um aviso é um evento que não é necessariamente significativo, mas pode indicar um possível problema futuro. Por exemplo, quando o espaço em disco é baixo, um evento de aviso é registrado. Se um aplicativo pode se recuperar de um evento sem perda de funcionalidade ou dados, ele geralmente pode classificar o evento como um evento de aviso.|
+|Informações|Um evento informativo descreve a operação bem-sucedida de um aplicativo, driver ou serviço. Por exemplo, quando um driver de rede é carregado com êxito, pode ser apropriado registrar um evento de informações. Observe que geralmente é inapropriado para um aplicativo de área de trabalho registrar um evento cada vez que ele é iniciado.|
+|Sucesso na Auditoria|Uma auditoria bem-sucedida é um evento que registra uma tentativa de acesso de segurança auditada com êxito. For example, a user's successful attempt to log on to the system is logged as a success audit event.|
+|Falha ne Auditoria|Uma auditoria de falha é um evento que registra uma tentativa de acesso de segurança auditada que falha. Por exemplo, se um usuário tentar acessar uma unidade de rede e falhar, a tentativa é registrada como um evento de auditoria de falha.|
+### Syslog
+O Syslog inclui especificações para formatos de mensagem, uma estrutura de aplicativos cliente-servidor e protocolo de rede. Muitos tipos diferentes de dispositivos de rede podem ser configurados para usar o padrão syslog para registrar eventos em servidores syslog centralizados.
+
+Syslog é um protocolo cliente / servidor. O Syslog foi definido dentro do grupo de trabalho Syslog do IETF (RFC 5424) e é suportado por uma grande variedade de dispositivos e receptores em várias plataformas.
+
+O remetente do Syslog envia uma pequena mensagem de texto (menos de 1 KB) para o receptor do Syslog. O receptor Syslog é comumente chamado de “syslogd”, “Syslog daemon” ou “Syslog server.“ As mensagens do Syslog podem ser enviadas via UDP (porta 514) e/ou TCP (normalmente, porta 5000). Embora existam algumas exceções, como wrappers SSL, esses dados são normalmente enviados em texto simples pela rede.
+
+O formato completo de uma mensagem Syslog que é visto na rede tem três partes distintas, como mostrado na figura.
+
+- PRI (prioridade)
+- HEADER
+- MSG (texto da mensagem)
+
+O PRI consiste em dois elementos, a Facilidade e a Gravidade da mensagem, que são ambos valores inteiros. O recurso consiste em amplas categorias de fontes que geraram a mensagem, como o sistema, o processo ou a aplicação. O valor Facility pode ser usado por servidores de log para direcionar a mensagem para o arquivo de log apropriado. A gravidade é um valor de 0 a 7 que define a gravidade da mensagem.
+
+| Valor | Severidade                                                                                                                  |
+| ----- | --------------------------------------------------------------------------------------------------------------------------- |
+| 0     | **Emergência**: sistema está inutilizável                                                                                   |
+| 1     | **Alerta**: a ação deve ser tomada imediatamente                                                                            |
+| 2     | **Crítico**: condições críticas que devem ser corrigidas imediatamente e indica falha em um sistema                         |
+| 3     | **Erro**: uma falha que não é urgente, deve ser resolvida dentro de um determinado tempo                                    |
+| 4     | **Aviso**: um erro não existe atualmente; no entanto, um erro ocorrerá no futuro se a condição não for resolvida            |
+| 5     | **Aviso**: Qual ferramenta está incluída no Security Onion que é usada pelo Snort para baixar automaticamente novas regras? |
+| 6     | **Informativo**: mensagens emitidas relativas ao funcionamento normal                                                       |
+| 7     | **Depuração**: mensagens de interesse para desenvolvedores                                                                  |
+### Logs do servidor
+Os logs do servidor são uma fonte essencial de dados para o monitoramento da segurança da rede. Os servidores de aplicativos de rede, como servidores de e-mail e Web, mantêm registros de acesso e erros. Os logs do servidor proxy DNS que documentam todas as consultas DNS e respostas que ocorrem na rede são especialmente importantes. Os logs de proxy DNS são úteis para identificar hosts que possam ter visitado sites perigosos e para identificar a exfiltração de dados DNS e conexões a servidores de comando e controle de malware. Muitos servidores UNIX e Linux usam syslog. Outros podem usar o registro proprietário. O conteúdo dos eventos do arquivo de log depende do tipo de servidor.
+## Logs de rede
+
+### NetFlow (cisco)
+NetFlow é um protocolo desenvolvido pela Cisco como uma ferramenta para solução de problemas de rede e contabilidade baseada em sessão. O NetFlow fornece com eficiência um importante conjunto de serviços para aplicativos IP, incluindo contabilidade de tráfego de rede, faturamento de rede com base no uso, planejamento de rede, segurança, recursos de monitoramento de negação de serviço e monitoramento de rede. O NetFlow fornece informações valiosas sobre usuários e aplicativos de rede, tempos de uso de pico e roteamento de tráfego.
+
+O NetFlow não faz uma captura completa de pacote ou captura o conteúdo real no pacote. O NetFlow registra informações sobre o fluxo de pacotes, incluindo metadados. A Cisco desenvolveu o NetFlow e, em seguida, permitiu que ele fosse usado como base para um padrão IETF chamado IPFIX. O IPFIX é baseado no Cisco NetFlow Versão 9.
+### Registros de Proxy
+
+Os servidores proxy, como os usados para solicitações Web e DNS, contêm logs valiosos que são uma fonte primária de dados para monitoramento de segurança de rede.
+
+Servidores proxy são dispositivos que atuam como intermediários para clientes de rede. Por exemplo, uma empresa pode configurar um proxy da Web para lidar com solicitações da Web em nome de clientes. Em vez de solicitações de recursos da Web serem enviadas diretamente para o servidor do cliente, a solicitação é enviada primeiro para um servidor proxy. O servidor proxy solicita os recursos e os retorna ao cliente. O servidor proxy gera logs de todas as solicitações e respostas. Esses logs podem ser analisados para determinar quais hosts estão fazendo as solicitações, se os destinos são seguros ou potencialmente maliciosos, e também para obter insights sobre o tipo de recursos que foram baixados.
+
+Proxies da Web fornecem dados que ajudam a determinar se as respostas da Web foram geradas em resposta a solicitações legítimas ou foram manipuladas para parecer respostas, mas são, de fato, explorações. Também é possível usar proxies da web para inspecionar o tráfego de saída como meio de prevenção de perda de dados (DLP). O DLP envolve a varredura do tráfego de saída para detectar se os dados que estão saindo da Web contêm informações confidenciais, confidenciais ou secretas. Exemplos de proxies populares da Web são Squid, CCProxy, Apache Traffic Server e WinGate.
+
+Um exemplo de um log de proxy da web do Squid na forma nativa do Squid aparece abaixo. Explicações dos valores de campo aparecem na tabela abaixo da entrada de log.
+
+**Exemplo de log de proxy DNS**
+
+```
+1265939281.764 19478 172.16.167.228 TCP_MISS/200 864GEThttp://www.example.com//images/home.png - NONE/- image/png
+```
+
+|Valor de log de proxy|Explicação|
+|---|---|
+|1265939281.764|**Tempo** - Timestamp em milliseconds no formato Unix epoch|
+|19478|**Duração** - o tempo decorrido para a solicitação e resposta do Squid|
+|172.16.167.228|**cliente** Endereço IP do|
+|TCP_MISS/200|**Resultado** - Códigos de resultado do Squid e código de status HTTP separados por uma barra|
+|864|**Tamanho** - os bytes de dados entregues|
+|GET|**Solicitação** - solicitação HTTP feita pelo client|
+|http://www.example.com//images/home.png|**URI/URL** - endereço do recurso que foi solicitado|
+|-|**Identidade do cliente** - valor RFC 1413 para o cliente que fez a solicitação. Não usado por padrão.|
+|NONE/-|**Código de peering/Host de peer** - Consulta ao servidor de cache vizinho|
+|image/png|**Tipo** - tipo de conteúdo MIME do valor Content-Type no cabeçalho de resposta HTTP|
+
+**Observação**: Proxies da Web abertos, que são proxies que estão disponíveis para qualquer usuário da Internet, podem ser usados para ofuscar endereços IP de atores de ameaças. Endereços de proxy abertos podem ser usados na lista negra do tráfego da Internet.
 # Modulo 11: Avaliação de Alertas
+

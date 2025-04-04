@@ -312,18 +312,8 @@ A verdade simples é que senhas mais longas são mais seguras porque demoram mai
 
 Por quanto tempo você recomendaria uma senha para que ela seja segura?
 
-Área de Resposta
-
 As respostas variam.
 
-Ocultar resposta
 
-Fim do documento
 
-Ocultar todas as respostasLimpar minhas respostas
 
-  
-
----
-
-© 2017 - 2022 Cisco and/or its affiliates. All rights reserved. Cisco Public

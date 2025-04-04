@@ -211,12 +211,3 @@ Mostrar resposta
 
 e.     Saia da sessão de FTP e feche a janela HQ-Laptop-1.
 
-Fim do documento
-
-Mostrar todas as respostasLimpar minhas respostas
-
-  
-
----
-
-© 2017 - 2022 Cisco and/or its affiliates. All rights reserved. Cisco Public

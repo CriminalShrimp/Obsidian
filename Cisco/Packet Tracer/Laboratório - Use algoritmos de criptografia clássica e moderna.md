@@ -171,9 +171,3 @@ d.     Clique em **Concluir** para descriptografar o texto cifrado.
 e.     Insira a senha **Segredo**. Clique em **OK**.
 
 Fim do documento
-
-  
-
----
-
-© 2017 - 2022 Cisco and/or its affiliates. All rights reserved. Cisco Public

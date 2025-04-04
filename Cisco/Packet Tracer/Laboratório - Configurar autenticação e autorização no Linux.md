@@ -576,9 +576,3 @@ c.  Clique em **Cybersecurity Analyst (analista de cibersegurança)**na lista
 d.  Clique em **Arquivo**> **Fechar**, escolha **Salvar o estado da máquina** e clique em **OK**.
 
 Fim do documento
-
-  
-
----
-
-© 2017 - 2022 Cisco and/or its affiliates. All rights reserved. Cisco Public
