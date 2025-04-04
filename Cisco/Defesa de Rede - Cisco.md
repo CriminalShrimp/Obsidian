@@ -423,3 +423,129 @@ Um exemplo de um log de proxy da web do Squid na forma nativa do Squid aparece a
 **Observação**: Proxies da Web abertos, que são proxies que estão disponíveis para qualquer usuário da Internet, podem ser usados para ofuscar endereços IP de atores de ameaças. Endereços de proxy abertos podem ser usados na lista negra do tráfego da Internet.
 # Modulo 11: Avaliação de Alertas
 
+## Cebola Segurança
+O Cebola Segurança é um pacote de código aberto de ferramentas de Monitoramento de Segurança de Rede (NSM) que é executado em uma distribuição Ubuntu Linux. As ferramentas Cebola Segurança fornecem três funções principais para o analista de segurança cibernética: captura completa de pacotes e tipos de dados, sistemas de detecção de intrusão baseados em rede e em host e ferramentas de analistas de alerta. Cebola Segurança pode ser instalado como uma instalação autônoma ou como um sensor e plataforma de servidor. Alguns componentes do Cebola Segurança são de propriedade e mantidos por corporações, como Cisco e Riverbend Technologies, mas são disponibilizados como código aberto.
+## Regras e Alertas
+Os alertas podem vir de várias fontes:
+
+- **NIDS** - Snort, Zeek e Suricata
+- **HIDS** - OSSEC, Wazuh
+- **Gerenciamento e monitoramento de ativos** - Sistema de detecção de ativos passivos (PADS)
+- **Transações HTTP, DNS e TCP** - Registradas pelo Zeek e pcaps
+- **Mensagens do Syslog** - Várias fontes
+
+As informações encontradas nos alertas que são exibidos no Sguil serão diferentes no formato de mensagem porque elas vêm de fontes diferentes.
+
+As regras de Snort consistem em duas seções, como mostrado na figura: o cabeçalho da regra e as opções da regra. O cabeçalho da regra contém a ação, o protocolo, os endereços IP de origem e destino e as máscaras de rede e as informações da porta de origem e destino. A seção Opções de regra contém mensagens de alerta e informações sobre quais partes do pacote devem ser inspecionadas para determinar se a ação da regra deve ser executada. A localização da regra às vezes é adicionada pelo Sguil. Local da Regra é o caminho para o arquivo que contém a regra e o número da linha em que a regra aparece para que ela possa ser encontrada e modificada, ou eliminada, se necessário.
+
+**Estrutura da regra Snort e informações fornecidas pelo SGUI**
+
+alert ip any any -> any any (msg:"GPL ATTACK_RESPONSE id check returned root"; content:"uid=0|28|root|29|"; fast_pattern:only; classtype:bad-unknown; sid:2100498; rev:8;)
+/nsm/server_data/securityonion/rules/seconion-eth1-1/downloaded.rules:Line 692
+
+| Componente         | Exemplo (abreviado...)                               | Explicação                                                                                                                                                               |
+| ------------------ | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| cabeçalho da regra | alert ip any any -> any any                          | Contém a ação a ser tomada, endereços e porta de origem e destino e a direção do fluxo de tráfego                                                                        |
+| opções de regra    | (msg:”GPL ATTACK_RESPONSE ID CHECK RETURNED ROOT”;…) | Inclui a mensagem a ser exibida, detalhes do conteúdo do pacote, tipo de alerta, ID de origem e detalhes adicionais, como uma referência para a regra ou vulnerabilidade |
+| local da regra     | /nsm/server_data/securityonion/rules/…               | Adicionado pelo Sguil para indicar a localização da regra na estrutura do arquivo Cebola Segurança e no arquivo de regra especificado                                    |
+
+**O cabeçalho da regra**
+
+O cabeçalho da regra contém a ação, o protocolo, o endereçamento e as informações da porta, conforme mostrado na figura. Além disso, a direção do fluxo que acionou o alerta é indicada. A estrutura da parte do cabeçalho é consistente entre as regras de alerta Snort.
+
+O Snort pode ser configurado para usar variáveis para representar endereços IP internos e externos. Essas variáveis, **$HOME_NET** e **$EXTERNAL_NET**, aparecem nas regras Snort. Eles simplificam a criação de regras, eliminando a necessidade de especificar endereços e máscaras específicos para cada regra. Os valores dessas variáveis são configurados no arquivo **snort.conf**. O Snort também permite que endereços IP individuais, blocos de endereços ou listas de ambos sejam especificados em regras. Os intervalos de portas podem ser especificados separando os valores superior e inferior do intervalo com dois pontos. Outros operadores também estão disponíveis.
+
+**Estrutura do cabeçalho da regra Snort**
+
+alert ip any any -> any any (msg:"GPL ATTACK_RESPONSE id check returned root"; content:"uid=0|28|root|29|"; fast_pattern:only; classtype:bad-unknown; sid:2100498; rev:8;)/nsm/server_data/securityonion/rules/seconion-eth1-1/downloaded.rules:Line 692
+
+|Componente|Explicação|
+|---|---|
+|alerta|a ação a ser tomada é emitir um alerta, outras ações são registradas e passadas|
+|ip|o protocolo|
+|any any|a fonte especificada é qualquer endereço IP e qualquer porta da Camada 4|
+|->|a direção do fluxo é da origem para o destino|
+|any any|o destino especificado é qualquer endereço IP e qualquer porta da Camada 4|
+
+**As Opções de Regra**
+
+A estrutura da seção de opções da regra é variável. É a parte da regra que está entre parênteses, como mostrado na figura. Ele contém a mensagem de texto que identifica o alerta. Ele também contém metadados sobre o alerta, como um URL que fornece informações de referência para o alerta. Outras informações podem ser incluídas, como o tipo de regra e um identificador numérico exclusivo para a regra e a revisão da regra. Além disso, os recursos da carga do pacote podem ser especificados nas opções. O manual de usuários do Snort, que pode ser encontrado na internet, fornece detalhes sobre regras e como criá-las.
+
+Mensagens de regra de snifar podem incluir a origem da regra. Três fontes comuns para as regras do Snort são:
+
+- **GPL** - Regras mais antigas do Snort que foram criadas pelo Sourcefire e distribuídas sob uma GPLv2. O conjunto de regras GPL não é certificado pelo Cisco Talos. Inclui Snort SIDs 3464 e abaixo. O conjunto de regras GPL pode ser baixado do site do Snort e está incluído no Cebola Segurança.
+- **ET**- Regras Snort de ameaças emergentes. Emerging Threats é um ponto de coleta para regras Snort de várias fontes. As regras ET são de código aberto sob uma licença BSD. O conjunto de regras ET contém regras de várias categorias. Um conjunto de regras ET está incluído com Cebola Segurança. Emerging Threats é uma divisão da Proofpoint, Inc.
+- **VRT** - Essas regras estão imediatamente disponíveis para assinantes e são liberadas para usuários registrados 30 dias após sua criação, com algumas limitações. Eles agora são criados e mantidos pelo Cisco Talos.
+
+As regras podem ser baixadas automaticamente do Snort.org usando o utilitário de gerenciamento de regras PulledPork que está incluído com o Cebola Segurança.
+
+Alertas que não são gerados pelas regras do Snort são identificados pelas tags OSSEC ou PADS, entre outras. Além disso, regras locais personalizadas podem ser criadas.
+
+**Estrutura de Opções de Regras Snort**
+alert ip any any -> any any (msg:"GPL ATTACK_RESPONSE id check returned root"; content:"uid=0|28|root|29|"; fast_pattern:only; classtype:bad-unknown; sid:2100498; rev:8;
+/nsm/server_data/securityonion/rules/seconion-eth1-1/downloaded.rules:Line 692
+
+|Componente|Explicação|
+|---|---|
+|msg:|Texto que descreve o alerta.|
+|content:|Refere-se ao conteúdo do pacote. Neste caso, um alerta será enviado se o texto literal "uid=O(root)" aparecer em qualquer lugar nos dados do pacote. Valores especificando a localização do texto na carga de dados podem ser fornecidos.|
+|reference:|Isso não é mostrado na figura. Muitas vezes, é um link para uma URL que fornece mais informações sobre a regra. Nesse caso, o sid é hipervinculado à origem da regra na Internet.|
+|classtype:|Uma categoria para o ataque. O Snort inclui um conjunto de categorias padrão que têm um dos quatro valores de prioridade.|
+|sid:|Um identificador numérico exclusivo para a regra.|
+|rev:|A revisão da regra que é representada pelo sid.|
+## Visão Geral de Alertas 
+### Avaliando Alertas 
+Os incidentes de segurança são classificados usando um esquema emprestado de diagnósticos médicos. Este esquema de classificação é usado para orientar ações e avaliar procedimentos de diagnóstico. Por exemplo, quando um paciente visita um médico para um exame de rotina, uma das tarefas do médico é determinar se o paciente está doente. Um dos resultados pode ser uma determinação correta de que a doença está presente e o paciente está doente. Outro resultado pode ser que não há doença e o paciente é saudável.
+
+A preocupação é que o diagnóstico pode ser preciso, ou verdadeiro, ou impreciso, ou falso. Por exemplo, o médico pode perder os sinais de doença e fazer a determinação incorreta de que o paciente está bem quando está de fato doente. Outro erro possível é decidir que um paciente está doente quando esse paciente é de fato saudável. Os falsos diagnósticos são caros ou perigosos.
+
+Na análise de segurança de rede, o analista de segurança cibernética é apresentado com um alerta. Isso é semelhante a um paciente indo ao médico e dizendo: “Estou doente”. O analista de segurança cibernética, como o médico, precisa determinar se esse diagnóstico é verdadeiro. O analista de segurança cibernética pergunta: “O sistema diz que ocorreu uma exploração. Isso é verdade?”
+
+Os alertas podem ser classificados da seguinte forma:
+
+- **Verdadeiro positivo**: o alerta foi verificado como um incidente de segurança real.
+- **Falso Positivo**: O alerta não indica um incidente de segurança real. A atividade benigna que resulta em um falso positivo é às vezes referida como um gatilho benigno.
+
+Uma situação alternativa é que um alerta não foi gerado. A ausência de um alerta pode ser classificada como:
+
+- **Verdadeiro negativo**: Nenhum incidente de segurança ocorreu. A atividade é benigna.
+- **Falso Negativo**: Ocorreu um incidente não detectado.
+
+|   |   |   |
+|---|---|---|
+|**Quando um alerta é emitido, ele receberá uma das quatro classificações possíveis.**|   |   |
+||True|False|
+|**Positivo (Alerta existe)**|Ocorreu um incidente|Nenhum incidente ocorreu|
+|**Negativo (Nenhum alerta existe)**|Retrieving data. Wait a few seconds and try to cut or copy again.|Ocorreu um incidente|
+|**Nota:** eventos “verdadeiros” são desejáveis. Eventos “falsos” são indesejáveis ​​e potencialmente perigosos.|   |   |
+
+**Verdadeiros positivos** são o tipo de alerta desejado. Eles significam que as regras que geram alertas funcionaram corretamente.
+
+**Falsos positivos** não são desejáveis. Embora eles não indiquem que ocorreu uma exploração não detectada, eles são caros porque os analistas de segurança cibernética devem investigar alarmes falsos; portanto, o tempo é retirado da investigação de alertas que indicam verdadeiras explorações.
+
+**Verdadeiros negativos** são desejáveis. Eles indicam que o tráfego normal benigno é corretamente ignorado e alertas errôneos não estão sendo emitidos.
+
+**Falsos negativos** são perigosos. Eles indicam que as explorações não estão sendo detectadas pelos sistemas de segurança que estão em vigor. Esses incidentes podem passar despercebidos por um longo período de tempo, e a perda e danos contínuos de dados podem resultar.
+
+Eventos benignos são aqueles que não devem acionar alertas. Os eventos benignos em excesso indicam que algumas regras ou outros detectores precisam ser melhorados ou eliminados.
+
+Quando os verdadeiros positivos são suspeitos, um analista de segurança cibernética às vezes é obrigado a escalar o alerta para um nível mais alto para investigação. O investigador avançará com a investigação, a fim de confirmar o incidente e identificar qualquer dano potencial que possa ter sido causado. Essas informações serão usadas por mais funcionários de segurança sênior que trabalharão para isolar os danos, solucionar vulnerabilidades, mitigar a ameaça e lidar com os requisitos de relatórios.
+
+Um analista de segurança cibernética também pode ser responsável por informar o pessoal de segurança de que falsos positivos estão ocorrendo na medida em que o tempo do analista de segurança cibernética é seriamente afetado. Esta situação indica que os sistemas de monitoramento de segurança precisam ser ajustados para se tornarem mais eficientes. Alterações legítimas na configuração da rede ou nas regras de detecção recém-baixadas podem resultar em um pico repentino de falsos positivos também.
+
+Falsos negativos podem ser descobertos bem depois de uma exploração ter ocorrido. Isso pode acontecer por meio da análise de segurança retrospectiva (RSA). A RSA pode ocorrer quando regras recém-obtidas ou outras informações sobre ameaças são aplicadas a dados de segurança de rede arquivados. Por esse motivo, é importante monitorar as informações sobre ameaças para conhecer novas vulnerabilidades e explorações e avaliar a probabilidade de que a rede estava vulnerável a elas em algum momento no passado. Além disso, a exploração deve ser avaliada em relação aos danos potenciais que a empresa pode sofrer. Pode determinar-se que a adição de novas técnicas de atenuação é suficiente ou que deve ser realizada uma análise mais pormenorizada.
+### Análise Determinística e Análise Probabilística
+Técnicas estatísticas podem ser usadas para avaliar o risco de que as explorações serão bem-sucedidas em uma determinada rede. Esse tipo de análise pode ajudar os tomadores de decisão a avaliar melhor o custo de mitigar uma ameaça com os danos que uma exploração poderia causar.
+
+Duas abordagens gerais utilizadas para isso são a análise determinística e probabilística. A análise determinística avalia o risco com base no que é conhecido sobre uma vulnerabilidade. Ele pressupõe que, para que uma exploração seja bem-sucedida, todas as etapas anteriores do processo de exploração também devem ser bem-sucedidas. Este tipo de análise de risco só pode descrever o pior caso. No entanto, muitos atores ameaçadores, embora conscientes do processo para realizar uma exploração, podem não ter conhecimento ou experiência para concluir com sucesso cada passo no caminho para uma exploração bem-sucedida. Isso pode dar ao analista de segurança cibernética a oportunidade de detectar a exploração e impedi-la antes que ela prossiga.
+
+A análise probabilística estima o sucesso potencial de uma exploração, estimando a probabilidade de que, se uma etapa de uma exploração tiver sido concluída com sucesso, a próxima etapa também será bem-sucedida. A análise probabilística é especialmente útil na análise de segurança de rede em tempo real em que inúmeras variáveis estão em jogo e um determinado ator de ameaça pode tomar decisões desconhecidas à medida que uma exploração é perseguida.
+
+A análise probabilística baseia-se em técnicas estatísticas que são projetadas para estimar a probabilidade de que um evento ocorrerá com base na probabilidade de ocorrerem eventos anteriores. Usando esse tipo de análise, os caminhos mais prováveis que uma exploração tomará podem ser estimados e a atenção do pessoal de segurança pode ser focada em prevenir ou detectar a exploração mais provável.
+
+Em uma análise determinística, toda a informação para realizar uma exploração é assumida como sendo conhecida. As características da exploração, como o uso de números de porta específicos, são conhecidas de outras instâncias da exploração ou porque portas padronizadas estão em uso. Na análise probabilística, presume-se que os números de porta que serão utilizados só podem ser previstos com algum grau de confiança. Nessa situação, uma exploração que usa números de porta dinâmicos, por exemplo, não pode ser analisada deterministicamente. Tais explorações foram otimizadas para evitar a detecção por firewalls que usam regras estáticas.
+
+As duas abordagens são resumidas a seguir.
+
+- **Análise Determinística** - Para que uma exploração seja bem-sucedida, todas as etapas anteriores da exploração também devem ser bem-sucedidas. O analista de segurança cibernética conhece as etapas para uma exploração bem-sucedida.
+- **Análise Probabilística** - Técnicas estatísticas são usadas para determinar a probabilidade de que uma exploração bem-sucedida ocorrerá com base na probabilidade de que cada etapa da exploração seja bem-sucedida.
