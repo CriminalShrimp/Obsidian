@@ -451,9 +451,9 @@ alert ip any any -> any any (msg:"GPL ATTACK_RESPONSE id check returned root"; c
 
 **O cabeçalho da regra**
 
-O cabeçalho da regra contém a ação, o protocolo, o endereçamento e as informações da porta, conforme mostrado na figura. Além disso, a direção do fluxo que acionou o alerta é indicada. A estrutura da parte do cabeçalho é consistente entre as regras de alerta Snort.
+O cabeçalho da regra contém a ação, o protocolo, o endereçamento e as informações da porta. Além disso, a direção do fluxo que acionou o alerta é indicada, a estrutura da parte do cabeçalho é consistente entre as regras de alerta Snort.
 
-O Snort pode ser configurado para usar variáveis para representar endereços IP internos e externos. Essas variáveis, **$HOME_NET** e **$EXTERNAL_NET**, aparecem nas regras Snort. Eles simplificam a criação de regras, eliminando a necessidade de especificar endereços e máscaras específicos para cada regra. Os valores dessas variáveis são configurados no arquivo **snort.conf**. O Snort também permite que endereços IP individuais, blocos de endereços ou listas de ambos sejam especificados em regras. Os intervalos de portas podem ser especificados separando os valores superior e inferior do intervalo com dois pontos. Outros operadores também estão disponíveis.
+O Snort pode ser configurado para usar variáveis para representar endereços IP internos e externos. Essas variáveis, $HOME_NET e $EXTERNAL_NET, aparecem nas regras Snort. Eles simplificam a criação de regras, eliminando a necessidade de especificar endereços e máscaras específicos para cada regra. O Snort também permite que endereços IP individuais, blocos de endereços ou listas de ambos sejam especificados em regras. Os intervalos de portas podem ser especificados separando os valores superior e inferior do intervalo com dois pontos.
 
 **Estrutura do cabeçalho da regra Snort**
 
