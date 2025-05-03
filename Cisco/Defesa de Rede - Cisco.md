@@ -39,7 +39,7 @@ Porem esse conceito vem mudando com o tempo e agora é usado o "alcachofra de se
 ![[alcachofra.webp]]
 ## Gerenciamento de operações de segurança cibernética
 As configurações realizadas no ambiente são fundamentais para no futuro serem fitas mudanças, auditorias, controle e identificação no sistema. Configurar os arquivos de [[Abreviações#Log = Abreviação de logfile (arquivo de registro) ou logging (processo de registro de eventos|LOG]] é importante para quando for realizado uma auditoria de quando ouve um ataque ou uma defesa bem sucedida, ou também para controle de atividades dos usuários, claro que quando maior a empresa mais logs são gerados então devem entrar um trabalho de gerenciamento dos mesmos.
-Outra coisa importante de se ter para analisar são os pacotes de rede, quando se ter ferramentas para capturar esses pacotes e analisa-los é possível saber fazer uma análise de problemas de rede, detecção de uso indevido da rede, tentativas de invasão da rede, etc. Existem vários desses analisadores como [[Ferramentas#Wireshark = O [WireShark](https //www.wireshark.org/) (anteriormente conhecido como Ethereal) é um programa que analisa o tráfego de rede, e o organiza por protocolos. As funcionalidades do Wireshark são parecidas com o tcpdump mas com uma interface gráfica, com mais informação e com a possibilidade da utilização de filtros.|WireShark]], [[Ferramentas#TCPDump = O comando [tcpdump](https //www.ibm.com/docs/pt-br/aix/7.3?topic=t-tcpdump-command) imprime os cabeçalhos de pacotes em uma interface de rede que combinam com a expressão booleana. Você pode executar o comando com o sinalizador -w para salvar os dados do pacote em um arquivo para análise adicional.|TCPDump]], Ettercap, Kismet, Ngrep, Ntop, Etherape, entre outras.
+Outra coisa importante de se ter para analisar são os pacotes de rede, quando se ter ferramentas para capturar esses pacotes e analisa-los é possível saber fazer uma análise de problemas de rede, detecção de uso indevido da rede, tentativas de invasão da rede, etc. Existem vários desses analisadores como [[Ferramentas/Ferramentas#Wireshark = O [WireShark](https //www.wireshark.org/) (anteriormente conhecido como Ethereal) é um programa que analisa o tráfego de rede, e o organiza por protocolos. As funcionalidades do Wireshark são parecidas com o tcpdump mas com uma interface gráfica, com mais informação e com a possibilidade da utilização de filtros.|WireShark]], [[Ferramentas/Ferramentas#TCPDump = O comando [tcpdump](https //www.ibm.com/docs/pt-br/aix/7.3?topic=t-tcpdump-command) imprime os cabeçalhos de pacotes em uma interface de rede que combinam com a expressão booleana. Você pode executar o comando com o sinalizador -w para salvar os dados do pacote em um arquivo para análise adicional.|TCPDump]], Ettercap, Kismet, Ngrep, Ntop, Etherape, entre outras.
 ## Políticas, regulamentos e padrões de segurança
 #baboseira
 Políticas de negócios são as diretrizes que são desenvolvidas por uma organização para governar suas ações. As políticas definem padrões de comportamento correto para a empresa e seus funcionários, na rede as políticas definem as atividades permitidas na rede. Se um comportamento que viola a política de negócios for detectado na rede, é possível que tenha ocorrido uma violação de segurança. Uma organização pode ter várias diretivas orientadoras como <span style="color:rgb(255, 255, 0)">Politica da Empresa</span> que definem as responsabilidades dos trabalhadores e suas condutas como vestimenta, privacidade, assim também como proteger seus direitos e interesses. Também existem as <span style="color:rgb(255, 255, 0)">Politicas de Funcionários  </span>que são criadas e mantidas pelos Recursos Humanos para identificar, benefícios, salários, feiras, etc. E por fim as <span style="color:rgb(255, 255, 0)">Politicas de Segurança</span> que especificam requisitos do sistema, regras e comportamento dos usuários, esse conjunto de regras e requisitos garantem a segurança dos sistemas e redes de computador de uma empresa.
@@ -415,69 +415,15 @@ Um exemplo de um log de proxy da web do Squid na forma nativa do Squid aparece a
 # Modulo 11: Avaliação de Alertas
 
 ## Cebola Segurança
-O Security Onion é um pacote de código aberto de ferramentas de Monitoramento de Segurança de Rede que é executado em uma distribuição Ubuntu Linux. A ferramenta fornece três funções principais para o analista de segurança cibernética: captura completa de pacotes e tipos de dados, sistemas de detecção de intrusão baseados em rede e em host e ferramentas de analistas de alerta.
+O Security Onion é um pacote de código aberto de ferramentas de Monitoramento de Segurança de Rede que é executado em uma distribuição Ubuntu Linux. A ferramenta fornece três funções principais para o analista de segurança cibernética: captura completa de pacotes , sistemas de detecção de intrusão e ferramentas de analistas de alerta.
 ## Regras e Alertas
 Os alertas podem vir de várias fontes:
-
-- **NIDS** - Snort, Zeek e Suricata.
+- **[[Abreviações#NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas|NIDS]]** - [[FerramentasBlueTeam#Snort - Falar sbre|Snort]], Zeek e [[FerramentasBlueTeam#Suricata - falar sobre|Suricata]].
 - **HIDS** - OSSEC, Wazuh.
 - **Gerenciamento e monitoramento de ativos** - Sistema de detecção de ativos passivos (PADS).
 - **Transações HTTP, DNS e TCP** - Registradas pelo Zeek e pcaps.
 - **Mensagens do Syslog** - Várias fontes.
 
-As regras de Snort consistem em duas seções, o cabeçalho da regra e as opções da regra. O cabeçalho da regra contém a ação, o protocolo, os endereços IP de origem e destino e as máscaras de rede e as informações da porta de origem e destino. A seção Opções de regra contém mensagens de alerta e informações sobre quais partes do pacote devem ser inspecionadas para determinar se a ação da regra deve ser executada.
-
-**Estrutura da regra Snort**
-
-alert ip any any -> any any (msg:"GPL ATTACK_RESPONSE id check returned root"; content:"uid=0|28|root|29|"; fast_pattern:only; classtype:bad-unknown; sid:2100498; rev:8;)
-/nsm/server_data/securityonion/rules/seconion-eth1-1/downloaded.rules:Line 692
-
-| Componente         | Exemplo (abreviado...)                               | Explicação                                                                                                                                                               |
-| ------------------ | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| cabeçalho da regra | alert ip any any -> any any                          | Contém a ação a ser tomada, endereços e porta de origem e destino e a direção do fluxo de tráfego                                                                        |
-| opções de regra    | (msg:”GPL ATTACK_RESPONSE ID CHECK RETURNED ROOT”;…) | Inclui a mensagem a ser exibida, detalhes do conteúdo do pacote, tipo de alerta, ID de origem e detalhes adicionais, como uma referência para a regra ou vulnerabilidade |
-| local da regra     | /nsm/server_data/securityonion/rules/…               | Adicionado pelo Sguil para indicar a localização da regra na estrutura do arquivo Cebola Segurança e no arquivo de regra especificado                                    |
-
-**O cabeçalho da regra**
-
-O cabeçalho da regra contém a ação, o protocolo, o endereçamento e as informações da porta. Além disso, a direção do fluxo que acionou o alerta é indicada, a estrutura da parte do cabeçalho é consistente entre as regras de alerta Snort.
-O Snort pode ser configurado para usar variáveis para representar endereços IP internos e externos. Essas variáveis, $HOME_NET e $EXTERNAL_NET, servem para simplificam a criação de regras, eliminando a necessidade de especificar endereços e máscaras específicos para cada regra, também permite que endereços IP individuais, blocos de endereços ou listas de ambos sejam especificados. Os intervalos de portas podem ser especificados separando os valores superior e inferior do intervalo com dois pontos.
-
-**Estrutura do cabeçalho da regra Snort**
-
-alert ip any any -> any any (msg:"GPL ATTACK_RESPONSE id check returned root"; content:"uid=0|28|root|29|"; fast_pattern:only; classtype:bad-unknown; sid:2100498; rev:8;)/nsm/server_data/securityonion/rules/seconion-eth1-1/downloaded.rules:Line 692
-
-|Componente|Explicação|
-|---|---|
-|alerta|a ação a ser tomada é emitir um alerta, outras ações são registradas e passadas|
-|ip|o protocolo|
-|any any|a fonte especificada é qualquer endereço IP e qualquer porta da Camada 4|
-|->|a direção do fluxo é da origem para o destino|
-|any any|o destino especificado é qualquer endereço IP e qualquer porta da Camada 4|
-
-**As Opções de Regra**
-
-A estrutura da seção de opções da regra é variável, contém a mensagem de texto que identifica o alerta, metadados sobre o alerta, como um URL que fornece informações de referência para o alerta,  informações como o tipo de regra e um identificador numérico exclusivo podem ser incluídos. O manual de usuários do Snort, que pode ser encontrado na internet, fornece detalhes sobre regras e como criá-las.
-Mensagens de regra de "snifar" podem incluir a origem da regra. Três fontes comuns para as regras do Snort são:
-
-- **GPL** - Regras mais antigas do Snort que foram criadas pelo Sourcefire e distribuídas sob uma GPLv2. Inclui Snort SIDs 3464 e abaixo. O conjunto de regras GPL pode ser baixado do site do Snort e está incluído no Onion Security.
-- **ET**- Regras Snort de ameaças emergentes. Emerging Threats é um ponto de coleta para regras Snort de várias fontes. As regras ET são de código aberto sob uma licença BSD. O conjunto de regras ET contém regras de várias categorias. Um conjunto de regras ET está incluído com Cebola Segurança. Emerging Threats é uma divisão da Proofpoint, Inc.
-- **VRT** - Essas regras estão imediatamente disponíveis para assinantes e são liberadas para usuários registrados 30 dias após sua criação, com algumas limitações. Eles agora são criados e mantidos pelo Cisco Talos.
-
-Alertas que não são gerados pelas regras do Snort são identificados pelas tags OSSEC ou PADS, entre outras. Além disso, regras locais personalizadas podem ser criadas.
-
-**Estrutura de Opções de Regras Snort**
-alert ip any any -> any any (msg:"GPL ATTACK_RESPONSE id check returned root"; content:"uid=0|28|root|29|"; fast_pattern:only; classtype:bad-unknown; sid:2100498; rev:8;
-/nsm/server_data/securityonion/rules/seconion-eth1-1/downloaded.rules:Line 692
-
-|Componente|Explicação|
-|---|---|
-|msg:|Texto que descreve o alerta.|
-|content:|Refere-se ao conteúdo do pacote. Neste caso, um alerta será enviado se o texto literal "uid=O(root)" aparecer em qualquer lugar nos dados do pacote. Valores especificando a localização do texto na carga de dados podem ser fornecidos.|
-|reference:|Isso não é mostrado na figura. Muitas vezes, é um link para uma URL que fornece mais informações sobre a regra. Nesse caso, o sid é hipervinculado à origem da regra na Internet.|
-|classtype:|Uma categoria para o ataque. O Snort inclui um conjunto de categorias padrão que têm um dos quatro valores de prioridade.|
-|sid:|Um identificador numérico exclusivo para a regra.|
-|rev:|A revisão da regra que é representada pelo sid.|
 ## Visão Geral de Alertas 
 ### Avaliando Alertas 
 Os incidentes de segurança são classificados usando um esquema de diagnósticos médicos, esse esquema de classificação é usado para orientar ações e avaliar procedimentos de diagnóstico. Por exemplo, quando um paciente visita um médico para um exame de rotina, uma das tarefas do médico é determinar se o paciente está doente. Um dos resultados pode ser uma determinação correta de que a doença está presente e o paciente está doente. Outro resultado pode ser que não há doença e o paciente é saudável. A preocupação é que o diagnóstico pode ser preciso, ou verdadeiro, ou impreciso, ou falso. Por exemplo, o médico pode perder os sinais de doença e fazer a determinação incorreta de que o paciente está bem quando está de fato doente. Outro erro possível é decidir que um paciente está doente quando esse paciente é de fato saudável. Os falsos diagnósticos são caros ou perigosos.
