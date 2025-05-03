@@ -1,4 +1,5 @@
-### Snort - Falar sbre
+#Redes #BlueTeam
+### Snort - Resumir e explicar
 As regras de Snort consistem em duas seções, o cabeçalho da regra e as opções da regra. O cabeçalho da regra contém a ação, o protocolo, os endereços IP de origem e destino e as máscaras de rede e as informações da porta de origem e destino. A seção Opções de regra contém mensagens de alerta e informações sobre quais partes do pacote devem ser inspecionadas para determinar se a ação da regra deve ser executada.
 
 **Estrutura da regra Snort**
@@ -54,3 +55,4 @@ alert ip any any -> any any (msg:"GPL ATTACK_RESPONSE id check returned root"; c
 |rev:|A revisão da regra que é representada pelo sid.|
 
 ### Suricata - falar sobre
+### Zeek - falar sobre

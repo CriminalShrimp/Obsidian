@@ -413,13 +413,13 @@ Um exemplo de um log de proxy da web do Squid na forma nativa do Squid aparece a
 
 **Observação**: Proxies da Web abertos, que são proxies que estão disponíveis para qualquer usuário da Internet, podem ser usados para ofuscar endereços IP de atores de ameaças. Endereços de proxy abertos podem ser usados na lista negra do tráfego da Internet.
 # Modulo 11: Avaliação de Alertas
-
+#redes #BlueTeam 
 ## Cebola Segurança
 O Security Onion é um pacote de código aberto de ferramentas de Monitoramento de Segurança de Rede que é executado em uma distribuição Ubuntu Linux. A ferramenta fornece três funções principais para o analista de segurança cibernética: captura completa de pacotes , sistemas de detecção de intrusão e ferramentas de analistas de alerta.
 ## Regras e Alertas
 Os alertas podem vir de várias fontes:
-- **[[Abreviações#NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas|NIDS]]** - [[FerramentasBlueTeam#Snort - Falar sbre|Snort]], Zeek e [[FerramentasBlueTeam#Suricata - falar sobre|Suricata]].
-- **HIDS** - OSSEC, Wazuh.
+- **[[Abreviações#NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas|NIDS]]** - [[FerramentasBlueTeam#Snort - Falar sbre|Snort]], [[FerramentasBlueTeam#Suricata - falar sobre|Suricata]] e [[FerramentasBlueTeam#Zeek - falar sobre|Zeek]].
+- **[[Abreviações#HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas|HIDS]]** - OSSEC, Wazuh.
 - **Gerenciamento e monitoramento de ativos** - Sistema de detecção de ativos passivos (PADS).
 - **Transações HTTP, DNS e TCP** - Registradas pelo Zeek e pcaps.
 - **Mensagens do Syslog** - Várias fontes.
@@ -455,7 +455,7 @@ Uma situação alternativa é que um alerta não foi gerado. A ausência de um a
 
 **<span style="color:rgb(255, 255, 0)">Falsos negativos</span>** são perigosos. Eles indicam que as explorações não estão sendo detectadas pelos sistemas de segurança que estão em vigor.
 
-Quando os verdadeiros positivos são suspeitos, um analista de segurança cibernética às vezes é obrigado a escalar o alerta para um nível mais alto para investigação. Essas informações serão usadas por mais funcionários de segurança sênior que trabalharão para isolar os danos, solucionar vulnerabilidades, mitigar a ameaça e lidar com os requisitos de relatórios. Um analista de segurança cibernética também pode ser responsável por informar o pessoal de segurança de que falsos positivos estão ocorrendo na medida em que o tempo do analista de segurança cibernética é seriamente afetado. Esta situação indica que os sistemas de monitoramento de segurança precisam ser ajustados para se tornarem mais eficientes. Falsos negativos podem ser descobertos bem depois de uma exploração ter ocorrido.
+Quando os verdadeiros positivos são suspeitos, um analista de segurança cibernética às vezes é obrigado a escalar o alerta para um nível mais alto. Essas informações serão usadas por mais funcionários de segurança sênior que trabalharão para isolar os danos, solucionar vulnerabilidades, mitigar a ameaça e lidar com os requisitos de relatórios. Um analista de segurança cibernética também pode ser responsável por informar o pessoal de segurança de que falsos positivos estão ocorrendo na medida em que o tempo do analista de segurança cibernética é seriamente afetado. Esta situação indica que os sistemas de monitoramento de segurança precisam ser ajustados para se tornarem mais eficientes. Falsos negativos podem ser descobertos bem depois de uma exploração ter ocorrido.
 ### Análise Determinística e Análise Probabilística
 Técnicas estatísticas podem ser usadas para avaliar o risco de que as explorações serão bem-sucedidas em uma determinada rede. Duas abordagens gerais utilizadas para isso são a análise determinística e probabilística, a análise determinística avalia o risco com base no que é conhecido sobre uma vulnerabilidade, nessa abordagem para que a exploração seja bem-sucedida, todas as etapas anteriores do processo de exploração também devem ser.
 

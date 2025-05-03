@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -190,11 +190,11 @@
   "lastOpenFiles": [
     "BlueTeam/FerramentasBlueTeam.md",
     "Cisco/Defesa de Rede - Cisco.md",
-    "Ferramentas/Snort.md",
+    "Ferramentas/Ferramentas.md",
     "RedTeam/Snaffing.md",
     "RedTeam/Man-in-the-Middle.md",
     "Abreviações.md",
-    "Ferramentas/Ferramentas.md",
+    "Ferramentas/Snort.md",
     "Conceitos/Chaves Públicas e Privadas.md",
     "Conceitos/Zero-Trust.md",
     "Conceitos/Hash.md",

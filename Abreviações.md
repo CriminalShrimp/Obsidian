@@ -23,7 +23,7 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### IaaS = Infrastructure as a Service modelo de computação em nuvem que fornece recursos conforme a demanda e o uso.
 ###### LSB = Least Significant Bit é o bit mais à direita e menos significativo em um número binário.
 ###### NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas 
-
+###### HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas 
 ACL = Access Control List
 
 IMAP = Internet Message Access Protocol monitora a rede em busca de atividade suspeitas 
