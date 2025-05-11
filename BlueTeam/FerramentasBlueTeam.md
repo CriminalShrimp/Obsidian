@@ -56,3 +56,7 @@ alert ip any any -> any any (msg:"GPL ATTACK_RESPONSE id check returned root"; c
 
 ### Suricata - falar sobre
 ### Zeek - falar sobre
+### OSSEC
+OSSEC é um sistema de detecção de intrusão baseado em host livre e aberto (HIDS). Realiza análise de log, verificação de integridade, monitoramento de registro do SO, detecção de rootkit, alerta com base em tempo e resposta ativa. Ele fornece detecção de intrusão para a maioria dos sistemas operacionais , incluindo Linux, OpenBSD, FreeBSD, OS X, Solaris e Windows. A OSSEC possui uma arquitetura centralizada e multi-plataforma que permite que sistemas múltiplos sejam facilmente monitorados e gerenciados
+### Wazuh 
+O Wazuh é uma plataforma de código aberto (open source) que serve para monitorar, detectar e responder a ameaças de segurança em tempo real, abrangendo endpoints, redes e workloads em nuvem. Ele funciona como uma solução de detecção de intrusão e resposta a incidentes (SIEM e XDR), auxiliando na identificação e prevenção de vulnerabilidades, além de coletar e analisar logs de eventos de segurança

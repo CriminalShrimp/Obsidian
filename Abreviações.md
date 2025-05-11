@@ -24,6 +24,7 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### LSB = Least Significant Bit é o bit mais à direita e menos significativo em um número binário.
 ###### NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas 
 ###### HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas 
+###### PCAP = Refere-se a Packet CAPture que é um método usado para capturar e armazenar pacotes de trafego de rede.
 ACL = Access Control List
 
 IMAP = Internet Message Access Protocol monitora a rede em busca de atividade suspeitas 
