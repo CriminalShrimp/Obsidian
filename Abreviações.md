@@ -25,6 +25,8 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas 
 ###### HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas 
 ###### PCAP = Refere-se a Packet CAPture que é um método usado para capturar e armazenar pacotes de trafego de rede.
+###### SSL = Secure Socket Layer
+www = World Wide Web
 ACL = Access Control List
 
 IMAP = Internet Message Access Protocol monitora a rede em busca de atividade suspeitas 
