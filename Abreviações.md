@@ -27,7 +27,7 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### PCAP = Refere-se a Packet CAPture que é um método usado para capturar e armazenar pacotes de trafego de rede.
 ###### SSL = Secure Socket Layer
 www = World Wide Web
-ACL = Access Control List
+
 
 IMAP = Internet Message Access Protocol monitora a rede em busca de atividade suspeitas 
 
