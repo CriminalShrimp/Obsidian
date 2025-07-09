@@ -13,7 +13,7 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### ICMP = Internet Control Message Protocol é usado para comunicar informações de nível de rede.
 ###### RIP = Protocolo de Informação de Roteamento permite que roteadores troquem informações sobre rotas em uma rede,
 ###### NTP = Network Time Protocol sincroniza os relógios de computadores em uma rede. 
-###### DoS = DenialofService é um ataque que visa tornar um serviço ou dispositivo indisponível para os usuário.
+###### DoS = Denial of Service é um ataque que visa tornar um serviço ou dispositivo indisponível para os usuário.
 ###### WAP = Wi-Fi Protected Access é um padrão de segurança para dispositivos
 ###### STP = Spanning Tree Protocol previne  loops em uma rede quando os switches se interconectarem por vários caminhos
 ###### DMZ = Demilitarized Zone é uma subrede que isola serviços externos de uma organização de uma rede interna mais segura, permitindo acesso controlado à internet.

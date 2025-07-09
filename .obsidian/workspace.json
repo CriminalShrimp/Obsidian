@@ -182,17 +182,18 @@
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
     "Abreviações.md",
-    "Cisco/Defesa de Rede - Cisco.md",
     "Redes/Protocolos.md",
+    "Cisco/Defesa de Rede - Cisco.md",
+    "Notas.md",
     "RedTeam/Command N Control (CNC).md",
     "BlueTeam/FerramentasBlueTeam.md",
-    "Notas.md",
     "RedTeam/Malware.md",
     "RedTeam/ClickJacking.md",
     "Redes",
