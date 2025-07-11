@@ -98,3 +98,8 @@ root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 # Comandos 
 #Comandos 
 ###### find  - falar sobre * 
+###### timedatectl - 
+###### pwd - 
+###### ps aux - 
+###### top - 
+###### htop - 

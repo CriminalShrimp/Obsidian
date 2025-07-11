@@ -296,14 +296,13 @@ Os dados de transação consistem nas mensagens que são trocadas durante sessõ
 ### Dados Estáticos
 Como dados de sessão, dados estatísticos são sobre tráfego de rede. Os dados estatísticos são criados através da análise de outras formas de dados de rede. Podem ser feitas conclusões que descrevem ou predizem o comportamento da rede a partir dessas análises. As características estatísticas do comportamento normal da rede podem ser comparadas ao tráfego de rede atual em um esforço para detectar anomalias. As estatísticas podem ser usadas para caracterizar quantidades normais de variação nos padrões de tráfego de rede, a fim de identificar condições de rede que estão significativamente fora desses intervalos. Diferenças estatisticamente significativas devem gerar alarmes e investigação imediata.
 
-A NBA (Network Behavior Analysis) e a Network Behavior Anomaly Detection (NBAD) são abordagens para monitoramento de segurança de rede que usam técnicas analíticas avançadas para analisar dados de telemetria de rede NetFlow ou IPFIX (Internet Protocol Flow Information Export). Técnicas como análise preditiva e inteligência artificial realizam análises avançadas de dados de sessão detalhados para detectar possíveis incidentes de segurança.
+A NBA (Network Behavior Analysis) e a Network Behavior Anomaly Detection (NBAD) são abordagens para monitoramento de segurança de rede que usam técnicas analíticas avançadas para analisar dados de telemetria de rede NetFlow ou IPFIX (Internet Protocol Flow Information Export). 
 
-**Observação**: IPFIX é a versão padrão IETF do Cisco NetFlow versão 9.
 ## Logs de dispositivos
 ### Logs de Host
 Conforme discutido anteriormente, os sistemas de detecção de intrusão baseados em host (HIDS) são executados em hosts individuais. HIDS não só detecta intrusões, mas na forma de firewalls baseados em host, também pode impedir intrusões. Este software cria logs e os armazena no host. Isso pode dificultar a visão do que está acontecendo em hosts na empresa, pois muitas proteções baseadas em host têm uma maneira de enviar logs para servidores centralizados de gerenciamento de logs. Dessa forma, os logs podem ser pesquisados a partir de um local central usando as ferramentas NSM.
 
-Os sistemas HIDS podem usar agentes para enviar logs para servidores de gerenciamento. O OSSEC, um HIDS de código aberto popular, inclui uma funcionalidade robusta de coleta e análise de logs. Pesquise OSSEC na internet para saber mais. O Microsoft Windows inclui vários métodos para coleta e análise automatizadas de logs de host. Tripwire oferece um HIDS para Linux que inclui funcionalidade semelhante. Todos podem ser dimensionados para grandes empresas.
+Os sistemas HIDS podem usar agentes para enviar logs para servidores de gerenciamento. O OSSEC, um HIDS de código aberto popular, inclui uma funcionalidade robusta de coleta e análise de logs. Pesquise OSSEC na internet para saber mais. O Microsoft Windows inclui vários métodos para coleta e análise automatizadas de logs de host. Tripwire oferece um HIDS para Linux que inclui funcionalidade semelhante.
 
 Os logs de host do Microsoft Windows são visíveis localmente pelo Visualizador de Eventos. O Visualizador de Eventos mantém cinco tipos de logs:
 
@@ -311,13 +310,11 @@ Os logs de host do Microsoft Windows são visíveis localmente pelo Visualizador
 - **Registros do sistema** — Isso inclui eventos relacionados à operação de drivers, processos e hardware.
 - **Registros de instalação** — Estes registram informações sobre a instalação de software, incluindo atualizações do Windows.
 - **Registros de segurança** — Esses eventos registram relacionados à segurança, como tentativas de logon e operações relacionadas ao gerenciamento e acesso de arquivos ou objetos.
-- **Logs da linha de comando** - Os invasores que obtiveram acesso a um sistema e alguns tipos de malware executam comandos da interface de linha de comando (CLI) em vez de uma GUI. A execução da linha de comando em log fornecerá visibilidade para esse tipo de incidente.
+- **Logs da linha de comando** - Os invasores que obtiveram acesso a um sistema e alguns tipos de malware executam comandos via CLI em vez de uma GUI. A execução da linha de comando em log fornecerá visibilidade para esse tipo de incidente.
 
 Vários logs podem ter diferentes tipos de eventos. Os logs de segurança consistem apenas em mensagens de falha ou êxito de auditoria. Em computadores Windows, o log de segurança é realizado pelo Local Security Authority Subsystem Service (LSASS), que também é responsável por impor diretivas de segurança em um host Windows. O LSASS é executado como lsass.exe. Ele é frequentemente falsificado por malware. Ele deve estar sendo executado a partir do diretório System32 do Windows. Se um arquivo com esse nome, ou um nome camuflado, como 1sass.exe, estiver em execução ou em execução a partir de outro diretório, ele pode ser malware.
 
-Os Eventos do Windows são identificados por números de ID e descrições breves. Uma enciclopédia de IDs de eventos de segurança, algumas com detalhes adicionais, está disponível no Ultimate Windows Security na Web.
-
-A tabela explica o significado dos cinco tipos de eventos de log de host do Windows.
+Os Eventos do Windows são identificados por números de ID e descrições breves. Uma enciclopédia de IDs de eventos de segurança, algumas com detalhes adicionais, está disponível no Ultimate Windows Security na Web. A tabela explica o significado dos cinco tipos de eventos de log de host do Windows.
 
 |Tipo de evento|Descrição|
 |---|---|
@@ -327,41 +324,33 @@ A tabela explica o significado dos cinco tipos de eventos de log de host do Wind
 |Sucesso na Auditoria|Uma auditoria bem-sucedida é um evento que registra uma tentativa de acesso de segurança auditada com êxito. For example, a user's successful attempt to log on to the system is logged as a success audit event.|
 |Falha ne Auditoria|Uma auditoria de falha é um evento que registra uma tentativa de acesso de segurança auditada que falha. Por exemplo, se um usuário tentar acessar uma unidade de rede e falhar, a tentativa é registrada como um evento de auditoria de falha.|
 ### Syslog
-O Syslog inclui especificações para formatos de mensagem, uma estrutura de aplicativos cliente-servidor e protocolo de rede. Muitos tipos diferentes de dispositivos de rede podem ser configurados para usar o padrão syslog para registrar eventos em servidores syslog centralizados.
+Syslog é um protocolo cliente / servidor. O Syslog foi definido dentro do grupo de trabalho Syslog do IETF (RFC 5424) e é suportado por uma grande variedade de dispositivos e receptores em várias plataformas. O Syslog inclui especificações para formatos de mensagem, uma estrutura de aplicativos cliente-servidor e protocolo de rede. Muitos tipos diferentes de dispositivos de rede podem ser configurados para usar o padrão syslog para registrar eventos.
 
-Syslog é um protocolo cliente / servidor. O Syslog foi definido dentro do grupo de trabalho Syslog do IETF (RFC 5424) e é suportado por uma grande variedade de dispositivos e receptores em várias plataformas.
+O remetente do Syslog envia uma pequena mensagem de texto para o receptor do Syslog. O receptor Syslog é comumente chamado de “syslogd”, “Syslog daemon” ou “Syslog server.“ As mensagens do Syslog podem ser enviadas via UDP (porta 514) e/ou TCP (normalmente, porta 5000). Embora existam algumas exceções, como wrappers SSL, esses dados são normalmente enviados em texto simples pela rede.
 
-O remetente do Syslog envia uma pequena mensagem de texto (menos de 1 KB) para o receptor do Syslog. O receptor Syslog é comumente chamado de “syslogd”, “Syslog daemon” ou “Syslog server.“ As mensagens do Syslog podem ser enviadas via UDP (porta 514) e/ou TCP (normalmente, porta 5000). Embora existam algumas exceções, como wrappers SSL, esses dados são normalmente enviados em texto simples pela rede.
+O formato completo de uma mensagem Syslog que é visto na rede tem três partes distintas
+- **PRI** (prioridade)
+- **HEADER**
+- **MSG** (texto da mensagem)
 
-O formato completo de uma mensagem Syslog que é visto na rede tem três partes distintas, como mostrado na figura.
+O PRI consiste em dois elementos, a <span style="color:rgb(255, 255, 0)">Facilidade</span> e a <span style="color:rgb(255, 255, 0)">Gravidade</span> da mensagem, que são ambos valores inteiros. O recurso consiste em amplas categorias de fontes que geraram a mensagem, como o sistema, o processo ou a aplicação. O valor Facility pode ser usado por servidores de log para direcionar a mensagem para o arquivo de log apropriado. A <span style="color:rgb(255, 255, 0)">gravidade</span> é um valor de <span style="color:rgb(206, 0, 86)">0</span> a <span style="color:rgb(65, 105, 255)">7</span> que define a gravidade da mensagem.
 
-- PRI (prioridade)
-- HEADER
-- MSG (texto da mensagem)
-
-O PRI consiste em dois elementos, a Facilidade e a Gravidade da mensagem, que são ambos valores inteiros. O recurso consiste em amplas categorias de fontes que geraram a mensagem, como o sistema, o processo ou a aplicação. O valor Facility pode ser usado por servidores de log para direcionar a mensagem para o arquivo de log apropriado. A gravidade é um valor de 0 a 7 que define a gravidade da mensagem.
-
-| Valor | Severidade                                                                                                                  |
-| ----- | --------------------------------------------------------------------------------------------------------------------------- |
-| 0     | **Emergência**: sistema está inutilizável                                                                                   |
-| 1     | **Alerta**: a ação deve ser tomada imediatamente                                                                            |
-| 2     | **Crítico**: condições críticas que devem ser corrigidas imediatamente e indica falha em um sistema                         |
-| 3     | **Erro**: uma falha que não é urgente, deve ser resolvida dentro de um determinado tempo                                    |
-| 4     | **Aviso**: um erro não existe atualmente; no entanto, um erro ocorrerá no futuro se a condição não for resolvida            |
-| 5     | **Aviso**: Qual ferramenta está incluída no Security Onion que é usada pelo Snort para baixar automaticamente novas regras? |
-| 6     | **Informativo**: mensagens emitidas relativas ao funcionamento normal                                                       |
-| 7     | **Depuração**: mensagens de interesse para desenvolvedores                                                                  |
+| Valor                                          | Severidade                                                                                                                  |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| <span style="color:rgb(206, 0, 86)">0</span>   | **Emergência**: sistema está inutilizável                                                                                   |
+| <span style="color:rgb(206, 0, 86)">1</span>   | **Alerta**: a ação deve ser tomada imediatamente                                                                            |
+| <span style="color:rgb(206, 0, 86)">2</span>   | **Crítico**: condições críticas que devem ser corrigidas imediatamente e indica falha em um sistema                         |
+| <span style="color:rgb(255, 255, 0)">3</span>  | **Erro**: uma falha que não é urgente, deve ser resolvida dentro de um determinado tempo                                    |
+| <span style="color:rgb(255, 255, 0)">4</span>  | **Aviso**: um erro não existe atualmente; no entanto, um erro ocorrerá no futuro se a condição não for resolvida            |
+| <span style="color:rgb(65, 105, 255)">5</span> | **Aviso**: Qual ferramenta está incluída no Security Onion que é usada pelo Snort para baixar automaticamente novas regras? |
+| <span style="color:rgb(65, 105, 255)">6</span> | **Informativo**: mensagens emitidas relativas ao funcionamento normal                                                       |
+| <span style="color:rgb(65, 105, 255)">7</span> | **Depuração**: mensagens de interesse para desenvolvedores                                                                  |
 ### Logs do servidor
 Os logs do servidor são uma fonte essencial de dados para o monitoramento da segurança da rede, servidores de aplicativos de rede como servidores de e-mail e Web mantêm registros de acesso e erros, servidores de proxy DNS que documentam todas as consultas DNS e respostas que ocorrem na rede são especialmente importantes. Os logs de proxy DNS são úteis para identificar hosts que possam ter visitado sites perigosos e para identificar a infiltração de dados DNS e conexões a servidores de comando e controle de malware. Muitos servidores UNIX e Linux usam syslog, outros podem usar o registro proprietário, o conteúdo dos logs muda para cada serviço 
-
-### NetFlow (cisco)
-NetFlow é um protocolo desenvolvido pela Cisco como uma ferramenta para solução de problemas de rede e contabilidade baseada em sessão. O NetFlow fornece com eficiência um importante conjunto de serviços para aplicativos IP, incluindo contabilidade de tráfego de rede, faturamento de rede com base no uso, planejamento de rede, segurança, recursos de monitoramento de negação de serviço e monitoramento de rede. O NetFlow fornece informações valiosas sobre usuários e aplicativos de rede, tempos de uso de pico e roteamento de tráfego.
-
-O NetFlow não faz uma captura completa de pacote ou captura o conteúdo real no pacote. O NetFlow registra informações sobre o fluxo de pacotes, incluindo metadados. A Cisco desenvolveu o NetFlow e, em seguida, permitiu que ele fosse usado como base para um padrão IETF chamado IPFIX. O IPFIX é baseado no Cisco NetFlow Versão 9.
 ### Registros de Proxy
 
 Servidores proxy são dispositivos que atuam como intermediários para clientes de rede. Por exemplo, uma empresa pode configurar um proxy da Web para lidar com solicitações da Web em nome de clientes. Em vez de solicitações de recursos da Web serem enviadas diretamente para o servidor do cliente, a solicitação é enviada primeiro para um servidor proxy. O servidor proxy solicita os recursos e os retorna ao cliente. O servidor proxy gera logs de todas as solicitações e respostas. Esses logs podem ser analisados para determinar quais hosts estão fazendo as solicitações, se os destinos são seguros ou potencialmente maliciosos, e também para obter insights sobre o tipo de recursos que foram baixados.
-Proxies da Web fornecem dados que ajudam a determinar se as respostas da Web foram geradas em resposta a solicitações legítimas ou foram manipuladas para parecer respostas, mas são, de fato, explorações. Também é possível usar proxies da web para inspecionar o tráfego de saída como meio de prevenção de perda de dados (DLP). O DLP envolve a varredura do tráfego de saída para detectar se os dados que estão saindo da Web contêm informações confidenciais, confidenciais ou secretas. Exemplos de proxies populares da Web são Squid, CCProxy, Apache Traffic Server e WinGate.
+Proxies da Web fornecem dados que ajudam a determinar se as respostas da Web foram geradas em resposta a solicitações legítimas ou foram manipuladas para parecer respostas, mas são, de fato, explorações. Também é possível usar proxies da web para inspecionar o tráfego de saída como meio de prevenção de perda de dados (DLP). O DLP envolve a varredura do tráfego de saída para detectar se os dados que estão saindo da Web contêm informações confidenciais, confidenciais ou secretas. 
 
 **Exemplo de log de proxy DNS via Squid**
 
@@ -382,7 +371,6 @@ Proxies da Web fornecem dados que ajudam a determinar se as respostas da Web for
 |NONE/-|**Código de peering/Host de peer** - Consulta ao servidor de cache vizinho|
 |image/png|**Tipo** - tipo de conteúdo MIME do valor Content-Type no cabeçalho de resposta HTTP|
 
-**Observação**: Proxies da Web abertos, que são proxies que estão disponíveis para qualquer usuário da Internet, podem ser usados para ofuscar endereços IP de atores de ameaças. Endereços de proxy abertos podem ser usados na lista negra do tráfego da Internet.
 # Modulo 11: Avaliação de Alertas
 #redes #BlueTeam 
 ## Cebola Segurança
