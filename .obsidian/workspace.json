@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/CLI.md",
+                "file": "Cisco/Defesa de Rede - Cisco.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLI"
+              "title": "Defesa de Rede - Cisco"
             }
           },
           {
@@ -188,11 +188,16 @@
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
-    "Notas.md",
+    "Ferramentas/Ferramentas.md",
+    "Cisco/Defesa de Rede - Cisco.md",
+    "Ferramentas/Git e GitHub.md",
+    "Ferramentas/Docker.md",
+    "Ferramentas/WireShark.md",
+    "Linux/Linux Fundamentals 9.1 RedHat.md",
     "Linux/CLI.md",
+    "Notas.md",
     "Redes/Protocolos.md",
     "Redes/Camada OSI.md",
-    "Cisco/Defesa de Rede - Cisco.md",
     "RedTeam/ClickJacking.md",
     "RedTeam/Command N Control (CNC).md",
     "RedTeam/Malware.md",
@@ -204,17 +209,12 @@
     "Abreviações.md",
     "tesmyids.md",
     "Ferramentas/Kubernetes.md",
-    "Ferramentas/Docker.md",
     "Conceitos/Hash.md",
-    "Ferramentas/Ferramentas.md",
     "Redes",
     "Ferramentas/Snort.md",
     "Conceitos/Chaves Públicas e Privadas.md",
     "Conceitos/Zero-Trust.md",
     "Conceitos/Criptografia.md",
-    "Ferramentas/Git.md",
-    "Cisco/Packet Tracer/Nesta atividade, você usará o Packet Tracer para exibir dados de rede gerados pelo syslog, AAA e NetFlow.md",
-    "Cisco/Packet Tracer/Laboratório - Classificar alertas.md",
     "Cisco/Packet Tracer/packet-tracer-logging-from-multiple-sources.pka",
     "Cisco/Packet Tracer/Não confirmado 936363.crdownload",
     "Cisco/Packet Tracer/packet-tracer-explore-a-netflow-implementation.pka",

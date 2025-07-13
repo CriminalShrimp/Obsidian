@@ -1,3 +1,4 @@
+GIT = [Git](https://git-scm.com/) é um software de controle de versão de código aberto e gratuito. Ele permite que vários desenvolvedores trabalhem em um mesmo projeto ao mesmo tempo, sem que as alterações entrem em conflito. Também é usado nesse aplicativo para backup.
 # 📌 Guia de Backup do Obsidian no GitHub
 
 Este documento contém todos os passos necessários para configurar o backup do Obsidian no GitHub utilizando o Git.
