@@ -1,1 +1,2 @@
  #RedTeam 
+ Sniffing, em redes de computadores, é o processo de monitorar e capturar o tráfego de dados que passa por uma rede. Basicamente, um "sniffer" (ferramenta de software ou hardware) intercepta e registra pacotes de dados, permitindo que o usuário visualize as informações transmitidas entre dispositivos. Essa técnica pode ser utilizada tanto para fins legítimos, como monitoramento e solução de problemas em redes, quanto para atividades maliciosas, como ataques e roubo de dados.
