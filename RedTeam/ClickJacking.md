@@ -1,1 +1,1 @@
-ANIIIIIIII
+Também conhecido como "ataque de sequestro de clique", é uma técnica maliciosa em que um invasor induz um usuário a clicar em um elemento diferente daquele que o usuário pretende clicar, geralmente em outra página ou aplicação. Isso é feito sobrepondo uma camada transparente ou oculta sobre uma página legítima, fazendo com que os cliques do usuário sejam direcionados para conteúdo malicioso. 
