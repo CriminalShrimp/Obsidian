@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RedTeam/Snaffing.md",
+                "file": "Ferramentas/Git e GitHub.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Snaffing"
+              "title": "Git e GitHub"
             }
           }
         ]
@@ -174,8 +174,10 @@
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
-    "RedTeam/Man-in-the-Middle.md",
+    "Tutorial Git com Obsidian.md",
+    "Ferramentas/Git e GitHub.md",
     "RedTeam/Snaffing.md",
+    "RedTeam/Man-in-the-Middle.md",
     "RedTeam/Malware.md",
     "RedTeam/ClickJacking.md",
     "RedTeam/Command N Control (CNC).md",
@@ -184,7 +186,6 @@
     "Arquitetura Computacional/Kernel.md",
     "Conceitos/Chaves Públicas e Privadas.md",
     "Ferramentas/Kubernetes.md",
-    "Ferramentas/Git e GitHub.md",
     "Ferramentas/Ferramentas.md",
     "Ferramentas/Docker.md",
     "Linux/Linux Fundamentals 9.1 RedHat.md",
@@ -192,7 +193,6 @@
     "Redes/Protocolos.md",
     "Redes/Camada OSI.md",
     "Abreviações.md",
-    "Notas.md",
     "Cisco/Defesa de Rede - Cisco.md",
     "Cisco/Packet Tracer/Exercicios.md",
     "tesmyids.md",
