@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"b530f81c2a8cf2e7","type":"text","text":"Exercícios","x":-680,"y":-100,"width":220,"height":50,"color":"6"},
+		{"id":"2dd5a63e450322b8","type":"text","text":"UpperBody","x":-180,"y":-320,"width":220,"height":50,"color":"1"},
+		{"id":"cfe334035e528d65","type":"text","text":"Core","x":-180,"y":-100,"width":220,"height":50,"color":"3"},
+		{"id":"f3022b0caaa0678b","type":"text","text":"LowerBody","x":-180,"y":140,"width":220,"height":50,"color":"5"},
+		{"id":"b3b9209f72112d9f","type":"text","text":"Coxas","x":120,"y":135,"width":250,"height":50,"color":"5"},
+		{"id":"6e2f0b2f96895921","type":"text","text":"Ombros","x":120,"y":-325,"width":250,"height":55,"color":"1"},
+		{"id":"b963149fc4bc6e4f","type":"text","text":"Costas/Peito","x":120,"y":-400,"width":250,"height":50,"color":"1"},
+		{"id":"19d5e81f9b09753b","type":"text","text":"Bíceps/Tríceps","x":120,"y":-240,"width":250,"height":50,"color":"1"},
+		{"id":"8f8679d6cf9cd43d","type":"text","text":"Lombar/Abdômen","x":120,"y":-105,"width":250,"height":55,"color":"3"},
+		{"id":"904e483b31967cd8","type":"text","text":"Glúteos","x":120,"y":40,"width":250,"height":50,"color":"5"},
+		{"id":"40ba651469dbe814","type":"text","text":"Panturrilhas","x":120,"y":220,"width":250,"height":50,"color":"5"},
+		{"id":"a0285b9e7d690ac8","type":"text","text":"Alongamento ","x":-960,"y":-100,"width":200,"height":50,"color":"6"}
+	],
+	"edges":[
+		{"id":"cfb25f81eddbf0bd","fromNode":"b530f81c2a8cf2e7","fromSide":"right","toNode":"2dd5a63e450322b8","toSide":"left","color":"1"},
+		{"id":"45505274b920f56d","fromNode":"b530f81c2a8cf2e7","fromSide":"right","toNode":"cfe334035e528d65","toSide":"left","color":"3"},
+		{"id":"2a373dac3f22db77","fromNode":"b530f81c2a8cf2e7","fromSide":"right","toNode":"f3022b0caaa0678b","toSide":"left","color":"5"},
+		{"id":"8dbd9bf3b51fdde7","fromNode":"2dd5a63e450322b8","fromSide":"right","toNode":"b963149fc4bc6e4f","toSide":"left","color":"1"},
+		{"id":"3ba57371f31bda2d","fromNode":"f3022b0caaa0678b","fromSide":"right","toNode":"b3b9209f72112d9f","toSide":"left","color":"5"},
+		{"id":"e1d83b33f34f6e2a","fromNode":"2dd5a63e450322b8","fromSide":"right","toNode":"6e2f0b2f96895921","toSide":"left","color":"1"},
+		{"id":"3fca5b67c3c0bac7","fromNode":"2dd5a63e450322b8","fromSide":"right","toNode":"19d5e81f9b09753b","toSide":"left","color":"1"},
+		{"id":"e28d905b527c7d52","fromNode":"cfe334035e528d65","fromSide":"right","toNode":"8f8679d6cf9cd43d","toSide":"left","color":"3"},
+		{"id":"5b0e2fab1b571d61","fromNode":"f3022b0caaa0678b","fromSide":"right","toNode":"904e483b31967cd8","toSide":"left","color":"5"},
+		{"id":"e4f197ec57df83f9","fromNode":"f3022b0caaa0678b","fromSide":"right","toNode":"40ba651469dbe814","toSide":"left","color":"5"},
+		{"id":"dd6008bb27b23d3f","fromNode":"a0285b9e7d690ac8","fromSide":"right","toNode":"b530f81c2a8cf2e7","toSide":"left","color":"6"}
+	]
+}

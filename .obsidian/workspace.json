@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ferramentas/Git e GitHub.md",
+                "file": "Treino/Treino.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git e GitHub"
+              "title": "Treino"
             }
           }
         ]
@@ -174,8 +174,12 @@
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
-    "Tutorial Git com Obsidian.md",
+    "Treino/Rotina Treino.canvas",
+    "Treino/Treino.md",
     "Ferramentas/Git e GitHub.md",
+    "Treino",
+    "Sem título.md",
+    "Tutorial Git com Obsidian.md",
     "RedTeam/Snaffing.md",
     "RedTeam/Man-in-the-Middle.md",
     "RedTeam/Malware.md",
@@ -198,9 +202,6 @@
     "tesmyids.md",
     "Conceitos/Hash.md",
     "Redes",
-    "Ferramentas/Snort.md",
-    "Conceitos/Zero-Trust.md",
-    "Conceitos/Criptografia.md",
     "Cisco/Packet Tracer/packet-tracer-logging-from-multiple-sources.pka",
     "Cisco/Packet Tracer/Não confirmado 936363.crdownload",
     "Cisco/Packet Tracer/packet-tracer-explore-a-netflow-implementation.pka",
@@ -219,7 +220,6 @@
     "Conceitos/IMG",
     "Cisco/Packet Tracer/packet-tracer-configure-a-zpf.pksz",
     "Cisco/Packet Tracer/Não confirmado 706574.crdownload",
-    "Excalidraw",
     "Sem título.canvas"
   ]
 }
