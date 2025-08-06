@@ -4,7 +4,7 @@
 		{"id":"2dd5a63e450322b8","type":"text","text":"UpperBody","x":-180,"y":-320,"width":220,"height":50,"color":"1"},
 		{"id":"cfe334035e528d65","type":"text","text":"Core","x":-180,"y":-100,"width":220,"height":50,"color":"3"},
 		{"id":"f3022b0caaa0678b","type":"text","text":"LowerBody","x":-180,"y":140,"width":220,"height":50,"color":"5"},
-		{"id":"b3b9209f72112d9f","type":"text","text":"Coxas","x":120,"y":135,"width":250,"height":50,"color":"5"},
+		{"id":"b3b9209f72112d9f","type":"text","text":"Agachamento \"Glúteos\"","x":120,"y":135,"width":250,"height":50,"color":"5"},
 		{"id":"6e2f0b2f96895921","type":"text","text":"Ombros","x":120,"y":-325,"width":250,"height":55,"color":"1"},
 		{"id":"b963149fc4bc6e4f","type":"text","text":"Costas/Peito","x":120,"y":-400,"width":250,"height":50,"color":"1"},
 		{"id":"19d5e81f9b09753b","type":"text","text":"Bíceps/Tríceps","x":120,"y":-240,"width":250,"height":50,"color":"1"},

@@ -11,14 +11,17 @@
             "id": "a255711e48256031",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Treino/Treino.md",
-                "mode": "source",
-                "source": false
+                "file": "Treino/Rotina Treino.canvas",
+                "viewState": {
+                  "x": -295,
+                  "y": -65,
+                  "zoom": -0.5260293673663212
+                }
               },
-              "icon": "lucide-file",
-              "title": "Treino"
+              "icon": "lucide-layout-dashboard",
+              "title": "Rotina Treino"
             }
           }
         ]
@@ -174,8 +177,8 @@
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
-    "Treino/Rotina Treino.canvas",
     "Treino/Treino.md",
+    "Treino/Rotina Treino.canvas",
     "Ferramentas/Git e GitHub.md",
     "Treino",
     "Sem título.md",
