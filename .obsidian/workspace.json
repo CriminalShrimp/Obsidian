@@ -11,17 +11,14 @@
             "id": "a255711e48256031",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Treino/Rotina Treino.canvas",
-                "viewState": {
-                  "x": -295,
-                  "y": -65,
-                  "zoom": -0.5260293673663212
-                }
+                "file": "Treino/Treino.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Rotina Treino"
+              "icon": "lucide-file",
+              "title": "Treino"
             }
           }
         ]
@@ -177,8 +174,12 @@
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
+    "Treino/IMG Treino/Bananeira.webp",
     "Treino/Treino.md",
     "Treino/Rotina Treino.canvas",
+    "Treino/IMG Treino/L-sit.webp",
+    "Treino/IMG Treino/Agachamento Pistol.webp",
+    "Treino/IMG Treino",
     "Ferramentas/Git e GitHub.md",
     "Treino",
     "Sem título.md",
@@ -215,14 +216,9 @@
     "Cisco/IMG/Balanceamento de carga com delegação DNS.webp",
     "Cisco/IMG/TOR.webp",
     "Cisco/IMG/p2p.webp",
-    "Cisco/IMG/Network Address Translation.webp",
-    "Cisco/IMG/Atenuante o abuso de ICMP.webp",
-    "Cisco/IMG/Ameaças de protocolo de email.webp",
-    "Cisco/IMG/Transações HTTPS.webp",
     "Cisco/Packet Tracer/Sem título",
     "Conceitos/IMG",
     "Cisco/Packet Tracer/packet-tracer-configure-a-zpf.pksz",
-    "Cisco/Packet Tracer/Não confirmado 706574.crdownload",
     "Sem título.canvas"
   ]
 }

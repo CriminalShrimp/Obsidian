@@ -1,5 +1,12 @@
 ## Alongamento
 ## <span style="color:rgb(206, 0, 86)">UpperBody</span>
+**Exercícios gerais** 
+#### L-Sit
+Esse é um exercício extremamente difícil q usa  a parte superior toda do corpo alem de equilibrio 
+![[L-sit.webp]]
+#### Bananeira
+Exercício que exige forca e principalmente equilíbrio 
+![[Bananeira.webp]]
 
 ### Peito
 #### Dips
@@ -21,7 +28,9 @@ O melhor exercício de pernas é o <span style="color:rgb(65, 105, 255)">Agacham
 ### Agachamentos
 <span style="color:rgb(65, 105, 255)">Agachamento Búlgaro</span>
 <span style="color:rgb(65, 105, 255)">Agachamento Cossack</span>
-<span style="color:rgb(65, 105, 255)">Agachamento Pistola</span>
+#### <span style="color:rgb(65, 105, 255)">Agachamento Pistola</span>
+Treinamento para conseguir fazer o agachamento pistola 
+![[Agachamento Pistol.webp]]
 <span style="color:rgb(65, 105, 255)">Agachamento Dragão </span>
 ### Coxas
 #### Wall Sit
