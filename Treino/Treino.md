@@ -1,4 +1,6 @@
 ## Alongamento
+### McGill Big 3
+[Aqui](https://www.youtube.com/watch?v=2_e4I-brfqs&ab_channel=SquatUniversity) tem um tutorial em vídeo de como fazer os exercícios, que consistem em exercícios que fortalecem a área do abdômen 
 ## <span style="color:rgb(206, 0, 86)">UpperBody</span>
 **Exercícios gerais** 
 #### L-Sit
@@ -10,6 +12,8 @@ Exercício que exige forca e principalmente equilíbrio
 
 ### Peito
 #### Dips
+Treino de tríceps que consiste em se apoiar em um objeto e forcar os tríceps para levantar seu próprio peso, para deixar mais difícil pode estivar a perna e subir a altura das mesmas.
+![[Treino-20250818044732531.webp]]
 #### Flexão
 ### Costas
 #### Superman
