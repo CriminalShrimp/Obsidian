@@ -13,8 +13,10 @@ Exercício que exige forca e principalmente equilíbrio
 ### Peito
 #### Dips
 Treino de tríceps que consiste em se apoiar em um objeto e forcar os tríceps para levantar seu próprio peso, para deixar mais difícil pode estivar a perna e subir a altura das mesmas.
-![[Treino-20250818044732531.webp]]
+![[Dips.webp]]
 #### Flexão
+[Aqui](https://darebee.com/pushups-guide.html) temos vários jeitos de fazer flexão, aqui a baixo temos como fazer a classica.
+![[Flexão.webp]]
 ### Costas
 #### Superman
 
@@ -30,7 +32,8 @@ Treino de tríceps que consiste em se apoiar em um objeto e forcar os tríceps p
 ## <span style="color:rgb(65, 105, 255)">LowerBody</span>
 O melhor exercício de pernas é o <span style="color:rgb(65, 105, 255)">Agachamento</span>, então esse começo é dedicado a ele e suas variações 
 ### Agachamentos
-<span style="color:rgb(65, 105, 255)">Agachamento Búlgaro</span>
+#### Agachamento Búlgaro
+![[Agachamento Bulgaro.webp]]
 <span style="color:rgb(65, 105, 255)">Agachamento Cossack</span>
 #### <span style="color:rgb(65, 105, 255)">Agachamento Pistola</span>
 Treinamento para conseguir fazer o agachamento pistola 
