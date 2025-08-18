@@ -34,11 +34,15 @@ O melhor exercício de pernas é o <span style="color:rgb(65, 105, 255)">Agacham
 ### Agachamentos
 #### Agachamento Búlgaro
 ![[Agachamento Bulgaro.webp]]
-<span style="color:rgb(65, 105, 255)">Agachamento Cossack</span>
-#### <span style="color:rgb(65, 105, 255)">Agachamento Pistola</span>
-Treinamento para conseguir fazer o agachamento pistola 
+#### Agachamento Cossack
+
+![[Agachamento Cossack.webp]]
+#### Agachamento Pistola
+Um tutorial mais avançando para fazer o [Agachamento Pistola](https://www.youtube.com/watch?v=ZPpti4Xxs_w&t=328s&pp=ygUYaG93IHRvIGRvIGEgZHJhZ29uIHNxdWF0) Treinamento para conseguir fazer o agachamento pistola.
 ![[Agachamento Pistol.webp]]
-<span style="color:rgb(65, 105, 255)">Agachamento Dragão </span>
+#### Agachamento Dragão
+Nem tenta, mas se for tentar, tanta [isso](https://www.youtube.com/watch?v=IRXeX-p6z68&ab_channel=ExploreTheMovement)
+
 ### Coxas
 #### Wall Sit
 ### Panturrilhas
