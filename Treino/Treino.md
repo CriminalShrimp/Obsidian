@@ -28,6 +28,8 @@ Treino de tríceps que consiste em se apoiar em um objeto e forcar os tríceps p
 #### Abdominal Crucifixo 
 #### Core Hold
 #### Prancha 
+#### Prancha Padrão
+![[Prancha.webp]] 
 ##### Prancha Lateral
 ## <span style="color:rgb(65, 105, 255)">LowerBody</span>
 O melhor exercício de pernas é o <span style="color:rgb(65, 105, 255)">Agachamento</span>, então esse começo é dedicado a ele e suas variações 
