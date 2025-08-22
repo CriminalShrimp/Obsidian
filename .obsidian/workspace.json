@@ -20,6 +20,20 @@
               "icon": "lucide-file",
               "title": "Treino"
             }
+          },
+          {
+            "id": "bcec09786ec2f29c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.10"
+              },
+              "pinned": true,
+              "icon": "lucide-book-up",
+              "title": "Notas de Lançamento 1.9.10"
+            }
           }
         ]
       }
@@ -161,6 +175,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Criar nova base": false,
       "graph:Abrir visualização em gráfico": false,
       "switcher:Abrir a troca rápida": false,
       "canvas:Criar novo canvas": false,
@@ -174,9 +189,10 @@
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
+    "Treino/IMG Treino/Panturilhas.webp",
+    "Treino/Treino.md",
     "Treino/Rotina Treino.canvas",
     "Treino/IMG Treino/Prancha.webp",
-    "Treino/Treino.md",
     "Treino/IMG Treino/Agachamento Cossack.webp",
     "Excalidraw/Drawing 2025-08-18 05.13.52.excalidraw.md",
     "Excalidraw",
@@ -217,7 +233,6 @@
     "Cisco/Packet Tracer/packet-tracer-explore-a-netflow-implementation.pka",
     "Cisco/Packet Tracer/Não confirmado 351343.crdownload",
     "Cisco/IMG/Dados de transação.webp",
-    "Cisco/IMG/Dados de Sessão Zeek - Conteúdo Parcial.webp",
     "Cisco/Packet Tracer/Sem título",
     "Conceitos/IMG",
     "Sem título.canvas"

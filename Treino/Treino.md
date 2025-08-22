@@ -48,4 +48,8 @@ Nem tenta, mas se for tentar, tanta [isso](https://www.youtube.com/watch?v=IRXeX
 ### Coxas
 #### Wall Sit
 ### Panturrilhas
+
+#### Geral
+![[Panturilhas.webp]]
 #### Calf Raises
+Basta levantar seu próprio peso com as panturrilha ficando na ponta dos pês, se quiser dificultar incline-se para frente ou faca somente com uma perna de cada vez.
