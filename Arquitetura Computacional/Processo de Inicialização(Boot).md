@@ -1,0 +1,2 @@
+![[Inicialização de um Computador-20250828060442458.webp]]
+A primeira coisa, obviamente, é energia para poder ligar o computador. Após isso é iniciado o sistema da <span style="color:rgb(255, 255, 0)">BIOS</span> 
