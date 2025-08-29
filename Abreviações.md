@@ -26,6 +26,8 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas 
 ###### PCAP = Refere-se a Packet CAPture que é um método usado para capturar e armazenar pacotes de trafego de rede.
 ###### SSL = Secure Socket Layer
+
+###### BIOS = Basic Input/Output System que significa as entradas e saídas básicas do sistema
 www = World Wide Web
 
 
