@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arquitetura Computacional/Processo de Inicialização(Boot).md",
+                "file": "Arquitetura Computacional/Dispositivo de Armazenamento.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Processo de Inicialização(Boot)"
+              "title": "Dispositivo de Armazenamento"
             }
           },
           {
@@ -189,9 +189,11 @@
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
-    "Abreviações.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
-    "Arquitetura Computacional/Inicialização de um Computador-20250828060442458.webp",
+    "Arquitetura Computacional/Img/Inicialização de um Computador-20250828060442458.webp",
+    "Arquitetura Computacional/Dispositivo de Armazenamento.md",
+    "Arquitetura Computacional/Img",
+    "Abreviações.md",
     "Arquitetura Computacional/Kernel.md",
     "Linux/Linux Courses.md",
     "Linux/CLI.md",
@@ -227,14 +229,12 @@
     "Redes/Protocolos.md",
     "Redes/Camada OSI.md",
     "Cisco/Defesa de Rede - Cisco.md",
-    "Cisco/Packet Tracer/Exercicios.md",
     "Redes",
     "Cisco/Packet Tracer/packet-tracer-logging-from-multiple-sources.pka",
     "Cisco/Packet Tracer/Não confirmado 936363.crdownload",
     "Cisco/Packet Tracer/packet-tracer-explore-a-netflow-implementation.pka",
     "Cisco/Packet Tracer/Não confirmado 351343.crdownload",
     "Cisco/Packet Tracer/Sem título",
-    "Conceitos/IMG",
     "Sem título.canvas"
   ]
 }
