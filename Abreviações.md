@@ -30,7 +30,7 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### BIOS = Basic Input/Output System que significa as entradas e saídas básicas do sistema
 www = World Wide Web.
 ###### EFI/UEFI = (Unified) Extensible Firmware Interface é um padrão moderno de firmware(software embutido em dispositivos de hardware) que substitui o antigo BIOS.
-
+###### USB = Universal Serial Bus chamado de porta serial universal é usado em diversas tecnologias tendo também varias versões.
 IMAP = Internet Message Access Protocol monitora a rede em busca de atividade suspeitas .
 
 PKI = Public key infrastructure.
