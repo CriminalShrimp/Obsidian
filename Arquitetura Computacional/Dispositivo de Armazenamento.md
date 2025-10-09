@@ -6,10 +6,9 @@ Todos esses são disco óptico que utilizam luz como teologia para armazenamento
 **C**omplementary **M**etal-**O**xide-**S**emiconductor (CMOS) é uma pequena memória volátil na placa-mãe, que armazena informações de configuração de hardware. como por exemplo uma sequencia de boot (USB, CD-ROM, HD e placa de rede) ou a data e hora do computador.  Ela é alimentada por uma pequena bateria, que de tempos em tempos tem q ser trocada.
 
 ### Pen Drive
-Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de porta serial universal é usado em diversas tecnologias tendo também varias versões.|USB]] veio para substituir o CD e o disquete, e é usado ate os dias atuais. Seu poder de armazenamento é muito amplo, havendo dispositivos com 8 GB de armazenamento indo ate 1 TB, isso sem aumentar drasticamente seu tamanho, já que a ideia do pen drive é ser compacto e móvel. Usando a memória flash **NAND** ele armazena seus dados em grandes células de memorias conectadas 
-### HD
-Hardware Disc ou Discos Rígidos
-### HDD
+Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de porta serial universal é usado em diversas tecnologias tendo também varias versões.|USB]] veio para substituir o CD e o disquete, e é usado ate os dias atuais. Seu poder de armazenamento é muito amplo, havendo dispositivos com 8 GB de armazenamento indo ate 1 TB, isso sem aumentar drasticamente seu tamanho, já que a ideia do pen drive é ser compacto e móvel. Usando a memória flash **NAND** ele armazena seus dados em grandes células de memorias conectadas.
+### HD/HDD
+**H**ardware **D**isc **D**rive ou Discos Rígidos usa armazenamento magnético e um ou mais pratos (que seriam os discos) para salvar gravar os dados. A gravação e a leitura dos dados são feitas por um braço móvel, esses dados são acessados de forma aleatória. Como os HDs estão no mercado a muito tempo, existem varias tecnologia que melhoram seu desempenho e também possuem varias capacidade distintas, tendo alguns modelos de 128 GB e alguns que hoje em dia  chegam ate 20 TB, e no mercado também existem HDs moveis e são os <span style="color:rgb(255, 255, 0)">HDs Externo</span> que tem o mesmo funcionamento dos HDs normais, porem de uma forma mais segura a ser transportado no dia a dia.
 ### SSD
 Unidades de Estado Sólido
 ### ROM
