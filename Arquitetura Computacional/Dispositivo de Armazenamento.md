@@ -10,5 +10,5 @@ Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de
 ### HD/HDD
 **H**ardware **D**isc **D**rive ou Discos Rígidos usa armazenamento magnético e um ou mais pratos (que seriam os discos) para salvar gravar os dados. A gravação e a leitura dos dados são feitas por um braço móvel, esses dados são acessados de forma aleatória. Como os HDs estão no mercado a muito tempo, existem varias tecnologia que melhoram seu desempenho e também possuem varias capacidade distintas, tendo alguns modelos de 128 GB e alguns que hoje em dia  chegam ate 20 TB, e no mercado também existem HDs moveis e são os <span style="color:rgb(255, 255, 0)">HDs Externo</span> que tem o mesmo funcionamento dos HDs normais, porem de uma forma mais segura a ser transportado no dia a dia.
 ### SSD
-Unidades de Estado Sólido
+**S**olid **S**tate **D**rive ou Unidades de Estado Sólido
 ### ROM
