@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cisco/Defesa de Rede - Cisco.md",
+                "file": "Arquitetura Computacional/Dispositivo de Armazenamento.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Defesa de Rede - Cisco"
+              "title": "Links inversos para Dispositivo de Armazenamento"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cisco/Defesa de Rede - Cisco.md",
+                "file": "Arquitetura Computacional/Dispositivo de Armazenamento.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Defesa de Rede - Cisco"
+              "title": "Links de saída para Dispositivo de Armazenamento"
             }
           },
           {
@@ -142,17 +142,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Arquitetura Computacional/Processo de Inicialização(Boot).md",
+                "file": "Arquitetura Computacional/Dispositivo de Armazenamento.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Processo de Inicialização(Boot)"
+              "title": "Sumário de Dispositivo de Armazenamento"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -169,7 +168,8 @@
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "a255711e48256031",
