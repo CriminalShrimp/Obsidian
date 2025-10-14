@@ -11,6 +11,7 @@ Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de
 ### CMOS
 **C**omplementary **M**etal-**O**xide-**S**emiconductor (CMOS) é uma pequena memória volátil na placa-mãe, que armazena informações de configuração de hardware. como por exemplo uma sequencia de boot (USB, CD-ROM, HD e placa de rede) ou a data e hora do computador.  Ela é alimentada por uma pequena bateria, que de tempos em tempos tem q ser trocada.
 ### Memoria ROM
-**R**ead **O**nly **M**emory ou Memoria Rom é um tipo de memória que armazena instruções e dados permanentes para a inicialização do dispositivo 
+**R**ead **O**nly **M**emory ou Memoria Somente de Leitura é um tipo de memória não volátil que armazena instruções permanentes para a inicialização do dispositivo, essas informações são chamadas de firmware. Além das instruções também armazena os dados do usuário permanentemente.
 ### Memoria RAM
+**R**andom **A**cess **M**emory
 
