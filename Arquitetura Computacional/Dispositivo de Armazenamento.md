@@ -22,7 +22,14 @@ Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de
 ![[SSD Tipos.jpg|374|center]]
 ### CMOS
 **C**omplementary **M**etal-**O**xide-**S**emiconductor (CMOS) é uma pequena memória volátil na placa-mãe, que armazena informações de configuração de hardware. como por exemplo uma sequencia de boot (USB, CD-ROM, HD e placa de rede) ou a data e hora do computador.  Ela é alimentada por uma pequena bateria, que de tempos em tempos tem q ser trocada.
+
+![[CMOS.webp|519|center]]
 ### Memoria ROM
 **R**ead **O**nly **M**emory ou Memoria Somente de Leitura é um tipo de memória não volátil que armazena instruções permanentes para a inicialização do dispositivo, essas informações são chamadas de **firmware**. Além das instruções também armazena os dados do usuário permanentemente.
+
+![[Memoria ROM.webp|606|center]]
+
 ### Memoria RAM
 **R**andom **A**cess **M**emory ou Memoria de Acesso Aleatório diferente da ROM, o que significa que as informações nela contida são mantidas temporariamente. Ela é muita usada para armazenar dados de aplicativos que são usados constantemente, pois sua velocidade de acesso é muito superior do que as voláteis. Com o tempo a tecnologia dela foi evoluindo, com isso veio a categorização por gerações, nomeadas pela sua versão [[Abreviações#DDR =**D**ouble **D**ata **D**ate ou Taxa de Dados Dupla se refere a uma tecnologia de memória RAM, que transfere dados duas vezes por ciclo.|DDR]], quanto maior o  seu valor numérico melhor, hoje em dia a mais potente sendo a DDR5.
+
+![[Dispositivo de Armazenamento-20251017051307321.webp|500|center]]
