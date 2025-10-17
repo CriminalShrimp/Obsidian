@@ -32,4 +32,4 @@ Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de
 ### Memoria RAM
 **R**andom **A**cess **M**emory ou Memoria de Acesso Aleatório diferente da ROM, o que significa que as informações nela contida são mantidas temporariamente. Ela é muita usada para armazenar dados de aplicativos que são usados constantemente, pois sua velocidade de acesso é muito superior do que as voláteis. Com o tempo a tecnologia dela foi evoluindo, com isso veio a categorização por gerações, nomeadas pela sua versão [[Abreviações#DDR =**D**ouble **D**ata **D**ate ou Taxa de Dados Dupla se refere a uma tecnologia de memória RAM, que transfere dados duas vezes por ciclo.|DDR]], quanto maior o  seu valor numérico melhor, hoje em dia a mais potente sendo a DDR5.
 
-![[Dispositivo de Armazenamento-20251017051307321.webp|500|center]]
+![[Memoria Ram.webp|500|center]]
