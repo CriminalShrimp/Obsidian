@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arquitetura Computacional/Processo de Inicialização(Boot).md",
+                "file": "Linux/CLI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Processo de Inicialização(Boot)"
+              "title": "CLI"
             }
           }
         ]
@@ -174,14 +174,14 @@
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
+    "Linux/Linux Courses.md",
+    "Arquitetura Computacional/Dispositivo de Armazenamento.md",
     "Arquitetura Computacional/Kernel.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "Abreviações.md",
-    "Arquitetura Computacional/Dispositivo de Armazenamento.md",
     "Cisco/Defesa de Rede - Cisco.md",
     "Linux/CLI.md",
     "Excalidraw/Drawing 2025-08-18 05.13.52.excalidraw.md",
-    "Linux/Linux Courses.md",
     "Arquitetura Computacional/Img/Memoria Ram.webp",
     "Arquitetura Computacional/Img/Memoria ROM.webp",
     "Arquitetura Computacional/Img/CMOS.webp",
