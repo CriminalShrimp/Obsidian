@@ -99,7 +99,7 @@ root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 #Comandos 
 ###### find  - falar sobre 
 ###### timedatectl - 
-###### pwd - **P**rint **W**orking **D**irectory mostra o<span style="color:rgb(255, 255, 0)"> caminho de pastas</span> e arquivos ate chegar onde o usuário esta trabalhando.
+###### pwd - **P**rint **W**orking **D**irectory mostra o<span style="color:rgb(255, 255, 0)"> caminho de pastas</span> ate chegar onde o usuário esta trabalhando.
 ###### ps aux - 
 ###### top - 
 ###### htop - 
