@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "firmware",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -174,14 +175,14 @@
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
-    "Arquitetura Computacional/Kernel.md",
-    "Arquitetura Computacional/Processo de Inicialização(Boot).md",
-    "Arquitetura Computacional/Img/Processo de Inicialização(Boot)-20251021045442507.webp",
     "Abreviações.md",
+    "Arquitetura Computacional/Processo de Inicialização(Boot).md",
+    "Cisco/Defesa de Rede - Cisco.md",
+    "Arquitetura Computacional/Kernel.md",
+    "Arquitetura Computacional/Img/Processo de Inicialização(Boot)-20251021045442507.webp",
     "Arquitetura Computacional/Dispositivo de Armazenamento.md",
     "Linux/CLI.md",
     "Linux/Linux Courses.md",
-    "Cisco/Defesa de Rede - Cisco.md",
     "Excalidraw/Drawing 2025-08-18 05.13.52.excalidraw.md",
     "Arquitetura Computacional/Img/Memoria Ram.webp",
     "Arquitetura Computacional/Img/Memoria ROM.webp",

@@ -28,10 +28,12 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### SSL = Secure Socket Layer.
 
 ###### BIOS = Basic Input/Output System que significa as entradas e saídas básicas do sistema
-www = World Wide Web.
 ###### EFI/UEFI = (Unified) Extensible Firmware Interface é um padrão moderno de firmware(software embutido em dispositivos de hardware) que substitui o antigo BIOS.
 ###### USB = Universal Serial Bus chamado de porta serial universal é usado em diversas tecnologias tendo também varias versões.
-###### DDR =**D**ouble **D**ata **D**ate ou Taxa de Dados Dupla se refere a uma tecnologia de memória RAM, que transfere dados duas vezes por ciclo.
-IMAP = Internet Message Access Protocol monitora a rede em busca de atividade suspeitas .
+###### DDR = **D**ouble **D**ata **D**ate ou Taxa de Dados Dupla se refere a uma tecnologia de memória RAM, que transfere dados duas vezes por ciclo.
+
+###### GRUB = **G**rand **U**nified **B**ootloader é basicamente um menu onde o usuário pode escolher qual sistema operacional ira escolher.
+
+###### IMAP = Internet Message Access Protocol monitora a rede em busca de atividade suspeitas.
 
 PKI = Public key infrastructure.

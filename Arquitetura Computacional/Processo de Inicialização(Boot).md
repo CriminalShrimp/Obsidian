@@ -7,4 +7,6 @@ O sistema da BIOS fica armazenado na memoria <span style="color:rgb(255, 255, 0)
 
 ### Boot Loader na Pratica
 #kernel
-Para os sistemas que utilizam o método de <span style="color:rgb(255, 255, 0)">BIOS</span>, o boot loader fica localizado na primeira seção do disco, conhecido como MBR (**M**aster **B**oot **R**ecord) que ocupa somente 512 bytes de espaço no disco. 
+Para os sistemas que utilizam o método de <span style="color:rgb(255, 255, 0)">BIOS</span>, o boot loader fica localizado na primeira seção do disco, conhecido como MBR (**M**aster **B**oot **R**ecord) que ocupa somente 512 bytes de espaço no disco. Após isso o bootloader examina a tabela de partição atrás de uma partição bootavel. Depois disso ele procura a pela segundo estagio de boot,  como o [[Abreviações#GRUB = **G**rand **U**nified **B**ootloader é basicamente um menu onde o usuario pode escolher qual sistema operacional ira escolher|GRUB]] por exemplo, e carrega na [[Dispositivo de Armazenamento#Memoria RAM|Memoria RAM]].
+
+Já nos dispositivos que utilizam o método EFI/UEFI
