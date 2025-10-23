@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "firmware",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -175,10 +174,10 @@
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
-    "Abreviações.md",
-    "Arquitetura Computacional/Processo de Inicialização(Boot).md",
-    "Cisco/Defesa de Rede - Cisco.md",
     "Arquitetura Computacional/Kernel.md",
+    "Arquitetura Computacional/Processo de Inicialização(Boot).md",
+    "Abreviações.md",
+    "Cisco/Defesa de Rede - Cisco.md",
     "Arquitetura Computacional/Img/Processo de Inicialização(Boot)-20251021045442507.webp",
     "Arquitetura Computacional/Dispositivo de Armazenamento.md",
     "Linux/CLI.md",
