@@ -1,4 +1,3 @@
-#Linux 
 ### O Básico
 A primeira coisa, obviamente, é energia para poder ligar o computador. Após isso é iniciado o sistema o Basic Input/Output System mais conhecido como <span style="color:rgb(255, 255, 0)">BIOS</span>, iniciando o hardware, teclado, telas e testando a memoria principal, esse processo é chamado de <span style="color:rgb(255, 255, 0)">POST</span> (Power On Self Test).
 ![[Inicialização de um Computador-20250828060442458.webp|center]]
@@ -11,3 +10,5 @@ O boot Loader tem dois estágios, no primeiro, para os sistemas que utilizam o m
 Já na segunda etapa uma pela é apresentada dando a opção de escolher qual sistema operacional escolher e/ou o kernel para "bootar", após selecionar as opções desejadas o boot loader joga as escolhas para a Memoria RAM e ela assume o controle. Depois disso a uma analise do sistema e a inicialização dos drivers dos hardwares.
 
 Agora na Memoria RAM o arquivo <span style="color:rgb(255, 255, 0)">initramfs</span> (**I**nitial **R**AM **F**ilesystem) é carregado, nele tem todas as informações necessárias para a montagem de todo o sistema, localizando drivers, armazenamentos e arquivos requeridos pelo kernel. Depois que esse o arquivo do sistema (Filesystem) ele busca por erros e faz a montagem.
+
+E no final desse processo de inicialização temos a tela de login com usuário e senha para serem selecionados/preenchidos 
