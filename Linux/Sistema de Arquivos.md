@@ -3,3 +3,10 @@ Assim como separamos livros e musicas por categorias, ou organizar por gênero, 
 - Arquivos de armazenamento Flash: **ubifs**, **jffs2**, **yaffs**, etc.
 - Arquivos de "Bando de Dados" 
 - Arquivos especiais: **procfs**, **sysfs**, **tmpfs**, **squashfs**, **debugfs**, **fuse**, etc.
+Comparação do sistema de arquivos do Windows e do Linux.
+![[LinuxVSWindos.webp]]
+
+Os arquivos são armazenados usando um sistema chamado **F**ilesystem **H**ierarchy **S**tandard ou <span style="color:rgb(255, 255, 0)">FHS</span> [aqui](https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf) tem um arquivo que contem informações mais detalhadas sobre. Linux usa a "/" diferente do Windows que utiliza "\\\", e também não usa letras para denominar partições.
+Além disso os arquivos também são [[Case Sensitive|Case Sensitive]]
+Breve explicação do FHS.
+![[FHS.webp]]

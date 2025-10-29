@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Sistema de Arquivos"
             }
+          },
+          {
+            "id": "57e48bf2317a2dea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Conceitos/Case Sensitive.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Case Sensitive"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -172,10 +187,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a255711e48256031",
+  "active": "57e48bf2317a2dea",
   "lastOpenFiles": [
-    "Linux/IMG/LoginCLI.webp",
     "Linux/Sistema de Arquivos.md",
+    "Conceitos/Case Sensitive.md",
+    "Linux/Linux Courses.md",
+    "Linux/IMG/FHS.webp",
+    "Linux/CLI.md",
+    "Linux/IMG/LinuxVSWindos.webp",
+    "Linux/IMG/LoginCLI.webp",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "Linux/IMG/Sem título",
     "Arquitetura Computacional/Kernel.md",
@@ -183,8 +203,6 @@
     "Cisco/Defesa de Rede - Cisco.md",
     "Arquitetura Computacional/Img/Processo de Inicialização(Boot)-20251021045442507.webp",
     "Arquitetura Computacional/Dispositivo de Armazenamento.md",
-    "Linux/CLI.md",
-    "Linux/Linux Courses.md",
     "Excalidraw/Drawing 2025-08-18 05.13.52.excalidraw.md",
     "Arquitetura Computacional/Img/Memoria Ram.webp",
     "Arquitetura Computacional/Img/Memoria ROM.webp",
@@ -192,17 +210,13 @@
     "Arquitetura Computacional/Img/SSD Tipos.jpg",
     "Arquitetura Computacional/Img/HD Explicado.webp",
     "Arquitetura Computacional/Img/PenDrive.webp",
-    "Arquitetura Computacional/Img/Cd,DvD,BlueRay.webp",
-    "Arquitetura Computacional/Img/Disquete.webp",
     "Treino/Rotina Treino.canvas",
     "Treino/Treino.md",
-    "Arquitetura Computacional/Img/Inicialização de um Computador-20250828060442458.webp",
     "Arquitetura Computacional/Img",
     "Excalidraw",
     "Treino/IMG Treino",
     "Ferramentas/Git e GitHub.md",
     "Treino",
-    "Sem título.md",
     "Tutorial Git com Obsidian.md",
     "RedTeam/Snaffing.md",
     "RedTeam/Man-in-the-Middle.md",
