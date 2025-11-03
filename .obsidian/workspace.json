@@ -168,15 +168,16 @@
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
-    "Linux/Sistema de Arquivos.md",
-    "Linux/GNOME.md",
-    "Conceitos/Case Sensitive.md",
     "Linux/Linux Courses.md",
+    "Linux/GNOME.md",
+    "Linux/Sistema de Arquivos.md",
+    "Conceitos/Case Sensitive.md",
     "Linux/IMG/FHS.webp",
     "Linux/CLI.md",
     "Linux/IMG/LinuxVSWindos.webp",
