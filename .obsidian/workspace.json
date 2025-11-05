@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/GNOME.md",
+                "file": "Linux/CLI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GNOME"
+              "title": "CLI"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "Arch Linux"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,15 +186,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fb4f866e34aac78d",
+  "active": "a255711e48256031",
   "lastOpenFiles": [
+    "Linux/Linux Courses.md",
+    "Linux/CLI.md",
     "Linux/GNOME.md",
     "Linux/Arch Linux.md",
-    "Linux/Linux Courses.md",
     "Linux/Sistema de Arquivos.md",
     "Conceitos/Case Sensitive.md",
     "Linux/IMG/FHS.webp",
-    "Linux/CLI.md",
     "Linux/IMG/LinuxVSWindos.webp",
     "Linux/IMG/LoginCLI.webp",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",

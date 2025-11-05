@@ -3,6 +3,7 @@ Tags: #Linux #Tips
 # Introdução
 
 CLI esta presente em praticamente todos software, e nele é possível fazer coisas de formar mais eficaz que por interface gráfica. Um site que com vir a ser útil é o [explainshell.com](https://explainshell.com/), ele oferece uma explicação detalhada sobre cada parte do comando que esta sendo realizado. 
+<span style="color:rgb(255, 255, 0)">Adendo</span>: **sudo systemctl stop/start gdm**  **sudo telinit 3** para stop e **sudo telinit 5** para o start) para ativar a interface (GUI).
 
 Comumente a CLI vai apresentar a seguinte composição de elementos:
 <p style="text-align:center;">[<span style="color:rgb(255, 0, 0)"> usuario</span>@<span style="color:rgb(0, 176, 240)">sistema</span> <span style="color:rgb(255, 192, 0)"><span style="color:rgb(255, 192, 0)"><span style="color:rgb(0, 176, 80)">~</span></span></span>] <span style="color:rgb(255, 192, 0)">$</span></p>
@@ -96,6 +97,7 @@ root   12     2  0 18:53 ?     00:00:00 [rcu_tasks_rude_]
 root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 [...]
 # Comandos 
+## Básicos
 #Comandos 
 ###### find  - falar sobre 
 ###### timedatectl - 
@@ -103,3 +105,21 @@ root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 ###### ps aux - 
 ###### top - 
 ###### htop - 
+###### cat - Usado para criar arquivos.
+## Sistema
+###### shutdown
+###### halt
+###### poweroff
+ Yes, there is a difference, though their behavior can overlap depending on the system. Halt stops the operating system but leaves the hardware powered on. Shutdown and poweroff are similar in that they stop the OS and also turn the power off, but shutdown often performs a more graceful process by running scripts first, while poweroff is a command that turns off the system and cuts power more directly. 
+Halt
+Stops all operations and changes the run level to 0, but leaves the machine powered on.
+This was the original command for stopping a system before modern computers had the ability to power themselves off.
+On some modern systems (like those using systemd), halt may leave the machine powered on but unresponsive. 
+Shutdown
+A more comprehensive command that initiates a graceful shutdown process by running necessary scripts to stop services and processes in an orderly manner.
+Afterward, it turns off the hardware.
+The shutdown command can also be used with options to schedule a shutdown or reboot. 
+Poweroff
+Similar to shutdown in that it halts the system and turns off the power.
+It directly sends a command to power the hardware off after stopping the operating system.
+On many modern systems, poweroff and shutdown are functionally similar and both lead to the system being turned off. 

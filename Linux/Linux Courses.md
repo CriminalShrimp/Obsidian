@@ -2,7 +2,8 @@ Tags: #CLI #Linux
 Red Hat Systems Administration (EX200)
 Introduction to Linux (LFS101)
 # Introdução
-Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel#^b8a742|Kernel]] Linux, essas distribuições são de código aberto, o que significa que são disponibilizadas gratuitamente para todos e além disso tem os requisitos para rodar são mínimos. Dentre as distros ( uma abreviação de Distributions) seria <span style="color:rgb(161, 79, 140)">CentOS</span>, <span style="color:rgb(65, 105, 255)">Fedora</span>, <span style="color:rgb(255, 165, 0)">Ubuntu</span> e <span style="color:rgb(206, 0, 86)">Debian</span>. Algumas dessas distros podem possuir interface gráfica, porém todas suas funções são feitas pela [[Abreviações#CLI = Command Line Interface é onde são realizados os comandos|command line interface]] mais conhecida como [[CLI]].
+Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel#^b8a742|Kernel]] Linux, essas distribuições são de código aberto, o que significa que são disponibilizadas gratuitamente para todos e além disso tem os requisitos para rodar são mínimos. Dentre as distros ( uma abreviação de Distributions) seria <span style="color:rgb(161, 79, 140)">CentOS</span>, <span style="color:rgb(65, 105, 255)">Fedora</span>, <span style="color:rgb(255, 165, 0)">Ubuntu</span> e <span style="color:rgb(206, 0, 86)">Debian</span>. Distros podem possuir interface gráfica, porém todas suas funções também podem ser feitas pela [[Abreviações#CLI = Command Line Interface é onde são realizados os comandos|command line interface]] mais conhecida como [[CLI]], existem vários terminais CLI como o xterm, konsole, terminator.
+ 
  ![[LoginInterfaceGrafica.webp| center]]
 <p style="text-align:center;"> Aqui por exemplo é um login feito via interface gráfica</p>
 
@@ -72,7 +73,7 @@ Adicionar permissões de arquivos
 
 # SUDO
 
-A palavras sudo vem de _superuser_ _do_, bem sugestivo ao seu significado ele eleva as permissões do usuário para um "super usuário" tendo permissões para mexer em privilégios de pastas, arquivos, usuários, grupos entre varias outras coisas. Para ter acesso a esse modo basta colocar na cli `sudo` pressionar enter, e inserir a senha que é escolhida no sistema, mas normalmente é a do próprio usuário  
+A palavras sudo vem de _<span style="color:rgb(255, 255, 0)">superuser do</span>_, bem sugestivo ao seu significado ele eleva as permissões do usuário para um "super usuário" tendo permissões para mexer em privilégios de pastas, arquivos, usuários, grupos entre varias outras coisas. Para ter acesso a esse modo basta colocar na CLI `sudo` pressionar enter, e inserir a senha que é escolhida no sistema, mas normalmente é a do próprio usuário.
 # Acesso Remoto (SSH)
 #Comandos #CLI 
 
