@@ -107,19 +107,12 @@ root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 ###### htop - 
 ###### cat - Usado para criar arquivos.
 ## Sistema
-###### shutdown
-###### halt
-###### poweroff
- Yes, there is a difference, though their behavior can overlap depending on the system. Halt stops the operating system but leaves the hardware powered on. Shutdown and poweroff are similar in that they stop the OS and also turn the power off, but shutdown often performs a more graceful process by running scripts first, while poweroff is a command that turns off the system and cuts power more directly. 
-Halt
-Stops all operations and changes the run level to 0, but leaves the machine powered on.
-This was the original command for stopping a system before modern computers had the ability to power themselves off.
-On some modern systems (like those using systemd), halt may leave the machine powered on but unresponsive. 
-Shutdown
-A more comprehensive command that initiates a graceful shutdown process by running necessary scripts to stop services and processes in an orderly manner.
-Afterward, it turns off the hardware.
-The shutdown command can also be used with options to schedule a shutdown or reboot. 
-Poweroff
-Similar to shutdown in that it halts the system and turns off the power.
-It directly sends a command to power the hardware off after stopping the operating system.
-On many modern systems, poweroff and shutdown are functionally similar and both lead to the system being turned off. 
+###### shutdown - Faz o processo de desligamento padrão, executando rotinas, finalizando serviços e processos e desligando a maquina. 
+shutdown <span style="color:rgb(65, 105, 255)">Opções</span> <span style="color:rgb(0, 176, 80)">Tempo</span> Mensagem
+**<span style="color:rgb(65, 105, 255)">-r</span>, --reboot**
+	Reinicia o sistema
+**<span style="color:rgb(65, 105, 255)">-h</span>,** <span style="color:rgb(0, 176, 80)">TIME</span>
+	 Colocando `now` faz com que o sistema seja desligado na hora. Também da para colocar tempo especifico para desligar o sistema 
+Ex: `shutdown -h 10:00 "Shutting down for scheduled maintenance."`
+###### halt - Para o sistema operacional porem ainda deixa a maquina ligada.
+###### poweroff - Parecido com shutdown porem funciona de uma forma mais "bruta", cortando a energia do sistema, não rodando scripts e rotinas antes de desligar.
