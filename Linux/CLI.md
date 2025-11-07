@@ -103,8 +103,8 @@ root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 ###### timedatectl - 
 ###### pwd - **P**rint **W**orking **D**irectory mostra o<span style="color:rgb(255, 255, 0)"> caminho de pastas</span> ate chegar onde o usuário esta trabalhando.
 ###### ps aux - 
-###### top - 
-###### htop - 
+###### top - Mostra os processos do sistema.
+###### htop -É similar ao top, porém permite navegar e interagir  a tela.
 ###### cat - Usado para criar arquivos.
 ## Sistema
 ###### shutdown - Faz o processo de desligamento padrão, executando rotinas, finalizando serviços e processos e desligando a maquina. 
