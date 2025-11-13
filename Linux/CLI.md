@@ -99,9 +99,14 @@ root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 # Comandos 
 ## Básicos
 #Comandos 
-###### find  - falar sobre 
-###### timedatectl - 
+###### cd - vem de **C**hange **D**irectory  
+cd - (menos)  volta para o diretório anterior 
 ###### pwd - **P**rint **W**orking **D**irectory mostra o<span style="color:rgb(255, 255, 0)"> caminho de pastas</span> ate chegar onde o usuário esta trabalhando.
+###### find  - falar sobre 
+###### which  - falar sobre 
+###### whereis  - falar sobre 
+###### timedatectl - 
+
 ###### ps aux - 
 ###### top - Mostra os processos do sistema.
 ###### htop -É similar ao top, porém permite navegar e interagir  a tela.
