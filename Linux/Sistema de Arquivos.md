@@ -10,3 +10,4 @@ Os arquivos são armazenados usando um sistema chamado **F**ilesystem **H**ierar
 Além disso os arquivos também são [[Case Sensitive|Case Sensitive]].
 Breve explicação do FHS.
 ![[FHS.webp]]
+## Caminho Absoluto e Caminho Relativo
