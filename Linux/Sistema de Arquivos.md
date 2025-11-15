@@ -11,3 +11,5 @@ Além disso os arquivos também são [[Case Sensitive|Case Sensitive]].
 Breve explicação do FHS.
 ![[FHS.webp]]
 ## Caminho Absoluto e Caminho Relativo
+**Caminhos absolutos** sempre começam com o diretório Root (/), como por exemplo `cd /usr/bin`, já os **Caminhos Relativos** começam do caminho onde esta sendo trabalhado, por exemplo `cd ../../usr/bin`. O uso de cada um desses métodos varia de acordo com o momento.
+![[ArvorePastasLinux.webp]]
