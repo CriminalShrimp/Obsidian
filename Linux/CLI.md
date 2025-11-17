@@ -102,7 +102,10 @@ root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 ###### cd - vem de **C**hange **D**irectory.
 cd .. - Volta para a **Home**
 cd - (menos)  volta para o diretório anterior.
+###### ls -
+
 ###### pwd - **P**rint **W**orking **D**irectory mostra o<span style="color:rgb(255, 255, 0)"> caminho de pastas</span> ate chegar onde o usuário esta trabalhando.
+###### tree - 
 ###### find  - falar sobre 
 ###### which  - Procura por programas com o nome colocado na pesquisa e mostra sua localização.
 ###### whereis  - Além de procurar por programas também procura por arquivos com o nome na pesquisa.

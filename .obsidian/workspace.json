@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Sistema de Arquivos.md",
+                "file": "Linux/CLI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sistema de Arquivos"
+              "title": "CLI"
             }
           }
         ]
@@ -174,9 +174,9 @@
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
-    "Linux/IMG/ArvorePastasLinux.webp",
     "Linux/Sistema de Arquivos.md",
     "Linux/CLI.md",
+    "Linux/IMG/ArvorePastasLinux.webp",
     "Linux/GNOME.md",
     "Linux/Arch Linux.md",
     "Linux/Linux Courses.md",
