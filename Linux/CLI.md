@@ -21,7 +21,7 @@ Na hora de realizar comandos na CLI a seguinte sintaxe deve ser seguida:
 
 <span style="color:rgb(0, 176, 240)">Logo em seguida vem as opções que podem ser mais que uma, quando vamos usar uma opção ela vem antecedida com um - ou dois --, quando usado com somente um - significa que estamos usando a abreviação de um palavra, já quando contem dois -- tudo é tratado como uma palavra.</span> 
 
-# Monitoring Processes on the Command Line
+# Monitoranto processos pela CLI
 
 On the command line, you can list all active processes by using the `top` command.
 
@@ -102,11 +102,12 @@ root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 ###### cd - vem de **C**hange **D**irectory.
 cd .. - Volta para a **Home**
 cd - (menos)  volta para o diretório anterior.
-###### ls -
+###### ls - Usado para listar arqiuivos
+ls  <span style="color:rgb(0, 176, 240)">opções </span>  <span style="color:rgb(0, 176, 80)">Arquivo/diretorio</span>
 
 ###### pwd - **P**rint **W**orking **D**irectory mostra o<span style="color:rgb(255, 255, 0)"> caminho de pastas</span> ate chegar onde o usuário esta trabalhando.
 ###### tree - 
-###### find  - falar sobre 
+###### find  - 
 ###### which  - Procura por programas com o nome colocado na pesquisa e mostra sua localização.
 ###### whereis  - Além de procurar por programas também procura por arquivos com o nome na pesquisa.
 ###### timedatectl - 
