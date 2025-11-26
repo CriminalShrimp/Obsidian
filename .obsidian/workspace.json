@@ -168,17 +168,18 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
+    "Linux/Linux Courses.md",
     "Linux/Sistema de Arquivos.md",
     "Linux/CLI.md",
     "Linux/IMG/ArvorePastasLinux.webp",
     "Linux/GNOME.md",
     "Linux/Arch Linux.md",
-    "Linux/Linux Courses.md",
     "Conceitos/Case Sensitive.md",
     "Linux/IMG/FHS.webp",
     "Linux/IMG/LinuxVSWindos.webp",

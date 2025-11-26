@@ -14,6 +14,7 @@ Nos sistemas existe o usuário root que seria a conta que tem a permissão de ad
 
 # Manipulação de Pastas e Arquivos
 Tags: #Dica
+Ver também o tópico: [[Sistema de Arquivos]] e também [[CLI#Comandos]].
 ## Arquivos
 
 Uma frase muito conhecida que se refere a Linux é "no Linux tudo é um arquivo" sejam as informações sobre o hardware do dispositivo, bem como as próprias configurações do kernel, são todas armazenadas em arquivos especiais que residem em diretórios virtuais, os código de estados  0 é o padrão de entrada , 1 é o padrão de saída  e 2 se referre a um erro. Um dos comandos para mexer em arquivos é o **cat** que um uma abreviação de *concatenate* (concatenar), para ler um arquivo bastar escrever **cat arquivo.txt**, duas <span style="color:rgb(255, 255, 0)">dica</span> muito interessante é que para passar outputs direto para um aquivo pode se usar output <span style="color:rgb(255, 255, 0)">></span> arquivo.txt, se é um arquivo que você somente queira adicionar mais linha então use o <span style="color:rgb(255, 255, 0)">>></span>, e a outra seria usar *pipelines* que seria essa barra na vertical  <span style="color:rgb(255, 255, 0)">| </span>, ela faz com que o resultado de um comando seja o *input* de outro. Um comando muito útil para achar arquivos e pastas é o [[CLI#find |find]], já para procurar palavras em textos é o <span style="color:rgb(255, 255, 0)">grep</span>.

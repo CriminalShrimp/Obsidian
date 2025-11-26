@@ -102,10 +102,16 @@ root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 ###### cd - vem de **C**hange **D**irectory.
 cd .. - Volta para a **Home**
 cd - (menos)  volta para o diretório anterior.
-###### ls - Usado para listar arqiuivos
+###### ls - Usado para listar arqiuivos.
 ls  <span style="color:rgb(0, 176, 240)">opções </span>  <span style="color:rgb(0, 176, 80)">Arquivo/diretorio</span>
 
 ###### pwd - **P**rint **W**orking **D**irectory mostra o<span style="color:rgb(255, 255, 0)"> caminho de pastas</span> ate chegar onde o usuário esta trabalhando.
+###### touch - Usado para criar um arquivo.
+touch -t {tempo} - com essa opção é possível coloca a data de criação do arquivo 
+###### cat - Usado para ver o conteúdo do arquivo.
+###### tac - A mesma coisa do cat, só que começa da ultima linha .
+###### tail - Mostras as 10 ultimas linhas do arquivo, podendo alterar o valor usando -n e o valor desejado.
+###### head - A mesma coisa do tail, só que começa da primeira linha. 
 ###### tree - 
 ###### find  - 
 ###### which  - Procura por programas com o nome colocado na pesquisa e mostra sua localização.
