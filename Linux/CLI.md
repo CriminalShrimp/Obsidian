@@ -112,6 +112,11 @@ touch -t {tempo} - com essa opção é possível coloca a data de criação do a
 ###### tac - A mesma coisa do cat, só que começa da ultima linha .
 ###### tail - Mostras as 10 ultimas linhas do arquivo, podendo alterar o valor usando -n e o valor desejado.
 ###### head - A mesma coisa do tail, só que começa da primeira linha. 
+###### mkdir - Cria uma pasta com o nome desejado.
+###### mv - Muda o nome do arquivo.
+###### rm - Remove um arquivo.
+rm -f - Força o arquivo a ser removido.
+rm -rf - Força o diretório. 
 ###### tree - 
 ###### find  - 
 ###### which  - Procura por programas com o nome colocado na pesquisa e mostra sua localização.

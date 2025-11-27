@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "CLI"
             }
+          },
+          {
+            "id": "65b3c4f0ec49ddfb",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.6"
+            }
           }
         ]
       }
