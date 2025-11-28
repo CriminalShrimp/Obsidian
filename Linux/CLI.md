@@ -99,10 +99,11 @@ root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 # Comandos 
 ## Básicos
 #Comandos 
-###### cd - vem de **C**hange **D**irectory.
+###### locate - Procura em todo o sistema pelo texto que foi inserido na busca. 
+###### cd - vem de **C**hange **D**irectory e serve para entrar em outra "pasta".
 cd .. - Volta para a **Home**
 cd - (menos)  volta para o diretório anterior.
-###### ls - Usado para listar arqiuivos.
+###### ls - Usado para listar arquivos.
 ls  <span style="color:rgb(0, 176, 240)">opções </span>  <span style="color:rgb(0, 176, 80)">Arquivo/diretorio</span>
 
 ###### pwd - **P**rint **W**orking **D**irectory mostra o<span style="color:rgb(255, 255, 0)"> caminho de pastas</span> ate chegar onde o usuário esta trabalhando.
@@ -126,6 +127,7 @@ rm -rf - Força o diretório.
 ###### top - Mostra os processos do sistema.
 ###### htop -É similar ao top, porém permite navegar e interagir  a tela.
 ###### cat - Usado para criar arquivos.
+###### cp - Copia o arquivo.
 ## Sistema
 ###### shutdown - Faz o processo de desligamento padrão, executando rotinas, finalizando serviços e processos e desligando a maquina. 
 shutdown <span style="color:rgb(65, 105, 255)">Opções</span> <span style="color:rgb(0, 176, 80)">Tempo</span> Mensagem
