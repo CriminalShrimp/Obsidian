@@ -97,6 +97,12 @@ root   12     2  0 18:53 ?     00:00:00 [rcu_tasks_rude_]
 root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 [...]
 # Comandos 
+Paramentros de buscas 
+
+|**?**| Procurar qualquer caracter.
+| * | Matches any string of characters|
+|**[set]**|Matches any character in the set of characters, for example **[adf]** will match any occurrence of **a**, **d**, or **f**|
+|**[!set]**|Matches any character not in the set of characters|
 ## Básicos
 #Comandos 
 ###### locate - Procura em todo o sistema pelo texto que foi inserido na busca. 
