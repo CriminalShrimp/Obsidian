@@ -99,22 +99,22 @@ root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 # Comandos 
 Paramentros de buscas 
 
-|**?**| Procurar qualquer caracter.
-| * | Matches any string of characters|
-|**[set]**|Matches any character in the set of characters, for example **[adf]** will match any occurrence of **a**, **d**, or **f**|
-|**[!set]**|Matches any character not in the set of characters|
+|?| Procurar qualquer caráter.
+| * | Procurar por todas as possiblidades de texto.
+|[set]| Procura por qualquer carcter colocado na combinação, por exemplo [ g - v].
+|[!set]| Ao contrario por tudo que não contem o que há no campo.
 ## Básicos
 #Comandos 
 ###### locate - Procura em todo o sistema pelo texto que foi inserido na busca. 
 ###### cd - vem de **C**hange **D**irectory e serve para entrar em outra "pasta".
-cd .. - Volta para a **Home**
-cd - (menos)  volta para o diretório anterior.
+**cd ..** - Volta para a **Home**
+**cd -**  - Volta para o diretório anterior.
 ###### ls - Usado para listar arquivos.
 ls  <span style="color:rgb(0, 176, 240)">opções </span>  <span style="color:rgb(0, 176, 80)">Arquivo/diretorio</span>
 
 ###### pwd - **P**rint **W**orking **D**irectory mostra o<span style="color:rgb(255, 255, 0)"> caminho de pastas</span> ate chegar onde o usuário esta trabalhando.
 ###### touch - Usado para criar um arquivo.
-touch -t {tempo} - com essa opção é possível coloca a data de criação do arquivo 
+**touch -t** {tempo} - com essa opção é possível coloca a data de criação do arquivo 
 ###### cat - Usado para ver o conteúdo do arquivo.
 ###### tac - A mesma coisa do cat, só que começa da ultima linha .
 ###### tail - Mostras as 10 ultimas linhas do arquivo, podendo alterar o valor usando -n e o valor desejado.
@@ -122,10 +122,15 @@ touch -t {tempo} - com essa opção é possível coloca a data de criação do a
 ###### mkdir - Cria uma pasta com o nome desejado.
 ###### mv - Muda o nome do arquivo.
 ###### rm - Remove um arquivo.
-rm -f - Força o arquivo a ser removido.
-rm -rf - Força o diretório. 
+**rm -f** - Força o arquivo a ser removido.
+**rm -rf** - Força o diretório. 
 ###### tree - 
-###### find  - 
+###### find  - Usado comumente para<span style="color:rgb(255, 255, 0)"> procurar arquivos no sistema.</span>
+**-type d - name** - Procura por diretórios com o nome inserido.
+**-type f - name** - Procura por arquivos com o nome inserido.
+**-exec** <span style="color:rgb(0, 176, 80)">comando</span> - É possível executar comandos como <span style="color:rgb(255, 255, 0)">rm</span>, <span style="color:rgb(255, 255, 0)">cp</span> entre outros com o find também.
+-**/ -(<span style="color:rgb(255, 255, 0)">x</span>)time** - Serve para procurar para arquivos passeados em seu tempo, trocando o <span style="color:rgb(255, 255, 0)">x</span> é é possível pesquisar pelo seu ultimo acesso, data de criação entre outras opções.
+-**/ -size** - Procura pelo tamanho dos arquivos.
 ###### which  - Procura por programas com o nome colocado na pesquisa e mostra sua localização.
 ###### whereis  - Além de procurar por programas também procura por arquivos com o nome na pesquisa.
 ###### timedatectl - 
