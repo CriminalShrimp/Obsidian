@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/CLI.md",
+                "file": "Linux/Linux Courses.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLI"
+              "title": "Linux Courses"
             }
           },
           {
@@ -180,16 +180,18 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "a255711e48256031",
   "lastOpenFiles": [
-    "Linux/CLI.md",
-    "Linux/GNOME.md",
+    "Linux/Sistema de Arquivos.md",
+    "Linux/IMG/Gerenciadores de Pacotes Linux.webp",
     "Linux/Linux Courses.md",
     "Linux/Arch Linux.md",
-    "Linux/Sistema de Arquivos.md",
+    "Linux/CLI.md",
+    "Linux/GNOME.md",
     "Linux/IMG/ArvorePastasLinux.webp",
     "Conceitos/Case Sensitive.md",
     "Linux/IMG/FHS.webp",
@@ -207,7 +209,6 @@
     "Arquitetura Computacional/Img/Memoria ROM.webp",
     "Arquitetura Computacional/Img/CMOS.webp",
     "Arquitetura Computacional/Img/SSD Tipos.jpg",
-    "Arquitetura Computacional/Img/HD Explicado.webp",
     "Treino/Rotina Treino.canvas",
     "Treino/Treino.md",
     "Arquitetura Computacional/Img",

@@ -172,3 +172,12 @@ Number of key(s) added: 1
 
 Se estiver certo, quando logar não precisara digitar a senha, para testar use  `ssh usuario@destino`
 
+
+# Sistema de Gerenciamento de Pacotes
+Aqui é onde encontramos como instalar softwares no sistema Linux, existem dois gerenciadores de pacotes conhecidos popularmente: os baseados em sistema <span style="color:rgb(206, 0, 86)">Debian</span> e os que usam <span style="color:rgb(255, 255, 0)">RPM</span>. Ambos pacotes operam com ferramentas em níveis distintos, como em baixo nível (como a **dpkg** ou **rpm**) que se preocupa com rodas scripts, baixar e descompactar pacotes por pacotes, instalar os softwares corretamente. Enquanto as de alto nível (como **apt**, **dnf** ou **zypeer**) que baixam grupos de pacotes, e descobre as dependências. Muitas vezes os usuários trabalham com as ferramentas de alto nível, que quando necessário chamam as de baixo. 
+
+![[Gerenciadores de Pacotes Linux.webp|center ]]
+#### Advanced Packaging Tool (apt)
+É o gerenciador de softwares baseados no sistema <span style="color:rgb(206, 0, 86)">Debian</span>, 
+#### dnf
+#### zyper
