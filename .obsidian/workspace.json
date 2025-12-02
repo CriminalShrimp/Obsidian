@@ -20,18 +20,6 @@
               "icon": "lucide-file",
               "title": "Linux Courses"
             }
-          },
-          {
-            "id": "65b3c4f0ec49ddfb",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.6"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.6"
-            }
           }
         ]
       }
@@ -187,11 +175,12 @@
   "active": "a255711e48256031",
   "lastOpenFiles": [
     "Linux/Sistema de Arquivos.md",
-    "Linux/IMG/Gerenciadores de Pacotes Linux.webp",
     "Linux/Linux Courses.md",
-    "Linux/Arch Linux.md",
     "Linux/CLI.md",
     "Linux/GNOME.md",
+    "Linux/IMG/Comandos de Gerenciadores de Pacote.webp",
+    "Linux/IMG/Gerenciadores de Pacotes Linux.webp",
+    "Linux/Arch Linux.md",
     "Linux/IMG/ArvorePastasLinux.webp",
     "Conceitos/Case Sensitive.md",
     "Linux/IMG/FHS.webp",
@@ -208,7 +197,6 @@
     "Arquitetura Computacional/Img/Memoria Ram.webp",
     "Arquitetura Computacional/Img/Memoria ROM.webp",
     "Arquitetura Computacional/Img/CMOS.webp",
-    "Arquitetura Computacional/Img/SSD Tipos.jpg",
     "Treino/Rotina Treino.canvas",
     "Treino/Treino.md",
     "Arquitetura Computacional/Img",

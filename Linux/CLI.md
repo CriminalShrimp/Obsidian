@@ -139,6 +139,11 @@ ls  <span style="color:rgb(0, 176, 240)">opções </span>  <span style="color:rg
 ###### htop -É similar ao top, porém permite navegar e interagir  a tela.
 ###### cat - Usado para criar arquivos.
 ###### cp - Copia o arquivo.
+###### man - É a abreviação de manual, esse comando mostra dados e informações sobre o que deseja.
+-**man -a** - Ira mostrar todas as paginas uma por uma.
+-**man -f** - Gera uma breve descrição das paginas e capítulos.
+-**man -k** - Mostra todas as paginas que contem a palavra usada.
+###### info - Traz as informações sobre o que foi procurado
 ## Sistema
 ###### shutdown - Faz o processo de desligamento padrão, executando rotinas, finalizando serviços e processos e desligando a maquina. 
 shutdown <span style="color:rgb(65, 105, 255)">Opções</span> <span style="color:rgb(0, 176, 80)">Tempo</span> Mensagem

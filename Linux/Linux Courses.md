@@ -1,6 +1,13 @@
 Tags: #CLI #Linux
+Cursos:
 Red Hat Systems Administration (EX200)
 Introduction to Linux (LFS101)
+Documentações:
+[Gentoo Handbook](https://www.gentoo.org/support/documentation/).
+[Ubuntu Documentation](https://help.ubuntu.com/community/CommunityHelpWiki).
+[Fedora Documentation](https://docs.fedoraproject.org/en-US/fedora/latest/).
+[Linux Pages](http://man7.org/linux/man-pages/).
+[openSUSE Documentation](https://doc.opensuse.org/)
 # Introdução
 Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel#^b8a742|Kernel]] Linux, essas distribuições são de código aberto, o que significa que são disponibilizadas gratuitamente para todos e além disso tem os requisitos para rodar são mínimos. Dentre as distros ( uma abreviação de Distributions) seria <span style="color:rgb(161, 79, 140)">CentOS</span>, <span style="color:rgb(65, 105, 255)">Fedora</span>, <span style="color:rgb(255, 165, 0)">Ubuntu</span> e <span style="color:rgb(206, 0, 86)">Debian</span>. Distros podem possuir interface gráfica, porém todas suas funções também podem ser feitas pela [[Abreviações#CLI = Command Line Interface é onde são realizados os comandos|command line interface]] mais conhecida como [[CLI]], existem vários terminais CLI como o xterm, konsole, terminator.
  
@@ -177,7 +184,12 @@ Se estiver certo, quando logar não precisara digitar a senha, para testar use  
 Aqui é onde encontramos como instalar softwares no sistema Linux, existem dois gerenciadores de pacotes conhecidos popularmente: os baseados em sistema <span style="color:rgb(206, 0, 86)">Debian</span> e os que usam <span style="color:rgb(255, 255, 0)">RPM</span>. Ambos pacotes operam com ferramentas em níveis distintos, como em baixo nível (como a **dpkg** ou **rpm**) que se preocupa com rodas scripts, baixar e descompactar pacotes por pacotes, instalar os softwares corretamente. Enquanto as de alto nível (como **apt**, **dnf** ou **zypeer**) que baixam grupos de pacotes, e descobre as dependências. Muitas vezes os usuários trabalham com as ferramentas de alto nível, que quando necessário chamam as de baixo. 
 
 ![[Gerenciadores de Pacotes Linux.webp|center ]]
+### Diferentes Gerenciadores de Pacotes
+Comandos para adquirir softwares de diferentes gerenciadores muda dependendo de qual esta sendo utilizado no momento, aqui tem uma rápida comparação de alguns comandos.
+![[Comandos de Gerenciadores de Pacote.webp|center]]
 #### Advanced Packaging Tool (apt)
-É o gerenciador de softwares baseados no sistema <span style="color:rgb(206, 0, 86)">Debian</span>, 
-#### dnf
+É o gerenciador de softwares baseados no sistema <span style="color:rgb(206, 0, 86)">Debian</span>.
+#### dnf 
+Esse é um gerenciador de pacote que tem seu código aberto usado para sistemas pertencentes a família <span style="color:rgb(206, 0, 86)">Red Hat</span>.
 #### zyper
+Este é o gerenciador de pacote de sistemas da família <span style="color:rgb(0, 176, 80)">SUSE</span> também baseada em RPM, sendo bem fácil de entender e utilizar, além disso ele se baseia em dnf.
