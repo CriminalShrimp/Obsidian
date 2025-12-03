@@ -11,10 +11,14 @@
             "id": "a255711e48256031",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Linux Courses.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Linux Courses"
             }
           }
         ]
@@ -168,8 +172,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a255711e48256031",
+  "active": "1e80c182f859c816",
   "lastOpenFiles": [
+    "Abreviações.md",
     "Cisco/Packet Tracer/Laboratório - Determinar o algoritmo de criptografia a ser usado.md",
     "Cisco/Packet Tracer/Laboratório - Armazenamento de Autoridade de Certificação.md",
     "Cisco/Defesa de Rede - Cisco.md",
@@ -198,7 +203,6 @@
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "Linux/IMG/Sem título",
     "Arquitetura Computacional/Kernel.md",
-    "Abreviações.md",
     "Arquitetura Computacional/Img/Processo de Inicialização(Boot)-20251021045442507.webp",
     "Arquitetura Computacional/Dispositivo de Armazenamento.md",
     "Arquitetura Computacional/Img/Memoria Ram.webp",
