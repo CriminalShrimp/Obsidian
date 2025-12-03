@@ -1,16 +1,16 @@
-Tags: #CLI #Linux
-Cursos:
-Red Hat Systems Administration (EX200)
-Introduction to Linux (LFS101)
-Documentações:
-[Gentoo Handbook](https://www.gentoo.org/support/documentation/).
-[Ubuntu Documentation](https://help.ubuntu.com/community/CommunityHelpWiki).
-[Fedora Documentation](https://docs.fedoraproject.org/en-US/fedora/latest/).
-[Linux Pages](http://man7.org/linux/man-pages/).
-[openSUSE Documentation](https://doc.opensuse.org/)
+Sumario
+	Tags: #CLI #Linux
+	Cursos: 
+		Red Hat Systems Administration (EX200) 
+		Introduction to Linux (LFS101)
+	Documentações:
+	[Gentoo Handbook](https://www.gentoo.org/support/documentation/).
+	[Ubuntu Documentation](https://help.ubuntu.com/community/CommunityHelpWiki).
+	[Fedora Documentation](https://docs.fedoraproject.org/en-US/fedora/latest/).
+	[Linux Pages](http://man7.org/linux/man-pages/).
+	[openSUSE Documentation](https://doc.opensuse.org/)
 # Introdução
 Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel#^b8a742|Kernel]] Linux, essas distribuições são de código aberto, o que significa que são disponibilizadas gratuitamente para todos e além disso tem os requisitos para rodar são mínimos. Dentre as distros ( uma abreviação de Distributions) seria <span style="color:rgb(161, 79, 140)">CentOS</span>, <span style="color:rgb(65, 105, 255)">Fedora</span>, <span style="color:rgb(255, 165, 0)">Ubuntu</span> e <span style="color:rgb(206, 0, 86)">Debian</span>. Distros podem possuir interface gráfica, porém todas suas funções também podem ser feitas pela [[Abreviações#CLI = Command Line Interface é onde são realizados os comandos|command line interface]] mais conhecida como [[CLI]], existem vários terminais CLI como o xterm, konsole, terminator.
- 
  ![[LoginInterfaceGrafica.webp| center]]
 <p style="text-align:center;"> Aqui por exemplo é um login feito via interface gráfica</p>
 
@@ -21,10 +21,10 @@ Nos sistemas existe o usuário root que seria a conta que tem a permissão de ad
 
 # Manipulação de Pastas e Arquivos
 Tags: #Dica
-Ver também o tópico: [[Sistema de Arquivos]] e também [[CLI#Comandos]].
+Ver também o tópico: [[Sistema de Arquivos]] e também [[CLI#Comandos|Comandos]].
 ## Arquivos
 
-Uma frase muito conhecida que se refere a Linux é "no Linux tudo é um arquivo" sejam as informações sobre o hardware do dispositivo, bem como as próprias configurações do kernel, são todas armazenadas em arquivos especiais que residem em diretórios virtuais, os código de estados  0 é o padrão de entrada , 1 é o padrão de saída  e 2 se referre a um erro. Um dos comandos para mexer em arquivos é o **cat** que um uma abreviação de *concatenate* (concatenar), para ler um arquivo bastar escrever **cat arquivo.txt**, duas <span style="color:rgb(255, 255, 0)">dica</span> muito interessante é que para passar outputs direto para um aquivo pode se usar output <span style="color:rgb(255, 255, 0)">></span> arquivo.txt, se é um arquivo que você somente queira adicionar mais linha então use o <span style="color:rgb(255, 255, 0)">>></span>, e a outra seria usar *pipelines* que seria essa barra na vertical  <span style="color:rgb(255, 255, 0)">| </span>, ela faz com que o resultado de um comando seja o *input* de outro. Um comando muito útil para achar arquivos e pastas é o [[CLI#find |find]], já para procurar palavras em textos é o <span style="color:rgb(255, 255, 0)">grep</span>.
+Uma frase muito conhecida que se refere a Linux é "no Linux tudo é um arquivo" sejam as informações sobre o hardware do dispositivo, bem como as próprias configurações do kernel, são todas armazenadas em arquivos especiais que residem em diretórios virtuais, os código de estados  0 é o padrão de entrada , 1 é o padrão de saída  e 2 se referre a um erro. Um dos comandos para mexer em arquivos é o **cat** que um uma abreviação de *concatenate* (concatenar), para ler um arquivo bastar escrever **cat arquivo.txt**, duas <span style="color:rgb(255, 255, 0)">dica</span> muito interessante é que para passar outputs direto para um arquivo pode se usar output <span style="color:rgb(255, 255, 0)">></span> arquivo.txt, se é um arquivo que você somente queira adicionar mais linha então use o <span style="color:rgb(255, 255, 0)">>></span>, e a outra seria usar *pipelines* que seria essa barra na vertical  <span style="color:rgb(255, 255, 0)">| </span>, ela faz com que o resultado de um comando seja o *input* de outro. Um comando muito útil para achar arquivos e pastas é o [[CLI#find |find]], já para procurar palavras em textos é o <span style="color:rgb(255, 255, 0)">grep</span>.
 
 Para criar um arquivo existe diversas maneiras um exemplo básico seria com **`touch arquivo.extensao`**.
 

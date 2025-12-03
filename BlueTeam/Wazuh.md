@@ -1,0 +1,2 @@
+
+O Wazuh é uma plataforma de código aberto (open source) que serve para monitorar, detectar e responder a ameaças de segurança em tempo real, abrangendo endpoints, redes e workloads em nuvem. Ele funciona como uma solução de detecção de intrusão e resposta a incidentes (SIEM e XDR), auxiliando na identificação e prevenção de vulnerabilidades, além de coletar e analisar logs de eventos de segurança

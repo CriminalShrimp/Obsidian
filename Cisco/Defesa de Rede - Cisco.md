@@ -259,7 +259,7 @@ Tor apresenta uma série de desafios aos analistas de segurança cibernética. P
 # Modulo 10: Dados de Segurança Do Rede
 ## Tipos de dados
 ### Dados de alerta
-Os dados de alerta consistem em mensagens geradas por sistemas de prevenção de intrusões (IPSs) ou sistemas de detecção de intrusões (IDSs) em resposta ao tráfego que viola uma regra ou corresponde à assinatura de uma exploração conhecida. Um IDS de rede (NIDS), como o [[FerramentasBlueTeam#Snort - Resumir e explicar|Snort]], vem configurado com regras para explorações conhecidas. Os alertas são gerados e são legíveis e pesquisáveis pelos aplicativos Sguil e Squert, que fazem parte do conjunto Security Onion de ferramentas NSM.
+Os dados de alerta consistem em mensagens geradas por sistemas de prevenção de intrusões (IPSs) ou sistemas de detecção de intrusões (IDSs) em resposta ao tráfego que viola uma regra ou corresponde à assinatura de uma exploração conhecida. Um IDS de rede (NIDS), como o [[Snort|Snort]], vem configurado com regras para explorações conhecidas. Os alertas são gerados e são legíveis e pesquisáveis pelos aplicativos Sguil e Squert, que fazem parte do conjunto Security Onion de ferramentas NSM.
 Um site de teste que é usado para determinar se o Snort está funcionando é o site [tesmyids](https://testmynids.org/). Consiste em uma única página da Web que exibe apenas o seguinte texto **uid=0(root) gid=0(root) groups=0(root)**. Se o Snort estiver funcionando corretamente e um host visitar este site, uma assinatura será correspondida e um alerta será acionado. Esta é uma maneira fácil e inofensiva de verificar se o NIDS está em execução.
 
 A regra acionada é:
@@ -375,8 +375,8 @@ Proxies da Web fornecem dados que ajudam a determinar se as respostas da Web for
 #redes #BlueTeam 
 ## Regras e Alertas
 Os alertas podem vir de várias fontes:
-- **[[Abreviações#NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas|NIDS]]** - [[FerramentasBlueTeam#Snort - Falar sbre|Snort]], [[FerramentasBlueTeam#Suricata - falar sobre|Suricata]] e [[FerramentasBlueTeam#Zeek - falar sobre|Zeek]].
-- **[[Abreviações#HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas|HIDS]]** - [[FerramentasBlueTeam#OSSEC|OSSEC]], [[FerramentasBlueTeam#Wazuh|Wazuh]].
+- **[[Abreviações#NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas|NIDS]]** - [[Snort|Snort]], [[Suricata|Suricata]] e [[Zeek|Zeek]].
+- **[[Abreviações#HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas|HIDS]]** - [[OSSEC|OSSEC]], [[Wazuh|Wazuh]].
 - **Gerenciamento e monitoramento de ativos** - Sistema de detecção de ativos passivos (PADS).
 - **Transações HTTP, DNS e TCP** - Registradas pelo Zeek e [[Abreviações#PCAP = Refere-se a Packet CAPture que é um método usado para capturar e armazenar pacotes de trafego de rede.|PCAPs]].
 - **Mensagens do Syslog** - Várias fontes.

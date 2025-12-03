@@ -1,0 +1,2 @@
+
+OSSEC é um sistema de detecção de intrusão baseado em host livre e aberto (HIDS). Realiza análise de log, verificação de integridade, monitoramento de registro do SO, detecção de rootkit, alerta com base em tempo e resposta ativa. Ele fornece detecção de intrusão para a maioria dos sistemas operacionais , incluindo Linux, OpenBSD, FreeBSD, OS X, Solaris e Windows. A OSSEC possui uma arquitetura centralizada e multi-plataforma que permite que sistemas múltiplos sejam facilmente monitorados e gerenciados

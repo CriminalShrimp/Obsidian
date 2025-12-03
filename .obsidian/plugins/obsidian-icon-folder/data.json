@@ -5,7 +5,13 @@
     "fontSize": 16,
     "emojiStyle": "native",
     "iconColor": null,
-    "recentlyUsedIcons": [],
+    "recentlyUsedIcons": [
+      "LiBookA",
+      "🐧",
+      "📚",
+      "LiRouter",
+      "LiWifi"
+    ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraMargin": {
@@ -27,5 +33,19 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  }
+  },
+  "Treino": {
+    "iconName": "LiDumbbell",
+    "iconColor": "#a39f9f"
+  },
+  "Imagens": "LiImage",
+  "Ferramentas": "⚒",
+  "BlueTeam": "🛡",
+  "RedTeam": "⚔",
+  "Arquitetura Computacional": "🖥",
+  "Redes": "LiWifi",
+  "Cisco": "LiRouter",
+  "Conceitos": "📚",
+  "Linux": "🐧",
+  "Abreviações.md": "LiBookA"
 }
