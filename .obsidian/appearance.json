@@ -2,5 +2,10 @@
   "theme": "obsidian",
   "enabledCssSnippets": [
     "Img_format"
-  ]
+  ],
+  "textFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "JetBrains Mono",
+  "interfaceFontFamily": "JetBrains Mono",
+  "cssTheme": "Dark Moss",
+  "accentColor": "#ff0000"
 }

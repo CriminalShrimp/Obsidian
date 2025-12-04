@@ -80,8 +80,8 @@
             "state": {
               "type": "tg-left-sidebar",
               "state": {},
-              "icon": "panel-left-dashed",
-              "title": "Task GeniusSidebar"
+              "icon": "lucide-ghost",
+              "title": "tg-left-sidebar"
             }
           }
         ]
@@ -160,23 +160,14 @@
               "icon": "lucide-list",
               "title": "Outline of TODO"
             }
-          },
-          {
-            "id": "82c16a152bc8b709",
-            "type": "leaf",
-            "state": {
-              "type": "tg-right-detail",
-              "state": {},
-              "icon": "panel-right-dashed",
-              "title": "Task GeniusDetails"
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -188,8 +179,7 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "github-sync:Sync with Remote": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-task-progress-bar:Open Task Genius view": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "61af899074d72bb7",
