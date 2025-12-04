@@ -1,35 +1,35 @@
 ### Disquete
-Muito usado ate os anos 2000 o disquete usa memória de disco magnético para guardar dados, tendo uma capacidade de 360 KB a 2,88 MB que na época era o suficiente para os arquivos, porem hj em dia são insuficientes. Algo que acontecia era que quando passavam em portas giratórias os disquetes tinham seus dados apagados por contas dos imãs.  
+Muito usado ate os anos 2000 o disquete usa memória de disco magnético para guardar dados, tendo uma capacidade de 360 KB a 2,88 MB que na época era o suficiente para os arquivos, porem hj em dia são insuficientes. Algo que acontecia era que quando passavam em portas giratórias os disquetes tinham seus dados apagados por contas dos imãs.
 
-![[Disquete.webp| center |272]]
+![[Disquete.jpg|Disquete]]
 ### CD, DVD e Blu-ray
 Todos esses são disco óptico que utilizam luz como teologia para armazenamento, sendo o <span style="color:rgb(255, 255, 0)">CD</span> a ficar mais popular, com sua capacidade de armazenamento sendo de 700 MB mas possuindo variações com ate 900MB. Após isso veio o <span style="color:rgb(255, 255, 0)">DVD</span> usando a mesma tecnologia, porem agora com a camada única q pode armazenar ate 4,7 GB e também existe o de camada dubla que chega ate 8,5 GB e ainda existe a dupla face com camada única tem 9,4 GB e o de dupla camada para 17 GB. Essa diferença de poder de armazenamento se deve a um laser mais fino na gravação, q faz uma trilha mais fina na hora de gravar. Assim como o DVD o <span style="color:rgb(65, 105, 255)">Blu-ray</span> tinha discos com diferentes camadas o de camada única armazenam 25 GB e de camada dupla chegando a armazenar 50 GB e mais para frente saíram os <span style="color:rgb(65, 105, 255)">BDXL</span> (**B**lu-ray **D**isc E**X**tra **L**arge), que são discos Blu-ray com capacidade superior chegam de 100 GB a 128 GB. Assim como a diferença entre o CD e o DVD, do DVD para o Blu-ray foi um laser mais fino para a gravação.
 
-![[Cd,DvD,BlueRay.webp|center]]
+![[Cd,DvD,BlueRay.webp|Discos de Gravação]]
 
 ### Pen Drive
 Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de porta serial universal é usado em diversas tecnologias tendo também varias versões.|USB]] veio para substituir o CD e o disquete, e é usado ate os dias atuais. Seu poder de armazenamento é muito amplo, havendo dispositivos com 8 GB de armazenamento indo ate 1 TB, isso sem aumentar drasticamente seu tamanho, já que a ideia do pen drive é ser compacto e móvel. Usando a memória flash **NAND** ele armazena seus dados em grandes células de memorias conectadas.
 
-![[PenDrive.webp|center]]
+![[PenDrive.webp|PenDrive]]
 
 ### HD/HDD
 **H**ardware **D**isc **D**rive ou Discos Rígidos usa armazenamento magnético e um ou mais pratos (que seriam os discos) para salvar gravar os dados. A gravação e a leitura dos dados são feitas por um braço móvel, esses dados são acessados de forma aleatória. Como os HDs estão no mercado a muito tempo, existem varias tecnologia que melhoram seu desempenho e também possuem varias capacidade distintas, tendo alguns modelos de 128 GB e alguns que hoje em dia  chegam ate 20 TB, e no mercado também existem HDs moveis e são os <span style="color:rgb(255, 255, 0)">HDs Externo</span> que tem o mesmo funcionamento dos HDs normais, porem de uma forma mais segura a ser transportado no dia a dia.
 
-![[HD Explicado.webp|center]]
+![[HD Explicado.webp|HD]]
 ### SSD
 **S**olid **S**tate **D**rive ou Unidade de Estado Sólido usa a circuitos interligados para armazenar os dados, por conta de não precisar procurar e ler os dados em um disco, a velocidade de leitura do SSD é muito superior aos que utilizam discos, e atualmente ainda existem os modelos M.2, que é ligado diretamente na placa mãe, diminuindo muito a latência e também aumentando a velocidade de leitura e gravação. Sua capacidade de armazenamento assim como o HD veio mudando deste sua criação, é possível achar dispositivos com 128 GB e ate 8 TB de armazenamento.
 
-![[SSD Tipos.jpg|374|center]]
+![[SSD Tipos.jpg|SSDs|392x201]]
 ### CMOS
 **C**omplementary **M**etal-**O**xide-**S**emiconductor (CMOS) é uma pequena memória volátil na placa-mãe, que armazena informações de configuração de hardware. como por exemplo uma sequencia de boot (USB, CD-ROM, HD e placa de rede) ou a data e hora do computador.  Ela é alimentada por uma pequena bateria, que de tempos em tempos tem q ser trocada.
 
-![[CMOS.webp|519|center]]
+![[CMOS.webp|CMOS|760x427]]
 ### Memoria ROM
 **R**ead **O**nly **M**emory ou Memoria Somente de Leitura é um tipo de memória não volátil que armazena instruções permanentes para a inicialização do dispositivo, essas informações são chamadas de **firmware**. Além das instruções também armazena os dados do usuário permanentemente.
 
-![[Memoria ROM.webp|606|center]]
+![[Memoria ROM.webp|Memoria Rom|529x359]]
 
 ### Memoria RAM
 **R**andom **A**cess **M**emory ou Memoria de Acesso Aleatório diferente da ROM, o que significa que as informações nela contida são mantidas temporariamente. Ela é muita usada para armazenar dados de aplicativos que são usados constantemente, pois sua velocidade de acesso é muito superior do que as voláteis. Com o tempo a tecnologia dela foi evoluindo, com isso veio a categorização por gerações, nomeadas pela sua versão [[Abreviações#DDR =**D**ouble **D**ata **D**ate ou Taxa de Dados Dupla se refere a uma tecnologia de memória RAM, que transfere dados duas vezes por ciclo.|DDR]], quanto maior o  seu valor numérico melhor, hoje em dia a mais potente sendo a DDR5.
 
-![[Memoria Ram.webp|500|center]]
+![[Memoria Ram.webp|Memorias RAMs|525x588]]

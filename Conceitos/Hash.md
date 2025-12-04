@@ -23,14 +23,16 @@ O SHA-2 substituiu o SHA-1 com quatro funções hash adicionais para formar a fa
 O SHA-2 é um algoritmo mais forte e está substituindo o MD5. SHA-256, SHA-384 e SHA-512 são os algoritmos de próxima geração.
 
 ===============================================================
-Hashes são usados para verificar e garantir a integridade dos dados. O hash é baseado em uma função matemática unilateral que é relativamente fácil de calcular, mas significativamente mais difícil de reverter. A moagem de café é uma boa analogia de função unidirecional. É fácil moer grãos de café, mas é quase impossível unir novamente todos os pedaços para reconstruir os grãos originais. A função de hash criptográfico também pode ser usada para verificar a autenticação.![[Hash-20250403060418222.webp]]
+Hashes são usados para verificar e garantir a integridade dos dados. O hash é baseado em uma função matemática unilateral que é relativamente fácil de calcular, mas significativamente mais difícil de reverter. A moagem de café é uma boa analogia de função unidirecional. É fácil moer grãos de café, mas é quase impossível unir novamente todos os pedaços para reconstruir os grãos originais. A função de hash criptográfico também pode ser usada para verificar a autenticação.
+![[Hash-20250403060418222.webp|cente|]]
 Como mostrado na figura, uma função hash leva um bloco variável de dados binários, chamado de mensagem, e produz uma representação condensada de comprimento fixo, chamado hash. O hash resultante também é às vezes chamado de mensagem digest, digest ou impressão digital.
 
 Com funções hash, é computacionalmente inviável que dois conjuntos diferentes de dados apresentem a mesma saída hash. Cada vez que os dados são modificados ou alterados, o valor de hash também muda. Por isso, muitas vezes os valores criptográficos de hash são chamados de impressões digitais. Eles podem ser usados para detectar arquivos de dados duplicados, alterações de versão de arquivo e aplicativos semelhantes. Esses valores são usados para proteger contra uma alteração acidental ou intencional dos dados ou corrupção acidental dos dados.
 
 A função hash criptográfico é aplicada em muitas situações diferentes para autenticação de entidade, integridade de dados e fins de autenticidade de dados.
 ## Operação de hash criptográfico
-Matematicamente, a equação **_h = H (x)_** é usada para explicar como um algoritmo de hash opera. Como mostrado na figura, uma função hash H leva uma entrada x e retorna um valor hash string de tamanho fixo h.![[Operação Hash.webp]]O exemplo na figura resume o processo matemático. Uma função hash criptográfica deve ter as seguintes propriedades:
+Matematicamente, a equação **_h = H (x)_** é usada para explicar como um algoritmo de hash opera. Como mostrado na figura, uma função hash H leva uma entrada x e retorna um valor hash string de tamanho fixo h.
+![[Operação Hash.webp]]O exemplo na figura resume o processo matemático. Uma função hash criptográfica deve ter as seguintes propriedades:
 
 - A entrada pode ser de qualquer comprimento.
 - A saída tem um comprimento fixo.

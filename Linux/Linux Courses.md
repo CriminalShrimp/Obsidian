@@ -9,13 +9,13 @@ Sumario
 	[Fedora Documentation](https://docs.fedoraproject.org/en-US/fedora/latest/).
 	[Linux Pages](http://man7.org/linux/man-pages/).
 	[openSUSE Documentation](https://doc.opensuse.org/)
-# Introdução
-Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel#^b8a742|Kernel]] Linux, essas distribuições são de código aberto, o que significa que são disponibilizadas gratuitamente para todos e além disso tem os requisitos para rodar são mínimos. Dentre as distros ( uma abreviação de Distributions) seria <span style="color:rgb(161, 79, 140)">CentOS</span>, <span style="color:rgb(65, 105, 255)">Fedora</span>, <span style="color:rgb(255, 165, 0)">Ubuntu</span> e <span style="color:rgb(206, 0, 86)">Debian</span>. Distros podem possuir interface gráfica, porém todas suas funções também podem ser feitas pela [[Abreviações#CLI = Command Line Interface é onde são realizados os comandos|command line interface]] mais conhecida como [[CLI]], existem vários terminais CLI como o xterm, konsole, terminator.
- ![[LoginInterfaceGrafica.webp| center]]
-<p style="text-align:center;"> Aqui por exemplo é um login feito via interface gráfica</p>
 
-![[LoginCLI.webp| center]]
-*<p style="text-align:center;"> Já aqui é um login via CLI</p>
+---
+# Introdução
+Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel#^b8a742|Kernel]] Linux, essas distribuições são de código aberto, o que significa que são disponibilizadas gratuitamente para todos e além disso tem os requisitos para rodar são mínimos. Dentre as distros ( uma abreviação de Distributions) seria <span style="color:rgb(161, 79, 140)">CentOS</span>, <span style="color:rgb(65, 105, 255)">Fedora</span>, <span style="color:rgb(255, 165, 0)">Ubuntu</span> e <span style="color:rgb(206, 0, 86)">Debian</span>. Distros podem possuir interface gráfica, porém todas suas funções também podem ser feitas pela [[Abreviações#CLI = Command Line Interface é onde são realizados os comandos do sistema.|command line interface]] mais conhecida como [[CLI]], existem vários terminais CLI como o xterm, konsole, terminator.
+ ![[LoginInterfaceGrafica.webp|Aqui por exemplo é um login feito via interface gráfica]]
+
+![[LoginCLI.webp|Já aqui é um login via CLI]]
 
 Nos sistemas existe o usuário root que seria a conta que tem a permissão de administrador, o que seria a maior permissão possível de ter em um sistema, com ela é possível fazer qualquer modificação sem que o sistema interfira.
 
@@ -183,10 +183,10 @@ Se estiver certo, quando logar não precisara digitar a senha, para testar use  
 # Sistema de Gerenciamento de Pacotes
 Aqui é onde encontramos como instalar softwares no sistema Linux, existem dois gerenciadores de pacotes conhecidos popularmente: os baseados em sistema <span style="color:rgb(206, 0, 86)">Debian</span> e os que usam <span style="color:rgb(255, 255, 0)">RPM</span>. Ambos pacotes operam com ferramentas em níveis distintos, como em baixo nível (como a **dpkg** ou **rpm**) que se preocupa com rodas scripts, baixar e descompactar pacotes por pacotes, instalar os softwares corretamente. Enquanto as de alto nível (como **apt**, **dnf** ou **zypeer**) que baixam grupos de pacotes, e descobre as dependências. Muitas vezes os usuários trabalham com as ferramentas de alto nível, que quando necessário chamam as de baixo. 
 
-![[Gerenciadores de Pacotes Linux.webp|center ]]
+![[Gerenciadores de Pacotes Linux.webp]]
 ### Diferentes Gerenciadores de Pacotes
 Comandos para adquirir softwares de diferentes gerenciadores muda dependendo de qual esta sendo utilizado no momento, aqui tem uma rápida comparação de alguns comandos.
-![[Comandos de Gerenciadores de Pacote.webp|center]]
+![[Comandos de Gerenciadores de Pacote.webp|]]
 #### Advanced Packaging Tool (apt)
 É o gerenciador de softwares baseados no sistema <span style="color:rgb(206, 0, 86)">Debian</span>.
 #### dnf 

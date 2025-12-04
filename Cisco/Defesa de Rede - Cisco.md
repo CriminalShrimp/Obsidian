@@ -20,8 +20,10 @@ Os ativos são todas as superfícies de ataques que um atacante pode atingir, a 
 Assim como na vida os ativos tem um ciclo de vida, o primeiro é a <span style="color:rgb(255, 255, 0)">Aquisição</span>, empresa compra os ativos de acordo com as necessidades identificadas nos dados coletados para justificar a compra. <span style="color:rgb(255, 255, 0)">Implantação</span>, o ativo é montado e inspecionado para verificar se há falhas ou outros problemas, a equipe realiza testes e instala tags ou códigos de barras para fins de rastreamento. <span style="color:rgb(255, 255, 0)">Utilização</span>, essa é a fase mais longa do ciclo, o desempenho do ativo é verificado continuamente, atualizações, correções de patches, compras de novas licenças e auditorias de conformidade fazem parte do estágio de utilização. A <span style="color:rgb(255, 255, 0)">Manutenção</span> ajuda a prolongar a vida produtiva de um ativo, os funcionários podem modificar ou atualizar o recurso. E ao final da vida produtiva do ativo, ele deve ser descartado, todos os dados devem ser apagados do recurso, o descarte pode incluir a desmontagem de um ativo para peças, finalizando assim o ciclo com a <span style="color:rgb(255, 255, 0)">Eliminação</span>.
 ### Identificando as Vulnerabilidades
 Identificar as possíveis ameaças para cada ambiente fornece uma lista de ataques mais prováveis de ocorrerem. A varias perguntas  que podem ser feitas para descobrir essas vulnerabilidades como: Quem pode explorar as vulnerabilidades? Quais são elas? O que sistemas parecidos sofreram e sofrem de ataques? O que ocorrera quando/se os ativos forem perdidos e as vulnerabilidades do sistema exploradas? 
-Vamos exemplificar usando como exemplo um e-banking 
-![[e-banking.webp]]
+Vamos exemplificar usando como exemplo um e-banking.
+
+![[e-banking.webp|827x577]]
+
 A identificação da ameaça para um sistema de banca electrónica incluiria:
 • Compromisso interno do sistema - O atacante usa os servidores de e-banking expostos para invadir um sistema bancário interno.
 • Dados roubados - Um atacante rouba os dados pessoais e financeiros dos clientes bancários do banco de dados do cliente.
@@ -34,10 +36,13 @@ A identificação da ameaça para um sistema de banca electrónica incluiria:
 ### Identificando as Ameaças
 Usar a abordagem de defesa profunda para identificar ameaças e proteger ativos vulneráveis. Essa abordagem usa várias camadas de segurança, uma analogia muito comum é falar de "segurança cebola" mais popularmente conhecida como <span style="color:rgb(255, 255, 0)">onion security</span>, um ator de ameaça teria que descascar as defesas de uma rede camada por camada de uma maneira semelhante a descascar uma cebola, somente depois de penetrar cada camada, o ator da ameaça alcançaria os dados ou o sistema de destino.
 
-![[security onion.webp]]
-Porem esse conceito vem mudando com o tempo e agora é usado o "alcachofra de segurança" no inglês <span style="color:rgb(255, 255, 0)">security artichoke</span>, onde não se precisa mais ir camadas por camadas para chegar no objetivo e sim ir tirando as "folhas" e obtendo dados/informações para conseguir realizar suas ações maliciosas, por exemplo, é mais fácil para um agente de ameaça comprometer um dispositivo móvel do que comprometer um computador ou servidor interno protegido por camadas de defesa. Cada dispositivo móvel é uma folha, e folha após folha, tudo leva o hacker a mais dados. O coração da alcachofra é onde os dados mais confidenciais são encontrados. Cada folha fornece uma camada de proteção enquanto fornece simultaneamente um caminho para o ataque, nem todas as folhas precisam ser removidas para chegar ao coração da alcachofra.
-![[alcachofra.webp]]
-## Gerenciamento de operações de segurança cibernética
+![[security onion.webp|Onion Security|770x406]]
+
+Porém esse conceito vem mudando com o tempo e agora é usado o "alcachofra de segurança" no inglês <span style="color:rgb(255, 255, 0)">security artichoke</span>, onde não se precisa mais ir camadas por camadas para chegar no objetivo e sim ir tirando as "folhas" e obtendo dados/informações para conseguir realizar suas ações maliciosas, por exemplo, é mais fácil para um agente de ameaça comprometer um dispositivo móvel do que comprometer um computador ou servidor interno protegido por camadas de defesa. Cada dispositivo móvel é uma folha, e folha após folha, tudo leva o hacker a mais dados. O coração da alcachofra é onde os dados mais confidenciais são encontrados. Cada folha fornece uma camada de proteção enquanto fornece simultaneamente um caminho para o ataque, nem todas as folhas precisam ser removidas para chegar ao coração da alcachofra.
+
+![[alcachofra.webp|Security Artichoke|723x496]]
+
+## Gerenciamento de operações de Segurança Cibernética
 As configurações realizadas no ambiente são fundamentais para no futuro serem fitas mudanças, auditorias, controle e identificação no sistema. Configurar os arquivos de [[Abreviações#Log = Abreviação de logfile (arquivo de registro) ou logging (processo de registro de eventos|LOG]] é importante para quando for realizado uma auditoria de quando ouve um ataque ou uma defesa bem sucedida, ou também para controle de atividades dos usuários, claro que quando maior a empresa mais logs são gerados então devem entrar um trabalho de gerenciamento dos mesmos.
 Outra coisa importante de se ter para analisar são os pacotes de rede, quando se ter ferramentas para capturar esses pacotes e analisa-los é possível saber fazer uma análise de problemas de rede, detecção de uso indevido da rede, tentativas de invasão da rede, etc. Existem vários desses analisadores como [[WireShark|WireShark]], [[Ferramentas/Ferramentas#TCPDump = O comando [tcpdump](https //www.ibm.com/docs/pt-br/aix/7.3?topic=t-tcpdump-command) imprime os cabeçalhos de pacotes em uma interface de rede que combinam com a expressão booleana. Você pode executar o comando com o sinalizador -w para salvar os dados do pacote em um arquivo para análise adicional.|TCPDump]], Ettercap, Kismet, Ngrep, Ntop, Etherape, entre outras.
 ## Políticas, regulamentos e padrões de segurança
@@ -82,7 +87,8 @@ O termo alta disponibilidade descreve sistemas concebidos para evitar períodos 
 
 ### RAID
 O RAID obtém os dados normalmente armazenados em um único disco e os espalha entre várias unidades. Se qualquer disco único RAID 0 for perdido, o usuário poderá recuperar os dados de outros discos que também hospedam os dados. Também pode aumentar a velocidade da recuperação de dados, já que várias unidades recuperarão os dados solicitados mais rapidamente do que um disco fazendo o mesmo.
-![[RAID.webp]]
+
+![[RAID.webp|Comparação níveis de RAIDs]]
 
 ### Spanning Tree 
 A redundância aumenta a disponibilidade da infraestrutura da rede, protegendo-a de um ponto único de falha, como um cabo ou um switch com falha na rede. Quando os designers projetam a redundância física em uma rede, pode haver loops e quadros duplicados. Os loops e quadros duplicados têm consequências graves para uma rede comutada, o [[Abreviações#STP = Spanning Tree Protocol previne loops em uma rede quando os switches se interconectarem por vários caminhos|STP]] soluciona esses problemas. A função básica do STP é prevenir loops em uma rede, quando os switches se interconectarem por vários caminhos, ele garante que os links físicos redundantes estejam livres de loop e que apenas um caminho lógico seja executado entre todos os destinos na rede. O STP bloqueia intencionalmente os caminhos redundantes que poderiam provocar um loop.
@@ -91,7 +97,7 @@ Bloquear os caminhos redundantes é fundamental para evitar loops na rede. Os ca
 Ao longo da última década, ataques como o **Stuxnet** demonstraram o potencial destrutivo de ameaças cibernéticas contra infraestruturas críticas. Para proteger sistemas industriais, recomenda-se **separar as redes internas e externas**, isolando redes SCADA da LAN corporativa.
 A **Internet das Coisas (IoT)** conecta diversos dispositivos à Internet, geralmente por tecnologia sem fio, e muitos utilizam **sistemas operacionais em tempo real (RTOS)**. Essa expansão de dispositivos gerou o fenômeno do **Big Data**, impulsionado por **sistemas integrados** que capturam e processam grandes volumes de dados. No entanto, esses sistemas são vulneráveis a **ataques de tempo**, em que invasores analisam o tempo de resposta para descobrir falhas.
 Em aeronaves, sistemas integrados como controle de voo e comunicação enfrentam riscos devido a **credenciais fracas, protocolos inseguros e backdoors**. **Drones (UAVs)**, usados em diversas áreas, são vulneráveis a **sequestros, spoofing de GPS, ataques Wi-Fi e falhas de autenticação**.
-Para reforçar a segurança, empresas usam **técnicas de dissimulação**, como **honeypots** — sistemas falsos criados para atrair e monitorar invasores — e **honeynets**, que são conjuntos de honeypots. Um **sinkhole DNS** é outra medida eficaz, usada para bloquear a resolução de domínios maliciosos e redirecionar usuários para locais seguros.
+Para reforçar a segurança, empresas usam **técnicas de dissimulação**, como [[HoneyPots]] — sistemas falsos criados para atrair e monitorar invasores — e **honeynets**, que são conjuntos de honeypots. Um **sinkhole DNS** é outra medida eficaz, usada para bloquear a resolução de domínios maliciosos e redirecionar usuários para locais seguros.
 
 # Modulo 3: Controle de Acesso
 
@@ -126,18 +132,23 @@ Existem tipos de firewalls com tecnologias e funções diferentes.
 ### Firewall de filtragem de pacotes (sem estado)
 
 Os firewalls de filtragem de pacotes geralmente fazem parte de um firewall de roteador, que permite ou nega tráfego com base nas informações da Camada 3 e da Camada 4. Eles são firewalls sem estado que usam uma simples pesquisa de tabela de políticas que filtra o tráfego com base em critérios específicos. Por exemplo, os servidores SMTP escutam a porta 25 por padrão. Um administrador pode configurar o firewall de filtragem de pacotes para bloquear a porta 25 de uma estação de trabalho específica para evitar que ela transmita um vírus de e-mail.
-![[Firewall de filtragem de pacotes (sem estado).webp]]
+
+![[Firewall de filtragem de pacotes (sem estado).webp|Camanda OSI 3 e 4|796x505]]
+
 
 ### Firewall de filtragem de pacotes de estado
-Firewalls com estado são as tecnologias de firewall mais versáteis e mais comuns em uso. Os firewalls stateful fornecem filtragem de pacotes stateful usando informações de conexão mantidas em uma tabela de estado. Filtragem com estado é uma arquitetura de firewall classificada na camada de rede. Ele também analisa o tráfego na camada 4 da OSI e na camada 5.![[Firewall de filtragem de pacotes de estado.webp]]
+Firewalls com estado são as tecnologias de firewall mais versáteis e mais comuns em uso. Os firewalls stateful fornecem filtragem de pacotes stateful usando informações de conexão mantidas em uma tabela de estado. Filtragem com estado é uma arquitetura de firewall classificada na camada de rede. Ele também analisa o tráfego na camada 4 da OSI e na camada 5.
+
+![[Firewall de filtragem de pacotes de estado.webp|Camada OSI 3 a 5]]
+
 ### Firewall de gateway de aplicativo
 Um firewall de gateway de aplicação (firewall proxy), conforme mostrado na figura, filtra as informações nas camadas 3, 4, 5 e 7 do modelo de referência OSI. A maior parte do controle e filtragem do firewall é feita em software. Quando um cliente precisa acessar um servidor remoto, ele se conecta a um servidor proxy. O servidor proxy se conecta ao servidor remoto em nome do cliente. Portanto, o servidor só vê uma conexão do servidor proxy.
-![[Firewall de gateway de aplicativo.webp]]
+![[Firewall de gateway de aplicativo.webp|Camda OSI 3 a 5 e 7]]
 ### Firewall de última geração
 Os firewalls de última geração (NGFW) vão além dos firewalls de estado, fornecendo prevenção de intrusão integrada, reconhecimento e controle de aplicativos para ver e bloquear aplicativos arriscados, caminhos de atualização para incluir futuros feeds de informações e técnicas para lidar com ameaças de segurança em evolução.
 
 ## Arquitetura de Segurança
-Existe diversos tipos de arquitetura como a <span style="color:rgb(255, 255, 0)">publica e a privada </span>onde a privada é considerada uma rede confiável, sendo esta normalmente toda a rede da empresa e a parte publica à não confiável ou não segura. Também existe a<span style="color:rgb(255, 255, 0)"> Zona Desmilitarizada</span> ou [[Abreviações#DMZ = Demilitarized Zone é uma subrede que isola serviços externos de uma organização de uma rede interna mais segura, permitindo acesso controlado à internet.|DMZ]]  é um projeto de firewall onde normalmente há uma interface interna conectada à rede privada, uma interface externa conectada à rede pública e uma interface DMZ. O tráfego proveniente da rede privada é inspecionado ao se dirigir para a rede pública ou DMZ, sendo geralmente permitido sem grandes restrições. O tráfego de retorno dessas redes para a privada também é autorizado. Já o tráfego que se origina na DMZ e tenta acessar a rede privada costuma ser bloqueado, enquanto aquele que vai para a rede pública é permitido seletivamente conforme as necessidades do serviço. O tráfego vindo da rede pública para a DMZ é inspecionado e permitido apenas para serviços específicos, como email, DNS, HTTP e HTTPS, com o retorno da DMZ para a rede pública sendo dinamicamente liberado. No entanto, qualquer tráfego originado na rede pública em direção à rede privada é bloqueado por questões de segurança. E por final a por <span style="color:rgb(255, 255, 0)">política baseados em zona</span> ou [[Abreviações#ZPF = Zone-Based Policy Firewalls refere-se a um sistema que divide a rede em zonas de segurança distintas aplicando políticas de segurança específicas|ZPFs]] usam o conceito de zonas para fornecer flexibilidade adicional. Uma zona é um grupo de uma ou mais interfaces que têm funções ou recursos semelhantes, as zonas ajudam a especificar onde uma regra ou política de firewall. Por padrão, o tráfego entre interfaces na mesma zona não está sujeito a nenhuma política e passa livremente. No entanto, todo o tráfego de zona para zona está bloqueado. Para permitir o tráfego entre as zonas, uma política que permite ou inspeciona o tráfego deve ser configurada.
+Existe diversos tipos de arquitetura como a <span style="color:rgb(255, 255, 0)">publica e a privada </span>onde a privada é considerada uma rede confiável, sendo esta normalmente toda a rede da empresa e a parte publica à não confiável ou não segura. Também existe a<span style="color:rgb(255, 255, 0)"> Zona Desmilitarizada</span> ou [[Abreviações#DMZ = Demilitarized Zone é uma subrede que isola serviços externos de uma organização de uma rede interna mais segura, permitindo acesso controlado à internet.|DMZ]]  é um projeto de firewall onde normalmente há uma interface interna conectada à rede privada, uma interface externa conectada à rede pública e uma interface DMZ. O tráfego proveniente da rede privada é inspecionado ao se dirigir para a rede pública ou DMZ, sendo geralmente permitido sem grandes restrições. O tráfego de retorno dessas redes para a privada também é autorizado. Já o tráfego que se origina na DMZ e tenta acessar a rede privada costuma ser bloqueado, enquanto aquele que vai para a rede pública é permitido seletivamente conforme as necessidades do serviço. O tráfego vindo da rede pública para a DMZ é inspecionado e permitido apenas para serviços específicos, como e-mail, DNS, HTTP e HTTPS, com o retorno da DMZ para a rede pública sendo dinamicamente liberado. No entanto, qualquer tráfego originado na rede pública em direção à rede privada é bloqueado por questões de segurança. E por final a por <span style="color:rgb(255, 255, 0)">política baseados em zona</span> ou [[Abreviações#ZPF = Zone-Based Policy Firewalls refere-se a um sistema que divide a rede em zonas de segurança distintas aplicando políticas de segurança específicas|ZPFs]] usam o conceito de zonas para fornecer flexibilidade adicional. Uma zona é um grupo de uma ou mais interfaces que têm funções ou recursos semelhantes, as zonas ajudam a especificar onde uma regra ou política de firewall. Por padrão, o tráfego entre interfaces na mesma zona não está sujeito a nenhuma política e passa livremente. No entanto, todo o tráfego de zona para zona está bloqueado. Para permitir o tráfego entre as zonas, uma política que permite ou inspeciona o tráfego deve ser configurada.
 # Modulo 6: Firewalls ZPFs
 #Firewall 
 Para criação desse projeto primeiro o administrador se concentra na separação da rede em zonas. Zonas estabelecem as fronteiras de segurança de uma rede, onde o tráfego é submetido a restrições políticas à medida que cruza para outra região da rede. Por exemplo, a rede pública seria uma zona e a rede interna seria outra zona. Após isso , deve ser projetado a infraestrutura física, levando em conta os requisitos de segurança e disponibilidade ao projetar a infraestrutura física. Isso inclui ditar o número de dispositivos entre zonas mais seguras e menos seguras e determinar dispositivos redundantes. Alguns exemplos que podem ser achados na internet são
@@ -147,23 +158,22 @@ Lan-to-internet, Firewall-with-public-servers-1, Firewall-with-public-servers-2,
 ## Virtualização e Computação em Nuvem
 A virtualização retira a quantidade de maquinas e também o custo do espaço que elas ocupam existem vários tipos de virtualização
 ### Máquinas virtuais
-Um hypervisor é um programa de software ou hardware que permite executar vários sistemas operacionais independentes em um sistema físico. Existem dois métodos de virtualização:
+Um **<span style="color:rgb(255, 255, 0)">hypervisor</span>** é um programa de software ou hardware que permite executar vários sistemas operacionais independentes em um sistema físico. Existem dois métodos de virtualização:
 
-**Virtualização de hardware** - O sistema operacional convidado é executado diretamente em uma plataforma de hardware, sob o controle do sistema host. 
+- **Virtualização de hardware** - O sistema operacional convidado é executado diretamente em uma plataforma de hardware, sob o controle do sistema host. 
 
-**Virtualização hospedada** - Um aplicativo em execução na máquina host é usado para criar <span style="color:rgb(255, 255, 0)">máquinas virtuais</span> que consistem totalmente em software e não contêm componentes de hardware. As máquinas virtuais compartilham hardware e são executadas com privilégios muito altos. 
-
+- **Virtualização hospedada** - Um aplicativo em execução na máquina host é usado para criar <span style="color:rgb(255, 255, 0)">máquinas virtuais</span> que consistem totalmente em software e não contêm componentes de hardware. As máquinas virtuais compartilham hardware e são executadas com privilégios muito altos.
 ### Contêineres
 Ao contrário de uma máquina virtual, um contêiner consiste apenas no aplicativo e suas dependências. Um contêiner usa um mecanismo para <span style="color:rgb(255, 255, 0)">emulação de sistema operacional</span>. O [[Docker|Docker]] é uma plataforma aberta que usa a virtualização no sistema operacional  para distribuir software em pacotes (contêineres). Você pode facilmente mover contêineres e o aplicativo será executado. Um software especializado como o [[Kubernetes|Kubernetes]] permite gerenciar seus contêineres.
 ### Infraestrutura de Desktops Virtuais
 Os ambientes de desktop do usuário podem ser armazenados remotamente em um servidor usando thin client ou desktops virtuais. Isso torna muito fácil criar, excluir, copiar, arquivar ou baixar configurações com rapidez em uma rede. A virtualização de desktop requer alta disponibilidade e capacidade de armazenamento.
 ## Tecnologia na Nuvem
 As tecnologias baseadas em nuvem permitem que empresas acessem computadores, armazenamento, software e servidores pela Internet. Ele move o componente de tecnologia da organização para o provedor de nuvem.
-[[Abreviações#SaaS - Software as a Service modelo de computação em nuvem que permite o uso de aplicativos por meio da internet.|SaaS]] - Permite que os usuários acessem software de aplicativos e bancos de dados. Os provedores de nuvem gerenciam a infraestrutura enquanto os usuários armazenam dados nos servidores do provedor de nuvem.
-[[Abreviações#PaaS - Platform as a Serviço modelo de computação em nuvem que permite criar, implantar, executar e gerir aplicações.|PaaS]] - Permite que uma organização acesse remotamente as ferramentas e serviços de desenvolvimento usados para entregar tais aplicativos, por assinatura.
-[[Abreviações#IaaS - Infrastructure as a Service modelo de computação em nuvem que fornece recursos conforme a demanda e o uso.|IaaS]] - Fornece recursos de computação virtualizados pela Internet. O provedor hospeda o hardware, software, servidores e componentes de armazenamento, e o usuário paga por uma assinatura desses recursos.
-Esse tipo de serviço envolve os dois lados cliente e provedor, assim ambos tem uma responsabilidade compartilhada como pode ver a seguir
-![[Tabela Cliente Nuvem.webp]]
+- [[Abreviações#SaaS - Software as a Service modelo de computação em nuvem que permite o uso de aplicativos por meio da internet.|SaaS]] - Permite que os usuários acessem software de aplicativos e bancos de dados. Os provedores de nuvem gerenciam a infraestrutura enquanto os usuários armazenam dados nos servidores do provedor de nuvem.
+- [[Abreviações#PaaS - Platform as a Serviço modelo de computação em nuvem que permite criar, implantar, executar e gerir aplicações.|PaaS]] - Permite que uma organização acesse remotamente as ferramentas e serviços de desenvolvimento usados para entregar tais aplicativos, por assinatura.
+- [[Abreviações#IaaS - Infrastructure as a Service modelo de computação em nuvem que fornece recursos conforme a demanda e o uso.|IaaS]] - Fornece recursos de computação virtualizados pela Internet. O provedor hospeda o hardware, software, servidores e componentes de armazenamento, e o usuário paga por uma assinatura desses recursos.
+Esse tipo de serviço envolve os dois lados cliente e provedor, assim ambos tem uma responsabilidade compartilhada como pode ver a seguir:
+![[Tabela Cliente Nuvem.webp|IaaS x PaaS x SaaS]]
 ## Segurança de dados na nuvem
 Em relação aos dados do cliente eles podem ser protegidos de formas diferentes,  <span style="color:rgb(255, 255, 0)">Dados em Repouso</span> (*date at rest*) que é quando nenhum usuário ou processo os acessa, solicita ou altera, esses podem ser armazenados em dispositivos locais, como um disco rígido em um computador ou uma rede centralizada, como um servidor da empresa. Na computação em nuvem, os dados inativos podem ser armazenados em uma nuvem e podem ser acessados em qualquer computador conectado à Internet, geralmente com assinatura.  <span style="color:rgb(255, 255, 0)">Dados em Transito</span> (*data in transit*) que refere-se aos que não estão inativos nem estão sendo processados. A transmissão pode ocorrer em um único servidor ao longo das linhas de barramento da placa-mãe, entre dispositivos em uma única rede ou entre redes e, possivelmente, através da Internet. E por fim os <span style="color:rgb(255, 255, 0)">Dados em Processo</span> (*date in process*) que se refere aos dados durante a entrada inicial, a modificação, o cálculo ou a saída. Todos esses dados devem ser protegidos via [[Criptografia]] e/ou [[Hash]].
 
@@ -197,25 +207,39 @@ Olhar o arquivo [[Hash]] para ver sobre.
 O syslog é um padrão amplamente adotado para registrar eventos de dispositivos de rede e endpoints. Ele permite a transmissão, armazenamento e análise de mensagens de forma neutra e padronizada. Graças a essa flexibilidade, dispositivos de diferentes fabricantes podem enviar logs para servidores centrais que executam um daemon syslog. Essa centralização facilita o monitoramento de segurança, tornando-o mais eficiente. Normalmente, os servidores syslog escutam na porta **UDP 514**.
 
 Devido à sua importância na segurança, os servidores syslog são alvos potenciais de ataques cibernéticos. Atores mal-intencionados podem explorar esses servidores para ocultar atividades suspeitas, como a filtração de dados que muitas vezes ocorre de maneira lenta e discreta. Os invasores podem tentar interromper a transferência de logs, corromper ou destruir dados e comprometer o software responsável pelo envio das mensagens. Para mitigar essas ameaças, foi desenvolvida a próxima geração do syslog, conhecida como<span style="color:rgb(255, 255, 0)"> syslog-ng</span>. Essa versão aprimorada oferece recursos adicionais que aumentam a segurança e a integridade dos registros, dificultando ataques e manipulações maliciosas.
-![[Syslog.webp|center]]
-### NTP Network Time Protocol
+
+![[Syslog.webp|Syslog]]
+
+### Network Time Protocol (NTP)
 Como esses registros de syslogs incluem hora e data e podem vir de diversos dispositivos, é essencial que todos compartilhem um relógio sincronizado. Para isso, os dispositivos podem utilizar o NTP, que emprega uma hierarquia de fontes de tempo autorizativas para distribuir informações temporais na rede. Dessa forma, mensagens de dispositivos sincronizados podem ser enviadas para o servidor Syslog com precisão. Os carimbos de data e hora são fundamentais para a detecção de ameaças, pois permitem rastrear eventos registrados em vários dispositivos ao longo do caminho até o sistema de destino. Atores maliciosos podem tentar comprometer a infraestrutura do **NTP** para manipular informações de tempo, dificultando a correlação de eventos e ocultando rastros de atividades maliciosas. Além disso, criminosos cibernéticos já exploraram vulnerabilidades em clientes e servidores **NTP** para lançar ataques **DDoS**.
-![[NTP.webp|595]]
-### DNS Domain Name System
-Amplamente utilizado diariamente, mas muitas organizações adotam políticas de segurança menos rigorosas contra ameaças baseadas em DNS em comparação com outras explorações cibernéticas. Cientes dessa vulnerabilidade, invasores frequentemente encapsulam diferentes protocolos de rede dentro do DNS para contornar dispositivos de segurança. Atualmente, o DNS é um vetor comum para diversos tipos de malware, sendo utilizado para comunicação com servidores de comando e controle (CNC) e para infiltração de dados, mascarando essas transmissões como consultas DNS legítimas. Técnicas de codificação, como Base64, binário de 8 bits e hexadecimal, são empregadas para ocultar os dados e driblar medidas básicas de prevenção de perda de dados (DLP). Consultas DNS com nomes de domínio gerados aleatoriamente ou subdomínios anormalmente longos devem ser consideradas suspeitas, principalmente se houver um aumento repentino dessas solicitações na rede, pois provavelmente estão relacionados a um ataque para roubar dados. Logs de proxy **DNS** podem ser analisados para identificar essas atividades maliciosas.
-![[DNS.webp|center]]
-### HTTP/HTTPS
-O <span style="color:rgb(255, 255, 0)">Hypertext Transfer Protocol</span> é a espinha dorsal da World Wide Web (www), mas todas as informações transmitidas por ele viajam em texto simples, sem qualquer proteção contra interceptação ou alteração por agentes mal-intencionados. Uma exploração comum no HTTP é a injeção de iFrame (inline frame, é um elemento HTML que permite anexar outro documento HTML) ou mais conhecido como [[ClickJacking]]. Muitas ameaças baseadas na web envolvem scripts maliciosos inseridos em servidores comprometidos, que redirecionam os navegadores para sites infectados por meio de iFrames ocultos. Nesse tipo de ataque, um invasor compromete um servidor legítimo e insere um código malicioso que cria um iFrame invisível em uma página popular. Quando a página é carregada, o iFrame baixa e executa [[Malware]], frequentemente hospedado em um URL diferente do site original.
-![[Exploração de injeção iFrame de HTTP.webp]]
+
+![[NTP.webp|NTP|607x427]]
+
+### Domain Name System (DNS)
+Amplamente utilizado diariamente, mas muitas organizações adotam políticas de segurança menos rigorosas contra ameaças baseadas em DNS em comparação com outras explorações cibernéticas. Cientes dessa vulnerabilidade, invasores frequentemente encapsulam diferentes protocolos de rede dentro do DNS para contornar dispositivos de segurança. Atualmente, o DNS é um vetor comum para diversos tipos de malware, sendo utilizado para comunicação com servidores de [[Command N Control (CNC)]] e para infiltração de dados, mascarando essas transmissões como consultas DNS legítimas. Técnicas de codificação, como Base64, binário de 8 bits e hexadecimal, são empregadas para ocultar os dados e driblar medidas básicas de prevenção de perda de dados (DLP). Consultas DNS com nomes de domínio gerados aleatoriamente ou subdomínios anormalmente longos devem ser consideradas suspeitas, principalmente se houver um aumento repentino dessas solicitações na rede, pois provavelmente estão relacionados a um ataque para roubar dados. Logs de proxy **DNS** podem ser analisados para identificar essas atividades maliciosas.
+
+![[DNS.webp|Balanceador]]
+
+### Hypertext Transfer Protocol (HTTP/HTTPS)
+O <span style="color:rgb(255, 255, 0)">Hypertext Transfer Protocol</span> é a espinha dorsal da **W**orld **W**ide **W**eb (<span style="color:rgb(255, 255, 0)">www</span>), mas todas as informações transmitidas por ele viajam em texto simples, sem qualquer proteção contra interceptação ou alteração por agentes mal-intencionados. Uma exploração comum no HTTP é a injeção de <span style="color:rgb(255, 255, 0)">iFrame</span> (inline frame, <span style="color:rgb(255, 255, 0)">é um elemento</span> [[HyperText Markup Language (HTMl)|HTML]] <span style="color:rgb(255, 255, 0)">que permite anexar outro documento HTML</span>) ou mais conhecido como [[ClickJacking]]. Muitas ameaças baseadas na web envolvem scripts maliciosos inseridos em servidores comprometidos, que redirecionam os navegadores para sites infectados por meio de iFrames ocultos. Nesse tipo de ataque, um invasor compromete um servidor legítimo e insere um código malicioso que cria um iFrame invisível em uma página popular. Quando a página é carregada, o iFrame baixa e executa [[Malware]], frequentemente hospedado em um URL diferente do site original.
+
+![[Exploração de injeção iFrame de HTTP.webp|iFrame]]
+
 Para lidar com a alteração ou interceptação de dados confidenciais, muitas organizações comerciais adotaram HTTPS ou implementaram políticas somente HTTPS para proteger os visitantes de seus sites e serviços.
 
 HTTPS adiciona uma camada de criptografia ao protocolo HTTP usando [[Abreviações#SSL = Secure Socket Layer|SSL]], como mostrado na figura. Isso torna os dados HTTP ilegíveis, pois deixam o computador de origem até chegar ao servidor. Observe que HTTPS não é um mecanismo para a segurança do servidor Web. Ele só protege o tráfego de protocolo HTTP enquanto está em trânsito.
-![[Diagrama de protocolo HTTPS.webp|center]]
-Infelizmente, o tráfego HTTPS criptografado complica o monitoramento de segurança de rede. Alguns dispositivos de segurança incluem descriptografia e inspeção SSL; no entanto, isso pode apresentar problemas de processamento e privacidade. Além disso, o HTTPS adiciona complexidade às capturas de pacotes devido às mensagens adicionais envolvidas no estabelecimento da conexão criptografada. Esse processo é resumido na figura e representa sobrecarga adicional sobre HTTP.
-![[Transações HTTPS.webp|center]]
+
+![[Diagrama de protocolo HTTPS.webp|SSL]]
+
+Infelizmente, o tráfego HTTPS criptografado complica o monitoramento de segurança de rede. Alguns dispositivos de segurança incluem descriptografia e inspeção SSL, no entanto, isso pode apresentar problemas de processamento e privacidade. Além disso, o HTTPS adiciona complexidade às capturas de pacotes devido às mensagens adicionais envolvidas no estabelecimento da conexão criptografada. Esse processo é resumido na figura e representa sobrecarga adicional sobre HTTP.
+
+![[Transações HTTPS.webp|Processo HTTPS]]
+
 ### E-mail
 Protocolos de e-mail como SMTP, POP3 e [[Abreviações#IMAP = Internet Message Access Protocol monitora a rede em busca de atividade suspeitas. |IMAP]] podem ser usados por atores de ameaças para espalhar malware, roubar dados ou fornecer acessos a servidores para realizar [[Command N Control (CNC)]]. SMTP envia dados de um host para um servidor de e-mail e entre servidores de e-mail. IMAP e POP3 são usados para baixar mensagens de e-mail de um servidor de e-mail para o computador host. Por esse motivo, eles são os protocolos de aplicativos que são responsáveis por trazer "perigos" para o host. Com o monitoramento e analise desses protocolos e o dados coletados pode ser feito então o rastrear do comportamento das ameaças a partir desse ponto em diante. As ferramentas de monitoramento de segurança também podem permitir a recuperação de anexos de arquivos infectados.
-![[Ameaças de protocolo de email.webp]]
+
+![[Ameaças de protocolo de email.webp|CNC]]
+
 ### Internet Control Message Protocol (ICMP)
 ICMP pode ser usado para identificar hosts em uma rede, a estrutura de uma rede e determinar os sistemas operacionais em uso na rede. Ele também pode ser usado como um veículo para vários tipos de ataques DoS, também pode ser usado para infiltração de dados. Devido à preocupação de que o ICMP possa ser usado para vigiar ou negar o serviço de fora da rede, o tráfego ICMP de dentro da rede às vezes é ignorado. No entanto, algumas variedades de malware usam pacotes ICMP criados para transferir arquivos de hosts infectados para agentes ameaçadores usando esse método, conhecido como tunelamento ICMP.
 
@@ -225,36 +249,47 @@ ICMP pode ser usado para identificar hosts em uma rede, a estrutura de uma rede 
 ### Access Control List (ACL)
 Muitas tecnologias e protocolos podem ter impacto no monitoramento de segurança. Listas de Controle de Acesso (ACLs) estão entre essas tecnologias. As ACLs podem dar uma falsa sensação de segurança se forem excessivamente confiadas. As ACLs e a filtragem de pacotes em geral são tecnologias que contribuem para um conjunto em evolução de proteções de segurança de rede.
 
-A figura ilustra o uso de ACLs para permitir apenas tipos específicos de tráfego ICMP (Internet Control Message Protocol). O servidor em 192.168.1.10 faz parte da rede interna e tem permissão para enviar solicitações de ping para o host externo em 209.165.201.3. O tráfego ICMP de retorno do host externo é permitido se for uma resposta ICMP, extinção de origem (informa a origem para reduzir o ritmo do tráfego) ou qualquer mensagem ICMP inacessível. Todos os outros tipos de tráfego ICMP são negados. Por exemplo, o host externo não pode iniciar uma solicitação de ping para o host interno. A ACL de saída está permitindo mensagens ICMP que relatam vários problemas. Isso permitirá túneis ICMP e exfiltração de dados.
+A figura ilustra o uso de ACLs para permitir apenas tipos específicos de tráfego [[Abreviações#ICMP = Internet Control Message Protocol é usado para comunicar informações de nível de rede.|ICMP]]. O servidor em 192.168.1.10 faz parte da rede interna e tem permissão para enviar solicitações de ping para o host externo em 209.165.201.3. O tráfego ICMP de retorno do host externo é permitido se for uma resposta ICMP, extinção de origem (informa a origem para reduzir o ritmo do tráfego) ou qualquer mensagem ICMP inacessível. Todos os outros tipos de tráfego ICMP são negados. Por exemplo, o host externo não pode iniciar uma solicitação de ping para o host interno. A ACL de saída está permitindo mensagens ICMP que relatam vários problemas. Isso permitirá túneis ICMP e exfiltração de dados.
 
-Os invasores podem determinar quais endereços IP, protocolos e portas são permitidos pelas ACLs. Isso pode ser feito por varredura de portas, testes de penetração ou através de outras formas de reconhecimento. Os atacantes podem criar pacotes que usam endereços IP de origem falsificados. Os aplicativos podem estabelecer conexões em portas arbitrárias. Outros recursos do tráfego de protocolo também podem ser manipulados, como o sinalizador estabelecido em segmentos TCP. As regras não podem ser antecipadas e configuradas para todas as técnicas de manipulação de pacotes emergentes.
+Os invasores podem determinar quais endereços IP, protocolos e portas são permitidos pelas ACLs realizando varreduras de portas, testes de penetração ou através de outras formas de reconhecimento. Assim manipulando diversos recursos do tráfego de protocolo , como o sinalizador estabelecido em segmentos TCP, endereços de IPs, aplicativos portas, etc. As regras não podem ser antecipadas e configuradas para todas as técnicas de manipulação de pacotes emergentes.
 
-Para detectar e reagir à manipulação de pacotes, comportamentos mais sofisticados e medidas baseadas em contexto precisam ser tomadas. 
-![[Atenuante o abuso de ICMP.webp|center]]
-### NAT/PAT
+Para detectar e reagir à manipulação de pacotes, comportamentos mais sofisticados e medidas baseadas em contexto precisam ser tomadas.
+
+![[Atenuante o abuso de ICMP.webp|]]
+
+### NetWork Address Translation e Port Address Translation  (NAT/PAT)
 Conversão de Endereços de Rede (**NetWork Address Translation**) e Tradução de Endereço de Porta (**Port Address Translation**) podem complicar o monitoramento de segurança. Vários endereços IP são mapeados para um ou mais endereços públicos visíveis na Internet, ocultando os endereços IP individuais que estão dentro da rede (endereços internos).
 
 A figura ilustra a relação entre endereços internos e externos que são usados como endereços de origem (SA) e endereços de destino (DA). Esses endereços internos e externos estão em uma rede que está usando NAT para se comunicar com um destino na Internet. Se o PAT estiver em vigor e todos os endereços IP que saem da rede usarem o endereço global 209.165.200.226 interno para tráfego na Internet, pode ser difícil registrar o dispositivo interno específico que está solicitando e recebendo o tráfego quando ele entra na rede.
 
 Esse problema pode ser especialmente relevante com dados NetFlow. Os fluxos de NetFlow são unidirecionais e são definidos pelos endereços e portas que eles compartilham. O NAT basicamente quebrará um fluxo que passa por um gateway NAT, tornando as informações de fluxo além desse ponto indisponíveis.
 O NetFlow é discutido com mais detalhes posteriormente no módulo.
-![[Network Address Translation.webp|center]]
-### peer-2-peer (P2P)
+
+![[Network Address Translation.webp|SA e DA]]
+
+### Peer-2-Peer (P2P)
 Na rede ponto a ponto (P2P), mostrada na figura, os hosts podem operar em funções de cliente e servidor. Existem três tipos de aplicativos P2P: compartilhamento de arquivos, compartilhamento de processadores e mensagens instantâneas. No compartilhamento de arquivos P2P, os arquivos em uma máquina participante são compartilhados com membros da rede P2P. Exemplos disso são os outrora populares Napster e Gnutella. BitTorrent é uma rede de compartilhamento de arquivos P2P.
 Sempre que os usuários desconhecidos recebem acesso aos recursos de rede, a segurança é uma preocupação. Aplicativos P2P de compartilhamento de arquivos não devem ser permitidos em redes corporativas. A atividade da rede P2P pode contornar as proteções de firewall e é um vetor comum para a propagação de malware. P2P é inerentemente dinâmico. Ele pode operar conectando-se a vários endereços IP de destino e também pode usar numeração dinâmica de portas. Arquivos compartilhados são frequentemente infectados com malware, e os atores de ameaças podem posicionar seu malware em clientes P2P para distribuição a outros usuários.
 As redes P2P de compartilhamento de processadores doam ciclos de processador para tarefas computacionais distribuídas.
 
 Mensagens instantâneas (IM) também é considerado um aplicativo P2P. IM tem valor legítimo dentro de organizações que têm equipes de projeto distribuídas geograficamente. Nesse caso, aplicativos de IM especializados estão disponíveis, como a plataforma Webex Teams, que são mais seguras do que as mensagens instantâneas que usam servidores públicos.
-![[p2p.webp|center]]
+
+![[p2p.webp|P2P]]
+
 ## Balanceador de Carga
 O balanceamento de carga envolve a distribuição do tráfego entre dispositivos ou caminhos de rede para evitar recursos de rede sobrecarregados com muito tráfego. Se existirem recursos redundantes, um algoritmo ou dispositivo de balanceamento de carga funcionará para distribuir o tráfego entre esses recursos, conforme mostrado na figura.
 
-Uma maneira de fazer isso na internet é através de várias técnicas que usam DNS para enviar tráfego para recursos que têm o mesmo nome de domínio, mas vários endereços IP. Em alguns casos, a distribuição pode ser para servidores que são distribuídos geograficamente. Isso pode resultar em uma única transação de Internet sendo representada por vários endereços IP nos pacotes de entrada. Isso pode fazer com que recursos suspeitos apareçam em capturas de pacotes. Além disso, alguns dispositivos do gerenciador de balanceamento de carga (LBM) usam testes para testar o desempenho de diferentes caminhos e a integridade de diferentes dispositivos. Por exemplo, um LBM pode enviar testes para os diferentes servidores para os quais ele está balanceando o tráfego de carga, a fim de detectar que os servidores estão operando. Isso é feito para evitar o envio de tráfego para um recurso que não está disponível. Esses testes podem parecer tráfego suspeito se o analista de segurança cibernética não estiver ciente de que esse tráfego faz parte da operação do LBM.![[Balanceamento de carga com delegação DNS.webp]]
+Uma maneira de fazer isso na internet é através de várias técnicas que usam DNS para enviar tráfego para recursos que têm o mesmo nome de domínio, mas vários endereços IP. Em alguns casos, a distribuição pode ser para servidores que são distribuídos geograficamente. Isso pode resultar em uma única transação de Internet sendo representada por vários endereços IP nos pacotes de entrada. Isso pode fazer com que recursos suspeitos apareçam em capturas de pacotes. Além disso, alguns dispositivos do gerenciador de balanceamento de carga (LBM) usam testes para testar o desempenho de diferentes caminhos e a integridade de diferentes dispositivos. Por exemplo, um LBM pode enviar testes para os diferentes servidores para os quais ele está balanceando o tráfego de carga, a fim de detectar que os servidores estão operando. Isso é feito para evitar o envio de tráfego para um recurso que não está disponível. Esses testes podem parecer tráfego suspeito se o analista de segurança cibernética não estiver ciente de que esse tráfego faz parte da operação do LBM.
+
+![[Balanceamento de carga com delegação DNS.webp|Balanceador]]
+
 #### TOR
 Tor é uma plataforma de software e rede de hosts P2P que funcionam como roteadores de internet na rede Tor. A rede Tor permite que os usuários naveguem na internet anonimamente. Os usuários acessam a rede Tor usando um navegador especial. Quando uma sessão de navegação é iniciada, o navegador constrói um caminho de ponta a ponta em camadas na rede do servidor Tor que é criptografado, como mostrado na figura. Cada camada criptografada é “removida” como as camadas de uma cebola (portanto, “onion routing”) à medida que o tráfego atravessa um retransmissor do Tor. As camadas contêm informações criptografadas do próximo salto que só podem ser lidas pelo roteador que precisa ler as informações. Dessa forma, nenhum dispositivo único conhece todo o caminho para o destino e as informações de roteamento só podem ser lidas pelo dispositivo que as requer. Finalmente, no final do caminho do Tor, o tráfego atinge seu destino na internet. Quando o tráfego é retornado à origem, um caminho criptografado em camadas é construído novamente.
 
 Tor apresenta uma série de desafios aos analistas de segurança cibernética. Primeiro, o Tor é amplamente utilizado por organizações criminosas na “Dark Net”. Além disso, Tor tem sido usado como um canal de comunicação para malware CNC. Como o endereço IP de destino do tráfego Tor é ofuscado pela criptografia, com apenas o nó Tor de próximo salto conhecido, o tráfego Tor evita listas negras configuradas em dispositivos de segurança.
-![[TOR.webp|center]]
+
+![[TOR.webp|TOR]]
+
 
 # Modulo 10: Dados de Segurança Do Rede
 ## Tipos de dados
@@ -271,7 +306,9 @@ alert ip any any -> any any (msg:"GPL ATTACK\_RESPONSE id check returned root"; 
 Esta regra gera um alerta se **qualquer endereço IP** na rede receber dados de uma fonte externa que contenha conteúdo com texto correspondente ao padrão de **uid=0 (root)**. O alerta contém a mensagem **GPL ATTACK_RESPONSE id check retornou root**. O ID da regra Snort que foi acionada é **2100498**.
 
 A linha destacada na figura exibe um alerta Sguil que foi gerado visitando o site testmyids. A regra Snort e os dados do pacote para o conteúdo recebido da página da Web testmyvids são exibidos na área inferior direita da interface Sguil.
-![[Console Sguil mostrando o alerta de teste do Snort IDS.webp|center]]
+
+![[Console Sguil mostrando o alerta de teste do Snort IDS.webp|Sguil com alerta Snor]]
+
 ### Dados de Sessão e Transação
 1. **ts**: carimbo de data e hora
 2. **uid**: ID de sessão única
@@ -290,13 +327,17 @@ A linha destacada na figura exibe um alerta Sguil que foi gerado visitando o sit
 Os dados de sessão são um registro de uma conversa entre dois pontos de extremidade de rede, que geralmente são um cliente e um servidor. O servidor pode estar dentro da rede corporativa ou em um local acessado pela Internet. Dados de sessão são dados sobre a sessão, não os dados recuperados e usados pelo cliente. Os dados da sessão incluirão informações de identificação, como **as cinco tuplas** de endereços IP de origem e destino, números de porta de origem e destino, e o código IP do protocolo em uso. Os dados sobre a sessão geralmente incluem um ID de sessão, a quantidade de dados transferidos por origem e destino e informações relacionadas à duração da sessão.
 
 Zeek, anteriormente Bro, é uma ferramenta de monitoramento de segurança de rede que você usará em laboratórios mais tarde no curso. A figura mostra uma saída parcial para três sessões HTTP a partir de um log de conexão Zeek. As explicações dos campos são mostradas abaixo da figura.
-![[Dados de Sessão Zeek - Conteúdo Parcial.webp]]
+
+![[Dados de Sessão Zeek - Conteúdo Parcial.webp|Zeek]]
+
 Os dados de transação consistem nas mensagens que são trocadas durante sessões de rede. Essas transações podem ser exibidas em transcrições de captura de pacotes. Os logs de dispositivos mantidos por servidores também contêm informações sobre as transações que ocorrem entre clientes e servidores. Por exemplo, uma sessão pode incluir o download de conteúdo de um servidor web, como mostrado na figura. As transações que representam as solicitações e respostas seriam registradas em um log de acesso no servidor ou por um NIDS como Zeek. A sessão é todo o tráfego envolvido na elaboração da solicitação, a transação é a própria solicitação.
-![[Dados de transação.webp|center]]
+
+![[Dados de transação.webp|Dados em Transação]]
+
 ### Dados Estáticos
 Como dados de sessão, dados estatísticos são sobre tráfego de rede. Os dados estatísticos são criados através da análise de outras formas de dados de rede. Podem ser feitas conclusões que descrevem ou predizem o comportamento da rede a partir dessas análises. As características estatísticas do comportamento normal da rede podem ser comparadas ao tráfego de rede atual em um esforço para detectar anomalias. As estatísticas podem ser usadas para caracterizar quantidades normais de variação nos padrões de tráfego de rede, a fim de identificar condições de rede que estão significativamente fora desses intervalos. Diferenças estatisticamente significativas devem gerar alarmes e investigação imediata.
 
-A NBA (**Network Behavior Analysis**) e a NBAD (**Network Behavior Anomaly Detection**) são abordagens para monitoramento de segurança de rede que usam técnicas analíticas avançadas para analisar dados de telemetria de rede NetFlow ou IPFIX (**Internet Protocol Flow Information Export**). 
+A <span style="color:rgb(255, 255, 0)">NBA</span> (**Network Behavior Analysis**) e a <span style="color:rgb(255, 255, 0)">NBAD</span> (**Network Behavior Anomaly Detection**) são abordagens para monitoramento de segurança de rede que usam técnicas analíticas avançadas para analisar dados de telemetria de rede NetFlow ou <span style="color:rgb(255, 255, 0)">IPFIX</span> (**Internet Protocol Flow Information Export**). 
 
 ## Logs de dispositivos
 ### Logs de Host

@@ -1,2 +1,25 @@
 ## Obisidan
-- [ ] Kernel
+- [/] [[Kernel]]
+- [ ] [[Suricata]]
+- [ ] [[Zeek]]
+- [ ] [[Zero-Trust]]
+- [ ] [[Chaves Públicas e Privadas]]
+- [/] Em [[Defesa de Rede - Cisco#Gerenciamento de operações de segurança cibernética|Gerenciamento de operações de Segurança Cibernética]] falar mais sobreas as outras tecnologias
+- [ ] HoneyPots
+- [/] Verificar Arquivos Após Novos Plugings
+- [/] Rever [[Defesa de Rede - Cisco]]
+	- [x] Arrumar Descrição imgs
+	- [/] Fazer e linkar abreviações 🔼 🛫 2025-12-04 09:00
+	- [ ] Resumir textos
+- [ ] [[Docker]]
+- [ ] [[Kubernetes]]
+- [ ] [[Git e GitHub]]
+- [ ] [[Arch Linux]]
+- [ ] Legendar imgs em [[Sistema de Arquivos]]
+- [ ] [[Camada OSI]]
+- [ ] [[HyperText Markup Language (HTMl)]]
+- [ ] [[Protocolos]]
+- [ ] [[Command N Control (CNC)]]
+- [ ] [[Malware]]
+- [ ] [[Man-in-the-Middle]]
+- [ ] [[WireShark]] fazer algo bem detalhado de filtros e tudo mais

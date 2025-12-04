@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiListTodo",
+      "LiTrash",
       "LiBookA",
       "🐧",
-      "📚",
-      "LiRouter",
-      "LiWifi"
+      "📚"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -38,14 +38,28 @@
     "iconName": "LiDumbbell",
     "iconColor": "#a39f9f"
   },
-  "Imagens": "LiImage",
   "Ferramentas": "⚒",
   "BlueTeam": "🛡",
   "RedTeam": "⚔",
   "Arquitetura Computacional": "🖥",
-  "Redes": "LiWifi",
-  "Cisco": "LiRouter",
+  "Redes": {
+    "iconName": "LiWifi",
+    "iconColor": "#0571ff"
+  },
+  "Cisco": {
+    "iconName": "LiRouter",
+    "iconColor": "#adadad"
+  },
   "Conceitos": "📚",
   "Linux": "🐧",
-  "Abreviações.md": "LiBookA"
+  "Abreviações.md": {
+    "iconName": "LiBookA",
+    "iconColor": "#f7f980"
+  },
+  "Trash": {
+    "iconName": "LiTrash",
+    "iconColor": "#8f8f8f"
+  },
+  "Trash/Imagens": "LiImage",
+  "TODO.md": "LiListTodo"
 }
