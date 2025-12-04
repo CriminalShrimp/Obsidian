@@ -1,6 +1,7 @@
 {
-  "remoteURL": "https://github.com/CriminalShrimp/Obsidian.git",
+  "remoteURL": "https://github.com/CriminalShrimp/ObsidianPessoal.git",
   "gitLocation": "",
   "syncinterval": 0,
-  "isSyncOnLoad": false
+  "isSyncOnLoad": false,
+  "checkStatusOnLoad": true
 }
