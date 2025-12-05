@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "CiCiscoSvgrepoCom",
       "LiListTodo",
       "LiTrash",
       "LiBookA",
-      "🐧",
-      "📚"
+      "🐧"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -46,10 +46,7 @@
     "iconName": "LiWifi",
     "iconColor": "#0571ff"
   },
-  "Cisco": {
-    "iconName": "LiRouter",
-    "iconColor": "#adadad"
-  },
+  "Cisco": "CiCiscoSvgrepoCom",
   "Conceitos": "📚",
   "Linux": "🐧",
   "Abreviações.md": {

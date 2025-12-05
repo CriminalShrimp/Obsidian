@@ -10,7 +10,7 @@
 - [/] Rever [[Defesa de Rede - Cisco]]
 	- [x] Arrumar Descrição imgs
 	- [/] Fazer e linkar abreviações 🔼 🛫 2025-12-04 09:00
-	- [ ] Resumir textos
+	- [/] Resumir textos
 - [ ] [[Docker]]
 - [ ] [[Kubernetes]]
 - [ ] [[Git e GitHub]]

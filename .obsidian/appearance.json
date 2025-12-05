@@ -1,7 +1,8 @@
 {
   "theme": "obsidian",
   "enabledCssSnippets": [
-    "Img_format"
+    "Img_format",
+    "indentacao"
   ],
   "textFontFamily": "JetBrains Mono",
   "monospaceFontFamily": "JetBrains Mono",

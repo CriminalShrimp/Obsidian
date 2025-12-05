@@ -1,0 +1,6 @@
+/* Recuo apenas na primeira linha dos parágrafos */
+p {
+  text-indent: 2em;   /* ajuste o tamanho do recuo */
+  margin-top: 0; 
+  margin-bottom: 1em; /* espaço padrão entre parágrafos, se quiser */
+}
