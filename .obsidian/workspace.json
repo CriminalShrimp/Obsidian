@@ -28,15 +28,14 @@
               "type": "markdown",
               "state": {
                 "file": "Cisco/Defesa de Rede - Cisco.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Defesa de Rede - Cisco"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -167,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cisco/Defesa de Rede - Cisco.md",
+                "file": "TODO.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Defesa de Rede - Cisco"
+              "title": "Outline of TODO"
             }
           }
         ],
@@ -181,8 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,10 +196,10 @@
       "obsidian-task-progress-bar:Open Task Genius view": false
     }
   },
-  "active": "64659ed29052a63f",
+  "active": "8a6ef7113aedbacc",
   "lastOpenFiles": [
-    "TODO.md",
     "Cisco/Defesa de Rede - Cisco.md",
+    "TODO.md",
     "RedTeam/WireShark.md",
     "RedTeam/Snaffing.md",
     "RedTeam/Man-in-the-Middle.md",

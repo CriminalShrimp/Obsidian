@@ -11,6 +11,17 @@
 	- [x] Arrumar Descrição imgs
 	- [/] Fazer e linkar abreviações 🔼 🛫 2025-12-04 09:00
 	- [/] Resumir textos
+		- [x] Modulo 1
+		- [ ] Modulo 2
+		- [ ] Modulo 3
+		- [ ] Modulo 4
+		- [ ] Modulo 5
+		- [ ] Modulo 6
+		- [ ] Modulo 7
+		- [ ] Modulo 8
+		- [ ] Modulo 9
+		- [ ] Modulo 10
+		- [ ] Modulo 11
 - [ ] [[Docker]]
 - [ ] [[Kubernetes]]
 - [ ] [[Git e GitHub]]
