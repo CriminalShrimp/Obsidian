@@ -28,14 +28,15 @@
               "type": "markdown",
               "state": {
                 "file": "Cisco/Defesa de Rede - Cisco.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Defesa de Rede - Cisco"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,13 +167,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md",
+                "file": "Cisco/Defesa de Rede - Cisco.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of TODO"
+              "title": "Outline of Defesa de Rede - Cisco"
             }
           }
         ],
@@ -180,7 +181,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,14 +194,13 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "github-sync:Sync with Remote": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-task-progress-bar:Open Task Genius view": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8a6ef7113aedbacc",
+  "active": "64659ed29052a63f",
   "lastOpenFiles": [
-    "Cisco/Defesa de Rede - Cisco.md",
     "TODO.md",
+    "Cisco/Defesa de Rede - Cisco.md",
     "RedTeam/WireShark.md",
     "RedTeam/Snaffing.md",
     "RedTeam/Man-in-the-Middle.md",

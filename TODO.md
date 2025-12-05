@@ -9,10 +9,10 @@
 - [/] Verificar Arquivos Após Novos Plugings
 - [/] Rever [[Defesa de Rede - Cisco]]
 	- [x] Arrumar Descrição imgs
-	- [/] Fazer e linkar abreviações 🔼 🛫 2025-12-04 09:00
+	- [/] Fazer e linkar abreviações 🔼 🛫 2025-12-04
 	- [/] Resumir textos
-		- [x] Modulo 1
-		- [ ] Modulo 2
+		- [x] Modulo 1 📅 2025-12-05
+		- [/] Modulo 2
 		- [ ] Modulo 3
 		- [ ] Modulo 4
 		- [ ] Modulo 5
@@ -26,7 +26,7 @@
 - [ ] [[Kubernetes]]
 - [ ] [[Git e GitHub]]
 - [ ] [[Arch Linux]]
-- [ ] Legendar imgs em [[Sistema de Arquivos]]
+- [ ] Legendar as imagens em [[Sistema de Arquivos]]
 - [ ] [[Camada OSI]]
 - [ ] [[HyperText Markup Language (HTMl)]]
 - [ ] [[Protocolos]]
