@@ -15,6 +15,7 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### NTP = Network Time Protocol sincroniza os relógios de computadores em uma rede. 
 ###### DoS = Denial of Service é um ataque que visa tornar um serviço ou dispositivo indisponível para os usuário.
 ###### WAP = Wi-Fi Protected Access é um padrão de segurança para dispositivos.
+###### WEP = Wired Equivalent Privacy foi o primeiro protocolo de segurança para redes Wi-Fi.
 ###### STP = Spanning Tree Protocol previne  loops em uma rede quando os switches se interconectarem por vários caminhos.
 ###### DMZ = Demilitarized Zone é uma subrede que isola serviços externos de uma organização de uma rede interna mais segura, permitindo acesso controlado à internet.
 ###### ZPF = Zone-Based Policy Firewalls refere-se a um sistema que divide a rede em zonas de segurança distintas aplicando políticas de segurança específicas.
@@ -35,5 +36,6 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### GRUB = **G**rand **U**nified **B**ootloader é basicamente um menu onde o usuário pode escolher qual sistema operacional ira escolher.
 
 ###### IMAP = Internet Message Access Protocol monitora a rede em busca de atividade suspeitas.
+###### SCADA = Supervisory Control and Data Acquisition é um sistema de hardware e software que permite monitorar e controlar operações industriais e de infraestrutura remotamente e em tempo real.
 
 PKI = Public key infrastructure.

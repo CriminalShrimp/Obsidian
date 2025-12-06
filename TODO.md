@@ -5,14 +5,14 @@
 - [ ] [[Zero-Trust]]
 - [ ] [[Chaves Públicas e Privadas]]
 - [/] Em [[Defesa de Rede - Cisco#Gerenciamento de operações de segurança cibernética|Gerenciamento de operações de Segurança Cibernética]] falar mais sobreas as outras tecnologias
-- [ ] HoneyPots
+- [ ] [[HoneyPots]]
 - [/] Verificar Arquivos Após Novos Plugings
 - [/] Rever [[Defesa de Rede - Cisco]]
 	- [x] Arrumar Descrição imgs
 	- [/] Fazer e linkar abreviações 🔼 🛫 2025-12-04
 	- [/] Resumir textos
 		- [x] Modulo 1 📅 2025-12-05
-		- [/] Modulo 2
+		- [x] Modulo 2
 		- [ ] Modulo 3
 		- [ ] Modulo 4
 		- [ ] Modulo 5
@@ -34,3 +34,9 @@
 - [ ] [[Malware]]
 - [ ] [[Man-in-the-Middle]]
 - [ ] [[WireShark]] fazer algo bem detalhado de filtros e tudo mais
+- [ ] Fazer o Link dos Topicos com maior descrição em Abreviações
+- [ ] Fazer Equipamentos de rede
+	- [ ] [[Switch]]
+- [ ] [[Denial of Service]]
+- [ ] [[Backdoors]]
+- [ ] [[Spoofing]]

@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FeCiscoSvgrepoCom",
       "CiCiscoSvgrepoCom",
       "LiListTodo",
       "LiTrash",
-      "LiBookA",
-      "🐧"
+      "LiBookA"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -46,7 +46,6 @@
     "iconName": "LiWifi",
     "iconColor": "#0571ff"
   },
-  "Cisco": "CiCiscoSvgrepoCom",
   "Conceitos": "📚",
   "Linux": "🐧",
   "Abreviações.md": {
@@ -58,5 +57,6 @@
     "iconColor": "#8f8f8f"
   },
   "Trash/Imagens": "LiImage",
-  "TODO.md": "LiListTodo"
+  "TODO.md": "LiListTodo",
+  "Cisco": "FeCiscoSvgrepoCom"
 }

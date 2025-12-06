@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "icmp",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 222.5
+    "width": 304.5
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -194,24 +194,31 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "github-sync:Sync with Remote": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-task-progress-bar:Open Task Genius view": false
     }
   },
   "active": "64659ed29052a63f",
   "lastOpenFiles": [
     "TODO.md",
     "Cisco/Defesa de Rede - Cisco.md",
-    "RedTeam/WireShark.md",
+    "BlueTeam/DNS Sinkhole.md",
+    "RedTeam/Spoofing.md",
+    "RedTeam/Backdoors.md",
+    "Abreviações.md",
+    "RedTeam/Denial of Service.md",
+    "Redes/Protocolos.md",
     "RedTeam/Snaffing.md",
+    "Redes/Switch.md",
+    "Linux/Linux Courses.md",
+    "RedTeam/WireShark.md",
     "RedTeam/Man-in-the-Middle.md",
     "RedTeam/Malware.md",
     "RedTeam/Command N Control (CNC).md",
     "RedTeam/ClickJacking.md",
-    "Redes/Protocolos.md",
     "Redes/HyperText Markup Language (HTMl).md",
     "Redes/Camada OSI.md",
     "Linux/Sistema de Arquivos.md",
-    "Linux/Linux Courses.md",
     "Linux/GNOME.md",
     "Linux/Arch Linux.md",
     "Ferramentas/Kubernetes.md",
@@ -219,12 +226,6 @@
     "Ferramentas/Ferramentas.md",
     "Ferramentas/Docker.md",
     "Conceitos/Zero-Trust.md",
-    "Conceitos/Chaves Públicas e Privadas.md",
-    "Conceitos/Criptografia.md",
-    "Conceitos/Case Sensitive.md",
-    "Abreviações.md",
-    "Arquitetura Computacional/Dispositivo de Armazenamento.md",
-    "BlueTeam/HoneyPots.md",
     "Trash/Imagens/Img Arquitetura/Disquete.jpg",
     "Trash/Imagens/Img Arquitetura/Disquete.webp",
     "Trash/Imagens/Img Linux/LoginInterfaceGrafica.webp",
