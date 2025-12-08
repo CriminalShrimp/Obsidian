@@ -13,13 +13,13 @@
 	- [/] Resumir textos
 		- [x] Modulo 1 📅 2025-12-05
 		- [x] Modulo 2
-		- [ ] Modulo 3
-		- [ ] Modulo 4
-		- [ ] Modulo 5
-		- [ ] Modulo 6
-		- [ ] Modulo 7
-		- [ ] Modulo 8
-		- [ ] Modulo 9
+		- [x] Modulo 3
+		- [x] Modulo 4
+		- [x] Modulo 5
+		- [x] Modulo 6
+		- [x] Modulo 7
+		- [/] Modulo 8
+		- [/] Modulo 9
 		- [ ] Modulo 10
 		- [ ] Modulo 11
 - [ ] [[Docker]]
@@ -27,16 +27,20 @@
 - [ ] [[Git e GitHub]]
 - [ ] [[Arch Linux]]
 - [ ] Legendar as imagens em [[Sistema de Arquivos]]
-- [ ] [[Camada OSI]]
 - [ ] [[HyperText Markup Language (HTMl)]]
-- [ ] [[Protocolos]]
 - [ ] [[Command N Control (CNC)]]
 - [ ] [[Malware]]
 - [ ] [[Man-in-the-Middle]]
 - [ ] [[WireShark]] fazer algo bem detalhado de filtros e tudo mais
 - [ ] Fazer o Link dos Topicos com maior descrição em Abreviações
-- [ ] Fazer Equipamentos de rede
+- [ ] Fazer Equipamentos e conceitos de redes
 	- [ ] [[Switch]]
+	- [ ] [[Gateway]]
+	- [ ] [[Proxy]]
+	- [ ] [[Protocolos]]
+	- [ ] [[Modelo OSI]]
 - [ ] [[Denial of Service]]
 - [ ] [[Backdoors]]
 - [ ] [[Spoofing]]
+- [ ] [[Placa Mae]]
+- [ ] 

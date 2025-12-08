@@ -37,5 +37,6 @@ Tags: #Linux #Redes #Firewall #Ataque
 
 ###### IMAP = Internet Message Access Protocol monitora a rede em busca de atividade suspeitas.
 ###### SCADA = Supervisory Control and Data Acquisition é um sistema de hardware e software que permite monitorar e controlar operações industriais e de infraestrutura remotamente e em tempo real.
-
+###### SNMP = Simple Network Management Protocol é um protocolo padrão da camada de aplicação (TCP/IP) para monitorar e gerenciar dispositivos em redes.
+###### SMTP = Simple Mail Transfer Protocol, é o protocolo de internet usado para enviar e-mails.
 PKI = Public key infrastructure.
