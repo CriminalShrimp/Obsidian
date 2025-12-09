@@ -208,8 +208,7 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "github-sync:Sync with Remote": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-task-progress-bar:Open Task Genius view": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "4647f5bc89235beb",

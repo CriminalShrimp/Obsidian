@@ -39,5 +39,5 @@ Tags: #Linux #Redes #Firewall #Ataque
 ###### SCADA = Supervisory Control and Data Acquisition é um sistema de hardware e software que permite monitorar e controlar operações industriais e de infraestrutura remotamente e em tempo real.
 ###### SNMP = Simple Network Management Protocol é um protocolo padrão da camada de aplicação (TCP/IP) para monitorar e gerenciar dispositivos em redes.
 ###### SMTP = Simple Mail Transfer Protocol, é o protocolo de internet usado para enviar e-mails.
-###### VPN = Virtual Private Network é uma rede usada para proteger os dados trafegados e mascarar seu Ip, protegendo assim seus dados pessoas.
+###### VPN = Virtual Private Network é uma rede usada para proteger os dados trafegados e mascarar seu IP, protegendo assim seus dados pessoas.
 PKI = Public key infrastructure.
