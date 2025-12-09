@@ -197,7 +197,7 @@ Esse tipo de serviço envolve os dois lados cliente e provedor, assim ambos tem 
 Em relação aos dados do cliente eles podem ser protegidos de formas diferentes,  <span style="color:rgb(255, 255, 0)">Dados em Repouso</span> que é quando nenhum usuário ou processo os acessa, solicita ou altera, esses podem ser armazenados em dispositivos locais, como um disco rígido em um computador ou uma rede centralizada, como um servidor da empresa. Na computação em nuvem, os dados inativos podem ser armazenados em uma nuvem e podem ser acessados em qualquer computador conectado à Internet, geralmente com assinatura.  <span style="color:rgb(255, 255, 0)">Dados em Transito</span> que refere-se aos que não estão inativos nem estão sendo processados. A transmissão pode ocorrer em um único servidor ao longo das linhas de barramento da [[Placa Mae]], entre dispositivos em uma única rede ou entre redes e, possivelmente, através da Internet. E por fim os <span style="color:rgb(255, 255, 0)">Dados em Processo</span> que se refere aos dados durante a entrada inicial, a modificação, o cálculo ou a saída. Todos esses dados devem ser protegidos via [[Criptografia]] e/ou [[Hash]].
 
 # Modulo 8: Criptografia
-Acessar o arquivo [[Criptografia]] para ver sobre esse topico.
+Acessar o arquivo [[Criptografia]] para ver sobre esse tópico.
 
 ## Ofuscação de Dados
 

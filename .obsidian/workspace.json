@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cisco/Defesa de Rede - Cisco.md",
+                "file": "Conceitos/Criptografia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Defesa de Rede - Cisco"
+              "title": "Criptografia"
             }
           },
           {
@@ -49,7 +49,8 @@
               "title": "Abreviações"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -81,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ZPF",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -180,13 +181,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md",
+                "file": "Abreviações.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of TODO"
+              "title": "Outline of Abreviações"
             }
           }
         ],
@@ -194,7 +195,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -210,11 +212,14 @@
       "obsidian-task-progress-bar:Open Task Genius view": false
     }
   },
-  "active": "8a6ef7113aedbacc",
+  "active": "4647f5bc89235beb",
   "lastOpenFiles": [
-    "Cisco/Defesa de Rede - Cisco.md",
-    "Abreviações.md",
+    "Conceitos/Criptografia.md",
     "TODO.md",
+    "Trash/Imagens/Img Conceitos/Alice usa chave privada.webp.webp",
+    "Abreviações.md",
+    "Cisco/Packet Tracer/PT Packet Tracer - Configurar o fortalecimento e a segurança do roteador sem fio.md",
+    "Cisco/Defesa de Rede - Cisco.md",
     "Conceitos/Hash.md",
     "Arquitetura Computacional/Placa Mae.md",
     "Redes/Gateway.md",
@@ -235,9 +240,6 @@
     "RedTeam/ClickJacking.md",
     "Redes/HyperText Markup Language (HTMl).md",
     "Linux/Sistema de Arquivos.md",
-    "Linux/GNOME.md",
-    "Linux/Arch Linux.md",
-    "Ferramentas/Kubernetes.md",
     "Trash/Imagens/Img Arquitetura/Disquete.jpg",
     "Trash/Imagens/Img Arquitetura/Disquete.webp",
     "Trash/Imagens/Img Linux/LoginInterfaceGrafica.webp",
@@ -253,7 +255,6 @@
     "Trash/Imagens/Img Linux/ArvorePastasLinux.webp",
     "Trash/Imagens/Img Linux/FHS.webp",
     "Trash/Imagens/Img Linux/LinuxVSWindos.webp",
-    "Trash/Imagens/Img Linux/LoginCLI.webp",
     "Linux/IMG/Sem título",
     "Trash/Imagens/Img Arquitetura",
     "Excalidraw",

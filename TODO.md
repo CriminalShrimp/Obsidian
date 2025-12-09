@@ -43,4 +43,4 @@
 - [ ] [[Backdoors]]
 - [ ] [[Spoofing]]
 - [ ] [[Placa Mae]]
-- [ ] 
+- [/] Dar uma geral em [[Criptografia]]
