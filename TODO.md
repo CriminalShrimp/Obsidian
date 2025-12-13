@@ -6,7 +6,7 @@
 - [ ] [[Chaves Públicas e Privadas]]
 - [/] Em [[Defesa de Rede - Cisco#Gerenciamento de operações de segurança cibernética|Gerenciamento de operações de Segurança Cibernética]] falar mais sobreas as outras tecnologias
 - [ ] [[HoneyPots]]
-- [/] Verificar Arquivos Após Novos Plugings
+- [x] Verificar Arquivos Após Novos Plugings
 - [/] Rever [[Defesa de Rede - Cisco]]
 	- [x] Arrumar Descrição imgs
 	- [/] Fazer e linkar abreviações 🔼 🛫 2025-12-04
@@ -44,3 +44,4 @@
 - [ ] [[Spoofing]]
 - [ ] [[Placa Mae]]
 - [/] Dar uma geral em [[Criptografia]]
+- [?] Usar as marcações em hmtl para centralizar e dar descrição as imagens

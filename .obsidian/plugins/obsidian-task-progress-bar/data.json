@@ -1,7 +1,7 @@
 {
   "changelog": {
     "enabled": true,
-    "lastVersion": "9.12.4"
+    "lastVersion": "9.13.1"
   },
   "progressBarDisplayMode": "both",
   "supportHoverToShowProgressInfo": true,
@@ -660,6 +660,16 @@
           "notUrgentNotImportant": "#6c757d"
         }
       }
+    },
+    {
+      "id": "working-on",
+      "name": "Working On",
+      "icon": "timer",
+      "type": "default",
+      "visible": true,
+      "hideCompletedAndAbandonedTasks": true,
+      "filterRules": {},
+      "filterBlanks": false
     }
   ],
   "reviewSettings": {},
