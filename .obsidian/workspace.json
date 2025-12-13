@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "NetFlow",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -211,11 +211,11 @@
       "obsidian-task-progress-bar:Open Task Genius view": false
     }
   },
-  "active": "110ca05c2ba34cd1",
+  "active": "1e80c182f859c816",
   "lastOpenFiles": [
-    "Arquitetura Computacional/Dispositivo de Armazenamento.md",
-    "Cisco/Defesa de Rede - Cisco.md",
     "TODO.md",
+    "Cisco/Defesa de Rede - Cisco.md",
+    "Arquitetura Computacional/Dispositivo de Armazenamento.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "RedTeam/Denial of Service.md",
     "RedTeam/Man-in-the-Middle.md",
