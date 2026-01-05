@@ -229,16 +229,23 @@ As organizações devem fornecer suporte para proteger os dados à medida que el
 #Protocolos #Redes 
 ## Monitorando protocolos comuns
 ### Syslog
-O syslog é um padrão amplamente adotado para registrar eventos de dispositivos de rede e endpoints (celulares, computadores, laptops). Ele permite a transmissão, armazenamento e análise de mensagens de forma neutra e padronizada. Graças a essa flexibilidade, dispositivos de diferentes fabricantes podem enviar logs para servidores centrais que executam um daemon syslog, coletando, filtrando e direcionando para o gerenciador. Essa centralização facilita o monitoramento de segurança, tornando-o mais eficiente. Normalmente, os servidores syslog escutam na porta **UDP 514**.
+
+O syslog é um padrão amplamente adotado para registrar eventos de dispositivos de rede e endpoints (celulares, computadores, laptops). Ele permite a transmissão, armazenamento e análise de mensagens de forma neutra e padronizada. Graças a essa flexibilidade, dispositivos de diferentes fabricantes podem enviar logs para servidores centrais que executam um daemon syslog, que fazem a coleta filtragem e direcionamento para o gerenciador. Essa centralização facilita o monitoramento de segurança, tornando-o mais eficiente.
 
 Devido à sua importância na segurança, os servidores syslog são alvos potenciais de ataques cibernéticos. Atores mal-intencionados podem explorar esses servidores para ocultar atividades suspeitas, como a filtração de dados que muitas vezes ocorre de maneira lenta e discreta. Os invasores podem tentar interromper a transferência de logs, corromper ou destruir dados e comprometer o software responsável pelo envio das mensagens. Para mitigar essas ameaças, foi desenvolvida a próxima geração do syslog, conhecida como<span style="color:rgb(255, 255, 0)"> syslog-ng</span>. Essa versão aprimorada oferece recursos adicionais que **aumentam a segurança e a integridade dos registros**, dificultando ataques e manipulações maliciosas.
-
-![[Syslog.webp|Syslog]]
+<figure style="text-align: center;">
+  <img src="Syslog.webp" style="margin: 0 auto;">
+  <figcaption>Syslog</figcaption>
+</figure>
 
 ### Network Time Protocol (NTP)
-Como esses registros de syslogs incluem hora e data e podem vir de diversos dispositivos, é essencial que todos compartilhem um relógio sincronizado. Para isso, os dispositivos podem utilizar o NTP, que emprega uma hierarquia de fontes de tempo autorizativas para distribuir informações temporais na rede. Dessa forma, mensagens de dispositivos sincronizados podem ser enviadas para o servidor Syslog com precisão. Os carimbos de data e hora são fundamentais para a detecção de ameaças, pois permitem rastrear eventos registrados em vários dispositivos ao longo do caminho até o sistema de destino. Atores maliciosos podem tentar comprometer a infraestrutura do **NTP** para manipular informações de tempo, dificultando a correlação de eventos e ocultando rastros de atividades maliciosas. Além disso, criminosos cibernéticos já exploraram vulnerabilidades em clientes e servidores **NTP** para lançar ataques **DDoS**.
 
-![[NTP.webp|NTP|607x427]]
+Como esses registros de syslogs incluem hora e data e podem vir de diversos dispositivos, é essencial que todos compartilhem um relógio sincronizado. Para isso, os dispositivos podem utilizar o NTP, que emprega uma hierarquia de fontes de tempo autorizativas para distribuir informações temporais na rede. Dessa forma, mensagens de dispositivos sincronizados podem ser enviadas para o servidor Syslog com precisão. Os certificados de data e hora são fundamentais para a detecção de ameaças, pois permitem rastrear eventos registrados em vários dispositivos ao longo do caminho até o sistema de destino.
+
+<figure style="text-align: center;">
+  <img src="NTP.webp" style="margin: 0 auto;">
+  <figcaption>NTP</figcaption>
+</figure>
 
 ### Domain Name System (DNS)
 Amplamente utilizado diariamente, mas muitas organizações adotam políticas de segurança menos rigorosas contra ameaças baseadas em DNS em comparação com outras explorações cibernéticas. Cientes dessa vulnerabilidade, invasores frequentemente encapsulam diferentes protocolos de rede dentro do DNS para contornar dispositivos de segurança. Atualmente, o DNS é um vetor comum para diversos tipos de malware, sendo utilizado para comunicação com servidores de [[Command N Control (CNC)]] e para infiltração de dados, mascarando essas transmissões como consultas DNS legítimas. Técnicas de codificação, como Base64, binário de 8 bits e hexadecimal, são empregadas para ocultar os dados e driblar medidas básicas de prevenção de perda de dados (DLP). Consultas DNS com nomes de domínio gerados aleatoriamente ou subdomínios anormalmente longos devem ser consideradas suspeitas, principalmente se houver um aumento repentino dessas solicitações na rede, pois provavelmente estão relacionados a um ataque para roubar dados. Logs de proxy **DNS** podem ser analisados para identificar essas atividades maliciosas.
@@ -266,9 +273,8 @@ Protocolos de e-mail como SMTP, POP3 e [[Abreviações#IMAP = Internet Message A
 ![[Ameaças de protocolo de email.webp|CNC]]
 
 ### Internet Control Message Protocol (ICMP)
-ICMP pode ser usado para identificar hosts em uma rede, a estrutura de uma rede e determinar os sistemas operacionais em uso na rede. Ele também pode ser usado como um veículo para vários tipos de ataques DoS, também pode ser usado para infiltração de dados. Devido à preocupação de que o ICMP possa ser usado para vigiar ou negar o serviço de fora da rede, o tráfego ICMP de dentro da rede às vezes é ignorado. No entanto, algumas variedades de malware usam pacotes ICMP criados para transferir arquivos de hosts infectados para agentes ameaçadores usando esse método, conhecido como tunelamento ICMP.
 
-**Acessar a parte de [[Protocolos|Protocolos]] em Redes para mais dados**
+ICMP pode ser usado para identificar hosts em uma rede, a estrutura de uma rede e determinar os sistemas operacionais em uso na rede. Ele também pode ser usado como um veículo para vários tipos de ataques DoS, também pode ser usado para infiltração de dados. Devido à preocupação de que o ICMP possa ser usado para vigiar ou negar o serviço de fora da rede, o tráfego ICMP de dentro da rede às vezes é ignorado. No entanto, algumas variedades de malware usam pacotes ICMP criados para transferir arquivos de hosts infectados para agentes ameaçadores usando esse método, conhecido como tunelamento ICMP.
 
 ## Tecnologias de segurança
 ### Access Control List (ACL)

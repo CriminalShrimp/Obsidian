@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "NetFlow",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -213,9 +213,11 @@
   },
   "active": "1e80c182f859c816",
   "lastOpenFiles": [
+    "Redes/Protocolos.md",
     "TODO.md",
     "Cisco/Defesa de Rede - Cisco.md",
     "Arquitetura Computacional/Dispositivo de Armazenamento.md",
+    "Conceitos/Criptografia.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "RedTeam/Denial of Service.md",
     "RedTeam/Man-in-the-Middle.md",
@@ -223,7 +225,6 @@
     "RedTeam/Spoofing.md",
     "RedTeam/WireShark.md",
     "RedTeam/Command N Control (CNC).md",
-    "Conceitos/Criptografia.md",
     "Untitled 1.base",
     "Untitled.base",
     "Abreviações.md",
@@ -236,7 +237,6 @@
     "Redes/Modelo OSI.md",
     "BlueTeam/DNS Sinkhole.md",
     "RedTeam/Backdoors.md",
-    "Redes/Protocolos.md",
     "Redes/Switch.md",
     "Linux/Linux Courses.md",
     "RedTeam/Malware.md",
