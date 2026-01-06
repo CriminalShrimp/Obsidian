@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arquitetura Computacional/Dispositivo de Armazenamento.md",
+                "file": "Redes/HyperText Markup Language (HTMl).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dispositivo de Armazenamento"
+              "title": "HyperText Markup Language (HTMl)"
             }
           }
         ],
@@ -195,7 +195,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,12 +212,16 @@
       "obsidian-task-progress-bar:Open Task Genius view": false
     }
   },
-  "active": "1e80c182f859c816",
+  "active": "110ca05c2ba34cd1",
   "lastOpenFiles": [
-    "Redes/Protocolos.md",
-    "TODO.md",
+    "Redes/HyperText Markup Language (HTMl).md",
     "Cisco/Defesa de Rede - Cisco.md",
+    "Redes/Modelo OSI.md",
+    "Redes/Switch.md",
+    "Redes/Proxy.md",
+    "Redes/Protocolos.md",
     "Arquitetura Computacional/Dispositivo de Armazenamento.md",
+    "TODO.md",
     "Conceitos/Criptografia.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "RedTeam/Denial of Service.md",
@@ -233,15 +238,11 @@
     "Conceitos/Hash.md",
     "Arquitetura Computacional/Placa Mae.md",
     "Redes/Gateway.md",
-    "Redes/Proxy.md",
-    "Redes/Modelo OSI.md",
     "BlueTeam/DNS Sinkhole.md",
     "RedTeam/Backdoors.md",
-    "Redes/Switch.md",
     "Linux/Linux Courses.md",
     "RedTeam/Malware.md",
     "RedTeam/ClickJacking.md",
-    "Redes/HyperText Markup Language (HTMl).md",
     "Trash/Imagens/Img Arquitetura/Disquete.jpg",
     "Trash/Imagens/Img Arquitetura/Disquete.webp",
     "Trash/Imagens/Img Linux/LoginInterfaceGrafica.webp",
