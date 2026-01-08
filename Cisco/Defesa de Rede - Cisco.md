@@ -263,12 +263,13 @@ Para lidar com a alteração ou interceptação de dados confidenciais, muitas o
 
 ![[Diagrama de protocolo HTTPS.webp|SSL]]
 
-Infelizmente, o tráfego HTTPS criptografado complica o monitoramento de segurança de rede. Alguns dispositivos de segurança incluem descriptografia e inspeção SSL, no entanto, isso pode apresentar problemas de processamento e privacidade. Além disso, o HTTPS adiciona complexidade às capturas de pacotes devido às mensagens adicionais envolvidas no estabelecimento da conexão criptografada. Esse processo é resumido na figura e representa sobrecarga adicional sobre HTTP.
+Infelizmente, o tráfego HTTPS criptografado complica o monitoramento de segurança de rede. Alguns dispositivos de segurança incluem descriptografia e inspeção SSL, no entanto, isso pode apresentar problemas de processamento e privacidade. Além disso, o HTTPS adiciona complexidade às capturas de pacotes devido às mensagens adicionais envolvidas no estabelecimento da conexão criptografada.
 
 ![[Transações HTTPS.webp|Processo HTTPS]]
 
 ### E-mail
-Protocolos de e-mail como SMTP, POP3 e [[Abreviações#IMAP = Internet Message Access Protocol monitora a rede em busca de atividade suspeitas. |IMAP]] podem ser usados por atores de ameaças para espalhar malware, roubar dados ou fornecer acessos a servidores para realizar [[Command N Control (CNC)]]. SMTP envia dados de um host para um servidor de e-mail e entre servidores de e-mail. IMAP e POP3 são usados para baixar mensagens de e-mail de um servidor de e-mail para o computador host. Por esse motivo, eles são os protocolos de aplicativos que são responsáveis por trazer "perigos" para o host. Com o monitoramento e analise desses protocolos e o dados coletados pode ser feito então o rastrear do comportamento das ameaças a partir desse ponto em diante. As ferramentas de monitoramento de segurança também podem permitir a recuperação de anexos de arquivos infectados.
+
+Protocolos de e-mail como [[Abreviações#SMTP = Simple Mail Transfer Protocol, é o protocolo de internet usado para enviar e-mails.|SMTP]], POP3 e [[Abreviações#IMAP = Internet Message Access Protocol monitora a rede em busca de atividade suspeitas. |IMAP]] podem ser usados por atores de ameaças para espalhar malware, roubar dados ou fornecer acessos a servidores para realizar [[Command N Control (CNC)]]. SMTP envia dados de um host para um servidor de e-mail e entre servidores de e-mail. IMAP e POP3 são usados para baixar mensagens de e-mail de um servidor de e-mail para o computador host. Por esse motivo, eles são os protocolos de aplicativos que são responsáveis por trazer "perigos" para o host. Com o monitoramento e analise desses protocolos e o dados coletados pode ser feito então o rastrear do comportamento das ameaças a partir desse ponto em diante.
 
 ![[Ameaças de protocolo de email.webp|CNC]]
 
@@ -278,13 +279,10 @@ ICMP pode ser usado para identificar hosts em uma rede, a estrutura de uma rede 
 
 ## Tecnologias de segurança
 ### Access Control List (ACL)
-Muitas tecnologias e protocolos podem ter impacto no monitoramento de segurança. Listas de Controle de Acesso (ACLs) estão entre essas tecnologias. As ACLs podem dar uma falsa sensação de segurança se forem excessivamente confiadas. As ACLs e a filtragem de pacotes em geral são tecnologias que contribuem para um conjunto em evolução de proteções de segurança de rede.
 
-A figura ilustra o uso de ACLs para permitir apenas tipos específicos de tráfego [[Abreviações#ICMP = Internet Control Message Protocol é usado para comunicar informações de nível de rede.|ICMP]]. O servidor em 192.168.1.10 faz parte da rede interna e tem permissão para enviar solicitações de ping para o host externo em 209.165.201.3. O tráfego ICMP de retorno do host externo é permitido se for uma resposta ICMP, extinção de origem (informa a origem para reduzir o ritmo do tráfego) ou qualquer mensagem ICMP inacessível. Todos os outros tipos de tráfego ICMP são negados. Por exemplo, o host externo não pode iniciar uma solicitação de ping para o host interno. A ACL de saída está permitindo mensagens ICMP que relatam vários problemas. Isso permitirá túneis ICMP e exfiltração de dados.
+O uso de ACLs é usada para permitir apenas tipos específicos de tráfego, como o [[Abreviações#ICMP = Internet Control Message Protocol é usado para comunicar informações de nível de rede.|ICMP]] na figura. O servidor em 192.168.1.10 faz parte da rede interna e tem permissão para enviar solicitações de ping para o host externo em 209.165.201.3. O tráfego ICMP de retorno do host externo é permitido se for uma resposta ICMP, extinção de origem (informa a origem para reduzir o ritmo do tráfego) ou qualquer mensagem ICMP inacessível. Todos os outros tipos de tráfego ICMP são negados. Por exemplo, o host externo não pode iniciar uma solicitação de ping para o host interno. A ACL de saída está permitindo mensagens ICMP que relatam vários problemas. Isso permitirá túneis ICMP e exfiltração de dados.
 
-Os invasores podem determinar quais endereços IP, protocolos e portas são permitidos pelas ACLs realizando varreduras de portas, testes de penetração ou através de outras formas de reconhecimento. Assim manipulando diversos recursos do tráfego de protocolo , como o sinalizador estabelecido em segmentos TCP, endereços de IPs, aplicativos portas, etc. As regras não podem ser antecipadas e configuradas para todas as técnicas de manipulação de pacotes emergentes.
-
-Para detectar e reagir à manipulação de pacotes, comportamentos mais sofisticados e medidas baseadas em contexto precisam ser tomadas.
+Os invasores podem determinar quais endereços IP, protocolos e portas são permitidos pelas ACLs realizando varreduras de portas, testes de penetração ou através de outras formas de reconhecimento. Assim manipulando diversos recursos do tráfego de protocolo , como o sinalizador estabelecido em segmentos TCP, endereços de IPs, aplicativos portas, etc. As regras não podem ser antecipadas e configuradas para todas as técnicas de manipulação de pacotes emergentes. Para detectar e reagir à manipulação de pacotes, comportamentos mais sofisticados e medidas baseadas em contexto precisam ser tomadas.
 
 ![[Atenuante o abuso de ICMP.webp|]]
 
@@ -302,7 +300,7 @@ Na rede **Ponto a Ponto** (<span style="color:rgb(255, 255, 0)">P2P</span>), mos
 Sempre que os usuários desconhecidos recebem acesso aos recursos de rede, a segurança é uma preocupação. Aplicativos P2P de compartilhamento de arquivos não devem ser permitidos em redes corporativas. A atividade da rede P2P pode contornar as proteções de firewall e é um vetor comum para a propagação de malware. P2P é inerentemente dinâmico. Ele pode operar conectando-se a vários endereços IP de destino e também pode usar numeração dinâmica de portas. Arquivos compartilhados são frequentemente infectados com malware, e os atores de ameaças podem posicionar seu malware em clientes P2P para distribuição a outros usuários.
 As redes P2P de compartilhamento de processadores doam ciclos de processador para tarefas computacionais distribuídas.
 
-Mensagens instantâneas (IM) também é considerado um aplicativo P2P. IM tem valor legítimo dentro de organizações que têm equipes de projeto distribuídas geograficamente. Nesse caso, aplicativos de IM especializados estão disponíveis, como a plataforma Webex Teams, que são mais seguras do que as mensagens instantâneas que usam servidores públicos.
+Mensagens instantâneas tem valor legítimo dentro de organizações que têm equipes de projeto distribuídas geograficamente. Nesse caso, aplicativos de IM especializados estão disponíveis, como a plataforma Webex Teams, que são mais seguras do que as mensagens instantâneas que usam servidores públicos.
 
 ![[p2p.webp|P2P]]
 

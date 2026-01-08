@@ -1,4 +1,4 @@
-## Obisidan
+## Obisidan 2026
 - [/] [[Kernel]]
 - [ ] [[Suricata]]
 - [ ] [[Zeek]]
@@ -32,13 +32,16 @@
 - [ ] [[Malware]]
 - [ ] [[Man-in-the-Middle]]
 - [ ] [[WireShark]] fazer algo bem detalhado de filtros e tudo mais
-- [ ] Fazer o Link dos Topicos com maior descrição em Abreviações
+- [ ] Fazer o Link dos Tópicos com maior descrição em Abreviações (por exemplo os protocolos)
 - [ ] Fazer Equipamentos e conceitos de redes
 	- [ ] [[Switch]]
 	- [ ] [[Gateway]]
 	- [ ] [[Proxy]]
 	- [ ] [[Protocolos]]
 		- [ ] ICMP
+		- [ ] POP3
+		- [ ] SMTP
+		- [ ] DNS
 	- [ ] [[Modelo OSI]]
 - [ ] [[Denial of Service]]
 - [ ] [[Backdoors]]

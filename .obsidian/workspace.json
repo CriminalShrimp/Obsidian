@@ -113,7 +113,8 @@
               "title": "tg-left-sidebar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -195,8 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,14 +214,17 @@
   },
   "active": "110ca05c2ba34cd1",
   "lastOpenFiles": [
-    "Redes/HyperText Markup Language (HTMl).md",
+    "TODO.md",
     "Cisco/Defesa de Rede - Cisco.md",
+    "Conceitos/Chaves Públicas e Privadas.md",
+    "RedTeam/Command N Control (CNC).md",
+    "Abreviações.md",
+    "Redes/HyperText Markup Language (HTMl).md",
     "Redes/Modelo OSI.md",
     "Redes/Switch.md",
     "Redes/Proxy.md",
     "Redes/Protocolos.md",
     "Arquitetura Computacional/Dispositivo de Armazenamento.md",
-    "TODO.md",
     "Conceitos/Criptografia.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "RedTeam/Denial of Service.md",
@@ -229,10 +232,8 @@
     "RedTeam/Snaffing.md",
     "RedTeam/Spoofing.md",
     "RedTeam/WireShark.md",
-    "RedTeam/Command N Control (CNC).md",
     "Untitled 1.base",
     "Untitled.base",
-    "Abreviações.md",
     "Trash/Imagens/Img Conceitos/Alice usa chave privada.webp.webp",
     "Cisco/Packet Tracer/PT Packet Tracer - Configurar o fortalecimento e a segurança do roteador sem fio.md",
     "Conceitos/Hash.md",
@@ -242,7 +243,6 @@
     "RedTeam/Backdoors.md",
     "Linux/Linux Courses.md",
     "RedTeam/Malware.md",
-    "RedTeam/ClickJacking.md",
     "Trash/Imagens/Img Arquitetura/Disquete.jpg",
     "Trash/Imagens/Img Arquitetura/Disquete.webp",
     "Trash/Imagens/Img Linux/LoginInterfaceGrafica.webp",
