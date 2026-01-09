@@ -13,13 +13,13 @@ Analistas de segurança devem ser capazes de identificar qual tipo de ataque est
 ### Identificando os Ativos
 Os ativos são todas as superfícies de ataques que um atacante pode atingir, a coleta de todos e quaisquer dados seriam os ativos das empresas, esses ativos podem ter importâncias e níveis de segurança diferentes entre eles. A identificação e categorização podem ser feitas em 4 etapas sendo elas.
 
-- **Etapa 1**: Determinar a categoria de identificação de ativos adequada que podem ser <span style="color:rgb(255, 255, 0)">Ativos de Informações</span>, <span style="color:rgb(255, 255, 0)">Ativos de Software</span>, <span style="color:rgb(255, 255, 0)">Ativos Físicos</span> e <span style="color:rgb(255, 255, 0)">Ativos de Serviços</span>.
+- **Etapa 1** - Determinar a categoria de identificação de ativos adequada que podem ser <span style="color:rgb(255, 255, 0)">Ativos de Informações</span>, <span style="color:rgb(255, 255, 0)">Ativos de Software</span>, <span style="color:rgb(255, 255, 0)">Ativos Físicos</span> e <span style="color:rgb(255, 255, 0)">Ativos de Serviços</span>.
 
-- **Etapa 2**: Estabeleça a responsabilização, identificando o proprietário de todos os ativos de informações e de softwares de aplicativos.
+- **Etapa 2** - Estabeleça a responsabilização, identificando o proprietário de todos os ativos de informações e de softwares de aplicativos.
 
-- **Etapa 3**: Determinar os critérios de classificação que podem ser: <span style="color:rgb(255, 255, 0)">Confidencialidade</span>, <span style="color:rgb(255, 255, 0)">Valor</span>, <span style="color:rgb(255, 255, 0)">Tempo Direitos de Acesso</span> e <span style="color:rgb(255, 255, 0)">Destruição</span>.
+- **Etapa 3** - Determinar os critérios de classificação que podem ser: <span style="color:rgb(255, 255, 0)">Confidencialidade</span>, <span style="color:rgb(255, 255, 0)">Valor</span>, <span style="color:rgb(255, 255, 0)">Tempo Direitos de Acesso</span> e <span style="color:rgb(255, 255, 0)">Destruição</span>.
 
-- **Etapa 4**: Implemente um <span style="color:rgb(255, 255, 0)">esquema de classificação</span>, adotando uma maneira uniforme de identificação de informações para assegurar a proteção uniforme.
+- **Etapa 4** - Implemente um <span style="color:rgb(255, 255, 0)">esquema de classificação</span>, adotando uma maneira uniforme de identificação de informações para assegurar a proteção uniforme.
 
 Assim como nossas vidas os ativos tem um ciclo de vida, o primeiro é a <span style="color:rgb(255, 255, 0)">Aquisição</span>, empresa compra os ativos de acordo com as necessidades identificadas nos dados coletados para justificar a compra. <span style="color:rgb(255, 255, 0)">Implantação</span>, o ativo é montado e inspecionado para verificar se há falhas ou outros problemas, a equipe realiza testes e instala tags ou códigos de barras para fins de rastreamento. <span style="color:rgb(255, 255, 0)">Utilização</span>, essa é a fase mais longa do ciclo, o desempenho do ativo é verificado continuamente, atualizações, correções de patches, compras de novas licenças e auditorias de conformidade fazem parte do estágio de utilização. A <span style="color:rgb(255, 255, 0)">Manutenção</span> ajuda a prolongar a vida produtiva de um ativo, os funcionários podem modificar ou atualizar o recurso. E ao final da vida produtiva do ativo, ele deve ser descartado, todos os dados devem ser apagados do recurso, o descarte pode incluir a desmontagem de um ativo para peças, finalizando assim o ciclo com a <span style="color:rgb(255, 255, 0)">Eliminação</span>.
 ### Identificando as Vulnerabilidades
@@ -33,13 +33,13 @@ Vamos exemplificar usando como exemplo um e-banking.
 ![[e-banking.webp|Ex e-banking|827x577]]
 
 A <span style="color:rgb(255, 255, 0)">identificação da ameaça</span> para um sistema de banca electrónica incluiria:
-• Compromisso interno do sistema - O atacante usa os servidores de e-banking expostos para invadir um sistema bancário interno.
-• Dados roubados - Um atacante rouba os dados pessoais e financeiros dos clientes bancários do banco de dados do cliente.
-• Transações falsas de um servidor externo - Um invasor altera o código do aplicativo de e-banking e faz transações personificando um usuário legítimo.
-• Transações falsas - Um invasor rouba a identidade de um cliente e conclui transações mal-intencionadas da conta comprometida.
-• Ataque insider no sistema - Um funcionário do banco encontra uma falha no sistema a partir disso realiza um ataque.
-• Erros de entrada de dados - Um usuário insere dados incorretos ou faz solicitações de transação incorretas.
-• Destruição do data center - Um evento cataclísmico danifica gravemente ou destrói o data center.
+• **Compromisso interno do sistema** - O atacante usa os servidores de e-banking expostos para invadir um sistema bancário interno.
+• **Dados roubados** - Um atacante rouba os dados pessoais e financeiros dos clientes bancários do banco de dados do cliente.
+• **Transações falsas de um servidor externo** - Um invasor altera o código do aplicativo de e-banking e faz transações personificando um usuário legítimo.
+• **Transações falsas** - Um invasor rouba a identidade de um cliente e conclui transações mal-intencionadas da conta comprometida.
+• **Ataque insider no sistema** - Um funcionário do banco encontra uma falha no sistema a partir disso realiza um ataque.
+• **Erros de entrada de dados** - Um usuário insere dados incorretos ou faz solicitações de transação incorretas.
+• **Destruição do data center** - Um evento cataclísmico danifica gravemente ou destrói o data center.
 É importante na hora de identificar as vulnerabilidades entender usa regra de negocio e seu meio para ter uma ideia do que pode acontecer com sua empresa.
 ### Identificando as Ameaças
 Usar a abordagem de defesa profunda para identificar ameaças e proteger ativos vulneráveis. Essa abordagem usa várias camadas de segurança, uma analogia muito comum é falar de "segurança cebola" mais popularmente conhecida como <span style="color:rgb(255, 255, 0)">onion security</span>, um ator de ameaça teria que descascar as defesas de uma rede camada por camada de uma maneira semelhante a descascar uma cebola, somente depois de penetrar cada camada, o ator da ameaça alcançaria os dados ou o sistema de destino.
@@ -74,11 +74,11 @@ Técnicas como **ofuscação e camuflagem** são usadas para proteger o software
 ## Fortalecimento da Rede 
 Criminosos exploram serviços de rede vulneráveis para ataques, escaneando portas de redes abertas para identificar acessos desprotegidos. Para mitigar riscos, é essencial fechar portas desnecessárias e proteger serviços como [[Abreviações#DHCP = Dynamic Host Configuration Protocol atribui automaticamente endereços IP a dispositivos.|DHCP]], [[Abreviações#DNS = Domain Name System é o que traduz IPs em nomes de domínio.|DNS]], [[Abreviações#ICMP = Internet Control Message Protocol é usado para comunicar informações de nível de rede.|ICMP]], [[Abreviações#RIP = Protocolo de Informação de Roteamento permite que roteadores troquem informações sobre rotas em uma rede.|RIP]] e [[Abreviações#NTP = Network Time Protocol sincroniza os relógios de computadores em uma rede.|NTP]]. Adoção de firewalls, monitoramento, atualizações e autenticação são medidas essenciais para garantir a segurança de uma rede.
 
-- **DHCP**: Pode ser explorado para negar acesso à rede. Medidas de segurança incluem rastreamento de DHCP e proteção do servidor.
-- **DNS**: Alvo de ataques para redirecionamento de tráfego e negação de acesso. Adoção de [[Abreviações#DNSSEC = Domain Name System Security Extensions é um conjunto de extensões que adiciona segurança ao protocolo DNS.|DNSSEC]] e autenticação entre servidores aumenta a segurança.
-- **ICMP**: Usado para testes de conectividade, mas pode ser explorado para ataques [[Abreviações#DoS = DenialofService é um ataque que visa tornar um serviço ou dispositivo indisponível para os usuário.|DoS]], fazer a filtragem de ICMP reduz riscos.
-- **RIP**: Protocolo de roteamento vulnerável a ataques que afetam desempenho e disponibilidade. 
-- **NTP**: Fundamental para a sincronização de tempo e segurança digital, e também autenticação protege contra manipulações maliciosas.
+- **DHCP** - Pode ser explorado para negar acesso à rede. Medidas de segurança incluem rastreamento de DHCP e proteção do servidor.
+- **DNS** - Alvo de ataques para redirecionamento de tráfego e negação de acesso. Adoção de [[Abreviações#DNSSEC = Domain Name System Security Extensions é um conjunto de extensões que adiciona segurança ao protocolo DNS.|DNSSEC]] e autenticação entre servidores aumenta a segurança.
+- **ICMP** - Usado para testes de conectividade, mas pode ser explorado para ataques [[Abreviações#DoS = DenialofService é um ataque que visa tornar um serviço ou dispositivo indisponível para os usuário.|DoS]], fazer a filtragem de ICMP reduz riscos.
+- **RIP** - Protocolo de roteamento vulnerável a ataques que afetam desempenho e disponibilidade. 
+- **NTP** - Fundamental para a sincronização de tempo e segurança digital, e também autenticação protege contra manipulações maliciosas.
 ## Blindagem de Rede
 ###  Virtual Local Area Network (VLANs)
 
@@ -296,11 +296,12 @@ Esse problema pode ser especialmente relevante com dados NetFlow (comentado mais
 ![[Network Address Translation.webp|SA e DA]]
 
 ### Peer-2-Peer (P2P)
-Na rede **Ponto a Ponto** (<span style="color:rgb(255, 255, 0)">P2P</span>), mostrada na figura, os hosts podem operar em funções de cliente e servidor. Existem três tipos de aplicativos P2P: compartilhamento de arquivos, compartilhamento de processadores e mensagens instantâneas. No compartilhamento de arquivos P2P, os arquivos em uma máquina participante são compartilhados com membros da rede P2P. Exemplos disso são os outrora populares Napster e Gnutella. BitTorrent é uma rede de compartilhamento de arquivos P2P.
-Sempre que os usuários desconhecidos recebem acesso aos recursos de rede, a segurança é uma preocupação. Aplicativos P2P de compartilhamento de arquivos não devem ser permitidos em redes corporativas. A atividade da rede P2P pode contornar as proteções de firewall e é um vetor comum para a propagação de malware. P2P é inerentemente dinâmico. Ele pode operar conectando-se a vários endereços IP de destino e também pode usar numeração dinâmica de portas. Arquivos compartilhados são frequentemente infectados com malware, e os atores de ameaças podem posicionar seu malware em clientes P2P para distribuição a outros usuários.
-As redes P2P de compartilhamento de processadores doam ciclos de processador para tarefas computacionais distribuídas.
 
-Mensagens instantâneas tem valor legítimo dentro de organizações que têm equipes de projeto distribuídas geograficamente. Nesse caso, aplicativos de IM especializados estão disponíveis, como a plataforma Webex Teams, que são mais seguras do que as mensagens instantâneas que usam servidores públicos.
+Na rede **Ponto a Ponto** (<span style="color:rgb(255, 255, 0)">P2P</span>) os hosts podem operar em funções de cliente e servidor. Existem três tipos de aplicativos P2P: **compartilhamento de arquivos**, **compartilhamento de processadores** e **mensagens instantâneas**.
+
+- **Compartilhamento de arquivos** - Os arquivos em uma máquina participante são compartilhados com membros da rede P2P. Exemplos disso são os outrora populares Napster e Gnutella, o BitTorrent. Sempre que os usuários desconhecidos recebem acesso aos recursos de rede, a segurança é uma preocupação. O P2P é inerentemente dinâmico, ele pode operar conectando-se a vários endereços IP de destino e também pode usar numeração dinâmica de portas. Arquivos compartilhados são frequentemente infectados com malware, e os atores de ameaças podem posicionar seu malware em clientes P2P para distribuição a outros usuários, esse tipo de serviço não deve ser usado em ambientes corporativos.
+- **Compartilhamento de Processadores** - Doam ciclos de processador para tarefas computacionais distribuídas.
+- **Mensagens Instantâneas** - Tem valor legítimo dentro de organizações que têm equipes de projeto distribuídas geograficamente. Nesse caso, aplicativos de IM especializados estão disponíveis, como a plataforma Webex Teams, que são mais seguras do que as mensagens instantâneas que usam servidores públicos.
 
 ![[p2p.webp|P2P]]
 
