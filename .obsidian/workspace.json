@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "Redes/HyperText Markup Language (HTMl).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for TODO"
+              "title": "Backlinks for HyperText Markup Language (HTMl)"
             }
           },
           {
@@ -152,12 +152,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "Redes/HyperText Markup Language (HTMl).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from TODO"
+              "title": "Outgoing links from HyperText Markup Language (HTMl)"
             }
           },
           {
@@ -218,14 +218,15 @@
       "bases:Create new base": false,
       "github-sync:Sync with Remote": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-task-progress-bar:Open Task Genius view": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-task-progress-bar:Open Task Genius view": false
     }
   },
-  "active": "1e80c182f859c816",
+  "active": "64659ed29052a63f",
   "lastOpenFiles": [
-    "TODO.md",
     "Cisco/Defesa de Rede - Cisco.md",
+    "Tutorial Git com Obsidian.md",
+    "TODO.md",
     "Conceitos/Chaves Públicas e Privadas.md",
     "RedTeam/Command N Control (CNC).md",
     "Abreviações.md",
@@ -252,7 +253,6 @@
     "BlueTeam/DNS Sinkhole.md",
     "RedTeam/Backdoors.md",
     "Linux/Linux Courses.md",
-    "RedTeam/Malware.md",
     "Trash/Imagens/Img Arquitetura/Disquete.jpg",
     "Trash/Imagens/Img Arquitetura/Disquete.webp",
     "Trash/Imagens/Img Linux/LoginInterfaceGrafica.webp",
