@@ -5,6 +5,7 @@ A **encriptação** é o processo de embaralhamento de dados para impedir que um
 Há duas classes de algoritmos de criptografia:
 
 - Os <span style="color:rgb(255, 255, 0)">algoritmos simétricos</span> usam a mesma chave pré-compartilhada para criptografar e descriptografar dados, um método também conhecido como criptografia com chave privada. O Advanced Encryption Standard (AES) é um algoritmo de criptografia simétrica que possui um tamanho de bloco fixo de 128 bits com um tamanho de chave de 128, 192 ou 256 bits. O governo norte-americano usa o AES para proteger as informações confidenciais.
+
 - A <span style="color:rgb(255, 255, 0)">criptografia assimétrica</span>, também chamada de criptografia de chave pública, utiliza uma chave de criptografia que é diferente da chave usada para descriptografia. Os algoritmos de criptografia assimétrica incluem Rivest-Shamir-Adleman (RSA), Diffie-Hellman, EIGamal e Elliptic Curve Cryptography (ECC).
 
 # Criptografia Simétrica
@@ -118,34 +119,41 @@ Combinar os dois processos de criptografia assimétrica fornece confidencialidad
 
 ![[Bob usa sua chave privada para decifrar a mensagem.webp|Decifrando a mensagem]]
 # Diffie-Hellman (DH)
-Diffie-Hellman (DH) é um algoritmo matemático assimétrico que permite que dois computadores gerem um segredo compartilhado idêntico sem terem se comunicado antes. A nova chave compartilhada nunca é realmente trocada entre o remetente e o destinatário. No entanto, como as duas partes o conhecem, a chave pode ser usada por um algoritmo de criptografia para criptografar o tráfego entre os dois sistemas. Aqui estão dois exemplos de casos em que DH é comumente usado:
 
-- Os dados são trocados usando uma VPN IPsec
-- Dados SSH são trocados
+Diffie-Hellman (DH) é um algoritmo matemático assimétrico que permite que dois computadores gerem um segredo compartilhado idêntico sem terem se comunicado antes. A nova chave compartilhada nunca é realmente trocada entre o remetente e o destinatário. No entanto, como as duas partes o conhecem, a chave pode ser usada por um algoritmo de criptografia para criptografar o tráfego entre os dois sistemas. O DH é usado na troca de  dados são em uma VPN IPsec e dados SSH por exemplo.
 
 ![[Diffie-Hellman.webp|Alice X Bob]]
 
-As cores na figura serão usadas em vez de números longos complexos para simplificar o processo de contrato de chave DH. A troca de chaves DH começa com Alice e Bob concordando com uma cor comum arbitrária que não precisa ser mantida em segredo. A cor combinada em nosso exemplo é amarelo.
+A troca de chaves DH começa com Alice e Bob concordando com uma cor comum arbitrária que não precisa ser mantida em segredo. A cor combinada em nosso exemplo é <span style="color:rgb(255, 255, 0)">amarelo</span>.
 
-Em seguida, Alice e Bob selecionarão uma cor secreta. Alice escolheu vermelho enquanto Bob escolheu azul. Essas cores secretas nunca serão compartilhadas com ninguém. A cor secreta representa a chave privada secreta escolhida de cada parte.
+Em seguida, Alice e Bob selecionarão uma cor secreta. Alice escolheu <span style="color:rgb(206, 0, 86)">vermelho</span> enquanto Bob escolheu <span style="color:rgb(65, 105, 255)">azul</span>. Essas **cores secretas** nunca serão compartilhadas com ninguém. A cor secreta representa a **chave privada secreta** escolhida de cada parte.
 
-Alice e Bob agora misturam a cor comum compartilhada (amarelo) com suas respectivas cores secretas para produzir uma cor pública. Portanto, Alice vai misturar o amarelo com sua cor vermelha para produzir uma cor pública de laranja. Bob irá misturar o amarelo e o azul para produzir uma cor pública de verde.
+Alice e Bob agora **misturam a cor em comum** compartilhada (<span style="color:rgb(255, 255, 0)">amarelo</span>), com suas respectivas **cores secretas** para produzir uma cor pública. Portanto ficando assim:
 
-Alice envia sua cor pública (laranja) para Bob e Bob envia sua cor pública (verde) para Alice.
+- **Alice** vai misturar o <span style="color:rgb(255, 255, 0)">amarelo</span> com sua cor <span style="color:rgb(206, 0, 86)">vermelha</span> para produzir uma cor pública de <span style="color:rgb(255, 92, 0)">laranja</span>. 
 
-Alice e Bob misturam a cor que receberam com a sua própria cor secreta original (vermelho para Alice e azul para Bob). O resultado é uma mistura final de cor marrom que é idêntica à mistura de cor final do parceiro. A cor marrom representa a chave secreta compartilhada resultante entre Bob e Alice.
+- **Bob** irá misturar o <span style="color:rgb(255, 255, 0)">amarelo</span> e o <span style="color:rgb(65, 105, 255)">azul</span> para produzir uma cor pública de <span style="color:rgb(0, 176, 80)">verde</span>.
 
-A segurança do DH se baseia-se no fato de que ele usa números muito grandes em seus cálculos. Por exemplo, um número DH 1024 bits é aproximadamente igual a um número decimal de 309 dígitos. Considerando que um bilhão é 10 dígitos decimais (1.000.000.000), pode-se facilmente imaginar a complexidade de trabalhar não com um, mas com vários números decimais de 309 dígitos.
+Alice envia sua <span style="color:rgb(255, 92, 0)">cor pública</span> (<span style="color:rgb(255, 92, 0)">laranja</span>) para Bob e Bob envia sua <span style="color:rgb(0, 176, 80)">cor pública</span> (<span style="color:rgb(0, 176, 80)">verde</span>) para Alice.
 
-Diffie-Hellman usa diferentes grupos DH para determinar a força da chave que é usada no processo de acordo de chave. Os números de grupo mais altos são mais seguros, mas exigem tempo adicional para calcular a chave. O seguinte identifica os grupos DH suportados pelo Cisco IOS Software e seu valor de número primo associado:
+Alice e Bob **misturam a cor que receberam** com a sua própria **cor secreta original** (<span style="color:rgb(206, 0, 86)">vermelho</span> para <span style="color:rgb(206, 0, 86)">Alice</span>, e <span style="color:rgb(65, 105, 255)">azul</span> para <span style="color:rgb(65, 105, 255)">Bob</span>). O resultado é uma **mistura final** de cor <span style="color:rgb(107, 39, 0)">marrom</span> que é idêntica à mistura de cor final do parceiro. A cor <span style="color:rgb(107, 39, 0)">marrom</span> representa a <span style="color:rgb(107, 39, 0)">chave secreta compartilhada</span> resultante **entre Bob e Alice**.
+
+A segurança do DH se baseia-se no fato de que ele usa números muito grandes em seus cálculos. Por exemplo, um número DH 1024 bits é aproximadamente igual a um número decimal de 309 dígitos. Considerando que um bilhão são 10 dígitos decimais (1.000.000.000), pode-se facilmente imaginar a complexidade de trabalhar não com um, mas com vários números decimais de 309 dígitos.
+
+Diffie-Hellman usa diferentes grupos para determinar a força da chave que é usada no processo de acordo de chave, os números de grupo mais altos são mais seguros, mas exigem tempo adicional para calcular a chave:
 
 - Grupo DH 1:768 bits
+
 - Grupo DH 2:1024 bits
+
 - Grupo DH 5:1536 bits
+
 - Grupo DH 14:2048 bits
+
 - Grupo DH 15:3072 bits
+
 - Grupo DH 16:4096 bits
 
-**Nota**: Um acordo de chave DH também pode ser baseado em criptografia de curva elíptica. Os grupos DH 19, 20 e 24, que são baseados em criptografia de curva elíptica, também são suportados pelo Cisco IOS Software.
-
 Infelizmente, os sistemas de chave assimétrica são extremamente lentos para qualquer tipo de criptografia em massa. É por isso que é comum criptografar a maior parte do tráfego usando um algoritmo simétrico, como 3DES ou AES, e usar o algoritmo DH para criar chaves que serão usadas pelo algoritmo de criptografia.
+
+# Criptografia de Curva Elíptica

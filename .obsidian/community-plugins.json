@@ -9,5 +9,6 @@
   "github-sync",
   "obsidian-icon-folder",
   "obsidian-task-progress-bar",
-  "obsidian-git"
+  "obsidian-git",
+  "convert-url-to-iframe"
 ]

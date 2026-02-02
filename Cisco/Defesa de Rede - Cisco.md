@@ -202,17 +202,25 @@ Acessar o arquivo [[Criptografia]] para ver sobre esse tópico.
 ## Ofuscação de Dados
 
 O mascaramento de dados protege informações sensíveis substituindo-as por versões não confidenciais que mantêm a aparência e funcionalidade dos dados originais. Essa tecnologia permite o uso seguro de dados em testes e análises sem comprometer informações críticas. Os dados podem ser mascarados  quando uma solicitação for considerada arriscada ou em ambientes não produtivos para maior segurança. Entre as principais técnicas estão: 
-- <span style="color:rgb(255, 255, 0)">Substituição</span>, que troca os dados por valores realistas, 
-- <span style="color:rgb(255, 255, 0)">Embaralhamento</span> que reorganiza os valores dentro da mesma coluna para preservar a coerência, e 
-- <span style="color:rgb(255, 255, 0)">Anulação</span>, que aplica valores nulos para ocultar completamente as informações.
+
+- <span style="color:rgb(255, 255, 0)">Substituição</span>: Que troca os dados por valores realistas.
+
+- <span style="color:rgb(255, 255, 0)">Embaralhamento</span>: Que reorganiza os valores dentro da mesma coluna para preservar a coerência.
+
+- <span style="color:rgb(255, 255, 0)">Anulação</span>: Que aplica valores nulos para ocultar completamente as informações.
+
 ### Esteganografia
 
 A estenografia <span style="color:rgb(255, 255, 0)">esconde dados</span> em outro arquivo, como uma imagem, áudio ou outro arquivo de texto. A vantagem da estenografia em relação à criptografia é que a mensagem secreta não atrai atenção especial, ao visualizar o arquivo ninguém saberá que existe uma mensagem secreta. Há vários componentes envolvidos na ocultação de dados. Primeiro, existem os dados integrados que compõem a mensagem secreta. O texto de capa (imagem ou áudio) oculta os dados integrados, produzindo o estego-arquivo. A abordagem usada para integrar dados em uma imagem de capa é o uso de [[Abreviações#LSB = Least Significant Bit é o bit mais à direita e menos significativo em um número binário.|LSB]]. Esse método usa os bits de cada pixel na imagem.
 
 - Um pixel é a unidade básica de cor programável em uma imagem de computador.
+
 - A cor específica de um pixel é uma mistura de três cores - vermelho, verde e azul (RGB).
+
 - Três bytes de dados especificam a cor de um pixel (um byte para cada cor). Um sistema de cores de 24 bits usa todos os três bytes.
+
 - O LSB usa um pouco de cada um dos componentes das cores vermelho, verde e azul. Cada pixel pode armazenar 3 bits.
+
 ## Hash
 
 Olhar o arquivo [[Hash]] para ver sobre.

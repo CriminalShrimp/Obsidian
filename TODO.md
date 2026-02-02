@@ -18,7 +18,7 @@
 		- [x] Modulo 5
 		- [x] Modulo 6
 		- [x] Modulo 7
-		- [/] Modulo 8
+		- [x] Modulo 8
 		- [/] Modulo 9
 		- [ ] Modulo 10
 		- [ ] Modulo 11
