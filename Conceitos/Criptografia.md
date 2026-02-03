@@ -6,7 +6,7 @@ Há duas classes de algoritmos de criptografia:
 
 - Os <span style="color:rgb(255, 255, 0)">algoritmos simétricos</span> usam a mesma chave pré-compartilhada para criptografar e descriptografar dados, um método também conhecido como criptografia com chave privada. O Advanced Encryption Standard (AES) é um algoritmo de criptografia simétrica que possui um tamanho de bloco fixo de 128 bits com um tamanho de chave de 128, 192 ou 256 bits. O governo norte-americano usa o AES para proteger as informações confidenciais.
 
-- A <span style="color:rgb(255, 255, 0)">criptografia assimétrica</span>, também chamada de criptografia de chave pública, utiliza uma chave de criptografia que é diferente da chave usada para descriptografia. Os algoritmos de criptografia assimétrica incluem Rivest-Shamir-Adleman (RSA), Diffie-Hellman, EIGamal e Elliptic Curve Cryptography (ECC).
+- A <span style="color:rgb(255, 255, 0)">criptografia assimétrica</span>, também chamada de criptografia de chave pública, utiliza uma chave de criptografia que é diferente da chave usada para descriptografia. Os algoritmos de criptografia assimétrica incluem: **R**ivest-**S**hamir-**A**dleman (**RSA**), **D**iffie-**H**ellman, EIGamal e também a **E**lliptic **C**urve **C**ryptography (ECC).
 
 # Criptografia Simétrica
 

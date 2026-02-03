@@ -37,6 +37,7 @@
 	- [ ] [[Switch]]
 	- [ ] [[Gateway]]
 	- [ ] [[Proxy]]
+	- [ ] [[Balanceador de Carga]]
 	- [ ] [[Protocolos]]
 		- [ ] ICMP
 		- [ ] POP3

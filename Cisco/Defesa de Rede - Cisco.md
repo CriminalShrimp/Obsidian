@@ -228,10 +228,13 @@ Olhar o arquivo [[Hash]] para ver sobre.
 
 As organizações devem fornecer suporte para proteger os dados à medida que eles viajam pelos links. Isso pode incluir tráfego interno, mas é mais importante proteger os dados que viajam para fora da organização para as filiais, locais de trabalho remoto, e parceiros. Estes são os quatro elementos das comunicações seguras:
 
-- **Integridade de dados** - Garante que a m<span style="color:rgb(255, 255, 0)">ensagem não foi alterada</span>. Quaisquer alterações nos dados em trânsito serão detectadas. A integridade é garantida pela implementação de um dos algoritmos <span style="color:rgb(255, 255, 0)">Secure Hash</span> (SHA-2 ou SHA-3).
-- **Autenticação de origem** - Garante que a mensagem <span style="color:rgb(255, 255, 0)">não é uma falsificação</span> e realmente vem de quem é declarada. Muitas redes modernas garantem autenticação com algoritmos como código de autenticação de mensagem baseado em hash (HMAC).
-- **Confidencialidade dos dados** - Garante que a<span style="color:rgb(255, 255, 0)">penas usuários autorizados possam ler</span> a mensagem. Se a mensagem for interceptada, ela não poderá ser decifrada dentro de um razoável período de tempo. A <span style="color:rgb(255, 255, 0)">confidencialidade</span> dos dados é implementada usando algoritmos de criptografia simétrica e assimétrica.
-- **Não Repúdio de Dados** - Garante que o remetente n<span style="color:rgb(255, 255, 0)">ão pode repudiar ou refutar a validade de uma mensagem enviada</span>. O não repúdio depende do fato de que apenas o remetente possui as características ou a assinatura exclusivas de como essa mensagem é tratada.
+- **Integridade de dados:** Garante que a <span style="color:rgb(255, 255, 0)">mensagem não foi alterada</span>. Quaisquer alterações nos dados em trânsito serão detectadas. A integridade é garantida pela implementação de um dos algoritmos <span style="color:rgb(255, 255, 0)">Secure Hash</span> (SHA-2 ou SHA-3).
+
+- **Autenticação de origem:** Garante que a mensagem <span style="color:rgb(255, 255, 0)">não é uma falsificação</span> e realmente vem de quem é declarada. Muitas redes modernas garantem autenticação com algoritmos como código de autenticação de mensagem baseado em hash (HMAC).
+
+- **Confidencialidade dos dados:** Garante que <span style="color:rgb(255, 255, 0)">apenas usuários autorizados possam ler</span> a mensagem. Se a mensagem for interceptada, ela não poderá ser decifrada dentro de um razoável período de tempo. A <span style="color:rgb(255, 255, 0)">confidencialidade</span> dos dados é implementada usando algoritmos de criptografia simétrica e assimétrica.
+
+- **Não Repúdio de Dados:** Garante que o remetente <span style="color:rgb(255, 255, 0)">não pode repudiar ou refutar a validade de uma mensagem enviada</span>. O não repúdio depende do fato de que apenas o remetente possui as características ou a assinatura exclusivas de como essa mensagem é tratada.
 
 # Modulo 9: Tecnologias e Protocolos
 #Protocolos #Redes 
@@ -267,7 +270,7 @@ O <span style="color:rgb(255, 255, 0)">Hypertext Transfer Protocol</span> é a e
 
 ![[Exploração de injeção iFrame de HTTP.webp|iFrame]]
 
-Para lidar com a alteração ou interceptação de dados confidenciais, muitas organizações comerciais adotaram HTTPS ou implementaram políticas somente HTTPS para proteger os visitantes de seus sites e serviços. O HTTPS adiciona uma camada de criptografia ao protocolo HTTP usando [[Abreviações#SSL = Secure Socket Layer|SSL]]. Isso torna os dados HTTP ilegíveis, durante o trafego. Observe que HTTPS não é um mecanismo para a segurança do servidor Web, ele só protege o tráfego de protocolo HTTP enquanto está em trânsito.
+Para lidar com a alteração ou interceptação de dados confidenciais, muitas organizações comerciais adotaram HTTPS ou implementaram políticas somente HTTPS para proteger os visitantes de seus sites e serviços. O HTTPS adiciona uma camada de criptografia ao protocolo HTTP usando [[Abreviações#SSL = Secure Socket Layer|SSL.]]Isso torna os dados HTTP ilegíveis, durante o trafego. Observe que HTTPS não é um mecanismo para a segurança do servidor Web, ele só protege o tráfego de protocolo HTTP enquanto está em trânsito.
 
 ![[Diagrama de protocolo HTTPS.webp|SSL]]
 
@@ -295,6 +298,7 @@ Os invasores podem determinar quais endereços IP, protocolos e portas são perm
 ![[Atenuante o abuso de ICMP.webp|]]
 
 ### NetWork Address Translation e Port Address Translation  (NAT/PAT)
+
 Conversão de Endereços de Rede (**NetWork Address Translation**) e Tradução de Endereço de Porta (**Port Address Translation**) podem complicar o monitoramento de segurança. Vários endereços IP são mapeados para um ou mais endereços públicos visíveis na Internet, ocultando os endereços IP individuais que estão dentro da rede (endereços internos).
 
 A figura ilustra a relação entre endereços internos e externos que são usados como **endereços de origem** (Source Address, SA) e **endereços de destino** (Destination Address, DA). Esses endereços internos e externos estão em uma rede que está usando NAT para se comunicar com um destino na Internet. Se o PAT estiver em vigor e todos os endereços IP que saem da rede usarem o endereço global 209.165.200.226 interno para tráfego na Internet, pode ser difícil registrar o dispositivo interno específico que está solicitando e recebendo o tráfego quando ele entra na rede.
@@ -307,21 +311,17 @@ Esse problema pode ser especialmente relevante com dados NetFlow (comentado mais
 
 Na rede **Ponto a Ponto** (<span style="color:rgb(255, 255, 0)">P2P</span>) os hosts podem operar em funções de cliente e servidor. Existem três tipos de aplicativos P2P: **compartilhamento de arquivos**, **compartilhamento de processadores** e **mensagens instantâneas**.
 
-- **Compartilhamento de arquivos** - Os arquivos em uma máquina participante são compartilhados com membros da rede P2P. Exemplos disso são os outrora populares Napster e Gnutella, o BitTorrent. Sempre que os usuários desconhecidos recebem acesso aos recursos de rede, a segurança é uma preocupação. O P2P é inerentemente dinâmico, ele pode operar conectando-se a vários endereços IP de destino e também pode usar numeração dinâmica de portas. Arquivos compartilhados são frequentemente infectados com malware, e os atores de ameaças podem posicionar seu malware em clientes P2P para distribuição a outros usuários, esse tipo de serviço não deve ser usado em ambientes corporativos.
-- **Compartilhamento de Processadores** - Doam ciclos de processador para tarefas computacionais distribuídas.
-- **Mensagens Instantâneas** - Tem valor legítimo dentro de organizações que têm equipes de projeto distribuídas geograficamente. Nesse caso, aplicativos de IM especializados estão disponíveis, como a plataforma Webex Teams, que são mais seguras do que as mensagens instantâneas que usam servidores públicos.
+- **Compartilhamento de arquivos:** Os arquivos em uma máquina participante são compartilhados com membros da rede P2P. Exemplos disso são os outrora populares Napster e Gnutella, o BitTorrent. Sempre que os usuários desconhecidos recebem acesso aos recursos de rede, a segurança é uma preocupação. O P2P é inerentemente dinâmico, ele pode operar conectando-se a vários endereços IP de destino e também pode usar numeração dinâmica de portas. Arquivos compartilhados são frequentemente infectados com malware, e os atores de ameaças podem posicionar seu malware em clientes P2P para distribuição a outros usuários, esse tipo de serviço não deve ser usado em ambientes corporativos.
 
-![[p2p.webp|P2P]]
+- **Compartilhamento de Processadores:** Doam ciclos de processador para tarefas computacionais distribuídas.
 
-## Balanceador de Carga
-O balanceamento de carga envolve a distribuição do tráfego entre dispositivos ou caminhos de rede para evitar recursos de rede sobrecarregados com muito tráfego. Se existirem recursos redundantes, um algoritmo ou dispositivo de balanceamento de carga funcionará para distribuir o tráfego entre esses recursos, conforme mostrado na figura.
+- **Mensagens Instantâneas:** Tem valor legítimo dentro de organizações que têm equipes de projeto distribuídas geograficamente. Nesse caso, aplicativos de IM especializados estão disponíveis, como a plataforma Webex Teams, que são mais seguras do que as mensagens instantâneas que usam servidores públicos.
 
-Uma maneira de fazer isso na internet é através de várias técnicas que usam DNS para enviar tráfego para recursos que têm o mesmo nome de domínio, mas vários endereços IP. Em alguns casos, a distribuição pode ser para servidores que são distribuídos geograficamente. Isso pode resultar em uma única transação de Internet sendo representada por vários endereços IP nos pacotes de entrada. Isso pode fazer com que recursos suspeitos apareçam em capturas de pacotes. Além disso, alguns dispositivos do gerenciador de balanceamento de carga (LBM) usam testes para testar o desempenho de diferentes caminhos e a integridade de diferentes dispositivos. Por exemplo, um LBM pode enviar testes para os diferentes servidores para os quais ele está balanceando o tráfego de carga, a fim de detectar que os servidores estão operando. Isso é feito para evitar o envio de tráfego para um recurso que não está disponível. Esses testes podem parecer tráfego suspeito se o analista de segurança cibernética não estiver ciente de que esse tráfego faz parte da operação do LBM.
-
-![[Balanceamento de carga com delegação DNS.webp|Balanceador]]
+![[Peer-2-Peer.webp|P2P]]
 
 #### TOR
-Tor é uma plataforma de software e rede de hosts P2P que funcionam como roteadores de internet na rede Tor. A rede Tor permite que os usuários naveguem na internet anonimamente. Os usuários acessam a rede Tor usando um navegador especial. Quando uma sessão de navegação é iniciada, o navegador constrói um caminho de ponta a ponta em camadas na rede do servidor Tor que é criptografado, como mostrado na figura. Cada camada criptografada é “removida” como as camadas de uma cebola (portanto, “onion routing”) à medida que o tráfego atravessa um retransmissor do Tor. As camadas contêm informações criptografadas do próximo salto que só podem ser lidas pelo roteador que precisa ler as informações. Dessa forma, nenhum dispositivo único conhece todo o caminho para o destino e as informações de roteamento só podem ser lidas pelo dispositivo que as requer. Finalmente, no final do caminho do Tor, o tráfego atinge seu destino na internet. Quando o tráfego é retornado à origem, um caminho criptografado em camadas é construído novamente.
+
+Tor é uma plataforma de software e rede de hosts P2P que funcionam como roteadores de internet na rede Tor. A rede Tor permite que os usuários naveguem na internet anonimamente usando um navegador especial. Quando uma sessão de navegação é iniciada, o navegador constrói um caminho de ponta a ponta em camadas na rede do servidor Tor que é criptografado, como mostrado na figura. Cada camada criptografada é “removida” como as camadas de uma cebola (portanto, “onion routing”) à medida que o tráfego atravessa um retransmissor do Tor. As camadas contêm informações criptografadas do próximo salto que só podem ser lidas pelo roteador que precisa ler as informações. Dessa forma, nenhum dispositivo único conhece todo o caminho para o destino e as informações de roteamento só podem ser lidas pelo dispositivo que as requer. Finalmente, no final do caminho do Tor, o tráfego atinge seu destino na internet. Quando o tráfego é retornado à origem, um caminho criptografado em camadas é construído novamente.
 
 Tor apresenta uma série de desafios aos analistas de segurança cibernética. Primeiro, o Tor é amplamente utilizado por organizações criminosas na “Dark Net”. Além disso, Tor tem sido usado como um canal de comunicação para malware CNC. Como o endereço IP de destino do tráfego Tor é ofuscado pela criptografia, com apenas o nó Tor de próximo salto conhecido, o tráfego Tor evita listas negras configuradas em dispositivos de segurança.
 

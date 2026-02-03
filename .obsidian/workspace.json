@@ -22,17 +22,31 @@
             }
           },
           {
-            "id": "110ca05c2ba34cd1",
+            "id": "9cf5e0b3657d10e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conceitos/Hash.md",
+                "file": "Cisco/Defesa de Rede - Cisco.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hash"
+              "title": "Defesa de Rede - Cisco"
+            }
+          },
+          {
+            "id": "d1d61adea276ebe2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Conceitos/Criptografia.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Criptografia"
             }
           }
         ],
@@ -206,13 +220,16 @@
       "obsidian-task-progress-bar:Open Task Genius view": false
     }
   },
-  "active": "110ca05c2ba34cd1",
+  "active": "9cf5e0b3657d10e3",
   "lastOpenFiles": [
     "TODO.md",
-    "Conceitos/Hash.md",
-    "Conceitos/Criptografia.md",
-    "Redes/HyperText Markup Language (HTMl).md",
     "Cisco/Defesa de Rede - Cisco.md",
+    "Redes/Balanceador de Carga.md",
+    "Conceitos/Criptografia.md",
+    "Conceitos/Hash.md",
+    "RedTeam/Man-in-the-Middle.md",
+    "man-in-the-Man-in-the-Middle.md",
+    "Redes/HyperText Markup Language (HTMl).md",
     "Tutorial Git com Obsidian.md",
     "Conceitos/Chaves Públicas e Privadas.md",
     "RedTeam/Command N Control (CNC).md",
@@ -224,7 +241,6 @@
     "Arquitetura Computacional/Dispositivo de Armazenamento.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "RedTeam/Denial of Service.md",
-    "RedTeam/Man-in-the-Middle.md",
     "RedTeam/Snaffing.md",
     "RedTeam/Spoofing.md",
     "RedTeam/WireShark.md",
@@ -235,8 +251,6 @@
     "Arquitetura Computacional/Placa Mae.md",
     "Redes/Gateway.md",
     "BlueTeam/DNS Sinkhole.md",
-    "RedTeam/Backdoors.md",
-    "Linux/Linux Courses.md",
     "Trash/Imagens/Img Arquitetura/Disquete.jpg",
     "Trash/Imagens/Img Arquitetura/Disquete.webp",
     "Trash/Imagens/Img Linux/LoginInterfaceGrafica.webp",
