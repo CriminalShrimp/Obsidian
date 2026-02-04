@@ -66,45 +66,60 @@ As políticas de segurança abrangem diversas diretrizes essenciais, como quem p
 É comum ver empresas com a cultura do [[Abreviações#BYOD = Bring Your Own Device, levar os próprios dispositivos para o trabalho|BYOD]], pois essa positiva traz vários benefícios para empresa como redução de custos com equipamentos para empresa, aumento na produtividade pois os colaboradores se sentem mais confortáveis usando seus dispositivos, porém para aderir essa politica é preciso também preparar o ambiente e funcionários para isso, como usar senhas exclusivas para cada dispositivo e conta, conecte-se apenas a redes confiáveis, manter sempre o sistema operacional do dispositivo e outros softwares atualizados, ativar o backup do dispositivo para evitar perda de dados em caso de roubo ou extravio, utilizar serviço de rastreamento de dispositivos que permita localização e apagamento remoto dos dados, utilizar antivírus, etc.
 # Modulo 2 : Defesa do Sistema e da Rede
 ## Segurança Física
+
 Barreiras físicas dizem respeito a meios de **limitar a entrada** de indivíduos não autorizados ou indevidos a certos locais/áreas de alta segurança que requerem uma “proteção superior”, como cerceamentos ou barreiras físicas, como arame farpado, cerca elétrica, fechaduras, vigias/guardas, etc. Uma das mais comum para autenticação e confirmação de acesso de uma pessoa são as seguranças por biometria, sistemas de autenticação de biometria incluem medições da face, impressão digital, geometria da mão, íris, retina, assinatura e voz. Outra forma de autenticação comum e identificação nas áreas de trabalho é o uso de crachá, com um leitor de cartão para acessar locais.
 ## Segurança de Aplicações
+
 Durante a criação de um sistema, é importante que o softwares sejam desenvolvido e atualizado em um ambiente de desenvolvimentos, pois esse é um ambiente seguro para o sistema poder conter falhas de códigos. Depois do o sistema segue para o ambiente de preparo que simula o real ambiente onde o código ira funcionar, neste ambiente os desenvolvedores podem verificar se o código esta sendo executando corretamente e com os padrões de segurança necessário, e também podem realizar testes.
 
 Técnicas como **ofuscação e camuflagem** são usadas para proteger o software contra engenharia reversa. A ofuscação oculta dados originais com caracteres ou informações aleatórias, enquanto a camuflagem substitui dados confidenciais por versões fictícias realistas. A reutilização de código permite economizar tempo e custos ao usar software existente para criar novos programas, mas deve ser feita com cuidado para evitar vulnerabilidades. Os SDKs e bibliotecas de terceiros aceleram o desenvolvimento ao fornecer código pronto para uso, porém, qualquer falha de segurança nesses componentes pode afetar múltiplos aplicativos.
-## Fortalecimento da Rede 
+## Fortalecimento da Rede
+
 Criminosos exploram serviços de rede vulneráveis para ataques, escaneando portas de redes abertas para identificar acessos desprotegidos. Para mitigar riscos, é essencial fechar portas desnecessárias e proteger serviços como [[Abreviações#DHCP = Dynamic Host Configuration Protocol atribui automaticamente endereços IP a dispositivos.|DHCP]], [[Abreviações#DNS = Domain Name System é o que traduz IPs em nomes de domínio.|DNS]], [[Abreviações#ICMP = Internet Control Message Protocol é usado para comunicar informações de nível de rede.|ICMP]], [[Abreviações#RIP = Protocolo de Informação de Roteamento permite que roteadores troquem informações sobre rotas em uma rede.|RIP]] e [[Abreviações#NTP = Network Time Protocol sincroniza os relógios de computadores em uma rede.|NTP]]. Adoção de firewalls, monitoramento, atualizações e autenticação são medidas essenciais para garantir a segurança de uma rede.
 
-- **DHCP** - Pode ser explorado para negar acesso à rede. Medidas de segurança incluem rastreamento de DHCP e proteção do servidor.
-- **DNS** - Alvo de ataques para redirecionamento de tráfego e negação de acesso. Adoção de [[Abreviações#DNSSEC = Domain Name System Security Extensions é um conjunto de extensões que adiciona segurança ao protocolo DNS.|DNSSEC]] e autenticação entre servidores aumenta a segurança.
-- **ICMP** - Usado para testes de conectividade, mas pode ser explorado para ataques [[Abreviações#DoS = DenialofService é um ataque que visa tornar um serviço ou dispositivo indisponível para os usuário.|DoS]], fazer a filtragem de ICMP reduz riscos.
-- **RIP** - Protocolo de roteamento vulnerável a ataques que afetam desempenho e disponibilidade. 
-- **NTP** - Fundamental para a sincronização de tempo e segurança digital, e também autenticação protege contra manipulações maliciosas.
+- **DHCP**: Pode ser explorado para negar acesso à rede. Medidas de segurança incluem rastreamento de DHCP e proteção do servidor.
+
+- **DNS**: Alvo de ataques para redirecionamento de tráfego e negação de acesso. Adoção de [[Abreviações#DNSSEC = Domain Name System Security Extensions é um conjunto de extensões que adiciona segurança ao protocolo DNS.|DNSSEC]] e autenticação entre servidores aumenta a segurança.
+
+- **ICMP**: Usado para testes de conectividade, mas pode ser explorado para ataques [[Abreviações#DoS = DenialofService é um ataque que visa tornar um serviço ou dispositivo indisponível para os usuário.|DoS]], fazer a filtragem de ICMP reduz riscos.
+
+- **RIP**: Protocolo de roteamento vulnerável a ataques que afetam desempenho e disponibilidade. 
+
+- **NTP**: Fundamental para a sincronização de tempo e segurança digital, e também autenticação protege contra manipulações maliciosas.
+
 ## Blindagem de Rede
 ###  Virtual Local Area Network (VLANs)
 
  VLANs são baseadas em conexões lógicas, enquanto LANs são baseadas em conexões físicas. Portas individuais de um switch podem ser atribuídas a uma VLAN específica. Outras portas podem ser usadas para interconectar fisicamente os switches e permitir o tráfego de várias VLANs entre os [[Switch|switches]], essas portas são chamadas <span style="color:rgb(255, 255, 0)">Trunks</span>. As VLANs fornecem uma forma de agrupar dispositivos em uma LAN e em switches individuais, além disso os administradores usam VLANs para segmentar redes com base em fatores como função, equipe ou aplicativo. Os dispositivos em uma VLAN atuam como se estivessem em sua própria rede independente, mesmo que compartilhem uma infraestrutura comum com outras VLANs. Uma VLAN pode separar grupos que têm dados confidenciais do resto da rede, diminuindo as chances de violações de informações confidenciais. Os hackers podem atacara  disponibilidade e o desempenho da VLAN, por isso é necessário monitorar seu desempenho, usar configurações avançadas e instalar regularmente as atualizações.
+ 
 ### Demilitarized Zone (DMZ)
+
 <span style="color:rgb(255, 255, 0)">DMZ</span> ou <span style="color:rgb(255, 255, 0)">zona desmilitarizada</span> é uma pequena rede entre uma rede privada confiável e a Internet, servidores Web e de e-mail geralmente são colocados na DMZ para permitir que os usuários acessem uma rede não confiável, como a Internet, sem comprometer a rede interna.
 A maioria das redes tem de duas a quatro zonas de risco: a <span style="color:rgb(65, 105, 255)">LAN p</span>, a <span style="color:rgb(255, 92, 0)">DMZ</span>, a <span style="color:rgb(206, 0, 86)">Internet</span> e uma <span style="color:rgb(255, 255, 0)">extranet</span>. Na zona de LAN, o nível de <span style="color:rgb(65, 105, 255)">risco é baixo</span> e o nível de <span style="color:rgb(65, 105, 255)">confiança é alto</span>. Na zona da extranet, o nível de risco é <span style="color:rgb(255, 255, 0)">médio-baixo</span> e o nível de confiança <span style="color:rgb(255, 255, 0)">médio-alto</span>. Na DMZ, o nível de risco é <span style="color:rgb(255, 92, 0)">médio-alto</span> e o nível de <span style="color:rgb(255, 92, 0)">confiança é baixo</span>. Na zona da Internet, o nível de risco é <span style="color:rgb(206, 0, 86)">alto</span> e o nível de <span style="color:rgb(206, 0, 86)">confiança é baixo</span>.
 ## Resiliência de Cyber Segurança
+
 O [[Abreviações#WAP = Wi-Fi Protected Access é um padrão de segurança para dispositivos|WAP]] foi a resposta do setor de computadores para enfraquecer a utilização do padrão [[Abreviações#WEP = Wired Equivalent Privacy foi o primeiro protocolo de segurança para redes Wi-Fi.|WEP]]. A configuração mais comum de WPA é WPA-PSK (Pre-Shared Key). O WPA3 adicionou mais recursos ao WPA2, como a manutenção de algoritmos criptográficos robustos e a melhoria da troca de chaves.
 Dispositivos móveis e sem fio se tornaram o tipo predominante de dispositivos na maioria das redes modernas. Eles oferecem mobilidade e conveniência, mas estão vulneráveis a diversos problemas de segurança digital. Essas vulnerabilidades incluem roubo, invasão e acesso remoto não autorizado. A tecnologia PSK citada acima um mecanismo de segurança que permite estabelecer uma conexão segura entre um dispositivo e um ponto de acesso Wi-Fi. Evitando ataques como [[Snaffing]] de rede, [[Man-in-the-Middle]] e [[Denial of Service|DoS]].
 
 A melhor forma de proteger uma rede sem fio é usar autenticação e criptografia. O padrão 801.11, introduziu dois tipos de autenticação, a de sistema aberto onde qualquer dispositivo pode se conectar à rede sem fio que é usado quando segurança não é um preocupação, e a de chave compartilhada que fornecer mecanismos para autenticações e criptografia dos dados trafegados.
 
 ## Disponibilidade do sistema
+
 O termo alta disponibilidade descreve sistemas concebidos para evitar períodos de inatividade. A disponibilidade contínua de sistemas de informação é imprescindível, não só para as empresas, mas para a vida moderna, já que todos nós usamos e dependemos de computadores e sistemas mais do que nunca. Dentre as práticas mais populares de alta disponibilidade estão os **cinco noves**. Ela recebe esse nome do objetivo de atingir uma taxa de disponibilidade de **99,999%**, ou seja, cinco noves em seguida. Isso significa que o período de inatividade é menos de <span style="color:rgb(255, 255, 0)">5,26 minutos por ano</span>. A redundância **N+1** garante a disponibilidade do sistema, no caso de falha de um componente. Os componentes (<span style="color:rgb(255, 255, 0)">N</span>) precisam ter, no mínimo, um componente de backup (<span style="color:rgb(255, 255, 0)">1</span>). Um exemplo desse sistema é, um carro tem quatro pneus (<span style="color:rgb(255, 255, 0)">N</span>) e um sobressalente (<span style="color:rgb(255, 255, 0)">+1</span>) no porta-malas. Embora um sistema N + 1 contenha equipamento redundante, não é um sistema totalmente redundante.
 
 ### RAID
+
 O RAID obtém os dados normalmente armazenados em um único disco e os espalha entre várias unidades. Se qualquer disco único RAID 0 for perdido, o usuário poderá recuperar os dados de outros discos que também hospedam os dados. Também pode aumentar a velocidade da recuperação de dados, já que várias unidades recuperarão os dados solicitados mais rapidamente do que um disco fazendo o mesmo.
 
 ![[RAID.webp|Comparação níveis de RAIDs]]
 
 ### Spanning Tree 
+
 A redundância aumenta a disponibilidade da infraestrutura da rede, protegendo-a de um ponto único de falha, como um cabo ou um switch com falha na rede. Quando os designers projetam a redundância física em uma rede, pode haver loops e quadros duplicados. Os loops e quadros duplicados têm consequências graves para uma rede comutada, o [[Abreviações#STP = Spanning Tree Protocol previne loops em uma rede quando os switches se interconectarem por vários caminhos|STP]] soluciona esses problemas. A função básica do STP é prevenir loops em uma rede, quando os switches se interconectarem por vários caminhos, ele garante que os links físicos redundantes estejam livres de loop e que apenas um caminho lógico seja executado entre todos os destinos na rede. O STP bloqueia intencionalmente os caminhos redundantes que poderiam provocar um loop.
 
 Bloquear os caminhos redundantes é fundamental para evitar loops na rede. Os caminhos físicos ainda existirão para fornecer redundância, mas o STP desativa esses caminhos para evitar que ocorram loops. Se um cabo ou switch da rede falhar, o STP recalculará os caminhos e desbloqueará as portas necessárias, para permitir que o caminho redundante se torne ativo.
-## Sistema Embarcados 
+## Sistema Embarcados
+
 Ao longo da última década, ataques como o [**Stuxnet**](https://pt.wikipedia.org/wiki/Stuxnet) demonstraram o potencial destrutivo de ameaças cibernéticas contra infraestruturas críticas. Para proteger sistemas industriais, recomenda-se **separar as redes internas e externas**, isolando redes [[Abreviações#SCADA = Supervisory Control and Data Acquisition é um sistema de hardware e software que permite monitorar e controlar operações industriais e de infraestrutura remotamente e em tempo real.|SCADA]] da LAN corporativa.
 
 A **Internet das Coisas (IoT)** conecta diversos dispositivos à Internet, geralmente por tecnologia sem fio, e muitos utilizam **sistemas operacionais em tempo real (RTOS)**. Essa expansão de dispositivos gerou o fenômeno do **Big Data**, impulsionado por **sistemas integrados** que capturam e processam grandes volumes de dados. No entanto, esses sistemas são vulneráveis a **ataques de tempo**, em que invasores analisam o tempo de resposta para descobrir falhas.
@@ -116,14 +131,19 @@ Para reforçar a segurança, empresas usam **técnicas de dissimulação**, como
 # Modulo 3: Controle de Acesso
 
 ## Físico
+
 Controles de acesso físico são barreiras reais implantadas para evitar o contato direto com os sistemas. A meta é <span style="color:rgb(255, 255, 0)">prevenir que usuários não autorizados acessem fisicamente as instalações</span>, equipamentos e outros ativos organizacionais. Alguns exemplos seriam cartões de acesso, alarme de intrusão, portas trancadas, detectores de movimento, etc.
 ## Logico
+
 Controles de acesso lógico são as <span style="color:rgb(255, 255, 0)">soluções de hardware e software usadas para gerenciar o acesso aos recursos e sistemas</span>. Essas soluções baseadas em tecnologia incluem ferramentas e protocolos que os sistemas de computador usam para identificação, autenticação, autorização e auditoria, como firewalls, criptografia, senhas, etc.
 
 ## Controles de Acesso Administrativos
+
 O conceito de controles de acesso administrativo envolve três serviços de segurança: <span style="color:rgb(255, 255, 0)">autenticação</span>, <span style="color:rgb(255, 255, 0)">autorização</span> e <span style="color:rgb(255, 255, 0)">contabilidade</span> (**AAA**).Esses serviços fornecem a estrutura principal para controlar o acesso, impedindo o acesso não autorizado a um computador, rede, banco de dados ou outro recurso de dados. 
 - O primeiro A no AAA representa a <span style="color:rgb(255, 255, 0)">Autenticação</span>, ela verifica a identidade de um usuário para evitar o acesso não autorizado. Os usuários provam sua identidade com um nome de usuário ou um ID. 
+
 - Serviços de <span style="color:rgb(255, 255, 0)">Autorização</span> determinam quais recursos os usuários podem acessar, juntamente com as operações que os usuários podem realizar. Alguns sistemas fazem isso usando uma lista de controle de acesso, porem não é porque você pode se autenticar na rede corporativa que tenha permissão para usar a impressora colorida de alta velocidade.
+
 - A contabilidade (<span style="color:rgb(255, 255, 0)">Accounting</span>) em AAA acompanha o que os usuários fazem – incluindo o que eles acessam, a quantidade de tempo que acessam os recursos e quaisquer alterações que fazem.
 
 ## Autenticação Multifatorial (MFA)
@@ -131,6 +151,7 @@ O conceito de controles de acesso administrativo envolve três serviços de segu
 A autenticação multifatorial usa pelo menos dois métodos de verificação - como **uma senha e algo que somente você tem**, por exemplo, um chaveiro de segurança ou um código de acesso. Isso pode ser levado um passo adiante adicionando algo que você é, como uma verificação de impressão digital. A autenticação multifatorial pode reduzir a incidência de roubo de identidade online porque significa que saber uma senha não dará aos cibe criminosos acesso à conta de um usuário. Retirar dinheiro de um caixa eletrônico é um exemplo simples de autenticação multifatorial, pois o usuário deve ter o cartão do banco e saber o PIN antes de o caixa eletrônico distribuir dinheiro.
 
 # Modulo 4: Lista de Controle de Acesso
+
 As <span style="color:rgb(255, 255, 0)">ACLs</span> (**A**ccess **C**ontrol **L**ists) <span style="color:rgb(255, 255, 0)">são listas de regras</span> utilizadas para filtrar pacotes em redes. Elas analisam o tráfego que passa por interfaces de roteadores e aplicam regras sequenciais de permissão ou negação. Existem diferentes tipos de ACLs: as padrão, que utilizam os números de 1 a 99 ou 1300 a 1999, e as estendidas, que vão de 100 a 199 ou de 2000 a 2699.
 
 Para determinar quais partes do endereço devem ser analisadas, as ACLs **IPv4** utilizam máscaras curingas de 32 bits. Essas máscaras diferem das máscaras de sub-rede, pois utilizam lógica inversa na correspondência de bits. A configuração e aplicação das ACLs exigem planejamento, sendo recomendável que sejam criadas previamente em um editor de texto antes de serem inseridas nos dispositivos. ACLs padrão e estendidas possuem comandos distintos para sua configuração e aplicação em interfaces. Enquanto as **padrão** filtram<span style="color:rgb(255, 255, 0)"> apenas pelo endereço de origem</span>, as **estendidas** oferecem maior controle, permitindo <span style="color:rgb(255, 255, 0)">filtrar pacotes com base em protocolos e portas</span>. Além disso, ACLs estendidas podem ser usadas para funções básicas de firewall stateful, como permitir tráfego de saída e autorizar automaticamente o tráfego de resposta.
@@ -140,6 +161,7 @@ Ao configurar ACLs, é essencial seguir diretrizes para garantir sua eficácia. 
 ACLs também são úteis para mitigar ataques, como spoofing de endereços IP e ataques [[Abreviações#DoS = Denial of Service é um ataque que visa tornar um serviço ou dispositivo indisponível para os usuário. |DoS]]. Um método eficaz para proteção é permitir explicitamente apenas determinados tipos de tráfego e bloquear mensagens indesejadas, como **[[Abreviações#ICMP = Internet Control Message Protocol é usado para comunicar informações de nível de rede.|ICMP]], Echo** e **Redirect**. Se o protocolo [[Abreviações#SNMP = Simple Network Management Protocol é um protocolo padrão da camada de aplicação (TCP/IP) para monitorar e gerenciar dispositivos em redes.|SNMP]] for necessário, seu uso deve ser restringido para evitar exploração de vulnerabilidades.
 
 No contexto do **IPv6**, as ACLs possuem funcionamento semelhante ao do IPv4, mas sem a existência de ACLs padrão. Todas devem ser nomeadas e podem filtrar tráfego com base em endereços de origem e destino, bem como em cabeçalhos e protocolos de camada superior. A segurança no IPv6 também depende da filtragem adequada na borda da rede, protegendo infraestruturas contra ataques furtivos, exploração de hosts dual-stack e técnicas de tunelamento maliciosas.
+
 # Modulo 5: Tecnologias de Firewall
 #Redes #Firewall #Redes 
 
@@ -173,30 +195,42 @@ Lan-to-internet, Firewall-with-public-servers-1, Firewall-with-public-servers-2,
 
 # Modulo 7: Segurança da Nuvem
 
-A virtualização retira a quantidade de maquinas e também o custo do espaço que elas ocupam existem vários tipos de virtualização
-### Máquinas virtuais
+A virtualização retira a quantidade de maquinas e também o custo do espaço que elas ocupam existem vários tipos de virtualização.
+
+## Máquinas virtuais
+
 Um **<span style="color:rgb(255, 255, 0)">hypervisor</span>** é um programa de software ou hardware que permite executar vários sistemas operacionais independentes em um sistema físico. Existem dois métodos de virtualização:
 
 - **Virtualização de hardware** - O sistema operacional convidado é executado diretamente em uma plataforma de hardware, sob o controle do sistema host. 
 
 - **Virtualização hospedada** - Um aplicativo em execução na máquina host é usado para criar <span style="color:rgb(255, 255, 0)">máquinas virtuais</span> que consistem totalmente em software e não contêm componentes de hardware. As máquinas virtuais compartilham hardware e são executadas com privilégios muito altos.
-### Contêineres
+
+## Contêineres
+
 Ao contrário de uma máquina virtual, um contêiner consiste apenas no aplicativo e suas dependências. Um contêiner usa um mecanismo para <span style="color:rgb(255, 255, 0)">emulação de sistema operacional</span>. O [[Docker|Docker]] é uma plataforma aberta que usa a virtualização no sistema operacional  para distribuir software em pacotes (contêineres). Você pode facilmente mover contêineres e o aplicativo será executado. Um software especializado como o [[Kubernetes|Kubernetes]] permite gerenciar seus contêineres.
-### Infraestrutura de Desktops Virtuais
+
+## Infraestrutura de Desktops Virtuais
+
 Os ambientes de desktop do usuário podem ser armazenados remotamente em um servidor usando thin client ou desktops virtuais. Isso torna muito fácil criar, excluir, copiar, arquivar ou baixar configurações com rapidez em uma rede. A virtualização de desktop requer alta disponibilidade e capacidade de armazenamento.
 ## Tecnologia na Nuvem
+
 As tecnologias baseadas em nuvem permitem que empresas acessem computadores, armazenamento, software e servidores pela Internet. Ele move o componente de tecnologia da organização para o provedor de nuvem.
-- [[Abreviações#SaaS - Software as a Service modelo de computação em nuvem que permite o uso de aplicativos por meio da internet.|SaaS]] - Permite que os usuários acessem software de aplicativos e bancos de dados. Os provedores de nuvem gerenciam a infraestrutura enquanto os usuários armazenam dados nos servidores do provedor de nuvem.
-- [[Abreviações#PaaS - Platform as a Serviço modelo de computação em nuvem que permite criar, implantar, executar e gerir aplicações.|PaaS]] - Permite que uma organização acesse remotamente as ferramentas e serviços de desenvolvimento usados para entregar tais aplicativos, por assinatura.
-- [[Abreviações#IaaS - Infrastructure as a Service modelo de computação em nuvem que fornece recursos conforme a demanda e o uso.|IaaS]] - Fornece recursos de computação virtualizados pela Internet. O provedor hospeda o hardware, software, servidores e componentes de armazenamento, e o usuário paga por uma assinatura desses recursos.
+
+- [[Abreviações#SaaS - Software as a Service modelo de computação em nuvem que permite o uso de aplicativos por meio da internet.|SaaS]]: Permite que os usuários acessem software de aplicativos e bancos de dados. Os provedores de nuvem gerenciam a infraestrutura enquanto os usuários armazenam dados nos servidores do provedor de nuvem.
+
+- [[Abreviações#PaaS - Platform as a Serviço modelo de computação em nuvem que permite criar, implantar, executar e gerir aplicações.|PaaS]]: Permite que uma organização acesse remotamente as ferramentas e serviços de desenvolvimento usados para entregar tais aplicativos, por assinatura.
+
+- [[Abreviações#IaaS - Infrastructure as a Service modelo de computação em nuvem que fornece recursos conforme a demanda e o uso.|IaaS]]: Fornece recursos de computação virtualizados pela Internet. O provedor hospeda o hardware, software, servidores e componentes de armazenamento, e o usuário paga por uma assinatura desses recursos.
 
 Esse tipo de serviço envolve os dois lados cliente e provedor, assim ambos tem uma responsabilidade compartilhada como pode ver a seguir:
 
 ![[Tabela Cliente Nuvem.webp|IaaS x PaaS x SaaS]]
 ## Segurança de dados na nuvem
+
 Em relação aos dados do cliente eles podem ser protegidos de formas diferentes,  <span style="color:rgb(255, 255, 0)">Dados em Repouso</span> que é quando nenhum usuário ou processo os acessa, solicita ou altera, esses podem ser armazenados em dispositivos locais, como um disco rígido em um computador ou uma rede centralizada, como um servidor da empresa. Na computação em nuvem, os dados inativos podem ser armazenados em uma nuvem e podem ser acessados em qualquer computador conectado à Internet, geralmente com assinatura.  <span style="color:rgb(255, 255, 0)">Dados em Transito</span> que refere-se aos que não estão inativos nem estão sendo processados. A transmissão pode ocorrer em um único servidor ao longo das linhas de barramento da [[Placa Mae]], entre dispositivos em uma única rede ou entre redes e, possivelmente, através da Internet. E por fim os <span style="color:rgb(255, 255, 0)">Dados em Processo</span> que se refere aos dados durante a entrada inicial, a modificação, o cálculo ou a saída. Todos esses dados devem ser protegidos via [[Criptografia]] e/ou [[Hash]].
 
 # Modulo 8: Criptografia
+
 Acessar o arquivo [[Criptografia]] para ver sobre esse tópico.
 
 ## Ofuscação de Dados
@@ -303,7 +337,7 @@ Conversão de Endereços de Rede (**NetWork Address Translation**) e Tradução 
 
 A figura ilustra a relação entre endereços internos e externos que são usados como **endereços de origem** (Source Address, SA) e **endereços de destino** (Destination Address, DA). Esses endereços internos e externos estão em uma rede que está usando NAT para se comunicar com um destino na Internet. Se o PAT estiver em vigor e todos os endereços IP que saem da rede usarem o endereço global 209.165.200.226 interno para tráfego na Internet, pode ser difícil registrar o dispositivo interno específico que está solicitando e recebendo o tráfego quando ele entra na rede.
 
-Esse problema pode ser especialmente relevante com dados NetFlow (comentado mais adiante). Os fluxos de NetFlow são unidirecionais e são definidos pelos endereços e portas que eles compartilham. O NAT basicamente quebrará um fluxo que passa por um gateway NAT, tornando as informações de fluxo além desse ponto indisponíveis.
+Esse problema pode ser especialmente relevante com dados NetFlow (protocolo da cisco para coletar dados). Os fluxos de NetFlow são unidirecionais e são definidos pelos endereços e portas que eles compartilham. O NAT basicamente quebrará um fluxo que passa por um gateway NAT, tornando as informações de fluxo além desse ponto indisponíveis.
 
 ![[Network Address Translation.webp|SA e DA]]
 
@@ -331,104 +365,78 @@ Tor apresenta uma série de desafios aos analistas de segurança cibernética. P
 # Modulo 10: Dados de Segurança Do Rede
 ## Tipos de dados
 ### Dados de alerta
-Os dados de alerta consistem em mensagens geradas por sistemas de prevenção de intrusões (IPSs) ou sistemas de detecção de intrusões (IDSs) em resposta ao tráfego que viola uma regra ou corresponde à assinatura de uma exploração conhecida. Um IDS de rede (NIDS), como o [[Snort|Snort]], vem configurado com regras para explorações conhecidas. Os alertas são gerados e são legíveis e pesquisáveis pelos aplicativos Sguil e Squert, que fazem parte do conjunto Security Onion de ferramentas NSM.
-Um site de teste que é usado para determinar se o Snort está funcionando é o site [tesmyids](https://testmynids.org/). Consiste em uma única página da Web que exibe apenas o seguinte texto **uid=0(root) gid=0(root) groups=0(root)**. Se o Snort estiver funcionando corretamente e um host visitar este site, uma assinatura será correspondida e um alerta será acionado. Esta é uma maneira fácil e inofensiva de verificar se o NIDS está em execução.
 
-A regra acionada é:
-
-```
-alert ip any any -> any any (msg:"GPL ATTACK\_RESPONSE id check returned root"; content:"uid=0|28|root|29|"; fast\_pattern:only; classtype:bad-unknown; sid:2100498; rev:8;)
-```
-
-Esta regra gera um alerta se **qualquer endereço IP** na rede receber dados de uma fonte externa que contenha conteúdo com texto correspondente ao padrão de **uid=0 (root)**. O alerta contém a mensagem **GPL ATTACK_RESPONSE id check retornou root**. O ID da regra Snort que foi acionada é **2100498**.
+Os dados de alerta consistem em mensagens geradas por **I**ntrusion **P**revention **S**ystem (**IPSs**) ou por um **I**ntrusion **D**etection **S**ystem (**IDSs**) em resposta ao tráfego que violam uma regra ou corresponde à assinatura de uma exploração conhecida. Um IDS de rede, como o [[Snort|Snort]], vem configurado com regras para explorações já conhecidas. Os alertas são gerados e são legíveis e pesquisáveis pelos aplicativos [Sguil](https://bammv.github.io/sguil/screenshots.html) e [Squert](https://github.com/security-onion-solutions/security-onion/wiki/squert), que fazem parte do conjunto de ferramentas **Security Onion**. Um site de teste que é usado para determinar se o **Snort** está funcionando é o site [tesmyids](https://testmynids.org/). Se o Snort estiver funcionando corretamente e um host visitar este site, uma assinatura será correspondida e um alerta será acionado. Esta é uma maneira fácil e inofensiva de verificar se o [[Abreviações#NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas.|NIDS]] está em execução.
 
 A linha destacada na figura exibe um alerta Sguil que foi gerado visitando o site testmyids. A regra Snort e os dados do pacote para o conteúdo recebido da página da Web testmyvids são exibidos na área inferior direita da interface Sguil.
 
-![[Console Sguil mostrando o alerta de teste do Snort IDS.webp|Sguil com alerta Snor]]
+![[Console Sguil mostrando o alerta de teste do Snort IDS.webp|Sguil com alerta Snort]]
 
 ### Dados de Sessão e Transação
-1. **ts**: carimbo de data e hora
-2. **uid**: ID de sessão única
-3. **id.orig_h**: Endereço IP do host que originou a sessão (endereço de origem)
-4. **id.orig_p**: porta de protocolo para o host de origem (porta de origem)
-5. **id.resp_h**: Endereço IP do host que responde ao host de origem (endereço de destino)
-6. **id.resp_p**: protocolo de host respondente (porta de destino)
-7. **proto**: protocolo de camada de transporte para sessão
-8. **service**: protocolo de camada de aplicativo
-9. **duration**: duração da sessão
-10. **orig_bytes**: bytes do host de origem
-11. **resp_bytes**: bytes do host respondente
-12. **orig_packets**: pacotes do host de origem
-13. **resp_packets**:pacotes do host respondente
 
-Os dados de sessão são um registro de uma conversa entre dois pontos de extremidade de rede, que geralmente são um cliente e um servidor. O servidor pode estar dentro da rede corporativa ou em um local acessado pela Internet. Dados de sessão são dados sobre a sessão, não os dados recuperados e usados pelo cliente. Os dados da sessão incluirão informações de identificação, como **as cinco tuplas** de endereços IP de origem e destino, números de porta de origem e destino, e o código IP do protocolo em uso. Os dados sobre a sessão geralmente incluem um ID de sessão, a quantidade de dados transferidos por origem e destino e informações relacionadas à duração da sessão.
+Os **dados de sessão** são um registro de uma **conversa entre dois pontos** de extremidade de rede, que geralmente são um cliente e um servidor. O servidor pode estar dentro da rede corporativa ou em um local acessado pela Internet. Os dados da sessão incluirão informações de identificação, como **as cinco tuplas** de endereços IP de origem e destino, números de porta de origem e destino, e o código IP do protocolo em uso. **Os dados sobre a sessão geralmente incluem**, um ID de sessão, a quantidade de dados transferidos por origem e destino e informações relacionadas à duração da sessão.
 
-Zeek, anteriormente Bro, é uma ferramenta de monitoramento de segurança de rede que você usará em laboratórios mais tarde no curso. A figura mostra uma saída parcial para três sessões HTTP a partir de um log de conexão Zeek. As explicações dos campos são mostradas abaixo da figura.
+A figura mostra uma saída parcial para três sessões HTTP a partir de um log de conexão [[Zeek]].
 
 ![[Dados de Sessão Zeek - Conteúdo Parcial.webp|Zeek]]
 
-Os dados de transação consistem nas mensagens que são trocadas durante sessões de rede. Essas transações podem ser exibidas em transcrições de captura de pacotes. Os logs de dispositivos mantidos por servidores também contêm informações sobre as transações que ocorrem entre clientes e servidores. Por exemplo, uma sessão pode incluir o download de conteúdo de um servidor web, como mostrado na figura. As transações que representam as solicitações e respostas seriam registradas em um log de acesso no servidor ou por um NIDS como Zeek. A sessão é todo o tráfego envolvido na elaboração da solicitação, a transação é a própria solicitação.
+1. **ts**: Carimbo de data e hora.
+2. **uid**: ID de sessão única.
+3. **id.orig_h**: Endereço IP do host que originou a sessão (endereço de origem).
+4. **id.orig_p**: Porta de protocolo para o host de origem (porta de origem).
+5. **id.resp_h**: Endereço IP do host que responde ao host de origem (endereço de destino).
+6. **id.resp_p**: Protocolo de host respondente (porta de destino).
+7. **proto**: Protocolo de camada de transporte para sessão.
+8. **service**: Protocolo de camada de aplicativo.
+9. **duration**: Duração da sessão.
+10. **orig_bytes**: Bytes do host de origem.
+11. **resp_bytes**: Bytes do host respondente.
+12. **orig_packets**: Pacotes do host de origem.
+13. **resp_packets**: Pacotes do host respondente.
 
-![[Dados de transação.webp|Dados em Transação]]
+Os dados de transação consistem nas mensagens que são trocadas durante sessões de rede. Essas transações podem ser exibidas em transcrições de captura de pacotes. Os logs de dispositivos mantidos por servidores também contêm informações sobre as transações que ocorrem entre clientes e servidores. Por exemplo, uma sessão pode incluir o download de conteúdo de um servidor web, como mostrado na figura. As transações que representam as solicitações e respostas seriam registradas em um log. A sessão é todo o tráfego envolvido na elaboração da solicitação, a transação é a própria solicitação.
+
+![[Dados de Transação.webp|Dados em Transação]]
 
 ### Dados Estáticos
-Como dados de sessão, dados estatísticos são sobre tráfego de rede. Os dados estatísticos são criados através da análise de outras formas de dados de rede. Podem ser feitas conclusões que descrevem ou predizem o comportamento da rede a partir dessas análises. As características estatísticas do comportamento normal da rede podem ser comparadas ao tráfego de rede atual em um esforço para detectar anomalias. As estatísticas podem ser usadas para caracterizar quantidades normais de variação nos padrões de tráfego de rede, a fim de identificar condições de rede que estão significativamente fora desses intervalos. Diferenças estatisticamente significativas devem gerar alarmes e investigação imediata.
 
-A <span style="color:rgb(255, 255, 0)">NBA</span> (**Network Behavior Analysis**) e a <span style="color:rgb(255, 255, 0)">NBAD</span> (**Network Behavior Anomaly Detection**) são abordagens para monitoramento de segurança de rede que usam técnicas analíticas avançadas para analisar dados de telemetria de rede NetFlow ou <span style="color:rgb(255, 255, 0)">IPFIX</span> (**Internet Protocol Flow Information Export**). 
+Os dados estatísticos são criados através da análise de outras formas de dados de rede. Podem ser feitas conclusões que descrevem ou predizem o comportamento da rede a partir dessas análises. As características estatísticas do comportamento normal da rede podem ser comparadas ao tráfego de rede atual em um esforço para detectar anomalias. As estatísticas podem ser usadas para caracterizar quantidades normais de variação nos padrões de tráfego de rede, a fim de identificar condições de rede que estão significativamente fora desses intervalos. Diferenças estatisticamente significativas devem gerar alarmes e investigação imediata.
+
+As abordagens **N**etwork **B**ehavior **A**nalysis (**NBA**) e a **NBA** **D**etection (**NBAD**)  usam técnicas analíticas avançadas para analisar dados de telemetria de rede NetFlow ou **I**nternet **P**rotocol **F**low **I**nformation **E**xport (**IPFIX**). 
 
 ## Logs de dispositivos
 ### Logs de Host
-Conforme discutido anteriormente, os sistemas de detecção de intrusão baseados em host (HIDS) são executados em hosts individuais. HIDS não só detecta intrusões, mas na forma de firewalls baseados em host, também pode impedir intrusões. Este software cria logs e os armazena no host. Isso pode dificultar a visão do que está acontecendo em hosts na empresa, pois muitas proteções baseadas em host têm uma maneira de enviar logs para servidores centralizados de gerenciamento de logs. Dessa forma, os logs podem ser pesquisados a partir de um local central usando as ferramentas NSM.
 
-Os sistemas HIDS podem usar agentes para enviar logs para servidores de gerenciamento. O OSSEC, um HIDS de código aberto popular, inclui uma funcionalidade robusta de coleta e análise de logs. Pesquise OSSEC na internet para saber mais. O Microsoft Windows inclui vários métodos para coleta e análise automatizadas de logs de host. Tripwire oferece um HIDS para Linux que inclui funcionalidade semelhante.
+Os [[Abreviações#HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas.|HIDS]] são executados em hosts individuais, eles não só detecta intrusões, mas na forma de firewalls baseados em host podem impedir intrusões. Este software cria logs e os armazena no host. Isso pode dificultar a visão do que está acontecendo em hosts na empresa, pois muitas proteções baseadas em host têm uma maneira de enviar logs para servidores centralizados de gerenciamento de logs, onde eles podem ser pesquisados e analisados. Os sistemas HIDS podem usar agentes para enviar logs para servidores de gerenciamento.
 
-Os logs de host do Microsoft Windows são visíveis localmente pelo Visualizador de Eventos. O Visualizador de Eventos mantém cinco tipos de logs:
-
-- **Logs de aplicativos** — Eles contêm eventos registrados por vários aplicativos.
-- **Registros do sistema** — Isso inclui eventos relacionados à operação de drivers, processos e hardware.
-- **Registros de instalação** — Estes registram informações sobre a instalação de software, incluindo atualizações do Windows.
-- **Registros de segurança** — Esses eventos registram relacionados à segurança, como tentativas de logon e operações relacionadas ao gerenciamento e acesso de arquivos ou objetos.
-- **Logs da linha de comando** - Os invasores que obtiveram acesso a um sistema e alguns tipos de malware executam comandos via CLI em vez de uma GUI. A execução da linha de comando em log fornecerá visibilidade para esse tipo de incidente.
-
-Vários logs podem ter diferentes tipos de eventos. Os logs de segurança consistem apenas em mensagens de falha ou êxito de auditoria. Em computadores Windows, o log de segurança é realizado pelo Local Security Authority Subsystem Service (LSASS), que também é responsável por impor diretivas de segurança em um host Windows. O LSASS é executado como lsass.exe. Ele é frequentemente falsificado por malware. Ele deve estar sendo executado a partir do diretório System32 do Windows. Se um arquivo com esse nome, ou um nome camuflado, como 1sass.exe, estiver em execução ou em execução a partir de outro diretório, ele pode ser malware.
-
-Os Eventos do Windows são identificados por números de ID e descrições breves. Uma enciclopédia de IDs de eventos de segurança, algumas com detalhes adicionais, está disponível no Ultimate Windows Security na Web. A tabela explica o significado dos cinco tipos de eventos de log de host do Windows.
-
-|Tipo de evento|Descrição|
-|---|---|
-|Erro|Um erro é um evento que indica um problema significativo, como perda de dados ou perda de funcionalidade. Por exemplo, se um serviço falhar ao carregar durante a inicialização, um evento de erro será registrado.|
-|Aviso|Um aviso é um evento que não é necessariamente significativo, mas pode indicar um possível problema futuro. Por exemplo, quando o espaço em disco é baixo, um evento de aviso é registrado. Se um aplicativo pode se recuperar de um evento sem perda de funcionalidade ou dados, ele geralmente pode classificar o evento como um evento de aviso.|
-|Informações|Um evento informativo descreve a operação bem-sucedida de um aplicativo, driver ou serviço. Por exemplo, quando um driver de rede é carregado com êxito, pode ser apropriado registrar um evento de informações. Observe que geralmente é inapropriado para um aplicativo de área de trabalho registrar um evento cada vez que ele é iniciado.|
-|Sucesso na Auditoria|Uma auditoria bem-sucedida é um evento que registra uma tentativa de acesso de segurança auditada com êxito. For example, a user's successful attempt to log on to the system is logged as a success audit event.|
-|Falha ne Auditoria|Uma auditoria de falha é um evento que registra uma tentativa de acesso de segurança auditada que falha. Por exemplo, se um usuário tentar acessar uma unidade de rede e falhar, a tentativa é registrada como um evento de auditoria de falha.|
 ### Syslog
-Syslog é um protocolo cliente / servidor. O Syslog foi definido dentro do grupo de trabalho Syslog do IETF (RFC 5424) e é suportado por uma grande variedade de dispositivos e receptores em várias plataformas. O Syslog inclui especificações para formatos de mensagem, uma estrutura de aplicativos cliente-servidor e protocolo de rede. Muitos tipos diferentes de dispositivos de rede podem ser configurados para usar o padrão syslog para registrar eventos.
 
-O remetente do Syslog envia uma pequena mensagem de texto para o receptor do Syslog. O receptor Syslog é comumente chamado de “syslogd”, “Syslog daemon” ou “Syslog server.“ As mensagens do Syslog podem ser enviadas via UDP (porta 514) e/ou TCP (normalmente, porta 5000). Embora existam algumas exceções, como wrappers SSL, esses dados são normalmente enviados em texto simples pela rede.
+Syslog é um protocolo cliente/servidor ele inclui especificações para formatos de mensagem, uma estrutura de aplicativos cliente-servidor e protocolo de rede. Muitos tipos diferentes de dispositivos de rede podem ser configurados para usar o padrão syslog para registrar eventos.
 
-O formato completo de uma mensagem Syslog que é visto na rede tem três partes distintas
-- **PRI** (prioridade)
-- **HEADER**
-- **MSG** (texto da mensagem)
+O remetente do Syslog envia uma pequena mensagem de texto para o receptor do Syslog. O receptor Syslog é comumente chamado de “syslogd”, “Syslog daemon” ou “Syslog server.“ As mensagens do Syslog podem ser enviadas via UDP (porta 514) e/ou TCP (normalmente porta 5000). Embora existam algumas exceções, esses dados são normalmente enviados em texto simples pela rede. O formato completo de uma mensagem Syslog que é visto na rede tem três partes distintas, a **PRI** (prioridade), o **HEADER** (indentificação), e a **MSG** (descrição).
 
-O PRI consiste em dois elementos, a <span style="color:rgb(255, 255, 0)">Facilidade</span> e a <span style="color:rgb(255, 255, 0)">Gravidade</span> da mensagem, que são ambos valores inteiros. O recurso consiste em amplas categorias de fontes que geraram a mensagem, como o sistema, o processo ou a aplicação. O valor Facility pode ser usado por servidores de log para direcionar a mensagem para o arquivo de log apropriado. A <span style="color:rgb(255, 255, 0)">gravidade</span> é um valor de <span style="color:rgb(206, 0, 86)">0</span> a <span style="color:rgb(65, 105, 255)">7</span> que define a gravidade da mensagem.
+![[SYSLOG Exemplo.png|SYSLOG]]
 
-| Valor                                          | Severidade                                                                                                                  |
-| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| <span style="color:rgb(206, 0, 86)">0</span>   | **Emergência**: sistema está inutilizável                                                                                   |
-| <span style="color:rgb(206, 0, 86)">1</span>   | **Alerta**: a ação deve ser tomada imediatamente                                                                            |
-| <span style="color:rgb(206, 0, 86)">2</span>   | **Crítico**: condições críticas que devem ser corrigidas imediatamente e indica falha em um sistema                         |
-| <span style="color:rgb(255, 255, 0)">3</span>  | **Erro**: uma falha que não é urgente, deve ser resolvida dentro de um determinado tempo                                    |
-| <span style="color:rgb(255, 255, 0)">4</span>  | **Aviso**: um erro não existe atualmente; no entanto, um erro ocorrerá no futuro se a condição não for resolvida            |
+O PRI consiste em dois elementos, a <span style="color:rgb(255, 255, 0)">Facilidade</span> e a <span style="color:rgb(255, 255, 0)">Gravidade</span> da mensagem, que são ambos valores inteiros. O recurso consiste em amplas categorias de fontes que geraram a mensagem, como o sistema, o processo ou a aplicação. O valor <span style="color:rgb(255, 255, 0)">Facilidade</span> pode ser usado por servidores de log para direcionar a mensagem para o arquivo de log apropriado. A <span style="color:rgb(255, 255, 0)">gravidade</span> é um valor de <span style="color:rgb(206, 0, 86)">0</span> a <span style="color:rgb(65, 105, 255)">7</span> que define a gravidade da mensagem.
+
+|                     Valor                      | Severidade                                                                                                                  |
+| :--------------------------------------------: | --------------------------------------------------------------------------------------------------------------------------- |
+|  <span style="color:rgb(206, 0, 86)">0</span>  | **Emergência**: Sistema está inutilizável.                                                                                  |
+|  <span style="color:rgb(206, 0, 86)">1</span>  | **Alerta**: A ação deve ser tomada imediatamente.                                                                           |
+|  <span style="color:rgb(206, 0, 86)">2</span>  | **Crítico**: Condições críticas que devem ser corrigidas imediatamente e indica falha em um sistema.                        |
+| <span style="color:rgb(255, 255, 0)">3</span>  | **Erro**: Uma falha que não é urgente, deve ser resolvida dentro de um determinado tempo.                                   |
+| <span style="color:rgb(255, 255, 0)">4</span>  | **Aviso**: Um erro não existe atualmente; no entanto, um erro ocorrerá no futuro se a condição não for resolvida.           |
 | <span style="color:rgb(65, 105, 255)">5</span> | **Aviso**: Qual ferramenta está incluída no Security Onion que é usada pelo Snort para baixar automaticamente novas regras? |
-| <span style="color:rgb(65, 105, 255)">6</span> | **Informativo**: mensagens emitidas relativas ao funcionamento normal                                                       |
-| <span style="color:rgb(65, 105, 255)">7</span> | **Depuração**: mensagens de interesse para desenvolvedores                                                                  |
+| <span style="color:rgb(65, 105, 255)">6</span> | **Informativo**: Mensagens emitidas relativas ao funcionamento normal.                                                      |
+| <span style="color:rgb(65, 105, 255)">7</span> | **Depuração**: Mensagens de interesse para desenvolvedores.                                                                 |
+
+
 ### Logs do servidor
-Os logs do servidor são uma fonte essencial de dados para o monitoramento da segurança da rede, servidores de aplicativos de rede como servidores de e-mail e Web mantêm registros de acesso e erros, servidores de proxy DNS que documentam todas as consultas DNS e respostas que ocorrem na rede são especialmente importantes. Os logs de proxy DNS são úteis para identificar hosts que possam ter visitado sites perigosos e para identificar a infiltração de dados DNS e conexões a servidores de comando e controle de malware. Muitos servidores UNIX e Linux usam syslog, outros podem usar o registro proprietário, o conteúdo dos logs muda para cada serviço 
+
+Os logs do servidor são uma fonte essencial de dados para o monitoramento da segurança da rede, servidores de aplicativos de rede como servidores de e-mail e Web mantêm registros de acesso e erros, servidores de proxy DNS que documentam todas as consultas DNS e respostas que ocorrem na rede são especialmente importantes. Os logs de proxy DNS são úteis para identificar possíveis atividades suspeitas internas e externas.
 ### Registros de Proxy
 
-Servidores proxy são dispositivos que atuam como intermediários para clientes de rede. Por exemplo, uma empresa pode configurar um proxy da Web para lidar com solicitações da Web em nome de clientes. Em vez de solicitações de recursos da Web serem enviadas diretamente para o servidor do cliente, a solicitação é enviada primeiro para um servidor proxy. O servidor proxy solicita os recursos e os retorna ao cliente. O servidor proxy gera logs de todas as solicitações e respostas. Esses logs podem ser analisados para determinar quais hosts estão fazendo as solicitações, se os destinos são seguros ou potencialmente maliciosos, e também para obter insights sobre o tipo de recursos que foram baixados.
-Proxies da Web fornecem dados que ajudam a determinar se as respostas da Web foram geradas em resposta a solicitações legítimas ou foram manipuladas para parecer respostas, mas são, de fato, explorações. Também é possível usar proxies da web para inspecionar o tráfego de saída como meio de prevenção de perda de dados (DLP). O DLP envolve a varredura do tráfego de saída para detectar se os dados que estão saindo da Web contêm informações confidenciais, confidenciais ou secretas. 
+Servidores proxy são dispositivos que atuam como intermediários para clientes de rede. Por exemplo, uma empresa pode configurar um proxy da Web para lidar com solicitações da Web em nome de clientes. Em vez de solicitações de recursos da Web serem enviadas diretamente para o servidor do cliente, a solicitação é enviada primeiro para um servidor proxy. O servidor proxy solicita os recursos e os retorna ao cliente. O servidor proxy gera logs de todas as solicitações e respostas, esses logs podem ser analisados para determinar quais hosts estão fazendo as solicitações, se os destinos são seguros ou potencialmente maliciosos. Proxies da Web fornecem dados que ajudam a determinar se as respostas da Web foram geradas em resposta a solicitações legítimas ou foram manipuladas para parecer respostas, mas são, de fato, explorações. É possível usar proxies da web para inspecionar o tráfego de saída como meio de **D**ata **L**oss **P**revention (**DLP**). O DLP envolve a varredura do tráfego de saída para detectar se os dados que estão saindo da Web contêm informações confidenciais ou secretas. 
 
 **Exemplo de log de proxy DNS via Squid**
 
@@ -452,12 +460,18 @@ Proxies da Web fornecem dados que ajudam a determinar se as respostas da Web for
 # Modulo 11: Avaliação de Alertas
 #redes #BlueTeam 
 ## Regras e Alertas
+
 Os alertas podem vir de várias fontes:
-- **[[Abreviações#NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas|NIDS]]** - [[Snort|Snort]], [[Suricata|Suricata]] e [[Zeek|Zeek]].
-- **[[Abreviações#HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas|HIDS]]** - [[OSSEC|OSSEC]], [[Wazuh|Wazuh]].
-- **Gerenciamento e monitoramento de ativos** - Sistema de detecção de ativos passivos (PADS).
-- **Transações HTTP, DNS e TCP** - Registradas pelo Zeek e [[Abreviações#PCAP = Refere-se a Packet CAPture que é um método usado para capturar e armazenar pacotes de trafego de rede.|PCAPs]].
-- **Mensagens do Syslog** - Várias fontes.
+
+- **[[Abreviações#NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas|NIDS]]**: [[Snort|Snort]], [[Suricata|Suricata]] e [[Zeek|Zeek]].
+
+- **[[Abreviações#HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas|HIDS]]**: [[OSSEC|OSSEC]], [[Wazuh|Wazuh]].
+
+- **Gerenciamento e monitoramento de ativos**: Sistema de detecção de ativos passivos (PADS).
+
+- **Transações HTTP, DNS e TCP**: Registradas pelo Zeek e [[Abreviações#PCAP = Refere-se a Packet CAPture que é um método usado para capturar e armazenar pacotes de trafego de rede.|PCAPs]].
+
+- **Mensagens do Syslog**: Várias fontes.
 
 ## Visão Geral de Alertas 
 ### Avaliando Alertas 

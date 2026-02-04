@@ -36,17 +36,17 @@
             }
           },
           {
-            "id": "d1d61adea276ebe2",
+            "id": "05aa9fc7515481eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conceitos/Criptografia.md",
+                "file": "Windows.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Criptografia"
+              "title": "Windows"
             }
           }
         ],
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "HIDS",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,11 +113,13 @@
               "title": "tg-left-sidebar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 304.5
+    "width": 283.5,
+    "collapsed": true
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -224,8 +226,14 @@
   "lastOpenFiles": [
     "TODO.md",
     "Cisco/Defesa de Rede - Cisco.md",
-    "Redes/Balanceador de Carga.md",
+    "Abreviações.md",
+    "BlueTeam/OSSEC.md",
+    "Windows.md",
+    "SYSLOG Exemplo.png",
     "Conceitos/Criptografia.md",
+    "BlueTeam/Zeek.md",
+    "BlueTeam/Snort.md",
+    "Redes/Balanceador de Carga.md",
     "Conceitos/Hash.md",
     "RedTeam/Man-in-the-Middle.md",
     "man-in-the-Man-in-the-Middle.md",
@@ -233,7 +241,6 @@
     "Tutorial Git com Obsidian.md",
     "Conceitos/Chaves Públicas e Privadas.md",
     "RedTeam/Command N Control (CNC).md",
-    "Abreviações.md",
     "Redes/Modelo OSI.md",
     "Redes/Switch.md",
     "Redes/Proxy.md",
@@ -247,10 +254,6 @@
     "Untitled 1.base",
     "Untitled.base",
     "Trash/Imagens/Img Conceitos/Alice usa chave privada.webp.webp",
-    "Cisco/Packet Tracer/PT Packet Tracer - Configurar o fortalecimento e a segurança do roteador sem fio.md",
-    "Arquitetura Computacional/Placa Mae.md",
-    "Redes/Gateway.md",
-    "BlueTeam/DNS Sinkhole.md",
     "Trash/Imagens/Img Arquitetura/Disquete.jpg",
     "Trash/Imagens/Img Arquitetura/Disquete.webp",
     "Trash/Imagens/Img Linux/LoginInterfaceGrafica.webp",
@@ -263,7 +266,6 @@
     "Trash/Imagens/Img Linux/Gerenciadores de Pacotes Linux.webp",
     "Trash/Imagens/Img Linux/ArvorePastasLinux.webp",
     "Trash/Imagens/Img Linux/FHS.webp",
-    "Trash/Imagens/Img Linux/LinuxVSWindos.webp",
     "Linux/IMG/Sem título",
     "Trash/Imagens/Img Arquitetura",
     "Excalidraw",

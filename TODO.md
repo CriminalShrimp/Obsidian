@@ -9,7 +9,7 @@
 - [x] Verificar Arquivos Após Novos Plugings
 - [/] Rever [[Defesa de Rede - Cisco]]
 	- [x] Arrumar Descrição imgs
-	- [/] Fazer e linkar abreviações 🔼 🛫 2025-12-04
+	- [-] Fazer e linkar abreviações 🔼 🛫 2025-12-04
 	- [/] Resumir textos
 		- [x] Modulo 1 📅 2025-12-05
 		- [x] Modulo 2
@@ -19,9 +19,9 @@
 		- [x] Modulo 6
 		- [x] Modulo 7
 		- [x] Modulo 8
-		- [/] Modulo 9
-		- [ ] Modulo 10
-		- [ ] Modulo 11
+		- [x] Modulo 9
+		- [x] Modulo 10
+		- [/] Modulo 11
 - [ ] [[Docker]]
 - [ ] [[Kubernetes]]
 - [ ] [[Git e GitHub]]
