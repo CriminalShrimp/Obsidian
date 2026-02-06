@@ -1,4 +1,4 @@
-Tags: #Linux #Redes #Firewall #Ataque
+Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam 
 ###### OS = Operating System, é o sistema operacional.
 ###### CLI = Command Line Interface é onde são realizados os comandos do sistema.
 ###### TTY = Teletypewriter este seria o nome técnico da interface de comando.

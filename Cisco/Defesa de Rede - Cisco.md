@@ -3,7 +3,6 @@ Sumario
 	Exercícios [[Exercicios|aqui]].
 	#Redes #Firewall #Segurança #Ferramentas #RedTeam #BlueTeam 
 	
------
 # Modulo 1: Compreendendo a Defesa
 ## Defesa em profundidade
 Objetivo: Explicar como a estratégia de Defesa de profundidade é usada para proteger as redes.
@@ -51,19 +50,24 @@ Porém esse conceito vem mudando com o tempo e agora também é usado o "alcacho
 ![[alcachofra.webp|Security Artichoke|723x496]]
 
 ## Gerenciamento de operações de Segurança Cibernética
+
 As configurações realizadas no ambiente são fundamentais para no futuro serem fitas mudanças, auditorias, controle e identificação no sistema. Configurar os arquivos de [[Abreviações#Log = Abreviação de logfile (arquivo de registro) ou logging (processo de registro de eventos|LOG]] é importante para quando for realizado uma auditoria de quando houver um ataque ou uma defesa bem sucedida, ou também para controle de atividades dos usuários, claro que quando maior a empresa mais logs são gerados.
 
-Outra coisa importante de se ter para analisar são os pacotes de rede, quando se ter ferramentas para capturar esses pacotes e analisa-los é possível saber fazer uma análise de problemas de rede, detecção de uso indevido da rede, tentativas de invasão da rede, etc. Existem vários desses analisadores como [[WireShark|WireShark]], [[Ferramentas/Ferramentas#TCPDump = O comando [tcpdump](https //www.ibm.com/docs/pt-br/aix/7.3?topic=t-tcpdump-command) imprime os cabeçalhos de pacotes em uma interface de rede que combinam com a expressão booleana. Você pode executar o comando com o sinalizador -w para salvar os dados do pacote em um arquivo para análise adicional.|TCPDump]], Ettercap, Kismet, Ngrep, Ntop, Etherape, entre outros.
+Outra coisa importante de se ter para analisar são os pacotes de rede, quando se ter ferramentas para capturar esses pacotes e analisa-los é possível saber fazer uma análise de problemas de rede, detecção de uso indevido da rede, tentativas de invasão da rede, etc. Existem vários desses analisadores como [[WireShark|WireShark]], [[TCPDump#TCPDump = O comando [tcpdump](https //www.ibm.com/docs/pt-br/aix/7.3?topic=t-tcpdump-command) imprime os cabeçalhos de pacotes em uma interface de rede que combinam com a expressão booleana. Você pode executar o comando com o sinalizador -w para salvar os dados do pacote em um arquivo para análise adicional.|TCPDump]], [[Ettercap]], [[Kismet]], [[Nmap]], entre outros.
 ## Políticas, regulamentos e padrões de segurança
 #baboseira
 
 Políticas de negócios são as diretrizes desenvolvidas por uma organização para governar suas ações, elas definem padrões de comportamento correto para a empresa e seus funcionários, delimitando o que é permitido e o que não, tanto na rede quando fisicamente. Se um comportamento que viola a política de negócios for detectado na rede, é possível que tenha ocorrido uma violação de segurança. Uma organização pode ter várias diretivas orientadoras como <span style="color:rgb(255, 255, 0)">Politica da Empresa</span> que definem as responsabilidades dos trabalhadores e suas condutas como vestimenta, privacidade, assim também como proteger seus direitos e interesses. Também existem as <span style="color:rgb(255, 255, 0)">Politicas de Funcionários  </span>que são criadas e mantidas pelos Recursos Humanos para identificar benefícios, salários, feiras, etc. E por fim as <span style="color:rgb(255, 255, 0)">Politicas de Segurança</span> que especificam requisitos do sistema, regras e comportamento dos usuários, esse conjunto de regras e requisitos garantem a segurança dos sistemas e redes de computador de uma empresa.
+
 ### Politica de Segurança 
+
 Uma política de segurança abrangente estabelece diretrizes para proteger os ativos tecnológicos e informacionais de uma organização. Seus benefícios incluem demonstrar compromisso com a segurança, definir regras de comportamento, garantir consistência nas operações, estabelecer consequências para violações e oferecer suporte da gestão ao setor de segurança. Além disso deve informar usuários, funcionários e gestores sobre os requisitos de segurança, especifica mecanismos de proteção e serve como referência para aquisição, configuração e auditoria de sistemas e redes.
 
 As políticas de segurança abrangem diversas diretrizes essenciais, como quem pode acessar a rede e os procedimentos de verificação de identidade, estabelece requisitos mínimos e a necessidade de alteração periódica das senhas, determina os aplicativos e usos permitidos na rede, além das consequências por violações, regula como e o que os usuários remotos podem acessar, define procedimentos para atualização de sistemas e aplicativos e especifica a resposta a incidentes de segurança.
 ### Políticas de BYOD
+
 É comum ver empresas com a cultura do [[Abreviações#BYOD = Bring Your Own Device, levar os próprios dispositivos para o trabalho|BYOD]], pois essa positiva traz vários benefícios para empresa como redução de custos com equipamentos para empresa, aumento na produtividade pois os colaboradores se sentem mais confortáveis usando seus dispositivos, porém para aderir essa politica é preciso também preparar o ambiente e funcionários para isso, como usar senhas exclusivas para cada dispositivo e conta, conecte-se apenas a redes confiáveis, manter sempre o sistema operacional do dispositivo e outros softwares atualizados, ativar o backup do dispositivo para evitar perda de dados em caso de roubo ou extravio, utilizar serviço de rastreamento de dispositivos que permita localização e apagamento remoto dos dados, utilizar antivírus, etc.
+
 # Modulo 2 : Defesa do Sistema e da Rede
 ## Segurança Física
 
@@ -96,6 +100,7 @@ Criminosos exploram serviços de rede vulneráveis para ataques, escaneando port
 
 <span style="color:rgb(255, 255, 0)">DMZ</span> ou <span style="color:rgb(255, 255, 0)">zona desmilitarizada</span> é uma pequena rede entre uma rede privada confiável e a Internet, servidores Web e de e-mail geralmente são colocados na DMZ para permitir que os usuários acessem uma rede não confiável, como a Internet, sem comprometer a rede interna.
 A maioria das redes tem de duas a quatro zonas de risco: a <span style="color:rgb(65, 105, 255)">LAN p</span>, a <span style="color:rgb(255, 92, 0)">DMZ</span>, a <span style="color:rgb(206, 0, 86)">Internet</span> e uma <span style="color:rgb(255, 255, 0)">extranet</span>. Na zona de LAN, o nível de <span style="color:rgb(65, 105, 255)">risco é baixo</span> e o nível de <span style="color:rgb(65, 105, 255)">confiança é alto</span>. Na zona da extranet, o nível de risco é <span style="color:rgb(255, 255, 0)">médio-baixo</span> e o nível de confiança <span style="color:rgb(255, 255, 0)">médio-alto</span>. Na DMZ, o nível de risco é <span style="color:rgb(255, 92, 0)">médio-alto</span> e o nível de <span style="color:rgb(255, 92, 0)">confiança é baixo</span>. Na zona da Internet, o nível de risco é <span style="color:rgb(206, 0, 86)">alto</span> e o nível de <span style="color:rgb(206, 0, 86)">confiança é baixo</span>.
+
 ## Resiliência de Cyber Segurança
 
 O [[Abreviações#WAP = Wi-Fi Protected Access é um padrão de segurança para dispositivos|WAP]] foi a resposta do setor de computadores para enfraquecer a utilização do padrão [[Abreviações#WEP = Wired Equivalent Privacy foi o primeiro protocolo de segurança para redes Wi-Fi.|WEP]]. A configuração mais comum de WPA é WPA-PSK (Pre-Shared Key). O WPA3 adicionou mais recursos ao WPA2, como a manutenção de algoritmos criptográficos robustos e a melhoria da troca de chaves.
@@ -140,6 +145,7 @@ Controles de acesso lógico são as <span style="color:rgb(255, 255, 0)">soluç�
 ## Controles de Acesso Administrativos
 
 O conceito de controles de acesso administrativo envolve três serviços de segurança: <span style="color:rgb(255, 255, 0)">autenticação</span>, <span style="color:rgb(255, 255, 0)">autorização</span> e <span style="color:rgb(255, 255, 0)">contabilidade</span> (**AAA**).Esses serviços fornecem a estrutura principal para controlar o acesso, impedindo o acesso não autorizado a um computador, rede, banco de dados ou outro recurso de dados. 
+
 - O primeiro A no AAA representa a <span style="color:rgb(255, 255, 0)">Autenticação</span>, ela verifica a identidade de um usuário para evitar o acesso não autorizado. Os usuários provam sua identidade com um nome de usuário ou um ID. 
 
 - Serviços de <span style="color:rgb(255, 255, 0)">Autorização</span> determinam quais recursos os usuários podem acessar, juntamente com as operações que os usuários podem realizar. Alguns sistemas fazem isso usando uma lista de controle de acesso, porem não é porque você pode se autenticar na rede corporativa que tenha permissão para usar a impressora colorida de alta velocidade.
@@ -167,6 +173,7 @@ No contexto do **IPv6**, as ACLs possuem funcionamento semelhante ao do IPv4, ma
 
 Um firewall é um sistema ou grupo de sistemas que **aplica uma política de controle de acesso** na rede, eles são resistente a ataques, reforçam a politica de controle de acesso, exposição de hosts, recursos e aplicações sensíveis a usuários não confiáveis, e bloqueia dados maliciosos.
 Existem tipos de firewalls com tecnologias e funções diferentes.
+
 ### Firewall de filtragem de pacotes (sem estado)
 
 Os firewalls de filtragem de pacotes geralmente fazem parte de um firewall de roteador, que permite ou nega tráfego com base nas informações da **Camada 3** e da **Camada 4** do [[Modelo OSI]].. Eles são firewalls sem estado que usam uma simples pesquisa de tabela de políticas que filtra o tráfego com base em critérios específicos. Por exemplo, os servidores [[Abreviações#SMTP = Simple Mail Transfer Protocol, é o protocolo de internet usado para enviar e-mails.|SMTP]] escutam a **porta 25** por padrão. Um administrador pode configurar o firewall de filtragem de pacotes para bloquear a porta 25 de uma estação de trabalho específica para evitar que ela transmita um vírus de e-mail.
@@ -175,21 +182,29 @@ Os firewalls de filtragem de pacotes geralmente fazem parte de um firewall de ro
 
 
 ### Firewall de filtragem de pacotes de estado
+
 Firewalls com estado são as tecnologias de firewall mais versáteis e mais comuns em uso. Os <span style="color:rgb(255, 255, 0)">firewalls stateful</span> fornecem filtragem de pacotes stateful mantendo o rastreamento e monitora o estado das conexões de rede ativas enquanto analisa o tráfego de entrada e procura riscos potenciais de tráfego e dados usando informações de conexão mantidas em uma tabela de estado. Filtragem com estado é uma arquitetura de firewall classificada na camada de rede. Ele também analisa o tráfego na **Camada 4** e **Camada 5** do modelo OSI.
 
 ![[Firewall de filtragem de pacotes de estado.webp|Camada OSI 3 a 5]]
 
+
 ### Web Application Firewall (WAF)
+
 Conforme mostrado na figura, esse tipo de firewall filtra as informações nas **camadas 3, 4, 5 e 7** do modelo de referência OSI. A maior parte do controle e filtragem do firewall é feita em software. Quando um cliente precisa acessar um servidor remoto, ele se conecta a um servidor [[Proxy]]. O servidor proxy se conecta ao servidor remoto em nome do cliente. Portanto, o servidor só vê uma conexão do servidor proxy.
 
 ![[Firewall de gateway de aplicativo.webp|Camada OSI 3 a 5 e 7]]
+
 ### Next-Generation Firewall (NGFW)
+
 Os firewalls de última geração (NGFW) vão além dos firewalls de estado, fornecendo prevenção de intrusão integrada, reconhecimento e controle de aplicativos para ver e bloquear aplicativos arriscados, caminhos de atualização para incluir futuros feeds de informações e técnicas para lidar com ameaças de segurança em evolução.
 
 ## Arquitetura de Segurança
+
 Existe diversos tipos de arquitetura como a <span style="color:rgb(255, 255, 0)">publica e a privada </span>onde a privada é considerada uma rede confiável, sendo esta normalmente toda a rede da empresa e a parte publica à não confiável ou não segura. Também existe a<span style="color:rgb(255, 255, 0)"> Zona Desmilitarizada</span> ou [[Abreviações#DMZ = Demilitarized Zone é uma subrede que isola serviços externos de uma organização de uma rede interna mais segura, permitindo acesso controlado à internet.|DMZ]], é um projeto de firewall onde normalmente há uma interface interna conectada à rede privada, uma interface externa conectada à rede pública e uma interface DMZ. O tráfego proveniente da rede privada é inspecionado ao se dirigir para a rede pública ou DMZ, sendo geralmente permitido sem grandes restrições. O tráfego de retorno dessas redes para a privada também é autorizado. Já o tráfego que se origina na DMZ e tenta acessar a rede privada costuma ser bloqueado, enquanto aquele que vai para a rede pública é permitido seletivamente conforme as necessidades do serviço. O tráfego vindo da rede pública para a DMZ é inspecionado e permitido apenas para serviços específicos, como e-mail, DNS, HTTP e HTTPS, com o retorno da DMZ para a rede pública sendo dinamicamente liberado. No entanto, qualquer tráfego originado na rede pública em direção à rede privada é bloqueado por questões de segurança. E por final a por <span style="color:rgb(255, 255, 0)">política baseados em zona</span> ou [[Abreviações#ZPF = Zone-Based Policy Firewalls refere-se a um sistema que divide a rede em zonas de segurança distintas aplicando políticas de segurança específicas|ZPFs]] usam o conceito de zonas para fornecer flexibilidade adicional. Uma zona é um grupo de uma ou mais interfaces que têm funções ou recursos semelhantes, as zonas ajudam a especificar onde uma regra ou política de firewall. Por padrão, o tráfego entre interfaces na mesma zona não está sujeito a nenhuma política e passa livremente. No entanto, todo o tráfego de zona para zona está bloqueado. Para permitir o tráfego entre as zonas, uma política que permite ou inspeciona o tráfego deve ser configurada.
+
 # Modulo 6: Zone-Based Policy Firewalls (ZPFs)
 #Firewall 
+
 Para criação desse projeto primeiro o administrador se concentra na separação da rede em zonas. Zonas estabelecem as fronteiras de segurança de uma rede, onde o tráfego é submetido a restrições políticas à medida que cruza para outra região da rede. Por exemplo, a rede pública seria uma zona e a rede interna seria outra zona. Após isso , deve ser projetado a infraestrutura física, levando em conta os requisitos de segurança e disponibilidade ao projetar a infraestrutura física. Isso inclui ditar o número de dispositivos entre zonas mais seguras e menos seguras e determinar dispositivos redundantes. Alguns exemplos que podem ser achados na internet são
 Lan-to-internet, Firewall-with-public-servers-1, Firewall-with-public-servers-2, Firewalls redundantes e os mais complexos.
 
@@ -475,7 +490,8 @@ Os alertas podem vir de várias fontes:
 
 ## Visão Geral de Alertas 
 ### Avaliando Alertas 
-Os incidentes de segurança são classificados usando um esquema de diagnósticos médicos, esse esquema de classificação é usado para orientar ações e avaliar procedimentos de diagnóstico. Por exemplo, quando um paciente visita um médico para um exame de rotina, uma das tarefas do médico é determinar se o paciente está doente. Um dos resultados pode ser uma determinação correta de que a doença está presente e o paciente está doente. Outro resultado pode ser que não há doença e o paciente é saudável. A preocupação é que o diagnóstico pode ser preciso, ou verdadeiro, ou impreciso, ou falso. Por exemplo, o médico pode perder os sinais de doença e fazer a determinação incorreta de que o paciente está bem quando está de fato doente. Outro erro possível é decidir que um paciente está doente quando esse paciente é de fato saudável. 
+
+Os incidentes de segurança são classificados usando um esquema parecido com os de diagnósticos médicos, esse esquema de classificação é usado para orientar ações e avaliar procedimentos de diagnóstico. Por exemplo, quando um paciente visita um médico para um exame de rotina, uma das tarefas do médico é determinar se o paciente está doente. Um dos resultados pode ser uma determinação correta de que a doença está presente e o paciente está doente. Outro resultado pode ser que não há doença e o paciente é saudável. A preocupação é que o diagnóstico pode ser preciso, ou verdadeiro, ou impreciso, ou falso. Por exemplo, o médico pode perder os sinais de doença e fazer a determinação incorreta de que o paciente está bem quando está de fato doente. Outro erro possível é decidir que um paciente está doente quando esse paciente é de fato saudável. 
 
 Na análise de segurança de rede, o analista de segurança cibernética é apresentado com um alerta. Isso é semelhante a um paciente indo ao médico e dizendo: “Estou doente”. O analista de segurança cibernética, como o médico, precisa determinar se esse diagnóstico é verdadeiro. O analista de segurança cibernética pergunta: “O sistema diz que ocorreu uma exploração. Isso é verdade?”. Os alertas podem ser classificados da seguinte forma:
 
@@ -489,12 +505,12 @@ Uma situação alternativa é que um alerta não foi gerado. A ausência de um a
 
 <span style="color:rgb(255, 255, 0)">Falso Negativo</span>: Ocorreu um incidente não detectado.
 
-| **Quando um alerta é emitido, ele receberá uma das quatro classificações possíveis.** | True                     | False                    |
-| ------------------------------------------------------------------------------------- | ------------------------ | ------------------------ |
-| **Positivo (Alerta existe)**                                                          | Ocorreu um incidente     | Nenhum incidente ocorreu |
-| **Negativo (Nenhum alerta existe)**                                                   | Nenhum incidente ocorreu | Ocorreu um incidente     |
+| **Quando um alerta é emitido, ele receberá uma das quatro classificações possíveis.** |           True           |          False           |
+| :------------------------------------------------------------------------------------ | :----------------------: | :----------------------: |
+| **Positivo (Alerta existe)**                                                          |   Ocorreu um incidente   | Nenhum incidente ocorreu |
+| **Negativo (Nenhum alerta existe)**                                                   | Nenhum incidente ocorreu |   Ocorreu um incidente   |
 
-**Nota:** eventos “verdadeiros” são desejáveis. Eventos “falsos” são indesejáveis ​​e potencialmente perigosos.
+**Nota:** eventos “<span style="color:rgb(0, 176, 80)">verdadeiros</span>” são <span style="color:rgb(0, 176, 80)">desejáveis</span>. Eventos “<span style="color:rgb(206, 0, 86)">falsos</span>” são <span style="color:rgb(206, 0, 86)">indesejáveis</span> ​​e potencialmente <span style="color:rgb(206, 0, 86)">perigosos</span>.
 
 **<span style="color:rgb(255, 255, 0)">Verdadeiros positivos</span>** são o tipo de alerta desejado. Eles significam que as regras que geram alertas funcionaram.
 
@@ -504,12 +520,15 @@ Uma situação alternativa é que um alerta não foi gerado. A ausência de um a
 
 **<span style="color:rgb(255, 255, 0)">Falsos negativos</span>** são perigosos. Eles indicam que as explorações não estão sendo detectadas pelos sistemas de segurança que estão em vigor.
 
-Quando os verdadeiros positivos são suspeitos, um analista de segurança cibernética às vezes é obrigado a escalar o alerta para um nível mais alto. Essas informações serão usadas por mais funcionários de segurança sênior que trabalharão para isolar os danos, solucionar vulnerabilidades, mitigar a ameaça e lidar com os requisitos de relatórios. Um analista de segurança cibernética também pode ser responsável por informar o pessoal de segurança de que falsos positivos estão ocorrendo na medida em que o tempo do analista de segurança cibernética é seriamente afetado. Esta situação indica que os sistemas de monitoramento de segurança precisam ser ajustados para se tornarem mais eficientes. Falsos negativos podem ser descobertos bem depois de uma exploração ter ocorrido.
+Quando os verdadeiros positivos são suspeitos, um analista de segurança cibernética às vezes é obrigado a escalar o alerta para um nível mais alto. Essas informações serão usadas por mais funcionários de segurança que trabalharão para isolar os danos, solucionar vulnerabilidades, mitigar a ameaça e lidar com os requisitos de relatórios. Um analista de segurança cibernética também pode ser responsável por informar o pessoal de segurança de que falsos positivos estão ocorrendo na medida em que o tempo do analista de segurança cibernética é seriamente afetado. Esta situação indica que os sistemas de monitoramento de segurança precisam ser ajustados para se tornarem mais eficientes. Falsos negativos podem ser descobertos bem depois de uma exploração ter ocorrido.
 ### Análise Determinística e Análise Probabilística
-Técnicas estatísticas podem ser usadas para avaliar o risco de que as explorações serão bem-sucedidas em uma determinada rede. Duas abordagens gerais utilizadas para isso são a análise determinística e probabilística, a <span style="color:rgb(255, 255, 0)">análise determinística</span> avalia o risco com base no que é conhecido sobre uma vulnerabilidade, nessa abordagem para que a exploração seja bem-sucedida, todas as etapas anteriores do processo de exploração também devem ser. Em uma análise determinística, toda a informação para realizar uma exploração é assumida <span style="color:rgb(255, 255, 0)">como sendo conhecida</span>. As características da exploração, como o uso de números de porta específicos, são conhecidas de outras instâncias da exploração ou porque portas padronizadas estão em uso.
+
+Existem duas abordagens gerais utilizadas para analisar os riscos de explorações são a **análise determinística** e **probabilística**, a <span style="color:rgb(255, 255, 0)">análise determinística</span> avalia o risco com base no que é conhecido sobre uma vulnerabilidade, nessa abordagem para que a exploração seja bem-sucedida, todas as etapas anteriores do processo de exploração também devem ser. Em uma análise determinística, toda a informação para realizar uma exploração é assumida <span style="color:rgb(255, 255, 0)">como sendo conhecida</span>. As características da exploração, como o uso de números de porta específicos, são conhecidas de outras instâncias da exploração ou porque portas padronizadas estão em uso.
 
 A <span style="color:rgb(255, 255, 0)">análise probabilística</span> estima o sucesso potencial de uma exploração, estimando a probabilidade de que, se uma etapa de uma exploração tiver sido concluída com sucesso, a próxima etapa também será bem-sucedida. A análise probabilística é especialmente útil na análise de segurança de rede em tempo real, as técnicas estatísticas que são projetadas para estimar a probabilidade de que um evento ocorrerá com base na probabilidade de ocorrerem eventos anteriores. Usando esse tipo de análise, os caminhos mais prováveis que uma exploração tomará podem ser estimados e a atenção do pessoal de segurança pode ser focada nesses pontos. Na análise probabilística, presume-se que os números de porta que serão utilizados só podem ser <span style="color:rgb(255, 255, 0)">previstos com algum grau de confiança</span>. Nessa situação, uma exploração que usa números de porta dinâmicos, por exemplo, não pode ser analisada deterministicamente. Tais explorações foram otimizadas para evitar a detecção por firewalls que usam regras estáticas.
 
 Em resumo:
+
 - **Análise Determinística** - Para que uma exploração seja bem-sucedida, todas as etapas anteriores da exploração também devem ser bem-sucedidas. O analista de segurança cibernética conhece as etapas para uma exploração bem-sucedida.
+
 - **Análise Probabilística** - Técnicas estatísticas são usadas para determinar a probabilidade de que uma exploração bem-sucedida ocorrerá com base na probabilidade de que cada etapa da exploração seja bem-sucedida.

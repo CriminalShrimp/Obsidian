@@ -1,16 +1,18 @@
 ## Obisidan 2026
 - [/] [[Kernel]]
+- [ ] [[Ettercap]]
+- [ ] [[Kismet]]
 - [ ] [[Suricata]]
 - [ ] [[Zeek]]
 - [ ] [[Zero-Trust]]
 - [ ] [[Chaves Públicas e Privadas]]
-- [/] Em [[Defesa de Rede - Cisco#Gerenciamento de operações de segurança cibernética|Gerenciamento de operações de Segurança Cibernética]] falar mais sobreas as outras tecnologias
+- [x] Em [[Defesa de Rede - Cisco#Gerenciamento de operações de segurança cibernética|Gerenciamento de operações de Segurança Cibernética]] falar mais sobreas as outras tecnologias
 - [ ] [[HoneyPots]]
 - [x] Verificar Arquivos Após Novos Plugings
-- [/] Rever [[Defesa de Rede - Cisco]]
+- [x] Rever [[Defesa de Rede - Cisco]] 📅 2026-02-05
 	- [x] Arrumar Descrição imgs
-	- [-] Fazer e linkar abreviações 🔼 🛫 2025-12-04
-	- [/] Resumir textos
+	- [x] Fazer e linkar abreviações 🔼 🛫 2025-12-04
+	- [x] Resumir textos
 		- [x] Modulo 1 📅 2025-12-05
 		- [x] Modulo 2
 		- [x] Modulo 3
@@ -21,7 +23,7 @@
 		- [x] Modulo 8
 		- [x] Modulo 9
 		- [x] Modulo 10
-		- [/] Modulo 11
+		- [x] Modulo 11
 - [ ] [[Docker]]
 - [ ] [[Kubernetes]]
 - [ ] [[Git e GitHub]]
@@ -48,5 +50,6 @@
 - [ ] [[Backdoors]]
 - [ ] [[Spoofing]]
 - [ ] [[Placa Mae]]
-- [/] Dar uma geral em [[Criptografia]]
+- [x] Dar uma geral em [[Criptografia]]
+- [ ] Fazer a criação de Sumario nos arquivos.
 - [?] Usar as marcações em hmtl para centralizar e dar descrição as imagens

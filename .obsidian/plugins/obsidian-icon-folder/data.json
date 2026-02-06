@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🪟",
+      "LiComputer",
       "FeCiscoSvgrepoCom",
       "CiCiscoSvgrepoCom",
-      "LiListTodo",
-      "LiTrash",
-      "LiBookA"
+      "LiListTodo"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -58,5 +58,6 @@
   },
   "Trash/Imagens": "LiImage",
   "TODO.md": "LiListTodo",
-  "Cisco": "FeCiscoSvgrepoCom"
+  "Cisco": "FeCiscoSvgrepoCom",
+  "Windows": "🪟"
 }
