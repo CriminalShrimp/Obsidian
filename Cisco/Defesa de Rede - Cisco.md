@@ -1,8 +1,15 @@
 Sumario
 	Maratona de Ciber Segurança Gratuita da Cisco
 	Exercícios [[Exercicios|aqui]].
-	#Redes #Firewall #Segurança #Ferramentas #RedTeam #BlueTeam 
-	
+	Tags
+		#Redes 
+		#Firewall 
+		#Segurança 
+		#Ferramentas 
+		#RedTeam 
+		#BlueTeam 
+		
+----
 # Modulo 1: Compreendendo a Defesa
 ## Defesa em profundidade
 Objetivo: Explicar como a estratégia de Defesa de profundidade é usada para proteger as redes.

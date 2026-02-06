@@ -1,5 +1,6 @@
 ## Obisidan 2026
 - [/] [[Kernel]]
+- [ ] [[Central Processing Unit (CPU)]]
 - [ ] [[Ettercap]]
 - [ ] [[Kismet]]
 - [ ] [[Suricata]]
@@ -51,5 +52,5 @@
 - [ ] [[Spoofing]]
 - [ ] [[Placa Mae]]
 - [x] Dar uma geral em [[Criptografia]]
-- [ ] Fazer a criação de Sumario nos arquivos.
+- [/] Fazer a criação de Sumario nos arquivos.
 - [?] Usar as marcações em hmtl para centralizar e dar descrição as imagens
