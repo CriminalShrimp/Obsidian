@@ -26,7 +26,7 @@ Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam
 ###### NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas.
 ###### HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas.
 ###### PCAP = Refere-se a Packet CAPture que é um método usado para capturar e armazenar pacotes de trafego de rede.
-###### SSL = Secure Socket Layer.
+###### SSL = Secure Socket Layer, é um protocolo de segurança que criptografa a conexão entre navegadores e servidores, protegendo dados sensíveis.
 
 ###### BIOS = Basic Input/Output System que significa as entradas e saídas básicas do sistema
 ###### EFI/UEFI = (Unified) Extensible Firmware Interface é um padrão moderno de firmware(software embutido em dispositivos de hardware) que substitui o antigo BIOS.
