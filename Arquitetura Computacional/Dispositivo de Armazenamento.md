@@ -1,12 +1,12 @@
 ## Disquete
 
-Muito usado ate os anos 2000 o disquete usa memória de disco magnético para guardar dados, tendo uma capacidade de 360 KB a 2,88 MB que na época era o suficiente para os arquivos, porem hj em dia são insuficientes. Algo que acontecia era que quando passavam em portas giratórias os disquetes tinham seus dados apagados por contas dos imãs.
+Muito usado ate os anos 2000 o disquete usa memória de disco magnético para guardar dados, tendo uma capacidade de 360 KB a 2,88 MB que na época era o suficiente para os arquivos, porém hj em dia são insuficientes. Algo que acontecia era que quando passavam em portas giratórias os disquetes tinham seus dados apagados por contas dos imãs.
 
 ![[Disquete.jpg|Disquete]]
 
 ## CD, DVD e Blu-ray
 
-Todos esses são disco óptico que utilizam luz como teologia para armazenamento, sendo o <span style="color:rgb(255, 255, 0)">CD</span> a ficar mais popular, com sua capacidade de armazenamento sendo de 700 MB mas possuindo variações com ate 900MB. Após isso veio o <span style="color:rgb(255, 255, 0)">DVD</span> usando a mesma tecnologia, porem agora com a camada única q pode armazenar ate 4,7 GB e também existe o de camada dubla que chega ate 8,5 GB e ainda existe a dupla face com camada única tem 9,4 GB e o de dupla camada para 17 GB. Essa diferença de poder de armazenamento se deve a um laser mais fino na gravação, q faz uma trilha mais fina na hora de gravar. Assim como o DVD o <span style="color:rgb(65, 105, 255)">Blu-ray</span> tinha discos com diferentes camadas o de camada única armazenam 25 GB e de camada dupla chegando a armazenar 50 GB e mais para frente saíram os <span style="color:rgb(65, 105, 255)">BDXL</span> (**B**lu-ray **D**isc E**X**tra **L**arge), que são discos Blu-ray com capacidade superior chegam de 100 GB a 128 GB. Assim como a diferença entre o CD e o DVD, do DVD para o Blu-ray foi um laser mais fino para a gravação.
+Todos esses são disco óptico que utilizam luz como teologia para armazenamento, sendo o <span style="color:rgb(255, 255, 0)">CD</span> a ficar mais popular, com sua capacidade de armazenamento sendo de 700 MB mas possuindo variações com ate 900MB. Após isso veio o <span style="color:rgb(255, 255, 0)">DVD</span> usando a mesma tecnologia, porém agora com a camada única q pode armazenar ate 4,7 GB e também existe o de camada dubla que chega ate 8,5 GB e ainda existe a dupla face com camada única tem 9,4 GB e o de dupla camada para 17 GB. Essa diferença de poder de armazenamento se deve a um laser mais fino na gravação, q faz uma trilha mais fina na hora de gravar. Assim como o DVD o <span style="color:rgb(65, 105, 255)">Blu-ray</span> tinha discos com diferentes camadas o de camada única armazenam 25 GB e de camada dupla chegando a armazenar 50 GB e mais para frente saíram os <span style="color:rgb(65, 105, 255)">BDXL</span> (**B**lu-ray **D**isc E**X**tra **L**arge), que são discos Blu-ray com capacidade superior chegam de 100 GB a 128 GB. Assim como a diferença entre o CD e o DVD, do DVD para o Blu-ray foi um laser mais fino para a gravação.
 
 <figure style="text-align: center;">
   <img src="Cd,DvD,BlueRay.webp" style="margin: 0 auto;">
@@ -25,7 +25,7 @@ Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de
 
 ## HD/HDD
 
-**H**ardware **D**isc **D**rive ou Discos Rígidos usa armazenamento magnético e um ou mais pratos (que seriam os discos) para salvar gravar os dados. A gravação e a leitura dos dados são feitas por um braço móvel, esses dados são acessados de forma aleatória. Como os HDs estão no mercado a muito tempo, existem varias tecnologia que melhoram seu desempenho e também possuem varias capacidade distintas, tendo alguns modelos de 128 GB e alguns que hoje em dia  chegam ate 20 TB, e no mercado também existem HDs moveis e são os <span style="color:rgb(255, 255, 0)">HDs Externo</span> que tem o mesmo funcionamento dos HDs normais, porem de uma forma mais segura a ser transportado no dia a dia.
+**H**ardware **D**isc **D**rive ou Discos Rígidos usa armazenamento magnético e um ou mais pratos (que seriam os discos) para salvar gravar os dados. A gravação e a leitura dos dados são feitas por um braço móvel, esses dados são acessados de forma aleatória. Como os HDs estão no mercado a muito tempo, existem varias tecnologia que melhoram seu desempenho e também possuem varias capacidade distintas, tendo alguns modelos de 128 GB e alguns que hoje em dia  chegam ate 20 TB, e no mercado também existem HDs moveis e são os <span style="color:rgb(255, 255, 0)">HDs Externo</span> que tem o mesmo funcionamento dos HDs normais, porém de uma forma mais segura a ser transportado no dia a dia.
 
 ![[HD Explicado.webp|HD]]
 ## SSD

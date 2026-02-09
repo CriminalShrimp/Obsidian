@@ -152,5 +152,5 @@ shutdown <span style="color:rgb(65, 105, 255)">Opções</span> <span style="colo
 **<span style="color:rgb(65, 105, 255)">-h</span>,** <span style="color:rgb(0, 176, 80)">TIME</span>
 	 Colocando `now` faz com que o sistema seja desligado na hora. Também da para colocar tempo especifico para desligar o sistema 
 Ex: `shutdown -h 10:00 "Shutting down for scheduled maintenance."`
-###### halt - Para o sistema operacional porem ainda deixa a maquina ligada.
-###### poweroff - Parecido com shutdown porem funciona de uma forma mais "bruta", cortando a energia do sistema, não rodando scripts e rotinas antes de desligar.
+###### halt - Para o sistema operacional porém ainda deixa a maquina ligada.
+###### poweroff - Parecido com shutdown porém funciona de uma forma mais "bruta", cortando a energia do sistema, não rodando scripts e rotinas antes de desligar.
