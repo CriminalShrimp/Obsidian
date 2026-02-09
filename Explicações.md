@@ -1,5 +1,5 @@
 
-Ainda não sei o que vai virar isso aqui mas preciso 
+Ainda não sei o que vai virar isso aqui.
 
 ## Computação
 

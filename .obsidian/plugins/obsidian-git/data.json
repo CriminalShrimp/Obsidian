@@ -42,7 +42,7 @@
   },
   "lineAuthor": {
     "show": false,
-    "followMovement": "inactive",
+    "followMovement": "same-commit",
     "authorDisplay": "initials",
     "showCommitHash": false,
     "dateTimeFormatOptions": "date",
@@ -61,7 +61,7 @@
     },
     "textColorCss": "var(--text-muted)",
     "ignoreWhitespace": false,
-    "gutterSpacingFallbackLength": 5,
+    "gutterSpacingFallbackLength": 15,
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
   }
