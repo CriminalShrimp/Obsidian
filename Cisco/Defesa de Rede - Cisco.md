@@ -466,18 +466,18 @@ Servidores proxy são dispositivos que atuam como intermediários para clientes 
 1265939281.764 19478 172.16.167.228 TCP_MISS/200 864GEThttp://www.example.com//images/home.png - NONE/- image/png
 ```
 
-|Valor de log de proxy|Explicação|
-|---|---|
-|1265939281.764|**Tempo** - Timestamp em milliseconds no formato Unix epoch|
-|19478|**Duração** - o tempo decorrido para a solicitação e resposta do Squid|
-|172.16.167.228|**cliente** Endereço IP do|
-|TCP_MISS/200|**Resultado** - Códigos de resultado do Squid e código de status HTTP separados por uma barra|
-|864|**Tamanho** - os bytes de dados entregues|
-|GET|**Solicitação** - solicitação HTTP feita pelo client|
-|http://www.example.com//images/home.png|**URI/URL** - endereço do recurso que foi solicitado|
-|-|**Identidade do cliente** - valor RFC 1413 para o cliente que fez a solicitação. Não usado por padrão.|
-|NONE/-|**Código de peering/Host de peer** - Consulta ao servidor de cache vizinho|
-|image/png|**Tipo** - tipo de conteúdo MIME do valor Content-Type no cabeçalho de resposta HTTP|
+| Valor de log de proxy                   | Explicação                                                                                             |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| 1265939281.764                          | **Tempo** - Timestamp em milliseconds no formato Unix epoch.                                           |
+| 19478                                   | **Duração** - o tempo decorrido para a solicitação e resposta do Squid.                                |
+| 172.16.167.228                          | **cliente** Endereço IP.                                                                               |
+| TCP_MISS/200                            | **Resultado** - Códigos de resultado do Squid e código de status HTTP separados por uma barra          |
+| 864                                     | **Tamanho** - os bytes de dados entregues.                                                             |
+| GET                                     | **Solicitação** - solicitação HTTP feita pelo client.                                                  |
+| http://www.example.com//images/home.png | **URI/URL** - endereço do recurso que foi solicitado.                                                  |
+| -                                       | **Identidade do cliente** - valor RFC 1413 para o cliente que fez a solicitação. Não usado por padrão. |
+| NONE/-                                  | **Código de peering/Host de peer** - Consulta ao servidor de cache vizinho.                            |
+| image/png                               | **Tipo** - tipo de conteúdo MIME do valor Content-Type no cabeçalho de resposta HTTP.                  |
 
 # Modulo 11: Avaliação de Alertas
 #redes #BlueTeam 
