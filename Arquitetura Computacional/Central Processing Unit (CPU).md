@@ -1,12 +1,13 @@
 Sumario
 	**Tags:** #Computador 
 	**Conteúdo:**
-		https://www.youtube.com/watch?v=gc0tuwJz-7E
-		https://www.learncomputerscienceonline.com/central-processing-unit/
+		https://www.youtube.com/watch?v=gc0tuwJz-7E - Vídeo Básico.
+		https://www.youtube.com/watch?v=16zrEPOsIcI - Vídeo Avançado.
+		https://www.learncomputerscienceonline.com/central-processing-unit/ - Guia do básico ao Avançado.
 	
 ----
 
-Traduzindo para o português **U**nidade **C**entral de **P**rocessamento, é um componente que fica localizado em um espaço especifico (**socket**) na placa mãe, como o nome sugere, nela são centralizados os processamento, além disso existem as partes que compõem a CPU, sendo elas:
+Traduzindo para o português **U**nidade **C**entral de **P**rocessamento, é um componente que fica localizado em um espaço especifico (**socket**) na placa mãe, como o nome sugere, nela são centralizados os processamento. As principais produtoras de CPU são a <span style="color:rgb(206, 0, 86)">Intel</span> e a <span style="color:rgb(65, 105, 255)">AMD</span>. Dentro da CPU existem ainda outros componentes, sendo sendo eles:
 
 - **C**ontrol **U**nit (**CU**): A **U**nidade de **C**ontrole (**UC**) em português, é a responsável por controlar e comandar os processamentos dos dados, em outras palavras ela interpreta as instruções que são passadas, e também a entrada de dados e saídas também. Um exemplo disso seria: A UC controla os dados enviados de um teclado (<span style="color:rgb(255, 255, 0)">entrada de dados</span>) para a CPU processa-los, e novamente a UC controla a sida desses dados para o monitor (<span style="color:rgb(255, 255, 0)">dispositivo de saída</span>).
 
@@ -17,3 +18,8 @@ Traduzindo para o português **U**nidade **C**entral de **P**rocessamento, é um
 	- **Registers**: Os **Registradores** são memorias pequenas e voláteis, que perder os dados nela armazenados quando não a energia elétrica, mas são as memorias com maior velocidade dentre todas.
 	
 	- **Memoria Cache**: Nela são armazenados dados que são usados frequentemente pelos programas em execução ela tem três níveis sendo eles: **L1** que é a mais rápida e fica próxima do núcleo de processamento, **L2** que é um pouco mais lenta e serve como reservatório da L1, e a **L3** que é usada por todos os núcleos de processamento e também a com maior capacidade, tarefas pesadas como jogos ou edições são afetas por ela.
+
+<figure style="text-align: center;">
+  <img src="Diagrama Fluxo CPU.jpg" style="margin: 0 auto;">
+  <figcaption>Diagrama de fluxo da CPU</figcaption>
+</figure>

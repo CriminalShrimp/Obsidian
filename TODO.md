@@ -1,6 +1,6 @@
 ## Obisidan 2026
 - [x] [[Kernel]]
-- [ ] [[Central Processing Unit (CPU)]]
+- [x] [[Central Processing Unit (CPU)]]
 - [ ] [[Ettercap]]
 - [ ] [[Kismet]]
 - [ ] [[Suricata]]
