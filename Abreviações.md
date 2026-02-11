@@ -30,7 +30,7 @@ Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam
 
 ###### BIOS = Basic Input/Output System que significa as entradas e saídas básicas do sistema
 ###### EFI/UEFI = (Unified) Extensible Firmware Interface é um padrão moderno de firmware(software embutido em dispositivos de hardware) que substitui o antigo BIOS.
-###### USB = Universal Serial Bus chamado de porta serial universal é usado em diversas tecnologias tendo também varias versões.
+###### USB = Universal Serial Bus chamado de porta serial universal é usado em diversas tecnologias tendo também várias versões.
 ###### DDR = **D**ouble **D**ata **D**ate ou Taxa de Dados Dupla se refere a uma tecnologia de memória RAM, que transfere dados duas vezes por ciclo.
 
 ###### GRUB = **G**rand **U**nified **B**ootloader é basicamente um menu onde o usuário pode escolher qual sistema operacional ira escolher.

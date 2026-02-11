@@ -1,7 +1,11 @@
 ## Obisidan 2026
 - [x] [[Kernel]]
 - [x] [[Central Processing Unit (CPU)]]
-- [ ] [[Ettercap]]
+- [ ] [[Protocolos]]
+	- [ ] [[Protocolos#ARP|ARP]]
+	- [ ] [[Protocolos#ICMP|ICMP]]
+- [/] [[Ettercap]]
+- [ ] [[Ataques de Engenharia Social]]
 - [ ] [[Kismet]]
 - [ ] [[Suricata]]
 - [ ] [[Zeek]]
@@ -33,7 +37,7 @@
 - [ ] [[HyperText Markup Language (HTMl)]]
 - [ ] [[Command N Control (CNC)]]
 - [ ] [[Malware]]
-- [ ] [[Man-in-the-Middle]]
+- [ ] [[Man-in-the-Middle (MITM)]]
 - [ ] [[WireShark]] fazer algo bem detalhado de filtros e tudo mais
 - [ ] Fazer o Link dos Tópicos com maior descrição em Abreviações (por exemplo os protocolos)
 - [ ] Fazer Equipamentos e conceitos de redes

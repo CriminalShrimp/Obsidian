@@ -84,7 +84,7 @@ Adicionar permissões de arquivos
 
 # SUDO
 
-A palavras sudo vem de _<span style="color:rgb(255, 255, 0)">superuser do</span>_, bem sugestivo ao seu significado ele eleva as permissões do usuário para um "super usuário" tendo permissões para mexer em privilégios de pastas, arquivos, usuários, grupos entre varias outras coisas. Para ter acesso a esse modo basta colocar na CLI `sudo` pressionar enter, e inserir a senha que é escolhida no sistema, mas normalmente é a do próprio usuário.
+A palavras **sudo** vem de _<span style="color:rgb(255, 255, 0)">superuser do</span>_, bem sugestivo ao seu significado ele eleva as permissões do usuário para um "super usuário" tendo permissões para mexer em privilégios de pastas, arquivos, usuários, grupos entre várias outras coisas. Para ter acesso a esse modo basta colocar na CLI `sudo` pressionar `enter`, e inserir a senha que é escolhida no sistema, mas normalmente é a do próprio usuário.
 # Acesso Remoto (SSH)
 #Comandos #CLI 
 

@@ -16,7 +16,7 @@ Todos esses são disco óptico que utilizam luz como teologia para armazenamento
 
 ## Pen Drive
 
-Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de porta serial universal é usado em diversas tecnologias tendo também varias versões.|USB]] veio para substituir o CD e o disquete, e é usado ate os dias atuais. Seu poder de armazenamento é muito amplo, havendo dispositivos com 8 GB de armazenamento indo ate 1 TB, isso sem aumentar drasticamente seu tamanho, já que a ideia do pen drive é ser compacto e móvel. Usando a memória flash **NAND** ele armazena seus dados em grandes células de memorias conectadas.
+Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de porta serial universal é usado em diversas tecnologias tendo também várias versões.|USB]] veio para substituir o CD e o disquete, e é usado ate os dias atuais. Seu poder de armazenamento é muito amplo, havendo dispositivos com 8 GB de armazenamento indo ate 1 TB, isso sem aumentar drasticamente seu tamanho, já que a ideia do pen drive é ser compacto e móvel. Usando a memória flash **NAND** ele armazena seus dados em grandes células de memorias conectadas.
 
 <figure style="text-align: center;">
   <img src="PenDrive.webp" style="margin: 0 auto;">
@@ -25,7 +25,7 @@ Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de
 
 ## HD/HDD
 
-**H**ardware **D**isc **D**rive ou Discos Rígidos usa armazenamento magnético e um ou mais pratos (que seriam os discos) para salvar gravar os dados. A gravação e a leitura dos dados são feitas por um braço móvel, esses dados são acessados de forma aleatória. Como os HDs estão no mercado a muito tempo, existem varias tecnologia que melhoram seu desempenho e também possuem varias capacidade distintas, tendo alguns modelos de 128 GB e alguns que hoje em dia  chegam ate 20 TB, e no mercado também existem HDs moveis e são os <span style="color:rgb(255, 255, 0)">HDs Externo</span> que tem o mesmo funcionamento dos HDs normais, porém de uma forma mais segura a ser transportado no dia a dia.
+**H**ardware **D**isc **D**rive ou Discos Rígidos usa armazenamento magnético e um ou mais pratos (que seriam os discos) para salvar gravar os dados. A gravação e a leitura dos dados são feitas por um braço móvel, esses dados são acessados de forma aleatória. Como os HDs estão no mercado a muito tempo, existem várias tecnologia que melhoram seu desempenho e também possuem várias capacidade distintas, tendo alguns modelos de 128 GB e alguns que hoje em dia  chegam ate 20 TB, e no mercado também existem HDs moveis e são os <span style="color:rgb(255, 255, 0)">HDs Externo</span> que tem o mesmo funcionamento dos HDs normais, porém de uma forma mais segura a ser transportado no dia a dia.
 
 ![[HD Explicado.webp|HD]]
 ## SSD
