@@ -6,4 +6,4 @@ Sumario
 		
 ----
 
-É uma ferramenta especificamente usada para a realização de ataque Man-
+É uma ferramenta de código aberto que analisa o trafego na rede, porem ele é comumente usado para a realização de ataque [[Man-in-the-Middle (MITM)]]. Ele faz a captura de pacotes na rede e então os escreve

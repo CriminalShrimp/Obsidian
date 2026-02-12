@@ -1,8 +1,8 @@
 ## Obisidan 2026
 - [x] [[Kernel]]
 - [x] [[Central Processing Unit (CPU)]]
-- [ ] [[Protocolos]]
-	- [ ] [[Protocolos#ARP|ARP]]
+- [/] [[Protocolos]]
+	- [/] [[Protocolos#ARP|ARP]]
 	- [ ] [[Protocolos#ICMP|ICMP]]
 - [/] [[Ettercap]]
 - [ ] [[Ataques de Engenharia Social]]

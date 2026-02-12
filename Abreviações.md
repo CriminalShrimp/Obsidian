@@ -1,5 +1,5 @@
 Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam 
-###### OS = Operating System, é o sistema operacional.
+###### OS = Operating System, é o sistema operacional em que o dispositivo funciona.
 ###### CLI = Command Line Interface é onde são realizados os comandos do sistema.
 ###### TTY = Teletypewriter este seria o nome técnico da interface de comando.
 ###### VM = Virtual Machine são maquinas virtuais criadas para emular determinado sistema.
@@ -40,4 +40,6 @@ Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam
 ###### SNMP = Simple Network Management Protocol é um protocolo padrão da camada de aplicação (TCP/IP) para monitorar e gerenciar dispositivos em redes.
 ###### SMTP = Simple Mail Transfer Protocol, é o protocolo de internet usado para enviar e-mails.
 ###### VPN = Virtual Private Network é uma rede usada para proteger os dados trafegados e mascarar seu IP, protegendo assim seus dados pessoas.
+
+###### MAC = **M**edia **A**ccess **C**ontrol diz respeito ao endereço físico que cada dispositivo tem gravado em sua placa de rede, é como se fosse o CPF de um dispositivo. Ele é representado por 6 pares de caracteres hexadecimais (até 16), ex: 00:1A:2B:3C:4D:5E.
 PKI = Public key infrastructure.
