@@ -17,9 +17,46 @@ O **P**rotocolo de **R**esolução de **E**ndereços é um protocolo que funcion
 
 <figure style="text-align: center;">
   <img src="Funcao ARP.gif" style="margin: 0 auto;">
-  <figcaption>ARP</figcaption>
+  <figcaption>ARP Request e Replay</figcaption>
 </figure>
 
+### Pacote ARP
+
+O pacote ARP vem encapsulado em um quadro (frame) da Ethernet, ele possui um tamanho fixo de **28 bytes** (224 bits), em seu cabeçalho temos os seguintes campos:  
+
+<table style="margin: 0 auto; width: 100%; border-collapse: collapse; text-align: center;" border="1">
+  <thead>
+    <tr>
+      <th style="text-align: center">HTYPE</th>
+      <th style="text-align: center">PTYPE</th>
+      <th style="text-align: center">HLEN</th>
+      <th style="text-align: center">PLEN</th>
+      <th style="text-align: center">OPER</th>
+      <th style="text-align: center">SHA</th>
+      <th style="text-align: center">SPA</th>
+      <th style="text-align: center">THA</th>
+      <th style="text-align: center">TPA</th>
+    </tr>
+  </thead>
+</table>
+
+- **Hardware Type (HTYPE):** Possuindo **16 bits** o campo **Tipo Hardware** define o tipo de protocolo de rede da camada de enlase, para a Ethernet que é o mais comum o valor é **1**.
+
+- **Protocol Type (PTYPE):** Tendo **16 bits** nesse campo é especificado o **tipo de protocolo** que esta se comunicando na **camada de rede** (Modelo OSI) ou **camada de internet** (Modelo TCP/IP), geralmente é o IPv4 com o valor 0x8000.
+
+- **Hardware Length (HLEN):**
+
+- **Protocol Length (PLEN):**
+
+- **Operation (OPER):**
+
+- **Sender Address Hardware (SHA):**
+
+- **Sender Protocol Address (SPA):**
+
+- **Target Hardware Address (THA):**
+
+- **Target Protocol Address (TPA):** 
 
 ## Internet Control Message Protocol (ICMP)
 

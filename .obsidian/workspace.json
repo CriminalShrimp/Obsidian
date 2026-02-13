@@ -131,7 +131,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 280.5,
+    "collapsed": true
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -217,7 +218,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5
+    "width": 389.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -234,7 +235,7 @@
       "obsidian-task-progress-bar:Open Task Genius view": false
     }
   },
-  "active": "1e80c182f859c816",
+  "active": "3a1ea506b639efde",
   "lastOpenFiles": [
     "Trash/Imagens/Img Redes",
     "Trash/Imagens/Img Redes/Funcao ARP.gif",
