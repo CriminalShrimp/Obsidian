@@ -38,8 +38,8 @@ Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam
 ###### IMAP = **I**nternet **M**essage **A**ccess **P**rotocol monitora a rede em busca de atividade suspeitas.
 ###### SCADA = Supervisory Control and Data Acquisition é um sistema de hardware e software que permite monitorar e controlar operações industriais e de infraestrutura remotamente e em tempo real.
 ###### SNMP = Simple Network Management Protocol é um protocolo padrão da camada de aplicação (TCP/IP) para monitorar e gerenciar dispositivos em redes.
-###### SMTP = Simple Mail Transfer Protocol, é o protocolo de internet usado para enviar e-mails.
-###### VPN = Virtual Private Network é uma rede usada para proteger os dados trafegados e mascarar seu IP, protegendo assim seus dados pessoas.
+###### SMTP = **S**imple **M**ail **T**ransfer **P**rotocol, é o protocolo de internet usado para enviar e-mails.
+###### VPN = **V**irtual **P**rivate **N**etwork é uma rede usada para proteger os dados trafegados e mascarar seu IP, protegendo assim seus dados pessoas.
 
-###### MAC = **M**edia **A**ccess **C**ontrol diz respeito ao endereço físico que cada dispositivo tem gravado em sua placa de rede, é como se fosse o CPF de um dispositivo. Ele é representado por 6 pares de caracteres hexadecimais (até 16), ex: 00:1A:2B:3C:4D:5E.
+###### MAC = **M**edia **A**ccess **C**ontrol diz respeito ao endereço físico que cada dispositivo tem gravado em sua placa de rede, é como se fosse o CPF de um dispositivo. O. Ele é representado por 6 pares de caracteres hexadecimais (até 16),os primeiros 6 dígitos (3 bytes) indicam o fabricante, e Os últimos 6 dígitos (3 bytes) são atribuídos pelo fabricante para identificar a placa de rede específica ex: 00:1A:2B:3C:4D:5E.
 PKI = Public key infrastructure.

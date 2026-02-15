@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "MAC",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -127,12 +127,12 @@
               "title": "tg-left-sidebar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 280.5,
-    "collapsed": true
+    "width": 280.5
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -237,13 +237,13 @@
   },
   "active": "3a1ea506b639efde",
   "lastOpenFiles": [
+    "Abreviações.md",
+    "Redes/Protocolos.md",
     "Trash/Imagens/Img Redes",
     "Trash/Imagens/Img Redes/Funcao ARP.gif",
     "RedTeam/Spoofing.md",
-    "Redes/Protocolos.md",
     "Redes/Modelo OSI.md",
     "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
-    "Abreviações.md",
     "Conceitos/Criptografia.md",
     "Ferramentas/Ettercap.md",
     "RedTeam/Malware.md",
@@ -280,7 +280,6 @@
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-configure-server-based-authentication-with-tacacs-and-radius.pka",
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-configure-access-control.pka",
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-configure-a-zpf.pksz",
-    "Cisco/Packet Tracer/Packet Tracer",
     "Trash/Imagens/Img Cisco/SYSLOG Exemplo.png",
     "Trash/Imagens/Img Conceitos/Alice usa chave privada.webp.webp",
     "Treino/Rotina Treino.canvas",
