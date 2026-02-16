@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MAC",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -127,8 +127,7 @@
               "title": "tg-left-sidebar"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -218,7 +217,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 389.5
+    "width": 276.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -237,6 +236,7 @@
   },
   "active": "3a1ea506b639efde",
   "lastOpenFiles": [
+    "WireShark ARP.png",
     "Abreviações.md",
     "Redes/Protocolos.md",
     "Trash/Imagens/Img Redes",
