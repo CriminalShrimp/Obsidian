@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -234,23 +234,23 @@
       "obsidian-task-progress-bar:Open Task Genius view": false
     }
   },
-  "active": "3a1ea506b639efde",
+  "active": "4a37ab68bdf4a244",
   "lastOpenFiles": [
-    "WireShark ARP.png",
-    "Abreviações.md",
+    "TODO.md",
     "Redes/Protocolos.md",
+    "RedTeam/Spoofing.md",
+    "Ferramentas/Ettercap.md",
+    "RedTeam/Man-in-the-Middle (MITM).md",
+    "Trash/Imagens/Img Redes/WireShark ARP.png",
+    "Abreviações.md",
     "Trash/Imagens/Img Redes",
     "Trash/Imagens/Img Redes/Funcao ARP.gif",
-    "RedTeam/Spoofing.md",
     "Redes/Modelo OSI.md",
     "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
     "Conceitos/Criptografia.md",
-    "Ferramentas/Ettercap.md",
     "RedTeam/Malware.md",
     "RedTeam/Sniffing.md",
     "Cisco/Defesa de Rede - Cisco.md",
-    "TODO.md",
-    "RedTeam/Man-in-the-Middle (MITM).md",
     "Arquitetura Computacional/Central Processing Unit (CPU).md",
     "RedTeam/Denial of Service.md",
     "Trash/Imagens/Img RedTeam",
@@ -281,7 +281,6 @@
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-configure-access-control.pka",
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-configure-a-zpf.pksz",
     "Trash/Imagens/Img Cisco/SYSLOG Exemplo.png",
-    "Trash/Imagens/Img Conceitos/Alice usa chave privada.webp.webp",
     "Treino/Rotina Treino.canvas",
     "Sem título.canvas"
   ]

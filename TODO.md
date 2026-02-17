@@ -2,7 +2,7 @@
 - [x] [[Kernel]]
 - [x] [[Central Processing Unit (CPU)]]
 - [/] [[Protocolos]]
-	- [/] [[Protocolos#ARP|ARP]]
+	- [x] [[Protocolos#ARP|ARP]]
 	- [ ] [[Protocolos#ICMP|ICMP]]
 - [/] [[Ettercap]]
 - [ ] [[Ataques de Engenharia Social]]
@@ -53,7 +53,7 @@
 	- [ ] [[Modelo OSI]]
 - [ ] [[Denial of Service]]
 - [ ] [[Backdoors]]
-- [ ] [[Spoofing]]
+- [/] [[Spoofing]]
 - [ ] [[Placa Mae]]
 - [x] Dar uma geral em [[Criptografia]]
 - [/] Fazer a criação de Sumario nos arquivos.
