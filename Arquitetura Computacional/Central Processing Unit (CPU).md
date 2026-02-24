@@ -1,9 +1,9 @@
-Sumario
+**Sumário**
 	**Tags:** #Computador 
 	**Conteúdo:**
-		https://www.youtube.com/watch?v=gc0tuwJz-7E - Vídeo Básico.
-		https://www.youtube.com/watch?v=16zrEPOsIcI - Vídeo Avançado.
-		https://www.learncomputerscienceonline.com/central-processing-unit/ - Guia do básico ao Avançado.
+		youtube.com/watch?v=gc0tuwJz-7E - Vídeo Básico.
+		youtube.com/watch?v=16zrEPOsIcI - Vídeo Avançado.
+		learncomputerscienceonline.com/central-processing-unit/ - Guia do básico ao Avançado.
 	
 ----
 

@@ -1,4 +1,10 @@
-[[Descoberta de Rede (HUB)]]
+**Sumário**
+	**Tags:** #Redes 
+	**Arquivos Relacionados:** [[Descoberta de Rede (HUB)]]
+	**Conteúdo:**
+		www.snort.org/
+	
+----
 
 ### Snort - Resumir e explicar e falar melhor
 As regras de Snort consistem em duas seções, o cabeçalho da regra e as opções da regra. O cabeçalho da regra contém a ação, o protocolo, os endereços IP de origem e destino e as máscaras de rede e as informações da porta de origem e destino. A seção Opções de regra contém mensagens de alerta e informações sobre quais partes do pacote devem ser inspecionadas para determinar se a ação da regra deve ser executada.

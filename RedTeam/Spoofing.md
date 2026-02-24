@@ -1,5 +1,5 @@
-Sumario
-	**Tags:** 
+**Sumário**
+	**Tags:** #RedTeam 
 	**Conteúdo:**
 		kaspersky.com.br/resource-center/definitions/spoofing
 		

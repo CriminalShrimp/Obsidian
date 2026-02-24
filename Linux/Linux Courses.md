@@ -1,12 +1,8 @@
-Sumario
-	Tags: 
-		#CLI 
-		#Linux 
-		#Dica
-	Cursos: 
+**Sumário**
+	**Tags:** #CLI #Linux #Dica #Comandos #CLI
+	**Conteúdo:** 
 		Red Hat Systems Administration (EX200) 
 		Introduction to Linux (LFS101)
-	Documentações:
 		[Gentoo Handbook](https://www.gentoo.org/support/documentation/).
 		[Ubuntu Documentation](https://help.ubuntu.com/community/CommunityHelpWiki).
 		[Fedora Documentation](https://docs.fedoraproject.org/en-US/fedora/latest/).
@@ -86,7 +82,6 @@ Adicionar permissões de arquivos
 
 A palavras **sudo** vem de _<span style="color:rgb(255, 255, 0)">superuser do</span>_, bem sugestivo ao seu significado ele eleva as permissões do usuário para um "super usuário" tendo permissões para mexer em privilégios de pastas, arquivos, usuários, grupos entre várias outras coisas. Para ter acesso a esse modo basta colocar na CLI `sudo` pressionar `enter`, e inserir a senha que é escolhida no sistema, mas normalmente é a do próprio usuário.
 # Acesso Remoto (SSH)
-#Comandos #CLI 
 
 O linux usa o _Secure Shell Protocol_ popularmente chamado de SSH para fazer acesso remoto em computadores permitindo envia arquivos e comandos.  O SSH criptografa a comunicação entre os comutadores, normalmente é usado para acessar data centers e Servidores Cloud. Na linha de comando vc pode se conectar a outros computadores usando o comando `ssh`.
 #### Habilitando login SSH via linha de comando

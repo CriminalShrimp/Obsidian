@@ -1,3 +1,9 @@
+**Sumário**
+	**Tags:** #Redes
+	**Conteúdo:** Introduction to Linux (LFS101)
+	
+----
+
 
 O balanceamento de carga envolve a distribuição do tráfego entre dispositivos ou caminhos de rede para evitar recursos de rede sobrecarregados com muito tráfego. Se existirem recursos redundantes, um algoritmo ou dispositivo de balanceamento de carga funcionará para distribuir o tráfego entre esses recursos, conforme mostrado na figura.
 

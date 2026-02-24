@@ -1,4 +1,9 @@
-Tags: #Linux #Tips
+**Sumário**
+	**Tags:** #Linux #Tips
+	**Conteúdo:** Introduction to Linux (LFS101)
+	
+----
+
 
 # Introdução
 

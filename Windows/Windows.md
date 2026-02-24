@@ -1,3 +1,10 @@
+**Sumário**
+	**Tags:**
+	**Conteúdo:**
+	
+----
+
+
 # HIDS
 
 Os logs de host do Microsoft Windows são visíveis localmente pelo Visualizador de Eventos. O Visualizador de Eventos mantém cinco tipos de logs:

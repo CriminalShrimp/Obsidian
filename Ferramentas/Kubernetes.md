@@ -1,1 +1,6 @@
+**Sumário**
+	**Tags:** #Ferramentas 
+	**Conteúdo:**
+	
+----
 Kubernetes (ou K8s) é uma plataforma de código aberto para automação de implantação, escalonamento e gerenciamento de aplicações em contêineres.

@@ -1,4 +1,11 @@
+**Sumário**
+	**Tags:** #Computador 
+	**Conteúdo:** Introduction to Linux (LFS101)
+	
+----
+
 ### O Básico
+
 A primeira coisa, obviamente, é energia para poder ligar o computador. Após isso é iniciado o sistema o Basic Input/Output System mais conhecido como <span style="color:rgb(255, 255, 0)">BIOS</span>, iniciando o hardware, teclado, telas e testando a memoria principal, esse processo é chamado de <span style="color:rgb(255, 255, 0)">POST</span> (Power On Self Test).
 
 <figure style="text-align: center;">

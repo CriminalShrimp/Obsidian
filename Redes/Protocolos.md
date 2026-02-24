@@ -1,12 +1,12 @@
-Sumario
-	[[Descoberta de Rede (HUB)]]
+**Sumário**
 	**Tags:** #Redes #Protocolos 
+	**Arquivos Relacionados:** [[Descoberta de Rede (HUB)]]
 	**Conteúdo:**
-		https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
+		iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
 		**ARP:**
 			https://ccna.network/arp/#:~:text=Em%20ambos%20os%20casos%2C%20a,uma%20anima%C3%A7%C3%A3o%20da%20fun%C3%A7%C3%A3o%20ARP.
-			https://www.youtube.com/watch?v=t2klOZcXZqc
-			https://www.geeksforgeeks.org/computer-networks/arp-protocol-packet-format/
+			youtube.com/watch?v=t2klOZcXZqc
+			geeksforgeeks.org/computer-networks/arp-protocol-packet-format/
 	
 ----
 

@@ -1,8 +1,17 @@
+**Sumário**
+	**Tags:** #Computador
+	**Conteúdo:**
+		ejemplos.co/br/dispositivos-de-armazenamento/
+	
+----
 ## Disquete
 
 Muito usado ate os anos 2000 o disquete usa memória de disco magnético para guardar dados, tendo uma capacidade de 360 KB a 2,88 MB que na época era o suficiente para os arquivos, porém hj em dia são insuficientes. Algo que acontecia era que quando passavam em portas giratórias os disquetes tinham seus dados apagados por contas dos imãs.
 
-![[Disquete.jpg|Disquete]]
+<figure style="text-align: center;">
+  <img src="Disquete.jpg" style="margin: 0 auto;">
+  <figcaption>Disquete</figcaption>
+</figure>
 
 ## CD, DVD e Blu-ray
 
@@ -27,10 +36,15 @@ Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de
 
 **H**ardware **D**isc **D**rive ou Discos Rígidos usa armazenamento magnético e um ou mais pratos (que seriam os discos) para salvar gravar os dados. A gravação e a leitura dos dados são feitas por um braço móvel, esses dados são acessados de forma aleatória. Como os HDs estão no mercado a muito tempo, existem várias tecnologia que melhoram seu desempenho e também possuem várias capacidade distintas, tendo alguns modelos de 128 GB e alguns que hoje em dia  chegam ate 20 TB, e no mercado também existem HDs moveis e são os <span style="color:rgb(255, 255, 0)">HDs Externo</span> que tem o mesmo funcionamento dos HDs normais, porém de uma forma mais segura a ser transportado no dia a dia.
 
-![[HD Explicado.webp|HD]]
+<figure style="text-align: center;">
+  <img src="HD Explicado.webp" style="margin: 0 auto;">
+  <figcaption>HD</figcaption>
+</figure>
+
 ## SSD
 
 **S**olid **S**tate **D**rive ou Unidade de Estado Sólido usa a circuitos interligados para armazenar os dados, por conta de não precisar procurar e ler os dados em um disco, a velocidade de leitura do SSD é muito superior aos que utilizam discos, e atualmente ainda existem os modelos M.2, que é ligado diretamente na placa mãe, diminuindo muito a latência e também aumentando a velocidade de leitura e gravação. Sua capacidade de armazenamento assim como o HD veio mudando deste sua criação, é possível achar dispositivos com 128 GB e ate 8 TB de armazenamento.
+
 <figure style="text-align: center;">
   <img src="SSD Tipos.jpg" style="margin: 0 auto;">
   <figcaption>SSDs</figcaption>
@@ -39,14 +53,24 @@ Também chamado de memoria [[Abreviações#USB = Universal Serial Bus chamado de
 
 **C**omplementary **M**etal-**O**xide-**S**emiconductor (CMOS) é uma pequena memória volátil na placa-mãe, que armazena informações de configuração de hardware. como por exemplo uma sequencia de boot (USB, CD-ROM, HD e placa de rede) ou a data e hora do computador.  Ela é alimentada por uma pequena bateria, que de tempos em tempos tem q ser trocada.
 
-![[CMOS.webp|CMOS|760x427]]
+<figure style="text-align: center;">
+  <img src="CMOS.webp" style="margin: 0 auto; max-width: 400px; width: 100%;">
+  <figcaption>CMOS</figcaption>
+</figure>
 ## Memoria ROM
+
 **R**ead **O**nly **M**emory ou Memoria Somente de Leitura é um tipo de memória não volátil que armazena instruções permanentes para a inicialização do dispositivo, essas informações são chamadas de **firmware**. Além das instruções também armazena os dados do usuário permanentemente.
 
-![[Memoria ROM.webp|Memoria Rom|529x359]]
+<figure style="text-align: center;">
+  <img src="Memoria ROM.webp" style="display:block; margin:auto; max-width:500px; width:70%;">
+  <figcaption>Memória ROM</figcaption>
+</figure>
 
 ## Memoria RAM
 
 **R**andom **A**cess **M**emory ou Memoria de Acesso Aleatório diferente da ROM, o que significa que as informações nela contida são mantidas temporariamente. Ela é muita usada para armazenar dados de aplicativos que são usados constantemente, pois sua velocidade de acesso é muito superior do que as voláteis. Com o tempo a tecnologia dela foi evoluindo, com isso veio a categorização por gerações, nomeadas pela sua versão [[Abreviações#DDR =**D**ouble **D**ata **D**ate ou Taxa de Dados Dupla se refere a uma tecnologia de memória RAM, que transfere dados duas vezes por ciclo.|DDR]], quanto maior o  seu valor numérico melhor, hoje em dia a mais potente sendo a DDR5.
 
-![[Memoria Ram.webp|Memorias RAMs|525x588]]
+<figure style="text-align: center">
+  <img src="Memoria Ram.webp" style="display:block; margin:auto; max-width:500px; width:70%;">
+  <figcaption>Memórias RAMs</figcaption>
+</figure>

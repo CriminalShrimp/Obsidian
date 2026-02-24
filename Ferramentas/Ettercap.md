@@ -1,6 +1,6 @@
-Sumario
-	[[Descoberta de Rede (HUB)]]
-	**Tags:** #RedTeam #Ferramentas #Redes
+**Sumário**
+	**Tags:** #RedTeam #Ferramentas #Redes 
+	**Arquivos Relacionados:** [[Descoberta de Rede (HUB)]]
 	**Conteúdo:**
 		youtube.com/watch?v=KYjyqlQxJzY - Vídeo explicando ataque com a ferramenta.
 		youtube.com/watch?v=A7nih6SANYs- Como usar a ferramenta.

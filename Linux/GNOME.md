@@ -1,1 +1,7 @@
+**Sumário**
+	**Tags:** #Linux
+	**Conteúdo:** Introduction to Linux (LFS101)
+	
+----
+
 GNU **N**etwork **O**bject **M**odel **E**nvironment é uma interface gráfica feita para computadores que usam Linux. Ela é de código aberto e existem várias interfaces feitas por usuários que emulam tanto o Windows quando o Mac. Por ser de código aberto é possível modifica-lo como desejar, para saber como fazer as alterações é possível achar a documentação no site oficinal da Gnome ou clicando [aqui](https://developer.gnome.org/documentation/). E também existem uma [Wiki do Gnome](https://wiki.gnome.org)

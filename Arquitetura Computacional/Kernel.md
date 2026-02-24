@@ -1,6 +1,6 @@
-Sumario
-	**Curso:** https://github.com/xiyuan1avery/-MIT-6.S081-Operating-System-Engineering?tab=readme-ov-file
+**Sumário**
 	**Tags:** #Computador #Linux 
+	**Conteudo:** github.com/xiyuan1avery/-MIT-6.S081-Operating-System-Engineering?tab=readme-ov-file
 	
 ----
 

@@ -1,1 +1,7 @@
+**Sumário**
+	**Tags:** #Ferramentas 
+	**Conteúdo:**
+	
+----
+
 Docker é uma plataforma de código aberto para desenvolvimento, envio e execução de aplicações em contêineres. Simplificando ele permite que você empacote uma aplicação e suas dependências em um contêiner.

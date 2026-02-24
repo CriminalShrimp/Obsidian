@@ -1,3 +1,8 @@
+**Sumário**
+	**Tags:** #Segurança 
+	**Conteúdo:** Maratona de Ciber Segurança Gratuita da Cisco.
+	
+----
 O  hash é usado como uma ferramenta que "garante" a integridade dos dados ao considerar dados binários (por exemplo, uma mensagem) e produzir uma representação de comprimento fixo chamada de valor de hash. Além disso ela também pode ser em autenticações, usando uma função de hash criptográfico para substituir senhas de texto simples ou chaves de criptografia.
 
 Uma função hash criptográfica tem as seguintes propriedades:

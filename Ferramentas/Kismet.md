@@ -1,4 +1,7 @@
-Sumario
-	Tags: #BlueTeam #RedTeam #Ferramentas #Network
-	Arquivos Relacionados: [[Descoberta de Rede (HUB)]]
+**Sumário**
+	**Tags:** #BlueTeam #RedTeam #Ferramentas #Redes
+	**Arquivos Relacionados:** [[Descoberta de Rede (HUB)]]
+	**Conteúdo**
+	
+---
 

@@ -1,14 +1,8 @@
-Sumario
-	Maratona de Ciber Segurança Gratuita da Cisco
+**Sumário**
 	Exercícios [[Exercicios|aqui]].
-	Tags
-		#Redes 
-		#Firewall 
-		#Segurança 
-		#Ferramentas 
-		#RedTeam 
-		#BlueTeam 
-		
+	**Tags:** #Redes #Firewall #Segurança #Ferramentas #RedTeam #BlueTeam 
+	**Conteúdo:** Maratona de Ciber Segurança Gratuita da Cisco.
+	
 ----
 # Modulo 1: Compreendendo a Defesa
 ## Defesa em profundidade
@@ -487,7 +481,7 @@ Os alertas podem vir de várias fontes:
 
 - **[[Abreviações#NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas|NIDS]]**: [[Snort|Snort]], [[Suricata|Suricata]] e [[Zeek|Zeek]].
 
-- **[[Abreviações#HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas|HIDS]]**: [[OSSEC|OSSEC]], [[Wazuh|Wazuh]].
+- **[[Abreviações#HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas|HIDS]]**: [[Open Source HIDS SECurity (OSSEC)|OSSEC]], [[Wazuh|Wazuh]].
 
 - **Gerenciamento e monitoramento de ativos**: Sistema de detecção de ativos passivos (PADS).
 

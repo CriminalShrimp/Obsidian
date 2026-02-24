@@ -1,9 +1,6 @@
 ## Obisidan 2026
 - [x] [[Kernel]]
 - [x] [[Central Processing Unit (CPU)]]
-- [/] [[Protocolos]]
-	- [x] [[Protocolos#ARP|ARP]]
-	- [ ] [[Protocolos#ICMP|ICMP]]
 - [x] [[Ettercap]]
 - [x] [[Ataques de Engenharia Social]]
 - [ ] [[Kismet]]
@@ -45,7 +42,8 @@
 	- [ ] [[Gateway]]
 	- [ ] [[Proxy]]
 	- [ ] [[Balanceador de Carga]]
-	- [ ] [[Protocolos]]
+	- [/] [[Protocolos]]
+		- [x] ARP
 		- [ ] ICMP
 		- [ ] POP3
 		- [ ] SMTP
@@ -56,5 +54,5 @@
 - [/] [[Spoofing]]
 - [ ] [[Placa Mae]]
 - [x] Dar uma geral em [[Criptografia]]
-- [/] Fazer a criação de Sumario nos arquivos.
+- [x] Fazer a criação de Sumario nos arquivos.
 - [?] Usar as marcações em hmtl para centralizar e dar descrição as imagens
