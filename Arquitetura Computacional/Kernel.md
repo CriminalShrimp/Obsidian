@@ -4,7 +4,7 @@
 	
 ----
 
-Kernel é a parte principal de um sistema operacional, podemos comparar ele como o **cérebro** ou o **coração** de um computador, ele tem a função de ligar a parte que o usuário chuta do computar (**Hardware**), e a parte que o usuário xinga (**Software**). Além disso ele tem a função de fazer o gerenciamento de recursos do sistema, como a [[Central Processing Unit (CPU)|CPU]], conectar dispositivos, memoria, rodar programas, acessar arquivos e garantir de que tudo esta funcione corretamente. Em poucas palavras, **tudo e qualquer coisa feita no computador e por ele**, passa pelo <span style="color:rgb(65, 105, 255)">Kernel</span>.
+Kernel é a parte principal de um sistema operacional, podemos comparar ele como o **cérebro** ou o **coração** de um computador, ele tem a função de ligar a parte que o usuário chuta do computar (**Hardware**), e a parte que o usuário xinga (**Software**). Além disso ele tem a função de fazer o gerenciamento de recursos do sistema, como a [[Computador#Central Processing Unit (CPU)|CPU]], conectar dispositivos, memória, rodar programas, acessar arquivos e garantir de que tudo esta funcione corretamente. Em poucas palavras, **tudo e qualquer coisa feita no computador e por ele**, passa pelo <span style="color:rgb(65, 105, 255)">Kernel</span>.
 
 - **Modo Kernel:** Tem acesso total e direto aos recursos da maquina (hardware), normalmente é nesse modo que kernel opera. 
 
@@ -15,7 +15,7 @@ Kernel é a parte principal de um sistema operacional, podemos comparar ele como
 Existem diversos modelos de Kernel, porém esses três são os mais usados comumente. 
 ### Kernel Monolítico
 
-Aqui todos os serviços essenciais do sistema são realizados em um único espaço de memoria, e rodam no modo Kernel. Ele tem um <span style="color:rgb(65, 105, 255)">desempenho alto</span> e <span style="color:rgb(65, 105, 255)">baixo tempo de resposta</span>, porém ele é <span style="color:rgb(206, 0, 86)">complexo</span> e <span style="color:rgb(206, 0, 86)">grande</span> (com muito código), devido a isso falhas podem afetar todo o sistema operacional. Sistemas que usam esse tipo de Kernel são: **Linux**, **FreeBSD**, entre outros.
+Aqui todos os serviços essenciais do sistema são realizados em um único espaço de memória, e rodam no modo Kernel. Ele tem um <span style="color:rgb(65, 105, 255)">desempenho alto</span> e <span style="color:rgb(65, 105, 255)">baixo tempo de resposta</span>, porém ele é <span style="color:rgb(206, 0, 86)">complexo</span> e <span style="color:rgb(206, 0, 86)">grande</span> (com muito código), devido a isso falhas podem afetar todo o sistema operacional. Sistemas que usam esse tipo de Kernel são: **Linux**, **FreeBSD**, entre outros.
 
 **OBS:** O Linux também é modular, onde é possível inserir módulos (drives) sem precisar reiniciar o sistema.
 

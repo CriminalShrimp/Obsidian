@@ -1,5 +1,0 @@
-**Sumário**
-	**Tags:** #Computador 
-	**Conteúdo:**
-		
-----

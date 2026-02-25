@@ -30,7 +30,7 @@
 - [ ] [[Kubernetes]]
 - [ ] [[Git e GitHub]]
 - [ ] [[Arch Linux]]
-- [ ] Legendar as imagens em [[Sistema de Arquivos]]
+- [x] Legendar as imagens em [[Sistema de Arquivos]]
 - [ ] [[HyperText Markup Language (HTMl)]]
 - [ ] [[Command N Control (CNC)]]
 - [ ] [[Malware]]
@@ -52,7 +52,7 @@
 - [ ] [[Denial of Service]]
 - [ ] [[Backdoors]]
 - [/] [[Spoofing]]
-- [ ] [[Placa Mae]]
+- [x] [[Placa Mae]]
 - [x] Dar uma geral em [[Criptografia]]
 - [x] Fazer a criação de Sumario nos arquivos.
 - [?] Usar as marcações em hmtl para centralizar e dar descrição as imagens
