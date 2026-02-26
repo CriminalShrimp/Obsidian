@@ -10,8 +10,8 @@ Não importa qual seja o sistema, sempre haverá alguém por traz dele, e é jus
 # Phising
 
 Em uma tradução mais literal o "pescando" seria como jogar uma isca e esperar alguém morder ela, nesse caso usando e-mails (mais comum), chamadas, mensagens para se passar por alguém ou uma empresa. Esse tipo de ataque sempre começa por meio de uma mensagem, que tenta ao máximo incorporar aspectos reais de um remetente legitimo.
-Esses ataques tendem a ter algumas caraterísticas como a urgência de algo acontecendo, sendo por dinheiro, acesso ou perda de uma conta. Pois com essa sensação de pouco tempo para resolver o problema, a vitima não pensa em gastar o tempo para verificar se o que esta acontecendo é real ou a fonte é legitima.
-Existem técnicas usadas para adquirir/roubar os dados da vitima, as que mais aparecem são **Campos de Dados** onde o intuído e induzir o colocar seus dados nos campos de um formulário para realizar alguma ação, **Anexos Maliciosos** como um Excel com um código malicioso, ou um [[Malware]] em um arquivo, e **Links Maliciosos** onde levam a vitima para uma replica do site onde são roubadas as credencias/dados.
+Esses ataques tendem a ter algumas caraterísticas como a urgência de algo acontecendo, sendo por dinheiro, acesso ou perda de uma conta. Pois com essa sensação de pouco tempo para resolver o problema, a vítima não pensa em gastar o tempo para verificar se o que esta acontecendo é real ou a fonte é legítima.
+Existem técnicas usadas para adquirir/roubar os dados da vítima, as que mais aparecem são **Campos de Dados** onde o intuído e induzir o colocar seus dados nos campos de um formulário para realizar alguma ação, **Anexos Maliciosos** como um Excel com um código malicioso, ou um [[Malware]] em um arquivo, e **Links Maliciosos** onde levam a vítima para uma replica do site onde são roubadas as credencias/dados.
 
 ## Spear Phishing
 
@@ -23,7 +23,7 @@ Ataques mais direcionados em alvos específicos como empresas ou pessoas, fazend
 
 ## Smishing
 
-Aqui acontece o phishing por SMS, onde o atacante manda uma mensagem para o celular da vitima se passando por uma empresa ou alguém, oferecendo uma promoção, desconto ou verificação para conseguir algum dado da pessoa.
+Aqui acontece o phishing por SMS, onde o atacante manda uma mensagem para o celular da vítima se passando por uma empresa ou alguém, oferecendo uma promoção, desconto ou verificação para conseguir algum dado da pessoa.
 
 ## Vishing
 

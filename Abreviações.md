@@ -42,4 +42,9 @@ Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam
 ###### VPN = **V**irtual **P**rivate **N**etwork é uma rede usada para proteger os dados trafegados e mascarar seu IP, protegendo assim seus dados pessoas.
 
 ###### MAC = **M**edia **A**ccess **C**ontrol diz respeito ao endereço físico que cada dispositivo tem gravado em sua placa de rede, é como se fosse o CPF de um dispositivo. O. Ele é representado por 6 pares de caracteres hexadecimais (até 16),os primeiros 6 dígitos (3 bytes) indicam o fabricante, e Os últimos 6 dígitos (3 bytes) são atribuídos pelo fabricante para identificar a placa de rede específica ex: 00:1A:2B:3C:4D:5E.
+
+###### URL = **U**niform **R**esource **L**ocator é o endereço único e específico de um recurso na internet, como um site, imagem ou arquivo, funcionando como um "CEP digital".
+
+###### ASCII = **A**merican **S**tandard **C**ode for **I**nformation **I**nterchange é um sistema de representação de letras, algarismos e sinais de pontuação e de controle, através de um sinal codificado em forma de código binário.
+
 PKI = Public key infrastructure.

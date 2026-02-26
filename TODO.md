@@ -49,9 +49,9 @@
 		- [ ] SMTP
 		- [ ] DNS
 	- [ ] [[Modelo OSI]]
-- [ ] [[Denial of Service]]
+- [ ] [[Denial of Service DDoS]]
 - [ ] [[Backdoors]]
-- [/] [[Spoofing]]
+- [x] [[Spoofing]]
 - [x] [[Placa Mae]]
 - [x] Dar uma geral em [[Criptografia]]
 - [x] Fazer a criação de Sumario nos arquivos.
