@@ -1,6 +1,8 @@
 **Sumário**
 	**Tags:** #Segurança 
-	**Conteúdo:** Maratona de Ciber Segurança Gratuita da Cisco.
+	**Conteúdo:** 
+		Maratona de Ciber Segurança Gratuita da Cisco.
+		keepersecurity.com/blog/pt-br/2023/06/07/what-is-elliptic-curve-cryptography/ - Eliptica
 	
 ----
 
@@ -10,9 +12,9 @@ A **encriptação** é o processo de embaralhamento de dados para impedir que um
 
 Há duas classes de algoritmos de criptografia:
 
-- Os <span style="color:rgb(255, 255, 0)">algoritmos simétricos</span> usam a mesma chave pré-compartilhada para criptografar e descriptografar dados, um método também conhecido como criptografia com chave privada. O Advanced Encryption Standard (AES) é um algoritmo de criptografia simétrica que possui um tamanho de bloco fixo de 128 bits com um tamanho de chave de 128, 192 ou 256 bits. O governo norte-americano usa o AES para proteger as informações confidenciais.
+- Os <span style="color:rgb(255, 255, 0)">algoritmos simétricos</span> usam a mesma chave pré-compartilhada para criptografar e descriptografar dados, um método também conhecido como criptografia com <span style="color:rgb(255, 255, 0)">chave privada</span>. O Advanced Encryption Standard (AES) é um algoritmo de criptografia simétrica que possui um tamanho de bloco fixo de 128 bits com um tamanho de chave de 128, 192 ou 256 bits. O governo norte-americano usa o AES para proteger as informações confidenciais.
 
-- A <span style="color:rgb(255, 255, 0)">criptografia assimétrica</span>, também chamada de criptografia de chave pública, utiliza uma chave de criptografia que é diferente da chave usada para descriptografia. Os algoritmos de criptografia assimétrica incluem: **R**ivest-**S**hamir-**A**dleman (**RSA**), **D**iffie-**H**ellman, EIGamal e também a **E**lliptic **C**urve **C**ryptography (ECC).
+- A <span style="color:rgb(255, 255, 0)">criptografia assimétrica</span>, também chamada de criptografia de <span style="color:rgb(255, 255, 0)">chave pública</span>, utiliza uma chave de criptografia que é diferente da chave usada para descriptografia. Os algoritmos de criptografia assimétrica incluem: **R**ivest-**S**hamir-**A**dleman (**RSA**), **D**iffie-**H**ellman, EIGamal e também a **E**lliptic **C**urve **C**ryptography (ECC).
 
 # Criptografia Simétrica
 
@@ -20,7 +22,10 @@ Os algoritmos simétricos usam a mesma chave pré-compartilhada para criptografa
 
 Para ajudar a ilustrar como a criptografia simétrica funciona, considere um exemplo em que Alice e Bob moram em locais diferentes e desejam trocar mensagens secretas entre si por meio do sistema de correio. **Alice deseja enviar uma mensagem secreta para Bob**. Na figura, Alice e Bob **têm chaves idênticas para um único cadeado**. A **troca de chaves aconteceu antes** de enviar quaisquer mensagens secretas. **Alice escreve uma mensagem** secreta e a **coloca em uma pequena caixa trancada** com o cadeado. Ela manda a caixa para Bob. **A mensagem está segura e trancada dentro da caixa**, à medida que a caixa segue seu caminho através do sistema de correios. Quando Bob recebe a caixa, **ele usa a chave para destrancar o cadeado** e recuperar a mensagem. Bob pode usar a mesma caixa e cadeado para enviar uma resposta secreta para Alice.
 
-![[Criptografia Simétrica.png|Chaves Simetricas]]
+<figure style="text-align: center;">
+  <img src="Criptografia Simétrica.png" style="margin: 0 auto;">
+  <figcaption>Chaves Simétricas</figcaption>
+</figure>
 
 Hoje, algoritmos de criptografia simétrica são comumente usados com o tráfego [[Abreviações#VPN = Virtual Private Network é uma rede usada para proteger os dados trafegados e mascarar seu Ip, protegendo assim seus dados pessoas.|VPN]]. Isso ocorre porque os algoritmos simétricos usam menos recursos da CPU do que os algoritmos de criptografia assimétrica. Isso permite que a criptografia e a descriptografia de dados sejam rápidas ao usar uma VPN. Ao usar algoritmos de criptografia simétrica, como qualquer outro tipo de criptografia, quanto maior a chave, mais tempo levará para alguém descobrir a chave. A maioria das chaves de criptografia tem entre **112** e **256** bits. Para garantir que a criptografia é segura, um **comprimento mínimo de chave de 128 bits** deve ser usado. Use uma chave mais longa para comunicações mais seguras. Alguns algoritmos de criptografia são:
 
@@ -35,17 +40,28 @@ Algoritmos de criptografia simétrica às vezes são classificados como uma <spa
 
 As cifras de bloco **transformam um bloco de texto simples** de comprimento fixo **em um bloco comum de texto cifrado** de **64** ou **128** bits. As cifras de bloco comuns incluem <span style="color:rgb(255, 255, 0)">DES</span> com um tamanho de bloco de <span style="color:rgb(255, 255, 0)">64</span> bits e <span style="color:rgb(65, 105, 255)">AES</span> com um tamanho de bloco de <span style="color:rgb(65, 105, 255)">128</span> bits.
 
-![[Cifra de Bloco.webp|Cifra de Bloco|950x238]]
+<figure style="text-align: center;">
+  <img src="Cifra de Bloco.webp" style="margin: 0 auto;">
+  <figcaption>Cifra de Bloco</figcaption>
+</figure>
+
 ## Cifra de Fluxo
 
 **As cifras de fluxo** criptografam o texto simples um byte ou um bit de cada vez. As cifras de fluxo **são basicamente uma cifra de bloco com um tamanho de bloco de um byte ou bit**. As cifras de fluxo geralmente são **mais rápidas** do que as cifras de bloco porque os dados são criptografados continuamente. Exemplos de cifras de fluxo incluem <span style="color:rgb(255, 255, 0)">RC4</span> e <span style="color:rgb(255, 255, 0)">A5</span>, que é usado para criptografar comunicações de telefone celular **Global System for Mobile Communications** (<span style="color:rgb(255, 255, 0)">GSM</span>), o famoso **2G**.
 
-![[Cifra de Fluxo.webp|Cifra de Fluxo]]
+<figure style="text-align: center;">
+  <img src="Cifra de Fluxo.webp" style="margin: 0 auto;">
+  <figcaption>Cifra de Fluxo</figcaption>
+</figure>
+
 # Criptografia Assimétrica
 
 Os algoritmos assimétricos, também chamados algoritmos de chave pública, são projetados para que a **chave usada para criptografia** seja **diferente** da **chave usada para descriptografia**, conforme mostrado na figura. A chave de descriptografia não pode, em uma quantidade razoável de tempo, ser calculada a partir da chave de criptografia e vice-versa.
 
-![[Criptografia Assimetrica.webp|Criptografia Assimétrica]]
+<figure style="text-align: center;">
+  <img src="Criptografia Assimetrica.webp" style="margin: 0 auto;">
+  <figcaption>Criptografia Assimétrica</figcaption>
+</figure>
 
 Algoritmos assimétricos usam uma **chave pública** e uma **chave privada**. Ambas as chaves são capazes do processo de criptografia, mas a chave emparelhada complementar é necessária para descriptografia. O processo também é reversível. Os dados criptografados com a chave pública requerem a chave privada para descriptografar. Algoritmos assimétricos alcançam confidencialidade e autenticidade usando este processo.
 
@@ -75,16 +91,27 @@ Quando a chave pública é usada para criptografar os dados, a chave privada dev
 
 <p style="text-align:center;"> Alice solicita e obtém a chave pública de Bob.</p>
 
-![[Alice solicita e obtém a chave pública de Bob..png|Confidencialidade|821x351]]
+<figure style="text-align: center;">
+  <img src="Alice solicita e obtém a chave pública de Bob..png" style="margin: 0 auto;">
+  <figcaption>Confidencialidade</figcaption>
+</figure>
+
 
 
 <p style="text-align:center;">Alice usa a chave pública de Bob para criptografar uma mensagem usando um algoritmo acordado. Alice envia a mensagem criptografada para Bob.</p>
 
-![[Alice usa a chave pública criptografar mensagem.png|Texto Criptografado]]
+<figure style="text-align: center;">
+  <img src="Alice usa a chave pública criptografar mensagem.png" style="margin: 0 auto;">
+  <figcaption>Texto Criptografado</figcaption>
+</figure>
+
 
 <p style="text-align:center;">Bob então usa sua chave privada para descriptografar a mensagem. Como Bob é o único com a chave privada, a mensagem de Alice só pode ser descriptografada por Bob e, portanto, a confidencialidade é alcançada.</p>
 
-![[Bob Descriptografa.webp|Descriptografia da mensagem]]
+<figure style="text-align: center;">
+  <img src="Bob Descriptografa.webp" style="margin: 0 auto;">
+  <figcaption>Descriptografia da mensagem</figcaption>
+</figure>
 
 ## Autenticação
 
@@ -96,14 +123,24 @@ Quando a chave privada é usada para criptografar os dados, a chave pública cor
 
 <p style="text-align:center;">Alice criptografa uma mensagem usando sua chave privada. Alice envia a mensagem criptografada para Bob. Bob precisa autenticar que a mensagem realmente veio de Alice.</p>
 
-![[Alice usa chave privada.webp.webp|Autenticação]]
+<figure style="text-align: center;">
+  <img src="Alice usa chave privada.webp.webp" style="margin: 0 auto;">
+  <figcaption>Autenticação</figcaption>
+</figure>
 
 <p style="text-align:center;">Para autenticar a mensagem, Bob solicita a chave pública de Alice.</p>
-![[Bob usa chave.png|Verificando a mensagem]]
+
+<figure style="text-align: center;">
+  <img src="Bob usa chave.png" style="margin: 0 auto;">
+  <figcaption>Verificando a mensagem</figcaption>
+</figure>
 
 <p style="text-align:center;">Bob usa a chave pública de Alice para descriptografar a mensagem.</p>
 
-![[bob descriptografa chave public.webp|Autenticando a mensagem]]
+<figure style="text-align: center;">
+  <img src="Bob descriptografa chave public.webp" style="margin: 0 auto;">
+  <figcaption>Autenticando a mensagem</figcaption>
+</figure>
 
 ## Integridade
 
@@ -111,24 +148,40 @@ Combinar os dois processos de criptografia assimétrica fornece confidencialidad
 
 <p style="text-align:center;">Alice quer enviar uma mensagem para Bob assegurando que só Bob pode ler o documento. Em outras palavras, Alice quer garantir a confidencialidade da mensagem. Alice usa a chave pública de Bob para cifrar a mensagem. Só Bob será capaz de decifrá-lo usando sua chave privada.</p>
 
-![[Alica sua cahve pub Bob.webp|Criptografando a mensagem]]
+<figure style="text-align: center;">
+  <img src="Alice sua chave pub Bob.webp" style="margin: 0 auto;">
+  <figcaption>Criptografando a mensagem</figcaption>
+</figure>
 
 <p style="text-align:center;">Alice também quer garantir a autenticação e integridade da mensagem. A autenticação garante a Bob que o documento foi enviado por Alice, e a integridade garante que ele não foi modificado Alice usa sua chave privada para cifrar um hash da mensagem. Alice envia a mensagem criptografada com seu hash criptografado para Bob.</p>
 
-![[Alice crip hash chave privada.webp|Criptografando a mensagem]]
+<figure style="text-align: center;">
+  <img src="Alice crip hash chave privada.webp" style="margin: 0 auto;">
+  <figcaption>Criptografando a mensagem</figcaption>
+</figure>
 
 <p style="text-align:center;">Bob usa a chave pública de Alice para verificar se a mensagem não foi modificada. O hash recebido é igual ao hash determinado localmente com base na chave pública de Alice. Além disso, isso verifica se Alice é definitivamente o remetente da mensagem porque ninguém mais tem a chave privada de Alice. </p>
 
-![[Bob savhe publi de alice pra descrip hash.webp|Gerando o Hash]]
+<figure style="text-align: center;">
+  <img src="Bob savhe publi de alice pra descrip hash.webp" style="margin: 0 auto;">
+  <figcaption>Gerando o Hash</figcaption>
+</figure>
 
 <p style="text-align:center;">Bob usa sua chave privada para decifrar a mensagem.</p>
 
-![[Bob usa sua chave privada para decifrar a mensagem.webp|Decifrando a mensagem]]
+<figure style="text-align: center;">
+  <img src="Bob usa sua chave privada para decifrar a mensagem.webp" style="margin: 0 auto;">
+  <figcaption>Decifrando a mensagem</figcaption>
+</figure>
+
 # Diffie-Hellman (DH)
 
 Diffie-Hellman (DH) é um algoritmo matemático assimétrico que permite que dois computadores gerem um segredo compartilhado idêntico sem terem se comunicado antes. A nova chave compartilhada nunca é realmente trocada entre o remetente e o destinatário. No entanto, como as duas partes o conhecem, a chave pode ser usada por um algoritmo de criptografia para criptografar o tráfego entre os dois sistemas. O DH é usado na troca de  dados são em uma VPN IPsec e dados SSH por exemplo.
 
-![[Diffie-Hellman.webp|Alice X Bob]]
+<figure style="text-align: center;">
+  <img src="Diffie-Hellman.webp" style="margin: 0 auto;">
+  <figcaption>Alice X Bob</figcaption>
+</figure>
 
 A troca de chaves DH começa com Alice e Bob concordando com uma cor comum arbitrária que não precisa ser mantida em segredo. A cor combinada em nosso exemplo é <span style="color:rgb(255, 255, 0)">amarelo</span>.
 

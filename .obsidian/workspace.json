@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "da69e66360452a94",
+            "id": "c9dfdc7a06302d87",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,17 +22,17 @@
             }
           },
           {
-            "id": "c9b1e9f25531d855",
+            "id": "ded728c86bd830ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RedTeam/Spoofing.md",
+                "file": "Conceitos/Zero-Trust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spoofing"
+              "title": "Zero-Trust"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "URL",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -207,11 +207,21 @@
       "obsidian-task-progress-bar:Open Task Genius view": false
     }
   },
-  "active": "c9b1e9f25531d855",
+  "active": "ded728c86bd830ea",
   "lastOpenFiles": [
-    "Abreviações.md",
     "TODO.md",
+    "Conceitos/Criptografia.md",
+    "Redes/Switch.md",
+    "Redes/Proxy.md",
+    "Redes/Protocolos.md",
+    "Linux/Sistema de Arquivos.md",
+    "Linux/Linux Courses.md",
+    "Trash/Imagens/Img Conceitos/Bob descriptografa chave public.webp",
+    "Conceitos/Chaves Públicas e Privadas.md",
+    "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
+    "Conceitos/Hash.md",
     "RedTeam/Spoofing.md",
+    "Abreviações.md",
     "BlueTeam/Snort.md",
     "DNS.md",
     "RedTeam/Denial of Service DDoS.md",
@@ -225,18 +235,9 @@
     "Trash/Imagens/Img Arquitetura/Memoria ROM.webp",
     "Cisco/Defesa de Rede - Cisco.md",
     "Arquitetura Computacional/Placa Mae.md",
-    "Linux/Sistema de Arquivos.md",
     "Trash/Imagens/Img Linux/LinuxVSWindos.webp",
     "Windows/Windows.md",
-    "Redes/Switch.md",
-    "Redes/Proxy.md",
-    "Redes/Protocolos.md",
     "Redes/Modelo OSI.md",
-    "Redes/HyperText Markup Language (HTMl).md",
-    "Redes/Gateway.md",
-    "Redes/Balanceador de Carga.md",
-    "Linux/Linux Courses.md",
-    "Linux/GNOME.md",
     "Trash/Imagens/Img Arquitetura/Memoria Ram.webp",
     "Trash/Imagens/Img Ferramentas/Ettercap Menus.png",
     "Trash/Imagens/Img Ferramentas/Tela Inicial Ettercap.png",
@@ -247,7 +248,6 @@
     "Trash/Imagens/Img RedTeam",
     "Trash/Imagens/Img RedTeam/man-in-the-middle.png",
     "Trash/Imagens/Img Arquitetura/Diagrama Fluxo CPU.jpg",
-    "Trash/Imagens/Img Arquitetura/Tipos de Kernel.png",
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-logical-and-physical-mode-exploration.pksz",
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-logging-from-multiple-sources.pka",
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-implement-physical-security-with-iot-devices.pka",

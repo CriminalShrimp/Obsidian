@@ -1,17 +1,17 @@
 ## Obisidan 2026
-- [x] [[Kernel]]
-- [x] [[Central Processing Unit (CPU)]]
-- [x] [[Ettercap]]
-- [x] [[Ataques de Engenharia Social]]
+- [x] Kernel
+- [x] Central Processing Unit (CPU)
+- [x] Ettercap
+- [x] Ataques de Engenharia Social
 - [ ] [[Kismet]]
 - [ ] [[Suricata]]
 - [ ] [[Zeek]]
 - [ ] [[Zero-Trust]]
-- [ ] [[Chaves Públicas e Privadas]]
-- [x] Em [[Defesa de Rede - Cisco#Gerenciamento de operações de segurança cibernética|Gerenciamento de operações de Segurança Cibernética]] falar mais sobreas as outras tecnologias
+- [ ] [[Criptografia|Criptografia eliptica]]
+- [x] Em Defesa de Rede falar mais sobreas as outras tecnologias
 - [ ] [[HoneyPots]]
 - [x] Verificar Arquivos Após Novos Plugings
-- [x] Rever [[Defesa de Rede - Cisco]] 📅 2026-02-05
+- [x] Rever Defesa de Rede - Cisco 📅 2026-02-05
 	- [x] Arrumar Descrição imgs
 	- [x] Fazer e linkar abreviações 🔼 🛫 2025-12-04
 	- [x] Resumir textos
@@ -30,11 +30,11 @@
 - [ ] [[Kubernetes]]
 - [ ] [[Git e GitHub]]
 - [ ] [[Arch Linux]]
-- [x] Legendar as imagens em [[Sistema de Arquivos]]
+- [x] Legendar as imagens em Sistema de Arquivos
 - [ ] [[HyperText Markup Language (HTMl)]]
 - [ ] [[Command N Control (CNC)]]
 - [ ] [[Malware]]
-- [x] [[Man-in-the-Middle (MITM)]]
+- [x] Man-in-the-Middle (MITM)
 - [ ] [[WireShark]] fazer algo bem detalhado de filtros e tudo mais
 - [ ] Fazer o Link dos Tópicos com maior descrição em Abreviações (por exemplo os protocolos)
 - [ ] Fazer Equipamentos e conceitos de redes
@@ -45,14 +45,13 @@
 	- [/] [[Protocolos]]
 		- [x] ARP
 		- [ ] ICMP
-		- [ ] POP3
 		- [ ] SMTP
 		- [ ] DNS
 	- [ ] [[Modelo OSI]]
 - [ ] [[Denial of Service DDoS]]
 - [ ] [[Backdoors]]
-- [x] [[Spoofing]]
-- [x] [[Placa Mae]]
+- [x] Spoofing
+- [x] Placa Mae
 - [x] Dar uma geral em [[Criptografia]]
 - [x] Fazer a criação de Sumario nos arquivos.
 - [?] Usar as marcações em hmtl para centralizar e dar descrição as imagens
