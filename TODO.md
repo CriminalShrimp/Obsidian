@@ -6,7 +6,7 @@
 - [ ] [[Kismet]]
 - [ ] [[Suricata]]
 - [ ] [[Zeek]]
-- [ ] [[Zero-Trust]]
+- [x] Zero-Trust
 - [ ] [[Criptografia|Criptografia eliptica]]
 - [x] Em Defesa de Rede falar mais sobreas as outras tecnologias
 - [ ] [[HoneyPots]]
