@@ -22,17 +22,17 @@
             }
           },
           {
-            "id": "ded728c86bd830ea",
+            "id": "123da14b07944be5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conceitos/Zero-Trust.md",
+                "file": "BlueTeam/HoneyPots.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zero-Trust"
+              "title": "HoneyPots"
             }
           }
         ],
@@ -59,7 +59,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de arquivos"
             }
           },
           {
@@ -103,7 +103,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 280.5,
+    "collapsed": true
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -194,21 +195,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false,
       "github-sync:Sync with Remote": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-task-progress-bar:Open Task Genius view": false
+      "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "ded728c86bd830ea",
+  "active": "123da14b07944be5",
   "lastOpenFiles": [
+    "Sem título.base",
     "TODO.md",
     "Conceitos/Zero-Trust.md",
     "Trash/Imagens/Img Conceitos/Castelo e Fosso X Zero Trust.png",
