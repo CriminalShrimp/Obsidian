@@ -150,12 +150,12 @@ ls  <span style="color:rgb(0, 176, 240)">opções </span>  <span style="color:rg
 -**man -k** - Mostra todas as paginas que contem a palavra usada.
 ###### info - Traz as informações sobre o que foi procurado
 ## Sistema
-###### shutdown - Faz o processo de desligamento padrão, executando rotinas, finalizando serviços e processos e desligando a maquina. 
+###### shutdown - Faz o processo de desligamento padrão, executando rotinas, finalizando serviços e processos e desligando a máquina. 
 shutdown <span style="color:rgb(65, 105, 255)">Opções</span> <span style="color:rgb(0, 176, 80)">Tempo</span> Mensagem
 **<span style="color:rgb(65, 105, 255)">-r</span>, --reboot**
 	Reinicia o sistema
 **<span style="color:rgb(65, 105, 255)">-h</span>,** <span style="color:rgb(0, 176, 80)">TIME</span>
 	 Colocando `now` faz com que o sistema seja desligado na hora. Também da para colocar tempo especifico para desligar o sistema 
 Ex: `shutdown -h 10:00 "Shutting down for scheduled maintenance."`
-###### halt - Para o sistema operacional porém ainda deixa a maquina ligada.
+###### halt - Para o sistema operacional porém ainda deixa a máquina ligada.
 ###### poweroff - Parecido com shutdown porém funciona de uma forma mais "bruta", cortando a energia do sistema, não rodando scripts e rotinas antes de desligar.

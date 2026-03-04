@@ -109,7 +109,7 @@ O comando `systemctl status` mostra os status do serviço.
 #### Logando pela linha de comando
 
 O comando SSH exige o nome do usuário e o endereço/domínio que esta sendo conectado, esses dois argumentos são adicionados com o símbolo (`@`)  separando-os
-Nesse exemplo vc esta logando na maquina `servera`, com o usuário `remote` que tem a senha `RedHat123!`.
+Nesse exemplo vc esta logando na máquina `servera`, com o usuário `remote` que tem a senha `RedHat123!`.
 
 [user@host ~]$ **`ssh remote@servera`**
 student@servera's password: **`RedHat123!`**

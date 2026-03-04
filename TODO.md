@@ -9,7 +9,7 @@
 - [x] Zero-Trust
 - [ ] [[Criptografia|Criptografia eliptica]]
 - [x] Em Defesa de Rede falar mais sobreas as outras tecnologias
-- [ ] [[HoneyPots]]
+- [x] HoneyPots
 - [x] Verificar Arquivos Após Novos Plugings
 - [x] Rever Defesa de Rede - Cisco 📅 2026-02-05
 	- [x] Arrumar Descrição imgs
@@ -48,7 +48,7 @@
 		- [ ] SMTP
 		- [ ] DNS
 	- [ ] [[Modelo OSI]]
-- [ ] [[Denial of Service DDoS]]
+- [ ] [[Denial of Service (DDoS)]]
 - [ ] [[Backdoors]]
 - [x] Spoofing
 - [x] Placa Mae

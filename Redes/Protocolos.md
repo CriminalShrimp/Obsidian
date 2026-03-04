@@ -21,7 +21,7 @@ O **P**rotocolo de **R**esolução de **E**ndereços é um protocolo que funcion
   <figcaption>ARP Request e Replay</figcaption>
 </figure>
 
-O protocolo ARP possui um cache e um tabela dentro da maquina, ele guarda o endereço dos MACs usados recentemente. Para ver essa tabela com os endereços tanto no Windows quando no Linux o comando é `arp -a`. 
+O protocolo ARP possui um cache e um tabela dentro da máquina, ele guarda o endereço dos MACs usados recentemente. Para ver essa tabela com os endereços tanto no Windows quando no Linux o comando é `arp -a`. 
 
 ### Pacote ARP
 
@@ -59,7 +59,7 @@ O pacote ARP vem encapsulado em um quadro (frame) da Ethernet, ele possui um tam
 
 - **Target Hardware Address (THA):** **Endereço De Hardware do Alvo** só tem importância no <span style="color:rgb(0, 176, 80)">ARP Replay</span>, pois é somente nele que sabemos o endereço do destino que queremos, no <span style="color:rgb(65, 105, 255)">ARP Request</span> esse valor vem com 0s. o tamanho dele no pacote é de 48 bits.
 
-- **Target Protocol Address (TPA):** E por final o **Endereço de Protocolo do Alvo** que é o endereço IP, é a partir dele que é feita a requisição ARP, a maquina tem o endereço IP e através dele descobre o endereço MAC .O valor desse campo é de 32 bits.
+- **Target Protocol Address (TPA):** E por final o **Endereço de Protocolo do Alvo** que é o endereço IP, é a partir dele que é feita a requisição ARP, a máquina tem o endereço IP e através dele descobre o endereço MAC .O valor desse campo é de 32 bits.
 
 #### Exemplo de Pacote ARP
 

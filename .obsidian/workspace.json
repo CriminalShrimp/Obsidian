@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c9dfdc7a06302d87",
+            "id": "1f5a3b68387ec5d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "RedTeam/Denial of Service (DDoS).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
-            }
-          },
-          {
-            "id": "123da14b07944be5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BlueTeam/HoneyPots.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HoneyPots"
+              "title": "Denial of Service (DDoS)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "varias",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,7 +61,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Procurar"
             }
           },
           {
@@ -99,12 +84,12 @@
               "title": "tg-left-sidebar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 280.5,
-    "collapsed": true
+    "width": 280.5
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -208,10 +193,21 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "123da14b07944be5",
+  "active": "9afb7dec79881ba3",
   "lastOpenFiles": [
-    "Sem título.base",
+    "Trash/Imagens/Img RedTeam/DoS vs DDoS.png",
+    "Cisco/Defesa de Rede - Cisco.md",
+    "BlueTeam/HoneyPots.md",
+    "Arquitetura Computacional/Kernel.md",
+    "Linux/Linux Courses.md",
+    "Redes/Protocolos.md",
+    "RedTeam/Spoofing.md",
+    "Linux/CLI.md",
+    "Abreviações.md",
+    "RedTeam/Denial of Service (DDoS).md",
     "TODO.md",
+    "RedTeam/Malware.md",
+    "Sem título.base",
     "Conceitos/Zero-Trust.md",
     "Trash/Imagens/Img Conceitos/Castelo e Fosso X Zero Trust.png",
     "Arquitetura Computacional/Computador.md",
@@ -220,27 +216,17 @@
     "Conceitos/Criptografia.md",
     "Redes/Switch.md",
     "Redes/Proxy.md",
-    "Redes/Protocolos.md",
     "Linux/Sistema de Arquivos.md",
-    "Linux/Linux Courses.md",
     "Trash/Imagens/Img Conceitos/Bob descriptografa chave public.webp",
     "Conceitos/Chaves Públicas e Privadas.md",
     "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
     "Conceitos/Hash.md",
-    "RedTeam/Spoofing.md",
-    "Abreviações.md",
     "BlueTeam/Snort.md",
     "DNS.md",
-    "RedTeam/Denial of Service DDoS.md",
     "RedTeam/Ataques de Engenharia Social.md",
     "Ferramentas/Ettercap.md",
-    "Arquitetura Computacional/Kernel.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
-    "Arquitetura Computacional/Dispositivo de Armazenamento.md",
-    "Arquitetura Computacional/Central Processing Unit (CPU).md",
     "Trash/Imagens/Img Arquitetura/Memoria ROM.webp",
-    "Cisco/Defesa de Rede - Cisco.md",
-    "Arquitetura Computacional/Placa Mae.md",
     "Trash/Imagens/Img Linux/LinuxVSWindos.webp",
     "Trash/Imagens/Img Arquitetura/Memoria Ram.webp",
     "Trash/Imagens/Img Ferramentas/Ettercap Menus.png",
@@ -255,7 +241,6 @@
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-explore-a-netflow-implementation.pka",
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-configure-wireless-router-hardening-and-security.pka",
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-configure-server-based-authentication-with-tacacs-and-radius.pka",
-    "Cisco/Packet Tracer/Packet Tracer/packet-tracer-configure-access-control.pka",
     "Treino/Rotina Treino.canvas",
     "Sem título.canvas"
   ]

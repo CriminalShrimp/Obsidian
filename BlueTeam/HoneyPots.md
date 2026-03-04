@@ -23,6 +23,6 @@ A ideia é simples, fazer um **sistema muito parecido com o sistema real, para q
 
 Além disso existem Honeypots específicos para tipos de ataques como: **Malware Honeypots** que exploram vetores de ataques malware, **Spam Honeypots** que pegam métodos de spam de e-mail, monitoram e os bloqueiam por exemplo, **Database Honeypots** que analisam ataques contra banco de dados, **Client Honeypots** são reforçados com segurança pois eles se passam por cliente em busca de servidores maliciosos, **Spider Honeypots** que são feitos para segurarem bots que buscam paginas em uma pagina, e diversos outros tipos.
 
-Muito importante reforçar que <span style="color:rgb(206, 0, 86)">Honeypots podem ser usados pelos invasores para entrar na rede</span>, pois se o mesmo não estiver bem configurado e protegido, é possível se espalhar na rede e infectar mais maquinas, assim levando ao comprometimento de todo o sistema, servidores e serviços.
+Muito importante reforçar que <span style="color:rgb(206, 0, 86)">Honeypots podem ser usados pelos invasores para entrar na rede</span>, pois se o mesmo não estiver bem configurado e protegido, é possível se espalhar na rede e infectar mais máquinas, assim levando ao comprometimento de todo o sistema, servidores e serviços.
 
 [^1]: Esses sensores seriam regras e "triggers" que alertam a equipe de segurança em caso de ameaça.
