@@ -24,7 +24,7 @@ Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam
 ###### IaaS = Infrastructure as a Service modelo de computação em nuvem que fornece recursos conforme a demanda e o uso.
 ###### LSB = Least Significant Bit é o bit mais à direita e menos significativo em um número binário.
 ###### NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas.
-###### HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas.
+###### HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host específico em busca de atividades maliciosas.
 ###### PCAP = Refere-se a Packet CAPture que é um método usado para capturar e armazenar pacotes de trafego de rede.
 ###### SSL = Secure Socket Layer, é um protocolo de segurança que criptografa a conexão entre navegadores e servidores, protegendo dados sensíveis.
 

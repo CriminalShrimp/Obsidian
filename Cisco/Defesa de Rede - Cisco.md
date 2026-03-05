@@ -423,7 +423,7 @@ As abordagens **N**etwork **B**ehavior **A**nalysis (**NBA**) e a **NBA** **D**e
 ## Logs de dispositivos
 ### Logs de Host
 
-Os [[Abreviações#HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas.|HIDS]] são executados em hosts individuais, eles não só detecta intrusões, mas na forma de firewalls baseados em host podem impedir intrusões. Este software cria logs e os armazena no host. Isso pode dificultar a visão do que está acontecendo em hosts na empresa, pois muitas proteções baseadas em host têm uma maneira de enviar logs para servidores centralizados de gerenciamento de logs, onde eles podem ser pesquisados e analisados. Os sistemas HIDS podem usar agentes para enviar logs para servidores de gerenciamento.
+Os [[Abreviações#HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host específico em busca de atividades maliciosas.|HIDS]] são executados em hosts individuais, eles não só detecta intrusões, mas na forma de firewalls baseados em host podem impedir intrusões. Este software cria logs e os armazena no host. Isso pode dificultar a visão do que está acontecendo em hosts na empresa, pois muitas proteções baseadas em host têm uma maneira de enviar logs para servidores centralizados de gerenciamento de logs, onde eles podem ser pesquisados e analisados. Os sistemas HIDS podem usar agentes para enviar logs para servidores de gerenciamento.
 
 ### Syslog
 
@@ -481,7 +481,7 @@ Os alertas podem vir de várias fontes:
 
 - **[[Abreviações#NIDS = Network Intrusion Detection System são tecnologias que monitoram a rede em busca de atividades maliciosas|NIDS]]**: [[Snort|Snort]], [[Suricata|Suricata]] e [[Zeek|Zeek]].
 
-- **[[Abreviações#HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host especifico em busca de atividades maliciosas|HIDS]]**: [[Open Source HIDS SECurity (OSSEC)|OSSEC]], [[Wazuh|Wazuh]].
+- **[[Abreviações#HIDS = Host Intrusion Detection System segurança são tecnologias que monitoram um host específico em busca de atividades maliciosas|HIDS]]**: [[Open Source HIDS SECurity (OSSEC)|OSSEC]], [[Wazuh|Wazuh]].
 
 - **Gerenciamento e monitoramento de ativos**: Sistema de detecção de ativos passivos (PADS).
 

@@ -31,9 +31,9 @@
 - [ ] [[Git e GitHub]]
 - [ ] [[Arch Linux]]
 - [x] Legendar as imagens em Sistema de Arquivos
-- [ ] [[HyperText Markup Language (HTMl)]]
+- [-] HyperText Markup Language (HTMl)
 - [ ] [[Command N Control (CNC)]]
-- [ ] [[Malware]]
+- [/] [[Malware]]
 - [x] Man-in-the-Middle (MITM)
 - [ ] [[WireShark]] fazer algo bem detalhado de filtros e tudo mais
 - [ ] Fazer o Link dos Tópicos com maior descrição em Abreviações (por exemplo os protocolos)

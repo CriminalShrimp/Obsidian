@@ -45,7 +45,7 @@ Também chamado de memória [[Abreviações#USB = Universal Serial Bus chamado d
 
 ### HD/HDD
 
-**H**ardware **D**isc **D**rive ou Discos Rígidos usa armazenamento magnético e um ou mais pratos (que seriam os discos) para salvar gravar os dados. A gravação e a leitura dos dados são feitas por um braço móvel, esses dados são acessados de forma aleatória. Como os HDs estão no mercado a muito tempo, existem várias tecnologia que melhoram seu desempenho e também possuem várias capacidade distintas, tendo alguns modelos de 128 GB e alguns que hoje em dia  chegam até 20 TB, e no mercado também existem HDs moveis e são os <span style="color:rgb(255, 255, 0)">HDs Externo</span> que tem o mesmo funcionamento dos HDs normais, porém de uma forma mais segura a ser transportado no dia a dia.
+**H**ardware **D**isc **D**rive ou Discos Rígidos usa armazenamento magnético e um ou mais pratos (que seriam os discos) para salvar gravar os dados. A gravação e a leitura dos dados são feitas por um braço móvel, esses dados são acessados de forma aleatória. Como os HDs estão no mercado a muito tempo, existem várias tecnologia que melhoram seu desempenho e também possuem várias capacidade distintas, tendo alguns modelos de 128 GB e alguns que hoje em dia  chegam até 20 TB, e no mercado também existem HDs móveis e são os <span style="color:rgb(255, 255, 0)">HDs Externo</span> que tem o mesmo funcionamento dos HDs normais, porém de uma forma mais segura a ser transportado no dia a dia.
 
 <figure style="text-align: center;">
   <img src="HD Explicado.webp" style="margin: 0 auto;">
@@ -90,7 +90,7 @@ Também chamado de memória [[Abreviações#USB = Universal Serial Bus chamado d
 
 ## Central Processing Unit (CPU)
 
-Traduzindo para o português **U**nidade **C**entral de **P**rocessamento, é um componente que fica localizado em um espaço especifico (**socket**) na placa mãe, como o nome sugere, nela são centralizados os processamento. As principais produtoras de CPU são a <span style="color:rgb(206, 0, 86)">Intel</span> e a <span style="color:rgb(65, 105, 255)">AMD</span>. Dentro da CPU existem ainda outros componentes, sendo sendo eles:
+Traduzindo para o português **U**nidade **C**entral de **P**rocessamento, é um componente que fica localizado em um espaço específico (**socket**) na placa mãe, como o nome sugere, nela são centralizados os processamento. As principais produtoras de CPU são a <span style="color:rgb(206, 0, 86)">Intel</span> e a <span style="color:rgb(65, 105, 255)">AMD</span>. Dentro da CPU existem ainda outros componentes, sendo sendo eles:
 
 - **C**ontrol **U**nit (**CU**): A **U**nidade de **C**ontrole (**UC**) em português, é a responsável por controlar e comandar os processamentos dos dados, em outras palavras ela interpreta as instruções que são passadas, e também a entrada de dados e saídas também. Um exemplo disso seria: A UC controla os dados enviados de um teclado (<span style="color:rgb(255, 255, 0)">entrada de dados</span>) para a CPU processa-los, e novamente a UC controla a sida desses dados para o monitor (<span style="color:rgb(255, 255, 0)">dispositivo de saída</span>).
 
