@@ -7,7 +7,7 @@
 - [ ] [[Suricata]]
 - [ ] [[Zeek]]
 - [x] Zero-Trust
-- [ ] [[Criptografia|Criptografia eliptica]]
+- [/] [[Criptografia|Criptografia eliptica]]
 - [x] Em Defesa de Rede falar mais sobreas as outras tecnologias
 - [x] HoneyPots
 - [x] Verificar Arquivos Após Novos Plugings
@@ -33,10 +33,10 @@
 - [x] Legendar as imagens em Sistema de Arquivos
 - [-] HyperText Markup Language (HTMl)
 - [ ] [[Command N Control (CNC)]]
-- [/] [[Malware]]
+- [x] Malware
 - [x] Man-in-the-Middle (MITM)
 - [ ] [[WireShark]] fazer algo bem detalhado de filtros e tudo mais
-- [ ] Fazer o Link dos Tópicos com maior descrição em Abreviações (por exemplo os protocolos)
+- [x] Fazer o Link dos Tópicos com maior descrição em Abreviações (por exemplo os protocolos)
 - [ ] Fazer Equipamentos e conceitos de redes
 	- [ ] [[Switch]]
 	- [ ] [[Gateway]]
@@ -49,9 +49,9 @@
 		- [ ] DNS
 	- [ ] [[Modelo OSI]]
 - [ ] [[Denial of Service (DDoS)]]
-- [ ] [[Backdoors]]
+- [-] Backdoors
 - [x] Spoofing
 - [x] Placa Mae
-- [x] Dar uma geral em [[Criptografia]]
+- [x] Dar uma geral em Criptografia
 - [x] Fazer a criação de Sumario nos arquivos.
 - [?] Usar as marcações em hmtl para centralizar e dar descrição as imagens

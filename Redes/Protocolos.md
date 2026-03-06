@@ -72,5 +72,5 @@ Um exemplo de um pacote ARP capturado fornecido pela ferramenta e pelo site do [
 
 ## Internet Control Message Protocol (ICMP)
 
-## DNS
+## Domain Name System (DNS)
 

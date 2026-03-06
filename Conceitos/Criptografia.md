@@ -216,3 +216,4 @@ Diffie-Hellman usa diferentes grupos para determinar a força da chave que é us
 Infelizmente, os sistemas de chave assimétrica são extremamente lentos para qualquer tipo de criptografia em massa. É por isso que é comum criptografar a maior parte do tráfego usando um algoritmo simétrico, como 3DES ou AES, e usar o algoritmo DH para criar chaves que serão usadas pelo algoritmo de criptografia.
 
 # Criptografia de Curva Elíptica
+

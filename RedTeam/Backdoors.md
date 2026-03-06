@@ -1,6 +1,0 @@
-**Sumário**
-	**Tags:** #RedTeam 
-	**Conteúdo:**
-	
-----
-
