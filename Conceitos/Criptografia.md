@@ -2,7 +2,8 @@
 	**Tags:** #Segurança 
 	**Conteúdo:** 
 		Maratona de Ciber Segurança Gratuita da Cisco.
-		keepersecurity.com/blog/pt-br/2023/06/07/what-is-elliptic-curve-cryptography/ - Eliptica
+		keepersecurity.com/blog/pt-br/2023/06/07/what-is-elliptic-curve-cryptography/ - Elíptica
+		youtube.com/watch?v=AEVrpvaObdI - Vídeo Elíptica 
 	
 ----
 
@@ -30,12 +31,17 @@ Para ajudar a ilustrar como a criptografia simétrica funciona, considere um exe
 Hoje, algoritmos de criptografia simétrica são comumente usados com o tráfego [[Abreviações#VPN = Virtual Private Network é uma rede usada para proteger os dados trafegados e mascarar seu Ip, protegendo assim seus dados pessoas.|VPN]]. Isso ocorre porque os algoritmos simétricos usam menos recursos da CPU do que os algoritmos de criptografia assimétrica. Isso permite que a criptografia e a descriptografia de dados sejam rápidas ao usar uma VPN. Ao usar algoritmos de criptografia simétrica, como qualquer outro tipo de criptografia, quanto maior a chave, mais tempo levará para alguém descobrir a chave. A maioria das chaves de criptografia tem entre **112** e **256** bits. Para garantir que a criptografia é segura, um **comprimento mínimo de chave de 128 bits** deve ser usado. Use uma chave mais longa para comunicações mais seguras. Alguns algoritmos de criptografia são:
 
 - <span style="color:rgb(255, 255, 0)">Data Encryption Standard (DES)</span> - Este é um algoritmo de criptografia simétrica legado. Ele usa um comprimento de chave curto que o **torna inseguro para a maioria dos usos atuais**. 
+
 - <span style="color:rgb(255, 255, 0)">3DES (Triple DES)</span> - O substituto do DES e repete o processo do algoritmo DES três vezes. Deve ser evitado, se possível, uma vez que está programado para ser aposentado em 2023. Se implementado, use durações de chave muito curtas. 
-- <span style="color:rgb(255, 255, 0)">Advanced Encryption Standard (AES)</span> - É um algoritmo de criptografia **simétrica popular e recomendado**. Ele oferece combinações de chaves de **128**, **192** ou **256** bits para criptografar blocos de dados de 128, 192 ou 256 bits. 
-- <span style="color:rgb(255, 255, 0)">Software-Optimized Encryption Algorithm (SEAL)</span> - É um algoritmo de criptografia simétrica alternativo mais rápido ao AES. SEAL é uma cifra de fluxo que usa uma chave de criptografia de **160** bits e tem um **impacto menor na CPU** em comparação com outros algoritmos baseados em software. 
+
+- <span style="color:rgb(255, 255, 0)">Advanced Encryption Standard (AES)</span> - É um algoritmo de criptografia **simétrica popular e recomendado**. Ele oferece combinações de chaves de **128**, **192** ou **256** bits para criptografar blocos de dados de 128, 192 ou 256 bits.
+
+- <span style="color:rgb(255, 255, 0)">Software-Optimized Encryption Algorithm (SEAL)</span> - É um algoritmo de criptografia simétrica alternativo mais rápido ao AES. SEAL é uma cifra de fluxo que usa uma chave de criptografia de **160** bits e tem um **impacto menor na CPU** em comparação com outros algoritmos baseados em software.
+
 - <span style="color:rgb(255, 255, 0)">Algoritmos da série Rivest ciphers (RC)</span> - Este algoritmo foi desenvolvido por Ron Rivest. Diversas variações foram desenvolvidas, mas o <span style="color:rgb(255, 255, 0)">RC4</span> foi o mais prevalente em uso. RC4 é uma cifra de fluxo usada para proteger o tráfego da web. Verificou-se que tem **múltiplas vulnerabilidades** que o tornaram **inseguro**.
 
 Algoritmos de criptografia simétrica às vezes são classificados como uma <span style="color:rgb(0, 176, 80)">cifra de bloco</span> ou uma <span style="color:rgb(0, 176, 80)">cifra de fluxo</span>.
+
 ## Cifra de Bloco
 
 As cifras de bloco **transformam um bloco de texto simples** de comprimento fixo **em um bloco comum de texto cifrado** de **64** ou **128** bits. As cifras de bloco comuns incluem <span style="color:rgb(255, 255, 0)">DES</span> com um tamanho de bloco de <span style="color:rgb(255, 255, 0)">64</span> bits e <span style="color:rgb(65, 105, 255)">AES</span> com um tamanho de bloco de <span style="color:rgb(65, 105, 255)">128</span> bits.
@@ -74,13 +80,13 @@ Como nenhuma das partes possui um segredo compartilhado, é necessário usar com
 
 Os **algoritmos assimétricos são substancialmente mais lentos** que os algoritmos simétricos. Seu design é baseado em problemas computacionais, como fatorar números extremamente grandes ou calcular logaritmos discretos de números extremamente grandes. Por serem lentos, algoritmos assimétricos geralmente são usados em mecanismos criptográficos de baixo volume, como assinaturas digitais e troca de chaves. No entanto, o gerenciamento de chaves de algoritmos assimétricos tende a ser mais simples que os algoritmos simétricos, porque geralmente uma das chaves de criptografia ou de descriptografia pode se tornar publica ou privada. Alguns dos algoritmos de descriptografia assimétricos são:
 
-|Algoritmo|Tamanho da Chave (bits)|Descrição|
-|---|---|---|
-|**Diffie-Hellman (DH)**|512, 1024, 2048, 3072, 4096|Permite que duas partes concordem com uma chave compartilhada para criptografia. Sua segurança baseia-se na dificuldade de calcular o expoente a partir de uma potência modular.|
-|**Digital Signature Standard (DSS) / Digital Signature Algorithm (DSA)**|512 - 1024|Utilizado para assinaturas digitais, baseado no esquema de assinatura ElGamal. A criação da assinatura tem velocidade semelhante ao RSA, mas a verificação é mais lenta.|
-|**Rivest-Shamir-Adleman (RSA)**|512 até 2048|Algoritmo de chave pública baseado na dificuldade de fatoração de números grandes. Amplamente utilizado em comércio eletrônico e considerado seguro com chaves suficientemente longas.|
-|**El Gamal**|512 - 1024|Baseado no contrato de chave Diffie-Hellman. Uma desvantagem é que a mensagem criptografada se torna muito grande, sendo usada principalmente para pequenas mensagens, como chaves secretas.|
-|**Técnicas de Curva Elíptica**|224 ou superior|Pode ser aplicada a diversos algoritmos, como Diffie-Hellman e ElGamal. Sua principal vantagem é a possibilidade de usar chaves menores sem comprometer a segurança.|
+| Algoritmo                                                                | Tamanho da Chave (bits)     | Descrição                                                                                                                                                                                    |
+| ------------------------------------------------------------------------ | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Diffie-Hellman (DH)**                                                  | 512, 1024, 2048, 3072, 4096 | Permite que duas partes concordem com uma chave compartilhada para criptografia. Sua segurança baseia-se na dificuldade de calcular o expoente a partir de uma potência modular.             |
+| **Digital Signature Standard (DSS) / Digital Signature Algorithm (DSA)** | 512 - 1024                  | Utilizado para assinaturas digitais, baseado no esquema de assinatura ElGamal. A criação da assinatura tem velocidade semelhante ao RSA, mas a verificação é mais lenta.                     |
+| **Rivest-Shamir-Adleman (RSA)**                                          | 512 até 2048                | Algoritmo de chave pública baseado na dificuldade de fatoração de números grandes. Amplamente utilizado em comércio eletrônico e considerado seguro com chaves suficientemente longas.       |
+| **El Gamal**                                                             | 512 - 1024                  | Baseado no contrato de chave Diffie-Hellman. Uma desvantagem é que a mensagem criptografada se torna muito grande, sendo usada principalmente para pequenas mensagens, como chaves secretas. |
+| **Técnicas de Curva Elíptica**                                           | 224 ou superior             | Pode ser aplicada a diversos algoritmos, como Diffie-Hellman e ElGamal. Sua principal vantagem é a possibilidade de usar chaves menores sem comprometer a segurança.                         |
 ## Confidencialidade 
 
 Algoritmos assimétricos são usados para fornecer confidencialidade sem pré-compartilhar uma senha. O objetivo de confidencialidade dos algoritmos assimétricos é iniciado quando o processo de criptografia é iniciado com a chave pública. O processo pode ser resumido usando a fórmula:
@@ -215,5 +221,16 @@ Diffie-Hellman usa diferentes grupos para determinar a força da chave que é us
 
 Infelizmente, os sistemas de chave assimétrica são extremamente lentos para qualquer tipo de criptografia em massa. É por isso que é comum criptografar a maior parte do tráfego usando um algoritmo simétrico, como 3DES ou AES, e usar o algoritmo DH para criar chaves que serão usadas pelo algoritmo de criptografia.
 
-# Criptografia de Curva Elíptica
+# Criptografia de Curva Elíptica (ECC)
 
+Ainda usando o conceito de chave publica e chave privada, porem a **ECC** é utiliza a área de matemática avançada de **curvas elípticas**, que é dada pela equação $y² = x³ + ax + b$, a onde $a$ e $b$ são constantes e essa curva e definida em um [^1]campo finito. O que torna esse conceito de curvas elípticas interessante para a criptografia são as propriedades que ela possui, como a **simetria horizontal**, e a de que qualquer linha reta não vertical sempre **cruzara a curva** em no **máximo 3 pontos**, esses pontos são chamados de $P$, $Q$ e $R$. Em uma visualização gráfica veríamos da seguinte forma:
+
+<figure style="text-align: center;">
+  <img src="Curva Elíptica.png" style="margin: 0 auto;">
+  <figcaption>Curva Elíptica</figcaption>
+</figure>
+
+Quando usamos essa tecnologia para criptografia adicionamos o elemento $G$, que é um parâmetro publico gerado na curva elíptica. 
+Os benefícios dela são diversos quando comparados a criptografia RSA, sendo eles um
+
+[^1]: É um "sistema de números" que possui um fim, mas onde a matemática ainda funciona perfeitamente, o relógio por exemplo tem números limitados de 1 a 12, se você somar 5 horas às 10 horas, o resultado não será 15 horas, mas sim 3 horas, pois o valor "gira" e retorna para dentro do grupo. Essa característica cria uma matemática fechada, onde operações como soma, subtração, multiplicação e divisão sempre resultam em um número daquele conjunto restrito.
