@@ -74,8 +74,11 @@ Algoritmos assimétricos usam uma **chave pública** e uma **chave privada**. Am
 Como nenhuma das partes possui um segredo compartilhado, é necessário usar comprimentos de chave muito longos. A criptografia  assimétrica pode usar comprimentos de chave entre **512** e **4.096** bits. Comprimentos de chave maiores ou iguais a <span style="color:rgb(65, 105, 255)">2.048</span> bits podem ser <span style="color:rgb(65, 105, 255)">confiáveis</span>, enquanto comprimentos de chave de <span style="color:rgb(206, 0, 86)">1.024</span> ou menores são considerados <span style="color:rgb(206, 0, 86)">insuficientes</span>. Exemplos de protocolos que usam algoritmos de chave assimétrica incluem:
 
 • <span style="color:rgb(255, 255, 0)">Internet Key Exchange (IKE)</span> - Este é um componente fundamental das VPNs IPsec.
+
 • <span style="color:rgb(255, 255, 0)">Secure Socket Layer (SSL)</span> - Agora isso é implementado como **Transport Layer Security** (<span style="color:rgb(255, 255, 0)">TLS</span>) padrão da **Internet Engineering Task Force** (<span style="color:rgb(255, 255, 0)">IETF</span>).
+
 • <span style="color:rgb(255, 255, 0)">Secure Shell (SSH)</span> - Este protocolo fornece uma conexão segura de acesso remoto a dispositivos de rede.
+
 • <span style="color:rgb(255, 255, 0)">Pretty Good Privacy (PGP)</span> - Este programa de computador fornece privacidade e autenticação criptográficas. É frequentemente usado para aumentar a segurança das comunicações por e-mail.
 
 Os **algoritmos assimétricos são substancialmente mais lentos** que os algoritmos simétricos. Seu design é baseado em problemas computacionais, como fatorar números extremamente grandes ou calcular logaritmos discretos de números extremamente grandes. Por serem lentos, algoritmos assimétricos geralmente são usados em mecanismos criptográficos de baixo volume, como assinaturas digitais e troca de chaves. No entanto, o gerenciamento de chaves de algoritmos assimétricos tende a ser mais simples que os algoritmos simétricos, porque geralmente uma das chaves de criptografia ou de descriptografia pode se tornar publica ou privada. Alguns dos algoritmos de descriptografia assimétricos são:
@@ -102,15 +105,12 @@ Quando a chave pública é usada para criptografar os dados, a chave privada dev
   <figcaption>Confidencialidade</figcaption>
 </figure>
 
-
-
 <p style="text-align:center;">Alice usa a chave pública de Bob para criptografar uma mensagem usando um algoritmo acordado. Alice envia a mensagem criptografada para Bob.</p>
 
 <figure style="text-align: center;">
   <img src="Alice usa a chave pública criptografar mensagem.png" style="margin: 0 auto;">
   <figcaption>Texto Criptografado</figcaption>
 </figure>
-
 
 <p style="text-align:center;">Bob então usa sua chave privada para descriptografar a mensagem. Como Bob é o único com a chave privada, a mensagem de Alice só pode ser descriptografada por Bob e, portanto, a confidencialidade é alcançada.</p>
 
@@ -203,21 +203,7 @@ Alice envia sua <span style="color:rgb(255, 92, 0)">cor pública</span> (<span s
 
 Alice e Bob **misturam a cor que receberam** com a sua própria **cor secreta original** (<span style="color:rgb(206, 0, 86)">vermelho</span> para <span style="color:rgb(206, 0, 86)">Alice</span>, e <span style="color:rgb(65, 105, 255)">azul</span> para <span style="color:rgb(65, 105, 255)">Bob</span>). O resultado é uma **mistura final** de cor <span style="color:rgb(107, 39, 0)">marrom</span> que é idêntica à mistura de cor final do parceiro. A cor <span style="color:rgb(107, 39, 0)">marrom</span> representa a <span style="color:rgb(107, 39, 0)">chave secreta compartilhada</span> resultante **entre Bob e Alice**.
 
-A segurança do DH se baseia-se no fato de que ele usa números muito grandes em seus cálculos. Por exemplo, um número DH 1024 bits é aproximadamente igual a um número decimal de 309 dígitos. Considerando que um bilhão são 10 dígitos decimais (1.000.000.000), pode-se facilmente imaginar a complexidade de trabalhar não com um, mas com vários números decimais de 309 dígitos.
-
-Diffie-Hellman usa diferentes grupos para determinar a força da chave que é usada no processo de acordo de chave, os números de grupo mais altos são mais seguros, mas exigem tempo adicional para calcular a chave:
-
-- Grupo DH 1:768 bits
-
-- Grupo DH 2:1024 bits
-
-- Grupo DH 5:1536 bits
-
-- Grupo DH 14:2048 bits
-
-- Grupo DH 15:3072 bits
-
-- Grupo DH 16:4096 bits
+A segurança do DH se baseia-se no fato de que ele usa números muito grandes em seus cálculos. Por exemplo, um número DH 1024 bits é aproximadamente igual a um número decimal de 309 dígitos. Considerando que um bilhão são 10 dígitos decimais (1.000.000.000), pode-se facilmente imaginar a complexidade de trabalhar não com um, mas com vários números decimais de 309 dígitos. Quanto maior forem os bits usados mais seguro a chave vai ser, porém ela exigira mais tempo para ser calculada.
 
 Infelizmente, os sistemas de chave assimétrica são extremamente lentos para qualquer tipo de criptografia em massa. É por isso que é comum criptografar a maior parte do tráfego usando um algoritmo simétrico, como 3DES ou AES, e usar o algoritmo DH para criar chaves que serão usadas pelo algoritmo de criptografia.
 
@@ -232,5 +218,9 @@ Ainda usando o conceito de chave publica e chave privada, porem a **ECC** é uti
 
 Quando usamos essa tecnologia para criptografia adicionamos o elemento $G$, que é um parâmetro publico gerado na curva elíptica. 
 Os benefícios dela são diversos quando comparados a criptografia RSA, sendo eles um
+
+## Elliptic-Curve Diffie–Hellman (ECDH)
+
+
 
 [^1]: É um "sistema de números" que possui um fim, mas onde a matemática ainda funciona perfeitamente, o relógio por exemplo tem números limitados de 1 a 12, se você somar 5 horas às 10 horas, o resultado não será 15 horas, mas sim 3 horas, pois o valor "gira" e retorna para dentro do grupo. Essa característica cria uma matemática fechada, onde operações como soma, subtração, multiplicação e divisão sempre resultam em um número daquele conjunto restrito.
