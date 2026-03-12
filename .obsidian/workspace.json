@@ -20,18 +20,6 @@
               "icon": "lucide-file",
               "title": "Criptografia"
             }
-          },
-          {
-            "id": "d13ad2a37462c00d",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "ECDH.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "ECDH"
-            }
           }
         ]
       }
@@ -100,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5,
-    "collapsed": true
+    "width": 287.5
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -207,43 +194,43 @@
   },
   "active": "150dc488a634391a",
   "lastOpenFiles": [
-    "ECDH.md",
+    "Linux/CLI.md",
+    "Trash/Imagens/Img Conceitos/ECDH.md",
     "Conceitos/Criptografia.md",
-    "Explicações.md",
-    "ECDH Grafico.png",
     "Pasted Image 20260311060646_075.png",
-    "Sem título.canvas",
+    "RedTeam/Man-in-the-Middle (MITM).md",
+    "RedTeam/Malware.md",
+    "RedTeam/Denial of Service (DDoS).md",
+    "RedTeam/Ataques de Engenharia Social.md",
+    "RedTeam/Command N Control (CNC).md",
+    "RedTeam/ClickJacking.md",
+    "Redes/Switch.md",
+    "Redes/Proxy.md",
+    "Redes/Protocolos.md",
+    "Redes/Gateway.md",
+    "Redes/Balanceador de Carga.md",
+    "Linux/Sistema de Arquivos.md",
+    "Linux/Linux Courses.md",
+    "Linux/GNOME.md",
+    "Linux/Arch Linux.md",
+    "Arquitetura Computacional/Computador.md",
+    "Trash/Imagens/Img Conceitos/ECDH.png",
+    "Trash/Imagens/Img Conceitos/ECDH Grafico.png",
+    "Trash/Imagens/Img Conceitos/ECDH Grafico.png",
     "image.png",
+    "ECDh CAnvas.mp4.md",
+    "Explicações.md",
+    "Sem título.canvas",
     "Conceitos/Sem título 1.md",
     "Conceitos/Sem título.md",
     "Trash/Imagens/Img Conceitos/Curva Elíptica.png",
     "Abreviações.md",
     "TODO.md",
-    "Redes/Protocolos.md",
-    "Arquitetura Computacional/Processo de Inicialização(Boot).md",
-    "Cisco/Defesa de Rede - Cisco.md",
-    "RedTeam/Spoofing.md",
-    "RedTeam/Ataques de Engenharia Social.md",
     "Sem título.base",
-    "RedTeam/Backdoors.md",
-    "RedTeam/Malware.md",
-    "Arquitetura Computacional/Computador.md",
-    "Linux/CLI.md",
-    "Redes/HyperText Markup Language (HTMl).md",
-    "RedTeam/Denial of Service (DDoS).md",
     "Trash/Imagens/Img RedTeam/DoS vs DDoS.png",
-    "BlueTeam/HoneyPots.md",
-    "Arquitetura Computacional/Kernel.md",
-    "Linux/Linux Courses.md",
-    "Conceitos/Zero-Trust.md",
     "Trash/Imagens/Img Conceitos/Castelo e Fosso X Zero Trust.png",
     "image-1.png",
     "Trash/Imagens/Img Conceitos/Castelo X ZeroTrust.png",
-    "Redes/Switch.md",
-    "Redes/Proxy.md",
-    "Linux/Sistema de Arquivos.md",
-    "Trash/Imagens/Img Conceitos/Bob descriptografa chave public.webp",
-    "Trash/Imagens/Img Arquitetura/Memoria ROM.webp",
     "Trash/Imagens/Img Ferramentas",
     "Trash/Imagens/Img Redes",
     "Trash/Imagens/Img RedTeam",

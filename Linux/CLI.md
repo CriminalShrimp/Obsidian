@@ -106,56 +106,56 @@ Paramentros de buscas
 
 |?| Procurar qualquer caráter.
 | * | Procurar por todas as possiblidades de texto.
-|[set]| Procura por qualquer carcter colocado na combinação, por exemplo [ g - v].
+|[set]| Procura por qualquer caráter colocado na combinação, por exemplo [ g - v].
 |[!set]| Ao contrario por tudo que não contem o que há no campo.
 ## Básicos
 #Comandos 
-###### locate - Procura em todo o sistema pelo texto que foi inserido na busca. 
-###### cd - vem de **C**hange **D**irectory e serve para entrar em outra "pasta".
+#### locate - Procura em todo o sistema pelo texto que foi inserido na busca. 
+#### cd - vem de **C**hange **D**irectory e serve para entrar em outra "pasta".
 **cd ..** - Volta para a **Home**
 **cd -**  - Volta para o diretório anterior.
-###### ls - Usado para listar arquivos.
+#### ls - Usado para listar arquivos.
 ls  <span style="color:rgb(0, 176, 240)">opções </span>  <span style="color:rgb(0, 176, 80)">Arquivo/diretorio</span>
 
-###### pwd - **P**rint **W**orking **D**irectory mostra o<span style="color:rgb(255, 255, 0)"> caminho de pastas</span> ate chegar onde o usuário esta trabalhando.
-###### touch - Usado para criar um arquivo.
+#### pwd - **P**rint **W**orking **D**irectory mostra o<span style="color:rgb(255, 255, 0)"> caminho de pastas</span> ate chegar onde o usuário esta trabalhando.
+#### touch - Usado para criar um arquivo.
 **touch -t** {tempo} - com essa opção é possível coloca a data de criação do arquivo 
-###### cat - Usado para ver o conteúdo do arquivo.
-###### tac - A mesma coisa do cat, só que começa da ultima linha .
-###### tail - Mostras as 10 ultimas linhas do arquivo, podendo alterar o valor usando -n e o valor desejado.
-###### head - A mesma coisa do tail, só que começa da primeira linha. 
-###### mkdir - Cria uma pasta com o nome desejado.
-###### mv - Muda o nome do arquivo.
-###### rm - Remove um arquivo.
+#### cat - Usado para ver o conteúdo do arquivo.
+#### tac - A mesma coisa do cat, só que começa da ultima linha .
+#### tail - Mostras as 10 ultimas linhas do arquivo, podendo alterar o valor usando -n e o valor desejado.
+#### head - A mesma coisa do tail, só que começa da primeira linha. 
+#### mkdir - Cria uma pasta com o nome desejado.
+#### mv - Muda o nome do arquivo.
+#### rm - Remove um arquivo.
 **rm -f** - Força o arquivo a ser removido.
 **rm -rf** - Força o diretório. 
-###### tree - 
-###### find  - Usado comumente para<span style="color:rgb(255, 255, 0)"> procurar arquivos no sistema.</span>
+#### tree - 
+#### find  - Usado comumente para<span style="color:rgb(255, 255, 0)"> procurar arquivos no sistema.</span>
 **-type d - name** - Procura por diretórios com o nome inserido.
 **-type f - name** - Procura por arquivos com o nome inserido.
 **-exec** <span style="color:rgb(0, 176, 80)">comando</span> - É possível executar comandos como <span style="color:rgb(255, 255, 0)">rm</span>, <span style="color:rgb(255, 255, 0)">cp</span> entre outros com o find também.
 -**/ -(<span style="color:rgb(255, 255, 0)">x</span>)time** - Serve para procurar para arquivos passeados em seu tempo, trocando o <span style="color:rgb(255, 255, 0)">x</span> é é possível pesquisar pelo seu ultimo acesso, data de criação entre outras opções.
 -**/ -size** - Procura pelo tamanho dos arquivos.
-###### which  - Procura por programas com o nome colocado na pesquisa e mostra sua localização.
-###### whereis  - Além de procurar por programas também procura por arquivos com o nome na pesquisa.
-###### timedatectl - 
-###### ps aux - 
-###### top - Mostra os processos do sistema.
-###### htop -É similar ao top, porém permite navegar e interagir  a tela.
-###### cat - Usado para criar arquivos.
-###### cp - Copia o arquivo.
-###### man - É a abreviação de manual, esse comando mostra dados e informações sobre o que deseja.
+#### which  - Procura por programas com o nome colocado na pesquisa e mostra sua localização.
+#### whereis  - Além de procurar por programas também procura por arquivos com o nome na pesquisa.
+#### timedatectl - 
+#### ps aux - 
+#### top - Mostra os processos do sistema.
+#### htop -É similar ao top, porém permite navegar e interagir  a tela.
+#### cat - Usado para criar arquivos.
+#### cp - Copia o arquivo.
+#### man - É a abreviação de manual, esse comando mostra dados e informações sobre o que deseja.
 -**man -a** - Ira mostrar todas as paginas uma por uma.
 -**man -f** - Gera uma breve descrição das paginas e capítulos.
 -**man -k** - Mostra todas as paginas que contem a palavra usada.
-###### info - Traz as informações sobre o que foi procurado
+#### info - Traz as informações sobre o que foi procurado
 ## Sistema
-###### shutdown - Faz o processo de desligamento padrão, executando rotinas, finalizando serviços e processos e desligando a máquina. 
+#### shutdown - Faz o processo de desligamento padrão, executando rotinas, finalizando serviços e processos e desligando a máquina. 
 shutdown <span style="color:rgb(65, 105, 255)">Opções</span> <span style="color:rgb(0, 176, 80)">Tempo</span> Mensagem
 **<span style="color:rgb(65, 105, 255)">-r</span>, --reboot**
 	Reinicia o sistema
 **<span style="color:rgb(65, 105, 255)">-h</span>,** <span style="color:rgb(0, 176, 80)">TIME</span>
 	 Colocando `now` faz com que o sistema seja desligado na hora. Também da para colocar tempo específico para desligar o sistema 
 Ex: `shutdown -h 10:00 "Shutting down for scheduled maintenance."`
-###### halt - Para o sistema operacional porém ainda deixa a máquina ligada.
-###### poweroff - Parecido com shutdown porém funciona de uma forma mais "bruta", cortando a energia do sistema, não rodando scripts e rotinas antes de desligar.
+#### halt - Para o sistema operacional porém ainda deixa a máquina ligada.
+#### poweroff - Parecido com shutdown porém funciona de uma forma mais "bruta", cortando a energia do sistema, não rodando scripts e rotinas antes de desligar.
