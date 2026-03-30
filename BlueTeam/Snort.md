@@ -40,7 +40,7 @@ alert ip any any -> any any (msg:"GPL ATTACK_RESPONSE id check returned root"; c
 **As Opções de Regra**
 
 A estrutura da seção de opções da regra é variável, contém a mensagem de texto que identifica o alerta, metadados sobre o alerta, como um URL que fornece informações de referência para o alerta,  informações como o tipo de regra e um identificador numérico exclusivo podem ser incluídos. O manual de usuários do Snort, que pode ser encontrado na internet, fornece detalhes sobre regras e como criá-las.
-Mensagens de regra de "snifar" podem incluir a origem da regra. Três fontes comuns para as regras do Snort são:
+Mensagens de regra de "sniffar" podem incluir a origem da regra. Três fontes comuns para as regras do Snort são:
 
 - **GPL** - Regras mais antigas do Snort que foram criadas pelo Sourcefire e distribuídas sob uma GPLv2. Inclui Snort SIDs 3464 e abaixo. O conjunto de regras GPL pode ser baixado do site do Snort e está incluído no Onion Security.
 - **ET**- Regras Snort de ameaças emergentes. Emerging Threats é um ponto de coleta para regras Snort de várias fontes. As regras ET são de código aberto sob uma licença BSD. O conjunto de regras ET contém regras de várias categorias. Um conjunto de regras ET está incluído com Cebola Segurança. Emerging Threats é uma divisão da Proofpoint, Inc.

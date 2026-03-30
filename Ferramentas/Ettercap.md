@@ -8,6 +8,7 @@
 		medium.com/@404c3s4r/man-in-the-middle-com-arpspoof-e-ettercap-2f142d63243e - Guia de um ataque.
 		
 ----
+
 É uma ferramenta de código aberto com interface gráfica e também em linha de comando, ela é comumente usada para a realização de ataque [[Man-in-the-Middle (MITM)]] usando a técnica de [[Spoofing#^5b9ca3|ARP Spoof]]. Além disso ele também faz a detecção de portas, host, sistemas operacionais, redirecionamento de trafego e outros tipos de spoofing.
 
 <figure style="text-align: center;">

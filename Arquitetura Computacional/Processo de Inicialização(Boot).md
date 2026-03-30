@@ -26,4 +26,4 @@ Já na segunda etapa uma pela é apresentada dando a opção de escolher qual si
 
 Agora na Memória RAM o arquivo <span style="color:rgb(255, 255, 0)">initramfs</span> (**I**nitial **R**AM **F**ilesystem) é carregado, nele tem todas as informações necessárias para a montagem de todo o sistema, localizando drivers, armazenamentos e arquivos requeridos pelo kernel. Depois que esse o arquivo do sistema (Filesystem) ele busca por erros e faz a montagem.
 
-E no final desse processo de inicialização temos a tela de login com usuário e senha para serem selecionados/preenchidos 
+E no final desse processo de inicialização temos a tela de login com usuário e senha para serem selecionados/preenchidos.

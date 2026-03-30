@@ -3,11 +3,11 @@
 - [x] Central Processing Unit (CPU)
 - [x] Ettercap
 - [x] Ataques de Engenharia Social
-- [ ] [[Kismet]]
+- [/] [[Kismet]]
 - [ ] [[Suricata]]
 - [ ] [[Zeek]]
 - [x] Zero-Trust
-- [/] [[Criptografia|Criptografia eliptica]]
+- [x] Criptografia|Criptografia eliptica
 - [x] Em Defesa de Rede falar mais sobreas as outras tecnologias
 - [x] HoneyPots
 - [x] Verificar Arquivos Após Novos Plugings

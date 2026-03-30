@@ -2,8 +2,10 @@
 	**Tags:** #Segurança 
 	**Conteúdo:** 
 		Maratona de Ciber Segurança Gratuita da Cisco.
-		keepersecurity.com/blog/pt-br/2023/06/07/what-is-elliptic-curve-cryptography/ - Elíptica
-		youtube.com/watch?v=AEVrpvaObdI - Vídeo Elíptica 
+		keepersecurity.com/blog/pt-br/2023/06/07/what-is-elliptic-curve-cryptography/ - Elíptica.
+		youtube.com/watch?v=AEVrpvaObdI - Vídeo Elíptica.
+		[[ECDH]] - Logica por traz da troca feita com ECDH.
+	
 	
 ----
 
