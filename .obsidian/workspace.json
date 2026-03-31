@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6331fcc1ca2b2144",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ferramentas/Kismet.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Kismet"
-            }
-          },
-          {
             "id": "56719f2b16a02605",
             "type": "leaf",
             "state": {
@@ -34,8 +20,37 @@
               "icon": "lucide-file",
               "title": "TODO"
             }
+          },
+          {
+            "id": "325e339d68358622",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BlueTeam/Zeek.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Zeek"
+            }
+          },
+          {
+            "id": "285eb226cdf0a8f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BlueTeam/Suricata.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Suricata"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -67,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "snif",
+                "query": "Multi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,11 +113,12 @@
               "title": "tg-left-sidebar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
+    "width": 201.5
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -207,18 +223,20 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "1e80c182f859c816",
+  "active": "285eb226cdf0a8f0",
   "lastOpenFiles": [
+    "BlueTeam/Zeek.md",
+    "TODO.md",
+    "BlueTeam/Suricata.md",
+    "Explicações.md",
+    "Conceitos/Criptografia.md",
+    "Cisco/Defesa de Rede - Cisco.md",
+    "Ferramentas/Kismet.md",
     "Trash/Imagens/Img Ferramentas/Kismet GUI.png",
     "BlueTeam/Snort.md",
-    "Ferramentas/Kismet.md",
-    "TODO.md",
     "Ferramentas/Docker.md",
     "Ferramentas/Ettercap.md",
-    "Cisco/Defesa de Rede - Cisco.md",
-    "Conceitos/Criptografia.md",
     "Trash/Imagens/Img Conceitos/ECDH.md",
-    "Explicações.md",
     "Arquitetura Computacional/Computador.md",
     "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
@@ -235,7 +253,6 @@
     "Redes/Switch.md",
     "Redes/Proxy.md",
     "Redes/Protocolos.md",
-    "Redes/Gateway.md",
     "Trash/Imagens/Img Conceitos/ECDH.png",
     "Trash/Imagens/Img Conceitos/ECDH Grafico.png",
     "Trash/Imagens/Img Conceitos/ECDH Grafico.png",

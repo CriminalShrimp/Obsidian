@@ -375,7 +375,10 @@ Tor é uma plataforma de software e rede de hosts P2P que funcionam como roteado
 
 Tor apresenta uma série de desafios aos analistas de segurança cibernética. Primeiro, o Tor é amplamente utilizado por organizações criminosas na “Dark Net”. Além disso, Tor tem sido usado como um canal de comunicação para malware CNC. Como o endereço IP de destino do tráfego Tor é ofuscado pela criptografia, com apenas o nó Tor de próximo salto conhecido, o tráfego Tor evita listas negras configuradas em dispositivos de segurança.
 
-![[TOR.webp|TOR]]
+<figure style="text-align: center;">
+  <img src="TOR.webp" style="margin: 0 auto;">
+  <figcaption>TOR</figcaption>
+</figure>
 
 
 # Modulo 10: Dados de Segurança Do Rede

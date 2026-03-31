@@ -3,9 +3,9 @@
 - [x] Central Processing Unit (CPU)
 - [x] Ettercap
 - [x] Ataques de Engenharia Social
-- [/] [[Kismet]]
-- [ ] [[Suricata]]
-- [ ] [[Zeek]]
+- [x] [[Kismet]]
+- [x] [[Suricata]]
+- [/] [[Zeek]]
 - [x] Zero-Trust
 - [x] Criptografia|Criptografia eliptica
 - [x] Em Defesa de Rede falar mais sobreas as outras tecnologias
