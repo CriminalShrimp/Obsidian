@@ -1,6 +1,6 @@
 **Sumário**
 	Exercícios [[Exercicios|aqui]].
-	**Tags:** #Redes #Firewall #Segurança #Ferramentas #RedTeam #BlueTeam 
+	**Tags:** #Redes #Firewall #Segurança #Ferramentas #RedTeam #BlueTeam #Protocolos
 	**Conteúdo:** Maratona de Ciber Segurança Gratuita da Cisco.
 	
 ----
@@ -30,7 +30,11 @@ Identificar as possíveis ameaças para cada ambiente fornece uma lista de ataqu
 - O que ocorrera quando os ativos forem perdidos e as vulnerabilidades do sistema exploradas?
 Vamos exemplificar usando como exemplo um e-banking.
 
-![[e-banking.webp|Ex e-banking|827x577]]
+<figure style="text-align: center;">
+  <img src="e-banking.webp" style="margin: 0 auto;">
+  <figcaption>Ex e-banking</figcaption>
+</figure>
+
 
 A <span style="color:rgb(255, 255, 0)">identificação da ameaça</span> para um sistema de banca electrónica incluiria:
 • **Compromisso interno do sistema** - O atacante usa os servidores de e-banking expostos para invadir um sistema bancário interno.
@@ -44,11 +48,18 @@ A <span style="color:rgb(255, 255, 0)">identificação da ameaça</span> para um
 ### Identificando as Ameaças
 Usar a abordagem de defesa profunda para identificar ameaças e proteger ativos vulneráveis. Essa abordagem usa várias camadas de segurança, uma analogia muito comum é falar de "segurança cebola" mais popularmente conhecida como <span style="color:rgb(255, 255, 0)">onion security</span>, um ator de ameaça teria que descascar as defesas de uma rede camada por camada de uma maneira semelhante a descascar uma cebola, somente depois de penetrar cada camada, o ator da ameaça alcançaria os dados ou o sistema de destino.
 
-![[security onion.webp|Onion Security|770x406]]
+<figure style="text-align: center;">
+  <img src="security onion.webp" style="margin: 0 auto;">
+  <figcaption>Onion Security</figcaption>
+</figure>
+
 
 Porém esse conceito vem mudando com o tempo e agora também é usado o "alcachofra de segurança" no inglês <span style="color:rgb(255, 255, 0)">security artichoke</span>, onde não se precisa mais ir camadas por camadas para chegar no objetivo e sim ir tirando as "folhas" e obtendo dados/informações para conseguir realizar suas ações maliciosas, por exemplo, é mais fácil para um agente de ameaça comprometer um dispositivo móvel do que comprometer um computador ou servidor interno protegido por camadas de defesa. Cada dispositivo móvel é uma folha, e folha após folha, tudo leva o hacker a mais dados. O coração da alcachofra é onde os dados mais confidenciais são encontrados. Cada folha fornece uma camada de proteção enquanto fornece simultaneamente um caminho para o ataque, nem todas as folhas precisam ser removidas para chegar ao coração da alcachofra.
 
-![[alcachofra.webp|Security Artichoke|723x496]]
+<figure style="text-align: center;">
+  <img src="alcachofra.webp" style="margin: 0 auto;">
+  <figcaption>Security Artichoke</figcaption>
+</figure>
 
 ## Gerenciamento de operações de Segurança Cibernética
 
@@ -73,11 +84,13 @@ As políticas de segurança abrangem diversas diretrizes essenciais, como quem p
 ## Segurança Física
 
 Barreiras físicas dizem respeito a meios de **limitar a entrada** de indivíduos não autorizados ou indevidos a certos locais/áreas de alta segurança que requerem uma “proteção superior”, como cerceamentos ou barreiras físicas, como arame farpado, cerca elétrica, fechaduras, vigias/guardas, etc. Uma das mais comum para autenticação e confirmação de acesso de uma pessoa são as seguranças por biometria, sistemas de autenticação de biometria incluem medições da face, impressão digital, geometria da mão, íris, retina, assinatura e voz. Outra forma de autenticação comum e identificação nas áreas de trabalho é o uso de crachá, com um leitor de cartão para acessar locais.
+
 ## Segurança de Aplicações
 
 Durante a criação de um sistema, é importante que o softwares sejam desenvolvido e atualizado em um ambiente de desenvolvimentos, pois esse é um ambiente seguro para o sistema poder conter falhas de códigos. Depois do o sistema segue para o ambiente de preparo que simula o real ambiente onde o código ira funcionar, neste ambiente os desenvolvedores podem verificar se o código esta sendo executando corretamente e com os padrões de segurança necessário, e também podem realizar testes.
 
 Técnicas como **ofuscação e camuflagem** são usadas para proteger o software contra engenharia reversa. A ofuscação oculta dados originais com caracteres ou informações aleatórias, enquanto a camuflagem substitui dados confidenciais por versões fictícias realistas. A reutilização de código permite economizar tempo e custos ao usar software existente para criar novos programas, mas deve ser feita com cuidado para evitar vulnerabilidades. Os SDKs e bibliotecas de terceiros aceleram o desenvolvimento ao fornecer código pronto para uso, porém, qualquer falha de segurança nesses componentes pode afetar múltiplos aplicativos.
+
 ## Fortalecimento da Rede
 
 Criminosos exploram serviços de rede vulneráveis para ataques, escaneando portas de redes abertas para identificar acessos desprotegidos. Para mitigar riscos, é essencial fechar portas desnecessárias e proteger serviços como [[Abreviações#DHCP = Dynamic Host Configuration Protocol atribui automaticamente endereços IP a dispositivos.|DHCP]], [[Protocolos#Domain Name System (DNS)|DNS]], [[Abreviações#ICMP = Internet Control Message Protocol é usado para comunicar informações de nível de rede.|ICMP]], [[Abreviações#RIP = Protocolo de Informação de Roteamento permite que roteadores troquem informações sobre rotas em uma rede.|RIP]] e [[Abreviações#NTP = Network Time Protocol sincroniza os relógios de computadores em uma rede.|NTP]]. Adoção de firewalls, monitoramento, atualizações e autenticação são medidas essenciais para garantir a segurança de uma rede.
@@ -170,7 +183,6 @@ ACLs também são úteis para mitigar ataques, como [[Spoofing]] de IP e ataques
 No contexto do **IPv6**, as ACLs possuem funcionamento semelhante ao do IPv4, mas sem a existência de ACLs padrão. Todas devem ser nomeadas e podem filtrar tráfego com base em endereços de origem e destino, bem como em cabeçalhos e protocolos de camada superior. A segurança no IPv6 também depende da filtragem adequada na borda da rede, protegendo infraestruturas contra ataques furtivos, exploração de hosts dual-stack e técnicas de tunelamento maliciosas.
 
 # Modulo 5: Tecnologias de Firewall
-#Redes #Firewall #Redes 
 
 Um firewall é um sistema ou grupo de sistemas que **aplica uma política de controle de acesso** na rede, eles são resistente a ataques, reforçam a politica de controle de acesso, exposição de hosts, recursos e aplicações sensíveis a usuários não confiáveis, e bloqueia dados maliciosos.
 Existem tipos de firewalls com tecnologias e funções diferentes.
@@ -179,21 +191,30 @@ Existem tipos de firewalls com tecnologias e funções diferentes.
 
 Os firewalls de filtragem de pacotes geralmente fazem parte de um firewall de roteador, que permite ou nega tráfego com base nas informações da **Camada 3** e da **Camada 4** do [[Modelo OSI]].. Eles são firewalls sem estado que usam uma simples pesquisa de tabela de políticas que filtra o tráfego com base em critérios específicos. Por exemplo, os servidores [[Abreviações#SMTP = Simple Mail Transfer Protocol, é o protocolo de internet usado para enviar e-mails.|SMTP]] escutam a **porta 25** por padrão. Um administrador pode configurar o firewall de filtragem de pacotes para bloquear a porta 25 de uma estação de trabalho específica para evitar que ela transmita um vírus de e-mail.
 
-![[Firewall de filtragem de pacotes (sem estado).webp|Camada OSI 3 e 4|796x505]]
+<figure style="text-align: center;">
+  <img src="Firewall de filtragem de pacotes (sem estado).webp" style="margin: 0 auto;">
+  <figcaption>Camada OSI 3 e 4</figcaption>
+</figure>
 
 
 ### Firewall de filtragem de pacotes de estado
 
 Firewalls com estado são as tecnologias de firewall mais versáteis e mais comuns em uso. Os <span style="color:rgb(255, 255, 0)">firewalls stateful</span> fornecem filtragem de pacotes stateful mantendo o rastreamento e monitora o estado das conexões de rede ativas enquanto analisa o tráfego de entrada e procura riscos potenciais de tráfego e dados usando informações de conexão mantidas em uma tabela de estado. Filtragem com estado é uma arquitetura de firewall classificada na camada de rede. Ele também analisa o tráfego na **Camada 4** e **Camada 5** do modelo OSI.
 
-![[Firewall de filtragem de pacotes de estado.webp|Camada OSI 3 a 5]]
+<figure style="text-align: center;">
+  <img src="Firewall de filtragem de pacotes de estado.webp" style="margin: 0 auto;">
+  <figcaption>Camada OSI 3 a 5</figcaption>
+</figure>
 
 
 ### Web Application Firewall (WAF)
 
 Conforme mostrado na figura, esse tipo de firewall filtra as informações nas **camadas 3, 4, 5 e 7** do modelo de referência OSI. A maior parte do controle e filtragem do firewall é feita em software. Quando um cliente precisa acessar um servidor remoto, ele se conecta a um servidor [[Proxy]]. O servidor proxy se conecta ao servidor remoto em nome do cliente. Portanto, o servidor só vê uma conexão do servidor proxy.
 
-![[Firewall de gateway de aplicativo.webp|Camada OSI 3 a 5 e 7]]
+<figure style="text-align: center;">
+  <img src="Firewall de gateway de aplicativo.webp" style="margin: 0 auto;">
+  <figcaption>Camada OSI 3 a 5 e 7</figcaption>
+</figure>
 
 ### Next-Generation Firewall (NGFW)
 
@@ -204,7 +225,6 @@ Os firewalls de última geração (NGFW) vão além dos firewalls de estado, for
 Existe diversos tipos de arquitetura como a <span style="color:rgb(255, 255, 0)">publica e a privada </span>onde a privada é considerada uma rede confiável, sendo esta normalmente toda a rede da empresa e a parte publica à não confiável ou não segura. Também existe a<span style="color:rgb(255, 255, 0)"> Zona Desmilitarizada</span> ou [[Abreviações#DMZ = Demilitarized Zone é uma subrede que isola serviços externos de uma organização de uma rede interna mais segura, permitindo acesso controlado à internet.|DMZ]], é um projeto de firewall onde normalmente há uma interface interna conectada à rede privada, uma interface externa conectada à rede pública e uma interface DMZ. O tráfego proveniente da rede privada é inspecionado ao se dirigir para a rede pública ou DMZ, sendo geralmente permitido sem grandes restrições. O tráfego de retorno dessas redes para a privada também é autorizado. Já o tráfego que se origina na DMZ e tenta acessar a rede privada costuma ser bloqueado, enquanto aquele que vai para a rede pública é permitido seletivamente conforme as necessidades do serviço. O tráfego vindo da rede pública para a DMZ é inspecionado e permitido apenas para serviços específicos, como e-mail, DNS, HTTP e HTTPS, com o retorno da DMZ para a rede pública sendo dinamicamente liberado. No entanto, qualquer tráfego originado na rede pública em direção à rede privada é bloqueado por questões de segurança. E por final a por <span style="color:rgb(255, 255, 0)">política baseados em zona</span> ou [[Abreviações#ZPF = Zone-Based Policy Firewalls refere-se a um sistema que divide a rede em zonas de segurança distintas aplicando políticas de segurança específicas|ZPFs]] usam o conceito de zonas para fornecer flexibilidade adicional. Uma zona é um grupo de uma ou mais interfaces que têm funções ou recursos semelhantes, as zonas ajudam a especificar onde uma regra ou política de firewall. Por padrão, o tráfego entre interfaces na mesma zona não está sujeito a nenhuma política e passa livremente. No entanto, todo o tráfego de zona para zona está bloqueado. Para permitir o tráfego entre as zonas, uma política que permite ou inspeciona o tráfego deve ser configurada.
 
 # Modulo 6: Zone-Based Policy Firewalls (ZPFs)
-#Firewall 
 
 Para criação desse projeto primeiro o administrador se concentra na separação da rede em zonas. Zonas estabelecem as fronteiras de segurança de uma rede, onde o tráfego é submetido a restrições políticas à medida que cruza para outra região da rede. Por exemplo, a rede pública seria uma zona e a rede interna seria outra zona. Após isso , deve ser projetado a infraestrutura física, levando em conta os requisitos de segurança e disponibilidade ao projetar a infraestrutura física. Isso inclui ditar o número de dispositivos entre zonas mais seguras e menos seguras e determinar dispositivos redundantes. Alguns exemplos que podem ser achados na internet são
 Lan-to-internet, Firewall-with-public-servers-1, Firewall-with-public-servers-2, Firewalls redundantes e os mais complexos.
@@ -228,6 +248,7 @@ Ao contrário de uma máquina virtual, um contêiner consiste apenas no aplicati
 ## Infraestrutura de Desktops Virtuais
 
 Os ambientes de desktop do usuário podem ser armazenados remotamente em um servidor usando thin client ou desktops virtuais. Isso torna muito fácil criar, excluir, copiar, arquivar ou baixar configurações com rapidez em uma rede. A virtualização de desktop requer alta disponibilidade e capacidade de armazenamento.
+
 ## Tecnologia na Nuvem
 
 As tecnologias baseadas em nuvem permitem que empresas acessem computadores, armazenamento, software e servidores pela Internet. Ele move o componente de tecnologia da organização para o provedor de nuvem.
@@ -287,7 +308,7 @@ As organizações devem fornecer suporte para proteger os dados à medida que el
 - **Não Repúdio de Dados:** Garante que o remetente <span style="color:rgb(255, 255, 0)">não pode repudiar ou refutar a validade de uma mensagem enviada</span>. O não repúdio depende do fato de que apenas o remetente possui as características ou a assinatura exclusivas de como essa mensagem é tratada.
 
 # Modulo 9: Tecnologias e Protocolos
-#Protocolos #Redes 
+
 ## Monitorando protocolos comuns
 ### Syslog
 

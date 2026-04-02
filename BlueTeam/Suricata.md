@@ -1,5 +1,5 @@
 **Sumário**
-	**Tags:** #Redes #Protocolos 
+	**Tags:** #Redes #Protocolos #Ferramentas 
 	**Arquivos Relacionados:** [[Descoberta de Rede (HUB)]]
 	**Conteúdo:**
 		huntress.com/cybersecurity-101/topic/what-is-suricata - Sobre a ferramenta.
