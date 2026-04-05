@@ -5,7 +5,7 @@
 - [x] Ataques de Engenharia Social
 - [x] Kismet
 - [x] Suricata
-- [x] [[Zeek]]
+- [x] Zeek
 - [x] Zero-Trust
 - [x] Criptografia|Criptografia eliptica
 - [x] Em Defesa de Rede falar mais sobreas as outras tecnologias
@@ -36,6 +36,7 @@
 - [x] Malware
 - [x] Man-in-the-Middle (MITM)
 - [ ] [[WireShark]] fazer algo bem detalhado de filtros e tudo mais
+- [ ] Nmap
 - [x] Fazer o Link dos Tópicos com maior descrição em Abreviações (por exemplo os protocolos)
 - [ ] Fazer Equipamentos e conceitos de redes
 	- [ ] [[Switch]]
@@ -48,7 +49,7 @@
 		- [ ] SMTP
 		- [ ] DNS
 	- [ ] [[Modelo OSI]]
-- [ ] [[Denial of Service (DDoS)]]
+- [x] Denial of Service (DDoS)
 - [-] Backdoors
 - [x] Spoofing
 - [x] Placa Mae
