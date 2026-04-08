@@ -103,8 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 201.5,
-    "collapsed": true
+    "width": 201.5
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -192,7 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,10 +208,13 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "6f9933b5eaa78504",
+  "active": "7e07f51518e40d3d",
   "lastOpenFiles": [
-    "BlueTeam/Zeek.md",
+    "Abreviações.md",
+    "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
     "Ferramentas/Docker.md",
+    "Trash/Imagens/Img Ferramentas/ProcessoDocker.png",
+    "BlueTeam/Zeek.md",
     "TODO.md",
     "Cisco/Defesa de Rede - Cisco.md",
     "Ferramentas/Nmap.md",
@@ -230,7 +232,6 @@
     "Trash/Imagens/Img Ferramentas/Kismet GUI.png",
     "BlueTeam/Snort.md",
     "Arquitetura Computacional/Computador.md",
-    "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "RedTeam/Sniffing.md",
     "Windows/Windows.md",
@@ -248,7 +249,6 @@
     "Trash/Imagens/Img RedTeam/DoS vs DDoS.png",
     "Trash/Imagens/Img Conceitos/Castelo e Fosso X Zero Trust.png",
     "image-1.png",
-    "Trash/Imagens/Img Conceitos/Castelo X ZeroTrust.png",
     "Trash/Imagens/Img Ferramentas",
     "Trash/Imagens/Img Redes",
     "Trash/Imagens/Img RedTeam",
