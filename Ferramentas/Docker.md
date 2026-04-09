@@ -21,10 +21,16 @@ Aqui vão algumas terminologias usadas com frequência quando estamos lidando co
 
 - **Docker Client:** É como os usuários de Docker interagem com o `dockerd`, isso ocorre via [[Abreviações#CLI = **C**ommand **L**ine **I**nterface é onde são realizados os comandos do sistema.|CLI]], mas também é possível fazer isso via interface gráfica usando o **Docker Desktop**.
 
-- **Docker Registries:** Funciona como uma biblioteca de imagens de contêineres, e além disso ele é usado para gerenciar, armazenar e distribuir as imagens.
+- **Docker Registries:** Funciona como uma **biblioteca de imagens** de contêineres, e além disso ele é usado para gerenciar, armazenar e distribuir as imagens.
 
-- **Docker Hub:**
+- **Docker Hub:** É um tipo de **mercado comunitário**, nele as pessoas postam imagens pré-montadas.
 
-- **DockerFile:** Arquivo que contem o passo a passo de como construir a imagem do Docker.
+- **DockerFile:** Arquivo que contem o **passo a passo de como construir a imagem** do Docker.
 
-- **Docker Compose:**
+- **Docker Compose:** Ferramenta para gerenciar e roda múltiplos contêiner a partir de um único arquivo [^1]YAML.
+
+## Parte Avançada
+
+
+
+[^1]: É um formato de codificação de dados feito para ser lido por humanos, ele é usado em arquivos de configurações, em Dockers e também em arquivos de data.
