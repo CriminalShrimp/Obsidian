@@ -102,7 +102,7 @@ root   12     2  0 18:53 ?     00:00:00 [rcu_tasks_rude_]
 root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 [...]
 # Comandos 
-Paramentros de buscas 
+Parâmetros de buscas 
 
 |?| Procurar qualquer caráter.
 | * | Procurar por todas as possiblidades de texto.
@@ -111,7 +111,8 @@ Paramentros de buscas
 ## Básicos
 #Comandos 
 #### locate - Procura em todo o sistema pelo texto que foi inserido na busca. 
-#### cd - vem de **C**hange **D**irectory e serve para entrar em outra "pasta".
+
+#### cd - **C**hange **D**irectory, serve para entrar em outra "pasta".
 **cd ..** - Volta para a **Home**
 **cd -**  - Volta para o diretório anterior.
 #### ls - Usado para listar arquivos.
@@ -155,7 +156,7 @@ shutdown <span style="color:rgb(65, 105, 255)">Opções</span> <span style="colo
 **<span style="color:rgb(65, 105, 255)">-r</span>, --reboot**
 	Reinicia o sistema
 **<span style="color:rgb(65, 105, 255)">-h</span>,** <span style="color:rgb(0, 176, 80)">TIME</span>
-	 Colocando `now` faz com que o sistema seja desligado na hora. Também da para colocar tempo específico para desligar o sistema 
+	 Colocando `now` faz com que o sistema seja desligado na hora. Também da para colocar tempo específico para desligar o sistema
 Ex: `shutdown -h 10:00 "Shutting down for scheduled maintenance."`
 #### halt - Para o sistema operacional porém ainda deixa a máquina ligada.
 #### poweroff - Parecido com shutdown porém funciona de uma forma mais "bruta", cortando a energia do sistema, não rodando scripts e rotinas antes de desligar.

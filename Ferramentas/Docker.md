@@ -8,7 +8,7 @@
 
 ----
 
-Imagine que você fez um sistema no seu computador para a sua empresa, e na hora de colocar em outra maquina não funciona, nesse cenário surgiu uma das falas da informática, *na minha maquina funciona*. Foi ai que o Docker entrou para ajudar e mudar esse cenário, criando um ambiente isolado em sua máquina, que contem todas as dependências necessárias para o funcionamento da sua aplicação, e que pode empacotar elas para funcionar em qualquer outra máquina que for colocado. Esse ambiente feito pelo Docker é chamado de **contêiner**. E é na plataforma do Docker que conseguimos usar os contêineres a partir de suas **imagens**, que funcionam como uma receita de bolo para criar um contêiner, a criação da imagem é chamada de **docker build**.
+Imagine que você fez um sistema no seu computador para a sua empresa, e na hora de colocar em outra maquina não funciona, nesse cenário surgiu uma das falas da informática, *na minha maquina funciona*. Foi ai que o Docker entrou para ajudar e mudar esse cenário, criando um ambiente isolado em sua máquina, que contem todas as dependências necessárias para o funcionamento da sua aplicação, e que pode empacotar elas para funcionar em qualquer outra máquina que for colocado. Esse ambiente feito pelo Docker é chamado de **contêiner**. E é na plataforma do Docker que conseguimos usar os contêineres a partir de suas **imagens**, que funcionam como uma receita de bolo para criar um contêiner, a criação da imagem é chamada de **Docker Build**.
 
 <figure style="text-align: center;">
   <img src="ProcessoDocker.png" style="margin: 0 auto;">
@@ -32,5 +32,29 @@ Aqui vão algumas terminologias usadas com frequência quando estamos lidando co
 ## Parte Avançada
 
 
+## Comandos 
+
+docker run <span style="color:rgb(65, 105, 255)">OPÇÕES</span> [IMAGE] <span style="color:rgb(0, 176, 80)">PARAMETRO</span>
+	<span style="color:rgb(65, 105, 255)">-d</span>, --detach:
+		Roda o contêiner em segundo plano e imprime o ID do mesmo.
+	<span style="color:rgb(65, 105, 255)">-p</span>, --publish: 
+		Publish a container’s port(s) to the host
+	<span style="color:rgb(65, 105, 255)">--name</span>: 
+		Da um nome a o contêiner.
+	<span style="color:rgb(65, 105, 255)">--mount</span>:
+		Bind mount a volume
+	<span style="color:rgb(65, 105, 255)">-e</span>, --env: 
+		Seta ar variáveis de ambiente.
+	<span style="color:rgb(65, 105, 255)">-it</span> -i, --interactive e -t, --tty: 
+		Keep STDIN open and allocate a pseudo-TTY
+	<span style="color:rgb(65, 105, 255)">--rm</span>: 
+		Automaticamente remove o contêiner.
+	<span style="color:rgb(65, 105, 255)">--network</span>:
+		Conecta o contêiner a uma rede.
+	<span style="color:rgb(65, 105, 255)">-m</span>, --memory: 
+		Limite de memória. 
+	<span style="color:rgb(65, 105, 255)">--restart</span>, <span style="color:rgb(0, 176, 80)">PARAMETRO</span>: 
+		Política para realizar (ou não) o <span style="color:rgb(65, 105, 255)">reinício</span> do contêiner quando ele "sair". 
+			Os parâmetros mais usados são <span style="color:rgb(0, 176, 80)">always</span> que reinicia sempre que o contêiner, e o <span style="color:rgb(0, 176, 80)">unless-stopped</span> que somente não reinicia quando o contêiner é parado de forma manual ou outra forma.
 
 [^1]: É um formato de codificação de dados feito para ser lido por humanos, ele é usado em arquivos de configurações, em Dockers e também em arquivos de data.
