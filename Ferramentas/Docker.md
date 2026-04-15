@@ -32,29 +32,41 @@ Aqui vão algumas terminologias usadas com frequência quando estamos lidando co
 ## Parte Avançada
 
 
-## Comandos 
 
-docker run <span style="color:rgb(65, 105, 255)">OPÇÕES</span> [IMAGE] <span style="color:rgb(0, 176, 80)">PARAMETRO</span>
+### Comandos 
+
+docker ps
+
+docker run <span style="color:rgb(65, 105, 255)">OPÇÕES</span> {IMAGE} <span style="color:rgb(0, 176, 80)">PARAMETRO</span>
 	<span style="color:rgb(65, 105, 255)">-d</span>, --detach:
 		Roda o contêiner em segundo plano e imprime o ID do mesmo.
-	<span style="color:rgb(65, 105, 255)">-p</span>, --publish: 
-		Publish a container’s port(s) to the host
+	<span style="color:rgb(65, 105, 255)">-p</span>, --publish {PortaHost}:{PortaContainer} {IMAGE}: 
+		Usado para mapear portas entre o host e os contêiners.
 	<span style="color:rgb(65, 105, 255)">--name</span>: 
-		Da um nome a o contêiner.
-	<span style="color:rgb(65, 105, 255)">--mount</span>:
-		Bind mount a volume
+		Nomeia um contêiner.
+	<span style="color:rgb(65, 105, 255)">--mount</span> {TYPE} {SOURCE} {DESTINATION}:
+		Usado na criação e na manipulação de arquivos.
+			TYPE: Normalmente variam entre `bind` que servem para pastas no computador, e `volume` para volumes gerenciados pelo Docker.
+			SOURCE: Onde estão localizados os dados.
+			DESTINATION: Local onde os dados irão ficar no contêiner.
 	<span style="color:rgb(65, 105, 255)">-e</span>, --env: 
-		Seta ar variáveis de ambiente.
+		Seta as variáveis de ambiente.
 	<span style="color:rgb(65, 105, 255)">-it</span> -i, --interactive e -t, --tty: 
-		Keep STDIN open and allocate a pseudo-TTY
+		Cria uma espécie de terminal para usar o contêiner.
 	<span style="color:rgb(65, 105, 255)">--rm</span>: 
 		Automaticamente remove o contêiner.
-	<span style="color:rgb(65, 105, 255)">--network</span>:
+	<span style="color:rgb(65, 105, 255)">--network</span> {REDE} {IMAGEM}:
 		Conecta o contêiner a uma rede.
 	<span style="color:rgb(65, 105, 255)">-m</span>, --memory: 
-		Limite de memória. 
-	<span style="color:rgb(65, 105, 255)">--restart</span>, <span style="color:rgb(0, 176, 80)">PARAMETRO</span>: 
+		Define um limite de uso da [[Computador#Memória RAM|Memória RAM]].
+	<span style="color:rgb(65, 105, 255)">--restart</span> <span style="color:rgb(0, 176, 80)">PARAMETRO</span>: 
 		Política para realizar (ou não) o <span style="color:rgb(65, 105, 255)">reinício</span> do contêiner quando ele "sair". 
 			Os parâmetros mais usados são <span style="color:rgb(0, 176, 80)">always</span> que reinicia sempre que o contêiner, e o <span style="color:rgb(0, 176, 80)">unless-stopped</span> que somente não reinicia quando o contêiner é parado de forma manual ou outra forma.
+
+docker pull
+
+docker start
+
+docker stop
 
 [^1]: É um formato de codificação de dados feito para ser lido por humanos, ele é usado em arquivos de configurações, em Dockers e também em arquivos de data.
