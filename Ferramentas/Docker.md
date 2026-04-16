@@ -35,9 +35,19 @@ Aqui vão algumas terminologias usadas com frequência quando estamos lidando co
 
 ### Comandos 
 
-docker ps
+Aqui tem os comandos e seus parâmetros mais úteis
 
-docker run <span style="color:rgb(65, 105, 255)">OPÇÕES</span> {IMAGE} <span style="color:rgb(0, 176, 80)">PARAMETRO</span>
+docker ps <span style="color:rgb(65, 105, 255)">OPÇÕES</span> <span style="color:rgb(0, 176, 80)">PARAMETRO</span> - Lista os contêineres.
+	<span style="color:rgb(65, 105, 255)">-a</span>, --all
+		Mostra todos os contêineres rodando, roda padrão no comando.
+	<span style="color:rgb(65, 105, 255)">-f</span>, --filter <span style="color:rgb(0, 176, 80)">PARAMETRO</span>
+		Faz uma busca nos dockers por um campo específico, os <span style="color:rgb(0, 176, 80)">parâmetros</span> mais comum usados são `id`, `name`, `label`, `status`, `volume`, `network`, `publish/expose`.
+	<span style="color:rgb(65, 105, 255)">--format</span> {{.CAMPO}}
+		Realiza prints dos contêineres e dos campos que foram passados em um modelo "GO", é possível usar mais que um campo na hora de realizar a captura dos dados. Os campos mais úteis para usar com esse comando são **ID**, **Labels**, **Image**, **Names**, **Status**, **Ports**.
+	<span style="color:rgb(65, 105, 255)">-s</span>, --size
+		Mostra o espaço de disco usado pelos contêineres.
+
+docker run <span style="color:rgb(65, 105, 255)">OPÇÕES</span> {IMAGE} <span style="color:rgb(0, 176, 80)">PARAMETRO</span> - Cria e roda contêineres.
 	<span style="color:rgb(65, 105, 255)">-d</span>, --detach:
 		Roda o contêiner em segundo plano e imprime o ID do mesmo.
 	<span style="color:rgb(65, 105, 255)">-p</span>, --publish {PortaHost}:{PortaContainer} {IMAGE}: 

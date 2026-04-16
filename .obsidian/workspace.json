@@ -117,7 +117,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 201.5
+    "width": 201.5,
+    "collapsed": true
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -218,7 +219,8 @@
       "bases:Criar nova base": false,
       "github-sync:Sync with Remote": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
   "active": "6f9933b5eaa78504",
