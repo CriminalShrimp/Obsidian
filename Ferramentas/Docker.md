@@ -8,7 +8,7 @@
 
 ----
 
-Imagine que você fez um sistema no seu computador para a sua empresa, e na hora de colocar em outra maquina não funciona, nesse cenário surgiu uma das falas da informática, *na minha maquina funciona*. Foi ai que o Docker entrou para ajudar e mudar esse cenário, criando um ambiente isolado em sua máquina, que contem todas as dependências necessárias para o funcionamento da sua aplicação, e que pode empacotar elas para funcionar em qualquer outra máquina que for colocado. Esse ambiente feito pelo Docker é chamado de **contêiner**. E é na plataforma do Docker que conseguimos usar os contêineres a partir de suas **imagens**, que funcionam como uma receita de bolo para criar um contêiner, a criação da imagem é chamada de **Docker Build**.
+Imagine que você fez um sistema no seu computador para a sua empresa, e na hora de colocar em outra maquina não funciona, nesse cenário surgiu uma das falas da informática, *na minha maquina funciona*. Foi ai que o Docker entrou para ajudar e mudar esse cenário, criando um ambiente isolado em sua máquina, que contem todas as dependências necessárias para o funcionamento da sua aplicação, e que pode empacotar elas para funcionar em qualquer outra máquina que for colocado. Esse ambiente feito pelo Docker é chamado de <span style="color:rgb(255, 255, 0)">contêiner</span>. E é na plataforma do Docker que conseguimos usar os contêineres a partir de suas <span style="color:rgb(255, 255, 0)">imagens</span>, que funcionam como uma receita de bolo para criar um contêiner, a criação da imagem é chamada de **Docker Build**.
 
 <figure style="text-align: center;">
   <img src="ProcessoDocker.png" style="margin: 0 auto;">
@@ -31,11 +31,13 @@ Aqui vão algumas terminologias usadas com frequência quando estamos lidando co
 
 ## Parte Avançada
 
+### Docker File
 
+Cada linha em um Docker File representa uma instrução no processo da criação de uma imagem. Os componentes crucias em um arquivo docker é a <span style="color:rgb(0, 176, 80)">imagem base</span>, <span style="color:rgb(0, 176, 80)">código</span> e <span style="color:rgb(0, 176, 80)">dependências</span>, e as <span style="color:rgb(0, 176, 80)">configurações</span> e <span style="color:rgb(0, 176, 80)">comandos</span>.
 
 ### Comandos 
 
-Aqui tem os comandos e seus parâmetros mais úteis
+Aqui tem os comandos e seus parâmetros mais úteis.
 
 docker ps <span style="color:rgb(65, 105, 255)">OPÇÕES</span> <span style="color:rgb(0, 176, 80)">PARAMETRO</span> - Lista os contêineres.
 	<span style="color:rgb(65, 105, 255)">-a</span>, --all
@@ -73,10 +75,10 @@ docker run <span style="color:rgb(65, 105, 255)">OPÇÕES</span> {IMAGE} <span s
 		Política para realizar (ou não) o <span style="color:rgb(65, 105, 255)">reinício</span> do contêiner quando ele "sair". 
 			Os parâmetros mais usados são <span style="color:rgb(0, 176, 80)">always</span> que reinicia sempre que o contêiner, e o <span style="color:rgb(0, 176, 80)">unless-stopped</span> que somente não reinicia quando o contêiner é parado de forma manual ou outra forma.
 
-docker pull
+docker pull {IMAGE} - Realiza o download de uma imagem.
 
-docker start
+docker start {CONTAINER} - Inicializa um ou mais contêineres.
 
-docker stop
+docker stop {CONTAINER}- Para um ou mais contêineres.
 
 [^1]: É um formato de codificação de dados feito para ser lido por humanos, ele é usado em arquivos de configurações, em Dockers e também em arquivos de data.
