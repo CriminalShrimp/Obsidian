@@ -26,7 +26,7 @@
 		- [x] Modulo 9
 		- [x] Modulo 10
 		- [x] Modulo 11
-- [ ] [[Docker]]
+- [/] [[Docker]]
 - [ ] [[Kubernetes]]
 - [ ] [[Git e GitHub]]
 - [ ] [[Arch Linux]]

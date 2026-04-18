@@ -33,7 +33,23 @@ Aqui vão algumas terminologias usadas com frequência quando estamos lidando co
 
 ### Docker File
 
-Cada linha em um Docker File representa uma instrução no processo da criação de uma imagem. Os componentes crucias em um arquivo docker é a <span style="color:rgb(0, 176, 80)">imagem base</span>, <span style="color:rgb(0, 176, 80)">código</span> e <span style="color:rgb(0, 176, 80)">dependências</span>, e as <span style="color:rgb(0, 176, 80)">configurações</span> e <span style="color:rgb(0, 176, 80)">comandos</span>.
+Cada linha em um Docker File representa uma instrução no processo da criação de uma imagem. Os principais componentes crucias em um arquivo docker seriam composto por uma <span style="color:rgb(0, 176, 80)">imagem base</span> que é a base do que esta sendo feito, por exemplo se esta fazendo uma aplicação em Python, a base seria `python:3.9`. <span style="color:rgb(0, 176, 80)">Código</span> e <span style="color:rgb(0, 176, 80)">dependências</span> que garante que tudo rode de forma constante e correta. E as <span style="color:rgb(0, 176, 80)">configurações</span> e <span style="color:rgb(0, 176, 80)">comandos</span> vão garantir que os comandos sejam executados, as variáveis sejam setadas corretamente, entre outras configurações necessárias.
+
+O Docker File contem instruções simples, e cada uma dessas instruções performa uma ação especifica, a sintaxe em geral usada é assim:
+
+```
+INSTRUÇÃO argumentos
+```
+
+A seguir tem como exemplos de Docker File com as explicações da ação de cada instrução.
+
+```
+# Imagem feita para fazer o reconhecimento de uma rede.
+FROM ubuntu
+COPY
+RUN
+CMD
+```
 
 ### Comandos 
 
