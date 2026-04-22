@@ -48,7 +48,7 @@ A seguir tem como exemplos de Docker File com as explicações da ação de cada
 
 FROM ubuntu # Imagem base.
 COPY # Copia os arquivos ou pastas do sistema para o contêiner.
-RUN # Executa comandos.
+RUN  apt-get install nmap # Executa comandos.
 CMD # Comando padrão que sera rodado toda vez que o contêiner iniciar.
 WORKDIR # Específica o diretório que o contêiner que será usado.
 EXPOSE # Porta que o contêiner estará "funcionando".
