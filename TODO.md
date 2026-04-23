@@ -1,4 +1,4 @@
-## Obisidan 2026
+## Obisidan 2026 Primeiro Semestre
 - [x] Kernel
 - [x] Central Processing Unit (CPU)
 - [x] Ettercap
@@ -56,3 +56,6 @@
 - [x] Dar uma geral em Criptografia
 - [x] Fazer a criação de Sumario nos arquivos.
 - [?] Usar as marcações em hmtl para centralizar e dar descrição as imagens
+## Obisidan 2026 Segundo Semestre
+- [ ] [[WSL]]
+- 

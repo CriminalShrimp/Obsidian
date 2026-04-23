@@ -35,25 +35,31 @@ Aqui vão algumas terminologias usadas com frequência quando estamos lidando co
 
 Cada linha em um Docker File representa uma instrução no processo da criação de uma imagem. Os principais componentes crucias em um arquivo docker seriam composto por uma <span style="color:rgb(0, 176, 80)">imagem base</span> que é a base do que esta sendo feito, por exemplo se esta fazendo uma aplicação em Python, a base seria `python:3.9`. <span style="color:rgb(0, 176, 80)">Código</span> e <span style="color:rgb(0, 176, 80)">dependências</span> que garante que tudo rode de forma constante e correta. E as <span style="color:rgb(0, 176, 80)">configurações</span> e <span style="color:rgb(0, 176, 80)">comandos</span> vão garantir que os comandos sejam executados, as variáveis sejam setadas corretamente, entre outras configurações necessárias.
 
-O Docker File contem instruções simples, e cada uma dessas instruções performa uma ação especifica, a sintaxe em geral usada é assim:
+O Docker File contem instruções simples, e cada uma dessas instruções performa uma ação específica, a sintaxe em geral é a mostrada na primeira linha, e se repete ao longos das outras instruções:
 
 ```
 INSTRUÇÃO argumentos
+
+FROM # Imagem base.
+COPY # Copia os arquivos ou pastas do sistema para o contêiner.
+RUN # Executa comandos, aqui atualiza e instala o nmap.
+CMD # Comando padrão que sera rodado toda vez que o contêiner iniciar.
+WORKDIR # Específica o diretório que o contêiner que será usado.
+EXPOSE # Porta que o contêiner estará "funcionando".
 ```
 
-A seguir tem como exemplos de Docker File com as explicações da ação de cada instrução.
+A seguir tem como exemplo de DockerFile com as explicações da ação de cada instrução.
 
 ```
 # Imagem feita para fazer o reconhecimento de uma rede.
 
 FROM ubuntu # Imagem base.
-COPY # Copia os arquivos ou pastas do sistema para o contêiner.
-RUN  apt-get install nmap # Executa comandos.
-CMD # Comando padrão que sera rodado toda vez que o contêiner iniciar.
-WORKDIR # Específica o diretório que o contêiner que será usado.
-EXPOSE # Porta que o contêiner estará "funcionando".
+RUN apt-get update && apt-get install nmap -y # Executa comandos, aqui atualiza e instala o nmap.
+ENTRYPOINT ["nmap"] #
+CMD ["-h"] # Comando padrão que sera rodado toda vez que o contêiner iniciar.
 
 ```
+
 
 ### Comandos 
 
