@@ -40,12 +40,25 @@ O Docker File contem instruções simples, e cada uma dessas instruções perfor
 ```
 INSTRUÇÃO argumentos
 
-FROM # Imagem base.
+ADD # Adiciona arquivos ou diretorios ao contêiner.
+ARG	# Usado para passar variáveis na hora de criar o build-time contêiner.
 COPY # Copia os arquivos ou pastas do sistema para o contêiner.
-RUN # Executa comandos, aqui atualiza e instala o nmap.
 CMD # Comando padrão que sera rodado toda vez que o contêiner iniciar.
-WORKDIR # Específica o diretório que o contêiner que será usado.
+ENTRYPOINT # Define um comando que fara com que o seu contêiner rode como um executável.
+ENV	# Cria variáveis de ambiente.
 EXPOSE # Porta que o contêiner estará "funcionando".
+FROM # Imagem base.
+HEALTHCHECK	# Check a container's health on startup.
+LABEL	Add metadata to an image.
+MAINTAINER	Specify the author of an image.
+ONBUILD	Specify instructions for when the image is used in a build.
+SHELL	Set the default shell of an image.
+STOPSIGNAL	Specify the system call signal for exiting a container.
+USER	Set user and group ID.
+VOLUME	Create volume mounts.
+RUN # Executa comandos, aqui atualiza e instala o nmap.
+WORKDIR # Específica o diretório que o contêiner que será usado.
+
 ```
 
 A seguir tem como exemplo de DockerFile com as explicações da ação de cada instrução.
