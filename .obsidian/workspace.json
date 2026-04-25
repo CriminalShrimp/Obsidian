@@ -34,6 +34,18 @@
               "icon": "lucide-file",
               "title": "Docker"
             }
+          },
+          {
+            "id": "137be5bf6cfd14ff",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-04-25 06.43.41.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-04-25 06.43.41.excalidraw"
+            }
           }
         ],
         "currentTab": 1
@@ -211,10 +223,12 @@
   },
   "active": "969f5b72f677a55e",
   "lastOpenFiles": [
-    "Windows/Windows.md",
-    "Windows/WSL.md",
     "TODO.md",
     "Ferramentas/Docker.md",
+    "Excalidraw/Drawing 2026-04-25 06.43.41.excalidraw.md",
+    "Excalidraw",
+    "Windows/Windows.md",
+    "Windows/WSL.md",
     "Linux/CLI.md",
     "Redes/Balanceador de Carga.md",
     "Redes/Gateway.md",
@@ -240,7 +254,6 @@
     "Ferramentas/Ettercap.md",
     "Ferramentas/Kubernetes.md",
     "Ferramentas/TCPDump.md",
-    "Ferramentas/Git e GitHub.md",
     "Trash/Imagens/Img Ferramentas/Kismet GUI.png",
     "Pasted Image 20260311060646_075.png",
     "Trash/Imagens/Img Conceitos/ECDH.png",
@@ -257,7 +270,6 @@
     "Trash/Imagens/Img RedTeam",
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-logical-and-physical-mode-exploration.pksz",
     "Cisco/Packet Tracer/Packet Tracer/packet-tracer-logging-from-multiple-sources.pka",
-    "Cisco/Packet Tracer/Packet Tracer/packet-tracer-implement-physical-security-with-iot-devices.pka",
     "Treino/Rotina Treino.canvas"
   ]
 }

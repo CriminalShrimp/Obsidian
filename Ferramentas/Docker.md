@@ -35,11 +35,9 @@ Aqui vão algumas terminologias usadas com frequência quando estamos lidando co
 
 Cada linha em um Docker File representa uma instrução no processo da criação de uma imagem. Os principais componentes crucias em um arquivo docker seriam composto por uma <span style="color:rgb(0, 176, 80)">imagem base</span> que é a base do que esta sendo feito, por exemplo se esta fazendo uma aplicação em Python, a base seria `python:3.9`. <span style="color:rgb(0, 176, 80)">Código</span> e <span style="color:rgb(0, 176, 80)">dependências</span> que garante que tudo rode de forma constante e correta. E as <span style="color:rgb(0, 176, 80)">configurações</span> e <span style="color:rgb(0, 176, 80)">comandos</span> vão garantir que os comandos sejam executados, as variáveis sejam setadas corretamente, entre outras configurações necessárias.
 
-O Docker File contem instruções simples, e cada uma dessas instruções performa uma ação específica, a sintaxe em geral é a mostrada na primeira linha, e se repete ao longos das outras instruções:
+O Docker File contem instruções simples, e cada uma dessas instruções performa uma ação específica, a sintaxe em geral é **`INTRUÇÃO argumentos`**, ela se repete ao longos das outras instruções.
 
 ```
-INSTRUÇÃO argumentos
-
 ADD # Adiciona arquivos ou diretorios ao contêiner.
 ARG	# Usado para passar variáveis na hora de criar o build-time contêiner.
 COPY # Copia os arquivos ou pastas do sistema para o contêiner.
@@ -48,8 +46,8 @@ ENTRYPOINT # Define um comando que fara com que o seu contêiner rode como um ex
 ENV	# Cria variáveis de ambiente.
 EXPOSE # Porta que o contêiner estará "funcionando".
 FROM # Imagem base.
-HEALTHCHECK	# Check a container's health on startup.
-LABEL	Add metadata to an image.
+HEALTHCHECK	# Mostra como verificar se o contêiner está funcionando via teste.
+LABEL # Usado para adicionar metadados a imagem.
 MAINTAINER	Specify the author of an image.
 ONBUILD	Specify instructions for when the image is used in a build.
 SHELL	Set the default shell of an image.
