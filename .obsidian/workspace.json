@@ -217,8 +217,7 @@
       "bases:Criar nova base": false,
       "github-sync:Sync with Remote": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-task-progress-bar:Abrir visualização Task Genius": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "969f5b72f677a55e",

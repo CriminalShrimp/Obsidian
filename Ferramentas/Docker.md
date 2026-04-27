@@ -48,13 +48,14 @@ EXPOSE # Porta que o contêiner estará "funcionando".
 FROM # Imagem base.
 HEALTHCHECK	# Mostra como verificar se o contêiner está funcionando via teste.
 LABEL # Usado para adicionar metadados a imagem.
-MAINTAINER	Specify the author of an image.
-ONBUILD	Specify instructions for when the image is used in a build.
+MAINTAINER # Cria um campo com a informação do autor da imagem.
+ONBUILD	# Permite criar instruções especificas na hora da criação do contêiner.
+RUN # Executa comandos, aqui atualiza e instala o nmap.
 SHELL	Set the default shell of an image.
 STOPSIGNAL	Specify the system call signal for exiting a container.
 USER	Set user and group ID.
 VOLUME	Create volume mounts.
-RUN # Executa comandos, aqui atualiza e instala o nmap.
+
 WORKDIR # Específica o diretório que o contêiner que será usado.
 
 ```
