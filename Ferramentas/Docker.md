@@ -42,7 +42,7 @@ ADD # Adiciona arquivos ou diretorios ao contêiner.
 ARG	# Usado para passar variáveis na hora de criar o build-time contêiner.
 COPY # Copia os arquivos ou pastas do sistema para o contêiner.
 CMD # Comando padrão que sera rodado toda vez que o contêiner iniciar.
-ENTRYPOINT # Define um comando que fara com que o seu contêiner rode como um executável.
+ENTRYPOINT # Define um comando que fará com que o seu contêiner rode como um executável.
 ENV	# Cria variáveis de ambiente.
 EXPOSE # Porta que o contêiner estará "funcionando".
 FROM # Imagem base.
@@ -51,9 +51,9 @@ LABEL # Usado para adicionar metadados a imagem.
 MAINTAINER # Cria um campo com a informação do autor da imagem.
 ONBUILD	# Permite criar instruções especificas na hora da criação do contêiner.
 RUN # Executa comandos, aqui atualiza e instala o nmap.
-SHELL	Set the default shell of an image.
-STOPSIGNAL	Specify the system call signal for exiting a container.
-USER	Set user and group ID.
+SHELL # Permite alterar o terminal, no Windows como exemplo de cmd para shellpower.
+STOPSIGNAL	# Específica um sinal para que o contêiner encerre.
+USER # Determina um usuário na etapa desejada.
 VOLUME	Create volume mounts.
 
 WORKDIR # Específica o diretório que o contêiner que será usado.
