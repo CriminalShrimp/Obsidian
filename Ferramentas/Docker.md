@@ -54,8 +54,7 @@ RUN # Executa comandos, aqui atualiza e instala o nmap.
 SHELL # Permite alterar o terminal, no Windows como exemplo de cmd para shellpower.
 STOPSIGNAL	# Específica um sinal para que o contêiner encerre.
 USER # Determina um usuário na etapa desejada.
-VOLUME	Create volume mounts.
-
+VOLUME	# Criar um volume de disco no contêiner.
 WORKDIR # Específica o diretório que o contêiner que será usado.
 
 ```
