@@ -1,11 +1,15 @@
 **Sumário**
 	**Tags:** #Ferramentas 
 	**Conteúdo:**
-		youtube.com/watch?v=ntbpIfS44Gw - Conteúdo Básico em Vídeo.
-		github.com/iam-veeramalla/Docker-Zero-to-Hero - Passo a Passo.
-		medium.com/@viveksachdev1121/docker-from-zero-to-hero-663bdd337c1a - Referencia.
-		[docs.docker.com](https://docs.docker.com/) - Documentação 
-
+		**Docker:**
+			youtube.com/watch?v=ntbpIfS44Gw - Conteúdo Básico em Vídeo.
+			github.com/iam-veeramalla/Docker-Zero-to-Hero - Passo a Passo.
+			medium.com/@viveksachdev1121/docker-from-zero-to-hero-663bdd337c1a - Referencia.
+			[docs.docker.com](https://docs.docker.com/) - Documentação.
+			kubernetes.io/docs/home/ - Documentação Kubernetes.
+		**Kubernetes:**
+			developer.ibm.com/components/kubernetes/ - Tutorias Kubernetes.
+		
 ----
 
 Imagine que você fez um sistema no seu computador para a sua empresa, e na hora de colocar em outra maquina não funciona, nesse cenário surgiu uma das falas da informática, *na minha maquina funciona*. Foi ai que o Docker entrou para ajudar e mudar esse cenário, criando um ambiente isolado em sua máquina, que contem todas as dependências necessárias para o funcionamento da sua aplicação, e que pode empacotar elas para funcionar em qualquer outra máquina que for colocado. Esse ambiente feito pelo Docker é chamado de <span style="color:rgb(255, 255, 0)">contêiner</span>. E é na plataforma do Docker que conseguimos usar os contêineres a partir de suas <span style="color:rgb(255, 255, 0)">imagens</span>, que funcionam como uma receita de bolo para criar um contêiner, a criação da imagem é chamada de **Docker Build**.
@@ -117,5 +121,9 @@ docker pull {IMAGE} - Realiza o download de uma imagem.
 docker start {CONTAINER} - Inicializa um ou mais contêineres.
 
 docker stop {CONTAINER}- Para um ou mais contêineres.
+
+# Kubernetes
+
+para automação de implantação, escalonamento e gerenciamento de aplicações em contêineres. Quando se tem apenas um contêiner para gerenciar é fácil, mas em um cenário onde existam vários se tornar muito difícil cuidar de todos, é ai que o **Kubernetes** ou **K8s** (do grego piloto ou timoneiro) entra, ele é uma plataforma de código aberto que orquestra os contêineres, em outras palavras, ele realiza mudanças e melhorias em suas aplicações, se algo da errado durante isso ele mesmo volta a versão e reinicia contêineres que falharam, 
 
 [^1]: É um formato de codificação de dados feito para ser lido por humanos, ele é usado em arquivos de configurações, em Dockers e também em arquivos de data.

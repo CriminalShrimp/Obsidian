@@ -26,8 +26,8 @@
 		- [x] Modulo 9
 		- [x] Modulo 10
 		- [x] Modulo 11
-- [/] [[Docker]]
-- [ ] [[Kubernetes]]
+- [x] Docker
+- [/] Kubernetes (mudado para dentro do Docker)
 - [ ] [[Git e GitHub]]
 - [ ] [[Arch Linux]]
 - [x] Legendar as imagens em Sistema de Arquivos
@@ -58,4 +58,5 @@
 - [?] Usar as marcações em hmtl para centralizar e dar descrição as imagens
 ## Obisidan 2026 Segundo Semestre
 - [ ] [[WSL]]
-- 
+- [ ] Fazer as instruções todas bonitinhas no [[Docker]]
+- [ ] 
