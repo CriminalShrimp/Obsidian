@@ -21,7 +21,9 @@ Comumente a CLI vai apresentar a seguinte composição de elementos:
 <span style="color:rgb(255, 192, 0)">Esse campo pode mudar entre $ e #, sendo que quando aparece o símbolo # significa que o usuário esta com privilégios, já o $ significa que é um usuário "padrão".</span>
 
 Na hora de realizar comandos na CLI a seguinte sintaxe deve ser seguida:
+
 <p style="text-align:center;"><span style="color:rgb(255, 0, 0)"> comando</span> [<span style="color:rgb(0, 176, 240)">opção(ou opções)</span>] [<span style="color:rgb(0, 176, 80)">argumentos</span>]</p>
+
 <span style="color:rgb(255, 0, 0)">O comando pode ter ou não os campos opção e argumentos, isso varia conforme a o resultado desejado.</span> 
 
 <span style="color:rgb(0, 176, 240)">Logo em seguida vem as opções que podem ser mais que uma, quando vamos usar uma opção ela vem antecedida com um - ou dois --, quando usado com somente um - significa que estamos usando a abreviação de um palavra, já quando contem dois -- tudo é tratado como uma palavra.</span> 

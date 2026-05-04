@@ -35,8 +35,7 @@
               "title": "Docker"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -208,16 +207,17 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "7e07f51518e40d3d",
+  "active": "56719f2b16a02605",
   "lastOpenFiles": [
-    "Ferramentas/Kubernetes.md",
     "Ferramentas/Docker.md",
     "TODO.md",
+    "Linux/CLI.md",
+    "Linux/Arch Linux.md",
+    "Ferramentas/Kubernetes.md",
     "Excalidraw/Drawing 2026-04-25 06.43.41.excalidraw.md",
     "Excalidraw",
     "Windows/Windows.md",
     "Windows/WSL.md",
-    "Linux/CLI.md",
     "Redes/Balanceador de Carga.md",
     "Redes/Gateway.md",
     "Redes/Switch.md",
@@ -240,7 +240,6 @@
     "Ferramentas/Kismet.md",
     "BlueTeam/Suricata.md",
     "Ferramentas/Ettercap.md",
-    "Ferramentas/TCPDump.md",
     "Trash/Imagens/Img Ferramentas/Kismet GUI.png",
     "Pasted Image 20260311060646_075.png",
     "Trash/Imagens/Img Conceitos/ECDH.png",

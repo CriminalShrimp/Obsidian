@@ -124,6 +124,17 @@ docker stop {CONTAINER}- Para um ou mais contêineres.
 
 # Kubernetes
 
-para automação de implantação, escalonamento e gerenciamento de aplicações em contêineres. Quando se tem apenas um contêiner para gerenciar é fácil, mas em um cenário onde existam vários se tornar muito difícil cuidar de todos, é ai que o **Kubernetes** ou **K8s** (do grego piloto ou timoneiro) entra, ele é uma plataforma de código aberto que orquestra os contêineres, em outras palavras, ele realiza mudanças e melhorias em suas aplicações, se algo da errado durante isso ele mesmo volta a versão e reinicia contêineres que falharam, 
+para automação de implantação, escalonamento e gerenciamento de aplicações em contêineres. Quando se tem apenas um contêiner para gerenciar é fácil, mas em um cenário onde existam vários se tornar muito difícil cuidar de todos, é ai que o **Kubernetes** ou **K8s** (do grego piloto ou timoneiro) entra, ele é uma plataforma de código aberto que orquestra os contêineres, em outras palavras, ele realiza mudanças e melhorias em suas aplicações, se algo da errado durante isso ele mesmo volta a versão e reinicia contêineres que falharam, entre outras coisas que facilitam a vida de quem gerência contêineres.
+
+
+## Parte Avançada
+
+### Comandos 
+
+A sintaxe dos comandos segue um padrão do Docker com o serviço sendo usado, e o comando. 
+
+<p style="text-align:center;">kubectl {<span style="color:rgb(65, 105, 255)">command</span>} {<span style="color:rgb(0, 176, 80)">TYPE</span>} {<span style="color:rgb(206, 0, 86)">NAME</span>} {<span style="color:rgb(112, 48, 160)">flags</span>} </p>
+
+<span style="color:rgb(65, 105, 255)">Command </span>específica a operação que será feita, como `create`<span style="color:rgb(65, 105, 255)">,</span> `get`<span style="color:rgb(65, 105, 255)">,</span> `delete`<span style="color:rgb(65, 105, 255)">.</span> O <span style="color:rgb(0, 176, 80)">TYPE</span> é um recurso do comando que pode ser usado. o <span style="color:rgb(206, 0, 86)">NAME</span> é usado para especificar/identificar por exemplo um arquivo que será usado junto de um comando. E por fim as <span style="color:rgb(112, 48, 160)">flags</span> são opcionais, podem especificar um servidor ou ate mudar a saída de um comando. 
 
 [^1]: É um formato de codificação de dados feito para ser lido por humanos, ele é usado em arquivos de configurações, em Dockers e também em arquivos de data.
