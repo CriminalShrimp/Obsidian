@@ -35,7 +35,8 @@
               "title": "Docker"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -207,10 +208,10 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "56719f2b16a02605",
+  "active": "2f42594bd1b7b03d",
   "lastOpenFiles": [
-    "Ferramentas/Docker.md",
     "TODO.md",
+    "Ferramentas/Docker.md",
     "Linux/CLI.md",
     "Linux/Arch Linux.md",
     "Ferramentas/Kubernetes.md",

@@ -8,8 +8,9 @@
 			[docs.docker.com](https://docs.docker.com/) - Documentação.
 			kubernetes.io/docs/home/ - Documentação Kubernetes.
 		**Kubernetes:**
-			developer.ibm.com/components/kubernetes/ - Tutorias Kubernetes.
-		
+			kubernetes.io/docs/home/ - Documentação.
+			youtube.com/watch?v=z3hOWY46OMQ - Vídeo Explicativo.
+			
 ----
 
 Imagine que você fez um sistema no seu computador para a sua empresa, e na hora de colocar em outra maquina não funciona, nesse cenário surgiu uma das falas da informática, *na minha maquina funciona*. Foi ai que o Docker entrou para ajudar e mudar esse cenário, criando um ambiente isolado em sua máquina, que contem todas as dependências necessárias para o funcionamento da sua aplicação, e que pode empacotar elas para funcionar em qualquer outra máquina que for colocado. Esse ambiente feito pelo Docker é chamado de <span style="color:rgb(255, 255, 0)">contêiner</span>. E é na plataforma do Docker que conseguimos usar os contêineres a partir de suas <span style="color:rgb(255, 255, 0)">imagens</span>, que funcionam como uma receita de bolo para criar um contêiner, a criação da imagem é chamada de **Docker Build**.
@@ -124,8 +125,7 @@ docker stop {CONTAINER}- Para um ou mais contêineres.
 
 # Kubernetes
 
-para automação de implantação, escalonamento e gerenciamento de aplicações em contêineres. Quando se tem apenas um contêiner para gerenciar é fácil, mas em um cenário onde existam vários se tornar muito difícil cuidar de todos, é ai que o **Kubernetes** ou **K8s** (do grego piloto ou timoneiro) entra, ele é uma plataforma de código aberto que orquestra os contêineres, em outras palavras, ele realiza mudanças e melhorias em suas aplicações, se algo da errado durante isso ele mesmo volta a versão e reinicia contêineres que falharam, entre outras coisas que facilitam a vida de quem gerência contêineres.
-
+Para automação de implantação, escalonamento e gerenciamento de aplicações em contêineres. Quando se tem apenas um contêiner para gerenciar é fácil, mas em um cenário onde existam vários se tornar muito difícil cuidar de todos, é ai que o **Kubernetes** ou **K8s** (do grego piloto ou timoneiro) entra, ele é uma plataforma de código aberto que orquestra os contêineres, em outras palavras, ele realiza mudanças e melhorias em suas aplicações, se algo da errado durante isso ele mesmo volta a versão e reinicia contêineres que falharam, entre outras coisas que facilitam a vida de quem gerência contêineres. Ele realiza esse gerenciamento através de <span style="color:rgb(255, 255, 0)"><b>Pods</b></span>, e nesse pode é onde temos o contêiner, sendo possível colocar mais que um contêiner em um Pod (mas é um uso especifico). A criação de Pods é feita em YAML assim como o DockFile, mas não criamos isso de formar manual, ao invés disso usamos os <span style="color:rgb(255, 255, 0)">Workloads</span> (ou **Cargas de Trabalho**), que é uma aplicação do Kubernetes, e usando os **Recursos de Worklaod**, e com esses recursos como `replicaSet`, `deployment`, 
 
 ## Parte Avançada
 
