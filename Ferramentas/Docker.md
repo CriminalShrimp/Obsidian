@@ -13,7 +13,7 @@
 			
 ----
 
-Imagine que você fez um sistema no seu computador para a sua empresa, e na hora de colocar em outra maquina não funciona, nesse cenário surgiu uma das falas da informática, *na minha maquina funciona*. Foi ai que o Docker entrou para ajudar e mudar esse cenário, criando um ambiente isolado em sua máquina, que contem todas as dependências necessárias para o funcionamento da sua aplicação, e que pode empacotar elas para funcionar em qualquer outra máquina que for colocado. Esse ambiente feito pelo Docker é chamado de <span style="color:rgb(255, 255, 0)">contêiner</span>. E é na plataforma do Docker que conseguimos usar os contêineres a partir de suas <span style="color:rgb(255, 255, 0)">imagens</span>, que funcionam como uma receita de bolo para criar um contêiner, a criação da imagem é chamada de **Docker Build**. 
+Imagine que você fez um sistema no seu computador para a sua empresa, e na hora de colocar em outra maquina não funciona, nesse cenário surgiu uma das falas da informática, *na minha maquina funciona*. Foi ai que o Docker entrou para ajudar e mudar esse cenário, criando um ambiente isolado em sua máquina, que contem todas as dependências necessárias para o funcionamento da sua aplicação, e que pode empacotar elas para funcionar em qualquer outra máquina que for colocado. Esse ambiente feito pelo Docker é chamado de <span style="color:rgb(255, 255, 0)">contêiner</span>. Quando pensamos em contêiner podemos  imaginar algo como um ambiente isolado, leve e padronizado. E é na plataforma do Docker que conseguimos usar os contêineres a partir de suas <span style="color:rgb(255, 255, 0)">imagens</span>, que funcionam como uma receita de bolo para criar um contêiner, a criação da imagem é chamada de **Docker Build**. 
 
 <figure style="text-align: center;">
   <img src="ProcessoDocker.png" style="margin: 0 auto;">
@@ -34,7 +34,7 @@ Aqui vão algumas terminologias usadas com frequência quando estamos lidando co
 
 - **Docker Compose:** Ferramenta para gerenciar e roda múltiplos contêiner a partir de um único arquivo [^1]YAML.
 
-**Docker x Maquina Virtual** -  A grande diferença entre esses dois é seu uso de recursos, em poucas palavras e de forma simples, uma maquina virtual instala todo um sistema operacional para ser usado, em quando o Docker compartilha o [[Kernel]] da maquina e virtualiza somente o espaço do usuário, usando menos recurso computacional quando comparado com uma maquina virtual.
+**Docker x Maquina Virtual** - A grande diferença entre esses dois é seu uso de recursos, em poucas palavras e de forma simples, uma maquina virtual instala todo um sistema operacional para ser usado, em quando o Docker compartilha o [[Kernel]] da maquina e virtualiza somente o espaço do usuário, usando menos recurso computacional quando comparado com uma maquina virtual.
 ## Parte Avançada
 
 ### Docker File
