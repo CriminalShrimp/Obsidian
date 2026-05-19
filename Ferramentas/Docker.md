@@ -141,6 +141,10 @@ Para automação de implantação, escalonamento e gerenciamento de aplicações
 
 ## Parte Avançada
 
+Os principais componentes que estão no Control Plane são `kube apiserver`, `etcd`, `kube scheduler`, `kube controller manager` e o `cloud controller manager` (optional).
+
+E além disso temos os componentes que devem rodar nos Pods, são eles o `kubelet`, `container runtime` e o `kube-proxy` (optional).
+
 ### Comandos 
 
 A sintaxe dos comandos segue um padrão do Docker com o serviço sendo usado, e o comando. 
