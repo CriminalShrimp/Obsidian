@@ -28,7 +28,7 @@
 		- [x] Modulo 11
 - [x] Docker
 - [x] Kubernetes (mudado para dentro do Docker)
-- [/] [[Git e GitHub]]
+- [/] [[Git]]
 - [ ] [[Arch Linux]]
 - [x] Legendar as imagens em Sistema de Arquivos
 - [-] HyperText Markup Language (HTMl)
