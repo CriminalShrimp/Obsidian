@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "Ferramentas/Git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
+              "title": "Git"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "Nmap"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "aberto",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +98,8 @@
               "title": "tg-left-sidebar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -208,10 +208,11 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "45bff75286daa49a",
+  "active": "9afb7dec79881ba3",
   "lastOpenFiles": [
-    "Ferramentas/Git.md",
     "TODO.md",
+    "Ferramentas/Nmap.md",
+    "Ferramentas/Git.md",
     "Ferramentas/Docker.md",
     "Trash/Imagens/Img Ferramentas/Kubenetes-Cluster.png",
     "Arquitetura Computacional/Kernel.md",
@@ -238,7 +239,6 @@
     "Trash/Imagens/Img Ferramentas/ProcessoDocker.png",
     "BlueTeam/Zeek.md",
     "Cisco/Defesa de Rede - Cisco.md",
-    "Ferramentas/Nmap.md",
     "RedTeam/Denial of Service (DDoS).md",
     "Trash/Imagens/Img Conceitos/ZeekLogs.pdf",
     "Trash/Imagens/Img Conceitos/ECDH.md",
