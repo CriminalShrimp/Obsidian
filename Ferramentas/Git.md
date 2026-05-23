@@ -6,8 +6,55 @@
 		
 ----
 
-Git é um **sistema de controle de versionamento** e também para criação de projetos comunitários de código aberto ou **Open Source** 
+Git é um **sistema de controle de versionamento** e também para criação de projetos comunitários de código aberto ou **Open Source**, usado tanto para projetos pessoais, até por grandes empresas por todo o mundo. Antes de observar um cenário real onde podemos usar essa ferramenta, temos que ver alguns termos que são usados junta a ela.
 
-GIT = [Git](https://git-scm.com/) é um software de controle de versão de código aberto e gratuito. Ele permite que vários desenvolvedores trabalhem em um mesmo projeto ao mesmo tempo, sem que as alterações entrem em conflito. Também é usado nesse aplicativo para backup.
 
-GitHub x GitLab:
+Commit:
+
+Branch:
+
+Merge:
+
+Push:
+
+Repositório:
+
+
+GitHub x GitLab: São as duas maiores plataformas que usam git, 
+
+## Comandos
+
+Temos os comandos de serviços padrões como `status`, `help`, `config`. Além dos comandos mais básicos temos muitos outros tanto para fazer o versionamento tanto para fazer o envio dos arquivos.
+
+git add
+
+git checkout
+
+git commit
+
+git clone
+
+git branch
+	-d
+
+git init
+
+git merge
+
+git push
+
+git pull
+
+git switch
+
+git 
+
+
+### Reverter Mudanças
+
+git restore 
+
+git reset
+
+git revert
+

@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ferramentas/Nmap.md",
+                "file": "Explicações.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nmap"
+              "title": "Explicações"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "aberto",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,8 +99,7 @@
               "title": "tg-left-sidebar"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ferramentas/Docker.md",
+                "file": "Explicações.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Docker"
+              "title": "Links inversos para Explicações"
             }
           },
           {
@@ -138,12 +138,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ferramentas/Docker.md",
+                "file": "Explicações.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Docker"
+              "title": "Links de saída para Explicações"
             }
           },
           {
@@ -167,13 +167,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ferramentas/Kismet.md",
+                "file": "Explicações.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Kismet"
+              "title": "Sumário de Explicações"
             }
           },
           {
@@ -208,12 +208,13 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "9afb7dec79881ba3",
+  "active": "7e07f51518e40d3d",
   "lastOpenFiles": [
-    "TODO.md",
+    "Ferramentas/Docker.md",
+    "Explicações.md",
     "Ferramentas/Nmap.md",
     "Ferramentas/Git.md",
-    "Ferramentas/Docker.md",
+    "TODO.md",
     "Trash/Imagens/Img Ferramentas/Kubenetes-Cluster.png",
     "Arquitetura Computacional/Kernel.md",
     "Arquitetura Computacional/Computador.md",
@@ -228,7 +229,6 @@
     "Redes/Gateway.md",
     "Redes/Switch.md",
     "Redes/Modelo OSI.md",
-    "Explicações.md",
     "Linux/GNOME.md",
     "Trash/Modelo/comando.md",
     "Comandos/Linux.md",
