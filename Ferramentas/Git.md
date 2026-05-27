@@ -1,6 +1,7 @@
 **Sumário**
 	**Tags:** #Ferramentas 
 	**Conteúdo:**
+		git-scm.com/docs/git - Documentação do git.
 		https://gitmastery.me - Plataforma para Aprender Git gamificado.
 		youtu.be/pyM5QLS2h6M?si=SntctgqgUziPWeqt - Básico do Git.
 		
@@ -26,35 +27,43 @@ Git é um **sistema de controle de versionamento** e também para criação de p
 
 Temos os comandos de serviços padrões como `status`, `help`, `config`. Além dos comandos mais básicos temos muitos outros tanto para fazer o versionamento tanto para fazer o envio dos arquivos.
 
-git add
+git add **ARQUIVO** - Adiciona arquivos desejados, se usar o `.` ele adiciona todos os arquivos da pasta atual.
 
-git checkout
+git branch <span style="color:rgb(65, 105, 255)">OPÇÕES</span> **BRANCH** - Pode lista, cria ou deleta branchs. Sem nenhuma opção basta apenas informar o nome da branch e ela ira ser criada.
+	<span style="color:rgb(65, 105, 255)">-d</span>, --delete
+		Deleta a branch desejada.
+	<span style="color:rgb(65, 105, 255)">-a</span>, --all
+		Realiza a listagem de todas as branchs, tanto remotas quando locais.
+	<span style="color:rgb(65, 105, 255)">-l</span>, --list <span style="color:rgb(0, 176, 80)">PARAMETRO</span>
+		Lista as todas as branchs que baterem com o parâmetro especificado.
 
-git commit
+git checkout <span style="color:rgb(65, 105, 255)">OPÇÕES</span> **BRANCH**- Realiza as trocas entre as branch, e também pode restaurar versões de arquivos mas tem outros comandos para .
+	<span style="color:rgb(65, 105, 255)">-b</span>
+		Cria uma nova branch, e também podemos definir um ponto inicial após a branch. Também existe o <span style="color:rgb(65, 105, 255)">B</span>, que se caso já exista essa branch ela só muda o ponto inicial.
 
-git clone
+git commit - 
+	m
 
-git branch
-	-d
+git clone **REPOSITORIO** - Realiza o clone de um repositório especificado para um novo diretório.
 
-git init
+git init - 
 
-git merge
+git merge - 
 
-git push
+git push - 
 
-git pull
+git pull -
 
-git switch
+git switch -
 
 git 
 
 
 ### Reverter Mudanças
 
-git restore 
+git restore - 
 
-git reset
+git reset - 
 
-git revert
+git revert - 
 
