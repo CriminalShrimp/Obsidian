@@ -77,7 +77,6 @@ CMD ["-h"] # Comando padrão que sera rodado toda vez que o contêiner iniciar.
 
 ```
 
-
 ### Comandos 
 
 Aqui tem os comandos e seus parâmetros mais úteis.
