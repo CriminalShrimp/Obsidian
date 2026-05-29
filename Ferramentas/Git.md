@@ -55,9 +55,13 @@ git init - Cria um repositório Git vazio.
 
 git merge **BRANCH** - Junta duas ou mais branchs na branch atual. 
 
-git push - 
+git push <span style="color:rgb(65, 105, 255)">OPÇÕES</span> **REPOSITORIO** **BRANCH** - Manda as alterações realizas localmente para o repositório remoto.
+	<span style="color:rgb(65, 105, 255)">-a</span>, --all
+		Envia todas as branchs para o repositório.
+	<span style="color:rgb(65, 105, 255)">-u</span>, --set-upstream
+		Associa a local a branch remota, depois dessa ligação ser realizada é necessário só digita `git push` para "subir" as alterações.
 
-git pull -
+git pull **REPOSITORIO** **BRANCH** - Baixa as alterações de um repositório remoto para o local. Digamos que ele serve para sincronizar com todo o projeto.
 
 git switch -
 
