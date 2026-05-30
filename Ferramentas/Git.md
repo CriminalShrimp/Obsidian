@@ -37,8 +37,8 @@ git branch <span style="color:rgb(65, 105, 255)">OPÇÕES</span> **BRANCH** - Po
 	<span style="color:rgb(65, 105, 255)">-l</span>, --list <span style="color:rgb(0, 176, 80)">PARAMETRO</span>
 		Lista as todas as branchs que baterem com o parâmetro especificado.
 
-git checkout <span style="color:rgb(65, 105, 255)">OPÇÕES</span> **BRANCH**- Realiza as trocas entre as branch, e também pode restaurar versões de arquivos mas tem outros comandos para .
-	<span style="color:rgb(65, 105, 255)">-b</span>
+git checkout <span style="color:rgb(65, 105, 255)">OPÇÕES</span> **BRANCH**- Realiza as trocas entre as branch, e também pode restaurar versões de arquivos.
+	-<span style="color:rgb(65, 105, 255)">-b</span>
 		Cria uma nova branch, e também podemos definir um ponto inicial após a branch. Também existe o <span style="color:rgb(65, 105, 255)">B</span>, que se caso já exista essa branch ela só muda o ponto inicial.
 
 git commit <span style="color:rgb(65, 105, 255)">OPÇÕES</span> - "Registra" as mudanças realizadas no repositório.
@@ -50,6 +50,14 @@ git commit <span style="color:rgb(65, 105, 255)">OPÇÕES</span> - "Registra" as
 		Adiciona sua mensagem ao commit, usando `-am` é possível enviar todos os arquivos e o comentário junto. Além disso existe como adicionar dados específicos no commit usando o `GIT_AUTHOR_` (identifica o autor original do código) que ou `GIT_COMMITTER_` (identifica quem realizou o commit), e com eles é possível usar `DATE`, `EMAIL` e `NAME`.
  
 git clone **REPOSITORIO** - Realiza o clone de um repositório especificado para um novo diretório.
+
+git diff <span style="color:rgb(65, 105, 255)">OPÇÕES</span> - Mostra a diferença entre arquivos.
+	brach
+		Colocando duas branchs uma em seguida da outra é possível compara as diferenças entre elas.
+	file
+		Colocando o nome do arquivo é possível verificar as diferenças comente naquele arquivo.
+	commit
+		É possível comparar diferenças entre commits colocando seus identificadores um após o outro (usando `git log` para obter este dado)
 
 git init - Cria um repositório Git vazio. 
 
@@ -63,7 +71,8 @@ git push <span style="color:rgb(65, 105, 255)">OPÇÕES</span> **REPOSITORIO** *
 
 git pull **REPOSITORIO** **BRANCH** - Baixa as alterações de um repositório remoto para o local. Digamos que ele serve para sincronizar com todo o projeto.
 
-git switch -
+
+git switch **BRANCH** - Vai de uma branch para outra. Uma boa opção para usar junto é o -c, que cria uma nova branch.
 
 ### Reverter Mudanças
 
@@ -71,5 +80,4 @@ git restore -
 
 git reset - 
 
-git revert - 
-
+git revert COMMIT - Volta as mudanças realizadas.
