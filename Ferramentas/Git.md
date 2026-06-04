@@ -4,6 +4,7 @@
 		git-scm.com/docs/git - Documentação do git.
 		https://gitmastery.me - Plataforma para Aprender Git gamificado.
 		youtu.be/pyM5QLS2h6M?si=SntctgqgUziPWeqt - Básico do Git.
+		youtube.com/watch?v=S7XpTAnSDL4 - Exemplo de uso Git.
 		
 ----
 
@@ -20,6 +21,10 @@ Git é um **sistema de controle de versionamento** e também para criação de p
 **Push**: Fazer um push significa enviar as alterações feitas localmente para o repositório web.
 
 **Repositório**: Existe dois tipos de repositórios, o que é onde esta sendo trabalhado no computador, o repositório local, e temos o que fica salvo na web chamado normalmente de repositório remoto.
+
+Para entendermos como usamos esses termos e também os momentos em que o usamos a ferramenta git, vamos criar um cenário, os comandos serão simples e sem muita informação, caso queira ver mais sobre os comandos é possível ver uma lista mais abaixo.
+
+Sua empresa esta trabalhando em um aplicativo chamado **APPFUTURO**, ainda não lançado ele esta sendo programado por varias equipes, para organizar tudo vocês estão usando **GitHub**, sua função é fazer um botão de registro para o aplicativo. O nome do <span style="color:rgb(112, 48, 160)">repositório</span> é <span style="color:rgb(112, 48, 160)">APPFUTURO</span>, a branch principal ou a "main" é a APPFUTURO_DEV, para começar seu trabalho você cria uma nova branch usando o comando `git branch` chamada de APPFUTURO_BOTAO_REGISTRO, usando o comando `git switch` você troca da main para sua nova branch. Agora para começar usamos o `git clone` para puxar os arquivos do projeto para sua maquina, criamos nossos arquivos e fazemos as alterações necessárias, adicionamos o que fizermos usando `git add`, após isso usamos o `git commit` para mandar nossas mudanças, após isso fazemos um `git push` para mandarmos nossas mudanças para o repositório remoto (APPFUTURO na nossa branch APPFUTURO_BOTAO_REGISTRO). Agora vamos juntar nossas modificações com a branch principal, caso tenha um supervisor de código para olhar seu trabalho, você abrir o chamado **PR** **P**ull **R**equest, caso aceito suas mudanças serão enviadas, e então caso nenhum conflito entre elas ocorresse, seria realizado o `git merge` entre as branchs, com isso terminando seu trabalho.
 
 **GitHub** x **GitLab**: São as duas maiores plataformas que usam git, sendo o **GitHub** a mais popular pois é mais focado em um publico geral, em quando o **GitLab** é mais um "tudo em um" focando em seu uso em empresas.
 
@@ -71,13 +76,14 @@ git push <span style="color:rgb(65, 105, 255)">OPÇÕES</span> **REPOSITORIO** *
 
 git pull **REPOSITORIO** **BRANCH** - Baixa as alterações de um repositório remoto para o local. Digamos que ele serve para sincronizar com todo o projeto.
 
+git rm **ARQUIVO** - Remove os arquivos especificados.
 
 git switch **BRANCH** - Vai de uma branch para outra. Uma boa opção para usar junto é o -c, que cria uma nova branch.
 
 ### Reverter Mudanças
 
-git restore - 
+git restore - Restaura arquivos para sua versão passada. Também pode ser usado `--staged` para tirar os arquivos do commit.
 
-git reset - 
+git reset - Desfaz as mudanças realizadas localmente voltando a branch para um commit especifico.
 
-git revert COMMIT - Volta as mudanças realizadas.
+git revert **COMMIT** - Reverte as mudanças realizadas nos commit.
