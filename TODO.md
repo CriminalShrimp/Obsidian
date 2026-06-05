@@ -28,8 +28,8 @@
 		- [x] Modulo 11
 - [x] Docker
 - [x] Kubernetes (mudado para dentro do Docker)
-- [/] [[Git]]
-- [ ] [[Arch Linux]]
+- [x] Git
+- [/] [[Distros]]
 - [x] Legendar as imagens em Sistema de Arquivos
 - [-] HyperText Markup Language (HTMl)
 - [ ] [[Command N Control (CNC)]]

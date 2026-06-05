@@ -8,31 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "56719f2b16a02605",
+            "id": "80d65960055fca4e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ferramentas/Git.md",
+                "file": "Linux/Distros.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git"
-            }
-          },
-          {
-            "id": "10021cf042f73ef8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ferramentas/Docker.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Docker"
+              "title": "Distros"
             }
           }
         ]
@@ -67,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "hardware",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,12 +84,12 @@
               "title": "tg-left-sidebar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 201.5,
-    "collapsed": true
+    "width": 287.5
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -204,43 +190,45 @@
       "bases:Criar nova base": false,
       "github-sync:Sync with Remote": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-task-progress-bar:Abrir visualização Task Genius": false,
+      "spotify-control:Open Spotify sidebar": false
     }
   },
-  "active": "56719f2b16a02605",
+  "active": "80d65960055fca4e",
   "lastOpenFiles": [
-    "Ferramentas/Docker.md",
+    "Abreviações.md",
+    "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
+    "Arquitetura Computacional/Computador.md",
+    "Cisco/Defesa de Rede - Cisco.md",
+    "Linux/Distros.md",
+    "Ferramentas/TCPDump.md",
+    "Linux/CLI.md",
+    "Arquitetura Computacional/Kernel.md",
+    "Linux/Linux Courses.md",
+    "TODO.md",
+    "Descoberta de Rede (HUB).md",
+    "Ferramentas/Ettercap.md",
+    "Ferramentas/Kismet.md",
+    "Redes/Modelo OSI.md",
+    "Redes/Protocolos.md",
+    "BlueTeam/Snort.md",
+    "BlueTeam/Suricata.md",
     "Ferramentas/Git.md",
+    "Ferramentas/Docker.md",
     "Explicações.md",
     "Ferramentas/Nmap.md",
-    "TODO.md",
     "Trash/Imagens/Img Ferramentas/Kubenetes-Cluster.png",
-    "Arquitetura Computacional/Kernel.md",
-    "Arquitetura Computacional/Computador.md",
-    "Linux/CLI.md",
-    "Linux/Arch Linux.md",
     "Ferramentas/Kubernetes.md",
     "Excalidraw/Drawing 2026-04-25 06.43.41.excalidraw.md",
     "Excalidraw",
     "Windows/Windows.md",
     "Windows/WSL.md",
     "Redes/Balanceador de Carga.md",
-    "Redes/Gateway.md",
-    "Redes/Switch.md",
-    "Redes/Modelo OSI.md",
-    "Linux/GNOME.md",
-    "Trash/Modelo/comando.md",
-    "Comandos/Linux.md",
     "Trash/Modelo",
     "Comandos",
-    "Abreviações.md",
-    "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
     "Trash/Imagens/Img Ferramentas/ProcessoDocker.png",
-    "BlueTeam/Zeek.md",
-    "Cisco/Defesa de Rede - Cisco.md",
-    "RedTeam/Denial of Service (DDoS).md",
     "Trash/Imagens/Img Conceitos/ZeekLogs.pdf",
-    "Trash/Imagens/Img Conceitos/ECDH.md",
     "Trash/Imagens/Img Ferramentas/Kismet GUI.png",
     "Pasted Image 20260311060646_075.png",
     "Trash/Imagens/Img Conceitos/ECDH.png",

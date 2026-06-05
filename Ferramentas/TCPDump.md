@@ -1,5 +1,5 @@
 **Sumário**
-	**Tags:** #Firewall #Segurança #Tips #Ferramentas #Redes 
+	**Tags:** #Firewall #Segurança #Dica #Ferramentas #Redes 
 	**Arquivos Relacionados:** [[Descoberta de Rede (HUB)]]
 	**Conteúdo:**
 	

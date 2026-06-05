@@ -1,6 +1,0 @@
-**Sumario**
-	**Tags:** 
-	**Conteúdo:**
-	
-----
-

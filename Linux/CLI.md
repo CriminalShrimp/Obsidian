@@ -1,5 +1,5 @@
 **Sumário**
-	**Tags:** #Linux #Tips
+	**Tags:** #Linux #Dica
 	**Conteúdo:** Introduction to Linux (LFS101)
 	
 ----

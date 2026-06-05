@@ -1,5 +1,5 @@
 **Sumário**
-	**Tags:** #Computador #Linux 
+	**Tags:** #Computador #Linux  #Dica 
 	**Conteudo:** github.com/xiyuan1avery/-MIT-6.S081-Operating-System-Engineering?tab=readme-ov-file
 	
 ----
