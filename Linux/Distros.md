@@ -19,9 +19,11 @@ Existem diversas para não dizer inúmeras distribuições Linux, o site [Distro
 
 # Arch Linux
 
-
+Conhecido por ser um sistema operacional com uma curva de aprendizado extremamente difícil e também pela sua comunidade de desenvolvedores, gamers e usuários que gosta de uma customização extrema de seu ambiente, pois o Arch permite fazer tudo do zero, dando total liberdade a quem o usa. Um outro diferencial é seu gerenciador de pacotes, o `pacman`.
 
 # CentOS
+
+Conhecida por ser compatível com a <span style="color:rgb(206, 0, 86)">Red Hat</span>, pois ela foi feita diretamente dela, além disso sua estabilidade e suporte são de alto nível, com isso ela é usada em servidores para serviços webs e também para sistemas. Porém o **CentOS foi descontinuado** em 2024, mas existem ramificações criadas pela comunidade.
 
 # Debian
 

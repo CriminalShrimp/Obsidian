@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hardware",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,12 +84,12 @@
               "title": "tg-left-sidebar"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
+    "width": 287.5,
+    "collapsed": true
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -191,8 +191,7 @@
       "github-sync:Sync with Remote": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-task-progress-bar:Abrir visualização Task Genius": false,
-      "spotify-control:Open Spotify sidebar": false
+      "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
   "active": "80d65960055fca4e",
