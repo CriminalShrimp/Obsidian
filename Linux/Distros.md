@@ -27,7 +27,11 @@ Conhecida por ser compatível com a <span style="color:rgb(206, 0, 86)">Red Hat<
 
 # Debian
 
+O sistema do Debian é um dos mais estáveis que tem, tanto que seu ciclo de atualização é considerado lento, pois são necessários diversos teste para garantir que tudo continue funcionando perfeitamente. Por conta disso sistemas críticos e servidores, usuários com uma serva experiencia também usam o sistema como ambiente de uso diário. Os sistemas **Fedora** e **Ubuntu** são **derivados do Debian**.
+
 # Fedora
+
+Prometendo atualizações o mais rápidas possíveis, e assim disponibilizando novas tecnologias, assim como a liberdade (e necessidade muitas vezes) de usar repositórios de terceiros, o Fedora é usado para desenvolveres e suas versões estáveis também são usadas em servidores, seu uso necessita de uma base de conhecimento intermediaria.
 
 # Ubuntu
 

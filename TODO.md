@@ -29,10 +29,10 @@
 - [x] Docker
 - [x] Kubernetes (mudado para dentro do Docker)
 - [x] Git
-- [/] [[Distros]]
+- [x] Distros
 - [x] Legendar as imagens em Sistema de Arquivos
 - [-] HyperText Markup Language (HTMl)
-- [ ] [[Command N Control (CNC)]]
+- [/] [[Command N Control (CNC-C2)]]
 - [x] Malware
 - [x] Man-in-the-Middle (MITM)
 - [ ] [[WireShark]] fazer algo bem detalhado de filtros e tudo mais
