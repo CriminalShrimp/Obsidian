@@ -3,11 +3,25 @@
 	**Arquivos Relacionados:** [[Descoberta de Rede (HUB)]]
 	**Conteúdo:**
 		https://www.wireshark.org/ - Site oficial.
+		https://medium.com/@cyberengage.org/master-wireshark-tool-like-a-pro-the-ultimate-packet-analysis-guide-for-real-world-analysts-981fb9024e7d - Configuração de interface e uso.
 		
 		
 	
 ----
 
-Wireshark = O [WireShark](https://www.wireshark.org/) (anteriormente conhecido como Ethereal) é um programa que analisa o tráfego de rede, e o organiza por protocolos. As funcionalidades do Wireshark são parecidas com o tcpdump mas com uma interface gráfica, com mais informação e com a possibilidade da utilização de filtros.
+O WireShark (anteriormente conhecido como Ethereal) é um analisador de pacotes que é usado para capturar captura, observar e inspecionar trafego passando por uma rede de computador. Ele é usado para descobrir problemas na rede como lentidão, latência e perda de pacotes, e também para alisar possíveis ameaças, como malwares e trafego/comunicação foram do comum dentro da rede. 
 
-https://github.com/dstotijn/hetty
+<figure style="text-align: center;">
+  <img src="WireShark.png" style="margin: 0 auto;">
+  <figcaption>WireShark</figcaption>
+</figure>
+
+A principal parte e que também vai ser mais vista e usada durante o uso e sua interface, nela temos de tudo
+
+![[WireShark Interface.png]]
+## Parte Avançada
+
+
+
+### Filtros
+
