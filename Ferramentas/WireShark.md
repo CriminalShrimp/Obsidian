@@ -16,9 +16,16 @@ O WireShark (anteriormente conhecido como Ethereal) é um analisador de pacotes 
   <figcaption>WireShark</figcaption>
 </figure>
 
-A principal parte e que também vai ser mais vista e usada durante o uso e sua interface, nela temos de tudo
+A principal parte e que também vai ser mais vista e usada durante o uso e sua interface, nela temos de tudo, dados, menu, atalhos, pacotes e diversas outras coisas. 
 
-![[WireShark Interface.png]]
+Agora falando das principais funções de cada opção na  barra de menus logo no começo temos o **File**, nela é possível salvar, abrir, exportar e juntar capturas de pacotes. Depois temos a opção **Edit** que contem um localizador de pacotes, gerenciamento de perfis e também as configurações de preferencias para o uso do programa. Para modificar qualquer aspecto visual basta acessar o menu **View** e alterar o que for de seu agrado. A opção **Go** server para navegar entre os pacotes capturados. Para começar, parar ou filtrar uma captura de pacotes basta acessar a aba **Capture**. 
+No **Analyze** da para usar filtros, macros, seguir pacotes e conversas, colocar colunas e protocolos. 
+
+<figure style="text-align: center;">
+  <img src="WireShark Interface.png" style="margin: 0 auto;">
+  <figcaption>Interface do WireShark</figcaption>
+</figure>
+
 ## Parte Avançada
 
 

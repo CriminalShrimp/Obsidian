@@ -203,17 +203,16 @@
       "bases:Criar nova base": false,
       "github-sync:Sync with Remote": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-task-progress-bar:Abrir visualização Task Genius": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1e80c182f859c816",
+  "active": "6efdf232b6802f7a",
   "lastOpenFiles": [
+    "Ferramentas/Docker.md",
     "Trash/Imagens/Img Ferramentas/WireShark Interface.png",
+    "Ferramentas/WireShark.md",
     "Trash/Imagens/Img Ferramentas/WireShark.png",
     "Ferramentas/TCPDump.md",
-    "Ferramentas/WireShark.md",
-    "Ferramentas/Docker.md",
     "Ferramentas/Git.md",
     "TODO.md",
     "Redes/Balanceador de Carga.md",
@@ -248,7 +247,6 @@
     "Trash/Imagens/Img Ferramentas/Kismet GUI.png",
     "Pasted Image 20260311060646_075.png",
     "Trash/Imagens/Img Conceitos/ECDH.png",
-    "Trash/Imagens/Img Conceitos/ECDH Grafico.png",
     "Sem título.canvas",
     "Sem título.base",
     "Trash/Imagens/Img Ferramentas",
