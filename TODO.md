@@ -35,8 +35,8 @@
 - [x] Command N Control (CNC-C2)
 - [x] Malware
 - [x] Man-in-the-Middle (MITM)
-- [/] [[WireShark]] fazer algo bem detalhado de filtros e tudo mais
-- [ ] Nmap
+- [x] WireShark fazer algo bem detalhado de filtros e tudo mais
+- [/] Nmap
 - [x] Fazer o Link dos Tópicos com maior descrição em Abreviações (por exemplo os protocolos)
 - [ ] Fazer Equipamentos e conceitos de redes
 	- [ ] [[Switch]]

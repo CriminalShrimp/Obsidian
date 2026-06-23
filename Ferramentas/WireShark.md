@@ -5,8 +5,6 @@
 		https://www.wireshark.org/ - Site oficial.
 		https://medium.com/@cyberengage.org/master-wireshark-tool-like-a-pro-the-ultimate-packet-analysis-guide-for-real-world-analysts-981fb9024e7d - Configuração de interface e uso.
 		https://www.youtube.com/watch?v=w6kIER4SFhQ - exemplo de captura de pacotes.
-		
-		
 	
 ----
 
@@ -34,6 +32,12 @@ O que mais chama atenção, e ocupa maior parte da tela, é a **Lista de Pacotes
 ## Parte Avançada
 
 
-
 ### Filtros
 
+Para usar saber qual filtro usar para achar o que procura, é necessário ter um certo conhecimento de **redes**.
+
+`tcp.analysis.retransmission` - Procura por pacotes retransmitimos.
+
+`tcp.flags.syn == 1 and tcp.flags.ack == 0` - Mostra pacotes usados para começar uma conexão.
+
+`dns.qry.name contains "domain"` - Procura por requisições de pacotes para um domínio especifico.
