@@ -210,6 +210,8 @@
   },
   "active": "3ad7a840677d26e3",
   "lastOpenFiles": [
+    "Abreviações.md",
+    "Ferramentas/Nmap.md",
     "TODO.md",
     "Ferramentas/WireShark.md",
     "Ferramentas/Docker.md",
@@ -228,7 +230,6 @@
     "Trash/Imagens/Img Conceitos/ECDH.md",
     "Trash/Imagens/Img RedTeam/C2 Centralizado.png",
     "Linux/Distros.md",
-    "Abreviações.md",
     "Arquitetura Computacional/Computador.md",
     "Linux/CLI.md",
     "Arquitetura Computacional/Kernel.md",
