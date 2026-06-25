@@ -47,4 +47,6 @@ Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam
 
 ###### ASCII = **A**merican **S**tandard **C**ode for **I**nformation **I**nterchange é um sistema de representação de letras, algarismos e sinais de pontuação e de controle, através de um sinal codificado em forma de código binário.
 
+###### CIDR = **C**lassless **I**nter **D**omain **R**outing é usado para representar o endereço IP e sua mascara de rede, representado por sua uma / após o endereço.
+
 PKI = Public key infrastructure.
