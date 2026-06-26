@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -222,11 +222,11 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "5b6dd71f5d48f2b6",
+  "active": "3ad7a840677d26e3",
   "lastOpenFiles": [
+    "Abreviações.md",
     "Ferramentas/Nmap.md",
     "Trash/Imagens/Img Ferramentas/Nmap Interface.png",
-    "Abreviações.md",
     "TODO.md",
     "Ferramentas/WireShark.md",
     "Ferramentas/Docker.md",
