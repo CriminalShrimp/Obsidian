@@ -7,7 +7,7 @@
 	
 ----
 
-Usado para identificar dispositivos, portas e serviços na redes, além de descobrir vulnerabilidades da mesma, o Nmap é usado para para realizar o mapeamento de redes de forma simples e rápida, ou de forma complexa e detalhada. Ela esta disponível para diversos sistemas operacionais, possui uma interface para seu uso chamada de **ZenMap**, porém o seu uso via [[Abreviações#CLI = **C**ommand **L**ine **I**nterface é onde são realizados os comandos do sistema.|cli]] é mais preferido e utilizado por quem usa a ferramenta.
+Usado para identificar dispositivos, portas e serviços na redes, além de descobrir vulnerabilidades da mesma, o Nmap (abreviação de Network Mapper) é usado para para realizar o mapeamento de redes de forma simples e rápida, ou de forma complexa e detalhada. Ela esta disponível para diversos sistemas operacionais, possui uma interface para seu uso chamada de **ZenMap**, porém o seu uso via [[Abreviações#CLI = **C**ommand **L**ine **I**nterface é onde são realizados os comandos do sistema.|cli]] é mais preferido e utilizado por quem usa a ferramenta.
 
 <figure style="text-align: center;">
   <img src="Nmap Interface.png" style="margin: 0 auto;">
@@ -18,7 +18,7 @@ Usando o comando `nmap` sem nenhuma opção adicional, e logo depois colocar o e
 
 O resultado ao concluir um scan aparece da seguinte forma: **porta**/**protocolo**, o estado que pode ser <span style="color:rgb(0, 176, 80)">open</span>, <span style="color:rgb(206, 0, 86)">close</span> ou <span style="color:rgb(65, 105, 255)">filtered</span>, e o no final o **serviço** que esta rodando, outros resultados podem aparecer dependendo das opções passadas na hora de realizar o reconhecimento. O estado <span style="color:rgb(0, 176, 80)">open</span> significa que a porta esta aceitado conexões, <span style="color:rgb(206, 0, 86)">close</span> é quando ela responde as pacotes Nmap, mas não tem nenhuma aplicação rodando nela, e <span style="color:rgb(65, 105, 255)">filtered</span> ocorre normalmente quando existe um firewall na rede. Com o comando `-oN` arquivo.txt (ou `-oX` arquivo.xml), o resultado é escrito no arquivo, facilitando assim a leitura ou exportação.
 
-As opções podem ser somadas e combinadas, fazendo assim scans específicos para cada cenário, ou também complexos e letos, mas que funcionam em grande parte dos cenários. Os  mais usados são `-p` para especificar portas, 
+As opções podem ser somadas e combinadas, fazendo assim scans específicos para cada cenário, ou também complexos e letos, mas que funcionam em grande parte dos cenários. Os  mais usados são `-p` para especificar portas, `-O` para identificar sistemas operacionais, `-sn` para fazer scann usando o ping, o `-Pn` que trata todos os hosts como ativos (útil contra firewalls), `-sT` para protocolo TCP, e `-sU` para o UDP, `-sV` detecta a versão do que esta rodando na porta, e um dos mais populares o `-sS` que realiza um scann de forma furtiva, vale mencionar também o `-T` que permite colocar tempo entre os envios de pacotes para que não fique tão obvio que esta ocorrendo um recolhimento da rede. Para algo mais customizado e bem trabalhado temos o Nmap Scripting Engine (NSE)
 
 #### Scanns Avançados
 
