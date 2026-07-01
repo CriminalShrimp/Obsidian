@@ -38,6 +38,28 @@
 - [x] WireShark fazer algo bem detalhado de filtros e tudo mais
 - [x] Nmap
 - [x] Fazer o Link dos Tópicos com maior descrição em Abreviações (por exemplo os protocolos)
+- [?] Fazer Equipamentos e conceitos de redes
+	- [?] Switch
+	- [?] Gateway
+	- [?] Proxy
+	- [?] Balanceador de Carga
+	- [?] Protocolos
+		- [x] ARP
+		- [?] ICMP
+		- [?] SMTP
+		- [?] DNS
+	- [?] Modelo OSI
+- [x] Denial of Service (DDoS)
+- [-] Backdoors
+- [x] Spoofing
+- [x] Placa Mae
+- [x] Dar uma geral em Criptografia
+- [x] Fazer a criação de Sumario nos arquivos.
+- [x] Usar as marcações em hmtl para centralizar e dar descrição as imagens
+## Obisidan 2026 Segundo Semestre
+- [ ] [[WSL]]
+- [ ] Fazer as instruções todas bonitinhas no [[Docker]]
+- [ ] BurpSuit
 - [ ] Fazer Equipamentos e conceitos de redes
 	- [ ] [[Switch]]
 	- [ ] [[Gateway]]
@@ -49,14 +71,4 @@
 		- [ ] SMTP
 		- [ ] DNS
 	- [ ] [[Modelo OSI]]
-- [x] Denial of Service (DDoS)
-- [-] Backdoors
-- [x] Spoofing
-- [x] Placa Mae
-- [x] Dar uma geral em Criptografia
-- [x] Fazer a criação de Sumario nos arquivos.
-- [?] Usar as marcações em hmtl para centralizar e dar descrição as imagens
-## Obisidan 2026 Segundo Semestre
-- [ ] [[WSL]]
-- [ ] Fazer as instruções todas bonitinhas no [[Docker]]
-- [ ] BurpSuit
+- [ ] Terminar o curso do Linux
