@@ -36,7 +36,7 @@
 - [x] Malware
 - [x] Man-in-the-Middle (MITM)
 - [x] WireShark fazer algo bem detalhado de filtros e tudo mais
-- [/] Nmap
+- [x] Nmap
 - [x] Fazer o Link dos Tópicos com maior descrição em Abreviações (por exemplo os protocolos)
 - [ ] Fazer Equipamentos e conceitos de redes
 	- [ ] [[Switch]]
