@@ -41,31 +41,31 @@ Aqui vão algumas terminologias usadas com frequência quando estamos lidando co
 
 Cada linha em um Docker File representa uma instrução no processo da criação de uma imagem. Os principais componentes crucias em um arquivo docker seriam composto por uma <span style="color:rgb(0, 176, 80)">imagem base</span> que é a base do que esta sendo feito, por exemplo se esta fazendo uma aplicação em Python, a base seria `python:3.9`. <span style="color:rgb(0, 176, 80)">Código</span> e <span style="color:rgb(0, 176, 80)">dependências</span> que garante que tudo rode de forma constante e correta. E as <span style="color:rgb(0, 176, 80)">configurações</span> e <span style="color:rgb(0, 176, 80)">comandos</span> vão garantir que os comandos sejam executados, as variáveis sejam setadas corretamente, entre outras configurações necessárias.
 
-O Docker File contem instruções simples, e cada uma dessas instruções performa uma ação específica, a sintaxe em geral é **`INTRUÇÃO argumentos`**, ela se repete ao longos das outras instruções.
+O Docker File contem instruções simples, e cada uma dessas instruções performa uma ação específica, a sintaxe em geral é **`INTRUÇÃO argumentos`**, ela se repete ao longos das outras instruções. Aqui estão algumas das que são usadas com mais frequência.
 
-```
-ADD # Adiciona arquivos ou diretorios ao contêiner.
-ARG	# Usado para passar variáveis na hora de criar o build-time contêiner.
-COPY # Copia os arquivos ou pastas do sistema para o contêiner.
-CMD # Comando padrão que sera rodado toda vez que o contêiner iniciar.
-ENTRYPOINT # Define um comando que fará com que o seu contêiner rode como um executável.
-ENV	# Cria variáveis de ambiente.
-EXPOSE # Porta que o contêiner estará "funcionando".
-FROM # Imagem base.
-HEALTHCHECK	# Mostra como verificar se o contêiner está funcionando via teste.
-LABEL # Usado para adicionar metadados a imagem.
-MAINTAINER # Cria um campo com a informação do autor da imagem.
-ONBUILD	# Permite criar instruções especificas na hora da criação do contêiner.
-RUN # Executa comandos, aqui atualiza e instala o nmap.
-SHELL # Permite alterar o terminal, no Windows como exemplo de cmd para shellpower.
-STOPSIGNAL	# Específica um sinal para que o contêiner encerre.
-USER # Determina um usuário na etapa desejada.
-VOLUME	# Criar um volume de disco no contêiner.
-WORKDIR # Específica o diretório que o contêiner que será usado.
+- ADD - Adiciona arquivos ou diretórios ao contêiner.
 
-```
+- ARG	- Usado para passar variáveis na hora de criar contêiner.
 
-A seguir tem como exemplo de DockerFile com as explicações da ação de cada instrução.
+- COPY - Copia os arquivos ou pastas do sistema para o contêiner.
+
+- CMD - Comando padrão que será rodado toda vez que o contêiner iniciar.
+
+- ENTRYPOINT - Define um comando que fará com que o seu contêiner rode como um executável.
+
+- ENV	- Cria variáveis de ambiente.
+
+- EXPOSE - Porta que o contêiner estará "funcionando".
+
+- FROM - Imagem base.
+
+- RUN - Executa comandos
+
+- USER - Determina um usuário na etapa desejada.
+
+- WORKDIR - Específica o diretório que o contêiner que será usado.
+
+A seguir tem como exemplo de DockerFile com as explicações da ação de cada instrução usada.
 
 ```
 # Imagem feita para fazer o reconhecimento de uma rede.

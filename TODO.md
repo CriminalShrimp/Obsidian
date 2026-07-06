@@ -58,7 +58,7 @@
 - [x] Usar as marcações em hmtl para centralizar e dar descrição as imagens
 ## Obisidan 2026 Segundo Semestre
 - [ ] [[WSL]]
-- [ ] Fazer as instruções todas bonitinhas no [[Docker]]
+- [x] Fazer as instruções todas bonitinhas no Docker
 - [ ] BurpSuit
 - [ ] Fazer Equipamentos e conceitos de redes
 	- [ ] [[Switch]]
