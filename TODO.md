@@ -57,7 +57,7 @@
 - [x] Fazer a criação de Sumario nos arquivos.
 - [x] Usar as marcações em hmtl para centralizar e dar descrição as imagens
 ## Obisidan 2026 Segundo Semestre
-- [/] [[Windows Subsystem for Linux (WSL)]]
+- [x] [[Windows Subsystem for Linux (WSL)]]
 - [x] Fazer as instruções todas bonitinhas no Docker
 - [ ] BurpSuit
 - [ ] Fazer Equipamentos e conceitos de redes
