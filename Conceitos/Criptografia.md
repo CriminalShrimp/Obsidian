@@ -6,7 +6,6 @@
 		youtube.com/watch?v=AEVrpvaObdI - Vídeo Elíptica.
 		[[ECDH]] - Logica por traz da troca feita com ECDH.
 	
-	
 ----
 
 A criptografia é a ciência de criar e quebrar códigos. Ao armazenar e transmitir dados criptografados, apenas o destinatário pretendido pode lê-los ou processá-los e somente se eles tiverem o conhecimento adequado do segredo usado no algoritmo de criptografia. 
@@ -72,6 +71,7 @@ Os algoritmos assimétricos, também chamados algoritmos de chave pública, são
 </figure>
 
 Algoritmos assimétricos usam uma **chave pública** e uma **chave privada**. Ambas as chaves são capazes do processo de criptografia, mas a chave emparelhada complementar é necessária para descriptografia. O processo também é reversível. Os dados criptografados com a chave pública requerem a chave privada para descriptografar. Algoritmos assimétricos alcançam confidencialidade e autenticidade usando este processo.
+^ChavesPrivPublic
 
 Como nenhuma das partes possui um segredo compartilhado, é necessário usar comprimentos de chave muito longos. A criptografia  assimétrica pode usar comprimentos de chave entre **512** e **4.096** bits. Comprimentos de chave maiores ou iguais a <span style="color:rgb(65, 105, 255)">2.048</span> bits podem ser <span style="color:rgb(65, 105, 255)">confiáveis</span>, enquanto comprimentos de chave de <span style="color:rgb(206, 0, 86)">1.024</span> ou menores são considerados <span style="color:rgb(206, 0, 86)">insuficientes</span>. Exemplos de protocolos que usam algoritmos de chave assimétrica incluem:
 
@@ -83,7 +83,7 @@ Como nenhuma das partes possui um segredo compartilhado, é necessário usar com
 
 • <span style="color:rgb(255, 255, 0)">Pretty Good Privacy (PGP)</span> - Este programa de computador fornece privacidade e autenticação criptográficas. É frequentemente usado para aumentar a segurança das comunicações por e-mail.
 
-Os **algoritmos assimétricos são substancialmente mais lentos** que os algoritmos simétricos. Seu design é baseado em problemas computacionais, como fatorar números extremamente grandes ou calcular logaritmos discretos de números extremamente grandes. Por serem lentos, algoritmos assimétricos geralmente são usados em mecanismos criptográficos de baixo volume, como assinaturas digitais e troca de chaves. No entanto, o gerenciamento de chaves de algoritmos assimétricos tende a ser mais simples que os algoritmos simétricos, porque geralmente uma das chaves de criptografia ou de descriptografia pode se tornar publica ou privada. Alguns dos algoritmos de descriptografia assimétricos são:
+Os **algoritmos assimétricos são substancialmente mais lentos** que os algoritmos simétricos. Seu design é baseado em problemas computacionais, como fatorar números extremamente grandes ou calcular logaritmos discretos de números extremamente grandes. Por serem lentos, algoritmos assimétricos geralmente são usados em mecanismos criptográficos de baixo volume, como assinaturas digitais e troca de chaves. No entanto, o gerenciamento de chaves de algoritmos assimétricos tende a ser mais simples que os algoritmos simétricos, porque geralmente uma das chaves de criptografia ou de descriptografia pode se tornar pública ou privada. Alguns dos algoritmos de descriptografia assimétricos são:
 
 | Algoritmo                                                                | Tamanho da Chave (bits)     | Descrição                                                                                                                                                                                    |
 | ------------------------------------------------------------------------ | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -211,7 +211,7 @@ Infelizmente, os sistemas de chave assimétrica são extremamente lentos para qu
 
 # Criptografia de Curva Elíptica (ECC)
 
-Ainda usando o conceito de chave publica e chave privada, porém a **ECC** é utiliza a área de matemática avançada de **curvas elípticas**, que é dada pela equação $y² = x³ + ax + b$, a onde $a$ e $b$ são constantes e essa curva e definida em um [^1]campo finito. O que torna esse conceito de curvas elípticas interessante para a criptografia são as propriedades que ela possui, como a **simetria horizontal**, e a de que qualquer linha reta não vertical sempre **cruzara a curva** em no **máximo 3 pontos**, esses pontos são chamados de $P$, $Q$ e $R$. Em uma visualização gráfica veríamos da seguinte forma:
+Ainda usando o conceito de chave pública e chave privada, porém a **ECC** é utiliza a área de matemática avançada de **curvas elípticas**, que é dada pela equação $y² = x³ + ax + b$, a onde $a$ e $b$ são constantes e essa curva e definida em um [^1]campo finito. O que torna esse conceito de curvas elípticas interessante para a criptografia são as propriedades que ela possui, como a **simetria horizontal**, e a de que qualquer linha reta não vertical sempre **cruzara a curva** em no **máximo 3 pontos**, esses pontos são chamados de $P$, $Q$ e $R$. Em uma visualização gráfica veríamos da seguinte forma:
 
 <figure style="text-align: center;">
   <img src="Curva Elíptica.png" style="margin: 0 auto;">
@@ -222,7 +222,7 @@ Quando usamos essa tecnologia para a criptografia adicionamos o elemento $G$, qu
 
 ## Elliptic-Curve Diffie–Hellman (ECDH)
 
-Uma combinação que usa o método **DH** de troca de chaves e a tecnologia da **criptografia com curva elíptica**. Um detalhe desse método é que o **campo finito** é um **numero primo**, ou seja só pode ser dividido por 1 e por ele mesmo. Começamos gerando uma <span style="color:rgb(65, 105, 255)">chave privada</span>, e depois multiplicamos ela pelo ponto $G$ (que é um ponto $x,y$), com isso temos a nossa <span style="color:rgb(0, 176, 80)">chave publica</span>, que é um <span style="color:rgb(0, 176, 80)">ponto no plano cartesiano</span> ou seja $x,y$. O próximo passo é **trocar as chaves publicas** um do outro. Para facilitar a explicação será usado um exemplo pratico de como ocorre essa troca de chaves, e o descobrimento da segredo compartilhado.
+Uma combinação que usa o método **DH** de troca de chaves e a tecnologia da **criptografia com curva elíptica**. Um detalhe desse método é que o **campo finito** é um **numero primo**, ou seja só pode ser dividido por 1 e por ele mesmo. Começamos gerando uma <span style="color:rgb(65, 105, 255)">chave privada</span>, e depois multiplicamos ela pelo ponto $G$ (que é um ponto $x,y$), com isso temos a nossa <span style="color:rgb(0, 176, 80)">chave pública</span>, que é um <span style="color:rgb(0, 176, 80)">ponto no plano cartesiano</span> ou seja $x,y$. O próximo passo é **trocar as chaves públicas** um do outro. Para facilitar a explicação será usado um exemplo pratico de como ocorre essa troca de chaves, e o descobrimento da segredo compartilhado.
 
 <figure style="text-align: center;">
   <img src="ECDH.png" style="margin: 0 auto;">

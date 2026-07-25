@@ -72,3 +72,4 @@
 		- [ ] DNS
 	- [ ] [[Modelo OSI]]
 - [ ] Terminar o curso do Linux
+- [ ] Nano/Vim no Linux

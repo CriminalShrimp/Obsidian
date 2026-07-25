@@ -1,5 +1,5 @@
 **Sumário**
-	**Tags:** #CLI #Linux #Dica #Comandos #CLI
+	**Tags:** #CLI #Linux #Dica #Comandos #CLI #Ferramentas
 	**Conteúdo:** 
 		Red Hat Systems Administration (EX200) 
 		Introduction to Linux (LFS101)
@@ -13,9 +13,15 @@
 # Introdução
 
 Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel]] Linux, essas distribuições são de código aberto, o que significa que são disponibilizadas gratuitamente para todos e além disso tem os requisitos para rodar são mínimos. Dentre as distros (uma abreviação de Distributions) as mais famosas e usadas seriam <span style="color:rgb(161, 79, 140)">CentOS</span>, <span style="color:rgb(65, 105, 255)">Fedora</span>, <span style="color:rgb(255, 165, 0)">Ubuntu</span> e <span style="color:rgb(206, 0, 86)">Debian</span>, é possível ver mais sobre elas em [[Distros]]. Distros podem possuir interface gráfica, porém todas suas funções também podem ser feitas pela [[Abreviações#CLI = Command Line Interface é onde são realizados os comandos do sistema.|command line interface]] mais conhecida como [[CLI]], existem vários terminais CLI como o xterm, konsole, terminator.
- ![[LoginInterfaceGrafica.webp|Aqui por exemplo é um login feito via interface gráfica]]
 
-![[LoginCLI.webp|Já aqui é um login via CLI]]
+<figure style="text-align: center;">
+  <img src="LoginInterfaceGrafica.webp" style="margin: 0 auto;">
+  <figcaption>Aqui por exemplo é um login feito via interface gráfica</figcaption>
+</figure>
+<figure style="text-align: center;">
+  <img src="LoginCLI.webp" style="margin: 0 auto;">
+  <figcaption>Já aqui é um login via CLI</figcaption>
+</figure>
 
 Nos sistemas existe o usuário root que seria a conta que tem a permissão de administrador, o que seria a maior permissão possível de ter em um sistema, com ela é possível fazer qualquer modificação sem que o sistema interfira.
 
@@ -23,7 +29,7 @@ Nos sistemas existe o usuário root que seria a conta que tem a permissão de ad
 
 ## Arquivos
 
-Uma frase muito conhecida que se refere a Linux é "no Linux tudo é um arquivo" sejam as informações sobre o hardware do dispositivo, bem como as próprias configurações do kernel, são todas armazenadas em arquivos especiais que residem em diretórios virtuais, os código de estados  0 é o padrão de entrada , 1 é o padrão de saída  e 2 se referre a um erro. Um dos comandos para mexer em arquivos é o **cat** que um uma abreviação de *concatenate* (concatenar), para ler um arquivo bastar escrever **cat arquivo.txt**, duas <span style="color:rgb(255, 255, 0)">dica</span> muito interessante é que para passar outputs direto para um arquivo pode se usar output <span style="color:rgb(255, 255, 0)">></span> arquivo.txt, se é um arquivo que você somente queira adicionar mais linha então use o <span style="color:rgb(255, 255, 0)">>></span>, e a outra seria usar *pipelines* que seria essa barra na vertical  <span style="color:rgb(255, 255, 0)">| </span>, ela faz com que o resultado de um comando seja o *input* de outro. Um comando muito útil para achar arquivos e pastas é o [[CLI#find |find]], já para procurar palavras em textos é o <span style="color:rgb(255, 255, 0)">grep</span>.
+Uma frase muito conhecida que se refere a Linux é "no Linux tudo é um arquivo" sejam as informações sobre o hardware do dispositivo, bem como as próprias configurações do kernel, são todas armazenadas em arquivos especiais que residem em diretórios virtuais, os código de estados  0 é o padrão de entrada , 1 é o padrão de saída  e 2 se referre a um erro. Um dos comandos para mexer em arquivos é o **cat** que um uma abreviação de *concatenate* (concatenar), para ler um arquivo bastar escrever **cat arquivo.txt**, duas <span style="color:rgb(255, 255, 0)">dica</span> muito interessante é que para passar outputs direto para um arquivo pode se usar output <span style="color:rgb(255, 255, 0)">></span> arquivo.txt, se é um arquivo que você somente queira adicionar mais linha então use o <span style="color:rgb(255, 255, 0)">>></span>, e a outra seria usar *pipelines* que seria essa barra na vertical  <span style="color:rgb(255, 255, 0)">|</span>, ela faz com que o resultado de um comando seja o *input* de outro. Um comando muito útil para achar arquivos e pastas é o [[CLI#find |find]], já para procurar palavras em textos é o <span style="color:rgb(255, 255, 0)">grep</span>.
 
 Para criar um arquivo existe diversas maneiras um exemplo básico seria com **`touch arquivo.extensao`**.
 
@@ -67,8 +73,9 @@ Quando vamos copiar uma pasta com seus conteúdos precisamos usar a opção --re
 Para mudar uma pasta de lugar basta colocar `mv` pasta e a  pasta de destino **`mv Pasta1 PastaDestino`**, o comando `mv` também é usado para mudar nome da pasta basta colocar **`mv PastaNomeAntigo PastaNomeNovo`**.
 
 E para deletar pastas usamos o **`rm`** e em seguida o nome da pasta, **`rm Pasta`**.
+
 # Editores de Texto (Vim/Nano)
-#Ferramentas 
+
 Assim  como tudo no Linux temos os editores de texto via interface e via linha de comando, de interface temos o <span style="color:rgb(206, 0, 86)">gedit</span> que tem uma interface bem intuitiva de se mexer, já na linha de comando temos <span style="color:rgb(0, 176, 80)">nano</span> e <span style="color:rgb(0, 176, 80)">vim</span>, digamos que o nano é uma versão mais simplificada e mais fácil que o vim, que é a principal razão para ter esse tópico.
 
 FAZER COMANDOS NANO/VIM
@@ -81,12 +88,14 @@ Adicionar permissões de arquivos
 # SUDO
 
 A palavras **sudo** vem de _<span style="color:rgb(255, 255, 0)">superuser do</span>_, bem sugestivo ao seu significado ele eleva as permissões do usuário para um "super usuário" tendo permissões para mexer em privilégios de pastas, arquivos, usuários, grupos entre várias outras coisas. Para ter acesso a esse modo basta colocar na CLI `sudo` pressionar `enter`, e inserir a senha que é escolhida no sistema, mas normalmente é a do próprio usuário.
+
 # Acesso Remoto (SSH)
 
-O linux usa o _Secure Shell Protocol_ popularmente chamado de SSH para fazer acesso remoto em computadores permitindo envia arquivos e comandos.  O SSH criptografa a comunicação entre os comutadores, normalmente é usado para acessar data centers e Servidores Cloud. Na linha de comando vc pode se conectar a outros computadores usando o comando `ssh`.
+O Linux usa o _Secure Shell Protocol_ popularmente chamado de SSH para fazer acesso remoto em computadores permitindo envia arquivos e comandos.  O SSH criptografa a comunicação entre os comutadores, normalmente é usado para acessar data centers e Servidores Cloud. Na linha de comando vc pode se conectar a outros computadores usando o comando `ssh`.
+
 #### Habilitando login SSH via linha de comando
 
-Para habilitar o login remoto via SSH usasse o comando `systemctl`, esse comando se refere aos serviços de sistema, como o SSH . Usando o comando `systemctl` com o subcomando`enable` para ativar o serviço, juntamente com a opção `--now` para fazer a mudança imediatamente e por fim o nome do serviço.
+Para habilitar o login remoto via SSH usasse o comando `systemctl`, esse comando se refere aos serviços de sistema, como o SSH . Usando o comando `systemctl` com o subcomando `enable` para ativar o serviço, juntamente com a opção `--now` para fazer a mudança imediatamente e por fim o nome do serviço.
 
 [user@host ~]$ **`sudo systemctl enable --now sshd`**
 
@@ -108,13 +117,14 @@ O comando `systemctl status` mostra os status do serviço.
 
 #### Logando pela linha de comando
 
-O comando SSH exige o nome do usuário e o endereço/domínio que esta sendo conectado, esses dois argumentos são adicionados com o símbolo (`@`)  separando-os
+O comando SSH exige o nome do usuário e o endereço/domínio que esta sendo conectado, esses dois argumentos são adicionados com o símbolo (`@`)  separando-os.
 Nesse exemplo vc esta logando na máquina `servera`, com o usuário `remote` que tem a senha `RedHat123!`.
 
 [user@host ~]$ **`ssh remote@servera`**
 student@servera's password: **`RedHat123!`**
 
 Após conseguir efetuar com sucesso o login o que mudara vai ser o usuário e o domínio na sua linha de comando.
+
 [remote@servera ~]$
 
 #### Transferindo arquivos via CLI
@@ -135,8 +145,10 @@ E também é possível copiar de um servidor remoto para outro servidor remoto.
 
 ### Chaves SSH para Autenticação Remota
 
-É possível fazer autenticações usando o conceito de [[Chaves Públicas e Privadas]]. 
+É possível fazer autenticações usando o conceito de [[Criptografia#^ChavesPrivPublic|Chave Privada e Pública]].
+
 #### Criando um par de chave SSH
+
 Na linha de comando, crie uma chave usando o comando `ssh-keygen` com a opção `-t ed25519` esse numero refere-se ao algoritmo de criptografia, e para as opções seguinte aceite as padrões. É possível  gerar essa chave somente uma vez , mas o mesmo pode usar o mesmo par para diversos servidores. Uma opção adicional é usar uma "senha" na hora da criação da chave, como um camada a mais de segurança. Aqui esta um exemplo da criação da chave.
 
 [user@host ~]$ **`ssh-keygen -t ed25519`**
@@ -163,10 +175,10 @@ The key's randomart image is:
 |        o o.     |
 +----[SHA256]-----+
 
-Para verificar as chaves use o comando  `ls` para verificar o conteúdo do diretório `~/.ssh`. O arquivo `id_ed25519`  é a chave privada , já o arquivo `id_ed25519.pub` é a chave publica.
+Para verificar as chaves use o comando  `ls` para verificar o conteúdo do diretório `~/.ssh`. O arquivo `id_ed25519`  é a chave privada , já o arquivo `id_ed25519.pub` é a chave pública.
 #### Distribuindo a chave SSH
 
-O comando `ssh-copy-id` copai sua chave publica para um computador remoto, basta colocar o comando seu usuário e o destino separados por um @, como no exemplo abaixo
+O comando `ssh-copy-id` copia sua chave pública para um computador remoto, basta colocar o comando seu usuário e o destino separados por um @, como no exemplo abaixo
 
 [mhoward@host ~]$ **`ssh-copy-id developer030@servera`**
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
@@ -177,17 +189,28 @@ Number of key(s) added: 1
 
 Se estiver certo, quando logar não precisara digitar a senha, para testar use  `ssh usuario@destino`
 
-
 # Sistema de Gerenciamento de Pacotes
-Aqui é onde encontramos como instalar softwares no sistema Linux, existem dois gerenciadores de pacotes conhecidos popularmente: os baseados em sistema <span style="color:rgb(206, 0, 86)">Debian</span> e os que usam <span style="color:rgb(255, 255, 0)">RPM</span>. Ambos pacotes operam com ferramentas em níveis distintos, como em baixo nível (como a **dpkg** ou **rpm**) que se preocupa com rodas scripts, baixar e descompactar pacotes por pacotes, instalar os softwares corretamente. Enquanto as de alto nível (como **apt**, **dnf** ou **zypeer**) que baixam grupos de pacotes, e descobre as dependências. Muitas vezes os usuários trabalham com as ferramentas de alto nível, que quando necessário chamam as de baixo. 
 
-![[Gerenciadores de Pacotes Linux.webp]]
+Aqui é onde encontramos como instalar softwares no sistema Linux, existem dois gerenciadores de pacotes conhecidos popularmente: os baseados em sistema <span style="color:rgb(206, 0, 86)">Debian</span> e os que usam <span style="color:rgb(255, 255, 0)">RPM</span>. Ambos pacotes operam com ferramentas em níveis distintos, como em baixo nível (como a **dpkg** ou **rpm**) que se preocupa com rodas scripts, baixar e descompactar pacotes por pacotes, instalar os softwares corretamente. Enquanto as de alto nível (como **apt**, **dnf** ou **zypeer**) que baixam grupos de pacotes, e descobre as dependências. Muitas vezes os usuários trabalham com as ferramentas de alto nível, que quando necessário chamam as de baixo.
+
+<figure style="text-align: center;">
+  <img src="Gerenciadores de Pacotes Linux.webp" style="margin: 0 auto;">
+</figure>
+
 ### Diferentes Gerenciadores de Pacotes
+
 Comandos para adquirir softwares de diferentes gerenciadores muda dependendo de qual esta sendo utilizado no momento, aqui tem uma rápida comparação de alguns comandos.
-![[Comandos de Gerenciadores de Pacote.webp|]]
+
+![[Comandos de Gerenciadores de Pacote.webp]]
+
 #### Advanced Packaging Tool (apt)
+
 É o gerenciador de softwares baseados no sistema <span style="color:rgb(206, 0, 86)">Debian</span>.
+
 #### dnf 
+
 Esse é um gerenciador de pacote que tem seu código aberto usado para sistemas pertencentes a família <span style="color:rgb(206, 0, 86)">Red Hat</span>.
+
 #### zyper
+
 Este é o gerenciador de pacote de sistemas da família <span style="color:rgb(0, 176, 80)">SUSE</span> também baseada em RPM, sendo bem fácil de entender e utilizar, além disso ele se baseia em dnf.

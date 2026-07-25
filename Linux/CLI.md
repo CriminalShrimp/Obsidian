@@ -3,14 +3,13 @@
 	**Conteúdo:** Introduction to Linux (LFS101)
 	
 ----
-
-
 # Introdução
 
 CLI esta presente em praticamente todos software, e nele é possível fazer coisas de formar mais eficaz que por interface gráfica. Um site que com vir a ser útil é o [explainshell.com](https://explainshell.com/), ele oferece uma explicação detalhada sobre cada parte do comando que esta sendo realizado. 
 <span style="color:rgb(255, 255, 0)">Adendo</span>: **sudo systemctl stop/start gdm**  **sudo telinit 3** para stop e **sudo telinit 5** para o start) para ativar a interface (GUI).
 
 Comumente a CLI vai apresentar a seguinte composição de elementos:
+
 <p style="text-align:center;">[<span style="color:rgb(255, 0, 0)"> usuario</span>@<span style="color:rgb(0, 176, 240)">sistema</span> <span style="color:rgb(255, 192, 0)"><span style="color:rgb(255, 192, 0)"><span style="color:rgb(0, 176, 80)">~</span></span></span>] <span style="color:rgb(255, 192, 0)">$</span></p>
 <span style="color:rgb(255, 0, 0)">Se refere ao nome do usuário em que esta logado.</span>
 
@@ -22,7 +21,7 @@ Comumente a CLI vai apresentar a seguinte composição de elementos:
 
 Na hora de realizar comandos na CLI a seguinte sintaxe deve ser seguida:
 
-<p style="text-align:center;"><span style="color:rgb(255, 0, 0)"> comando</span> [<span style="color:rgb(0, 176, 240)">opção(ou opções)</span>] [<span style="color:rgb(0, 176, 80)">argumentos</span>]</p>
+<p style="text-align:center;"><span style="color:rgb(255, 0, 0)"> comando</span> [<span style="color:rgb(0, 176, 240)">opções</span>] [<span style="color:rgb(0, 176, 80)">argumentos</span>]</p>
 
 <span style="color:rgb(255, 0, 0)">O comando pode ter ou não os campos opção e argumentos, isso varia conforme a o resultado desejado.</span> 
 

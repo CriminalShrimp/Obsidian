@@ -15,7 +15,7 @@ Existem técnicas usadas para adquirir/roubar os dados da vítima, as que mais a
 
 ## Spear Phishing
 
-Ataques mais direcionados em alvos específicos como empresas ou pessoas, fazendo ataques mais bem planejados e pensados. Isso é feito usando informações publicas ou dados vazados dos alvos.
+Ataques mais direcionados em alvos específicos como empresas ou pessoas, fazendo ataques mais bem planejados e pensados. Isso é feito usando informações Públicas ou dados vazados dos alvos.
 
 - **Whale Phishing:** Tem como objetivo alvos de maior valor, com o objetivo de furtar uma grande quantidade de fundos bancários, ou acessar a contas com alto poder na empresa.
 
