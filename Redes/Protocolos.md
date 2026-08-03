@@ -14,7 +14,7 @@ Colocar os mais utilizados
 
 ## Address Resolution Protocol (ARP)
 
-O **P**rotocolo de **R**esolução de **E**ndereços é um protocolo que funciona na [[Modelo OSI#Camada 2 - Enlace|camada de enlace]], ele é o responsável por obter o endereço [[Abreviações#MAC = **M**edia **A**ccess **C**ontrol diz respeito ao endereço físico que cada dispositivo tem gravado em sua placa de rede, é como se fosse o CPF de um dispositivo. Ele é representado por 6 pares de caracteres hexadecimais (até 16), ex 00 1A 2B 3C 4D 5E.|MAC]] de um dispositivo a partir de seu endereço IP. Para obter essa informação ele usa duas mensagem, o **ARP Request** que faz a requisição de um endereço IP em um endereço físico. E o **ARP Replay** que manda a reposta a requisição contendo o endereço físico resolvido.
+O **P**rotocolo de **R**esolução de **E**ndereços é um protocolo que funciona na [[Modelo OSI e Modelo TCP IP#Camada 2 - Enlace|camada de enlace]], ele é o responsável por obter o endereço [[Abreviações#MAC = **M**edia **A**ccess **C**ontrol diz respeito ao endereço físico que cada dispositivo tem gravado em sua placa de rede, é como se fosse o CPF de um dispositivo. Ele é representado por 6 pares de caracteres hexadecimais (até 16), ex 00 1A 2B 3C 4D 5E.|MAC]] de um dispositivo a partir de seu endereço IP. Para obter essa informação ele usa duas mensagem, o **ARP Request** que faz a requisição de um endereço IP em um endereço físico. E o **ARP Replay** que manda a reposta a requisição contendo o endereço físico resolvido.
 
 <figure style="text-align: center;">
   <img src="Funcao ARP.gif" style="margin: 0 auto;">
@@ -74,5 +74,20 @@ Um exemplo de um pacote ARP capturado fornecido pela ferramenta e pelo site do [
 
 ## Domain Name System (DNS)
 
+## DHCP
 
+## TCP/IP
+
+## UDP
 ## (SMTP)
+
+## HTTPs
+
+## TLS/SSL
+
+## WebSocket
+
+## Quic
+
+## BGP
+## FTP

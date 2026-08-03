@@ -70,7 +70,9 @@
 		- [ ] ICMP
 		- [ ] SMTP
 		- [ ] DNS
-	- [ ] [[Modelo OSI]]
+	- [ ] [[Modelo OSI e Modelo TCP IP]]
 - [ ] Terminar o curso do Linux
 - [ ] Nano/Vim no Linux
 - [ ] OSINT
+## Obisidian 2027 Primeiro Semestre
+- [ ] IA e Agentes

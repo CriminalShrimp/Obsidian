@@ -189,7 +189,7 @@ Existem tipos de firewalls com tecnologias e funções diferentes.
 
 ### Firewall de filtragem de pacotes (sem estado)
 
-Os firewalls de filtragem de pacotes geralmente fazem parte de um firewall de roteador, que permite ou nega tráfego com base nas informações da **Camada 3** e da **Camada 4** do [[Modelo OSI]].. Eles são firewalls sem estado que usam uma simples pesquisa de tabela de políticas que filtra o tráfego com base em critérios específicos. Por exemplo, os servidores [[Abreviações#SMTP = Simple Mail Transfer Protocol, é o protocolo de internet usado para enviar e-mails.|SMTP]] escutam a **porta 25** por padrão. Um administrador pode configurar o firewall de filtragem de pacotes para bloquear a porta 25 de uma estação de trabalho específica para evitar que ela transmita um vírus de e-mail.
+Os firewalls de filtragem de pacotes geralmente fazem parte de um firewall de roteador, que permite ou nega tráfego com base nas informações da **Camada 3** e da **Camada 4** do [[Modelo OSI e Modelo TCP IP]].. Eles são firewalls sem estado que usam uma simples pesquisa de tabela de políticas que filtra o tráfego com base em critérios específicos. Por exemplo, os servidores [[Abreviações#SMTP = Simple Mail Transfer Protocol, é o protocolo de internet usado para enviar e-mails.|SMTP]] escutam a **porta 25** por padrão. Um administrador pode configurar o firewall de filtragem de pacotes para bloquear a porta 25 de uma estação de trabalho específica para evitar que ela transmita um vírus de e-mail.
 
 <figure style="text-align: center;">
   <img src="Firewall de filtragem de pacotes (sem estado).webp" style="margin: 0 auto;">

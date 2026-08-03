@@ -22,6 +22,6 @@ Para quem trabalha com <span style="color:rgb(206, 0, 86)">RedTeam</span> essa Ã
 ## Conceitos
 
 - [[Protocolos]]
-- [[Modelo OSI]]
+- [[Modelo OSI e Modelo TCP IP]]
 - [[Gateway]]
 - [[Switch]]
