@@ -34,37 +34,8 @@
               "icon": "lucide-file",
               "title": "Protocolos"
             }
-          },
-          {
-            "id": "97e0e07a1621a0ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Redes/Modelo OSI e Modelo TCP IP.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Modelo OSI e Modelo TCP IP"
-            }
-          },
-          {
-            "id": "3cbf187b640af003",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Explicações.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Explicações"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +55,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de arquivos"
@@ -236,16 +209,16 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "a5c1670d9d11b777",
+  "active": "61bfb8793da18da8",
   "lastOpenFiles": [
+    "Redes/Protocolos.md",
+    "TODO.md",
     "Redes/Modelo OSI e Modelo TCP IP.md",
     "Explicações.md",
     "Redes/Switch.md",
     "Redes/Proxy.md",
     "Redes/Gateway.md",
     "Redes/Balanceador de Carga.md",
-    "Redes/Protocolos.md",
-    "TODO.md",
     "Linux/Linux Courses.md",
     "Windows/Windows Subsystem for Linux (WSL).md",
     "Ferramentas/Ettercap.md",

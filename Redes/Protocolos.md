@@ -70,24 +70,31 @@ Um exemplo de um pacote ARP capturado fornecido pela ferramenta e pelo site do [
   <figcaption>Pacote ARP</figcaption>
 </figure>
 
-## Internet Control Message Protocol (ICMP)
+
+## Border Gateway Protocol (BGP)
 
 ## Domain Name System (DNS)
 
-## DHCP
+## Dynamic Host Configuration Protocol (DHCP)
 
-## TCP/IP
+## File Transfer Protocol (FTP)
 
-## UDP
-## (SMTP)
+## Hypertext Transfer Protocol (HTTPs)
 
-## HTTPs
+## Internet Control Message Protocol (ICMP)
 
-## TLS/SSL
+## Quick UDP Internet Connections (Quic)
+## Simple Mail Transfer Protocol (SMTP)
+
+## Transmission Control Protocol (TCP/IP)
+
+## Transport Layer Security (TLS)
+
+O novo Secure Sockets Layer (SSL) 
+
+## User Datagram Protocol (UDP)
 
 ## WebSocket
 
-## Quic
 
-## BGP
-## FTP
+

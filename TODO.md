@@ -67,9 +67,18 @@
 	- [ ] [[Balanceador de Carga]]
 	- [/] [[Protocolos]]
 		- [x] ARP
+		- [ ] BGP
 		- [ ] ICMP
 		- [ ] SMTP
 		- [ ] DNS
+		- [ ] WebSocket
+		- [ ] UDP
+		- [ ] TLS
+		- [ ] TCP/IP
+		- [ ] QUIC
+		- [ ] FTP
+		- [ ] DHCP
+		- [ ] HTTP
 	- [ ] [[Modelo OSI e Modelo TCP IP]]
 - [ ] Terminar o curso do Linux
 - [ ] Nano/Vim no Linux
