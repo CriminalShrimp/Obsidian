@@ -8,6 +8,11 @@
 			https://ccna.network/arp/#:~:text=Em%20ambos%20os%20casos%2C%20a,uma%20anima%C3%A7%C3%A3o%20da%20fun%C3%A7%C3%A3o%20ARP.
 			youtube.com/watch?v=t2klOZcXZqc
 			geeksforgeeks.org/computer-networks/arp-protocol-packet-format/
+		**BGP:**
+			cloudflare.com/pt-br/learning/security/glossary/what-is-bgp/
+			fortinet.com/br/resources/cyberglossary/bgp-border-gateway-protocol
+			youtube.com/watch?v=ivlSUuMF99M - Vídeo Br
+			
 	
 ----
 
