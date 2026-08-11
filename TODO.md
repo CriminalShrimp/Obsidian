@@ -68,9 +68,9 @@
 	- [/] [[Protocolos]]
 		- [x] ARP
 		- [x] BGP
-		- [/] ICMP
+		- [x] ICMP
 		- [ ] SMTP
-		- [ ] DNS
+		- [/] DNS
 		- [ ] WebSocket
 		- [ ] UDP
 		- [ ] TLS

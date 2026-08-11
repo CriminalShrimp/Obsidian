@@ -35,7 +35,8 @@
               "title": "Protocolos"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,10 +211,10 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "61bfb8793da18da8",
+  "active": "a5c1670d9d11b777",
   "lastOpenFiles": [
-    "Redes/Protocolos.md",
     "TODO.md",
+    "Redes/Protocolos.md",
     "Phinsing.md",
     "RedTeam/Man-in-the-Middle (MITM).md",
     "Redes/Roteador.md",

@@ -12,6 +12,7 @@
 			cloudflare.com/pt-br/learning/security/glossary/what-is-bgp/
 			fortinet.com/br/resources/cyberglossary/bgp-border-gateway-protocol
 			youtube.com/watch?v=ivlSUuMF99M - Vídeo Br.
+		**DNS:**
 			
 	
 ----
