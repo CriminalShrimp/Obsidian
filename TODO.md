@@ -67,8 +67,8 @@
 	- [ ] [[Balanceador de Carga]]
 	- [/] [[Protocolos]]
 		- [x] ARP
-		- [/] BGP
-		- [ ] ICMP
+		- [x] BGP
+		- [/] ICMP
 		- [ ] SMTP
 		- [ ] DNS
 		- [ ] WebSocket
