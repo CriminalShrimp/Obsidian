@@ -82,12 +82,15 @@ Um exemplo de um pacote ARP capturado fornecido pela ferramenta e pelo site do [
 
 É o responsável por escolher por qual rota o pacote de dados ira percorrer na internet ate que a mesma chegue me seu destino final, no mundo real seria o sistema de correios que decide para onde cada pacote vai ser mandado. Para entender melhor esse protocolo é necessário antes entender como a internet funciona, ela é uma rede de redes, que é dividida em redes menores, essas por sua vez são chamadas de **AS**, esses **A**utonomous **S**ystem (sistema autônomo) seriam redes que pertencem a um grupo, como ao Google, Apple, Amazon. Usando o BGP é possível declarar que essa rede existe, e por quais redes ela pode ser alcançada, e qual o melhor caminho a ser feito.
 
-Imagine que o seu computador é o AS 1 e quer acessar a rede AS 3 (Google por exemplo), o caminho mais fácil seria ir pelo AS 2 pois ele tem menos "saltos" que é um fator que determina o melhor caminho, e que escolhe esse caminho é o BGP, caso houver algum problema ele encontraria outro caminho para chegar ao seu destino.
+Para mantarem suas tabelas sempre atualizadas, os AS fazem **peering** com seus AS vizinhos, que consiste em se conectar com eles e trocar as informações que eles possuem. Os BGP determina o melhor caminho para ser tomado a partir de diversos atributos, por exemplo Local Preference, que é um valor atribuído manualmente, por exemplo se existem um link de operadora com mais banda do que outro, o certo é aumentar o valor do Local Preference desse link. Para ver mais sobre os atributos é possível consultar no [RFC IANA](https://www.iana.org/assignments/bgp-parameters).
+Imagine que o seu computador é o AS 1, e quer acessar a rede AS 3 (Google por exemplo), o caminho mais fácil é ir pelo AS 2 pois ele tem menos "saltos", esse caminho é determinado pelo BGP. Caso houver algum problema ele encontraria outro caminho para chegar ao seu destino.
 
 <figure style="text-align: center;">
   <img src="BGP.png" style="margin: 0 auto;">
   <figcaption>BGP</figcaption>
 </figure>
+
+Conforme o tempo e a tecnologia foram avançando começaram a surgir problemas com esse protocolo, então foi adicionado a ele o **R**esource **P**ublic **K**ey **I**nfrastructure (**RPKI**), usando criptografia para criar assinaturas confirmando assim a legitimidade de uma rede. Fazendo isso problemas de segurança como [[Denial of Service (DDoS)|DDoS]], BGP hijacking, e [[Ataques de Engenharia Social#Phising|Phinsing]] podem ser evitados facilmente, porém uma grande parte da internet ainda não utilizam esse recurso de segurança.
 
 ## Domain Name System (DNS)
 
