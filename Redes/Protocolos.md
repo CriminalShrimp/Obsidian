@@ -13,6 +13,7 @@
 			fortinet.com/br/resources/cyberglossary/bgp-border-gateway-protocol
 			youtube.com/watch?v=ivlSUuMF99M - Vídeo Br.
 		**DNS:**
+			youtube.com/watch?v=shEoRtaB6dE - Vídeo Br.
 			
 	
 ----
@@ -83,7 +84,7 @@ Um exemplo de um pacote ARP capturado fornecido pela ferramenta e pelo site do [
 
 É o responsável por escolher por qual rota o pacote de dados ira percorrer na internet ate que a mesma chegue me seu destino final, no mundo real seria o sistema de correios que decide para onde cada pacote vai ser mandado. Para entender melhor esse protocolo é necessário antes entender como a internet funciona, ela é uma rede de redes, que é dividida em redes menores, essas por sua vez são chamadas de **AS**, esses **A**utonomous **S**ystem (sistema autônomo) seriam redes que pertencem a um grupo, como ao Google, Apple, Amazon. Usando o BGP é possível declarar que essa rede existe, e por quais redes ela pode ser alcançada, e qual o melhor caminho a ser feito.
 
-Para mantarem suas tabelas sempre atualizadas, os AS fazem **peering** com seus AS vizinhos, que consiste em se conectar com eles e trocar as informações que eles possuem. Os BGP determina o melhor caminho para ser tomado a partir de diversos atributos, por exemplo Local Preference, que é um valor atribuído manualmente, por exemplo se existem um link de operadora com mais banda do que outro, o certo é aumentar o valor do Local Preference desse link. Para ver mais sobre os atributos é possível consultar no [RFC IANA](https://www.iana.org/assignments/bgp-parameters).
+Para mantarem suas tabelas sempre atualizadas, os AS fazem **peering** com seus AS vizinhos, que consiste em se conectar com eles e trocar as informações que eles possuem, a comunicação entre eles é feita pela **porta 179**. Os BGP determina o melhor caminho para ser tomado a partir de diversos atributos, por exemplo Local Preference, que é um valor atribuído manualmente, por exemplo se existem um link de operadora com mais banda do que outro, o certo é aumentar o valor do Local Preference desse link. Para ver mais sobre os atributos é possível consultar no [RFC IANA](https://www.iana.org/assignments/bgp-parameters).
 Imagine que o seu computador é o AS 1, e quer acessar a rede AS 3 (Google por exemplo), o caminho mais fácil é ir pelo AS 2 pois ele tem menos "saltos", esse caminho é determinado pelo BGP. Caso houver algum problema ele encontraria outro caminho para chegar ao seu destino.
 
 <figure style="text-align: center;">
@@ -95,6 +96,9 @@ Conforme o tempo e a tecnologia foram avançando começaram a surgir problemas c
 
 ## Domain Name System (DNS)
 
+Já pensou em ao invés de digitar <span style="color:rgb(206, 0, 86)">youtube.com</span> ter que digitar <span style="color:rgb(0, 176, 80)">142.251.135.238</span>, graças ao DNS podemos escrever os endereços de sites com seu <span style="color:rgb(206, 0, 86)">nome</span> ao invés do seu <span style="color:rgb(0, 176, 80)">endereço IP</span>. Um bom comparativo seria com sua lista de contados, digitamos o nome de Bob por que é mais fácil do que decorar seu numero de telefone. Então para resumir em uma frase, o DNS converte da linguagem humana para a linguagem de computador.
+
+Quando solicitamos um endereço web quem resolve ele para o IP é o e
 ## Dynamic Host Configuration Protocol (DHCP)
 
 ## File Transfer Protocol (FTP)

@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "IP",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -211,7 +211,7 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "a5c1670d9d11b777",
+  "active": "9afb7dec79881ba3",
   "lastOpenFiles": [
     "TODO.md",
     "Redes/Protocolos.md",
