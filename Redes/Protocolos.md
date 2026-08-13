@@ -98,7 +98,12 @@ Conforme o tempo e a tecnologia foram avançando começaram a surgir problemas c
 
 Já pensou em ao invés de digitar <span style="color:rgb(206, 0, 86)">youtube.com</span> ter que digitar <span style="color:rgb(0, 176, 80)">142.251.135.238</span>, graças ao DNS podemos escrever os endereços de sites com seu <span style="color:rgb(206, 0, 86)">nome</span> ao invés do seu <span style="color:rgb(0, 176, 80)">endereço IP</span>. Um bom comparativo seria com sua lista de contados, digitamos o nome de Bob por que é mais fácil do que decorar seu numero de telefone. Então para resumir em uma frase, o DNS converte da linguagem humana para a linguagem de computador.
 
-Quando solicitamos um endereço web quem resolve ele para o IP é o e
+Quando solicitamos um endereço web ele verifica na memoria cache do PC se o endereço já foi pesquisado antes (o comando `ipconfig /displaydns` mostra assa tabela), depois ele passa parra o roteador, então para o provedor de internet (ISP), se mesmo assim nada retornar do endereço, o seu ISP repassa a requisição para a **root zone**, nela existem **"13 DNS Root servers"** que apontam diretamente ao **T**op **L**evel **D**omain (**TLD**), responsável por exemplo pelos domínios *.com* e seus subdomínios, que então indicara o servidor do dono do site, que contem o endereço IP. Esse cenário é uma situação resumida e bem anormal, já que em todos esses passos existe a memoria cache que normalmente já retorna o nome resolvido para o endereço.
+
+### 13 Root DNS Servers
+
+Não são 13 servidores físicos, mas sim 13 endereços de ip que vão de 
+
 ## Dynamic Host Configuration Protocol (DHCP)
 
 ## File Transfer Protocol (FTP)
