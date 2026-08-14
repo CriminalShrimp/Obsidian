@@ -49,4 +49,6 @@ Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam
 
 ###### CIDR = **C**lassless **I**nter **D**omain **R**outing é usado para representar o endereço IP e sua mascara de rede, representado por sua uma / após o endereço.
 
-PKI = Public key infrastructure.
+###### ISP = **I**nternet **S**ervice **P**rovider responsável por prover a internet ao usuario, pode ser a Vivo, Claro, Nio, etc.
+
+###### PKI = Public key infrastructure.

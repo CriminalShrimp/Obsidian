@@ -5,16 +5,18 @@
 		www.youtube.com/watch?v=4I2AZ1by_sY - Vídeo sobre protocolos.
 		iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
 		**ARP:**
-			https://ccna.network/arp/#:~:text=Em%20ambos%20os%20casos%2C%20a,uma%20anima%C3%A7%C3%A3o%20da%20fun%C3%A7%C3%A3o%20ARP.
-			youtube.com/watch?v=t2klOZcXZqc
-			geeksforgeeks.org/computer-networks/arp-protocol-packet-format/
+			https://ccna.network/arp/.
+			youtube.com/watch?v=t2klOZcXZqc.
+			geeksforgeeks.org/computer-networks/arp-protocol-packet-format/.
 		**BGP:**
-			cloudflare.com/pt-br/learning/security/glossary/what-is-bgp/
-			fortinet.com/br/resources/cyberglossary/bgp-border-gateway-protocol
+			cloudflare.com/pt-br/learning/security/glossary/what-is-bgp/ - Material de leitura.
+			fortinet.com/br/resources/cyberglossary/bgp-border-gateway-protocol.
 			youtube.com/watch?v=ivlSUuMF99M - Vídeo Br.
 		**DNS:**
 			youtube.com/watch?v=shEoRtaB6dE - Vídeo Br.
-			
+			youtube.com/watch?v=NiQTs9DbtW4 - Vídeo avançado.
+			youtube.com/watch?v=mpQZVYPuDGU - Animação da requisição do pacote DNS.
+			cloudflare.com/learning/dns/what-is-dns/ - Material de leitura.
 	
 ----
 
@@ -96,13 +98,23 @@ Conforme o tempo e a tecnologia foram avançando começaram a surgir problemas c
 
 ## Domain Name System (DNS)
 
-Já pensou em ao invés de digitar <span style="color:rgb(206, 0, 86)">youtube.com</span> ter que digitar <span style="color:rgb(0, 176, 80)">142.251.135.238</span>, graças ao DNS podemos escrever os endereços de sites com seu <span style="color:rgb(206, 0, 86)">nome</span> ao invés do seu <span style="color:rgb(0, 176, 80)">endereço IP</span>. Um bom comparativo seria com sua lista de contados, digitamos o nome de Bob por que é mais fácil do que decorar seu numero de telefone. Então para resumir em uma frase, o DNS converte da linguagem humana para a linguagem de computador.
+Já pensou em ao invés de digitar <span style="color:rgb(206, 0, 86)">studio.youtube.com</span> ter que digitar <span style="color:rgb(0, 176, 80)">142.251.135.238</span>, graças ao DNS podemos escrever os endereços de sites com seu <span style="color:rgb(206, 0, 86)">nome</span> ao invés do seu <span style="color:rgb(0, 176, 80)">endereço IP</span>. Um bom comparativo seria com sua lista de contados, digitamos o nome de Bob por que é mais fácil do que decorar seu numero de telefone. Então para resumir em uma frase, o DNS converte da linguagem humana para a linguagem de computador.
 
-Quando solicitamos um endereço web ele verifica na memoria cache do PC se o endereço já foi pesquisado antes (o comando `ipconfig /displaydns` mostra assa tabela), depois ele passa parra o roteador, então para o provedor de internet (ISP), se mesmo assim nada retornar do endereço, o seu ISP repassa a requisição para a **root zone**, nela existem **"13 DNS Root servers"** que apontam diretamente ao **T**op **L**evel **D**omain (**TLD**), responsável por exemplo pelos domínios *.com* e seus subdomínios, que então indicara o servidor do dono do site, que contem o endereço IP. Esse cenário é uma situação resumida e bem anormal, já que em todos esses passos existe a memoria cache que normalmente já retorna o nome resolvido para o endereço.
+Quando solicitamos um endereço web ele verifica na memoria cache do PC se o endereço já foi pesquisado antes (o comando `ipconfig /displaydns` mostra assa tabela), depois ele passa parra o roteador, então para o [[Abreviações#ISP = **I**nternet **S**ervice **P**rovider responsável por prover a internet ao usuario, pode ser a Vivo, Claro, Nio, etc.|ISP]], se mesmo assim nada retornar do endereço, o seu ISP repassa a requisição para a **root zone**, nela existem **"13 DNS Root servers"** que apontam diretamente ao **T**op **L**evel **D**omain (**TLD**) , responsável por exemplo pelos domínios *.com*, que indica para o **S**econd **L**evel **D**omain (**SLD**) responsável pelo *youtube* no nosso exemplo, e não saiba o endereço, por final indicara ao seu ISP o servidor que contem o site em questão o **Authoritative Servers**, que contem o endereço de tudo relacionado a o <span style="color:rgb(206, 0, 86)">youtube.com</span>, e também seus subdomínios, como o <span style="color:rgb(206, 0, 86)">studio</span>, e seu IP desejado. Esse cenário é uma situação resumida e bem anormal, já que em todos esses passos existe a memoria cache que normalmente já retorna o nome resolvido para o endereço.
+
+<figure style="text-align: center;">
+  <img src="DNS Protocol.gif" style="margin: 0 auto;">
+  <figcaption>Comunicação simples de um DNS</figcaption>
+</figure>
 
 ### 13 Root DNS Servers
 
-Não são 13 servidores físicos, mas sim 13 endereços de ip que vão de 
+Não são 13 servidores físicos, mas sim 13 endereços de IP que vão de a.root-server.net até m.root-server.net, o numero 13 esta relacionado ao limite de bytes do protocolo **UDP**, esses 13 endereçõs são operados por diferentes organizações ao longo do globo. A verdade é que existe milhares de servidores DNS espalhados pelo mundo.
+
+<figure style="text-align: center;">
+  <img src="13 Root DNS Servers.png" style="margin: 0 auto;">
+  <figcaption>13 Root DNS</figcaption>
+</figure>
 
 ## Dynamic Host Configuration Protocol (DHCP)
 
