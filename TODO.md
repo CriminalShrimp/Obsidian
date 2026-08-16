@@ -77,7 +77,7 @@
 		- [ ] TCP/IP
 		- [ ] QUIC
 		- [ ] FTP
-		- [ ] DHCP
+		- [/] DHCP
 		- [ ] HTTP
 	- [ ] [[Modelo OSI e Modelo TCP IP]]
 - [ ] Terminar o curso do Linux 

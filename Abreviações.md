@@ -49,6 +49,7 @@ Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam
 
 ###### CIDR = **C**lassless **I**nter **D**omain **R**outing é usado para representar o endereço IP e sua mascara de rede, representado por sua uma / após o endereço.
 
-###### ISP = **I**nternet **S**ervice **P**rovider responsável por prover a internet ao usuario, pode ser a Vivo, Claro, Nio, etc.
-
+###### ISP = **I**nternet **S**ervice **P**rovider responsável por prover a internet ao usuário, pode ser a Vivo, Claro, Nio, etc.
+###### TTL = **T**ime **t**o **L**ive é um campo no pacote IP, que determina quanto tempo um pacote pode viajar pela internet, pode chamar de "hops", pois ele pula de roteador a roteador. Uma informação útil é que Windows tem o TTL de 128, e Mac e Linux de 64.
+###### FQDN = **F**ully **Q**ualified **D**omain **N**ame diz respeito ao endereço exato de um dispositivo ou recurso na internet.
 ###### PKI = Public key infrastructure.

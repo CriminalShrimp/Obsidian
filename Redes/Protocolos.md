@@ -17,6 +17,7 @@
 			youtube.com/watch?v=NiQTs9DbtW4 - Vídeo avançado.
 			youtube.com/watch?v=mpQZVYPuDGU - Animação da requisição do pacote DNS.
 			cloudflare.com/learning/dns/what-is-dns/ - Material de leitura.
+			computernetworkingnotes.com/linux-tutorials/types-of-resources-records-in-zone-files.html - Sobre DNS Zone Files.
 	
 ----
 
@@ -100,11 +101,18 @@ Conforme o tempo e a tecnologia foram avançando começaram a surgir problemas c
 
 Já pensou em ao invés de digitar <span style="color:rgb(206, 0, 86)">studio.youtube.com</span> ter que digitar <span style="color:rgb(0, 176, 80)">142.251.135.238</span>, graças ao DNS podemos escrever os endereços de sites com seu <span style="color:rgb(206, 0, 86)">nome</span> ao invés do seu <span style="color:rgb(0, 176, 80)">endereço IP</span>. Um bom comparativo seria com sua lista de contados, digitamos o nome de Bob por que é mais fácil do que decorar seu numero de telefone. Então para resumir em uma frase, o DNS converte da linguagem humana para a linguagem de computador.
 
-Quando solicitamos um endereço web ele verifica na memoria cache do PC se o endereço já foi pesquisado antes (o comando `ipconfig /displaydns` mostra assa tabela), depois ele passa parra o roteador, então para o [[Abreviações#ISP = **I**nternet **S**ervice **P**rovider responsável por prover a internet ao usuario, pode ser a Vivo, Claro, Nio, etc.|ISP]], se mesmo assim nada retornar do endereço, o seu ISP repassa a requisição para a **root zone**, nela existem **"13 DNS Root servers"** que apontam diretamente ao **T**op **L**evel **D**omain (**TLD**) , responsável por exemplo pelos domínios *.com*, que indica para o **S**econd **L**evel **D**omain (**SLD**) responsável pelo *youtube* no nosso exemplo, e não saiba o endereço, por final indicara ao seu ISP o servidor que contem o site em questão o **Authoritative Servers**, que contem o endereço de tudo relacionado a o <span style="color:rgb(206, 0, 86)">youtube.com</span>, e também seus subdomínios, como o <span style="color:rgb(206, 0, 86)">studio</span>, e seu IP desejado. Esse cenário é uma situação resumida e bem anormal, já que em todos esses passos existe a memoria cache que normalmente já retorna o nome resolvido para o endereço.
+Quando solicitamos um endereço web ele verifica na memoria cache do PC se o endereço já foi pesquisado antes (o comando `ipconfig /displaydns` mostra assa tabela), depois ele passa parra o roteador, então para o [[Abreviações#ISP = **I**nternet **S**ervice **P**rovider responsável por prover a internet ao usuario, pode ser a Vivo, Claro, Nio, etc.|ISP]], se mesmo assim nada retornar do endereço, o seu ISP repassa a requisição para a **root zone**, nela existem **"13 DNS Root servers"** que apontam diretamente ao **T**op **L**evel **D**omain (**TLD**) , responsável por exemplo pelos domínios *.com*, que indica para o **S**econd **L**evel **D**omain (**SLD**) responsável pelo *youtube* no nosso exemplo, e não saiba o endereço, por final indicara ao seu ISP o servidor que contem o site em questão o **Authoritative Servers**, que possuem um arquivo chamado de **DNS Zone File**, e em um campo dele chamado **DNS Record**, tem todas as informações relacionadas a o <span style="color:rgb(206, 0, 86)">youtube.com</span>, e também seus subdomínios como o <span style="color:rgb(206, 0, 86)">studio.youtube.com</span>, e seu IP desejado. Esse cenário é uma situação resumida e bem anormal, já que em todos esses passos existe a memoria cache que normalmente já retorna o nome resolvido para o endereço.
 
 <figure style="text-align: center;">
   <img src="DNS Protocol.gif" style="margin: 0 auto;">
   <figcaption>Comunicação simples de um DNS</figcaption>
+</figure>
+
+A hierarquia dessas zonas DNS vão do Root, para TLD, SLD e por fim para subdomínios.
+
+<figure style="text-align: center;">
+  <img src="DNS Zone.png" style="margin: 0 auto;">
+  <figcaption>DNS Zones</figcaption>
 </figure>
 
 ### 13 Root DNS Servers
@@ -115,6 +123,42 @@ Não são 13 servidores físicos, mas sim 13 endereços de IP que vão de a.root
   <img src="13 Root DNS Servers.png" style="margin: 0 auto;">
   <figcaption>13 Root DNS</figcaption>
 </figure>
+
+### DNS Zone File
+
+Nesse arquivo temos as configurações e os registros relacionados aos seus dominós, esses arquivos são guardados *.txt*. Mandatoriamente esse arquivo deve ter dois campos, o [[Abreviações#TTL = **T**ime **t**o **L**ive é um campo no pacote IP, que determina quanto tempo um pacote pode viajar pela internet, pode chamar de "hops", pois ele pula de roteador a roteador. Uma informação útil é que Windows tem o TTL de 128, e Mac e Linux de 64.|TTL]] que por padrão é de 86400s ou 1 dia, e o **ORIGIN** que define um domínio [[Abreviações#FQDN = **F**ully **Q**ualified **D**omain **N**ame diz respeito ao endereço exato de um dispositivo ou recurso na internet.|FQND]](example.com.) para todo o arquivo, e ao longo do arquivo ele pode ser referenciado por um nome relativo (e-mail ou blog), um **@** ou pode ser deixado em branco. Aqui temos um exemplo de um desses arquivos. 
+
+<figure style="text-align: center;">
+  <img src="DNS Zone File.png" style="margin: 0 auto;">
+  <figcaption>Exemplo de DNS Zone File</figcaption>
+</figure>
+
+#### DNS Records
+
+Esses registros dizem respeito as características e propriedades "entidades" presentes nesse domínio. Existem vários tipos desses registros, mas obrigatoriamente deve sempre haver um **Start Of Authority (SOA)**.
+##### Start Of Authority (SOA)
+
+que contem suas propriedades e características,
+
+youtube.com.    60    IN    SOA    ns1.google.com. dns-admin.google.com. (
+                                   611537233  ; Serial number
+                                   900        ; Refresh Time
+                                   900        ; Retry Time
+                                   1800       ; Expire Time
+                                   60         ; Next-domain-TTL
+)
+
+ou em um formato mais compacto ele ficaria assim:
+
+**@ IN SOA ://google.com. ://google.com. 611537233 15m 15m 30m 1m**
+
+##### NS
+##### MX
+##### A
+##### AAAA
+##### CNAME
+##### Pointer (PTR)
+##### SRV
 
 ## Dynamic Host Configuration Protocol (DHCP)
 

@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "a5c1670d9d11b777",
+            "id": "acf4f894248b795b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,7 +36,7 @@
             }
           },
           {
-            "id": "d4a4273bf492295c",
+            "id": "184a6ba47f45a02a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -115,7 +115,8 @@
               "title": "tg-left-sidebar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -224,15 +225,16 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "a5c1670d9d11b777",
+  "active": "acf4f894248b795b",
   "lastOpenFiles": [
-    "DNS Protocol.gif",
-    "Redes/Protocolos.md",
-    "giphy.gif",
-    "image.png",
-    "Trash/Imagens/Img Redes/13 Root DNS Servers.png",
-    "Abreviações.md",
     "TODO.md",
+    "Redes/Protocolos.md",
+    "Abreviações.md",
+    "Trash/Imagens/Img Redes/DNS Zone.png",
+    "Trash/Imagens/Img Redes/DNS Zone File.png",
+    "Trash/Imagens/Img Redes/DNS Protocol.gif",
+    "giphy.gif",
+    "Trash/Imagens/Img Redes/13 Root DNS Servers.png",
     "Phinsing.md",
     "RedTeam/Man-in-the-Middle (MITM).md",
     "Redes/Roteador.md",
@@ -261,7 +263,6 @@
     "Trash/Imagens/Img Ferramentas/WireShark Interface.png",
     "Trash/Imagens/Img Ferramentas/WireShark.png",
     "Trash/Imagens/Img RedTeam/C2 Aleatoria.png",
-    "Trash/Imagens/Img RedTeam/C2 P2P.png",
     "Trash/Modelo",
     "Comandos",
     "Trash/Imagens/Img Conceitos/ZeekLogs.pdf",
