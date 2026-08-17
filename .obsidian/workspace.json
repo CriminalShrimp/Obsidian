@@ -84,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "escravo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -208,7 +208,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 236.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,7 +225,7 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "acf4f894248b795b",
+  "active": "9afb7dec79881ba3",
   "lastOpenFiles": [
     "TODO.md",
     "Redes/Protocolos.md",

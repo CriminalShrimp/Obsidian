@@ -21,7 +21,6 @@
 	
 ----
 
-Colocar os mais utilizados 
 
 # Principais Protocolos 
 ## Address Resolution Protocol (ARP)
@@ -135,12 +134,12 @@ Nesse arquivo temos as configurações e os registros relacionados aos seus domi
 
 #### DNS Records
 
-Esses registros dizem respeito as características e propriedades "entidades" presentes nesse domínio. Existem vários tipos desses registros, mas obrigatoriamente deve sempre haver um **Start Of Authority (SOA)**.
+Esses registros dizem respeito as características e propriedades "entidades" presentes nesse domínio. Existem vários tipos desses registros, mas **obrigatoriamente** deve sempre haver um **Start Of Authority (SOA)**.
 ##### Start Of Authority (SOA)
 
-que contem suas propriedades e características,
+Nele configuramos certas características e parâmetros sobre o servidor, para explicar melhor vamos usar um registro como exemplo.
 
-youtube.com.    60    IN    SOA    ns1.google.com. dns-admin.google.com. (
+<span style="color:rgb(112, 48, 160)">youtube.com.</span>    60    <span style="color:rgb(206, 0, 86)">IN</span>    <span style="color:rgb(0, 176, 80)">SOA</span>    <span style="color:rgb(65, 105, 255)">ns1.google.com.</span> <span style="color:rgb(255, 255, 0)">dns-admin.google.com.</span> (
                                    611537233  ; Serial number
                                    900        ; Refresh Time
                                    900        ; Retry Time
@@ -148,17 +147,72 @@ youtube.com.    60    IN    SOA    ns1.google.com. dns-admin.google.com. (
                                    60         ; Next-domain-TTL
 )
 
-ou em um formato mais compacto ele ficaria assim:
+Sobre os campos desse registros, temos <span style="color:rgb(112, 48, 160)">domain-name</span> que tem as mesma propriedades do **ORIGIN** comentando anteriormente. O numero **60** diz respeito ao **TTL**. A <span style="color:rgb(206, 0, 86)">class</span> que pode ser <span style="color:rgb(206, 0, 86)">IN</span>, <span style="color:rgb(206, 0, 86)">CH</span>, e <span style="color:rgb(206, 0, 86)">HS</span>, mas o **IN** é o mais usado, os outros são para casos específicos. O <span style="color:rgb(0, 176, 80)">record-type</span> que nesse caso é o SOA, esse campo muda conforme o registro. No campo <span style="color:rgb(65, 105, 255)">name-server</span> definimos qual nome autorizado para esse domínio. E o <span style="color:rgb(255, 255, 0)">email-address</span> pode ser colocado qualquer e-mail valido, normalmente é colocado o do responsável pelo *host*, algo para se saber é que o primeiro (.) é substituído por um @.
+
+O jeito que o DNS vê o SOA é da seguinte forma (convertido para minutos os tempos): 
 
 **@ IN SOA ://google.com. ://google.com. 611537233 15m 15m 30m 1m**
 
-##### NS
-##### MX
-##### A
-##### AAAA
-##### CNAME
+Nele temos os campos que ficam no parênteses no SOA, por primeiro o **Serial Number** usado para diversas coisas, mas o uso mais comum é o de **rastrear mudanças e atualizações**, esse numero normalmente é usado como **ANO-MES-DIA** e uma sequencia de **00** ate **99**. O **Refresh Time** indica de quanto em quanto tempo ele deve **buscar por atualizações** no servidor *mestre*. No **Retry Time** indicamos o **período de tempo que ele deve ser comunicar com o servidor mestre** caso falhe a comunicação com o servidor *mestre*. O **Expire Time** indica por quanto tempo os **registros serão validos**. E por final o **Next-domain-TTL** que de forma básica, caso um ele tente resolver para um endereço que não esteja no arquivo entra retorna o erro **Name Error (NXDOMAIN)**, e entra no campo **negative-cache-TTL** (mesma coisa que Next-domain-TTL), somente depois do tempo determinado no campo ele tentara novamente para o nome do domínio que deu erro.
+##### Name Server (NS)
+
+Indica quais os servidores DNS autorizados para o domínio, sempre deve haver ao menos **dois registros** desses no arquivo, também pode ser apontando um nome de servidor externo. Um exemplo desse registro seria assim:
+
+; The NS records.
+; Primary or main NS server. Available within the domain.
+    3w	IN 	NS 	ns1.example.com.
+; Secondary or backup NS server. Available outside the domain.
+        IN 	NS 	ns2.example.net.
+
+##### ### Mail Exchanger (MX)
+
+Esse é opcional, caso não tenha serviços de e-mail não precisa adiciona-lo, também pode ser apontando um nome de servidor externo. Um exemplo desse registro seria assim:
+ 
+; The MX records
+; Primary or main NS server. Available within the domain.
+    3w 	IN 	MX 	10 	mail.example.com.
+; Secondary or backup NS server. Available outside the domain.
+        IN 	MX 	20 	mail.example.net.
+
+##### Address (A)
+
+Caso houver um serviço ou *host* que precisar ser publico, deve ser definido seu endereço IPv4 nesse registro, é um registro opcional. Um exemplo de desse registro seria assim:  
+
+; The A records
+ns1 		IN	 A 	172.168.1.1
+mail 		IN	 A 	172.168.1.2
+www 		IN 	 A 	172.168.1.3
+
+##### Quad A (AAAA)
+
+Igual o anterior porem para endereços IPv6. Um exemplo desse registro seria assim:  
+
+; The AAAA
+ns1 		IN	 AAAA 	2002:db7::
+mail 		IN	 AAAA	2002:db8::
+www 		IN 	 AAAA 	2002:db9::
+##### Canonical Name (CNAME)
+
+Caso existir um "apelido" para o seu endereço ele será redirecionado para o endereço apontado, esse campo também é opcional. Um bom exemplo é o google, que tem o domínio faltando um o, e que quando buscado redireciona para seu endereço oficial. 
+
+; The CNAME
+gogle.com 		IN	 CNAME 	google.com
+www 		    IN	 CNAME 	google.com
+
 ##### Pointer (PTR)
-##### SRV
+
+Esse registro faz o oposto do DNS conehcido como reverse DNS, caso vc digite um **IP** ele traduz para um **nome**, também é opcional. Um exemplo de registro desse seria assim: 
+
+; The PRT
+87.64.12.4		IN	 PRT 	youtube.com
+
+##### Server (SRV)
+
+Quando temos um serviço que roda em uma porta especifica, precisamos usar esse registro para apontar para o **endereço** e o **numero da porta**, também é opcional. Um exemplo de registro desse seria assim:  
+
+`_mysql._://google.com. 3600 IN SRV 10 0 3306 ://google.com.`
+
+O numero **3306** é a **porta** em que o serviço esta rodando, para saber mais sobre os outros campos acesse esse [link](https://www.cloudflare.com/learning/dns/dns-records/dns-srv-record/)
 
 ## Dynamic Host Configuration Protocol (DHCP)
 
