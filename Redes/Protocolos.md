@@ -100,7 +100,7 @@ Conforme o tempo e a tecnologia foram avançando começaram a surgir problemas c
 
 Já pensou em ao invés de digitar <span style="color:rgb(206, 0, 86)">studio.youtube.com</span> ter que digitar <span style="color:rgb(0, 176, 80)">142.251.135.238</span>, graças ao DNS podemos escrever os endereços de sites com seu <span style="color:rgb(206, 0, 86)">nome</span> ao invés do seu <span style="color:rgb(0, 176, 80)">endereço IP</span>. Um bom comparativo seria com sua lista de contados, digitamos o nome de Bob por que é mais fácil do que decorar seu numero de telefone. Então para resumir em uma frase, o DNS converte da linguagem humana para a linguagem de computador.
 
-Quando solicitamos um endereço web ele verifica na memoria cache do PC se o endereço já foi pesquisado antes (o comando `ipconfig /displaydns` mostra assa tabela), depois ele passa parra o roteador, então para o [[Abreviações#ISP = **I**nternet **S**ervice **P**rovider responsável por prover a internet ao usuario, pode ser a Vivo, Claro, Nio, etc.|ISP]], se mesmo assim nada retornar do endereço, o seu ISP repassa a requisição para a **root zone**, nela existem **"13 DNS Root servers"** que apontam diretamente ao **T**op **L**evel **D**omain (**TLD**) , responsável por exemplo pelos domínios *.com*, que indica para o **S**econd **L**evel **D**omain (**SLD**) responsável pelo *youtube* no nosso exemplo, e não saiba o endereço, por final indicara ao seu ISP o servidor que contem o site em questão o **Authoritative Servers**, que possuem um arquivo chamado de **DNS Zone File**, e em um campo dele chamado **DNS Record**, tem todas as informações relacionadas a o <span style="color:rgb(206, 0, 86)">youtube.com</span>, e também seus subdomínios como o <span style="color:rgb(206, 0, 86)">studio.youtube.com</span>, e seu IP desejado. Esse cenário é uma situação resumida e bem anormal, já que em todos esses passos existe a memoria cache que normalmente já retorna o nome resolvido para o endereço.
+Quando solicitamos um endereço web ele verifica na memoria cache do PC se o endereço já foi pesquisado antes (o comando `ipconfig /displaydns` mostra assa tabela), depois ele passa parra o roteador, então para o [[Abreviações#ISP = **I**nternet **S**ervice **P**rovider responsável por prover a internet ao usuario, pode ser a Vivo, Claro, Nio, etc.|ISP]], se mesmo assim nada retornar do endereço, o seu ISP repassa a requisição para a **root zone**, nela existem **"13 DNS Root servers"** que apontam diretamente ao **T**op **L**evel **D**omain (<span style="color:rgb(255, 255, 0)">TLD</span>) , responsável por exemplo pelos domínios *.com*, que indica para o **S**econd **L**evel **D**omain (<span style="color:rgb(255, 255, 0)">SLD</span>) responsável pelo *youtube* no nosso exemplo, e não saiba o endereço, por final indicara ao seu ISP o servidor que contem o site em questão o **Authoritative Servers**, que possuem um arquivo chamado de **DNS Zone File**, e em um campo dele chamado **DNS Record**, tem todas as informações relacionadas a o <span style="color:rgb(206, 0, 86)">youtube.com</span>, e também seus subdomínios como o <span style="color:rgb(206, 0, 86)">studio.youtube.com</span>, e seu IP desejado. Esse cenário é uma situação resumida e bem anormal, já que em todos esses passos existe a memoria cache que normalmente já retorna o nome resolvido para o endereço.
 
 <figure style="text-align: center;">
   <img src="DNS Protocol.gif" style="margin: 0 auto;">
@@ -185,7 +185,7 @@ www 		IN 	 A 	172.168.1.3
 
 ##### Quad A (AAAA)
 
-Igual o anterior porem para endereços IPv6. Um exemplo desse registro seria assim:  
+Igual o anterior porém para endereços IPv6. Um exemplo desse registro seria assim:  
 
 ; The AAAA
 ns1 		IN	 AAAA 	2002:db7::
@@ -196,23 +196,30 @@ www 		IN 	 AAAA 	2002:db9::
 Caso existir um "apelido" para o seu endereço ele será redirecionado para o endereço apontado, esse campo também é opcional. Um bom exemplo é o google, que tem o domínio faltando um o, e que quando buscado redireciona para seu endereço oficial. 
 
 ; The CNAME
-gogle.com 		IN	 CNAME 	google.com
-www 		    IN	 CNAME 	google.com
+gogle.com 		IN	 CNAME 	google.com.
+www 		    IN	 CNAME 	google.com.
 
 ##### Pointer (PTR)
 
-Esse registro faz o oposto do DNS conehcido como reverse DNS, caso vc digite um **IP** ele traduz para um **nome**, também é opcional. Um exemplo de registro desse seria assim: 
+Ele funciona como se fosse um <span style="color:rgb(255, 255, 0)">DNS Reverso</span>, que funciona como uma solução para manter a logica do especifico para o geral, igual é feito no domínios (lido da direita para esquerda), para fazermos isso basta pega o IP (142.251.135.238), e inverter a ordem (238.135.251.142), e no final dele adicionar o endereço in-addr.arpa (no IPv4), com isso ao digitar um **IP** ele traduz para um **nome**, também é um campo opcional. Um exemplo de registro desse seria assim: 
 
-; The PRT
-87.64.12.4		IN	 PRT 	youtube.com
+; The PTR
+238		IN	 PTR 	youtube.com.
 
+Nesse caso o servidor estaria previamente configurado para gerenciar essa rede, usando essa configuração:
+
+zone "135.251.142.in-addr.arpa" { 
+	type master; 
+	file "/etc/bind/db.142.251.135"; # Caminho do arquivo onde vão as regras };
+
+Mas caso não houver essa configuração é necessário colocar ele por completo, 238.135.251.142.in-addr.arpa.
 ##### Server (SRV)
 
 Quando temos um serviço que roda em uma porta especifica, precisamos usar esse registro para apontar para o **endereço** e o **numero da porta**, também é opcional. Um exemplo de registro desse seria assim:  
 
-`_mysql._://google.com. 3600 IN SRV 10 0 3306 ://google.com.`
+`_xmpp-server._://youtube.com. 3600 IN SRV 10 20 5269 ://google.com.`
 
-O numero **3306** é a **porta** em que o serviço esta rodando, para saber mais sobre os outros campos acesse esse [link](https://www.cloudflare.com/learning/dns/dns-records/dns-srv-record/)
+Aqui o <span style="color:rgb(255, 255, 0)">xamp</span> é o <span style="color:rgb(255, 255, 0)">serviço</span> rodando, <span style="color:rgb(65, 105, 255)">://</span> diz respeito ao protocolo que é o <span style="color:rgb(65, 105, 255)">TCP</span>, <span style="color:rgb(206, 0, 86)">youtube</span> é o nossos <span style="color:rgb(206, 0, 86)">domínio</span>, 3600 o TTL, <span style="color:rgb(0, 176, 80)">10</span> é a <span style="color:rgb(0, 176, 80)">prioridade</span>, o **uso** será sempre para o servidor configurado com o **menor numero**, temos o <span style="color:rgb(112, 48, 160)">20</span> que se refere a o <span style="color:rgb(112, 48, 160)">peso</span>, que é usado para o [[Balanceador de Carga]] decidir para qual servidor mandar mais carga, porém ele é usado somente quando ambos os servidores tem a mesma prioridade, o maior valor nesse campo recebe mais carga, e finalmente o numero **5269**, é a **porta** em que o serviço esta rodando.
 
 ## Dynamic Host Configuration Protocol (DHCP)
 
