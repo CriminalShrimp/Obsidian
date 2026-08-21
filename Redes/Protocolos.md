@@ -212,7 +212,9 @@ zone "135.251.142.in-addr.arpa" {
 	type master; 
 	file "/etc/bind/db.142.251.135"; # Caminho do arquivo onde vão as regras };
 
-Mas caso não houver essa configuração é necessário colocar ele por completo, 238.135.251.142.in-addr.arpa.
+Mas caso não houver essa configuração é necessário colocar ele por completo,
+; The PTR
+238.135.251.142.in-addr.arpa.		IN	 PTR 	studio.youtube.com.
 ##### Server (SRV)
 
 Quando temos um serviço que roda em uma porta especifica, precisamos usar esse registro para apontar para o **endereço** e o **numero da porta**, também é opcional. Um exemplo de registro desse seria assim:  

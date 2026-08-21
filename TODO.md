@@ -70,17 +70,17 @@
 		- [x] BGP
 		- [x] ICMP
 		- [ ] SMTP
-		- [/] DNS
+		- [x] DNS
 		- [ ] WebSocket
 		- [ ] UDP
 		- [ ] TLS
 		- [ ] TCP/IP
 		- [ ] QUIC
 		- [ ] FTP
-		- [/] DHCP
+		- [?] DHCP
 		- [ ] HTTP
 	- [ ] [[Modelo OSI e Modelo TCP IP]]
-- [ ] Terminar o curso do Linux 
+- [/] Terminar o curso do Linux 🔺
 - [ ] Nano/Vim no Linux
 - [ ] Programação (Java,Python,etc)
 ## Obisidian 2027 Primeiro Semestre

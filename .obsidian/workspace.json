@@ -49,8 +49,7 @@
               "title": "Abreviações"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "porem",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -225,10 +224,10 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "9afb7dec79881ba3",
+  "active": "61bfb8793da18da8",
   "lastOpenFiles": [
-    "TODO.md",
     "Redes/Protocolos.md",
+    "TODO.md",
     "Abreviações.md",
     "Trash/Imagens/Img Redes/DNS Zone.png",
     "Trash/Imagens/Img Redes/DNS Zone File.png",
