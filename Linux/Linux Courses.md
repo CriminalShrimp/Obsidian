@@ -3,11 +3,12 @@
 	**Conteúdo:** 
 		Red Hat Systems Administration (EX200) 
 		Introduction to Linux (LFS101)
-		[Gentoo Handbook](https://www.gentoo.org/support/documentation/).
-		[Ubuntu Documentation](https://help.ubuntu.com/community/CommunityHelpWiki).
-		[Fedora Documentation](https://docs.fedoraproject.org/en-US/fedora/latest/).
-		[Linux Pages](http://man7.org/linux/man-pages/).
-		[openSUSE Documentation](https://doc.opensuse.org/)
+		**Documentações:**
+			[Gentoo Handbook](https://www.gentoo.org/support/documentation/).
+			[Ubuntu Documentation](https://help.ubuntu.com/community/CommunityHelpWiki).
+			[Fedora Documentation](https://docs.fedoraproject.org/en-US/fedora/latest/).
+			[Linux Pages](http://man7.org/linux/man-pages/).
+			[openSUSE Documentation](https://doc.opensuse.org/)
 		
 ----
 # Introdução

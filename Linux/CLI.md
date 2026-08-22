@@ -1,5 +1,5 @@
 **Sumário**
-	**Tags:** #Linux #Dica
+	**Tags:** #Linux #Dica #Comandos
 	**Conteúdo:** Introduction to Linux (LFS101)
 	
 ----
@@ -27,34 +27,7 @@ Na hora de realizar comandos na CLI a seguinte sintaxe deve ser seguida:
 
 <span style="color:rgb(0, 176, 240)">Logo em seguida vem as opções que podem ser mais que uma, quando vamos usar uma opção ela vem antecedida com um - ou dois --, quando usado com somente um - significa que estamos usando a abreviação de um palavra, já quando contem dois -- tudo é tratado como uma palavra.</span> 
 
-# Monitoranto processos pela CLI
-
-On the command line, you can list all active processes by using the `top` command.
-
-The `top` command launches an interactive application that runs in the terminal, so there is no command prompt after starting it. Instead, the Terminal window displays a list of processes by PID, CPU percentage, RAM usage, name, and other attributes.
-
-top - 22:09:52 up  3:16,  1 user,  load average: 0.00, 0.00, 0.00
-Tasks: 125 total,   1 running, 124 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  0.2 sy,  0.0 ni, 99.7 id,  0.0 wa,  0.0 hi,  0.2 si,  0.0 st
-MiB Mem :   1770.8 total,   1232.2 free,    411.8 used,    280.7 buff/cache
-MiB Swap:      0.0 total,      0.0 free,      0.0 used.   1359.0 avail Mem
-
-    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-      1 root      20   0  106300  15896  10360 S   0.0   0.9   0:01.83 systemd
-      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kthreadd
-      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
-      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
-      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
-      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
-      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
-     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_kthre
-     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude
-[...]
-
-The list updates regularly, depending on how it is sorted. By default, the process list is sorted by CPU percentage. To make the sort column bold, press **x** on your keyboard. To change the designated sort column, press the less than symbol (`<`) or the greater than symbol (`>`) on your keyboard. Press **R** to reverse the sort order.
-
-To exit the `top` command and return to a command prompt, press **q**.
-
+# Monitorando Processos 
 #### Stopping a Process on the Command Line
 
 You can use the `top` interface to stop a process, but first you must determine the ID for the process that you intend to stop.
@@ -103,14 +76,16 @@ root   12     2  0 18:53 ?     00:00:00 [rcu_tasks_rude_]
 root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
 [...]
 # Comandos 
+
 Parâmetros de buscas 
 
 |?| Procurar qualquer caráter.
 | * | Procurar por todas as possiblidades de texto.
 |[set]| Procura por qualquer caráter colocado na combinação, por exemplo [ g - v].
 |[!set]| Ao contrario por tudo que não contem o que há no campo.
+
 ## Básicos
-#Comandos 
+
 #### locate - Procura em todo o sistema pelo texto que foi inserido na busca. 
 
 #### cd - **C**hange **D**irectory, serve para entrar em outra "pasta".
@@ -151,6 +126,25 @@ ls  <span style="color:rgb(0, 176, 240)">opções </span>  <span style="color:rg
 -**man -f** - Gera uma breve descrição das paginas e capítulos.
 -**man -k** - Mostra todas as paginas que contem a palavra usada.
 #### info - Traz as informações sobre o que foi procurado
+
+## Processos
+
+Antes de vermos os comandos é sobre processos é importante entender alguns conceitos sobre <span style="color:rgb(65, 105, 255)">Processos</span>, <span style="color:rgb(0, 176, 80)">Threads</span> e <span style="color:rgb(206, 0, 86)">Tasks</span>.
+
+De forma simples <span style="color:rgb(65, 105, 255)">processos</span> são os programas ou comandos que estão em execução, e esses por sua vez são a execução de uma ou mais *thread*. Cada processo necessita de uma certa quantidade de recursos da máquina, esses recursos são alocados pelo kernel, um exemplo de processo seria o **Download**. Existem diferentes tipos de processos. Já a <span style="color:rgb(0, 176, 80)">thread</span> é o responsável por executar o trabalho. Como por exemplo existe o processo do **Download**, e dentro dele a thread responsável por baixar o arquivo. Existem também as <span style="color:rgb(0, 176, 80)">Multithreads</span> ou "Multitarefas" que seriam várias threads dentro de um processo realizando **vários downloads**, ou fazendo diversas coisas. E por fim temos as <span style="color:rgb(206, 0, 86)">tasks</span> é o que deve ser feito, usando como exemplo seria a missão de **fazer o download**.
+
+Fazendo uma analogia para entender e **resumir**, o <span style="color:rgb(65, 105, 255)">processo</span> é uma <span style="color:rgb(65, 105, 255)">fabrica</span> que disponibiliza recursos e ferramentas, <span style="color:rgb(0, 176, 80)">thread</span> é o <span style="color:rgb(0, 176, 80)">operário</span> que realizara o serviço, e <span style="color:rgb(206, 0, 86)">task</span> é o <span style="color:rgb(206, 0, 86)">serviço a para ser feito</span>.
+
+#### top - Lista os processos ativos.
+
+Esse é um comando onde transforma o seu terminal em um sistema de monitoramento em tempo real, ele é dividido em duas partes principais, no começo temos as estatísticas com dados como usuários, tempo ligado, estado das *Tasks*, dados da [[Computador#Central Processing Unit (CPU)|CPU]], e abaixo delas temos dados de [[Computador#Memória RAM|Memoria RAM]] e de [[Computador#Dispositivo de Armazenamento|Armazenamento]]. E ate o final da tela temos as tabelas com os processos, contendo informações relacionadas aos processos a qual usuário ela pertence, comando usado, consumo de recursos, tempo ativa, etc.
+
+Para mudar como a tabela esta sendo listada usando a tecla `shift + {tecla}`, alguma das combinações mais importantes são: 
+
+##### p - Lista por uso da CPU
+
+
+####
 ## Sistema
 #### shutdown - Faz o processo de desligamento padrão, executando rotinas, finalizando serviços e processos e desligando a máquina. 
 shutdown <span style="color:rgb(65, 105, 255)">Opções</span> <span style="color:rgb(0, 176, 80)">Tempo</span> Mensagem

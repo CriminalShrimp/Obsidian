@@ -5,7 +5,7 @@ Ainda não sei o que vai virar isso aqui.
 
 #### Processo
 
-De forma simples são os programas ou comandos que estão em execução, e esses por sua vez são a execução de uma ou mais *Thread*. Cada processo necessita de uma certa quantidade de recursos da máquina, esses recursos são alocados pelo kernel, um exemplo de processo seria o **Download**.
+De forma simples são os programas ou comandos que estão em execução, e esses por sua vez são a execução de uma ou mais *Thread*. Cada processo necessita de uma certa quantidade de recursos da máquina, esses recursos são alocados pelo kernel, um exemplo de processo seria o **Download**. Existem diferentes tipos de processos 
 
 #### Thread
 
