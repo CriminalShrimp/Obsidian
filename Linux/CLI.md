@@ -27,54 +27,6 @@ Na hora de realizar comandos na CLI a seguinte sintaxe deve ser seguida:
 
 <span style="color:rgb(0, 176, 240)">Logo em seguida vem as opções que podem ser mais que uma, quando vamos usar uma opção ela vem antecedida com um - ou dois --, quando usado com somente um - significa que estamos usando a abreviação de um palavra, já quando contem dois -- tudo é tratado como uma palavra.</span> 
 
-# Monitorando Processos 
-#### Stopping a Process on the Command Line
-
-You can use the `top` interface to stop a process, but first you must determine the ID for the process that you intend to stop.
-
-In the `top` interface, press **L** on your keyboard. Interactive prompts in the `top` interface appear above the column labels.
-
-top - 22:09:52 up  3:16,  1 user,  load average: 0.00, 0.00, 0.00
-Tasks: 125 total,   1 running, 124 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  0.2 sy,  0.0 ni, 99.7 id,  0.0 wa,  0.0 hi,  0.2 si,  0.0 st
-MiB Mem :   1770.8 total,   1232.2 free,    411.8 used,    280.7 buff/cache
-MiB Swap:      0.0 total,      0.0 free,      0.0 used.   1359.0 avail Mem
-**`Locate string`**
-    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-
-Type the name of the process that you want to stop after the `Locate string` prompt, and then press **Enter**. The `top` interface is updated to display any matches for your search term. Review the list of matches for the process that you want to stop, and take note of its PID.
-
-To stop the process, press **k** on your keyboard. Enter the PID of the process into the `top` prompt and then press **Enter**.
-
-
-Press **Enter** again when the `top` command prompts you for the signal to send.
-
-You can also use the `kill` command to terminate a process. The `kill` command is not an interactive utility so you must provide the ID of the process to terminate. In the following example you terminate the process with the ID of 7460.
-
-[user@host ~]$ **`kill 7460`**
-
-#### Finding a Process ID on the Command Line
-
-You can retrieve a PID without launching the `top` command by using the `pgrep` command.
-
-[user@host ~]$ **`pgrep gedit`**
-3680
-
-You can view processes noninteractively by using the `ps` command with the `-e` option to include every running process, and the `-f` option to mimic the layout of the `top` interface. Because there are hundreds of lines of output, you can pipe the output to the `less` command so that you can scroll through it. To exit the `less` command before the end of the list, press **q** on your keyboard.
-
-[user@host ~]$ **`ps -ef | less`**
-UID   PID  PPID  C STIME TTY       TIME CMD
-root    1     0  0 18:53 ?     00:00:01 /usr/lib/systemd/systemd...
-root    2     0  0 18:53 ?     00:00:00 [kthreadd]
-root    3     2  0 18:53 ?     00:00:00 [rcu_gp]
-root    4     2  0 18:53 ?     00:00:00 [rcu_par_gp]
-root    5     2  0 18:53 ?     00:00:00 [netns]
-root    7     2  0 18:53 ?     00:00:00 [kworker/0:0H-events_highpri]
-root    9     2  0 18:53 ?     00:00:00 [mm_percpu_wq]
-root   11     2  0 18:53 ?     00:00:00 [rcu_tasks_kthre]
-root   12     2  0 18:53 ?     00:00:00 [rcu_tasks_rude_]
-root   13     2  0 18:53 ?     00:00:00 [rcu_tasks_trace]
-[...]
 # Comandos 
 
 Parâmetros de buscas 
@@ -137,14 +89,22 @@ Fazendo uma analogia para entender e **resumir**, o <span style="color:rgb(65, 1
 
 #### top - Lista os processos ativos.
 
-Esse é um comando onde transforma o seu terminal em um sistema de monitoramento em tempo real, ele é dividido em duas partes principais, no começo temos as estatísticas com dados como usuários, tempo ligado, estado das *Tasks*, dados da [[Computador#Central Processing Unit (CPU)|CPU]], e abaixo delas temos dados de [[Computador#Memória RAM|Memoria RAM]] e de [[Computador#Dispositivo de Armazenamento|Armazenamento]]. E ate o final da tela temos as tabelas com os processos, contendo informações relacionadas aos processos a qual usuário ela pertence, comando usado, consumo de recursos, tempo ativa, etc.
+Esse é um comando onde transforma o seu terminal em um sistema de monitoramento em tempo real, ele é dividido em duas partes principais, no começo temos as estatísticas com dados como usuários, tempo ligado, estado das *Tasks*, dados da [[Computador#Central Processing Unit (CPU)|CPU]], e abaixo delas temos dados de [[Computador#Memória RAM|Memória RAM]] e de [[Computador#Dispositivo de Armazenamento|Armazenamento]]. E ate o final da tela temos as tabelas com os processos, contendo informações relacionadas aos processos a qual usuário ela pertence, comando usado, consumo de recursos, tempo ativa, etc.
 
-Para mudar como a tabela esta sendo listada usando a tecla `shift + {tecla}`, alguma das combinações mais importantes são: 
+> Vale a pena usar o btop, uma versão com mais detalhes e mais fácil de ser compreendida, e também o atop para mais dados de recursos sendo usados.
 
+Usando **?** ou **h** é possível interagir com a tabela. Para mudar como a tabela esta sendo listada usando a tecla `shift + {tecla}`, alguma das combinações mais importantes são: 
 ##### p - Lista por uso da CPU
 
+##### m - Lista por uso de Memória
 
-####
+##### k - Usado para finalizar um processo, basta fornecer o PID para terminar o processo.
+#### ps - Gera uma "print" de processos rodando.
+
+##### ef - Mostra todos os processos detalhadamente.
+
+#### at - Usado para programar a execução de um comando
+
 ## Sistema
 #### shutdown - Faz o processo de desligamento padrão, executando rotinas, finalizando serviços e processos e desligando a máquina. 
 shutdown <span style="color:rgb(65, 105, 255)">Opções</span> <span style="color:rgb(0, 176, 80)">Tempo</span> Mensagem
