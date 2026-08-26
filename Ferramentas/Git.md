@@ -50,7 +50,7 @@ git commit <span style="color:rgb(65, 105, 255)">OPÇÕES</span> - "Registra" as
 	<span style="color:rgb(65, 105, 255)">-a</span>, --all
 		Envia todos os arquivos modificados
 	-<span style="color:rgb(65, 105, 255)">--amend</span>
-		Usando o `-m` é possível modificar a mensagem do ultimo commit, sem usar o `-m` o editor de texto será aberto para digitar a mensagem. Usando `--no-edit` adicionamos os arquivos sem mudar a mensagem anterior
+		Usando o `-m` é possível modificar a mensagem do último commit, sem usar o `-m` o editor de texto será aberto para digitar a mensagem. Usando `--no-edit` adicionamos os arquivos sem mudar a mensagem anterior
 	<span style="color:rgb(65, 105, 255)">-m,</span> --message "MENSAGEM"
 		Adiciona sua mensagem ao commit, usando `-am` é possível enviar todos os arquivos e o comentário junto. Além disso existe como adicionar dados específicos no commit usando o `GIT_AUTHOR_` (identifica o autor original do código) que ou `GIT_COMMITTER_` (identifica quem realizou o commit), e com eles é possível usar `DATE`, `EMAIL` e `NAME`.
  

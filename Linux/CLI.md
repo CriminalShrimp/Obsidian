@@ -40,7 +40,7 @@ Parâmetros de buscas
 
 #### locate - Procura em todo o sistema pelo texto que foi inserido na busca. 
 
-#### cd - **C**hange **D**irectory, serve para entrar em outra "pasta".
+#### cd - **C**hange **D**irectory movimenta-se pelo sistema.
 **cd ..** - Volta para a **Home**
 **cd -**  - Volta para o diretório anterior.
 #### ls - Usado para listar arquivos.
@@ -60,17 +60,22 @@ ls  <span style="color:rgb(0, 176, 240)">opções </span>  <span style="color:rg
 **rm -rf** - Força o diretório. 
 #### tree - 
 #### find  - Usado comumente para<span style="color:rgb(255, 255, 0)"> procurar arquivos no sistema.</span>
-**-type d - name** - Procura por diretórios com o nome inserido.
-**-type f - name** - Procura por arquivos com o nome inserido.
-**-exec** <span style="color:rgb(0, 176, 80)">comando</span> - É possível executar comandos como <span style="color:rgb(255, 255, 0)">rm</span>, <span style="color:rgb(255, 255, 0)">cp</span> entre outros com o find também.
--**/ -(<span style="color:rgb(255, 255, 0)">x</span>)time** - Serve para procurar para arquivos passeados em seu tempo, trocando o <span style="color:rgb(255, 255, 0)">x</span> é é possível pesquisar pelo seu ultimo acesso, data de criação entre outras opções.
--**/ -size** - Procura pelo tamanho dos arquivos.
+
+**-type d - name**
+	Procura por diretórios com o nome inserido.
+**-type f - name**
+	Procura por arquivos com o nome inserido.
+**-exec** <span style="color:rgb(0, 176, 80)">comando</span>
+	É possível executar comandos como <span style="color:rgb(255, 255, 0)">rm</span>, <span style="color:rgb(255, 255, 0)">cp</span> entre outros com o find também.
+-**/ -(<span style="color:rgb(255, 255, 0)">x</span>)time**
+	Serve para procurar para arquivos passeados em seu tempo, trocando o <span style="color:rgb(255, 255, 0)">x</span> é possível pesquisar pelo seu último acesso, data de criação entre outras opções.
+-**/ -size**
+	Procura pelo tamanho dos arquivos.
+
 #### which  - Procura por programas com o nome colocado na pesquisa e mostra sua localização.
 #### whereis  - Além de procurar por programas também procura por arquivos com o nome na pesquisa.
 #### timedatectl - 
-#### ps aux - 
-#### top - Mostra os processos do sistema.
-#### htop -É similar ao top, porém permite navegar e interagir  a tela.
+
 #### cat - Usado para criar arquivos.
 #### cp - Copia o arquivo.
 #### man - É a abreviação de manual, esse comando mostra dados e informações sobre o que deseja.
@@ -87,31 +92,45 @@ De forma simples <span style="color:rgb(65, 105, 255)">processos</span> são os 
 
 Fazendo uma analogia para entender e **resumir**, o <span style="color:rgb(65, 105, 255)">processo</span> é uma <span style="color:rgb(65, 105, 255)">fabrica</span> que disponibiliza recursos e ferramentas, <span style="color:rgb(0, 176, 80)">thread</span> é o <span style="color:rgb(0, 176, 80)">operário</span> que realizara o serviço, e <span style="color:rgb(206, 0, 86)">task</span> é o <span style="color:rgb(206, 0, 86)">serviço a para ser feito</span>.
 
-#### top - Lista os processos ativos.
+##### top - Lista os processos ativos.
 
 Esse é um comando onde transforma o seu terminal em um sistema de monitoramento em tempo real, ele é dividido em duas partes principais, no começo temos as estatísticas com dados como usuários, tempo ligado, estado das *Tasks*, dados da [[Computador#Central Processing Unit (CPU)|CPU]], e abaixo delas temos dados de [[Computador#Memória RAM|Memória RAM]] e de [[Computador#Dispositivo de Armazenamento|Armazenamento]]. E ate o final da tela temos as tabelas com os processos, contendo informações relacionadas aos processos a qual usuário ela pertence, comando usado, consumo de recursos, tempo ativa, etc.
 
 > Vale a pena usar o btop, uma versão com mais detalhes e mais fácil de ser compreendida, e também o atop para mais dados de recursos sendo usados.
 
-Usando **?** ou **h** é possível interagir com a tabela. Para mudar como a tabela esta sendo listada usando a tecla `shift + {tecla}`, alguma das combinações mais importantes são: 
-##### p - Lista por uso da CPU
+Para ver as opções e interações com a tabela basta usar **?** ou **h**, mostrara comandos interativos com o comando. Para mudar como a tabela esta sendo listada usando a tecla `shift + {tecla}`, alguma das combinações mais importantes são:
 
-##### m - Lista por uso de Memória
-
-##### k - Usado para finalizar um processo, basta fornecer o PID para terminar o processo.
-#### ps - Gera uma "print" de processos rodando.
+**p**
+	Lista processos por uso de CPU.
+**m**
+	Listar processos por uso de memória.
+**k**
+	Encerrar um processo. Não precisa usar o shift, basta fornecer o id do processo para encerrá-lo.
+##### ps - Gera uma "print" de processos rodando.
 
 ##### ef - Mostra todos os processos detalhadamente.
 
-#### at - Usado para programar a execução de um comando
+#### Processos programados
 
+Comandos que são usados para realizar tarefas em períodos específicos ou cotidianamente, o mais relevante deles é o `cron`, usado juntamente com o `sleep`.
+##### at - Roda uma tarefa uma vez.
+##### cron - Serviço de rotinas e tarefas.
+##### crontab - Arquivo e comando usado para gerenciar as rotinas do cron.
+
+O crontab tem 6 colunas, que da esquerda para a direita representam **Minutos** pode ir de **0** a **59**, **Horas** **0** a **23**, **Dias** **1** a **31**, **Messes** **1** a **12** ou de **jan** a **dez**, **Dias da Semana** **0** a **6** ou de **sun** a **sat**, e por último o **Comandos** que pode ser também um **script**. Caso aparece na coluna apareça o símbolo `*` ele simboliza do primeiro até o último valor do campo.
+
+##### anacron - 
+##### sleep - 
 ## Sistema
 #### shutdown - Faz o processo de desligamento padrão, executando rotinas, finalizando serviços e processos e desligando a máquina. 
-shutdown <span style="color:rgb(65, 105, 255)">Opções</span> <span style="color:rgb(0, 176, 80)">Tempo</span> Mensagem
+
+<span style="color:rgb(65, 105, 255)">now</span>
+	Desliga a maquina imediatamente
 **<span style="color:rgb(65, 105, 255)">-r</span>, --reboot**
 	Reinicia o sistema
 **<span style="color:rgb(65, 105, 255)">-h</span>,** <span style="color:rgb(0, 176, 80)">TIME</span>
 	 Colocando `now` faz com que o sistema seja desligado na hora. Também da para colocar tempo específico para desligar o sistema
+
 Ex: `shutdown -h 10:00 "Shutting down for scheduled maintenance."`
 #### halt - Para o sistema operacional porém ainda deixa a máquina ligada.
 #### poweroff - Parecido com shutdown porém funciona de uma forma mais "bruta", cortando a energia do sistema, não rodando scripts e rotinas antes de desligar.
