@@ -36,6 +36,20 @@
             }
           },
           {
+            "id": "15fcdbfb07450d59",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Sistema de Arquivos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sistema de Arquivos"
+            }
+          },
+          {
             "id": "184a6ba47f45a02a",
             "type": "leaf",
             "state": {
@@ -84,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ultimo",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -227,14 +241,15 @@
   },
   "active": "6f2193a5ede09309",
   "lastOpenFiles": [
-    "Ferramentas/Git.md",
+    "Linux/Linux Courses.md",
+    "Linux/Sistema de Arquivos.md",
+    "Abreviações.md",
+    "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "Linux/CLI.md",
+    "Ferramentas/Git.md",
     "Arquitetura Computacional/Computador.md",
     "Explicações.md",
-    "Abreviações.md",
-    "Linux/Linux Courses.md",
     "Linux/Distros.md",
-    "Linux/Sistema de Arquivos.md",
     "TODO.md",
     "Redes/Protocolos.md",
     "Trash/Imagens/Img Redes/DNS Zone.png",
@@ -258,7 +273,6 @@
     "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
     "Trash/Imagens/Img Conceitos/ECDH.md",
     "Cisco/Defesa de Rede - Cisco.md",
-    "RedTeam/Spoofing.md",
     "Excalidraw",
     "Trash/Imagens/Img Ferramentas/Nmap Interface.png",
     "Trash/Imagens/Img Ferramentas/WireShark Interface.png",

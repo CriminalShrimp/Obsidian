@@ -6,7 +6,7 @@
 # Introdução
 
 CLI esta presente em praticamente todos software, e nele é possível fazer coisas de formar mais eficaz que por interface gráfica. Um site que com vir a ser útil é o [explainshell.com](https://explainshell.com/), ele oferece uma explicação detalhada sobre cada parte do comando que esta sendo realizado. 
-<span style="color:rgb(255, 255, 0)">Adendo</span>: **sudo systemctl stop/start gdm**  **sudo telinit 3** para stop e **sudo telinit 5** para o start) para ativar a interface (GUI).
+<span style="color:rgb(255, 255, 0)">Adendo</span>: **sudo systemctl stop/start gdm** **sudo telinit 3** para stop e **sudo telinit 5** para o start da interface (GUI).
 
 Comumente a CLI vai apresentar a seguinte composição de elementos:
 
@@ -119,8 +119,17 @@ Comandos que são usados para realizar tarefas em períodos específicos ou coti
 
 O crontab tem 6 colunas, que da esquerda para a direita representam **Minutos** pode ir de **0** a **59**, **Horas** **0** a **23**, **Dias** **1** a **31**, **Messes** **1** a **12** ou de **jan** a **dez**, **Dias da Semana** **0** a **6** ou de **sun** a **sat**, e por último o **Comandos** que pode ser também um **script**. Caso aparece na coluna apareça o símbolo `*` ele simboliza do primeiro até o último valor do campo.
 
-##### anacron - 
-##### sleep - 
+<span style="color:rgb(65, 105, 255)">-e</span>
+	Abre o editor de arquivo para criar as tarefes, se for a primeira vez ira aparecer um menu para escolher um de sua preferência. 
+<span style="color:rgb(65, 105, 255)">-u</span>
+	Especifica o nome do usuário que o arquivo será modificado.
+<span style="color:rgb(65, 105, 255)">-l</span>
+	Lista o local do arquivo crontab.
+<span style="color:rgb(65, 105, 255)">-T</span>
+	Testa a sintaxe do arquivo para validar se existem erros.
+
+##### anacron/anacrontab- Similar ao cron, porém assume que o sistema não fica ligado 24/7, e executa as tarefas quando o sistema é ligado novamente, diferente do cron que ignora a tarefa quando a maquina esta desligada.
+##### sleep - Usado para adiar ou suspender tarefas. 
 ## Sistema
 #### shutdown - Faz o processo de desligamento padrão, executando rotinas, finalizando serviços e processos e desligando a máquina. 
 
