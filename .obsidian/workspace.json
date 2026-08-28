@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -129,12 +129,11 @@
               "title": "tg-left-sidebar"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
+    "width": 283.5
   },
   "right": {
     "id": "50f367cb32660b6d",
@@ -239,13 +238,13 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "6f2193a5ede09309",
+  "active": "1e80c182f859c816",
   "lastOpenFiles": [
+    "Linux/CLI.md",
     "Linux/Linux Courses.md",
     "Linux/Sistema de Arquivos.md",
     "Abreviações.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
-    "Linux/CLI.md",
     "Ferramentas/Git.md",
     "Arquitetura Computacional/Computador.md",
     "Explicações.md",
