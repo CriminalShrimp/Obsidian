@@ -129,7 +129,8 @@
               "title": "tg-left-sidebar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -149,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Explicações.md",
+                "file": "Linux/Sistema de Arquivos.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +160,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Explicações"
+              "title": "Links inversos"
             }
           },
           {
@@ -168,12 +169,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Explicações.md",
+                "file": "Linux/Sistema de Arquivos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Explicações"
+              "title": "Links de saída"
             }
           },
           {
@@ -197,13 +198,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Explicações.md",
+                "file": "Linux/Sistema de Arquivos.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Explicações"
+              "title": "Sumário"
             }
           },
           {
@@ -221,7 +222,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 236.5
+    "width": 576.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,12 +239,13 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "1e80c182f859c816",
+  "active": "7e07f51518e40d3d",
   "lastOpenFiles": [
     "Linux/CLI.md",
-    "Linux/Linux Courses.md",
-    "Linux/Sistema de Arquivos.md",
     "Abreviações.md",
+    "Cisco/Defesa de Rede - Cisco.md",
+    "Linux/Sistema de Arquivos.md",
+    "Linux/Linux Courses.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "Ferramentas/Git.md",
     "Arquitetura Computacional/Computador.md",
@@ -271,7 +273,6 @@
     "Conceitos/Criptografia.md",
     "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
     "Trash/Imagens/Img Conceitos/ECDH.md",
-    "Cisco/Defesa de Rede - Cisco.md",
     "Excalidraw",
     "Trash/Imagens/Img Ferramentas/Nmap Interface.png",
     "Trash/Imagens/Img Ferramentas/WireShark Interface.png",

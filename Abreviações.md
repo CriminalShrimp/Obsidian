@@ -7,7 +7,6 @@ Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam
 ###### GID = **G**roup **Id**entifier é uma propriedade numera que identifica um grupo de usuários.
 ###### Log  = Abreviação de logfile (arquivo de registro) ou logging (processo de registro de eventos.
 ###### BYOD = **B**ring **Y**our **O**wn **D**evice é o conceito de levar seus próprios dispositivos para o trabalho.
-###### DHCP = **D**ynamic **H**ost **C**onfiguration **P**rotocol atribui automaticamente endereços IP a dispositivos.
 
 ###### DNSSEC = **D**omain **N**ame **S**ystem **Se**curity **E**xtensions é um conjunto de extensões que adiciona segurança ao protocolo [[Protocolos#Domain Name System (DNS)|DNS]].
 ###### ICMP = **I**nternet **C**ontrol **M**essage **P**rotocol é usado para comunicar informações de nível de rede.
