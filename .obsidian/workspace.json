@@ -222,7 +222,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 576.5
+    "width": 203.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,7 +239,7 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "7e07f51518e40d3d",
+  "active": "15fcdbfb07450d59",
   "lastOpenFiles": [
     "Linux/CLI.md",
     "Abreviações.md",
