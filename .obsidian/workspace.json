@@ -129,8 +129,7 @@
               "title": "tg-left-sidebar"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -241,11 +240,12 @@
   },
   "active": "15fcdbfb07450d59",
   "lastOpenFiles": [
+    "Conceitos/Case Sensitive.md",
+    "Linux/Sistema de Arquivos.md",
+    "Linux/Linux Courses.md",
     "Linux/CLI.md",
     "Abreviações.md",
     "Cisco/Defesa de Rede - Cisco.md",
-    "Linux/Sistema de Arquivos.md",
-    "Linux/Linux Courses.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "Ferramentas/Git.md",
     "Arquitetura Computacional/Computador.md",
@@ -272,7 +272,6 @@
     "Ferramentas/Ettercap.md",
     "Conceitos/Criptografia.md",
     "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
-    "Trash/Imagens/Img Conceitos/ECDH.md",
     "Excalidraw",
     "Trash/Imagens/Img Ferramentas/Nmap Interface.png",
     "Trash/Imagens/Img Ferramentas/WireShark Interface.png",
