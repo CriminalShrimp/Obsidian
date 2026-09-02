@@ -75,11 +75,29 @@ Para mudar uma pasta de lugar basta colocar `mv` pasta e a  pasta de destino **`
 
 E para deletar pastas usamos o **`rm`** e em seguida o nome da pasta, **`rm Pasta`**.
 
-# Editores de Texto (Vim/Nano)
+# Editores de Texto
 
-Assim  como tudo no Linux temos os editores de texto via interface e via linha de comando, de interface temos o <span style="color:rgb(206, 0, 86)">gedit</span> que tem uma interface bem intuitiva de se mexer, já na linha de comando temos <span style="color:rgb(0, 176, 80)">nano</span> e <span style="color:rgb(0, 176, 80)">vim</span>, digamos que o nano é uma versão mais simplificada e mais fácil que o vim, que é a principal razão para ter esse tópico.
+Assim como tudo no Linux temos os editores de texto via interface e via linha de comando, de interface temos o <span style="color:rgb(206, 0, 86)">gedit</span> que tem uma interface bem intuitiva de se mexer, já na linha de comando temos <span style="color:rgb(0, 176, 80)">nano</span> e <span style="color:rgb(0, 176, 80)">vim</span>, digamos que o nano é uma versão mais simplificada e mais fácil que o vim. Mas é possível criar e escrever em arquivos diretamente no terminal usando `echo texto > arquivo`, para adicionar o conteúdo no final do arquivo temos que usar `>>`.
 
-FAZER COMANDOS NANO/VIM
+## Gedit
+
+Para abrir um arquivo basta digitar `gedit nome_do_arquivo`, caso o arquivo não exista, ele será criado. Ele é bem intuitivo, similar ao **Notepad**, possuem uma interface fácil de usar e conta também conta com *plugins* para melhorar seu uso.
+
+<figure style="text-align: center;">
+  <img src="Gedit.png" style="margin: 0 auto;">
+  <figcaption>Gedit</figcaption>
+</figure>
+
+## Nano
+
+Para abrir um arquivo basta digitar `nano nome_do_arquivo`, caso o arquivo não exista, ele será criado. As duas ultimas linha no nano mostram atalhos para comandos, o símbolo **^** representa o **CTRL**. Os mais importantes são `G` que mostra uma tela de ajuda, e `X` usado para sair do arquivo.
+
+<figure style="text-align: center;">
+  <img src="Nano.png" style="margin: 0 auto;">
+  <figcaption>Exemplo Nano</figcaption>
+</figure>
+
+## Vim
 # Permissões 
 
 Existem níveis de permissão para usuários (UID), grupos (GID), pastas e arquivos. O primeiro usuário criado no sistema recebe o valor de 1000 em seu [[Abreviações#UID = User identifier é uma propriedade numérica que identifica o usuário no sistema|UID]], já os que forem entre 100 a 999 são conhecidos como usuários do sistema e os valores de 0 a 99 são reservados para o Kernel. O [[Abreviações#GID = Group identifier é uma propriedade numera que identifica um grupo de usuários|GID]] funciona de forma similar ao UID, os grupos começam a partir do numero 1000 sendo este criado ao primeiro usuário, é possível que um usuário tenha acesso a vários grupos 
