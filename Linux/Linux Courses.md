@@ -98,6 +98,9 @@ Para abrir um arquivo basta digitar `nano nome_do_arquivo`, caso o arquivo não 
 </figure>
 
 ## Vim
+
+Um acrônimo de **V**i **IM**proved, e muitas vezes chamado somente de **vi**, é um editor nada amigável comparados com outros, ele só utiliza comandos via teclado. Para facilitar a aprendizagem existe o `vimtutor`, que passa um tutorial para orientar o usuário. Uma coisa importante do vim são seus 3 modos: **Command** que é o modo padrão do vim, cada tecla equivale a um comando para o vim. O **Insert**  serve para inserir texto no arquivo, para entrar nesse modo precisamos apertar a tecla *i*, e para sair dele usamos o *Esc*. E por ultimo temos o modo **Line**, para entrar nele ao digitar *:*, e para sair dele usamos o *Esc*
+
 # Permissões 
 
 Existem níveis de permissão para usuários (UID), grupos (GID), pastas e arquivos. O primeiro usuário criado no sistema recebe o valor de 1000 em seu [[Abreviações#UID = User identifier é uma propriedade numérica que identifica o usuário no sistema|UID]], já os que forem entre 100 a 999 são conhecidos como usuários do sistema e os valores de 0 a 99 são reservados para o Kernel. O [[Abreviações#GID = Group identifier é uma propriedade numera que identifica um grupo de usuários|GID]] funciona de forma similar ao UID, os grupos começam a partir do numero 1000 sendo este criado ao primeiro usuário, é possível que um usuário tenha acesso a vários grupos 
