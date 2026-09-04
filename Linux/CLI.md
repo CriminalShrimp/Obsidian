@@ -6,7 +6,7 @@
 # Introdução
 
 CLI esta presente em praticamente todos software, e nele é possível fazer coisas de formar mais eficaz que por interface gráfica. Um site que com vir a ser útil é o [explainshell.com](https://explainshell.com/), ele oferece uma explicação detalhada sobre cada parte do comando que esta sendo realizado. 
-<span style="color:rgb(255, 255, 0)">Adendo</span>: **sudo systemctl stop/start gdm** **sudo telinit 3** para stop e **sudo telinit 5** para o start da interface (GUI).
+<span style="color:rgb(255, 255, 0)">Adendo</span>: **sudo systemctl stop/start gdm** **sudo telinit 3** para stop e **sudo telinit 5** para o start da interface gráfica (GUI).
 
 Comumente a CLI vai apresentar a seguinte composição de elementos:
 
@@ -39,7 +39,6 @@ Parâmetros de buscas
 ## Básicos
 
 #### locate - Procura em todo o sistema pelo texto que foi inserido na busca. 
-
 #### cd - **C**hange **D**irectory movimenta-se pelo sistema.
 **cd ..** - Volta para a **Home**
 **cd -**  - Volta para o diretório anterior.
