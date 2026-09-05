@@ -13,7 +13,7 @@
 ----
 # Introdução
 
-Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel]] Linux, essas distribuições são de código aberto, o que significa que são disponibilizadas gratuitamente para todos e além disso tem os requisitos para rodar são mínimos. Dentre as distros (uma abreviação de Distributions) as mais famosas e usadas seriam <span style="color:rgb(161, 79, 140)">CentOS</span>, <span style="color:rgb(65, 105, 255)">Fedora</span>, <span style="color:rgb(255, 165, 0)">Ubuntu</span> e <span style="color:rgb(206, 0, 86)">Debian</span>, é possível ver mais sobre elas em [[Distros]]. Distros podem possuir interface gráfica [[Abreviações#gui]], porém todas suas funções também podem ser feitas pela [[Abreviações#CLI = Command Line Interface é onde são realizados os comandos do sistema.|command line interface]] mais conhecida como [[CLI]], existem vários terminais CLI como o xterm, konsole, terminator.
+Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel]] Linux, essas distribuições são de código aberto, o que significa que são disponibilizadas gratuitamente para todos e além disso tem os requisitos para rodar são mínimos. Dentre as distros (uma abreviação de Distributions) as mais famosas e usadas seriam <span style="color:rgb(161, 79, 140)">CentOS</span>, <span style="color:rgb(65, 105, 255)">Fedora</span>, <span style="color:rgb(255, 165, 0)">Ubuntu</span> e <span style="color:rgb(206, 0, 86)">Debian</span>, é possível ver mais sobre elas em [[Distros]]. Distros podem possuir [[Abreviações#GUI = **G**raphical **U**ser **I**nterface onde o usuário consegue interagir como programa por meio de botões imagens, ícones, etc.|GUI]], porém todas suas funções também podem ser feitas pela [[Abreviações#CLI = Command Line Interface é onde são realizados os comandos do sistema.|command line interface]] mais conhecida como **CLI**, existem vários terminais CLI como o xterm, konsole, terminator.
 
 <figure style="text-align: center;">
   <img src="LoginInterfaceGrafica.webp" style="margin: 0 auto;">
@@ -107,7 +107,11 @@ Um acrônimo de **V**i **IM**proved, e muitas vezes chamado somente de **vi**, �
 
 ## Emacs
 
-Um competidor do Vim, mas com propostas diferentes, altamente customizável e com diversas funcionalidades extras. No começo foi criado para ser usado no diretamente no console, mas obteve sua versção com interface 
+Um competidor do Vim, mas com propostas diferentes, altamente customizável e com diversas funcionalidades extras. No começo foi criado para ser usado no diretamente no console, mas obteve sua versão com GUI, ele pode ser usado muito além de um editor de texto, como para enviar e-mails ou ate como ferramenta de *debug*.
+
+### Tabela Comandos
+
+![[ComandosEmacs.pdf]]
 
 # Permissões 
 

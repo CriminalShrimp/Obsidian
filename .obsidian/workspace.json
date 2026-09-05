@@ -49,8 +49,7 @@
               "title": "Abreviações"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "interfac",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -115,8 +114,7 @@
               "title": "tg-left-sidebar"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -225,23 +223,26 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "6f2193a5ede09309",
+  "active": "1e80c182f859c816",
   "lastOpenFiles": [
-    "Linux/Linux Courses.md",
+    "Trash/Imagens/Img Linux/ComandosEmacs.pdf",
     "Linux/CLI.md",
+    "Ferramentas/Docker.md",
+    "Linux/Linux Courses.md",
+    "BlueTeam/Suricata.md",
+    "Abreviações.md",
     "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
     "RedTeam/Ataques de Engenharia Social.md",
     "RedTeam/Denial of Service (DDoS).md",
     "Trash/Imagens/Img Conceitos/ECDH.md",
     "Cisco/Defesa de Rede - Cisco.md",
     "RedTeam/Command N Control (CNC-C2).md",
-    "Commands for vi.pdf",
+    "Trash/Imagens/Img Linux/Commands for vi.pdf",
     "Trash/Imagens/Img Linux/VIM Key Commands.png",
     "Trash/Imagens/Img Linux/Nano.png",
     "Trash/Imagens/Img Linux/Gedit.png",
     "Linux/Sistema de Arquivos.md",
     "Conceitos/Case Sensitive.md",
-    "Abreviações.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "Ferramentas/Git.md",
     "Arquitetura Computacional/Computador.md",
@@ -260,9 +261,6 @@
     "Trash/Imagens/Img Redes/BGP.png",
     "Redes/Balanceador de Carga.md",
     "Redes/Gateway.md",
-    "Redes/Proxy.md",
-    "Redes/Switch.md",
-    "Redes/Modelo OSI e Modelo TCP IP.md",
     "Excalidraw",
     "Trash/Imagens/Img Ferramentas/Nmap Interface.png",
     "Trash/Modelo",

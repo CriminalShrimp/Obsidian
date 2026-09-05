@@ -9,6 +9,8 @@ Tags: #Linux #Redes #Firewall #RedTeam #BlueTeam
 ###### BYOD = **B**ring **Y**our **O**wn **D**evice é o conceito de levar seus próprios dispositivos para o trabalho.
 
 ###### DNSSEC = **D**omain **N**ame **S**ystem **Se**curity **E**xtensions é um conjunto de extensões que adiciona segurança ao protocolo [[Protocolos#Domain Name System (DNS)|DNS]].
+
+###### GUI = **G**raphical **U**ser **I**nterface onde o usuário consegue interagir como programa por meio de botões imagens, ícones, etc.
 ###### ICMP = **I**nternet **C**ontrol **M**essage **P**rotocol é usado para comunicar informações de nível de rede.
 ###### RIP = **P**rotocolo de **I**nformação de **R**oteamento permite que roteadores troquem informações sobre rotas em uma rede.
 ###### NTP = **N**etwork **T**ime **P**rotocol sincroniza os relógios de computadores em uma rede. 

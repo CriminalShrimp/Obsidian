@@ -24,7 +24,7 @@ Aqui vão algumas terminologias usadas com frequência quando estamos lidando co
 
 - **Docker Daemon:** Também chamado de **dockerd**, é um serviço que faz o gerenciamento de imagens, contêineres, rede e volumes. Ele funciona como se fosse um servidor.
 
-- **Docker Client:** É como os usuários de Docker interagem com o `dockerd`, isso ocorre via [[Abreviações#CLI = **C**ommand **L**ine **I**nterface é onde são realizados os comandos do sistema.|CLI]], mas também é possível fazer isso via interface gráfica usando o **Docker Desktop**.
+- **Docker Client:** É como os usuários de Docker interagem com o `dockerd`, isso ocorre via [[Abreviações#CLI = **C**ommand **L**ine **I**nterface é onde são realizados os comandos do sistema.|CLI]], mas também é possível fazer isso via [[Abreviações#GUI = **G**raphical **U**ser **I**nterface onde o usuário consegue interagir como programa por meio de botões imagens, ícones, etc.|GUI]] usando o **Docker Desktop**.
 
 - **Docker Registries:** Funciona como uma **biblioteca de imagens** de contêineres, e além disso ele é usado para gerenciar, armazenar e distribuir as imagens.
 

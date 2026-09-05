@@ -5,8 +5,8 @@
 ----
 # Introdução
 
-CLI esta presente em praticamente todos software, e nele é possível fazer coisas de formar mais eficaz que por interface gráfica. Um site que com vir a ser útil é o [explainshell.com](https://explainshell.com/), ele oferece uma explicação detalhada sobre cada parte do comando que esta sendo realizado. 
-<span style="color:rgb(255, 255, 0)">Adendo</span>: **sudo systemctl stop/start gdm** **sudo telinit 3** para stop e **sudo telinit 5** para o start da interface gráfica (GUI).
+CLI esta presente em praticamente todos software, e nele é possível fazer coisas de formar mais eficaz que por meio da [[Abreviações#GUI = **G**raphical **U**ser **I**nterface onde o usuário consegue interagir como programa por meio de botões imagens, ícones, etc.|GUI]]. Um site que com vir a ser útil é o [explainshell.com](https://explainshell.com/), ele oferece uma explicação detalhada sobre cada parte do comando que esta sendo realizado. 
+<span style="color:rgb(255, 255, 0)">Adendo</span>: **sudo systemctl stop/start gdm** **sudo telinit 3** para stop e **sudo telinit 5** para o start da GUI.
 
 Comumente a CLI vai apresentar a seguinte composição de elementos:
 
