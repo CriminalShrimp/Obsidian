@@ -142,3 +142,22 @@ O crontab tem 6 colunas, que da esquerda para a direita representam **Minutos** 
 Ex: `shutdown -h 10:00 "Shutting down for scheduled maintenance."`
 #### halt - Para o sistema operacional porém ainda deixa a máquina ligada.
 #### poweroff - Parecido com shutdown porém funciona de uma forma mais "bruta", cortando a energia do sistema, não rodando scripts e rotinas antes de desligar.
+
+## Contas
+
+#### sudo useradd - Cria um usuário novo.
+#### sudo passwd - Usado para criar uma senha a um usuário especifico.
+#### userdel - Usado para deletar um usuário.
+
+-r 
+	Deleta os arquivos do usuário 
+
+#### groupadd - Cria um novo grupo.
+#### groupdel - Remove um grupo.
+
+#### usermod - Usado para gerenciar usuários em grupos.
+
+**-a, --append**
+	Usado para adicionar o usuário a mais um grupo, deve ser usado com o parâmetro -G.
+**-r**, **--remove**
+	Remove o usuário do grupo especificado, deve ser usado com o parâmetro -G.

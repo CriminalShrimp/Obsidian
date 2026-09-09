@@ -26,6 +26,15 @@ Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel]] 
 
 Nos sistemas existe o usuário root que seria a conta que tem a permissão de administrador, o que seria a maior permissão possível de ter em um sistema, com ela é possível fazer qualquer modificação sem que o sistema interfira.
 
+Algo que aparecera toda vez que usar o Linux vai ser a palavra **sudo** vem de _<span style="color:rgb(255, 255, 0)">superuser do</span>_, bem sugestivo ao seu significado ele eleva as permissões do usuário para um "super usuário" tendo permissões para mexer em privilégios de pastas, arquivos, usuários, grupos entre várias outras coisas. Para ter acesso a esse modo basta colocar na CLI `sudo` pressionar `enter`, e inserir a senha que é escolhida no sistema, mas normalmente é a do próprio usuário.
+
+# Contas, Usuários e Grupos
+
+É possivel criar comandos customizados ou modificar ja existentes usando aliaes
+**sudo useradd**
+sudo passwd
+**userdel** **-r**
+
 # Manipulação de Pastas e Arquivos
 
 ## Arquivos
@@ -49,7 +58,7 @@ Para criar um arquivo comprimido `.tar` basta usar o comando `tar`. Argumento
 
 `--file` Especifica o nome do arquivo.
 
-Exemplo: [user@host Downloads]$ **`tar --create --gzip --file example.tar.gz example`**
+Exemplo: **`tar --create --gzip --file example.tar.gz example`**
 
 O formato `gzip` é bem comum no Linux. Também é possível usar outros formatos como `xz` ou `zstd`. O formato `xz` esta disponível para arquivos de aplicação. Na CLI use o comando `tar` coma opção  `--xz`.
 
@@ -65,11 +74,9 @@ Para extrair arquivos `.tar`, use o comando com `--extract`, em sequencia o arq
 
 ## Pastas
 
-A criação de pastas via interface é mamão com açúcar então aqui vamos ver somente a parte de criação via linha de comando.
+A criação de pastas via interface é mamão com açúcar então aqui vamos ver somente a parte de criação via linha de comando. Para criar uma pastar o comando é **`mkdir Pasta`**.
 
-Para criar uma pastar o comando é **`mkdir Pasta`**.
-
-Quando vamos copiar uma pasta com seus conteúdos precisamos usar a opção --recursive ou -r e em seguida as outras pastas que deseja copiar sem isso o conteúdo não é copiado **`cp --recursive PastaFilho PastaPai`**.
+Quando vamos copiar uma pasta com seus conteúdos precisamos usar a opção -`-recursive` ou `-r` e em seguida as outras pastas que deseja copiar sem isso o conteúdo não é copiado **`cp --recursive PastaFilho PastaPai`**.
 
 Para mudar uma pasta de lugar basta colocar `mv` pasta e a  pasta de destino **`mv Pasta1 PastaDestino`**, o comando `mv` também é usado para mudar nome da pasta basta colocar **`mv PastaNomeAntigo PastaNomeNovo`**.
 
@@ -119,9 +126,6 @@ Existem níveis de permissão para usuários (UID), grupos (GID), pastas e arqui
 
 Adicionar permissões de arquivos  
 
-# SUDO
-
-A palavras **sudo** vem de _<span style="color:rgb(255, 255, 0)">superuser do</span>_, bem sugestivo ao seu significado ele eleva as permissões do usuário para um "super usuário" tendo permissões para mexer em privilégios de pastas, arquivos, usuários, grupos entre várias outras coisas. Para ter acesso a esse modo basta colocar na CLI `sudo` pressionar `enter`, e inserir a senha que é escolhida no sistema, mas normalmente é a do próprio usuário.
 
 # Acesso Remoto (SSH)
 

@@ -49,7 +49,8 @@
               "title": "Abreviações"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -223,14 +224,15 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "1e80c182f859c816",
+  "active": "6f2193a5ede09309",
   "lastOpenFiles": [
-    "Trash/Imagens/Img Linux/ComandosEmacs.pdf",
-    "Linux/CLI.md",
-    "Ferramentas/Docker.md",
     "Linux/Linux Courses.md",
-    "BlueTeam/Suricata.md",
+    "Linux/CLI.md",
     "Abreviações.md",
+    "Linux/Sistema de Arquivos.md",
+    "Trash/Imagens/Img Linux/ComandosEmacs.pdf",
+    "Ferramentas/Docker.md",
+    "BlueTeam/Suricata.md",
     "Cisco/Packet Tracer/Packet Tracer/Cisco Exercicios.md",
     "RedTeam/Ataques de Engenharia Social.md",
     "RedTeam/Denial of Service (DDoS).md",
@@ -241,7 +243,6 @@
     "Trash/Imagens/Img Linux/VIM Key Commands.png",
     "Trash/Imagens/Img Linux/Nano.png",
     "Trash/Imagens/Img Linux/Gedit.png",
-    "Linux/Sistema de Arquivos.md",
     "Conceitos/Case Sensitive.md",
     "Arquitetura Computacional/Processo de Inicialização(Boot).md",
     "Ferramentas/Git.md",
@@ -271,7 +272,6 @@
     "Trash/Imagens/Img Ferramentas",
     "Trash/Imagens/Img Redes",
     "Trash/Imagens/Img RedTeam",
-    "Cisco/Packet Tracer/Packet Tracer/packet-tracer-logical-and-physical-mode-exploration.pksz",
     "Treino/Rotina Treino.canvas"
   ]
 }
