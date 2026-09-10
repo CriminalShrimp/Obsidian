@@ -145,11 +145,13 @@ Ex: `shutdown -h 10:00 "Shutting down for scheduled maintenance."`
 
 ## Contas
 
+Existem níveis de permissão para usuários (UID), grupos (GID), pastas e arquivos. O primeiro usuário criado no sistema recebe o valor de 1000 em seu [[Abreviações#UID = User identifier é uma propriedade numérica que identifica o usuário no sistema|UID]], já os que forem entre 100 a 999 são conhecidos como usuários do sistema e os valores de 0 a 99 são reservados para o Kernel. O [[Abreviações#GID = Group identifier é uma propriedade numera que identifica um grupo de usuários|GID]] funciona de forma similar ao UID, os grupos começam a partir do numero 1000 sendo este criado ao primeiro usuário, é possível que um usuário tenha acesso a vários grupos.
+
 #### sudo useradd - Cria um usuário novo.
 #### sudo passwd - Usado para criar uma senha a um usuário especifico.
 #### userdel - Usado para deletar um usuário.
 
--r 
+**-r**, **--remove** 
 	Deleta os arquivos do usuário 
 
 #### groupadd - Cria um novo grupo.
@@ -161,3 +163,4 @@ Ex: `shutdown -h 10:00 "Shutting down for scheduled maintenance."`
 	Usado para adicionar o usuário a mais um grupo, deve ser usado com o parâmetro -G.
 **-r**, **--remove**
 	Remove o usuário do grupo especificado, deve ser usado com o parâmetro -G.
+

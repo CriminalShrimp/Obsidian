@@ -11,7 +11,6 @@
 			[openSUSE Documentation](https://doc.opensuse.org/)
 		
 ----
-# Introdução
 
 Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel]] Linux, essas distribuições são de código aberto, o que significa que são disponibilizadas gratuitamente para todos e além disso tem os requisitos para rodar são mínimos. Dentre as distros (uma abreviação de Distributions) as mais famosas e usadas seriam <span style="color:rgb(161, 79, 140)">CentOS</span>, <span style="color:rgb(65, 105, 255)">Fedora</span>, <span style="color:rgb(255, 165, 0)">Ubuntu</span> e <span style="color:rgb(206, 0, 86)">Debian</span>, é possível ver mais sobre elas em [[Distros]]. Distros podem possuir [[Abreviações#GUI = **G**raphical **U**ser **I**nterface onde o usuário consegue interagir como programa por meio de botões imagens, ícones, etc.|GUI]], porém todas suas funções também podem ser feitas pela [[Abreviações#CLI = Command Line Interface é onde são realizados os comandos do sistema.|command line interface]] mais conhecida como **CLI**, existem vários terminais CLI como o xterm, konsole, terminator.
 
@@ -27,13 +26,6 @@ Distribuições Linux são sistemas operacionais feito em cima de um [[Kernel]] 
 Nos sistemas existe o usuário root que seria a conta que tem a permissão de administrador, o que seria a maior permissão possível de ter em um sistema, com ela é possível fazer qualquer modificação sem que o sistema interfira.
 
 Algo que aparecera toda vez que usar o Linux vai ser a palavra **sudo** vem de _<span style="color:rgb(255, 255, 0)">superuser do</span>_, bem sugestivo ao seu significado ele eleva as permissões do usuário para um "super usuário" tendo permissões para mexer em privilégios de pastas, arquivos, usuários, grupos entre várias outras coisas. Para ter acesso a esse modo basta colocar na CLI `sudo` pressionar `enter`, e inserir a senha que é escolhida no sistema, mas normalmente é a do próprio usuário.
-
-# Contas, Usuários e Grupos
-
-É possivel criar comandos customizados ou modificar ja existentes usando aliaes
-**sudo useradd**
-sudo passwd
-**userdel** **-r**
 
 # Manipulação de Pastas e Arquivos
 
@@ -122,11 +114,7 @@ Um competidor do Vim, mas com propostas diferentes, altamente customizável e co
 
 # Permissões 
 
-Existem níveis de permissão para usuários (UID), grupos (GID), pastas e arquivos. O primeiro usuário criado no sistema recebe o valor de 1000 em seu [[Abreviações#UID = User identifier é uma propriedade numérica que identifica o usuário no sistema|UID]], já os que forem entre 100 a 999 são conhecidos como usuários do sistema e os valores de 0 a 99 são reservados para o Kernel. O [[Abreviações#GID = Group identifier é uma propriedade numera que identifica um grupo de usuários|GID]] funciona de forma similar ao UID, os grupos começam a partir do numero 1000 sendo este criado ao primeiro usuário, é possível que um usuário tenha acesso a vários grupos 
-
-Adicionar permissões de arquivos  
-
-
+Existem níveis de permissão para usuários (UID), grupos (GID), pastas e arquivos. Arquivos podem ter três tipos de permissões: <span style="color:rgb(0, 176, 80)">escrita</span> (<span style="color:rgb(0, 176, 80)">r</span>), <span style="color:rgb(65, 105, 255)">leitura</span> (<span style="color:rgb(65, 105, 255)">w</span>) e <span style="color:rgb(206, 0, 86)">execução</span> (<span style="color:rgb(206, 0, 86)">x</span>), essas permissões afetam três grupos: **usuário/dono** (**u**), **grupo** (**g**) e **outros** (**o**). Quando vemos as permissões de um arquivo com o comando `ls -l arquivo`, temos um resultado assim por exemplo `-rwxr--r-x` onde o primeiro grupo de caracteres `rwx` representa as permissões do **usuário/dono**, os três seguintes do **grupo**, e os últimos aos **outros**. Essas permissões também são mostradas por números, <span style="color:rgb(0, 176, 80)">4</span> para a <span style="color:rgb(0, 176, 80)">escrita</span>, <span style="color:rgb(65, 105, 255)">2</span> para <span style="color:rgb(65, 105, 255)">leitura</span> e <span style="color:rgb(206, 0, 86)">1</span> para <span style="color:rgb(206, 0, 86)">execução</span>, assim para arquivos com mais de uma permissões basta somar os valores como leitura, escrita e execução seria equivalente a 7, escrita e leitura seria a 6. Se usarmos o exemplo anterior com essa forma ficaria 745. E para muda as permissões usamos o comando `chmod`, seguido do valor para cada para o usuário/dono, grupo e outros.
 # Acesso Remoto (SSH)
 
 O Linux usa o _Secure Shell Protocol_ popularmente chamado de SSH para fazer acesso remoto em computadores permitindo envia arquivos e comandos.  O SSH criptografa a comunicação entre os comutadores, normalmente é usado para acessar data centers e Servidores Cloud. Na linha de comando vc pode se conectar a outros computadores usando o comando `ssh`.
