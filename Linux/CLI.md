@@ -48,8 +48,6 @@ ls  <span style="color:rgb(0, 176, 240)">opções </span>  <span style="color:rg
 #### pwd - **P**rint **W**orking **D**irectory mostra o<span style="color:rgb(255, 255, 0)"> caminho de pastas</span> ate chegar onde o usuário esta trabalhando.
 #### touch - Usado para criar um arquivo.
 **touch -t** {tempo} - com essa opção é possível coloca a data de criação do arquivo 
-#### cat - Usado para ver o conteúdo do arquivo.
-#### tac - A mesma coisa do cat, só que começa da ultima linha .
 #### tail - Mostras as 10 ultimas linhas do arquivo, podendo alterar o valor usando -n e o valor desejado.
 #### head - A mesma coisa do tail, só que começa da primeira linha. 
 #### mkdir - Cria uma pasta com o nome desejado.
@@ -75,8 +73,8 @@ ls  <span style="color:rgb(0, 176, 240)">opções </span>  <span style="color:rg
 #### whereis  - Além de procurar por programas também procura por arquivos com o nome na pesquisa.
 #### timedatectl - 
 
-#### cat - Usado para criar arquivos.
-#### cp - Copia o arquivo.
+#### cat - Diminutivo de _concatenate_, além de juntar conteúdos de arquivos também é usado para criar, ler e escrever nos mesmos.
+#### tac - A mesma coisa do cat, só que começa da ultima linha.
 #### man - É a abreviação de manual, esse comando mostra dados e informações sobre o que deseja.
 -**man -a** - Ira mostrar todas as paginas uma por uma.
 -**man -f** - Gera uma breve descrição das paginas e capítulos.

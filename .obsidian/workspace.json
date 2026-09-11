@@ -49,7 +49,8 @@
               "title": "Abreviações"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -223,10 +224,10 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "61bfb8793da18da8",
+  "active": "6f2193a5ede09309",
   "lastOpenFiles": [
-    "Linux/CLI.md",
     "Linux/Linux Courses.md",
+    "Linux/CLI.md",
     "Abreviações.md",
     "Linux/Sistema de Arquivos.md",
     "Trash/Imagens/Img Linux/ComandosEmacs.pdf",
