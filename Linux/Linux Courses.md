@@ -40,6 +40,17 @@ Para realizar a copia de um arquivo usamos **`cp arquivo.extensao Pasta`**.
 Para mudar um arquivo de lugar basta colocar `mv` o nome do arquivo sua extensão  e o destino **`mv arquivo.extensao Pasta`**, o comando `mv` também é usado para mudar nome de arquivos basta colocar **`mv NomeAntigo.extensao NomeNovo.extensao`**.
 
 E para deletar arquivos usamos o **`rm`** e em seguida o nome do arquivo e sua extensão, **`rm arquivo.extensao`**.
+
+#### Comandos Avançados 
+
+##### send
+##### awk 
+##### paste 
+##### join
+##### split 
+##### sort 
+##### uniq
+
 ## Arquivos Comprimidos
 
 Para criar um arquivo comprimido `.tar` basta usar o comando `tar`. Argumentos que podem ser passados são `--create`, `--gzip`, e `--file`.
@@ -73,6 +84,7 @@ Quando vamos copiar uma pasta com seus conteúdos precisamos usar a opção -`-r
 Para mudar uma pasta de lugar basta colocar `mv` pasta e a  pasta de destino **`mv Pasta1 PastaDestino`**, o comando `mv` também é usado para mudar nome da pasta basta colocar **`mv PastaNomeAntigo PastaNomeNovo`**.
 
 E para deletar pastas usamos o **`rm`** e em seguida o nome da pasta, **`rm Pasta`**.
+
 
 # Editores de Texto
 
