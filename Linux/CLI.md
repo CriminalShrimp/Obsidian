@@ -162,3 +162,19 @@ Existem níveis de permissão para usuários (UID), grupos (GID), pastas e arqui
 **-r**, **--remove**
 	Remove o usuário do grupo especificado, deve ser usado com o parâmetro -G.
 
+
+## Arquivos
+
+#### paste - Usado para unir dois arquivos em um único.
+#### split - Divide um arquivo em outros arquivos menores.
+#### sort - Usado para mudar a ordem de um arquivo, tanto crescente ou decrescente, e usando `-uniq` é possível retirar as palavras duplicadas.
+#### grep - Usado para achar palavras, frases ou padrões específicos de texto em arquivos.
+#### wc - **W**ord **C**ount serve para contar quantas palavras, linhas ou *bytes* existem no arquivo,
+#### tr - Transforma certos caracteres em outros.
+
+| **tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ** ou **tr a-z A-Z** | Converte de minúsculo para maiúsculo.                     |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| **tr '{}' '()' < inputfile > outputfile**                                      | Transforma parênteses em chaves.                          |
+| **echo "This is for testing" \| tr [:space:] '\t'**                            | Transforma espaços em "tabs".                             |
+| **echo "the geek stuff" \| tr -d 't'**                                         | Usando a opção **-d** para deletar caracteres epecificos. |
+| **tr -cd [:print:] < file.txt**                                                | Retira todos os caracteres não "mostráveis".              |

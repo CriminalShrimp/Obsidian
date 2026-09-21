@@ -31,7 +31,7 @@ Algo que aparecera toda vez que usar o Linux vai ser a palavra **sudo** vem de _
 
 ## Arquivos
 
-Uma frase muito conhecida que se refere a Linux é "no Linux tudo é um arquivo" sejam as informações sobre o hardware do dispositivo, bem como as próprias configurações do kernel, são todas armazenadas em arquivos especiais que residem em diretórios virtuais, os código de estados  0 é o padrão de entrada , 1 é o padrão de saída  e 2 se referre a um erro. Um dos comandos para mexer em arquivos é o **cat** que um uma abreviação de *concatenate* (concatenar), para ler um arquivo bastar escrever **cat arquivo.txt**, duas <span style="color:rgb(255, 255, 0)">dica</span> muito interessante é que para passar outputs direto para um arquivo pode se usar output <span style="color:rgb(255, 255, 0)">></span> arquivo.txt, se é um arquivo que você somente queira adicionar mais linha então use o <span style="color:rgb(255, 255, 0)">>></span>, e a outra seria usar *pipelines* que seria essa barra na vertical  <span style="color:rgb(255, 255, 0)">|</span>, ela faz com que o resultado de um comando seja o *input* de outro. Um comando muito útil para achar arquivos e pastas é o [[CLI#find |find]], já para procurar palavras em textos é o <span style="color:rgb(255, 255, 0)">grep</span>.
+Uma frase muito conhecida que se refere a Linux é "no Linux tudo é um arquivo" sejam as informações sobre o hardware do dispositivo, bem como as próprias configurações do kernel, são todas armazenadas em arquivos especiais que residem em diretórios virtuais, os código de estados  0 é o padrão de entrada , 1 é o padrão de saída  e 2 se referre a um erro. Um dos comandos para mexer em arquivos é o **cat** que um uma abreviação de *concatenate* (concatenar), para ler um arquivo bastar escrever **cat arquivo.txt**, duas <span style="color:rgb(255, 255, 0)">dica</span> muito interessante é que para passar outputs direto para um arquivo pode se usar output <span style="color:rgb(255, 255, 0)">></span> arquivo.txt, se é um arquivo que você somente queira adicionar mais linha então use o <span style="color:rgb(255, 255, 0)">>></span>, e a outra seria usar *pipelines* que seria essa barra na vertical  <span style="color:rgb(255, 255, 0)">|</span>, ela faz com que o resultado de um comando seja o *input* de outro. Um comando muito útil para achar arquivos e pastas é o [[CLI#find |find]], já para procurar palavras em textos é o [[CLI#grep|grep]].
 
 Para criar um arquivo existe diversas maneiras um exemplo básico seria com **`touch arquivo.extensao`**.
 
@@ -40,16 +40,6 @@ Para realizar a copia de um arquivo usamos **`cp arquivo.extensao Pasta`**.
 Para mudar um arquivo de lugar basta colocar `mv` o nome do arquivo sua extensão  e o destino **`mv arquivo.extensao Pasta`**, o comando `mv` também é usado para mudar nome de arquivos basta colocar **`mv NomeAntigo.extensao NomeNovo.extensao`**.
 
 E para deletar arquivos usamos o **`rm`** e em seguida o nome do arquivo e sua extensão, **`rm arquivo.extensao`**.
-
-#### Comandos Avançados 
-
-##### send
-##### awk 
-##### paste 
-##### join
-##### split 
-##### sort 
-##### uniq
 
 ## Arquivos Comprimidos
 

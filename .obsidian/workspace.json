@@ -49,7 +49,8 @@
               "title": "Abreviações"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "grep",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +115,8 @@
               "title": "tg-left-sidebar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -223,12 +225,12 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "61bfb8793da18da8",
+  "active": "6f2193a5ede09309",
   "lastOpenFiles": [
-    "Linux/CLI.md",
     "Linux/Linux Courses.md",
-    "Linux/Sistema de Arquivos.md",
+    "Linux/CLI.md",
     "Abreviações.md",
+    "Linux/Sistema de Arquivos.md",
     "Trash/Imagens/Img Linux/ComandosEmacs.pdf",
     "Ferramentas/Docker.md",
     "BlueTeam/Suricata.md",
