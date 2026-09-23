@@ -80,7 +80,9 @@ ls  <span style="color:rgb(0, 176, 240)">opções </span>  <span style="color:rg
 -**man -f** - Gera uma breve descrição das paginas e capítulos.
 -**man -k** - Mostra todas as paginas que contem a palavra usada.
 #### info - Traz as informações sobre o que foi procurado
-
+#### wget - Realiza o download de paginas web e arquivos.
+#### curl - Consegue realizar não somente o download de dados web como também o upload.
+####
 ## Processos
 
 Antes de vermos os comandos é sobre processos é importante entender alguns conceitos sobre <span style="color:rgb(65, 105, 255)">Processos</span>, <span style="color:rgb(0, 176, 80)">Threads</span> e <span style="color:rgb(206, 0, 86)">Tasks</span>.

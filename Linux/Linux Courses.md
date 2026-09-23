@@ -123,25 +123,7 @@ O Linux usa o _Secure Shell Protocol_ popularmente chamado de SSH para fazer ace
 
 #### Habilitando login SSH via linha de comando
 
-Para habilitar o login remoto via SSH usasse o comando `systemctl`, esse comando se refere aos serviços de sistema, como o SSH . Usando o comando `systemctl` com o subcomando `enable` para ativar o serviço, juntamente com a opção `--now` para fazer a mudança imediatamente e por fim o nome do serviço.
-
-[user@host ~]$ **`sudo systemctl enable --now sshd`**
-
-O comando `systemctl is-active` verificar se um serviço esta ativo.
-
-[user@host ~]$ **`systemctl is-active sshd`**
-active
-
-[user@host ~]$ **`systemctl is-active lvm2`**
-inactive
-
-O comando `systemctl status` mostra os status do serviço.
-
-[user@host ~]$ **`systemctl status sshd`**
-● sshd.service - OpenSSH server daemon
-     Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor pres>
-     Active: active (running) since Fri 2023-11-03 15:34:30 NZDT; 1h 43min ago
-[...]
+Para habilitar o login remoto via SSH o comando `sudo systemctl enable --now sshd`, esse comando `systemctl` refere aos serviços de sistema, como o SSH. Para ver se ele foi ativado com sucesso usamos `systemctl is-active`, ou também `systemctl status` para mostrar os status do serviço.
 
 #### Logando pela linha de comando
 

@@ -49,8 +49,7 @@
               "title": "Abreviações"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "grep",
+                "query": "SSH",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -225,11 +224,13 @@
       "obsidian-task-progress-bar:Abrir visualização Task Genius": false
     }
   },
-  "active": "6f2193a5ede09309",
+  "active": "61bfb8793da18da8",
   "lastOpenFiles": [
-    "Linux/Linux Courses.md",
-    "Linux/CLI.md",
     "Abreviações.md",
+    "Linux/Linux Courses.md",
+    "Conceitos/Hash.md",
+    "Redes/Protocolos.md",
+    "Linux/CLI.md",
     "Linux/Sistema de Arquivos.md",
     "Trash/Imagens/Img Linux/ComandosEmacs.pdf",
     "Ferramentas/Docker.md",
@@ -251,7 +252,6 @@
     "Explicações.md",
     "Linux/Distros.md",
     "TODO.md",
-    "Redes/Protocolos.md",
     "Trash/Imagens/Img Redes/DNS Zone.png",
     "Trash/Imagens/Img Redes/DNS Zone File.png",
     "Trash/Imagens/Img Redes/DNS Protocol.gif",
