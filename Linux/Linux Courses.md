@@ -121,14 +121,11 @@ Existem níveis de permissão para usuários (UID), grupos (GID), pastas e arqui
 
 O Linux usa o _Secure Shell Protocol_ popularmente chamado de SSH para fazer acesso remoto em computadores permitindo envia arquivos e comandos.  O SSH criptografa a comunicação entre os comutadores, normalmente é usado para acessar data centers e Servidores Cloud. Na linha de comando vc pode se conectar a outros computadores usando o comando `ssh`.
 
-#### Habilitando login SSH via linha de comando
+#### Login SSH
 
 Para habilitar o login remoto via SSH o comando `sudo systemctl enable --now sshd`, esse comando `systemctl` refere aos serviços de sistema, como o SSH. Para ver se ele foi ativado com sucesso usamos `systemctl is-active`, ou também `systemctl status` para mostrar os status do serviço.
 
-#### Logando pela linha de comando
-
-O comando SSH exige o nome do usuário e o endereço/domínio que esta sendo conectado, esses dois argumentos são adicionados com o símbolo (`@`)  separando-os.
-Nesse exemplo vc esta logando na máquina `servera`, com o usuário `remote` que tem a senha `RedHat123!`.
+O comando SSH exige o nome do usuário e o endereço/domínio que esta sendo conectado, esses dois argumentos são adicionados com o símbolo (`@`)  separando-os. Nesse exemplo estamos conectados na máquina `servera`, com o usuário `remote`, que tem a senha `RedHat123!`.
 
 [user@host ~]$ **`ssh remote@servera`**
 student@servera's password: **`RedHat123!`**
@@ -137,19 +134,17 @@ Após conseguir efetuar com sucesso o login o que mudara vai ser o usuário e o 
 
 [remote@servera ~]$
 
-#### Transferindo arquivos via CLI
+#### Transferindo arquivos
 
-O comando `scp` copia arquivos de um computador para outro por uma criptografia na rede, ele requer dois argumentos na seguinte ordem: o arquivo a ser movido e a localização desejada.
-
-Para copiar um arquivo local para um servidor remoto forneça o caminho do arquivo para o arquivo que deseja copiar e o server de destino junto com o caminho, esta ação precisa da senha para ser realizada.
+O comando `scp` copia arquivos de um computador para outro por uma criptografia na rede, ele requer dois argumentos na seguinte ordem: **o arquivo** a ser movido e a **localização desejada**. Para copiar um arquivo local para um servidor remoto forneça o caminho do arquivo para o arquivo que deseja copiar, e o destino com o caminho.
 
 [user@host ~]$ **`scp ~/Documents/exemplo.txt user@servera:~/Documents`**
 
-É possivel copiar um arquivo do servidor remoto para seu computador local.
+É possivel copiar um arquivo do servidor para seu computador.
 
 [user@host ~]$ **`scp user@servera:~/Documents/exemplo.txt ~/Documents`**
 
-E também é possível copiar de um servidor remoto para outro servidor remoto.
+E também é possível copiar de um servidor para outro.
 
 [user@host ~]$ **`scp user@servera:~/Documents/exemplo.txt user@serverb:~/Documents`**
 
@@ -162,33 +157,11 @@ E também é possível copiar de um servidor remoto para outro servidor remoto.
 Na linha de comando, crie uma chave usando o comando `ssh-keygen` com a opção `-t ed25519` esse numero refere-se ao algoritmo de criptografia, e para as opções seguinte aceite as padrões. É possível  gerar essa chave somente uma vez , mas o mesmo pode usar o mesmo par para diversos servidores. Uma opção adicional é usar uma "senha" na hora da criação da chave, como um camada a mais de segurança. Aqui esta um exemplo da criação da chave.
 
 [user@host ~]$ **`ssh-keygen -t ed25519`**
-$ ssh-keygen -t ed25519
-Generating public/private ed25519 key pair.
-Enter file in which to save the key (/home/user/.ssh/id_ed25519): **`**Enter**`**
-Created directory '/home/user/.ssh'.
-Enter passphrase (empty for no passphrase): **`**Enter**`**
-Enter same passphrase again: **`**Enter**`**
-Your identification has been saved in /home/user/.ssh/id_ed25519
-Your public key has been saved in /home/user/.ssh/id_ed25519.pub
-The key fingerprint is:
-SHA256:y+Ue2FpKtHlTIes+5RC/VFBHohey+5iAGWRQ9J6bpJw user@host
-The key's randomart image is:
-+--[ED25519 256]--+
-|      .+=   ..+.o|
-|       o .  .+ + |
-|        . o +..  |
-|         =.+ +.  |
-|        S Boo.   |
-|       + &.=++   |
-|        E @=o..  |
-|       . B.oo    |
-|        o o.     |
-+----[SHA256]-----+
 
-Para verificar as chaves use o comando  `ls` para verificar o conteúdo do diretório `~/.ssh`. O arquivo `id_ed25519`  é a chave privada , já o arquivo `id_ed25519.pub` é a chave pública.
+Para verificar as chaves use o comando `ls` para verificar o conteúdo do diretório `~/.ssh`. O arquivo `id_ed25519` é a chave privada, já o arquivo `id_ed25519.pub` é a chave pública.
 #### Distribuindo a chave SSH
 
-O comando `ssh-copy-id` copia sua chave pública para um computador remoto, basta colocar o comando seu usuário e o destino separados por um @, como no exemplo abaixo
+O comando `ssh-copy-id` copia sua chave pública para um computador remoto, basta colocar o comando seu usuário e o destino separados por um @, como no exemplo abaixo:
 
 [mhoward@host ~]$ **`ssh-copy-id developer030@servera`**
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
@@ -197,7 +170,7 @@ developer030@172.25.250.10's password: **`RedHat123!`**
 
 Number of key(s) added: 1
 
-Se estiver certo, quando logar não precisara digitar a senha, para testar use  `ssh usuario@destino`
+Se estiver certo, quando logar não precisara digitar a senha, para testar use `ssh usuario@destino`.
 
 # Sistema de Gerenciamento de Pacotes
 
